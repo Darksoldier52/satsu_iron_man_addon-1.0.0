@@ -1,0 +1,1 @@
+scoreboard objectives add satsu.iron.man.armor dummy

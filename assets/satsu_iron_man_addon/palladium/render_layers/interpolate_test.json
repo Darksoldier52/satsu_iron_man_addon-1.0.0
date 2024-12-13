@@ -1,0 +1,37 @@
+{
+  "type": "palladium:compound",
+  "layers": [
+    {
+      "type": "palladium:skin_overlay",
+      "texture": {
+        "base": "satsu_iron_man_addon:textures/models/iron_man_suit.png",
+        "transformers": [
+          {
+            "type": "palladium:alpha_mask",
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit/transformation_#TIMER.png"
+          }
+        ],
+        "variables": {
+          "TIMER": {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "interpolate",
+            "property": "value"
+          },
+          "X": {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min": 0,
+            "max": 10
+          }
+        },
+        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#TIMER"
+      }
+    },
+    {
+      "type": "palladium:skin_overlay",
+      "texture": "satsu_iron_man_addon:textures/models/iron_man_suit_reactor_lights.png",
+      "render_type": "glow"
+    }
+  ]
+}
