@@ -13,10 +13,10 @@
         ],
         "variables": {
           "TIMER": {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.anim",
-            "min": 0,
-            "max": 16
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "interpolate",
+            "property": "value"
           },
           "X": {
             "type": "palladium:objective_score",
@@ -55,10 +55,10 @@
         ],
         "variables": {
           "TIMER": {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.anim",
-            "min": 0,
-            "max": 16
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "interpolate",
+            "property": "value"
           },
           "X": {
             "type": "palladium:objective_score",
@@ -83,6 +83,14 @@
           "min": 16
         }
       ]
+    },
+    {
+      "type": "geckolib:default",
+      "model": {
+        "normal": "satsu_iron_man_addon:geo/player.geo.json",
+        "slim": "satsu_iron_man_addon:geo/player_slim.geo.json"
+      },
+      "texture": "satsu_iron_man_addon:textures/models/iron_man_suit_reactor_lights_1.png"
     }
   ]
 }
