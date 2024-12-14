@@ -944,7 +944,13 @@
       "description": "This is the skill tree that will allow you to unlock your various Omnitrix skills.",
       "commands": [
         "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s unless score @s satsu.prev.iron.man.armor matches 0.. run scoreboard players set @s satsu.prev.iron.man.armor 0"
+        "execute as @s unless score @s satsu.prev.iron.man.armor matches 0.. run scoreboard players set @s satsu.prev.iron.man.armor 0",
+        "execute as @s[scores={satsu.prev.iron.man.armor=0}] run title @s actionbar [\"\",{\"text\":\"Palladium Armor\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=1}] run title @s actionbar [\"\",{\"text\":\"Superior Armor\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=2}] run title @s actionbar [\"\",{\"text\":\"MK43 Armor\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=3}] run title @s actionbar [\"\",{\"text\":\"unknow Armor\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=4}] run title @s actionbar [\"\",{\"text\":\"unknow Armor\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=5}] run title @s actionbar [\"\",{\"text\":\"unknow Armor\",\"color\":\"blue\"}]"
       ],
       "last_tick_commands": [
         "execute as @s run scoreboard players operation @s satsu.iron.man.armor = @s satsu.prev.iron.man.armor",
