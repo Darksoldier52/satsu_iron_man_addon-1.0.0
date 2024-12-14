@@ -17,9 +17,13 @@
         "scoreboard players set @s satsu.iron.man.armor.anim 0",
         "scoreboard objectives add satsu.iron.man.mask dummy",
         "scoreboard objectives add satsu.iron.man.armor.actived.perm dummy",
-        "scoreboard players set @s satsu.iron.man.flight_speed 6"
+        "scoreboard players set @s satsu.iron.man.flight_speed 6",
+        "attribute @s palladium:heroic_flight_type base set 0.1"
       ],
-      "commands": [""]
+      "commands": [""],
+      "last_tick_commands": [
+        "attribute @s palladium:heroic_flight_type base set 0.0"
+      ]
     },
     "Omnitrix_powers_stat_upgrades": {
       "type": "palladium:dummy",
@@ -112,6 +116,58 @@
             "property": "value",
             "min": 16,
             "max": 16
+          }
+        ]
+      }
+    },
+    "flight_armors_fast_flying": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": ["tag @s add Fast.fliyng"],
+      "last_tick_commands": ["tag @s remove Fast.fliyng"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:is_fast_flying"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived.perm",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "flight_armors_flying": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": ["tag @s add fliyng"],
+      "last_tick_commands": ["tag @s remove fliyng"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:is_hovering_or_flying"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:is_fast_flying"
+              }
+            ]
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived.perm",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -1079,38 +1135,6 @@
         "execute as @s[scores={satsu.iron.man.armor=0}] run scoreboard players set @s satsu.iron.man.strength 3",
         "execute as @s[scores={satsu.iron.man.armor=1}] run scoreboard players set @s satsu.iron.man.strength 8"
       ]
-    },
-    "set_armor_0": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "first_tick_commands": [],
-      "commands": ["scoreboard players set @s satsu.iron.man.armor 0"],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:accessory_selected",
-            "accessory_slot": "satsu_iron_man_addon:iron_man_armors",
-            "accessory": "satsu_iron_man_addon:palladium_armor"
-          }
-        ]
-      }
-    },
-    "set_armor_1": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "first_tick_commands": [],
-      "commands": ["scoreboard players set @s satsu.iron.man.armor 1"],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:accessory_selected",
-            "accessory_slot": "satsu_iron_man_addon:iron_man_armors",
-            "accessory": "satsu_iron_man_addon:superior_armor"
-          }
-        ]
-      }
     }
   }
 }
