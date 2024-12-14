@@ -948,10 +948,12 @@
       "list_index": 15,
       "description": "This is the skill tree that will allow you to unlock your various Omnitrix skills.",
       "commands": [
+        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
         "execute as @s unless score @s satsu.prev.iron.man.armor matches 0.. run scoreboard players set @s satsu.prev.iron.man.armor 0"
       ],
       "last_tick_commands": [
         "execute as @s run scoreboard players operation @s satsu.iron.man.armor = @s satsu.prev.iron.man.armor",
+        "scoreboard players set @s satsu.prev.iron.man.armor.anim 1",
         "scoreboard players reset @s satsu.iron.man.armor.set"
       ],
       "conditions": {
@@ -977,7 +979,7 @@
     },
     "choose.armor.1": {
       "type": "palladium:command",
-      "icon": "minecraft:iron_ingot",
+      "icon": "m_ten:textures/gui/omnitrix/speed_up.png",
       "title": "Next armor",
       "hidden": true,
       "hidden_in_bar": false,
@@ -985,6 +987,7 @@
       "description": "This is the skill tree that will allow you to unlock your various Omnitrix skills.",
       "first_tick_commands": [],
       "commands": [
+        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
         "execute as @s[scores={satsu.iron.man.armor.set=0..}] run scoreboard players add @s satsu.prev.iron.man.armor 1"
       ],
       "last_tick_commands": [],
@@ -1005,14 +1008,17 @@
     },
     "choose.armor.2": {
       "type": "palladium:command",
-      "icon": "minecraft:iron_ingot",
+      "icon": "m_ten:textures/gui/omnitrix/speed_down.png",
       "title": "Prev armor",
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 17,
       "description": "This is the skill tree that will allow you to unlock your various Omnitrix skills.",
-      "first_tick_commands": [],
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0"
+      ],
       "commands": [
+        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
         "execute as @s[scores={satsu.iron.man.armor.set=0..}] run scoreboard players remove @s satsu.prev.iron.man.armor 1"
       ],
       "last_tick_commands": [],
@@ -1027,6 +1033,28 @@
             "type": "palladium:ability_enabled",
             "power": "null",
             "ability": "choose.armor.move"
+          }
+        ]
+      }
+    },
+    "interpolate_choose": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 16,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.prev.iron.man.armor.anim",
+                "min_score": 0,
+                "max_score": 0
+              }
+            ]
           }
         ]
       }

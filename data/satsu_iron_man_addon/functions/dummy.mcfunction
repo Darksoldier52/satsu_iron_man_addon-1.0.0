@@ -14,3 +14,4 @@ scoreboard objectives add satsu.iron.man.strength dummy
 scoreboard objectives add satsu.iron.man.strength.health health
 scoreboard objectives add satsu.iron.man.durability dummy
 scoreboard objectives add satsu.prev.iron.man.armor dummy
+scoreboard objectives add satsu.prev.iron.man.armor.anim dummy

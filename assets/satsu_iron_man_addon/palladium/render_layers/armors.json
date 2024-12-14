@@ -207,11 +207,17 @@
       "model": "satsu_iron_man_addon:geo/armor_arm.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_suit_#X.png",
+        "transformers": [
+          {
+            "type": "palladium:alpha_mask",
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit/transformation_#TIMER.png"
+          }
+        ],
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
             "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "interpolate",
+            "ability": "interpolate_choose",
             "property": "value"
           },
           "X": {
