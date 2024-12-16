@@ -1083,7 +1083,7 @@
       "title": "Activate armor",
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 10,
+      "list_index": 15,
       "description": "This is the skill tree that will allow you to unlock your various Omnitrix skills.",
       "conditions": {
         "enabling": [
@@ -1126,7 +1126,7 @@
       "title": "Activate armor",
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 11,
+      "list_index": 16,
       "description": "This is the skill tree that will allow you to unlock your various Omnitrix skills.",
       "first_tick_commands": [],
       "commands": [
@@ -1155,7 +1155,7 @@
       "title": "Activate armor",
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 12,
+      "list_index": 17,
       "description": "This is the skill tree that will allow you to unlock your various Omnitrix skills.",
       "first_tick_commands": [],
       "commands": [
@@ -1445,17 +1445,19 @@
       "title": "Choose",
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 15,
+      "list_index": 10,
       "description": "This is the skill tree that will allow you to unlock your various Omnitrix skills.",
       "commands": [
         "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
         "execute as @s unless score @s satsu.prev.iron.man.armor matches 0.. run scoreboard players set @s satsu.prev.iron.man.armor 0",
-        "execute as @s[scores={satsu.prev.iron.man.armor=0}] run title @s actionbar [\"\",{\"text\":\"Palladium Armor\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=0}] run title @s actionbar [\"\",{\"text\":\"MK 47 Armor\",\"color\":\"blue\"}]",
         "execute as @s[scores={satsu.prev.iron.man.armor=1}] run title @s actionbar [\"\",{\"text\":\"Superior Armor\",\"color\":\"blue\"}]",
         "execute as @s[scores={satsu.prev.iron.man.armor=2}] run title @s actionbar [\"\",{\"text\":\"MK43 Armor\",\"color\":\"blue\"}]",
         "execute as @s[scores={satsu.prev.iron.man.armor=3}] run title @s actionbar [\"\",{\"text\":\"unknow Armor\",\"color\":\"blue\"}]",
         "execute as @s[scores={satsu.prev.iron.man.armor=4}] run title @s actionbar [\"\",{\"text\":\"unknow Armor\",\"color\":\"blue\"}]",
-        "execute as @s[scores={satsu.prev.iron.man.armor=5}] run title @s actionbar [\"\",{\"text\":\"unknow Armor\",\"color\":\"blue\"}]"
+        "execute as @s[scores={satsu.prev.iron.man.armor=5}] run title @s actionbar [\"\",{\"text\":\"unknow Armor\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=6}] run title @s actionbar [\"\",{\"text\":\"Stealh Armor\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=7}] run title @s actionbar [\"\",{\"text\":\"MK43 Rivals\",\"color\":\"blue\"}]"
       ],
       "last_tick_commands": [
         "execute as @s run scoreboard players operation @s satsu.iron.man.armor = @s satsu.prev.iron.man.armor",
@@ -1490,12 +1492,12 @@
       "title": "Next armor",
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 16,
+      "list_index": 11,
       "description": "This is the skill tree that will allow you to unlock your various Omnitrix skills.",
       "first_tick_commands": [],
       "commands": [
         "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s[scores={satsu.prev.iron.man.armor=0..5}] run scoreboard players add @s satsu.prev.iron.man.armor 1"
+        "execute as @s[scores={satsu.prev.iron.man.armor=0..6}] run scoreboard players add @s satsu.prev.iron.man.armor 1"
       ],
       "last_tick_commands": [],
       "conditions": {
@@ -1519,7 +1521,7 @@
       "title": "Prev armor",
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 17,
+      "list_index": 12,
       "description": "This is the skill tree that will allow you to unlock your various Omnitrix skills.",
       "first_tick_commands": [
         "scoreboard players set @s satsu.prev.iron.man.armor.anim 0"
@@ -1629,6 +1631,20 @@
             "type": "palladium:ability_unlocked",
             "power": "null",
             "ability": "Omnitrix_powers_stat_upgrades"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "interpolate",
+            "property": "value",
+            "min": 16,
+            "max": 16
           }
         ]
       }
@@ -1834,6 +1850,7 @@
         "execute as @s[scores={satsu.iron.man.armor=4}] run scoreboard players set @s satsu.iron.man.flame 5",
         "execute as @s[scores={satsu.iron.man.armor=5}] run scoreboard players set @s satsu.iron.man.flame 0",
         "execute as @s[scores={satsu.iron.man.armor=6}] run scoreboard players set @s satsu.iron.man.flame 3",
+        "execute as @s[scores={satsu.iron.man.armor=7}] run scoreboard players set @s satsu.iron.man.flame 10",
         "execute as @s[scores={satsu.iron.man.armor=0}] run scoreboard players set @s satsu.iron.man.durability 10",
         "execute as @s[scores={satsu.iron.man.armor=1}] run scoreboard players set @s satsu.iron.man.durability 35",
         "execute as @s[scores={satsu.iron.man.armor=2}] run scoreboard players set @s satsu.iron.man.durability 12",
@@ -1841,13 +1858,15 @@
         "execute as @s[scores={satsu.iron.man.armor=4}] run scoreboard players set @s satsu.iron.man.durability 25",
         "execute as @s[scores={satsu.iron.man.armor=5}] run scoreboard players set @s satsu.iron.man.durability 37",
         "execute as @s[scores={satsu.iron.man.armor=6}] run scoreboard players set @s satsu.iron.man.durability 7",
+        "execute as @s[scores={satsu.iron.man.armor=7}] run scoreboard players set @s satsu.iron.man.durability 11",
         "execute as @s[scores={satsu.iron.man.armor=0}] run scoreboard players set @s satsu.iron.man.strength 3",
         "execute as @s[scores={satsu.iron.man.armor=1}] run scoreboard players set @s satsu.iron.man.strength 8",
         "execute as @s[scores={satsu.iron.man.armor=2}] run scoreboard players set @s satsu.iron.man.strength 4",
         "execute as @s[scores={satsu.iron.man.armor=3}] run scoreboard players set @s satsu.iron.man.strength 10",
         "execute as @s[scores={satsu.iron.man.armor=4}] run scoreboard players set @s satsu.iron.man.strength 7",
         "execute as @s[scores={satsu.iron.man.armor=5}] run scoreboard players set @s satsu.iron.man.strength 12",
-        "execute as @s[scores={satsu.iron.man.armor=6}] run scoreboard players set @s satsu.iron.man.strength 13"
+        "execute as @s[scores={satsu.iron.man.armor=6}] run scoreboard players set @s satsu.iron.man.strength 13",
+        "execute as @s[scores={satsu.iron.man.armor=6}] run scoreboard players set @s satsu.iron.man.strength 7"
       ]
     }
   }
