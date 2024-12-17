@@ -37,6 +37,11 @@
               "ability": "animation.projectile.1"
             },
             {
+              "type": "palladium:ability_enabled",
+              "power": "satsu_iron_man_addon:iron_man_armor",
+              "ability": "maximun.pulse.animation"
+            },
+            {
               "type": "palladium:objective_score",
               "objective": "satsu.iron.man.personalize.things",
               "min_score": 1,

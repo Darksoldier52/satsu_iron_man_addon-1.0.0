@@ -20,3 +20,4 @@ scoreboard objectives add satsu.iron.man.armor.energy.beams dummy
 scoreboard objectives add satsu.iron.man.remove.ark dummy
 scoreboard objectives add satsu.iron.man.closed.armors dummy
 scoreboard objectives add satsu.iron.man.superpower dummy
+scoreboard objectives add satsu.iron.man.break dummy
