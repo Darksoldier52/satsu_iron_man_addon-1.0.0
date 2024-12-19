@@ -17,7 +17,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.prev.iron.man.armor",
             "min": 0,
-            "max": 7
+            "max": 8
           },
           "Y": {
             "type": "palladium:objective_score",
