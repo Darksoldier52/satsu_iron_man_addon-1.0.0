@@ -23,24 +23,6 @@
         "objective": "satsu.iron.man.flight_speed",
         "fallback": 0
       }
-    },
-    "energy_ark": {
-      "max": {
-        "type": "score",
-        "objective": "satsu.iron.man.armor.ark.energy.max",
-        "fallback": 0
-      },
-      "color": "#0fffbd",
-      "max_value": {
-        "type": "score",
-        "objective": "satsu.iron.man.armor.ark.energy.max",
-        "fallback": 10
-      },
-      "synced_value": {
-        "type": "score",
-        "objective": "satsu.iron.man.armor.ark.energy",
-        "fallback": 0
-      }
     }
   },
   "abilities": {
@@ -58,7 +40,7 @@
         "scoreboard players set @s satsu.iron.man.flight_speed 6",
         "scoreboard players set @s satsu.iron.man.flight_speed_max 24",
         "scoreboard players set @s satsu.iron.man.armor.ark.energy.max 10000",
-        "scoreboard players set @s satsu.iron.man.armor.ark.energy 10000",
+        "execute as @s unless score @s satsu.iron.man.armor.ark.energy matches 0.. run scoreboard players set @s satsu.iron.man.armor.ark.energy 10000",
         "scoreboard players set @s satsu.iron.man.superpower 0"
       ],
       "commands": [""],
@@ -2692,7 +2674,7 @@
       "translate": [0, 0, 0],
       "rotate": [0, 0, 0],
       "scale": [1, 1, 1],
-      "alignment": "top_left",
+      "alignment": "top_right",
       "hidden": true
     },
     "commands_armor": {
