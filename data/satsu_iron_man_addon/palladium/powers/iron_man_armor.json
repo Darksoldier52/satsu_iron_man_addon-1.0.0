@@ -1139,17 +1139,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "null",
-                "ability": "hands_laser_two"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "null",
-                "ability": "hands_laser_arm_one"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "null",
                 "ability": "animation.projectile.1"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "animation.projectile.3"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -1175,12 +1170,7 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "null",
-                "ability": "hands_laser_two"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "null",
-                "ability": "animation.projectile.1"
+                "ability": "animation.projectile.3"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -1206,26 +1196,6 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "null",
-                "ability": "hands_laser_one"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "null",
-                "ability": "hands_laser_two"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "null",
-                "ability": "water_projectile"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "null",
-                "ability": "water_projectile_middle"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "null",
                 "ability": "animation.projectile.1"
               },
               {
@@ -1238,16 +1208,61 @@
         ]
       }
     },
-    "animation.projectile.1": {
-      "type": "palladium:repeating_animation_timer",
+    "Energy.Pulse": {
+      "type": "palladium:command",
       "icon": "m_ten:textures/gui/omnitrix/powers/orishan_bubble.png",
       "entity_type": "palladium:custom_projectile",
       "title": "Energy Pulse",
-      "description": "Throws a energy projectile (5 damage)",
+      "description": "By activating this the armor will be able to throw energy from the hands (with right or left click)",
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 3,
       "gui_position": [1, -0.5],
+      "first_tick_commands": [
+        "scoreboard objectives add satsu.iron.man.armor.energy.pulse dummy",
+        "scoreboard players add @s satsu.iron.man.armor.energy.pulse 1",
+        "execute as @s[scores={satsu.iron.man.armor.energy.pulse=1}] run tag @s add energy.pulse",
+        "execute as @s[scores={satsu.iron.man.armor.energy.pulse=2..}] run tag @s remove energy.pulse",
+        "execute as @s[scores={satsu.iron.man.armor.energy.pulse=2..}] run scoreboard players reset @s satsu.iron.man.armor.energy.pulse"
+      ],
+      "commands": [""],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "Omnitrix_powers_stat_upgrades"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "interpolate",
+            "property": "value",
+            "min": 16,
+            "max": 16
+          }
+        ]
+      }
+    },
+    "animation.projectile.1": {
+      "type": "palladium:repeating_animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
       "start_value": 0,
       "max_value": 20,
       "conditions": {
@@ -1256,11 +1271,58 @@
             "type": "palladium:activation",
             "ticks": 6,
             "cooldown": 0,
-            "key_type": "key_bind",
+            "key_type": "right_click",
             "needs_empty_hand": false
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "energy.pulse"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "Omnitrix_powers_stat_upgrades"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "interpolate",
+            "property": "value",
+            "min": 16,
+            "max": 16
+          }
+        ]
+      }
+    },
+    "animation.projectile.3": {
+      "type": "palladium:repeating_animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 20,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:activation",
+            "ticks": 6,
+            "cooldown": 0,
+            "key_type": "left_click",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "energy.pulse"
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "null",
@@ -1350,9 +1412,75 @@
           {
             "type": "palladium:animation_timer_ability",
             "power": "null",
-            "ability": "animation.projectile.1",
-            "min": 10,
-            "max": 10
+            "ability": "animation.projectile.3",
+            "min": 5,
+            "max": 5
+          }
+        ]
+      }
+    },
+    "energyblast.throw.sound": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "playsound satsu_iron_man_addon:energyblast.throw ambient @a ~ ~ ~ 1 0"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "water_projectile"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "water_projectile_other_arm"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "maximun.pulse.break"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "maximun.pulse.not.break"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "energyblast.throw.sound.multiple": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "playsound satsu_iron_man_addon:energyblast.throw ambient @a ~ ~ ~ 1 0"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "firework_projectile"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "firework_projectile.2"
+              }
+            ]
           }
         ]
       }
@@ -2668,6 +2796,7 @@
     "top_left": {
       "type": "palladium:gui_overlay",
       "title": "Top Left",
+      "description": { "translate": "description.iron.man.energy.pulse" },
       "texture": "#satsu_iron_man_addon:ark_energy",
       "texture_width": 32,
       "texture_height": 32,

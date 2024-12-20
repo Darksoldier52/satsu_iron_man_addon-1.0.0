@@ -1,0 +1,7 @@
+{
+  "energyblast.throw": {
+    "category": "player",
+    "sounds": ["satsu_iron_man_addon:energyblast"],
+    "subtitle": "energyblast"
+  }
+}
