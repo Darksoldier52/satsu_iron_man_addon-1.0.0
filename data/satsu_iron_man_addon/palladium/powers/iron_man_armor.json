@@ -1714,17 +1714,17 @@
     "stealht": {
       "type": "palladium:dummy",
       "icon": "m_ten:textures/gui/omnitrix/invis.png",
-      "bar_color": "orange",
+      "title": "stealht mode",
       "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 0,
+      "hidden_in_bar": false,
+      "list_index": -1,
       "gui_position": [-1, -1],
       "conditions": {
         "enabling": [
           {
             "type": "palladium:toggle",
             "cooldown": 0,
-            "key_type": "right_click",
+            "key_type": "key_bind",
             "needs_empty_hand": false
           }
         ],
@@ -1948,7 +1948,11 @@
         "execute as @s[scores={satsu.prev.iron.man.armor=4}] run title @s actionbar [\"\",{\"text\":\"unknow Armor\",\"color\":\"blue\"}]",
         "execute as @s[scores={satsu.prev.iron.man.armor=5}] run title @s actionbar [\"\",{\"text\":\"unknow Armor\",\"color\":\"blue\"}]",
         "execute as @s[scores={satsu.prev.iron.man.armor=6}] run title @s actionbar [\"\",{\"text\":\"Stealh Armor\",\"color\":\"blue\"}]",
-        "execute as @s[scores={satsu.prev.iron.man.armor=7}] run title @s actionbar [\"\",{\"text\":\"MK43 Rivals\",\"color\":\"blue\"}]"
+        "execute as @s[scores={satsu.prev.iron.man.armor=7}] run title @s actionbar [\"\",{\"text\":\"MK43 Rivals\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=8}] run title @s actionbar [\"\",{\"text\":\"Midas\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=9}] run title @s actionbar [\"\",{\"text\":\"MK40\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=10}] run title @s actionbar [\"\",{\"text\":\"unknow Armor\",\"color\":\"blue\"}]",
+        "execute as @s[scores={satsu.prev.iron.man.armor=11}] run title @s actionbar [\"\",{\"text\":\"MK 50\",\"color\":\"blue\"}]"
       ],
       "last_tick_commands": [
         "execute as @s run scoreboard players operation @s satsu.iron.man.armor = @s satsu.prev.iron.man.armor",
@@ -1989,7 +1993,7 @@
       "first_tick_commands": [],
       "commands": [
         "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s[scores={satsu.prev.iron.man.armor=0..7}] run scoreboard players add @s satsu.prev.iron.man.armor 1"
+        "execute as @s[scores={satsu.prev.iron.man.armor=0..10}] run scoreboard players add @s satsu.prev.iron.man.armor 1"
       ],
       "last_tick_commands": [],
       "conditions": {
@@ -2689,16 +2693,7 @@
       "rotate": [0, 0, 0],
       "scale": [1, 1, 1],
       "alignment": "top_left",
-      "hidden": true,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "null",
-            "ability": "test"
-          }
-        ]
-      }
+      "hidden": true
     },
     "commands_armor": {
       "type": "palladium:command",
@@ -2714,6 +2709,10 @@
         "execute as @s[scores={satsu.iron.man.armor=5}] run scoreboard players set @s satsu.iron.man.flame 0",
         "execute as @s[scores={satsu.iron.man.armor=6}] run scoreboard players set @s satsu.iron.man.flame 3",
         "execute as @s[scores={satsu.iron.man.armor=7}] run scoreboard players set @s satsu.iron.man.flame 10",
+        "execute as @s[scores={satsu.iron.man.armor=8}] run scoreboard players set @s satsu.iron.man.flame 5",
+        "execute as @s[scores={satsu.iron.man.armor=9}] run scoreboard players set @s satsu.iron.man.flame 9",
+        "execute as @s[scores={satsu.iron.man.armor=10}] run scoreboard players set @s satsu.iron.man.flame 7",
+        "execute as @s[scores={satsu.iron.man.armor=11}] run scoreboard players set @s satsu.iron.man.flame 2",
         "execute as @s[scores={satsu.iron.man.armor=0}] run scoreboard players set @s satsu.iron.man.durability 10",
         "execute as @s[scores={satsu.iron.man.armor=1}] run scoreboard players set @s satsu.iron.man.durability 35",
         "execute as @s[scores={satsu.iron.man.armor=2}] run scoreboard players set @s satsu.iron.man.durability 12",
@@ -2722,6 +2721,10 @@
         "execute as @s[scores={satsu.iron.man.armor=5}] run scoreboard players set @s satsu.iron.man.durability 37",
         "execute as @s[scores={satsu.iron.man.armor=6}] run scoreboard players set @s satsu.iron.man.durability 7",
         "execute as @s[scores={satsu.iron.man.armor=7}] run scoreboard players set @s satsu.iron.man.durability 11",
+        "execute as @s[scores={satsu.iron.man.armor=8}] run scoreboard players set @s satsu.iron.man.durability 23",
+        "execute as @s[scores={satsu.iron.man.armor=9}] run scoreboard players set @s satsu.iron.man.durability 24",
+        "execute as @s[scores={satsu.iron.man.armor=10}] run scoreboard players set @s satsu.iron.man.durability 28",
+        "execute as @s[scores={satsu.iron.man.armor=11}] run scoreboard players set @s satsu.iron.man.durability 24",
         "execute as @s[scores={satsu.iron.man.armor=0}] run scoreboard players set @s satsu.iron.man.strength 3",
         "execute as @s[scores={satsu.iron.man.armor=1}] run scoreboard players set @s satsu.iron.man.strength 33",
         "execute as @s[scores={satsu.iron.man.armor=2}] run scoreboard players set @s satsu.iron.man.strength 4",
@@ -2729,7 +2732,11 @@
         "execute as @s[scores={satsu.iron.man.armor=4}] run scoreboard players set @s satsu.iron.man.strength 7",
         "execute as @s[scores={satsu.iron.man.armor=5}] run scoreboard players set @s satsu.iron.man.strength 12",
         "execute as @s[scores={satsu.iron.man.armor=6}] run scoreboard players set @s satsu.iron.man.strength 13",
-        "execute as @s[scores={satsu.iron.man.armor=7}] run scoreboard players set @s satsu.iron.man.strength 7"
+        "execute as @s[scores={satsu.iron.man.armor=7}] run scoreboard players set @s satsu.iron.man.strength 7",
+        "execute as @s[scores={satsu.iron.man.armor=8}] run scoreboard players set @s satsu.iron.man.strength 20",
+        "execute as @s[scores={satsu.iron.man.armor=9}] run scoreboard players set @s satsu.iron.man.strength 20",
+        "execute as @s[scores={satsu.iron.man.armor=8}] run scoreboard players set @s satsu.iron.man.strength 23",
+        "execute as @s[scores={satsu.iron.man.armor=11}] run scoreboard players set @s satsu.iron.man.strength 8"
       ]
     },
     "voice_command.1": {

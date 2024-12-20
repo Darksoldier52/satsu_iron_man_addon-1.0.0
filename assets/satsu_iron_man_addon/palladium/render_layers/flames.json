@@ -38,9 +38,8 @@
             },
             {
               "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 8,
-              "max_score": 8
+              "objective": "satsu.iron.man.rbg.on.off",
+              "min_score": 0
             },
             {
               "type": "palladium:ability_enabled",
