@@ -2073,6 +2073,176 @@
         ]
       }
     },
+    "Hyper_speed.stat": {
+      "type": "gravestone:stat_ability",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "score_value": "satsu.iron.man.speed",
+      "Division_Amount": "10",
+      "Attribute_Type": "minecraft:generic.movement_speed",
+      "UUID": "3dc0b481-1081-4f5a-8cff-1e6766328c61",
+      "Attribute_Mod": "addition",
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 9,
+            "max_score": 9
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "Omnitrix_powers_stat_upgrades"
+          }
+        ]
+      }
+    },
+    "Hyper_speed.set": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.speed 6",
+        "scoreboard players set @s satsu.iron.man.flight_speed 7"
+      ],
+      "commands": [""],
+      "last_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.speed 6",
+        "scoreboard players set @s satsu.iron.man.flight_speed 6"
+      ],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 9,
+            "max_score": 9
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "Omnitrix_powers_stat_upgrades"
+          }
+        ]
+      }
+    },
+    "after_image": {
+      "type": "palladium:trail",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "title": "After Image",
+      "trail": "satsu_iron_man_addon:after_image_test",
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 9,
+            "max_score": 9
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "Omnitrix_powers_stat_upgrades"
+          }
+        ]
+      }
+    },
+    "Hyper_speed": {
+      "type": "palladium:command",
+      "icon": "m_ten:textures/gui/omnitrix/speed_up.png",
+      "title": "Increase speed",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [],
+      "commands": [
+        "execute as @s[scores={satsu.iron.man.speed=0..}] run scoreboard players add @s satsu.iron.man.speed 3",
+        "execute as @s[scores={satsu.iron.man.flight_speed=6..}] run scoreboard players add @s satsu.iron.man.flight_speed 3"
+      ],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "Omnitrix_powers_stat_upgrades"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "Hyper_speed.stat"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.speed",
+            "max_score": 21
+          }
+        ]
+      }
+    },
+    "remove.Hyper_speed": {
+      "type": "palladium:command",
+      "icon": "m_ten:textures/gui/omnitrix/speed_down.png",
+      "title": "Decrease Speed",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [],
+      "commands": [
+        "execute as @s[scores={satsu.iron.man.speed=3..}] run scoreboard players remove @s satsu.iron.man.speed 3",
+        "execute as @s[scores={satsu.iron.man.flight_speed=9..}] run scoreboard players remove @s satsu.iron.man.flight_speed 3"
+      ],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "Omnitrix_powers_stat_upgrades"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "Hyper_speed.stat"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.speed",
+            "min_score": 6
+          }
+        ]
+      }
+    },
     "choose_armor": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/dna_badge_off.png",

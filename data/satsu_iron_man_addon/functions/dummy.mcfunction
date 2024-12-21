@@ -26,7 +26,7 @@ scoreboard objectives add satsu.iron.man.armor.ark.energy dummy
 scoreboard objectives add satsu.iron.man.armor.ark.energy.max dummy
 scoreboard objectives add satsu.iron.man.armor.ark_energy_full_or_off dummy
 scoreboard objectives add satsu.iron.man.rbg.on.off dummy
-
+scoreboard objectives add satsu.iron.man.speed dummy
 scoreboard objectives add SatsuIronManArmorSkillPoint dummy
 scoreboard objectives add SatsuIronManArmorExp dummy
 scoreboard objectives add SatsuIronManArmorMobKills minecraft.custom:minecraft.mob_kills

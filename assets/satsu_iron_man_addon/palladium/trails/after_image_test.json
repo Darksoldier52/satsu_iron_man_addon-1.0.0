@@ -1,0 +1,17 @@
+{
+  "type": "palladium:compound",
+  "trails": [
+    {
+      "type": "palladium:gradient",
+      "spacing": 2,
+      "lifetime": 20,
+      "color": "#464c57"
+    },
+    {
+      "type": "palladium:after_image",
+      "spacing": 2,
+      "lifetime": 20,
+      "color": "#464c57"
+    }
+  ]
+}
