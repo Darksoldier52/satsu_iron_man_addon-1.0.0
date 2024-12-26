@@ -81,7 +81,7 @@
         ]
       }
     },
-    "flight_armors_fast_flying": {
+    "flight_armors_fast_flying_left_arm": {
       "type": "palladium:animation_timer",
       "hidden": true,
       "hidden_in_bar": true,
@@ -110,6 +110,14 @@
                     "ability": "personalization_armor"
                   },
                   {
+                    "type": "palladium:has_tag",
+                    "tag": "sel"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "ark.decharge"
+                  },
+                  {
                     "type": "palladium:ability_enabled",
                     "ability": "test"
                   }
@@ -120,7 +128,50 @@
         ]
       }
     },
-    "flight_armors_flying": {
+    "flight_armors_fast_flying_right_arm": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 6,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "Fast.fliyng"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "null",
+                    "ability": "personalization"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "null",
+                    "ability": "personalization_armor"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "ark.decharge"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "test"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "flight_armors_flying_right_arm": {
       "type": "palladium:animation_timer",
       "hidden": true,
       "hidden_in_bar": true,
@@ -149,6 +200,61 @@
                     "ability": "personalization_armor"
                   },
                   {
+                    "type": "palladium:has_tag",
+                    "tag": "sel"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "ark.decharge"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "test"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "flight_armors_flying_left_arm": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 6,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "fliyng"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "null",
+                    "ability": "personalization"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "null",
+                    "ability": "personalization_armor"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sel"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "ark.decharge"
+                  },
+                  {
                     "type": "palladium:ability_enabled",
                     "ability": "test"
                   }
@@ -170,6 +276,63 @@
           {
             "type": "palladium:has_tag",
             "tag": "light.saber.on"
+          }
+        ]
+      }
+    },
+    "ark_decharge": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 10,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "ark.decharge"
+          }
+        ]
+      }
+    },
+    "ark_decharge.1": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 5,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "ark.decharge"
+          },
+          {
+            "type": "palladium:animation_timer_ability",
+            "ability": "ark_decharge",
+            "min": 0,
+            "max": 5
+          }
+        ]
+      }
+    },
+    "ark_decharge.2": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 10,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "ark.decharge"
+          },
+          {
+            "type": "palladium:animation_timer_ability",
+            "ability": "ark_decharge",
+            "min": 5,
+            "max": 10
           }
         ]
       }

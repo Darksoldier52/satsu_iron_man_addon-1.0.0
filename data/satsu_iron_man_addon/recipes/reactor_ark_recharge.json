@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "copper_plumber_beacon",
+    "pattern": [
+        "RRR",
+        "RcR",
+        "RRR"
+    ],
+    "key": {
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "c": {
+            "item": "minecraft:glass"
+        }
+    },
+    "result": {
+        "item": "satsu_iron_man_addon:reactor_ark_recharge",
+        "count": 1
+    }
+  }

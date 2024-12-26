@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "copper_plumber_beacon",
+    "pattern": [
+        "CCC",
+        "RcR",
+        "cRc"
+    ],
+    "key": {
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "c": {
+            "item": "minecraft:iron_ingot"
+        },
+        "C": {
+            "item": "minecraft:copper_ingot"
+        }
+    },
+    "result": {
+        "item": "satsu_iron_man_addon:ark_baterry",
+        "count": 1
+    }
+  }

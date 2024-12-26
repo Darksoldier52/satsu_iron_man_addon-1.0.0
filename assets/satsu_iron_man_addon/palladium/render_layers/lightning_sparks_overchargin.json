@@ -1,0 +1,16 @@
+{
+  "type": "palladium:compound",
+  "layers": [
+    {
+      "type": "palladium:lightning_sparks",
+      "frequency": 0.5,
+      "amount": 5,
+      "core_color": "#1036e3",
+      "glow_color": "#aab8f4",
+      "core_opacity": 1.0,
+      "glow_opacity": 1.0,
+      "thickness": 0.05,
+      "normal_transparency": false
+    }
+  ]
+}

@@ -112,12 +112,42 @@ PalladiumEvents.registerAnimations((event) => {
   });
 });
 PalladiumEvents.registerAnimations((event) => {
-  event.register("satsu_iron_man_addon/fast_fly", 10, (builder) => {
+  event.register("satsu_iron_man_addon/fast_fly_left_arm", 10, (builder) => {
     // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0
     const progress = animationUtil.getAnimationTimerAbilityValue(
       builder.getPlayer(),
       "satsu_iron_man_addon:kube_animations",
-      "flight_armors_fast_flying",
+      "flight_armors_fast_flying_left_arm",
+      builder.getPartialTicks()
+    );
+
+    // only apply animation if progress is above 0!
+    if (
+      progress > 0 &&
+      !builder.isFirstPerson() &&
+      !builder.getPlayer().isSwimming()
+    )
+      if (progress > 0.0) {
+        const halfPi = 1.57079632679;
+        {
+          // third person animations
+          builder
+            .get("left_arm")
+            .setXRotDegrees(0)
+            .setZRotDegrees(-20)
+            .animate("InOutCubic", progress);
+          builder.get("chest").animate("InOutCubic", progress);
+        }
+      }
+  });
+});
+PalladiumEvents.registerAnimations((event) => {
+  event.register("satsu_iron_man_addon/fast_fly_right_arm", 10, (builder) => {
+    // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0
+    const progress = animationUtil.getAnimationTimerAbilityValue(
+      builder.getPlayer(),
+      "satsu_iron_man_addon:kube_animations",
+      "flight_armors_fast_flying_right_arm",
       builder.getPartialTicks()
     );
 
@@ -138,25 +168,16 @@ PalladiumEvents.registerAnimations((event) => {
             .animate("InOutCubic", progress);
           builder.get("chest").animate("InOutCubic", progress);
         }
-        {
-          // third person animations
-          builder
-            .get("left_arm")
-            .setXRotDegrees(0)
-            .setZRotDegrees(-20)
-            .animate("InOutCubic", progress);
-          builder.get("chest").animate("InOutCubic", progress);
-        }
       }
   });
 });
 PalladiumEvents.registerAnimations((event) => {
-  event.register("satsu_iron_man_addon/fly", 10, (builder) => {
+  event.register("satsu_iron_man_addon/fly_right_arm", 10, (builder) => {
     // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0
     const progress = animationUtil.getAnimationTimerAbilityValue(
       builder.getPlayer(),
       "satsu_iron_man_addon:kube_animations",
-      "flight_armors_flying",
+      "flight_armors_flying_right_arm",
       builder.getPartialTicks()
     );
 
@@ -177,6 +198,27 @@ PalladiumEvents.registerAnimations((event) => {
             .animate("InOutCubic", progress);
           builder.get("chest").animate("InOutCubic", progress);
         }
+      }
+  });
+});
+PalladiumEvents.registerAnimations((event) => {
+  event.register("satsu_iron_man_addon/fly_left_arm", 10, (builder) => {
+    // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0
+    const progress = animationUtil.getAnimationTimerAbilityValue(
+      builder.getPlayer(),
+      "satsu_iron_man_addon:kube_animations",
+      "flight_armors_flying_left_arm",
+      builder.getPartialTicks()
+    );
+
+    // only apply animation if progress is above 0!
+    if (
+      progress > 0 &&
+      !builder.isFirstPerson() &&
+      !builder.getPlayer().isSwimming()
+    )
+      if (progress > 0.0) {
+        const halfPi = 1.57079632679;
         {
           // third person animations
           builder
