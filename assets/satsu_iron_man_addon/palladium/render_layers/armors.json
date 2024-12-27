@@ -419,6 +419,22 @@
           "max_score": 1
         }
       ]
+    },
+    {
+      "type": "geckolib:default",
+      "model": {
+        "normal": "satsu_iron_man_addon:geo/energy_sword.geo.json",
+        "slim": "satsu_iron_man_addon:geo/energy_sword_slim.geo.json"
+      },
+      "texture": "satsu_iron_man_addon:textures/models/energy_sword.png",
+      "render_type": "glow",
+      "conditions": [
+        {
+          "type": "palladium:ability_enabled",
+          "power": "satsu_iron_man_addon:iron_man_armor",
+          "ability": "enable_sword"
+        }
+      ]
     }
   ]
 }

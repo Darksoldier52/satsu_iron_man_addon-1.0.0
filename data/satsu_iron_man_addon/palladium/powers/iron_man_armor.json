@@ -76,9 +76,7 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "scoreboard objectives add SatsuIronManArmorSkillPoint dummy",
-        "scoreboard objectives set @s SatsuIronManArmorSkillPoint 0",
         "scoreboard objectives add SatsuIronManArmorExp dummy",
-        "scoreboard objectives set @s SatsuIronManArmorExp 0",
         "scoreboard objectives add SatsuIronManArmorMobKills minecraft.custom:minecraft.mob_kills",
         "scoreboard objectives add SatsuIronManArmorDragonKills minecraft.killed:minecraft.ender_dragon",
         "scoreboard objectives add SatsuIronManArmorWitherKills minecraft.killed:minecraft.wither",
@@ -1854,6 +1852,15 @@
             "property": "value",
             "min": 16,
             "max": 16
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "satsu.iron.man.enable.sword"
+              }
+            ]
           }
         ]
       }
@@ -1897,6 +1904,15 @@
             "property": "value",
             "min": 16,
             "max": 16
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "satsu.iron.man.enable.sword"
+              }
+            ]
           }
         ]
       }
@@ -3755,6 +3771,274 @@
         ]
       }
     },
+    "enable_sword": {
+      "type": "palladium:dummy",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "satsu.iron.man.enable.sword"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived.perm",
+                "min_score": 1
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "min_score": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "alien"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "sword.destroy_speed": {
+      "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "gui_position": [-1, -2],
+      "attribute": "palladium:destroy_speed",
+      "amount": 5,
+      "operation": 0,
+      "uuid": "312be4fb-af04-42f2-8948-e6ccdc0d99e1",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "satsu.iron.man.enable.sword"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "alien"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "sword.punch_damage": {
+      "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "gui_position": [-1, -2],
+      "attribute": "palladium:punch_damage",
+      "amount": 3,
+      "operation": 0,
+      "uuid": "123be4fb-af04-42f2-8948-e6ccdc0d99e1",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "satsu.iron.man.enable.sword"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "alien"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "sword.no.objects.in.main.hand": {
+      "type": "palladium:restrict_slots",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "slots": ["mainhand"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "satsu.iron.man.enable.sword"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "alien"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "enable_sword.1": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/models/energy_sword.png",
+      "title": "Enable sword",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 100,
+      "first_tick_commands": ["tag @s add satsu.iron.man.enable.sword"],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "satsu.iron.man.permanet.sword"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "arms.move"
+              }
+            ]
+          },
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived.perm",
+                "min_score": 1
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "min_score": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "satsu.iron.man.enable.sword"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "alien"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "enable_sword.2": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/models/energy_sword.png",
+      "title": "Enable sword",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 100,
+      "first_tick_commands": ["tag @s remove satsu.iron.man.enable.sword"],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "satsu.iron.man.permanet.sword"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "arms.move"
+              }
+            ]
+          },
+          {
+            "type": "palladium:has_tag",
+            "tag": "satsu.iron.man.enable.sword"
+          },
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived.perm",
+                "min_score": 1
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "min_score": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "alien"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "top_left": {
       "type": "palladium:gui_overlay",
       "title": "Top Left",
@@ -3969,7 +4253,7 @@
         "enabling": [
           {
             "type": "palladium:activation",
-            "ticks": 40,
+            "ticks": 20,
             "cooldown": 0,
             "key_type": "key_bind",
             "needs_empty_hand": false,
@@ -4096,15 +4380,13 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "tag @s add satsu.iron.man.permanet.armor"
-      ],
+      "first_tick_commands": ["tag @s add satsu.iron.man.permanet.armor"],
       "commands": [""],
       "conditions": {
         "enabling": [
           {
             "type": "palladium:chat_action",
-            "chat_message": "Enable Armor permanent",
+            "chat_message": "Enable Armor",
             "cooldown": 0
           }
         ]
@@ -4114,15 +4396,45 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "tag @s remove satsu.iron.man.permanet.armor"
-      ],
+      "first_tick_commands": ["tag @s remove satsu.iron.man.permanet.armor"],
       "commands": [""],
       "conditions": {
         "enabling": [
           {
             "type": "palladium:chat_action",
-            "chat_message": "Disable Armor permanent",
+            "chat_message": "Disable Armor",
+            "cooldown": 0
+          }
+        ]
+      }
+    },
+    "voice_command_permanent_sword.7": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": ["tag @s add satsu.iron.man.permanet.sword"],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:chat_action",
+            "chat_message": "Enable Sword",
+            "cooldown": 0
+          }
+        ]
+      }
+    },
+    "voice_command_permanent_sword.8": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": ["tag @s remove satsu.iron.man.permanet.sword"],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:chat_action",
+            "chat_message": "Disable Sword",
             "cooldown": 0
           }
         ]
