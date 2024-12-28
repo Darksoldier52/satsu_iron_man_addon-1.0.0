@@ -3,8 +3,8 @@
 	"parent": "block/block",
 	"textures": {
 		"1": "satsu_iron_man_addon:block/ark_reactor_recharge",
-		"2": "satsu_iron_man_addon:block/ark_reactor_recharge_up",
-		"particle": "satsu_iron_man_addon:block/ark_reactor_recharge_up"
+		"2": "satsu_iron_man_addon:block/ark_reactor_recharge_up_off",
+		"particle": "satsu_iron_man_addon:block/ark_reactor_recharge_up_off"
 	},
 	"elements": [
 		{

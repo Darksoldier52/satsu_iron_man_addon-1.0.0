@@ -7,7 +7,8 @@
     "item.grave.ht.galvan_boots": "Galvan Boots",
     "item.grave.ht.galvan_workbench": "Galvan Workbench",
     "block.grave.ht.galvan_workbench.gui": "\uc700 \uc702\uc701",
-    "block.satsu_iron_man_addon.reactor_ark_recharge": "Ark energy block",
+    "block.satsu_iron_man_addon.reactor_ark_recharge_on": "Ark energy block On",
+    "block.satsu_iron_man_addon.reactor_ark_recharge_off": "Ark energy block Off",
 
     "itemGroup.grave.ht.watches": "Omnitrices",
     "itemGroup.grave.ht.tokens": "Alien Tokens",

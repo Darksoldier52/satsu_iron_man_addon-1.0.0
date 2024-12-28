@@ -4633,7 +4633,7 @@
         "enabling": [
           {
             "type": "palladium:command_result",
-            "command": "execute as @s if block ~ ~-1 ~ satsu_iron_man_addon:reactor_ark_recharge"
+            "command": "execute as @s if block ~ ~-1 ~ satsu_iron_man_addon:reactor_ark_recharge_on"
           }
         ]
       }
@@ -4650,14 +4650,14 @@
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:reactor_ark_recharge"
+                  "item": "satsu_iron_man_addon:reactor_ark_recharge_on"
                 },
                 "slot": "mainhand"
               },
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:reactor_ark_recharge"
+                  "item": "satsu_iron_man_addon:reactor_ark_recharge_on"
                 },
                 "slot": "offhand"
               }
@@ -4832,7 +4832,7 @@
       "hidden_in_bar": true,
       "first_tick_commands": [],
       "commands": [
-        "execute as @p run setblock ~ ~-1 ~ satsu_iron_man_addon:reactor_ark_recharge"
+        "execute as @p run setblock ~ ~-1 ~ satsu_iron_man_addon:reactor_ark_recharge_on"
       ],
       "conditions": {
         "enabling": [
