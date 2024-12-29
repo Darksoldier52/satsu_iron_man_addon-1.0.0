@@ -4853,6 +4853,10 @@
               {
                 "type": "palladium:ability_unlocked",
                 "ability": "ark.upgrade.thing.1"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "ability": "ark.upgrade.thing.3"
               }
             ]
           }
@@ -4872,6 +4876,17 @@
         "execute as @s run scoreboard players set @s satsu.iron.man.ark.upgraded 1"
       ],
       "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "ability": "ark.upgrade.thing.3"
+              }
+            ]
+          }
+        ],
         "unlocking": [
           {
             "type": "palladium:scoreboard_score_buyable",
@@ -4895,6 +4910,34 @@
         "enabling": [
           {
             "type": "palladium:toggle"
+          }
+        ]
+      }
+    },
+    "ark.upgrade.thing.3": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:reactor_ark_recharge_on",
+      "title": "Ark reactor update",
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, -4],
+      "description": "By unlocking this the ark reactor will recharge itself and will not overcharge so as not to damage you",
+      "first_tick_commands": [],
+      "commands": [
+        "execute as @s run scoreboard players set @s satsu.iron.man.ark.upgraded 2"
+      ],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "ark.upgrade.thing.1"
+          },
+          {
+            "type": "palladium:scoreboard_score_buyable",
+            "objective": "SatsuIronManArmorSkillPoint",
+            "score": 35,
+            "icon": "m_ten:textures/gui/omnitrix/ov_trix_master.png",
+            "description": { "text": "Omnitrix Skill Point" }
           }
         ]
       }
