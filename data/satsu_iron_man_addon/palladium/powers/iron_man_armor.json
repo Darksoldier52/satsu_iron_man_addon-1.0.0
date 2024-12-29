@@ -391,10 +391,19 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.closed.armors",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.closed.armors",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  }
+                ]
               }
             ]
           }
@@ -925,10 +934,21 @@
             ]
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.actived.perm",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived.perm",
+                "min_score": 1,
+                "max_score": 1
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -979,10 +999,21 @@
             ]
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.actived.perm",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived.perm",
+                "min_score": 1,
+                "max_score": 1
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -1544,10 +1575,21 @@
             "max_score": 1
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.actived.perm",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived.perm",
+                "min_score": 1,
+                "max_score": 1
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
           }
         ]
       }
@@ -1599,10 +1641,21 @@
             "max_score": 0
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.actived.perm",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived.perm",
+                "min_score": 1,
+                "max_score": 1
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
           }
         ]
       }
@@ -2587,9 +2640,7 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "execute as @s unless score @s satsu.iron.man.armor.actived.perm matches 0..1 run scoreboard players add @s satsu.iron.man.armor.actived.perm 1",
-        "execute as @s unless score @s satsu.iron.man.armor.actived.perm matches 0..1 run scoreboard players add @s satsu.iron.man.armor.actived 1",
-        "scoreboard players reset @s[scores={satsu.iron.man.armor.actived.perm=2..}] satsu.iron.man.armor.actived.perm",
-        "scoreboard players reset @s[scores={satsu.iron.man.armor.actived=2..}] satsu.iron.man.armor.actived",
+        "execute as @s unless score @s satsu.iron.man.armor.actived matches 0..1 run scoreboard players add @s satsu.iron.man.armor.actived 1",
         "scoreboard players add @s[scores={satsu.iron.man.closed.armors=1}] satsu.iron.man.closed.armors 1",
         "scoreboard players reset @s[scores={satsu.iron.man.closed.armors=2..}] satsu.iron.man.closed.armors"
       ],
@@ -4426,6 +4477,7 @@
       "hidden_in_bar": false,
       "list_index": 101,
       "gui_position": [-3, -0.5],
+      "first_tick_commands": ["tag @s add ark.decharge"],
       "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 3",
         "fill ~20 ~10 ~-20 ~20 ~ ~20 air replace stwr:force_block",
@@ -4457,7 +4509,8 @@
         "fill ^-20 ^-10 ^20 ^20 ^ ^20 air replace stwr:force_block",
         "fill ^-20 ^10 ^20 ^20 ^ ^-20 air replace stwr:force_block",
         "fill ^-20 ^-1 ^-20 ^1 ^-1 ^20 air replace stwr:force_block",
-        "fill ^20 ^-1 ^20 ^1 ^-1 ^20 air replace stwr:force_block"
+        "fill ^20 ^-1 ^20 ^1 ^-1 ^20 air replace stwr:force_block",
+        "tag @s remove ark.decharge"
       ],
       "conditions": {
         "enabling": [
@@ -4808,8 +4861,12 @@
     },
     "ark.upgrade.thing.1": {
       "type": "palladium:command",
-      "hidden": true,
+      "icon": "satsu_iron_man_addon:reactor_ark_recharge_on",
+      "title": "Ark reactor update",
+      "hidden": false,
       "hidden_in_bar": true,
+      "gui_position": [0, -3.3],
+      "description": "By unlocking this the ark reactor will recharge itself and will not overcharge so as not to damage you",
       "first_tick_commands": [],
       "commands": [
         "execute as @s run scoreboard players set @s satsu.iron.man.ark.upgraded 1"
@@ -4978,6 +5035,54 @@
             "type": "palladium:chat_action",
             "chat_message": "Disable Sword",
             "cooldown": 0
+          }
+        ]
+      }
+    },
+    "voice_command_permanent_mask.9": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.mask 1"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:chat_action",
+            "chat_message": "Enable mask",
+            "cooldown": 0
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "voice_command_permanent_mask.10": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.mask 0"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:chat_action",
+            "chat_message": "Disable mask",
+            "cooldown": 0
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
