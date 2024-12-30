@@ -9,7 +9,7 @@
     "action": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:reactor_ark_recharge_off",
-      "title": "activate omnitrix",
+      "title": "turn off",
       "bar_color": "green",
       "hidden": false,
       "hidden_in_bar": false,
@@ -23,6 +23,59 @@
         "enabling": [
           {
             "type": "palladium:action",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "m.ten.anodite",
+                    "min_score": 0
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "m.ten.osmosian",
+                    "min_score": 0
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "eon"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "toggle": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:reactor_ark_recharge_on",
+      "title": "recharge ark",
+      "bar_color": "green",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": 1,
+      "gui_position": [0, -2],
+      "first_tick_commands": ["tag @s add ark.recharge"],
+      "commands": ["function satsu_iron_man_addon:ark_recharge"],
+      "last_tick_commands": ["tag @s remove ark.recharge"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
             "cooldown": 0,
             "key_type": "key_bind",
             "needs_empty_hand": false

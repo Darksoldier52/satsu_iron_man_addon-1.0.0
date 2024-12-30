@@ -2169,7 +2169,7 @@
         ]
       }
     },
-    "water_projectile": {
+    "energy_projectile": {
       "type": "palladium:projectile",
       "hidden": true,
       "hidden_in_bar": true,
@@ -2206,7 +2206,7 @@
         ]
       }
     },
-    "water_projectile_other_arm": {
+    "energy_projectile_other_arm": {
       "type": "palladium:projectile",
       "hidden": true,
       "hidden_in_bar": true,
@@ -2243,6 +2243,72 @@
         ]
       }
     },
+    "energyblast.remove.ark.energy": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 15"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "energy_projectile"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "energy_projectile_other_arm"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "maximun.pulse.break"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "maximun.pulse.not.break"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "energyblast.remove.ark.energy.maximum_pulse": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 300"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "maximun.pulse.break"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "maximun.pulse.not.break"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "energyblast.throw.sound": {
       "type": "palladium:command",
       "hidden": true,
@@ -2259,12 +2325,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "null",
-                "ability": "water_projectile"
+                "ability": "energy_projectile"
               },
               {
                 "type": "palladium:ability_enabled",
                 "power": "null",
-                "ability": "water_projectile_other_arm"
+                "ability": "energy_projectile_other_arm"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -4691,34 +4757,6 @@
         ]
       }
     },
-    "recharge.ark.reactor.block.condition.2": {
-      "type": "palladium:dummy",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:item_in_slot",
-                "item": {
-                  "item": "satsu_iron_man_addon:reactor_ark_recharge_on"
-                },
-                "slot": "mainhand"
-              },
-              {
-                "type": "palladium:item_in_slot",
-                "item": {
-                  "item": "satsu_iron_man_addon:reactor_ark_recharge_on"
-                },
-                "slot": "offhand"
-              }
-            ]
-          }
-        ]
-      }
-    },
     "render_layer.lightning_sparks_overchargin": {
       "type": "palladium:render_layer",
       "render_layer": "satsu_iron_man_addon:lightning_sparks_overchargin",
@@ -4889,11 +4927,11 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "SatsuIronManArmorSkillPoint",
-            "score": 35,
-            "icon": "m_ten:textures/gui/omnitrix/ov_trix_master.png",
-            "description": { "text": "Omnitrix Skill Point" }
+            "type": "palladium:item_buyable",
+            "ingredient": {
+              "item": "satsu_iron_man_addon:reactor_ark_recharge_off"
+            },
+            "amount": 2
           }
         ]
       }
@@ -4921,7 +4959,7 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [0, -4],
-      "description": "By unlocking this the ark reactor will recharge itself and will not overcharge so as not to damage you",
+      "description": "By unlocking this the ark reactor will recharge itself and will not overcharge so as not to damage you when you are using the armor",
       "first_tick_commands": [],
       "commands": [
         "execute as @s run scoreboard players set @s satsu.iron.man.ark.upgraded 2"
@@ -4933,11 +4971,11 @@
             "ability": "ark.upgrade.thing.1"
           },
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "SatsuIronManArmorSkillPoint",
-            "score": 35,
-            "icon": "m_ten:textures/gui/omnitrix/ov_trix_master.png",
-            "description": { "text": "Omnitrix Skill Point" }
+            "type": "palladium:item_buyable",
+            "ingredient": {
+              "item": "satsu_iron_man_addon:reactor_ark_recharge_off"
+            },
+            "amount": 20
           }
         ]
       }
