@@ -2,6 +2,22 @@
   {
     "body_part": "right_arm",
     "glow_color": "#3ab2d7",
-    "offset": [15, 5, 3]
+    "offset": [15, 5, 3],
+    "core_color": "#FFAC1C",
+    "glow_opacity": 1,
+    "core_opacity": 0.5,
+    "size": [1, 1],
+    "bloom": 3,
+    "rotation": 10,
+    "rotation_speed": 8,
+    "particles": [
+      {
+        "particle_type": "minecraft:dust_color_transition",
+        "options": "0.98 0.98 0.98 4 0.98 0 0.9",
+        "amount": 10,
+        "motion": [1, 1, 1],
+        "motion_random": [1, 1, 1]
+      }
+    ]
   }
 ]
