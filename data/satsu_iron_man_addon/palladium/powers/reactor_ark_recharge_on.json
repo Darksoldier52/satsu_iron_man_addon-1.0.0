@@ -62,15 +62,21 @@
     },
     "toggle": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:reactor_ark_recharge_on",
+      "icon": "#satsu_iron_man_addon:ark_energy",
       "title": "recharge ark",
       "bar_color": "green",
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 1,
       "gui_position": [0, -2],
-      "first_tick_commands": ["tag @s add ark.recharge"],
-      "commands": ["function satsu_iron_man_addon:ark_recharge"],
+      "first_tick_commands": [
+        "tag @s add ark.recharge",
+        "tag @s add block.ark.recharge"
+      ],
+      "commands": [
+        "function satsu_iron_man_addon:ark_recharge",
+        "function satsu_iron_man_addon:block_ark_remove"
+      ],
       "last_tick_commands": ["tag @s remove ark.recharge"],
       "conditions": {
         "enabling": [
@@ -112,6 +118,21 @@
           }
         ]
       }
+    },
+    "remove": {
+      "type": "palladium:command",
+      "icon": "#satsu_iron_man_addon:ark_energy",
+      "title": "recharge ark",
+      "bar_color": "green",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 1,
+      "gui_position": [0, -2],
+      "first_tick_commands": [],
+      "commands": [
+        "execute as @s execute as @s[scores={satsu.iron.man.addon.ark.charge=999}] run tag @s remove block.ark.recharge"
+      ],
+      "last_tick_commands": []
     }
   }
 }

@@ -9,5 +9,5 @@ execute as @s[scores={satsu.iron.man.armor.ark.energy=500..5000}] run scoreboard
 execute as @s[scores={satsu.iron.man.armor.ark.energy=5000..9998}] run scoreboard players set @s satsu.iron.man.armor.ark_energy_full_or_off 2
 execute as @s[scores={satsu.iron.man.armor.ark.energy=0..200}] run scoreboard players set @s satsu.iron.man.armor.ark_energy_full_or_off 3
 execute as @s[scores={satsu.iron.man.armor.ark.energy=10000..}] run scoreboard players set @s satsu.iron.man.armor.ark_energy_full_or_off 4
-scoreboard players reset @s[scores={satsu.iron.man.armor.ark.energy=0}] satsu.iron.man.armor.actived.perm
-scoreboard players reset @s[scores={satsu.iron.man.armor.ark.energy=0}] satsu.iron.man.armor.actived
+scoreboard players reset @s[scores={satsu.iron.man.armor.ark.energy=..0}] satsu.iron.man.armor.actived.perm
+scoreboard players reset @s[scores={satsu.iron.man.armor.ark.energy=..0}] satsu.iron.man.armor.actived

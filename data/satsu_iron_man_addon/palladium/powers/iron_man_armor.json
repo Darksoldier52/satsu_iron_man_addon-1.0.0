@@ -444,7 +444,8 @@
       "list_index": 80,
       "first_tick_commands": [
         "tag @s add satsu.iron.man.enable.armor",
-        "scoreboard players set @s satsu.iron.man.armor.actived.perm 1"
+        "scoreboard players set @s satsu.iron.man.armor.actived.perm 1",
+        "scoreboard players set @s satsu.iron.man.armor.actived 1"
       ],
       "commands": [""],
       "last_tick_commands": [""],
@@ -493,7 +494,8 @@
       "list_index": 80,
       "first_tick_commands": [
         "tag @s remove satsu.iron.man.enable.armor",
-        "scoreboard players set @s satsu.iron.man.armor.actived.perm 2"
+        "scoreboard players set @s satsu.iron.man.armor.actived.perm 2",
+        "scoreboard players reset @s satsu.iron.man.armor.actived"
       ],
       "commands": [""],
       "last_tick_commands": [""],
@@ -1370,8 +1372,8 @@
       "last_tick_commands": [
         "scoreboard players add @s satsu.iron.man.armor.actived.perm 1",
         "scoreboard players add @s satsu.iron.man.armor.actived 1",
-        "scoreboard players reset @s[scores={satsu.iron.man.armor.actived.perm=2..}] satsu.iron.man.armor.actived.perm",
-        "scoreboard players reset @s[scores={satsu.iron.man.armor.actived=2..}] satsu.iron.man.armor.actived",
+        "scoreboard players reset @s[tag=satsu.iron.man.enable.armor,scores={satsu.iron.man.armor.actived.perm=2..}] satsu.iron.man.armor.actived.perm",
+        "scoreboard players reset @s[tag=satsu.iron.man.enable.armor,scores={satsu.iron.man.armor.actived=2..}] satsu.iron.man.armor.actived",
         "scoreboard players reset @s satsu.iron.man.armor.actived",
         "scoreboard players set @s satsu.iron.man.armor.actived 0"
       ],
@@ -1409,8 +1411,8 @@
       "commands": [
         "scoreboard players add @s satsu.iron.man.armor.actived.perm 1",
         "scoreboard players add @s satsu.iron.man.armor.actived 1",
-        "scoreboard players reset @s[scores={satsu.iron.man.armor.actived.perm=2..}] satsu.iron.man.armor.actived.perm",
-        "scoreboard players reset @s[scores={satsu.iron.man.armor.actived=2..}] satsu.iron.man.armor.actived"
+        "scoreboard players reset @s[tag=satsu.iron.man.enable.armor,scores={satsu.iron.man.armor.actived.perm=2..}] satsu.iron.man.armor.actived.perm",
+        "scoreboard players reset @s[tag=satsu.iron.man.enable.armor,scores={satsu.iron.man.armor.actived=2..}] satsu.iron.man.armor.actived"
       ],
       "last_tick_commands": [""],
       "conditions": {
