@@ -1,3 +1,9 @@
+
+scoreboard objectives add satsu.iron.man.mask dummy
+scoreboard objectives add satsu.iron.man.armor.actived.perm dummyy
+scoreboard objectives add satsu.iron.man.armor dummy
+scoreboard objectives add satsu.iron.man.armor.actived dummy
+scoreboard objectives add satsu.iron.man.armor.anim dummy
 scoreboard objectives add satsu.iron.man.flight_speed dummy
 scoreboard objectives add satsu.iron.man.flight_speed_max dummy
 scoreboard objectives add satsu.iron.man.unlock_sword dummy
