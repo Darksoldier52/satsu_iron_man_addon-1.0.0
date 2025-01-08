@@ -3,7 +3,7 @@
   "persistent_data": true,
   "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
   "background": "satsu_iron_man_addon:textures/gui/block/background.png",
-  "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+  "icon": "#satsu_iron_man_addon:armor_icon_ability",
   "gui_display_type": "tree",
   "primary_color": "#2af4f5",
   "secondary_color": "#0aacac",
@@ -476,7 +476,7 @@
     },
     "Armor_powers_stat_upgrades": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
       "title": "Armors Skill tree",
       "hidden": false,
       "hidden_in_bar": true,
@@ -534,8 +534,8 @@
     },
     "enable_armor.1": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
-      "title": "Armors Skill tree",
+      "icon": "#satsu_iron_man_addon:enable_armor_icon",
+      "title": "Activate armor",
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 80,
@@ -584,8 +584,8 @@
     },
     "enable_armor.2": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
-      "title": "Armors Skill tree",
+      "icon": "#satsu_iron_man_addon:enable_armor_icon",
+      "title": "Disable armor",
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 80,
@@ -1192,7 +1192,7 @@
     },
     "armor_activate": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "#satsu_iron_man_addon:enable_armor_icon",
       "title": "Activate armor",
       "hidden": false,
       "hidden_in_bar": false,
@@ -1233,7 +1233,7 @@
     },
     "armor_activate_crouch": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "#satsu_iron_man_addon:enable_armor_icon",
       "title": "Activate armor",
       "hidden": true,
       "hidden_in_bar": false,
@@ -1403,7 +1403,7 @@
     },
     "mask_activate": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "#satsu_iron_man_addon:mask_icon",
       "title": "Mask",
       "hidden": true,
       "hidden_in_bar": false,
@@ -2457,7 +2457,7 @@
     },
     "dummy": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
       "title": "Armor Edit",
       "hidden": false,
       "hidden_in_bar": true,
@@ -2478,7 +2478,7 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 0,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           }
         ]
@@ -2628,7 +2628,7 @@
     "flight_speed.move": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/5fly.png",
-      "title": "Activate armor",
+      "title": "Choose Speed",
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 15,
@@ -2706,7 +2706,7 @@
     "flight_speed": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "title": "Activate armor",
+      "title": "Increase speed",
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 16,
@@ -2755,7 +2755,7 @@
     "remove.flight_speed": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
-      "title": "Activate armor",
+      "title": "Decrease Speed",
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 17,
@@ -3352,7 +3352,7 @@
     },
     "choose_armor": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/dna_badge_off.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/choose_armor.png",
       "title": "Choose Armor",
       "hidden": false,
       "hidden_in_bar": false,
@@ -3390,7 +3390,7 @@
     },
     "choose.armor.move": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/on.png",
+      "icon": "#satsu_iron_man_addon:choose_armor",
       "title": "Choose",
       "hidden": true,
       "hidden_in_bar": false,
@@ -3529,9 +3529,9 @@
         ]
       }
     },
-    "Mk1": {
+    "Satsu.Armor.13.Mk1": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/dna_badge_off.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_13.png",
       "title": "Mark 1",
       "hidden": false,
       "hidden_in_bar": true,
@@ -3544,7 +3544,7 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 0,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
@@ -3555,35 +3555,34 @@
         ]
       }
     },
-    "MK43": {
+    "Satsu.Armor.2.MK43": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/dna_badge_off.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_2.png",
       "title": "Mark 43",
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [-1, 1],
       "description": "",
-      "commands": "scoreboard players set @s satsu.iron.man.armor.7.unlock 1",
+      "commands": "scoreboard players set @s satsu.iron.man.armor.2.unlock 1",
       "conditions": {
         "unlocking": [
           {
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 43,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.13.Mk1"
           }
         ]
       }
     },
-    "MK40": {
+    "Satsu.Armor.9.MK40": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/dna_badge_off.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_9.png",
       "title": "Mark 40",
       "hidden": false,
       "hidden_in_bar": true,
@@ -3596,20 +3595,19 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 40,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.13.Mk1"
           }
         ]
       }
     },
-    "Mk47": {
+    "Satsu.Armor.0.Mk47": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/dna_badge_off.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_0.png",
       "title": "Mark 47",
       "hidden": false,
       "hidden_in_bar": true,
@@ -3622,20 +3620,19 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 47,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.13.Mk1"
           }
         ]
       }
     },
-    "Superior": {
+    "Satsu.Armor.1.MKSuperior": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/dna_badge_off.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_1.png",
       "title": "Superior Armor",
       "hidden": false,
       "hidden_in_bar": true,
@@ -3648,20 +3645,19 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 50,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.13.Mk1"
           }
         ]
       }
     },
-    "Stealh_Armor": {
+    "Satsu.Armor.6.MKStealh_Armor": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/dna_badge_off.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_6.png",
       "title": "Stealh Armor",
       "hidden": false,
       "hidden_in_bar": true,
@@ -3674,20 +3670,19 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 16,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.13.Mk1"
           }
         ]
       }
     },
-    "MK50": {
+    "Satsu.Armor.11.MK50": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/dna_badge_off.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
       "title": "Mark 50",
       "hidden": false,
       "hidden_in_bar": true,
@@ -3700,20 +3695,19 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 50,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.13.Mk1"
           }
         ]
       }
     },
-    "Midas": {
+    "Satsu.Armor.8.MKMidas": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/dna_badge_off.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
       "title": "Midas Armor",
       "hidden": false,
       "hidden_in_bar": true,
@@ -3726,13 +3720,12 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 8,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.13.Mk1"
           }
         ]
       }
@@ -4114,7 +4107,7 @@
     },
     "break": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
       "title": "Break",
       "hidden": false,
       "hidden_in_bar": true,
@@ -4138,7 +4131,7 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 0,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           }
         ]
@@ -4780,7 +4773,7 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 35,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
@@ -4819,7 +4812,7 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 80,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
@@ -4868,7 +4861,7 @@
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
             "score": 20,
-            "icon": "satsu_iron_man_addon:textures/gui/iron_man/armor.png",
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
             "description": { "text": "Armor Skill Point" }
           },
           {
