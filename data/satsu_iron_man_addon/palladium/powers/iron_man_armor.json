@@ -92,6 +92,7 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "scoreboard objectives add SatsuIronManArmorSkillPoint dummy",
+        "execute as @s unless score @s SatsuIronManArmorSkillPoint matches ..0 run scoreboard players set @s SatsuIronManArmorSkillPoint 0",
         "scoreboard objectives add SatsuIronManArmorExp dummy",
         "scoreboard objectives add SatsuIronManArmorMobKills minecraft.custom:minecraft.mob_kills",
         "scoreboard objectives add SatsuIronManArmorDragonKills minecraft.killed:minecraft.ender_dragon",
@@ -101,7 +102,7 @@
       ],
       "last_tick_commands": [],
       "commands": [
-        "execute as @s unless score @s SatsuIronManArmorSkillPoint matches ..30 run scoreboard players add @s[scores={satsu.iron.man.armor=13}] SatsuIronManArmorExp 30",
+        "execute as @s[scores={SatsuIronManArmorSkillPoint=..30}] run scoreboard players add @s[scores={satsu.iron.man.armor=13}] SatsuIronManArmorExp 30",
         "execute as @s run scoreboard players add @s[scores={satsu.iron.man.armor=0..12}] SatsuIronManArmorExp 1"
       ],
       "conditions": {
