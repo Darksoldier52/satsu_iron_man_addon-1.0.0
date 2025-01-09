@@ -2657,6 +2657,17 @@
             "objective": "satsu.iron.man.personalize.things",
             "min_score": 1,
             "max_score": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor",
+                "min_score": 13,
+                "max_score": 13
+              }
+            ]
           }
         ]
       }
@@ -2946,6 +2957,28 @@
             "objective": "satsu.iron.man.personalize.things",
             "min_score": 1,
             "max_score": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor",
+                    "min_score": 13,
+                    "max_score": 13
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor",
+                    "min_score": 14,
+                    "max_score": 14
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3541,7 +3574,7 @@
       "first_tick_commands": [],
       "commands": [
         "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s[scores={satsu.prev.iron.man.armor=0..12}] run scoreboard players add @s satsu.prev.iron.man.armor 1"
+        "execute as @s[scores={satsu.prev.iron.man.armor=0..13}] run scoreboard players add @s satsu.prev.iron.man.armor 1"
       ],
       "last_tick_commands": [],
       "conditions": {
@@ -3666,6 +3699,32 @@
         ]
       }
     },
+    "Satsu.Armor.14.Mk2": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_14.png",
+      "title": "Mark 1",
+      "description": { "translate": "description.iron.man.mark.2" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [1, 1],
+      "commands": "scoreboard players set @s satsu.iron.man.armor.mk2.unlock 1",
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:scoreboard_score_buyable",
+            "objective": "SatsuIronManArmorSkillPoint",
+            "score": 0,
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
+            "description": { "text": "Armor Skill Point" }
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
+          }
+        ]
+      }
+    },
     "Satsu.Armor.2.MK43": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_2.png",
@@ -3698,7 +3757,7 @@
       "description": { "translate": "description.iron.man.mark.40" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [1, 1],
+      "gui_position": [2, 1],
       "commands": "scoreboard players set @s satsu.iron.man.armor.9.unlock 1",
       "conditions": {
         "unlocking": [
@@ -3723,7 +3782,7 @@
       "description": { "translate": "description.iron.man.mark.47" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [2, 1],
+      "gui_position": [-2, 1],
       "commands": "scoreboard players set @s satsu.iron.man.armor.47.unlock 1",
       "conditions": {
         "unlocking": [
@@ -3748,7 +3807,7 @@
       "description": { "translate": "description.iron.man.superior.armor" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [-2, 1],
+      "gui_position": [3, 1],
       "commands": "scoreboard players set @s satsu.iron.man.armor.superior.unlock 1",
       "conditions": {
         "unlocking": [
@@ -3773,7 +3832,7 @@
       "description": { "translate": "description.iron.man.mark.Stealh" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [3, 1],
+      "gui_position": [-3, 1],
       "commands": "scoreboard players set @s satsu.iron.man.armor.6.unlock 1",
       "conditions": {
         "unlocking": [
@@ -3798,7 +3857,7 @@
       "description": { "translate": "description.iron.man.mark.50" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [-3, 1],
+      "gui_position": [4, 1],
       "commands": "scoreboard players set @s satsu.iron.man.armor.11.unlock 1",
       "conditions": {
         "unlocking": [
@@ -3823,7 +3882,7 @@
       "description": { "translate": "description.iron.man.mark.Midas" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [4, 1],
+      "gui_position": [-4, 1],
       "commands": "scoreboard players set @s satsu.iron.man.armor.8.unlock 1",
       "conditions": {
         "unlocking": [
@@ -3902,6 +3961,28 @@
             "objective": "satsu.iron.man.personalize.things",
             "min_score": 1,
             "max_score": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor",
+                    "min_score": 13,
+                    "max_score": 13
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor",
+                    "min_score": 14,
+                    "max_score": 14
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

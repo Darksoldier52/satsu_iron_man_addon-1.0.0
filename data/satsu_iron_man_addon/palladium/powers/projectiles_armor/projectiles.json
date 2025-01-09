@@ -54,8 +54,8 @@
         "Lifetime": 60,
         "DieOnEntityHit": true,
         "DieOnBlockHit": true,
-        "CommandOnEntityHit": "function satsu_iron_man_addon:function satsu_iron_man_addon:projectiles/pulse",
-        "CommandOnBlockHit": "function satsu_iron_man_addon:function satsu_iron_man_addon:projectiles/pulse",
+        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/pulse",
+        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/pulse",
         "Appearances": [
           {
             "Type": "laser",
@@ -102,8 +102,8 @@
         "Lifetime": 60,
         "DieOnEntityHit": true,
         "DieOnBlockHit": true,
-        "CommandOnEntityHit": "function satsu_iron_man_addon:function satsu_iron_man_addon:projectiles/pulse",
-        "CommandOnBlockHit": "function satsu_iron_man_addon:function satsu_iron_man_addon:projectiles/pulse",
+        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/pulse",
+        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/pulse",
         "Appearances": [
           {
             "Type": "laser",
