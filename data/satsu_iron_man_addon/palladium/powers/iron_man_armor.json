@@ -5098,6 +5098,9 @@
     },
     "decharge.ark.reactor": {
       "type": "palladium:command",
+      "title": "Energy expulse",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/5bolt.png",
+      "description": { "translate": "ability.satsu.none" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 800,
