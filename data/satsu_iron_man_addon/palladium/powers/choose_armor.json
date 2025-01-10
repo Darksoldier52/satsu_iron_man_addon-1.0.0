@@ -77,7 +77,7 @@
         ]
       }
     },
-    "choose.armor.13.mk.2": {
+    "choose.armor.13.mk.1": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
       "title": "Next armor",
@@ -86,19 +86,17 @@
       "list_index": 1,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
-      "commands": [
-        "execute as @s unless score @s satsu.iron.man.choose_armor matches 0..100 run scoreboard players set @s satsu.iron.man.choose_armor 13"
-      ],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 13"],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "next.armor.choose.armor"
-          }
-        ],
+        "enabling": [],
         "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 1,
+            "max_score": 1
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:iron_man_armor",
@@ -121,27 +119,23 @@
       "list_index": 1,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s[scores={satsu.iron.man.armor.mk2.unlock=1}] as @s[scores={satsu.iron.man.choose_armor=13}] run scoreboard players set @s satsu.iron.man.choose_armor 14",
-        "execute as @s unless score @s satsu.iron.man.armor.mk2.unlock matches 0.. as @s[scores={satsu.iron.man.choose_armor=13}] run scoreboard players set @s satsu.iron.man.choose_armor 13"
-      ],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 14"],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [
+        "enabling": [],
+        "unlocking": [
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor",
-            "min_score": 13,
-            "max_score": 13
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 2,
+            "max_score": 2
           },
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "next.armor.choose.armor"
-          }
-        ],
-        "unlocking": [
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.mk2.unlock",
+            "min_score": 1,
+            "max_score": 1
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:iron_man_armor",
@@ -164,27 +158,23 @@
       "list_index": 1,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s unless score @s satsu.iron.man.armor.6.unlock matches 0.. as @s[scores={satsu.iron.man.choose_armor=14}] run scoreboard players set @s satsu.iron.man.choose_armor 8",
-        "execute as @s[scores={satsu.iron.man.armor.6.unlock=1}] as @s[scores={satsu.iron.man.choose_armor=14}] run scoreboard players set @s satsu.iron.man.choose_armor 6"
-      ],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 6"],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [
+        "enabling": [],
+        "unlocking": [
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor",
-            "min_score": 14,
-            "max_score": 14
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 3,
+            "max_score": 3
           },
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "next.armor.choose.armor"
-          }
-        ],
-        "unlocking": [
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.6.unlock",
+            "min_score": 1,
+            "max_score": 1
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:iron_man_armor",
@@ -207,27 +197,23 @@
       "list_index": 1,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s unless score @s satsu.iron.man.armor.8.unlock matches 0.. as @s[scores={satsu.iron.man.choose_armor=6}] run scoreboard players set @s satsu.iron.man.choose_armor 15",
-        "execute as @s[scores={satsu.iron.man.armor.8.unlock=1}] as @s[scores={satsu.iron.man.choose_armor=6}] run scoreboard players set @s satsu.iron.man.choose_armor 8"
-      ],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 8"],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [
+        "enabling": [],
+        "unlocking": [
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor",
-            "min_score": 6,
-            "max_score": 6
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 4,
+            "max_score": 4
           },
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "next.armor.choose.armor"
-          }
-        ],
-        "unlocking": [
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.8.unlock",
+            "min_score": 1,
+            "max_score": 1
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:iron_man_armor",
@@ -250,27 +236,23 @@
       "list_index": 1,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s unless score @s satsu.iron.man.armor.8.unlock matches 0.. as @s[scores={satsu.iron.man.choose_armor=8}] run scoreboard players set @s satsu.iron.man.choose_armor 15",
-        "execute as @s[scores={satsu.iron.man.armor.8.unlock=1}] as @s[scores={satsu.iron.man.choose_armor=8}] run scoreboard players set @s satsu.iron.man.choose_armor 15"
-      ],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 15"],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [
+        "enabling": [],
+        "unlocking": [
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor",
-            "min_score": 8,
-            "max_score": 8
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 5,
+            "max_score": 5
           },
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "next.armor.choose.armor"
-          }
-        ],
-        "unlocking": [
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.15.mk30.unlock",
+            "min_score": 1,
+            "max_score": 1
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:iron_man_armor",
@@ -293,27 +275,23 @@
       "list_index": 1,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s unless score @s satsu.iron.man.armor.6.unlock matches 0.. as @s[scores={satsu.iron.man.choose_armor=15}] run scoreboard players set @s satsu.iron.man.choose_armor 9",
-        "execute as @s[scores={satsu.iron.man.armor.8.unlock=1}] as @s[scores={satsu.iron.man.choose_armor=15}] run scoreboard players set @s satsu.iron.man.choose_armor 9"
-      ],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 9"],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [
+        "enabling": [],
+        "unlocking": [
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor",
-            "min_score": 15,
-            "max_score": 15
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 6,
+            "max_score": 6
           },
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "next.armor.choose.armor"
-          }
-        ],
-        "unlocking": [
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.9.unlock",
+            "min_score": 1,
+            "max_score": 1
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:iron_man_armor",
@@ -336,27 +314,23 @@
       "list_index": 1,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s unless score @s satsu.iron.man.armor.8.unlock matches 0.. as @s[scores={satsu.iron.man.choose_armor=9}] run scoreboard players set @s satsu.iron.man.choose_armor 2",
-        "execute as @s[scores={satsu.iron.man.armor.8.unlock=1}] as @s[scores={satsu.iron.man.choose_armor=9}] run scoreboard players set @s satsu.iron.man.choose_armor 2"
-      ],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 2"],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [
+        "enabling": [],
+        "unlocking": [
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor",
-            "min_score": 9,
-            "max_score": 9
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 7,
+            "max_score": 7
           },
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "next.armor.choose.armor"
-          }
-        ],
-        "unlocking": [
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.43.unlock",
+            "min_score": 1,
+            "max_score": 1
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:iron_man_armor",
@@ -379,27 +353,23 @@
       "list_index": 1,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s unless score @s satsu.iron.man.armor.8.unlock matches 0.. as @s[scores={satsu.iron.man.choose_armor=2}] run scoreboard players set @s satsu.iron.man.choose_armor 0",
-        "execute as @s[scores={satsu.iron.man.armor.8.unlock=1}] as @s[scores={satsu.iron.man.choose_armor=2}] run scoreboard players set @s satsu.iron.man.choose_armor 0"
-      ],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 0"],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [
+        "enabling": [],
+        "unlocking": [
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor",
-            "min_score": 2,
-            "max_score": 2
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 8,
+            "max_score": 8
           },
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "next.armor.choose.armor"
-          }
-        ],
-        "unlocking": [
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.47.unlock",
+            "min_score": 1,
+            "max_score": 1
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:iron_man_armor",
@@ -422,27 +392,23 @@
       "list_index": 1,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s unless score @s satsu.iron.man.armor.8.unlock matches 0.. as @s[scores={satsu.iron.man.choose_armor=0}] run scoreboard players set @s satsu.iron.man.choose_armor 11",
-        "execute as @s[scores={satsu.iron.man.armor.8.unlock=1}] as @s[scores={satsu.iron.man.choose_armor=0}] run scoreboard players set @s satsu.iron.man.choose_armor 11"
-      ],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 11"],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [
+        "enabling": [],
+        "unlocking": [
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor",
-            "min_score": 0,
-            "max_score": 0
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 9,
+            "max_score": 9
           },
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man_armor",
-            "ability": "next.armor.choose.armor"
-          }
-        ],
-        "unlocking": [
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.11.unlock",
+            "min_score": 1,
+            "max_score": 1
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:iron_man_armor",
@@ -465,20 +431,51 @@
       "list_index": 1,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.armor.anim 0",
-        "execute as @s unless score @s satsu.iron.man.armor.8.unlock matches 0.. as @s[scores={satsu.iron.man.choose_armor=11}] run scoreboard players set @s satsu.iron.man.choose_armor 1",
-        "execute as @s[scores={satsu.iron.man.armor.8.unlock=1}] as @s[scores={satsu.iron.man.choose_armor=11}] run scoreboard players set @s satsu.iron.man.choose_armor 1"
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 1"],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 10,
+            "max_score": 10
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.superior.unlock",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "choose.armor.move"
+          }
+        ]
+      }
+    },
+    "choose.armor.increase": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": "Next armor",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 1,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [
+        "scoreboard players add @s satsu.iron.man.choose_armor.test 1"
       ],
+      "commands": [""],
       "last_tick_commands": [],
       "conditions": {
         "enabling": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor",
-            "min_score": 11,
-            "max_score": 11
-          },
           {
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:iron_man_armor",
@@ -508,16 +505,7 @@
       "list_index": 2,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [
-        "execute as @s[scores={satsu.iron.man.choose_armor=14}] run scoreboard players set @s satsu.iron.man.choose_armor 13",
-        "execute as @s[scores={satsu.iron.man.choose_armor=6}] run scoreboard players set @s satsu.iron.man.choose_armor 14",
-        "execute as @s[scores={satsu.iron.man.armor.6.unlock=1}] as @s[scores={satsu.iron.man.choose_armor=8}] run scoreboard players set @s satsu.iron.man.choose_armor 6",
-        "execute as @s unless score @s satsu.iron.man.armor.6.unlock matches 0.. as @s[scores={satsu.iron.man.choose_armor=8}] run scoreboard players set @s satsu.iron.man.choose_armor 14",
-        "execute as @s[scores={satsu.iron.man.choose_armor=15}] run scoreboard players set @s satsu.iron.man.choose_armor 8",
-        "execute as @s[scores={satsu.iron.man.choose_armor=9}] run scoreboard players set @s satsu.iron.man.choose_armor 15",
-        "execute as @s[scores={satsu.iron.man.choose_armor=2}] run scoreboard players set @s satsu.iron.man.choose_armor 9",
-        "execute as @s[scores={satsu.iron.man.choose_armor=0}] run scoreboard players set @s satsu.iron.man.choose_armor 2",
-        "execute as @s[scores={satsu.iron.man.choose_armor=11}] run scoreboard players set @s satsu.iron.man.choose_armor 0",
-        "execute as @s[scores={satsu.iron.man.choose_armor=1}] run scoreboard players set @s satsu.iron.man.choose_armor 11"
+        "scoreboard players remove @s satsu.iron.man.choose_armor.test 1"
       ],
       "commands": [""],
       "last_tick_commands": [],
@@ -544,11 +532,6 @@
                 "ability": "choose.armor.move"
               }
             ]
-          },
-          {
-            "type": "palladium:interval",
-            "active_ticks": 100,
-            "disabled_ticks": 0
           }
         ]
       }
