@@ -3657,10 +3657,10 @@
     "choose.armor.set": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
-      "title": "Prev armor",
+      "title": "Set",
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 12,
+      "list_index": 13,
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [],
       "commands": [

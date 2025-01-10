@@ -1,6 +1,6 @@
 
 scoreboard players set @s satsu.iron.man.choose_armor.anim 0
-execute as @s unless score @s satsu.iron.man.choose_armor matches 0.. run scoreboard players set @s satsu.iron.man.choose_armor 0
+execute as @s unless score @s satsu.iron.man.choose_armor matches 0.. run scoreboard players set @s satsu.iron.man.choose_armor 13
 execute as @s[scores={satsu.iron.man.choose_armor=0}] run title @s actionbar {"text":"MK 47 armor","color":"blue"}
 execute as @s[scores={satsu.iron.man.choose_armor=1}] run title @s actionbar {"text":"superior armor","color":"blue"}
 execute as @s[scores={satsu.iron.man.choose_armor=1}] unless score @s satsu.iron.man.mask matches 0.. run scoreboard players set @s satsu.iron.man.mask 0
