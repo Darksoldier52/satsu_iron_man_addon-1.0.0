@@ -16,3 +16,4 @@ execute as @s[scores={satsu.iron.man.armor=11}] run function satsu_iron_man_addo
 execute as @s[scores={satsu.iron.man.armor=12}] run function satsu_iron_man_addon:armors/armor_12
 execute as @s[scores={satsu.iron.man.armor=13}] run function satsu_iron_man_addon:armors/armor_13
 execute as @s[scores={satsu.iron.man.armor=14}] run function satsu_iron_man_addon:armors/armor_14
+execute as @s[scores={satsu.iron.man.armor=15}] run function satsu_iron_man_addon:armors/armor_15
