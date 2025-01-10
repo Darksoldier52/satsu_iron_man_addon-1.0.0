@@ -44,12 +44,12 @@
             {
               "type": "palladium:ability_enabled",
               "power": "satsu_iron_man_addon:iron_man_armor",
-              "ability": "animation.projectile.mk1..1"
+              "ability": "animation.projectile.mk1.1"
             },
             {
               "type": "palladium:ability_enabled",
               "power": "satsu_iron_man_addon:iron_man_armor",
-              "ability": "animation.projectile.mk1..3"
+              "ability": "animation.projectile.mk1.3"
             },
             {
               "type": "palladium:objective_score",
