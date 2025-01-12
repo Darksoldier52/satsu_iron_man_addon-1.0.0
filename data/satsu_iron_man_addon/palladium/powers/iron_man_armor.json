@@ -3648,6 +3648,11 @@
             "description": { "text": "Armor Skill Point" }
           },
           {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.symbiote.metalized",
+            "min_score": 0
+          },
+          {
             "type": "palladium:ability_unlocked",
             "ability": "Satsu.Armor.13.Mk1"
           }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "copper_plumber_beacon",
+  "pattern": [
+      "#G#",
+      "G#G",
+      "#G#"
+  ],
+  "key": {
+      "#": {
+          "item": "minecraft:iron_ingot"
+      },
+      "G": {
+          "item": "minecraft:slime_ball"
+      }
+  },
+  "result": {
+      "item": "satsu_iron_man_addon:symbiote_metalized",
+      "count": 1
+  }
+}

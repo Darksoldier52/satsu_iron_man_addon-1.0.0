@@ -2,6 +2,7 @@
     
     "item.satsu_iron_man_addon.ark_reactor": "Ark reactor",
     "item.satsu_iron_man_addon.ark_baterry": "Ark batery",
+    "item.satsu_iron_man_addon.symbiote_metalized": "symbiote metalized",
     "block.satsu_iron_man_addon.reactor_ark_recharge_on": "Ark energy block On",
     "block.satsu_iron_man_addon.reactor_ark_recharge_off": "Ark energy block Off",
     "description.Armor_powers_stat_upgrades": "This is the skill tree that will allow you to unlock your various Iron man armors",
@@ -21,6 +22,7 @@
     "description.iron.man.mark.Iron.destroyer": "An armor of uru that possesses magical properties",
     "description.ark.upgrade.thing.1": "By unlocking this the ark reactor will recharge itself and will not overcharge so as not to damage you",
     "description.ark.upgrade.thing.2": "By unlocking this the ark reactor will recharge itself and will not overcharge so as not to damage you when you are using the armor",
+    "description.iron.man.symbiote_metalized": "A symbiote made of metal capable of enhancing your abilities.",
     "ability.satsu.flight": "When you have some armor in place you will have the ability to fly",
     "ability.satsu.none": "",
     "ability.satsu.energy_beam": "Launch an energy beam from your ark reactor",
