@@ -39,6 +39,76 @@
         ]
       }
     },
+    "firework_projectile": {
+      "type": "palladium:projectile_script",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "entity_type": "palladium:custom_projectile",
+      "x_offset": 0,
+      "z_offset": 1.5,
+      "entity_data": {
+        "KnockbackStrength": 0,
+        "Damage": 10,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 60,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "function satsu_iron_man_addon:fire_work",
+        "CommandOnBlockHit": "function satsu_iron_man_addon:fire_work",
+        "Appearances": [
+          {
+            "Type": "renderLayer",
+            "RenderLayer": "satsu_iron_man_addon:fireworks"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "animation.projectile.2"
+          }
+        ]
+      }
+    },
+    "firework_projectile.2": {
+      "type": "palladium:projectile_script",
+      "entity_type": "palladium:custom_projectile",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "velocity": 2.5,
+      "swinging_arm": "none",
+      "x_offset": 0,
+      "z_offset": -1.5,
+      "entity_data": {
+        "KnockbackStrength": 0,
+        "Damage": 10,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 60,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "function satsu_iron_man_addon:fire_work",
+        "CommandOnBlockHit": "function satsu_iron_man_addon:fire_work",
+        "Appearances": [
+          {
+            "Type": "renderLayer",
+            "RenderLayer": "satsu_iron_man_addon:fireworks_2"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:iron_man_armor",
+            "ability": "animation.projectile.2"
+          }
+        ]
+      }
+    },
     "energy_projectile": {
       "type": "palladium:projectile",
       "hidden": true,
@@ -336,12 +406,12 @@
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:iron_man_armor",
+                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "firework_projectile"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:iron_man_armor",
+                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "firework_projectile.2"
               }
             ]
@@ -353,10 +423,10 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
+      "first_tick_commands": [""],
+      "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 1"
       ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
@@ -364,22 +434,22 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:iron_man_armor",
+                "power": "satsu_iron_man_addon:energy_beams/energy_beams",
                 "ability": "energy_beam"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:iron_man_armor",
+                "power": "satsu_iron_man_addon:energy_beams/energy_beams",
                 "ability": "energy_beam.2"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:iron_man_armor",
+                "power": "satsu_iron_man_addon:energy_beams/energy_beams",
                 "ability": "energy_beam.3"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:iron_man_armor",
+                "power": "satsu_iron_man_addon:energy_beams/energy_beams",
                 "ability": "energy_beam.4"
               }
             ]
@@ -402,12 +472,12 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:iron_man_armor",
+                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "firework_projectile"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:iron_man_armor",
+                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "firework_projectile.2"
               }
             ]
@@ -506,12 +576,12 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:iron_man_armor",
+                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "firework_projectile"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:iron_man_armor",
+                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "firework_projectile.2"
               }
             ]
