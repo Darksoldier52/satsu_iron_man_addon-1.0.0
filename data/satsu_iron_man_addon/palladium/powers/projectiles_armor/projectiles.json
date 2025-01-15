@@ -137,6 +137,38 @@
         ]
       }
     },
+    "mk1_flame_right": {
+      "type": "palladium:particles",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "emitter": ["grave.core:util/ray_right"],
+      "particle_type": "minecraft:flame",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor/iron_man_armor",
+            "ability": "animation.projectile.mk1.1"
+          }
+        ]
+      }
+    },
+    "mk1_flame_left": {
+      "type": "palladium:particles",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "emitter": ["grave.core:util/ray_left"],
+      "particle_type": "minecraft:flame",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor/iron_man_armor",
+            "ability": "animation.projectile.mk1.3"
+          }
+        ]
+      }
+    },
     "firework_projectile": {
       "type": "palladium:projectile_script",
       "hidden": true,
@@ -215,6 +247,7 @@
       "velocity": 2.5,
       "swinging_arm": "none",
       "entity_data": {
+        "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 0,
         "Damage": 5,
         "Size": 0.1,
@@ -274,6 +307,7 @@
       "velocity": 2.5,
       "swinging_arm": "none",
       "entity_data": {
+        "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 0,
         "Damage": 5,
         "Size": 0.1,
@@ -333,6 +367,7 @@
       "velocity": 2.5,
       "swinging_arm": "none",
       "entity_data": {
+        "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 0,
         "Damage": 10,
         "Size": 0.1,
@@ -376,6 +411,7 @@
       "velocity": 2.5,
       "swinging_arm": "none",
       "entity_data": {
+        "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 0,
         "Damage": 10,
         "Size": 0.1,
@@ -419,6 +455,7 @@
       "velocity": 2.5,
       "swinging_arm": "none",
       "entity_data": {
+        "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 0,
         "Damage": 6,
         "Size": 0.1,
@@ -462,6 +499,7 @@
       "velocity": 2.5,
       "swinging_arm": "none",
       "entity_data": {
+        "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 0,
         "Damage": 6,
         "Size": 0.1,
@@ -565,6 +603,7 @@
       "swinging_arm": "none",
       "entity_type": "palladium:custom_projectile",
       "entity_data": {
+        "SetEntityOnFireSeconds": 30,
         "KnockbackStrength": 10,
         "Damage": 800,
         "Size": 5.5,
@@ -613,6 +652,7 @@
       "swinging_arm": "none",
       "entity_type": "palladium:custom_projectile",
       "entity_data": {
+        "SetEntityOnFireSeconds": 30,
         "ExplosionRadius": 15,
         "ExplosionBlockInteraction": "BREAK",
         "KnockbackStrength": 10,

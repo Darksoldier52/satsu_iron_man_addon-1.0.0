@@ -1648,38 +1648,6 @@
         ]
       }
     },
-    "mk1_flame_right": {
-      "type": "palladium:particles",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "emitter": ["grave.core:util/ray_right"],
-      "particle_type": "minecraft:flame",
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor/iron_man_armor",
-            "ability": "animation.projectile.mk1.1"
-          }
-        ]
-      }
-    },
-    "mk1_flame_left": {
-      "type": "palladium:particles",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "emitter": ["grave.core:util/ray_left"],
-      "particle_type": "minecraft:flame",
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor/iron_man_armor",
-            "ability": "animation.projectile.mk1.3"
-          }
-        ]
-      }
-    },
     "dummy": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",

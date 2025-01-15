@@ -365,6 +365,11 @@
                     "max_score": 1
                   },
                   {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor/iron_man_armor",
+                    "ability": "Telekinesis"
+                  },
+                  {
                     "type": "palladium:and",
                     "conditions": [
                       {
