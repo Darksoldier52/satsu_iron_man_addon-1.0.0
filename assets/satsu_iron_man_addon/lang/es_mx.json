@@ -116,6 +116,8 @@
   "satsu.iron.man.addon.text.mark.unknow.blooded": "Mark Unknow (Armadura sangrienta vampirica)",
   "satsu.iron.man.addon.text.mark.unknow.X": "Mark Unknow X",
   "satsu.iron.man.addon.text.earned.points": "Has ganado un punto de experiencia para las armaduras",
+  "satsu.iron.man.addon.text.mask.on": "Caso activo",
+  "satsu.iron.man.addon.text.mask.off": "Casco desactivado",
   "accessory_slot.grave.ht.proto_omnitrix": "Omnitrix Alts",
   "accessory.grave.ht.reboot_proto": "Reboot Alt",
   "text.satsu.iron.man.addon.enemies.scan": "Enemigos alrededor",

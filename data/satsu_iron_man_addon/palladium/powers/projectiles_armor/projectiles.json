@@ -814,7 +814,8 @@
       ],
       "commands": [""],
       "last_tick_commands": [
-        "execute as @s[tag=mark.50.superior] run scoreboard players set @s satsu.iron.man.superior.color 0"
+        "execute as @s[tag=mark.50.superior] run scoreboard players set @s satsu.iron.man.superior.color 0",
+        "execute as @s[tag=mark.50.superior] run scoreboard players set @s satsu.iron.man.flame 8"
       ],
       "conditions": {
         "enabling": [
@@ -848,7 +849,8 @@
       ],
       "commands": [""],
       "last_tick_commands": [
-        "execute as @s[tag=mark.50.superior] run scoreboard players set @s satsu.iron.man.superior.color 0"
+        "execute as @s[tag=mark.50.superior] run scoreboard players set @s satsu.iron.man.superior.color 0",
+        "execute as @s[tag=mark.50.superior] run scoreboard players set @s satsu.iron.man.flame 8"
       ],
       "conditions": {
         "enabling": [

@@ -116,6 +116,8 @@
   "satsu.iron.man.addon.text.mark.unknow.blooded": "Mark Unknown (Vampiric Blood Armor)",
   "satsu.iron.man.addon.text.mark.unknow.X": "Mark Unknown X",
   "satsu.iron.man.addon.text.earned.points": "You have earned an experience point for the armors",
+  "satsu.iron.man.addon.text.mask.on": "Helmet active",
+  "satsu.iron.man.addon.text.mask.off": "Helmet deactivated",
   "accessory_slot.grave.ht.proto_omnitrix": "Omnitrix Alts",
   "accessory.grave.ht.reboot_proto": "Reboot Alt",
   "text.grave.ht.code.tell": "Codes Cheat Sheet",
