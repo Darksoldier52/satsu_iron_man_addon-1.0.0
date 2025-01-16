@@ -537,54 +537,6 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.failsafe.set",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.43"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.47"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.50"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.50.superior"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.unknow.blooded.armor"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "satsu.iron.man.nano.armor"
-                  }
-                ]
-              },
-              {
-                "type": "palladium:not",
-                "conditions": [
-                  {
-                    "type": "palladium:crouching"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "type": "palladium:command_result",
             "command": "execute if entity @s[scores={motionY=..-2}]"
           },
