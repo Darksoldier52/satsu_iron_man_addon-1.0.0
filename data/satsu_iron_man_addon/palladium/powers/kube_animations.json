@@ -309,6 +309,9 @@
                 "max": 15
               }
             ]
+          },
+          {
+            "type": "palladium:on_ground"
           }
         ]
       }
