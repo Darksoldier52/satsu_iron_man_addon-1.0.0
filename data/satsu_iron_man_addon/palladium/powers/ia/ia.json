@@ -63,7 +63,7 @@
         "summon wolf ~ ~ ~ {CustomNameVisible:1b,CustomName:'[{\"text\":\"Armor Sentinel\"}]',Silent:1b,Tags:[\"tamed_wolf\",\"new\",\"sentinel\"]}",
         "execute as @e[type=wolf] run superpower add satsu_iron_man_addon:ia/sentinel_stats @s",
         "function satsu_iron_man_addon:spawn_armor_sentinel",
-        "summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,NoBasePlate:1b,CustomName:'[{\"text\":\"Armor Sentinel\"}]',NoGravity:1b,Tags:[\"sentinel\"]}",
+        "summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,NoBasePlate:1b,CustomName:'[{\"text\":\"Armor Sentinel\"}]',NoGravity:1b,Tags:[\"sentinel\"],Pose:{Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f],Head:[0f,0f,0f]}}",
         "execute as @e[type=minecraft:armor_stand] run superpower add satsu_iron_man_addon:iron_man_sentinel @s",
         "execute as @s run scoreboard players operation @e[type=minecraft:armor_stand] satsu.iron.man.armor = @s satsu.iron.man.armor",
         "execute as @s run scoreboard players operation @e[type=minecraft:armor_stand] satsu.iron.man.mask = @s satsu.iron.man.mask",
@@ -109,7 +109,9 @@
       "list_index": 1,
       "gui_position": [0, -2],
       "commands": [
-        "kill @e[tag=sentinel,limit=2,distance=0..3]",
+        "execute as @e[tag=sentinel,limit=2,distance=0..3] run tp @s ~ ~-1000 ~",
+        "execute as @e[tag=sentinel,limit=2,distance=0..3] run data modify entity @s Owner set value [I; 0, 0, 0, 0]",
+        "execute as @e[tag=sentinel] run kill @s",
         "tag @s remove sentinel_one"
       ],
       "conditions": {
