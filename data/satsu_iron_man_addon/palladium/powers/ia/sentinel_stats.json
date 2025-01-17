@@ -1,0 +1,66 @@
+{
+  "name": "Armors",
+  "persistent_data": true,
+  "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
+  "background": "satsu_iron_man_addon:textures/gui/block/background.png",
+  "icon": "#satsu_iron_man_addon:armor_icon_ability",
+  "gui_display_type": "tree",
+  "primary_color": "#2af4f5",
+  "secondary_color": "#0aacac",
+  "abilities": {
+    "armor_xp_points.set": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [],
+      "last_tick_commands": [],
+      "commands": [""]
+    },
+    "durability": {
+      "type": "palladium:attribute_modifier",
+      "icon": "minecraft:iron_chestplate",
+      "title": { "translate": "ability.title.satsu.durability" },
+      "description": { "translate": "description.satsu.durability" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-1, -2],
+      "Attribute_Type": "minecraft:generic.armor",
+      "amount": 50,
+      "operation": 0,
+      "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1"
+    },
+    "invisibility": {
+      "type": "palladium:invisibility",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/invis.png",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 0
+    },
+    "strength": {
+      "type": "palladium:attribute_modifier",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/strength.png",
+      "title": { "translate": "ability.title.satsu.durability" },
+      "description": { "translate": "description.satsu.strength" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-2, -2],
+      "attribute": "minecraft:generic.attack_damage",
+      "amount": 50,
+      "operation": 0,
+      "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1"
+    },
+    "fall_resistance": {
+      "type": "palladium:attribute_modifier",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "title": { "translate": "ability.title.satsu.fall_resistance" },
+      "description": { "translate": "description.satsu.fall_resistance" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-3, -2],
+      "attribute": "palladium:fall_resistance",
+      "amount": 259,
+      "operation": 0,
+      "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1"
+    }
+  }
+}
