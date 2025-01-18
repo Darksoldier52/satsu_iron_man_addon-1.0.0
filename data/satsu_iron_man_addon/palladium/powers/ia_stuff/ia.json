@@ -8,16 +8,20 @@
   "primary_color": "#2af4f5",
   "secondary_color": "#0aacac",
   "abilities": {
-    "Armor_powers_stat_upgrades": {
-      "type": "palladium:dummy",
+    "ia_powers_stat_upgrades": {
+      "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_0.png",
       "title": {
         "translate": "ability.title.satsu.ia_powers_stat_upgrades"
       },
-      "hidden": false,
+      "hidden": true,
       "hidden_in_bar": true,
-      "gui_position": [0, -2.8],
+      "gui_position": [0, -3.3],
       "description": { "translate": "description.ia_skill_stat" },
+      "first_tick_commands": [
+        "execute as @s unless score @s satsu.iron.man.addon.ia.unlock.skill.tree matches 0.. run scoreboard players set @s satsu.iron.man.addon.ia.unlock.skill.tree 1"
+      ],
+      "commands": [""],
       "conditions": {
         "unlocking": [
           {
@@ -37,6 +41,53 @@
         ]
       }
     },
+    "Armor_powers_stat_upgrades": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_0.png",
+      "title": {
+        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+      },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, -2.8],
+      "description": { "translate": "description.ia_skill_stat" },
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.ia.unlock.skill.tree",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "unlock.lock.skill.tree": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_0.png",
+      "title": { "translate": "ability.title.satsu.unlock.lock.ia.skill.tree" },
+      "description": { "translate": "description.satsu.unlock.lock.ia.skill.tree" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, -2.2],
+      "first_tick_commands": [
+        "execute as @s[scores={satsu.iron.man.addon.ia.unlock.skill.tree=1..}] run scoreboard players add @s satsu.iron.man.addon.ia.unlock.skill.tree 1",
+        "execute as @s[scores={satsu.iron.man.addon.ia.unlock.skill.tree=3..}] run scoreboard players set @s satsu.iron.man.addon.ia.unlock.skill.tree 1",
+        "ability lock @s satsu_iron_man_addon:ia_stuff/ia unlock.lock.skill.tree"
+      ],
+      "commands": [""],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:scoreboard_score_buyable",
+            "objective": "SatsuIronManArmorSkillPoint",
+            "score": 0,
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
+            "description": { "text": "Armor Skill Point" }
+          }
+        ]
+      }
+    },
     "sentinel_nearest": {
       "type": "palladium:command",
       "hidden": true,
@@ -51,11 +102,12 @@
     "animation_timer_sentinel": {
       "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
-      "title": { "translate": "ability.title.satsu.enable_armor" },
+      "title": { "translate": "ability.title.satsu.enable.sentinel" },
+      "description": { "translate": "description.satsu.enable.sentinel" },
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 0,
-      "gui_position": [0, -2],
+      "gui_position": [1, -2.2],
       "start_value": 0,
       "max_value": 20,
       "conditions": {
@@ -128,10 +180,11 @@
     "animation_timer_kill_sentinel": {
       "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
-      "title": { "translate": "ability.title.satsu.enable_armor" },
+      "title": { "translate": "ability.title.satsu.disable.sentinel" },
+      "description": { "translate": "description.satsu.disable.sentinel" },
       "hidden": false,
       "hidden_in_bar": false,
-      "gui_position": [0, -2],
+      "gui_position": [-1, -2.2],
       "start_value": 1,
       "max_value": 20,
       "conditions": {
