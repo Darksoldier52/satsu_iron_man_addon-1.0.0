@@ -5,7 +5,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/player.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_suit_#X_#0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_suit_#X_0.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
@@ -25,7 +25,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_#0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_0_#TIMER"
       }
     },
     {

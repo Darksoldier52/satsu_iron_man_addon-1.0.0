@@ -67,7 +67,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
-      "max_value": 7,
+      "max_value": 18,
       "conditions": {
         "enabling": [
           {
@@ -108,7 +108,7 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[5f,0f,0f],RightArm:[-5f,0f,0f],LeftLeg:[-5f,0f,0f],RightLeg:[5f,0f,0f]}}"],
+      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[-20f,0f,0f],RightArm:[20f,0f,0f],LeftLeg:[10f,0f,0f],RightLeg:[-10f,0f,0f]}}"],
       "conditions": {
         "enabling": [
           {
@@ -120,7 +120,7 @@
                 "ability": "animation_timer",
                 "property": "value",
                 "min": 1,
-                "max": 1
+                "max": 4
               }
             ]
           }
@@ -128,29 +128,6 @@
       }
     },
     "animation_timer_command.2": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[12.5f,0f,0f],RightArm:[-12.5f,0f,0f],LeftLeg:[-12.5f,0f,0f],RightLeg:[12.5f,0f,0f]}}"],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "null",
-                "ability": "animation_timer",
-                "property": "value",
-                "min": 2,
-                "max": 2
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "animation_timer_command.3": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -165,65 +142,19 @@
                 "power": "null",
                 "ability": "animation_timer",
                 "property": "value",
-                "min": 3,
-                "max": 3
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "animation_timer_command.4": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[-0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[-0f,0f,0f]}}"],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "null",
-                "ability": "animation_timer",
-                "property": "value",
                 "min": 4,
-                "max": 4
+                "max": 6
               }
             ]
           }
         ]
       }
     },
-    "animation_timer_command.5": {
+    "animation_timer_command.3": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[-5f,0f,0f],RightArm:[5f,0f,0f],LeftLeg:[5f,0f,0f],RightLeg:[-5f,0f,0f]}}"],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "null",
-                "ability": "animation_timer",
-                "property": "value",
-                "min": 5,
-                "max": 5
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "animation_timer_command.6": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[-12.5f,0f,0f],RightArm:[12.5f,0f,0f],LeftLeg:[12.5f,0f,0f],RightLeg:[-12.5f,0f,0f]}}"],
+      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[30f,0f,0f],RightArm:[-30f,0f,0f],LeftLeg:[-30f,0f,0f],RightLeg:[30f,0f,0f]}}"],
       "conditions": {
         "enabling": [
           {
@@ -235,18 +166,18 @@
                 "ability": "animation_timer",
                 "property": "value",
                 "min": 6,
-                "max": 6
+                "max": 8
               }
             ]
           }
         ]
       }
     },
-    "animation_timer_command.7": {
+    "animation_timer_command.4": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[-20f,0f,0f],RightArm:[20f,0f,0f],LeftLeg:[20f,0f,0f],RightLeg:[-20f,0f,0f]}}"],
+      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[-40f,0f,0f],RightArm:[40f,0f,0f],LeftLeg:[40f,0f,0f],RightLeg:[-40f,0f,0f]}}"],
       "conditions": {
         "enabling": [
           {
@@ -257,8 +188,77 @@
                 "power": "null",
                 "ability": "animation_timer",
                 "property": "value",
-                "min": 7,
-                "max": 7
+                "min": 8,
+                "max": 10
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "animation_timer_command.5": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[50f,0f,0f],RightArm:[-50f,0f,0f],LeftLeg:[-50f,0f,0f],RightLeg:[50f,0f,0f]}}"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "null",
+                "ability": "animation_timer",
+                "property": "value",
+                "min": 11,
+                "max": 12
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "animation_timer_command.6": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[-60f,0f,0f],RightArm:[60f,0f,0f],LeftLeg:[60f,0f,0f],RightLeg:[-60f,0f,0f]}}"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "null",
+                "ability": "animation_timer",
+                "property": "value",
+                "min": 13,
+                "max": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "animation_timer_command.7": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": ["execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..1.25] {Pose:{LeftArm:[70f,0f,0f],RightArm:[-70f,0f,0f],LeftLeg:[-70f,0f,0f],RightLeg:[70f,0f,0f]}}"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "null",
+                "ability": "animation_timer",
+                "property": "value",
+                "min": 15,
+                "max": 18
               }
             ]
           }
