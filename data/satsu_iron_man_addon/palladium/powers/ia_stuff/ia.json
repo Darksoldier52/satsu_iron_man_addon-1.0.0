@@ -160,7 +160,7 @@
         "execute as @s run scoreboard players operation @e[type=minecraft:armor_stand] satsu.iron.man.mask = @s satsu.iron.man.mask",
         "execute as @s run scoreboard players operation @e[type=minecraft:wolf] satsu.iron.man.durability = @s satsu.iron.man.durability",
         "execute as @s run scoreboard players operation @e[type=minecraft:wolf] satsu.iron.man.strength = @s satsu.iron.man.strength",
-        "scale set pehkui:hitbox_height 2 @e[type=wolf,sort=nearest,limit=1]",
+        "ride @e[type=minecraft:armor_stand,tag=sentinel,limit=1,sort=nearest] mount @e[type=minecraft:wolf,tag=sentinel,limit=1,sort=nearest]",
         "scale set pehkui:hitbox_width 2 @e[type=wolf,sort=nearest,limit=1]"
       ],
       "conditions": {
@@ -240,7 +240,7 @@
       "commands": [
         "execute as @e[tag=sentinel,limit=2,distance=0..3] run tp @s ~ ~-1000 ~",
         "execute as @e[tag=sentinel,limit=2,distance=0..3] run data modify entity @s Owner set value [I; 0, 0, 0, 0]",
-        "execute as @e[tag=sentinel] run kill @s",
+        "execute as @e[tag=sentinel,limit=2,distance=0..3] run kill @s",
         "tag @s remove sentinel_one"
       ],
       "conditions": {

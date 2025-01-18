@@ -3,7 +3,7 @@
   "layers": [
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/player.geo.json",
+      "model": "satsu_iron_man_addon:geo/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_suit_#X_0.png",
         "variables": {
@@ -30,7 +30,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/player.geo.json",
+      "model": "satsu_iron_man_addon:geo/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_suit_lights_#X_#S.png",
         "variables": {
@@ -87,7 +87,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/player.geo.json",
+      "model": "satsu_iron_man_addon:geo/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_suit_mask_#Y.png",
         "variables": {
@@ -134,7 +134,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/player.geo.json",
+      "model": "satsu_iron_man_addon:geo/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_suit_mask_#Y.png",
         "variables": {
@@ -181,7 +181,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/player.geo.json",
+      "model": "satsu_iron_man_addon:geo/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_suit_mask_#Y_#S_glow.png",
         "variables": {
@@ -235,7 +235,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/player.geo.json",
+      "model": "satsu_iron_man_addon:geo/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_suit_mask_#Y_#S_glow.png",
         "variables": {
@@ -289,7 +289,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/player.geo.json",
+      "model": "satsu_iron_man_addon:geo/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_suit_mask_#Y_#S_glow.png",
         "transformers": [
@@ -362,7 +362,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/player.geo.json",
+      "model": "satsu_iron_man_addon:geo/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_suit_mask_#Y_#S_glow.png",
         "transformers": [

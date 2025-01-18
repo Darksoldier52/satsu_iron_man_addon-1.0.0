@@ -105,9 +105,7 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "commands": [
-        "execute as @e[type=wolf] run tp @e[type=minecraft:armor_stand,limit=1,sort=nearest,distance=0..1] @s"
-      ]
+      "commands": [""]
     }
   }
 }
