@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "copper_plumber_beacon",
+  "pattern": [
+      "CGC",
+      "G#G",
+      "CGC"
+  ],
+  "key": {
+      "#": {
+          "item": "gold_ingot"
+      },
+      "C": {
+          "item": "minecraft:copper_ingot"
+      },
+      "G": {
+          "item": "minecraft:redstone"
+      }
+  },
+  "result": {
+      "item": "satsu_iron_man_addon:ia_tarjet",
+      "count": 1
+  }
+}
