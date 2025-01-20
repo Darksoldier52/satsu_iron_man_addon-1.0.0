@@ -111,7 +111,7 @@
       "title": { "translate": "ability.title.satsu.enable_armor" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 80,
+      "list_index": 0,
       "first_tick_commands": [
         "tag @s add satsu.iron.man.enable.armor",
         "scoreboard players set @s satsu.iron.man.armor.actived.perm 1",
@@ -170,7 +170,7 @@
       "title": { "translate": "ability.title.satsu.Disable_armor" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 80,
+      "list_index": 1,
       "first_tick_commands": [
         "tag @s remove satsu.iron.man.enable.armor",
         "scoreboard players set @s satsu.iron.man.armor.actived.perm 2",
@@ -937,7 +937,7 @@
       "title": { "translate": "ability.title.satsu.enable_mask" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 1,
+      "list_index": 2,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [""],
       "commands": [
@@ -1130,7 +1130,7 @@
       "title": { "translate": "ability.title.satsu.energy_beam" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 2,
+      "list_index": 3,
       "gui_position": [-2, -0.5],
       "description": { "translate": "description.energy_beam" },
       "energy_beam": "satsu_iron_man_addon:energy_beam",
@@ -1291,7 +1291,7 @@
       "description": { "translate": "description.Energy.Pulse" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 3,
+      "list_index": 4,
       "gui_position": [1, -0.5],
       "first_tick_commands": [
         "scoreboard objectives add satsu.iron.man.armor.energy.pulse dummy",
@@ -1742,7 +1742,7 @@
       "title": { "translate": "ability.title.satsu.armor.edit" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 4,
+      "list_index": 5,
       "gui_position": [0, -1],
       "description": "",
       "commands": [
@@ -1772,7 +1772,7 @@
       "title": { "translate": "ability.title.satsu.flight.edit" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 5,
+      "list_index": 6,
       "gui_position": [1, 0],
       "description": { "translate": "description.satsu.flight.edit" },
       "commands": [
@@ -2010,7 +2010,7 @@
       "title": { "translate": "ability.title.satsu.Choose.Speed" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 15,
+      "list_index": 7,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "conditions": {
         "enabling": [
@@ -2146,7 +2146,7 @@
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 16,
+      "list_index": 8,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
@@ -2195,7 +2195,7 @@
       "title": { "translate": "ability.title.satsu.decrease.Speed" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 17,
+      "list_index": 9,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
@@ -2244,7 +2244,7 @@
       "title": { "translate": "ability.title.satsu.failsafe.edit" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 6,
+      "list_index": 10,
       "gui_position": [-1, 0],
       "description": { "translate": "description.satsu.failsafe.edit" },
       "commands": [
@@ -2300,7 +2300,7 @@
       "title": { "translate": "ability.title.satsu.stealht.mode" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": -1,
+      "list_index": 11,
       "gui_position": [-1, -1],
       "conditions": {
         "enabling": [
@@ -2350,7 +2350,7 @@
       "description": { "translate": "description.superior.telekinesis" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": -1,
+      "list_index": 12,
       "gui_position": [-2, -1],
       "first_tick_commands": [
         "scoreboard players set @s satsu.iron.man.superior.color 1",
@@ -2413,7 +2413,7 @@
       "description": { "translate": "description.superior.suit.expulsion" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": -1,
+      "list_index": 13,
       "gui_position": [-2, -1],
       "start_value": 0,
       "max_value": 20,
@@ -2466,7 +2466,7 @@
       "description": "Pass the time completely, including the enemies",
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": -1,
+      "list_index": 14,
       "gui_position": [-2, -1],
       "first_tick_commands": ["tag @s add chrono.time"],
       "commands": [
@@ -2522,10 +2522,10 @@
     "Accelerate_Time": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/powers/time.png",
-      "title": "Accelerate Time",  
+      "title": "Accelerate Time",
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": -1,
+      "list_index": 15,
       "gui_position": [3, -1],
       "description": "Accelerates time completely, including enemies",
       "first_tick_commands": ["tag @s remove chrono.time.speed"],
@@ -2585,7 +2585,7 @@
       "title": "Decelerate Time",
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": -1,
+      "list_index": 16,
       "gui_position": [-3, -1],
       "description": "Slow down time completely, including enemies",
       "first_tick_commands": ["tag @s add chrono.time.despeed"],
@@ -2676,8 +2676,7 @@
             ]
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "Hyper_speed": {
@@ -2686,6 +2685,7 @@
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
       "hidden": true,
       "hidden_in_bar": false,
+      "list_index": 17,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
@@ -2724,6 +2724,7 @@
       "title": { "translate": "ability.title.satsu.decrease.Speed" },
       "hidden": true,
       "hidden_in_bar": false,
+      "list_index": 18,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
@@ -2762,7 +2763,7 @@
       "title": { "translate": "ability.title.satsu.choose.armor" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 7,
+      "list_index": 19,
       "gui_position": [0, 0],
       "description": { "translate": "description.satsu.choose.armor" },
       "commands": [
@@ -2801,7 +2802,7 @@
       "title": { "translate": "ability.title.satsu.choose" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 10,
+      "list_index": 20,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "conditions": {
         "enabling": [
@@ -2830,7 +2831,7 @@
       "title": { "translate": "ability.title.satsu.next.armor" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 11,
+      "list_index": 21,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
@@ -2865,7 +2866,7 @@
       "title": { "translate": "ability.title.satsu.prev.armor" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 12,
+      "list_index": 22,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [
         "scoreboard players set @s satsu.prev.iron.man.armor.anim 0"
@@ -2902,7 +2903,7 @@
       "title": { "translate": "ability.title.satsu.set.armor" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 13,
+      "list_index": 23,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "last_tick_commands": [],
       "conditions": {
@@ -3441,7 +3442,7 @@
       "title": { "translate": "ability.title.satsu.arms.edit" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 8,
+      "list_index": 24,
       "gui_position": [0, -0.5],
       "description": { "translate": "description.satsu.arms.edit" },
       "commands": [
@@ -3552,7 +3553,7 @@
       "title": { "translate": "ability.title.satsu.beams.edit" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 20,
+      "list_index": 25,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [
         "execute as @s unless score @s satsu.iron.man.armor.energy.beams matches 0.. run scoreboard players set @s satsu.iron.man.armor.energy.beams 0"
@@ -3681,7 +3682,7 @@
       "title": { "translate": "ability.title.satsu.beams.next" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 21,
+      "list_index": 26,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
@@ -3726,7 +3727,7 @@
       "title": { "translate": "ability.title.satsu.beams.prev" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 22,
+      "list_index": 27,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [
         "scoreboard players set @s satsu.prev.iron.man.anim 0"
@@ -3774,7 +3775,7 @@
       "description": { "translate": "description.Fireworks" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 23,
+      "list_index": 28,
       "gui_position": [-1, -0.5],
       "start_value": 0,
       "max_value": 20,
@@ -4269,7 +4270,7 @@
       "title": { "translate": "ability.title.satsu.sword.enable" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 100,
+      "list_index": 29,
       "first_tick_commands": ["tag @s add satsu.iron.man.enable.sword"],
       "commands": [""],
       "last_tick_commands": [""],
@@ -4350,7 +4351,7 @@
       "title": { "translate": "ability.title.satsu.sword.enable" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 100,
+      "list_index": 30,
       "first_tick_commands": ["tag @s remove satsu.iron.man.enable.sword"],
       "commands": [""],
       "last_tick_commands": [""],
@@ -4452,7 +4453,7 @@
       "description": { "translate": "description.force_field" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 101,
+      "list_index": 31,
       "gui_position": [-3, -0.5],
       "first_tick_commands": ["tag @s add ark.decharge"],
       "commands": ["function satsu_iron_man_addon:force_field"],
@@ -4496,7 +4497,7 @@
       "description": { "translate": "description.satsu.cook.ark" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 102,
+      "list_index": 32,
       "gui_position": [4, -0.5],
       "commands": [""],
       "last_tick_commands": [
@@ -4711,7 +4712,7 @@
       "description": { "translate": "description.none" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 800,
+      "list_index": 33,
       "first_tick_commands": ["tag @s add ark.decharge"],
       "commands": [
         "execute as @e[tag=!ark.decharge,distance=0..8] run damage @s 8 minecraft:player_attack",
