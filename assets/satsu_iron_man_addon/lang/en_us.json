@@ -331,6 +331,7 @@
   "satsu.iron.man.addon.text.ia.interaction.bye.11": "<V.E.R.O.N.I.C.A> Deactivating",
   "satsu.iron.man.addon.text.ia.interaction.bye.12": "<U.L.T.R.O.N> Deactivating. Until needed again.",
   "satsu.iron.man.addon.text.ia.interaction.bye.13": "<J.O.C.A.S.T.A> Deactivating. I'll be ready to assist when you need me",
+  "satsu.iron.man.addon.entity.name.armor.sentinel": "Armor Sentinel",
   "description.ia_skill_stat": "This is the skill tree that will allow you to unlock your various IA functions",
   "accessory_slot.grave.ht.proto_omnitrix": "Omnitrix Alts",
   "accessory.grave.ht.reboot_proto": "Reboot Alt",
