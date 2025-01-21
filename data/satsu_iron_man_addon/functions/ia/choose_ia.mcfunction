@@ -9,7 +9,7 @@ execute as @s[scores={satsu.iron.man.addon.ia.name=5}] run title @s actionbar { 
 execute as @s[scores={satsu.iron.man.addon.ia.name=6}] run title @s actionbar { "translate": "ability.title.satsu.ia.name.6","color":"#ffe800" }
 execute as @s[scores={satsu.iron.man.addon.ia.name=7}] run title @s actionbar { "translate": "ability.title.satsu.ia.name.7","color":"#09f42c" }
 execute as @s[scores={satsu.iron.man.addon.ia.name=8}] run title @s actionbar { "translate": "ability.title.satsu.ia.name.8","color":"#98fb98" }
-execute as @s[scores={satsu.iron.man.addon.ia.name=9}] run title @s actionbar { "translate": "ability.title.satsu.ia.name.9","color":"#2e8b57" }
-execute as @s[scores={satsu.iron.man.addon.ia.name=10}] run title @s actionbar { "translate": "ability.title.satsu.ia.name.10","color":"#800000" }
+execute as @s[scores={satsu.iron.man.addon.ia.name=9}] run title @s actionbar { "translate": "ability.title.satsu.ia.name.9","color":"#55fb9e" }
+execute as @s[scores={satsu.iron.man.addon.ia.name=10}] run title @s actionbar { "translate": "ability.title.satsu.ia.name.10","color":"#fe0f0f" }
 execute as @s[scores={satsu.iron.man.addon.ia.name=11}] run title @s actionbar { "translate": "ability.title.satsu.ia.name.11","color":"#4682b4" }
-execute as @s[scores={satsu.iron.man.addon.ia.name=12}] run title @s actionbar { "translate": "ability.title.satsu.ia.name.12","color":"#2e3b4e" }
+execute as @s[scores={satsu.iron.man.addon.ia.name=12}] run title @s actionbar { "translate": "ability.title.satsu.ia.name.12","color":"#0067fe" }

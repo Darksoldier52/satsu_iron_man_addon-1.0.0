@@ -246,7 +246,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
           Component.string("Enemies: " + value),
           300,
           20,
-          0x2e8b57
+          0x55fb9e
         );
       }
     }
@@ -274,7 +274,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
           Component.string("Enemies: " + value),
           300,
           20,
-          0x800000
+          0xfe0f0f
         );
       }
     }
@@ -330,7 +330,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
           Component.string("Enemies: " + value),
           300,
           20,
-          0x2e3b4e
+          0x0067fe
         );
       }
     }
@@ -601,7 +601,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
           Component.string("Energy: " + value),
           40,
           180,
-          0x2e8b57
+          0x55fb9e
         );
       }
     }
@@ -631,7 +631,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
           Component.string("Energy: " + value),
           40,
           180,
-          0x800000
+          0xfe0f0f
         );
       }
     }
@@ -691,7 +691,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
           Component.string("Energy: " + value),
           40,
           180,
-          0x2e3b4e
+          0x0067fe
         );
       }
     }
