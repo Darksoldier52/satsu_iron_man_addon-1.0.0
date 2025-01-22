@@ -3261,8 +3261,8 @@
     "Time clock": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/time_stop.png",
-      "title": "Pause time",
-      "description": "Pass the time completely, including the enemies",
+      "title": { "translate": "ability.title.satsu.time.clock" },
+      "description": { "translate": "description.satsu.time.clock" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 15,
@@ -3321,12 +3321,12 @@
     "Accelerate_Time": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/powers/time.png",
-      "title": "Accelerate Time",
+      "title": { "translate": "ability.title.satsu.accelerate.time" },
+      "description": { "translate": "description.satsu.accelerate.time" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 16,
       "gui_position": [3, -1],
-      "description": "Accelerates time completely, including enemies",
       "first_tick_commands": ["tag @s remove chrono.time.speed"],
       "commands": [
         "effect give @e[tag=!chrono.time.speed,distance=0..10] minecraft:speed 1 10 true"
@@ -3381,12 +3381,12 @@
     "Decelerate_Time": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/powers/less_time.png",
-      "title": "Decelerate Time",
+      "title": { "translate": "ability.title.satsu.decelerate.time" },
+      "description": { "translate": "description.satsu.decelerate.time" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 17,
       "gui_position": [-3, -1],
-      "description": "Slow down time completely, including enemies",
       "first_tick_commands": ["tag @s add chrono.time.despeed"],
       "commands": [
         "effect give @e[tag=!chrono.time.despeed,distance=0..10] minecraft:slowness 1 3 true"
