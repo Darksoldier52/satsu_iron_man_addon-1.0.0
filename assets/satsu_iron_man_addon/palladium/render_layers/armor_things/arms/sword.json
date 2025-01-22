@@ -8,7 +8,7 @@
         "slim": "satsu_iron_man_addon:geo/sword_slim.geo.json"
       },
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/sword/iron_man_suit_#X.png",
+        "base": "satsu_iron_man_addon:textures/models/sword/iron_man_suit_1.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -36,9 +36,16 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/sword/iron_man_suit_#X_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/sword/iron_man_suit_1_#TIMER"
       },
-      "conditions": []
+      "conditions": [
+        {
+          "type": "palladium:objective_score",
+          "objective": "satsu.iron.man.armor",
+          "min_score": 1,
+          "max_score": 1
+        }
+      ]
     },
     {
       "type": "geckolib:default",
@@ -46,19 +53,37 @@
         "normal": "satsu_iron_man_addon:geo/energy_sword.geo.json",
         "slim": "satsu_iron_man_addon:geo/energy_sword_slim.geo.json"
       },
-      "texture": "satsu_iron_man_addon:textures/models/energy_sword.png",
+      "texture": {
+        "base": "satsu_iron_man_addon:textures/models/energy_sword_2.png",
+        "transformers": [
+          {
+            "type": "palladium:alpha_mask",
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/energy_sword/energy_sword_#TIMER.png"
+          }
+        ],
+        "variables": {
+          "TIMER": {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "sword_animation",
+            "property": "value",
+            "min": 0
+          }
+        },
+        "output": "satsu_iron_man_addon:textures/models/energy_sword_#TIMER"
+      },
       "render_type": "glow",
       "conditions": [
         {
-          "type": "palladium:ability_enabled",
-          "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-          "ability": "enable_sword"
-        },
-        {
-          "type": "palladium:objective_score",
-          "objective": "satsu.iron.man.armor.sword",
-          "min_score": 1,
-          "max_score": 1
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 1,
+              "max_score": 1
+            }
+          ]
         }
       ]
     }
