@@ -2178,7 +2178,7 @@
         "execute as @s[scores={satsu.iron.man.addon.ia.name=10}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.low.name.10\",\"color\":\"#fe0f0f\"}",
         "execute as @s[scores={satsu.iron.man.addon.ia.name=11}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.low.name.11\",\"color\":\"#4682b4\"}",
         "execute as @s[scores={satsu.iron.man.addon.ia.name=12}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.low.name.12\",\"color\":\"#0067fe\"}",
-        "execute as @s[scores={satsu.iron.man.addon.ia.name=12}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.low.name.13\",\"color\":\"#c0c0c0\"}"
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=13}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.low.name.13\",\"color\":\"#c0c0c0\"}"
       ],
       "commands": [],
       "conditions": {
@@ -2186,6 +2186,36 @@
           {
             "type": "palladium:command_result",
             "command": "execute if entity @s[scores={satsu.iron.man.armor.ark.energy=0}]"
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "ia_warning_energy_text": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "execute as @s unless score @s satsu.iron.man.addon.ia.name matches 0.. run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.nonamed\",\"color\":\"#00aaaa\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=1}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.1\",\"color\":\"#ffa500\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=2}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.2\",\"color\":\"#ffb6c1\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=3}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.3\",\"color\":\"#9370db\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=4}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.4\",\"color\":\"#708090\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=5}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.5\",\"color\":\"#00bfff\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=6}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.6\",\"color\":\"#ffe800\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=7}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.7\",\"color\":\"#09f42c\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=8}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.8\",\"color\":\"#98fb98\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=9}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.9\",\"color\":\"#55fb9e\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=10}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.10\",\"color\":\"#fe0f0f\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=11}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.11\",\"color\":\"#4682b4\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=12}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.12\",\"color\":\"#0067fe\"}",
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=13}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.13\",\"color\":\"#c0c0c0\"}"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:command_result",
+            "command": "execute if entity @s[scores={satsu.iron.man.armor.ark.energy=800..1000}]"
           }
         ],
         "unlocking": []
@@ -2209,7 +2239,7 @@
         "execute as @s[scores={satsu.iron.man.addon.ia.name=10}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.overcharged.name.10\",\"color\":\"#fe0f0f\"}",
         "execute as @s[scores={satsu.iron.man.addon.ia.name=11}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.overcharged.name.11\",\"color\":\"#4682b4\"}",
         "execute as @s[scores={satsu.iron.man.addon.ia.name=12}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.overcharged.name.12\",\"color\":\"#0067fe\"}",
-        "execute as @s[scores={satsu.iron.man.addon.ia.name=12}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.overcharged.name.13\",\"color\":\"#c0c0c0\"}"
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=13}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.overcharged.name.13\",\"color\":\"#c0c0c0\"}"
       ],
       "commands": [],
       "conditions": {
