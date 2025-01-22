@@ -2567,7 +2567,7 @@
         "enabling": [
           {
             "type": "palladium:action",
-            "key_type": "left_click"
+            "key_type": "right_click"
           }
         ],
         "unlocking": [
