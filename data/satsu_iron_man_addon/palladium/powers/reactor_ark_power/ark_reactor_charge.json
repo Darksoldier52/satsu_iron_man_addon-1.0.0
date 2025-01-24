@@ -101,6 +101,160 @@
         ]
       }
     },
+    "reset_when_energy_is_0": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": [
+        "execute as @s unless score @s satsu.iron.man.armor.ark.energy matches 0.. run scoreboard players set @s satsu.iron.man.armor.ark.energy 10000",
+        "scoreboard players reset @s[scores={satsu.iron.man.armor.ark.energy=..0}] satsu.iron.man.armor.actived.perm",
+        "scoreboard players reset @s[scores={satsu.iron.man.armor.ark.energy=..0}] satsu.iron.man.armor.actived"
+      ],
+      "conditions": {
+        "enabling": []
+      }
+    },
+    "set_color": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": [
+        "execute as @s[scores={satsu.iron.man.armor.ark.energy=9998..10000}] run scoreboard players set @s satsu.iron.man.armor.ark_energy_full_or_off 1",
+        "execute as @s[scores={satsu.iron.man.armor.ark.energy=500..5000}] run scoreboard players set @s satsu.iron.man.armor.ark_energy_full_or_off 0",
+        "execute as @s[scores={satsu.iron.man.armor.ark.energy=5000..9998}] run scoreboard players set @s satsu.iron.man.armor.ark_energy_full_or_off 2",
+        "execute as @s[scores={satsu.iron.man.armor.ark.energy=0..200}] run scoreboard players set @s satsu.iron.man.armor.ark_energy_full_or_off 3",
+        "execute as @s[scores={satsu.iron.man.armor.ark.energy=10000..}] run scoreboard players set @s satsu.iron.man.armor.ark_energy_full_or_off 4"
+      ],
+      "conditions": {
+        "enabling": []
+      }
+    },
+    "remove_ark_energy": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": [
+        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 1"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
+          },
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1,
+                "max_score": 1
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived.perm",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:command_result",
+                "command": "execute if score @s satsu.iron.man.ark.upgraded matches 2"
+              },
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "give_ark_energy": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": [
+        "scoreboard players add @s satsu.iron.man.armor.ark.energy 1"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "min_score": 1,
+                    "max_score": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.ark.upgraded",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 0,
+            "max_score": 9999
+          }
+        ]
+      }
+    },
+    "give_ark_energy_ark.upgrade.2": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": [
+        "scoreboard players add @s satsu.iron.man.armor.ark.energy 2"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.ark.upgraded",
+            "min_score": 2,
+            "max_score": 2
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 0,
+            "max_score": 9980
+          }
+        ]
+      }
+    },
     "durability": {
       "type": "gravestone:stat_ability",
       "icon": "minecraft:iron_chestplate",
