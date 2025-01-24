@@ -78,6 +78,7 @@ scoreboard objectives add satsu.iron.man.armor.16.unknow.blooded.armor.unlock du
 scoreboard objectives add satsu.iron.man.rbg.on.off dummy
 scoreboard objectives add satsu.iron.man.speed dummy
 scoreboard objectives add satsu.iron.man.ark.upgraded dummy
+scoreboard objectives add satsu.iron.man.ark.upgraded.max.energy dummy
 scoreboard objectives add SatsuIronManArmorSkillPoint dummy
 scoreboard objectives add SatsuIronManArmorExp dummy
 scoreboard objectives add SatsuIronManArmorMobKills minecraft.custom:minecraft.mob_kills
