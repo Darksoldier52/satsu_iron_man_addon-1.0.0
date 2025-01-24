@@ -1,5 +1,6 @@
 
 scoreboard objectives add satsu.iron.man.armor.energy.pulse.hand dummy
+scoreboard objectives add satsu.iron.man.addon.unlocking.set.block dummy
 scoreboard objectives add satsu.iron.man.addon.ia.name dummy
 scoreboard objectives add satsu.iron.man.addon.ia.name.power dummy
 scoreboard objectives add satsu.iron.man.addon.ia.name.choose dummy
