@@ -582,6 +582,20 @@
           }
         ]
       }
+    },
+    "set_energy": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "execute as @s unless score @s satsu.iron.man.ark.upgraded.max.energy matches 0.. as @s[scores={satsu.iron.man.armor.ark.energy=10000..}] run scoreboard players set @s satsu.iron.man.armor.ark.energy 10000",
+        "execute as @s[scores={satsu.iron.man.ark.upgraded.max.energy=1}] as @s[scores={satsu.iron.man.armor.ark.energy=20000..}] run scoreboard players set @s satsu.iron.man.armor.ark.energy 20000",
+        "execute as @s[scores={satsu.iron.man.ark.upgraded.max.energy=2}] as @s[scores={satsu.iron.man.armor.ark.energy=80000..}] run scoreboard players set @s satsu.iron.man.armor.ark.energy 80000"
+      ],
+      "conditions": {
+        "enabling": []
+      }
     }
   }
 }
