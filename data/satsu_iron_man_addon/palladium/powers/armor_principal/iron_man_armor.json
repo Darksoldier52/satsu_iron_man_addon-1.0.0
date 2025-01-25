@@ -1950,19 +1950,21 @@
     },
     "ark_beam_for_hands": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/ark_beam_hand_0.png",
+      "icon": "#satsu_iron_man_addon:ark_beam_hand",
       "title": { "translate": "ability.title.satsu.Energy.Pulse" },
       "description": { "translate": "description.Energy.Pulse" },
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 4,
-      "gui_position": [5, 0.5],
+      "gui_position": [5, -1],
       "first_tick_commands": [
         "scoreboard objectives add satsu.iron.man.armor.uni.beam.hand dummy",
         "scoreboard players add @s satsu.iron.man.armor.uni.beam.hand 1",
+        "scoreboard players add @s satsu.iron.man.armor.energy.pulse.or.energy.beam 1",
         "execute as @s[scores={satsu.iron.man.armor.uni.beam.hand=1}] run tag @s add hand.uni.beam",
         "execute as @s[scores={satsu.iron.man.armor.uni.beam.hand=2..}] run tag @s remove hand.uni.beam",
-        "execute as @s[scores={satsu.iron.man.armor.uni.beam.hand=2..}] run scoreboard players reset @s satsu.iron.man.armor.uni.beam.hand"
+        "execute as @s[scores={satsu.iron.man.armor.uni.beam.hand=2..}] run scoreboard players reset @s satsu.iron.man.armor.uni.beam.hand",
+        "execute as @s[scores={satsu.iron.man.armor.energy.pulse.or.energy.beam=2..}] run scoreboard players reset @s satsu.iron.man.armor.energy.pulse.or.energy.beam"
       ],
       "commands": [""],
       "last_tick_commands": [""],
@@ -1990,42 +1992,77 @@
             ]
           },
           {
-            "type": "palladium:or",
+            "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived.perm",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:has_tag",
+                "tag": "mark.1"
               }
             ]
           },
           {
-            "type": "palladium:or",
+            "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "interpolate",
-                "property": "value",
-                "min": 16,
-                "max": 16
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "min_score": 1,
+                    "max_score": 1
+                  }
+                ]
               },
               {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "no_nanoarmor_anim",
-                "property": "value",
-                "min": 15,
-                "max": 16
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "interpolate",
+                    "property": "value",
+                    "min": 16,
+                    "max": 16
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "no_nanoarmor_anim",
+                    "property": "value",
+                    "min": 15,
+                    "max": 16
+                  }
+                ]
               }
             ]
+          }
+        ]
+      }
+    },
+    "reset.score.ark_beam_for_hands": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "tag @s remove hand.uni.beam",
+        "scoreboard players reset @s satsu.iron.man.armor.uni.beam.hand",
+        "scoreboard players reset @s satsu.iron.man.armor.energy.pulse.or.energy.beam"
+      ],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "mark.1"
           }
         ]
       }
@@ -2054,6 +2091,10 @@
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor.uni.beam.hand",
                 "min_score": 1
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "energy.pulse"
               },
               {
                 "type": "palladium:has_tag",
@@ -2158,6 +2199,10 @@
                 "objective": "satsu.iron.man.armor.uni.beam.hand",
                 "min_score": 1,
                 "max_score": 1
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "energy.pulse"
               },
               {
                 "type": "palladium:has_tag",
@@ -5405,7 +5450,9 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [-0, -2],
-      "description": { "translate": "description.satsu.ark.upgrade.max.energy.1" },
+      "description": {
+        "translate": "description.satsu.ark.upgrade.max.energy.1"
+      },
       "first_tick_commands": [],
       "commands": [
         "execute as @s run scoreboard players set @s satsu.iron.man.ark.upgraded.max.energy 1"
@@ -5445,7 +5492,9 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [0, -3],
-      "description": { "translate": "description.satsu.ark.upgrade.max.energy.2" },
+      "description": {
+        "translate": "description.satsu.ark.upgrade.max.energy.2"
+      },
       "first_tick_commands": [],
       "commands": [
         "execute as @s run scoreboard players set @s satsu.iron.man.ark.upgraded.max.energy 2"
