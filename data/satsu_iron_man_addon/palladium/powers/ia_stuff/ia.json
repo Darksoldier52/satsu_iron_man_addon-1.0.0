@@ -1101,6 +1101,10 @@
         ],
         "unlocking": [
           {
+            "type": "palladium:has_power",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor"
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -1141,6 +1145,10 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:has_power",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor"
+          },
           {
             "type": "palladium:not",
             "conditions": [
@@ -1238,6 +1246,10 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:has_power",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor"
+          },
           {
             "type": "palladium:has_tag",
             "tag": "sentinel_nearest"
