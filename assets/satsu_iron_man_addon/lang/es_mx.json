@@ -381,13 +381,5 @@
   "satsu.iron.man.addon.text.ia.interaction.bye.12": "<U.L.T.R.O.N> Desactivándome. Hasta que sea necesario nuevamente.",
   "satsu.iron.man.addon.text.ia.interaction.bye.13": "<J.O.C.A.S.T.A> Desactivándome. Estaré lista para asistir cuando lo necesites",
   "satsu.iron.man.addon.entity.name.armor.sentinel": "Armadura Sentinela",
-  "description.ia_skill_stat": "Este es el árbol de habilidades que te permitirá desbloquear tus diferentes funciones de IA",
-  "accessory_slot.grave.ht.proto_omnitrix": "Omnitrix Alts",
-  "accessory.grave.ht.reboot_proto": "Reboot Alt",
-  "text.satsu.iron.man.addon.enemies.scan": "Enemigos alrededor",
-  "ability.prototype.omnitrix.recharge": "Prototype Omnitrix Recharge",
-  "advancements.grave.ht.root.title": "HeroTime",
-  "omnimenu.grave.ht.toggle_cycletype_on": "Omnitrix set to Cycle via Scroll",
-  "superpower.grave.ht.omnitrix.proto": "Prototype Omnitrix",
-  "skill.grave.ht.generic.toggle": "Toggle On/Off"
+  "description.ia_skill_stat": "Este es el árbol de habilidades que te permitirá desbloquear tus diferentes funciones de IA"
 }

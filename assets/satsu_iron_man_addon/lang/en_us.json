@@ -381,13 +381,5 @@
   "satsu.iron.man.addon.text.ia.interaction.bye.12": "<U.L.T.R.O.N> Deactivating. Until needed again.",
   "satsu.iron.man.addon.text.ia.interaction.bye.13": "<J.O.C.A.S.T.A> Deactivating. I'll be ready to assist when you need me",
   "satsu.iron.man.addon.entity.name.armor.sentinel": "Armor Sentinel",
-  "description.ia_skill_stat": "This is the skill tree that will allow you to unlock your various IA functions",
-  "accessory_slot.grave.ht.proto_omnitrix": "Omnitrix Alts",
-  "accessory.grave.ht.reboot_proto": "Reboot Alt",
-  "text.grave.ht.code.tell": "Codes Cheat Sheet",
-  "ability.prototype.omnitrix.recharge": "Prototype Omnitrix Recharge",
-  "advancements.grave.ht.root.title": "HeroTime",
-  "omnimenu.grave.ht.toggle_cycletype_on": "Omnitrix set to Cycle via Scroll",
-  "superpower.grave.ht.omnitrix.proto": "Prototype Omnitrix",
-  "skill.grave.ht.generic.toggle": "Toggle On/Off"
+  "description.ia_skill_stat": "This is the skill tree that will allow you to unlock your various IA functions"
 }
