@@ -46,7 +46,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 1",
         "scoreboard players set @s satsu.iron.man.durability 185",
-        "scoreboard players set @s satsu.iron.man.strength 60"
+        "scoreboard players set @s satsu.iron.man.strength 60",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 60"
       ],
       "last_tick_commands": ["tag @s remove mark.47"],
       "conditions": {
@@ -70,7 +71,8 @@
       ],
       "commands": [
         "scoreboard players set @s satsu.iron.man.durability 500",
-        "scoreboard players set @s satsu.iron.man.strength 320"
+        "scoreboard players set @s satsu.iron.man.strength 320",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 90"
       ],
       "last_tick_commands": [
         "tag @s remove mark.50.superior",
@@ -333,7 +335,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 8",
         "scoreboard players set @s satsu.iron.man.durability 150",
-        "scoreboard players set @s satsu.iron.man.strength 50"
+        "scoreboard players set @s satsu.iron.man.strength 50",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 59"
       ],
       "last_tick_commands": ["tag @s remove mark.43"],
       "conditions": {
@@ -355,7 +358,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 7",
         "scoreboard players set @s satsu.iron.man.durability 23",
-        "scoreboard players set @s satsu.iron.man.strength 10"
+        "scoreboard players set @s satsu.iron.man.strength 10",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 55"
       ],
       "last_tick_commands": [""],
       "conditions": {
@@ -377,7 +381,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 5",
         "scoreboard players set @s satsu.iron.man.durability 25",
-        "scoreboard players set @s satsu.iron.man.strength 7"
+        "scoreboard players set @s satsu.iron.man.strength 7",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 47"
       ],
       "last_tick_commands": [""],
       "conditions": {
@@ -399,7 +404,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 0",
         "scoreboard players set @s satsu.iron.man.durability 37",
-        "scoreboard players set @s satsu.iron.man.strength 12"
+        "scoreboard players set @s satsu.iron.man.strength 12",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 48"
       ],
       "last_tick_commands": [""],
       "conditions": {
@@ -421,7 +427,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 3",
         "scoreboard players set @s satsu.iron.man.durability 56",
-        "scoreboard players set @s satsu.iron.man.strength 13"
+        "scoreboard players set @s satsu.iron.man.strength 13",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 33"
       ],
       "last_tick_commands": ["tag @s remove mark.16"],
       "conditions": {
@@ -523,7 +530,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 5",
         "scoreboard players set @s satsu.iron.man.durability 81",
-        "scoreboard players set @s satsu.iron.man.strength 31"
+        "scoreboard players set @s satsu.iron.man.strength 31",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 34"
       ],
       "last_tick_commands": ["tag @s remove mark.21"],
       "conditions": {
@@ -546,7 +554,8 @@
         "execute as @s[scores={satsu.iron.man.armor.actived=1..}] run effect give @s minecraft:haste 1 5 true",
         "scoreboard players set @s satsu.iron.man.flame 9",
         "scoreboard players set @s satsu.iron.man.durability 140",
-        "scoreboard players set @s satsu.iron.man.strength 41"
+        "scoreboard players set @s satsu.iron.man.strength 41",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 100000"
       ],
       "last_tick_commands": ["tag @s remove mark.40"],
       "conditions": {
@@ -793,7 +802,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 9",
         "scoreboard players set @s satsu.iron.man.durability 10",
-        "scoreboard players set @s satsu.iron.man.strength 4"
+        "scoreboard players set @s satsu.iron.man.strength 4",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 5"
       ],
       "last_tick_commands": [
         "tag @s remove mark.1",
@@ -818,7 +828,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 0",
         "scoreboard players set @s satsu.iron.man.durability 13",
-        "scoreboard players set @s satsu.iron.man.strength 6"
+        "scoreboard players set @s satsu.iron.man.strength 6",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 6"
       ],
       "last_tick_commands": ["tag @s remove mark.2"],
       "conditions": {
@@ -846,7 +857,8 @@
         "execute as @s[scores={satsu.iron.man.armor.actsived.perm=1..}] run effect give @s minecraft:dolphins_grace 1 255 true",
         "scoreboard players set @s satsu.iron.man.flame 10",
         "scoreboard players set @s satsu.iron.man.durability 200",
-        "scoreboard players set @s satsu.iron.man.strength 70"
+        "scoreboard players set @s satsu.iron.man.strength 70",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 35"
       ],
       "last_tick_commands": ["tag @s remove mark.30.iron.destroyer"],
       "conditions": {
@@ -872,7 +884,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 10",
         "scoreboard players set @s satsu.iron.man.durability 280",
-        "scoreboard players set @s satsu.iron.man.strength 80"
+        "scoreboard players set @s satsu.iron.man.strength 80",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 57"
       ],
       "last_tick_commands": [
         "tag @s remove mark.unknow.blooded.armor",
@@ -898,7 +911,8 @@
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 1",
         "scoreboard players set @s satsu.iron.man.durability 30",
-        "scoreboard players set @s satsu.iron.man.strength 20"
+        "scoreboard players set @s satsu.iron.man.strength 20",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 20"
       ],
       "last_tick_commands": ["tag @s remove mark.5"],
       "conditions": {
