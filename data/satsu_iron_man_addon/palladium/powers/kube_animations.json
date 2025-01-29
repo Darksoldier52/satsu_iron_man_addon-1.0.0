@@ -382,7 +382,15 @@
                     "ability": "mark.5_anim",
                     "property": "value",
                     "min": 1,
-                    "max": 15
+                    "max": 35
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "armor_activate.animation_timer.mark.5",
+                    "property": "value",
+                    "min": 1,
+                    "max": 35
                   }
                 ]
               }
@@ -420,36 +428,133 @@
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
-      "max_value": 10,
+      "max_value": 6,
       "conditions": {
         "enabling": [
           {
             "type": "palladium:and",
             "conditions": [
               {
+                "type": "palladium:ability_integer_property",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate.animation_timer.mark.5",
+                "property": "value",
+                "min": 1,
+                "max": 6
+              },
+              {
+                "type": "palladium:on_ground"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
                 "type": "palladium:has_tag",
-                "tag": "mark.5"
+                "tag": "sentinel_one"
               },
               {
                 "type": "palladium:or",
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "interpolate",
+                    "power": "satsu_iron_man_addon:kube_animations",
+                    "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
-                    "max": 15
+                    "max": 6
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "no_nanoarmor_anim",
+                    "power": "satsu_iron_man_addon:kube_animations",
+                    "ability": "blooded_activaded_anim",
                     "property": "value",
                     "min": 1,
-                    "max": 15
+                    "max": 6
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "mark.5_anim.2": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 6,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate.animation_timer.mark.5",
+                "property": "value",
+                "min": 10,
+                "max": 29
+              },
+              {
+                "type": "palladium:on_ground"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "sentinel_one"
+              },
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:kube_animations",
+                    "ability": "armor_sentinel_anim",
+                    "property": "value",
+                    "min": 1,
+                    "max": 6
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:kube_animations",
+                    "ability": "blooded_activaded_anim",
+                    "property": "value",
+                    "min": 1,
+                    "max": 6
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "mark.5_anim.3": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 6,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate.animation_timer.mark.5",
+                "property": "value",
+                "min": 10,
+                "max": 29
               },
               {
                 "type": "palladium:on_ground"
@@ -499,11 +604,11 @@
         "enabling": [
           {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:kube_animations",
-            "ability": "mark.5_anim",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_activate.animation_timer.mark.5",
             "property": "value",
             "min": 1,
-            "max": 3
+            "max": 30
           }
         ]
       }
