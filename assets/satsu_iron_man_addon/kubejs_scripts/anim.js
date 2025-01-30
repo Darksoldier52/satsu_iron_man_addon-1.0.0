@@ -942,9 +942,7 @@ PalladiumEvents.registerAnimations((event) => {
         builder.getPlayer(),
         "satsu_iron_man_addon:kube_animations",
         "mark_47_anim",
-        builder.getPartialTicks(),
-        0,
-        3
+        builder.getPartialTicks()
       );
 
       // only apply animation if progress is above 0!
@@ -1002,10 +1000,8 @@ PalladiumEvents.registerAnimations((event) => {
       const progress = animationUtil.getAnimationTimerAbilityValue(
         builder.getPlayer(),
         "satsu_iron_man_addon:kube_animations",
-        "mark_47_anim",
-        builder.getPartialTicks(),
-        4,
-        6
+        "mark_47_anim.2",
+        builder.getPartialTicks()
       );
 
       // only apply animation if progress is above 0!
