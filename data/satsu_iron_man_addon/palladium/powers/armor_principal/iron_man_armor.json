@@ -3575,21 +3575,21 @@
         ]
       }
     },
-    "Satsu.Armor.2.MK43": {
+    "Satsu.Armor.2.MK39": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_2.png",
-      "title": { "translate": "ability.title.satsu.mark.43" },
-      "description": { "translate": "description.iron.man.mark.43" },
+      "title": { "translate": "ability.title.satsu.mark.39" },
+      "description": { "translate": "description.iron.man.mark.39" },
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [2, 2.5],
-      "commands": "scoreboard players set @s satsu.iron.man.armor.43.unlock 1",
+      "commands": "scoreboard players set @s satsu.iron.man.armor.39.unlock 1",
       "conditions": {
         "unlocking": [
           {
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
-            "score": 430,
+            "score": 390,
             "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
             "description": { "text": "Armor Skill Point" }
           },
@@ -3600,11 +3600,11 @@
         ]
       }
     },
-    "not.Satsu.Armor.2.MK43": {
+    "not.Satsu.Armor.2.MK39": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "commands": "scoreboard players reset @s satsu.iron.man.armor.43.unlock",
+      "commands": "scoreboard players reset @s satsu.iron.man.armor.39.unlock",
       "conditions": {
         "unlocking": [
           {
@@ -3613,7 +3613,7 @@
               {
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Satsu.Armor.2.MK43"
+                "ability": "Satsu.Armor.2.MK39"
               }
             ]
           }
