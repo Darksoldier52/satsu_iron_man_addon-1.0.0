@@ -222,15 +222,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.mask",
             "min_score": 0,
-            "max_score": 1
-          },
-          {
-            "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "mask_animation_timer_off",
-            "property": "value",
-            "min": 0,
-            "max": 16
+            "max_score": 0
           },
           {
             "type": "palladium:or",
@@ -303,15 +295,9 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.mask",
-            "min_score": 0,
-            "max_score": 1
-          },
-          {
             "type": "palladium:ability_integer_property",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "mask_animation_timer_off",
+            "ability": "mask_animation_timer",
             "property": "value",
             "min": 1,
             "max": 16

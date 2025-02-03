@@ -13,7 +13,7 @@
 		},
 		"animation.minecraft:mask.up": {
 			"loop": "hold_on_last_frame",
-			"animation_length": 0.9167,
+			"animation_length": 0.3333,
 			"bones": {
 				"mask": {
 					"rotation": {
