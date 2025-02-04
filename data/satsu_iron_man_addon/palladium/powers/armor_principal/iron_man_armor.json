@@ -1180,7 +1180,7 @@
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "armor_activate.animation_timer.blooded",
                 "property": "value",
-                "min": 1,
+                "min": 13,
                 "max": 19
               },
               {
