@@ -989,7 +989,7 @@
                 "ability": "armor_activate.animation_timer.mark.47",
                 "property": "value",
                 "min": 1,
-                "max": 19
+                "max": 30
               }
             ]
           }
