@@ -4970,7 +4970,7 @@
           {
             "type": "palladium:activation",
             "ticks": 20,
-            "cooldown": 80,
+            "cooldown": 280,
             "key_type": "key_bind",
             "needs_empty_hand": false
           }
@@ -5088,7 +5088,7 @@
           {
             "type": "palladium:activation",
             "ticks": 50,
-            "cooldown": 80,
+            "cooldown": 480,
             "key_type": "key_bind",
             "needs_empty_hand": false
           }
