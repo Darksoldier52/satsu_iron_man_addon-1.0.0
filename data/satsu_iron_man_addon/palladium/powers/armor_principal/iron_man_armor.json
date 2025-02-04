@@ -1188,7 +1188,7 @@
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "armor_activate.animation_timer.mark.50",
                 "property": "value",
-                "min": 19,
+                "min": 18,
                 "max": 19
               },
               {
