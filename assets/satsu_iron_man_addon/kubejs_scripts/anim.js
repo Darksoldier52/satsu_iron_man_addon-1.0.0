@@ -702,15 +702,15 @@ PalladiumEvents.registerAnimations((event) => {
         if (builder.isFirstPerson()) {
           builder
             .get("left_arm")
-            .setXRotDegrees(49)
-            .setYRotDegrees(-30)
-            .setZRotDegrees(30)
+            .setXRotDegrees(90)
+            .setYRotDegrees(0)
+            .setZRotDegrees(0)
             .animate("InOutCubic", progress);
         }
         if (builder.isFirstPerson()) {
           builder
             .get("right_arm")
-            .setXRotDegrees(49)
+            .setXRotDegrees(80)
             .setYRotDegrees(-30)
             .setZRotDegrees(-30)
             .animate("InOutCubic", progress);
