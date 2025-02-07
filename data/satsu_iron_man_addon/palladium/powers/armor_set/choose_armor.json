@@ -668,7 +668,8 @@
         "scoreboard players set @s satsu.prev.iron.man.armor.anim 1",
         "scoreboard players reset @s satsu.iron.man.armor.set",
         "superpower remove satsu_iron_man_addon:armor_set/choose_armor",
-        "tag @s add mecano.comprobacion"
+        "tag @s add mecano.comprobacion",
+        "function satsu_iron_man_addon:sentinels/kill_one_sentinel"
       ],
       "last_tick_commands": [],
       "conditions": {

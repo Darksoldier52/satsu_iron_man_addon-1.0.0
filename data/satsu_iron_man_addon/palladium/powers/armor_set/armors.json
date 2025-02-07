@@ -1125,7 +1125,7 @@
         ]
       }
     },
-    "choose.armor.test.1": {
+    "spawn.armor.fall": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
       "title": "set",
@@ -1173,7 +1173,7 @@
       "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
       "first_tick_commands": [
         "tag @s add sentinel.false",
-        "function satsu_iron_man_addon:sentinels/spawn_false_sentinel_on_ground",
+        "function satsu_iron_man_addon:sentinels/spawn_false_sentinel_on_ground_back",
         "tag @s remove mecano.sentinel.on.ground"
       ],
       "commands": [""],
