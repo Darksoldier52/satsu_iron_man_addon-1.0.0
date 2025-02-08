@@ -61,7 +61,7 @@ scoreboard objectives add satsu.iron.man.armor.ark_energy_full_or_off dummy
 scoreboard objectives add satsu.iron.man.scan.enemies dummy
 scoreboard objectives add satsu.iron.man.armor.47.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.superior.unlock dummy
-scoreboard objectives add satsu.iron.man.armor.43.unlock dummy
+scoreboard objectives add satsu.iron.man.armor.39.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.3.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.4.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.5.unlock dummy
