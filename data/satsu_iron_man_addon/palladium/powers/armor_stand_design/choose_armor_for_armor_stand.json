@@ -41,6 +41,28 @@
       "hidden_in_bar": true,
       "render_layer": "satsu_iron_man_addon:armor_things/mini_armor_in_hand"
     },
+    "choose.armor.move.third,person": {
+      "type": "palladium:gui_overlay",
+      "description": { "translate": "description.iron.man.energy.pulse" },
+      "texture": "#satsu_iron_man_addon:choose_armor_third_person",
+      "texture_width": 32,
+      "texture_height": 64,
+      "translate": [0, 160, 0],
+      "rotate": [0, 0, 0],
+      "scale": [1, 1, 2.5],
+      "alignment": "top_right",
+      "hidden": true,
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_stand_design/choose_armor_for_armor_stand",
+            "ability": "choose.armor.move"
+          }
+        ]
+      }
+    },
     "choose.armor.move": {
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:choose_armor",
