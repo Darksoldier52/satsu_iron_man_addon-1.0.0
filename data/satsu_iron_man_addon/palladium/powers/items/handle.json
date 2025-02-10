@@ -44,6 +44,17 @@
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:items/handle",
             "ability": "skill_tree"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.animation.armor",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
           }
         ]
       }
