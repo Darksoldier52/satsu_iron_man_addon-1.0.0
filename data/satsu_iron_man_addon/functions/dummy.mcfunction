@@ -72,6 +72,7 @@ scoreboard objectives add satsu.iron.man.armor.9.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.10.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.11.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.12.unlock dummy
+scoreboard objectives add satsu.iron.man.armor.5.mk19.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.mk1.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.mk2.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.mk5.unlock dummy
