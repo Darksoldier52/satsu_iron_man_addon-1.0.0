@@ -5,7 +5,7 @@ execute as @s[scores={satsu.iron.man.choose_armor=0}] run title @s actionbar {"t
 execute as @s[scores={satsu.iron.man.choose_armor=1}] run title @s actionbar {"translate":"satsu.iron.man.addon.text.mark.50.superior","color":"blue","bold":true}
 execute as @s[scores={satsu.iron.man.choose_armor=1}] unless score @s satsu.iron.man.mask matches 0.. run scoreboard players set @s satsu.iron.man.mask 0
 execute as @s[scores={satsu.iron.man.choose_armor=2}] run title @s actionbar {"translate":"satsu.iron.man.addon.text.mark.39","color":"blue","bold":true}
-execute as @s[scores={satsu.iron.man.choose_armor=3}] run title @s actionbar {"translate":"satsu.iron.man.addon.text.mark.unknow","color":"blue","bold":true}
+execute as @s[scores={satsu.iron.man.choose_armor=3}] run title @s actionbar {"translate":"satsu.iron.man.addon.text.mark.6","color":"blue","bold":true}
 execute as @s[scores={satsu.iron.man.choose_armor=4}] run title @s actionbar {"translate":"satsu.iron.man.addon.text.mark.unknow","color":"blue","bold":true}
 execute as @s[scores={satsu.iron.man.choose_armor=5}] run title @s actionbar {"translate":"satsu.iron.man.addon.text.mark.19.tiger","color":"blue","bold":true}
 execute as @s[scores={satsu.iron.man.choose_armor=6}] run title @s actionbar {"translate":"satsu.iron.man.addon.text.mark.16.stealht","color":"blue","bold":true}

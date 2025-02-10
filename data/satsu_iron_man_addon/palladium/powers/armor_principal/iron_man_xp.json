@@ -136,6 +136,45 @@
         ]
       }
     },
+    "armor_xp_points.mk6": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "scoreboard players add @s SatsuIronManArmorSkillPoint 1",
+        "scoreboard players set @s SatsuIronManArmorExp 0"
+      ],
+      "last_tick_commands": [],
+      "commands": [
+        "title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.earned.points\",\"color\":\"blue\"}"
+      ],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "SatsuIronManArmorExp",
+            "min_score": 6500,
+            "max_score": 2147483647
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "SatsuIronManArmorSkillPoint",
+            "min_score": 0,
+            "max_score": 70
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 3,
+            "max_score": 3
+          },
+          {
+            "type": "palladium:not",
+            "conditions": []
+          }
+        ]
+      }
+    },
     "armor_xp_points.mk.16": {
       "type": "palladium:command",
       "hidden": true,
