@@ -92,6 +92,7 @@
         ]
       }
     },
+    "render_layer_armor.taken.armor": {
       "type": "palladium:render_layer",
       "hidden": true,
       "hidden_in_bar": true,
@@ -106,6 +107,7 @@
                 "tag": "mark.taken"
               }
             ]
+          },
           {
             "type": "palladium:not",
             "conditions": [

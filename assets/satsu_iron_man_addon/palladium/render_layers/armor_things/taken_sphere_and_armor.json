@@ -1,0 +1,11 @@
+{
+  "type": "palladium:compound",
+  "layers": [
+    {
+      "type": "geckolib:default",
+      "model": "satsu_iron_man_addon:geo/taken_sphere.geo.json",
+      "texture": "satsu_iron_man_addon:textures/models/taken_cube.png",
+      "render_type": "glow"
+    }
+  ]
+}
