@@ -1610,6 +1610,14 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.unknow.blooded.armor"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.1873"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.extremis"
                   }
                 ]
               }
@@ -3186,6 +3194,14 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.unknow.blooded.armor"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.1873"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
               }
             ]
           },
@@ -3325,6 +3341,14 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.unknow.blooded.armor"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.1873"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
               }
             ]
           },
@@ -3451,6 +3475,14 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.unknow.blooded.armor"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.1873"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
               }
             ]
           },
@@ -5422,6 +5454,14 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.unknow.blooded.armor"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.1873"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
               }
             ]
           },
@@ -5529,6 +5569,14 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.unknow.blooded.armor"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.1873"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
               }
             ]
           },

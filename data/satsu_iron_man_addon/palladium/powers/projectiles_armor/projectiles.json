@@ -313,6 +313,12 @@
                     "objective": "satsu.iron.man.armor",
                     "min_score": 16,
                     "max_score": 16
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor",
+                    "min_score": 18,
+                    "max_score": 18
                   }
                 ]
               }
@@ -588,6 +594,108 @@
             "objective": "satsu.iron.man.armor",
             "min_score": 16,
             "max_score": 16
+          }
+        ]
+      }
+    },
+    "energy_projectile.mk.1873": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 2.5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": 20,
+      "pitchOffset": 25,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 8,
+        "KnockbackStrength": 0,
+        "Damage": 6,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 60,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/blooded_iron_man_pulse",
+        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/blooded_iron_man_pulse",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#c17000"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:animation_timer_ability",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "animation.projectile.1",
+            "min": 5,
+            "max": 5
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 18,
+            "max_score": 18
+          }
+        ]
+      }
+    },
+    "energy_projectile_other_arm.mk.1873": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 2.5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": -20,
+      "pitchOffset": 25,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 8,
+        "KnockbackStrength": 0,
+        "Damage": 6,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 60,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/blooded_iron_man_pulse",
+        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/blooded_iron_man_pulse",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#c17000"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:animation_timer_ability",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "animation.projectile.3",
+            "min": 5,
+            "max": 5
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 18,
+            "max_score": 18
           }
         ]
       }
@@ -978,6 +1086,16 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "energy_projectile_other_arm.mk50.superior"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "ability": "energy_projectile.mk.1873"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "ability": "energy_projectile_other_arm.mk.1873"
               },
               {
                 "type": "palladium:ability_enabled",
