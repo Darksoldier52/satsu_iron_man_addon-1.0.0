@@ -1,5 +1,5 @@
 {
-  "name": { "translate": "ability.title.satsu.ia" },
+  "name": { "translate": "ability.title.satsu.dampened" },
   "persistent_data": true,
   "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
   "background": "satsu_iron_man_addon:textures/gui/block/background.png",
@@ -20,11 +20,11 @@
         "unlocking": []
       }
     },
-    "remove_ark_animation_timer": {
+    "dampened_ark_animation_timer": {
       "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/item/dampeneed.png",
-      "title": { "translate": "ability.title.satsu.ia.choose" },
-      "description": { "translate": "description.satsu.ia.choose" },
+      "title": { "translate": "ability.title.satsu.dampened" },
+      "description": { "translate": "description.satsu.dampeneed" },
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 0,
@@ -53,13 +53,8 @@
     },
     "remove.ark.command": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/item/dampeneed.png",
-      "title": { "translate": "ability.title.satsu.ia.choose" },
-      "description": { "translate": "description.satsu.ia.choose" },
-      "hidden": false,
-      "hidden_in_bar": false,
-      "list_index": 0,
-      "gui_position": [0, 0.5],
+      "hidden": true,
+      "hidden_in_bar": true,
       "first_tick_commands": [],
       "commands": [""],
       "last_tick_commands": [
@@ -73,7 +68,7 @@
           {
             "type": "palladium:ability_integer_property",
             "power": "null",
-            "ability": "remove_ark_animation_timer",
+            "ability": "dampened_ark_animation_timer",
             "property": "value",
             "min": 30,
             "max": 30
@@ -90,13 +85,8 @@
     },
     "remove.ark.command.damage": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/item/dampeneed.png",
-      "title": { "translate": "ability.title.satsu.ia.choose" },
-      "description": { "translate": "description.satsu.ia.choose" },
       "hidden": true,
       "hidden_in_bar": true,
-      "list_index": 0,
-      "gui_position": [0, 0.5],
       "first_tick_commands": [""],
       "commands": [""],
       "last_tick_commands": [""],
@@ -105,7 +95,7 @@
           {
             "type": "palladium:ability_integer_property",
             "power": "null",
-            "ability": "remove_ark_animation_timer",
+            "ability": "dampened_ark_animation_timer",
             "property": "value",
             "min": 1,
             "max": 23
@@ -113,7 +103,7 @@
           {
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:items/dampened_ark",
-            "ability": "remove_ark_animation_timer"
+            "ability": "dampened_ark_animation_timer"
           }
         ],
         "unlocking": [
