@@ -1437,7 +1437,6 @@ PalladiumEvents.registerAnimations((event) => {
           .moveX(0)
           .moveY(7.8785)
           .moveZ(-7)
-          .scaleY(1.3)
           .animate("InOutCubic", progress);
         builder
           .get("right_arm")
@@ -1447,7 +1446,6 @@ PalladiumEvents.registerAnimations((event) => {
           .moveX(0)
           .moveY(7.8785)
           .moveZ(-7)
-          .scaleY(1.3)
           .animate("InOutCubic", progress);
         builder
           .get("head")
