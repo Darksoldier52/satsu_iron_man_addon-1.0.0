@@ -1032,7 +1032,7 @@
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.25"],
       "commands": [""],
-      "last_tick_commands": ["tag @s add mark.25"],
+      "last_tick_commands": ["tag @s remove mark.25"],
       "conditions": {
         "enabling": [
           {
