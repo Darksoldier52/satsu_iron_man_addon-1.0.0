@@ -1877,7 +1877,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action"
+            "type": "palladium:action",
+             "cooldown": 50
           }
         ],
         "unlocking": [
@@ -4875,7 +4876,7 @@
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 15,
-      "gui_position": [-3, 3],
+      "gui_position": [9, 3],
       "conditions": {
         "enabling": [
           {
@@ -4920,7 +4921,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.6.MKStealh_Armor"
+            "ability": "Satsu.Armor.10.mark.extremis"
           }
         ]
       }
