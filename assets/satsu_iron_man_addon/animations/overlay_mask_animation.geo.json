@@ -3,11 +3,11 @@
 	"animations": {
 		"animation.minecraft:mask.in.face": {
 			"loop": true,
-			"animation_length": 0.0833,
+			"animation_length": 0.0417,
 			"bones": {
 				"mask": {
 					"rotation": [90, 0, 0],
-					"position": [0, 2, 2]
+					"position": [0, 2, 2.1]
 				}
 			}
 		},
