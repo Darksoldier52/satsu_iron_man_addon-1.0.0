@@ -184,6 +184,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "im_superior"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "mark.1873.clap_smoke_hands"
                   }
                 ]
               }
@@ -227,6 +231,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "im_superior"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "mark.1873.clap_smoke_hands"
                   }
                 ]
               }
@@ -274,6 +282,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "im_superior"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "mark.1873.clap_smoke_hands"
                   }
                 ]
               }
@@ -321,6 +333,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "im_superior"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "mark.1873.clap_smoke_hands"
                   }
                 ]
               }
