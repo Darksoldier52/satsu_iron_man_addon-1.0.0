@@ -5199,10 +5199,10 @@
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/invis.png",
       "title": { "translate": "ability.title.satsu.stealht.mode" },
-      "hidden": false,
-      "hidden_in_bar": false,
+      "hidden": true,
+      "hidden_in_bar": true,
       "list_index": 15,
-      "gui_position": [9, 3],
+      "gui_position": [9, 2.9],
       "conditions": {
         "enabling": [
           {
@@ -5241,6 +5241,116 @@
                     "max_score": 1
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.10.mark.extremis"
+          }
+        ]
+      }
+    },
+    "extremis.regen": {
+      "type": "palladium:healing",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/heart.png",
+      "title": { "translate": "ability.title.satsu.healing" },
+      "description": { "translate": "description.satsu.extremis.healing" },
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": 15,
+      "gui_position": [9, 2.9],
+      "frequency": 10,
+      "amount": 0.8,
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Armor_powers_stat_upgrades"
+              }
+            ]
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.10.mark.extremis"
+          }
+        ]
+      }
+    },
+    "extremis.durability": {
+      "type": "palladium:attribute_modifier",
+      "icon": "minecraft:iron_chestplate",
+      "title": { "translate": "ability.title.satsu.durability" },
+      "description": { "translate": "description.satsu.extremis.durability" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [9, 3.3],
+      "attribute": "minecraft:generic.armor",
+      "amount": 35,
+      "operation": 0,
+      "uuid": "b679de99-9744-4cd1-83ca-ed123bb07291",
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Armor_powers_stat_upgrades"
+              }
+            ]
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.10.mark.extremis"
+          }
+        ]
+      }
+    },
+    "extremis.strength": {
+      "type": "palladium:attribute_modifier",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/strength.png",
+      "title": { "translate": "ability.title.satsu.strength" },
+      "description": { "translate": "description.satsu.extremis.strength" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [9, 3.6],
+      "attribute": "minecraft:generic.attack_damage",
+      "amount": 15,
+      "operation": 0,
+      "uuid": "f732d74f-5bab-432d-b60d-0748e5788bd8",
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Armor_powers_stat_upgrades"
               }
             ]
           },
