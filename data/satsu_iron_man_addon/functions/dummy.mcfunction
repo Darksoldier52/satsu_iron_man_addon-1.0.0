@@ -1,4 +1,7 @@
 
+scoreboard objectives add satsu.iron.man.addon.ark.skin.max dummy
+scoreboard objectives add satsu.iron.man.addon.ark.skin.choose dummy
+scoreboard objectives add satsu.iron.man.addon.ark.skin dummy
 scoreboard objectives add satsu.iron.man.armor.energy.pulse.or.energy.beam dummy
 scoreboard objectives add satsu.iron.man.armor.energy.pulse.hand dummy
 scoreboard objectives add satsu.iron.man.addon.unlocking.set.block dummy
