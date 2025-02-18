@@ -2,13 +2,15 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "translate": "advancements.satsu_iron_man_addon.mark.3"
+            "translate": "advancements.satsu_iron_man_addon.more",
+            "color": "gray",
+            "bold": true
         },
         "description": {
-            "translate": "advancements.satsu_iron_man_addon.mark.3.description"
+            "translate": "advancements.satsu_iron_man_addon.more.description"
         },
         "icon": {
-            "item": "satsu_iron_man_addon:mark_3_head"
+            "item": "minecraft:bedrock"
         },
         "frame": "task",
         "show_toast": true,
@@ -16,9 +18,9 @@
         "hidden": false
     },
     "criteria": {
-        "mk3": {
+        "mk5": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "satsu_iron_man_addon:mark_2"
+    "parent": "satsu_iron_man_addon:mark_3"
 }

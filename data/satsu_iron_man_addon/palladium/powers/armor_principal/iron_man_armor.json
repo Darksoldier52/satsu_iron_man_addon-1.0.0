@@ -4740,7 +4740,10 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [0, 2.5],
-      "commands": "scoreboard players set @s satsu.iron.man.armor.mk1.unlock 1",
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.armor.mk1.unlock 1",
+        "advancement grant @s only satsu_iron_man_addon:mark_1"
+      ],
       "conditions": {
         "unlocking": [
           {
@@ -4779,7 +4782,10 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [1, 2.5],
-      "commands": "scoreboard players set @s satsu.iron.man.armor.mk2.unlock 1",
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.armor.mk2.unlock 1",
+        "advancement grant @s only satsu_iron_man_addon:mark_2"
+      ],
       "conditions": {
         "unlocking": [
           {
@@ -4826,7 +4832,10 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [-1, 2.5],
-      "commands": "scoreboard players set @s satsu.iron.man.armor.mk3.unlock 1",
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.armor.mk3.unlock 1",
+        "advancement grant @s only satsu_iron_man_addon:mark_3"
+      ],
       "conditions": {
         "unlocking": [
           {

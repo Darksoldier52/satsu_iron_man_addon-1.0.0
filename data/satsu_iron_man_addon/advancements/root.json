@@ -15,13 +15,13 @@
       "color": "gold"
     },
     "icon": {
-      "item": "minecraft:stone"
+      "item": "satsu_iron_man_addon:iron_man_head"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false,
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    "background": "satsu_iron_man_addon:textures/gui/block/background.png"
   },
   "criteria": {
     "0": {
