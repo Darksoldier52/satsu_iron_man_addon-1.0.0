@@ -695,9 +695,9 @@ PalladiumEvents.registerAnimations((event) => {
             .animate("InOutCubic", progress);
           builder.get("chest").animate("InOutCubic", progress);
           builder
-          .get("head")
-          .setXRotDegrees(-5)
-          .animate("InOutCubic", progress);
+            .get("head")
+            .setXRotDegrees(-5)
+            .animate("InOutCubic", progress);
           builder.get("chest").animate("InOutCubic", progress);
           builder;
         }
@@ -1637,16 +1637,16 @@ PalladiumEvents.registerAnimations((event) => {
         builder
           .get("left_arm")
           .setXRotDegrees(0)
-          .setYRotDegrees(0)
-          .setZRotDegrees(0)
+          .setYRotDegrees(30)
+          .setZRotDegrees(30)
           .animate("InOutCubic", progress);
       }
       if (builder.isFirstPerson()) {
         builder
           .get("right_arm")
           .setXRotDegrees(0)
-          .setYRotDegrees(0)
-          .setZRotDegrees(0)
+          .setYRotDegrees(-30)
+          .setZRotDegrees(-30)
           .animate("InOutCubic", progress);
       } else {
         // third person animations
@@ -1688,39 +1688,39 @@ PalladiumEvents.registerAnimations((event) => {
       if (builder.isFirstPerson()) {
         builder
           .get("left_arm")
-          .setXRotDegrees(0)
-          .setYRotDegrees(0)
-          .setZRotDegrees(0)
+          .setXRotDegrees(-26)
+          .setYRotDegrees(30)
+          .setZRotDegrees(30)
           .animate("InOutCubic", progress);
       }
       if (builder.isFirstPerson()) {
         builder
           .get("right_arm")
-          .setXRotDegrees(0)
-          .setYRotDegrees(0)
-          .setZRotDegrees(0)
+          .setXRotDegrees(-26)
+          .setYRotDegrees(-30)
+          .setZRotDegrees(-30)
           .animate("InOutCubic", progress);
       } else {
-         // third person animations
-          builder
-            .get("left_arm")
-            .setXRotDegrees(-90)
-            .setYRotDegrees(25)
-            .setZRotDegrees(0)
-            .moveX(0)
-            .moveY(0)
-            .moveZ(0)
-            .animate("InOutCubic", progress);
-          builder
-            .get("right_arm")
-            .setXRotDegrees(-90)
-            .setYRotDegrees(-25)
-            .setZRotDegrees(0)
-            .moveX(0)
-            .moveY(0)
-            .moveZ(0)
-            .animate("InOutCubic", progress);
-          builder;
+        // third person animations
+        builder
+          .get("left_arm")
+          .setXRotDegrees(-90)
+          .setYRotDegrees(25)
+          .setZRotDegrees(0)
+          .moveX(0)
+          .moveY(0)
+          .moveZ(0)
+          .animate("InOutCubic", progress);
+        builder
+          .get("right_arm")
+          .setXRotDegrees(-90)
+          .setYRotDegrees(-25)
+          .setZRotDegrees(0)
+          .moveX(0)
+          .moveY(0)
+          .moveZ(0)
+          .animate("InOutCubic", progress);
+        builder;
       }
     }
   });
