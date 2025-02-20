@@ -5549,18 +5549,23 @@
         ]
       }
     },
-    "stealht": {
-      "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/invis.png",
-      "title": { "translate": "ability.title.satsu.stealht.mode" },
+    "mini_fireworks": {
+      "type": "palladium:repeating_animation_timer",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_work.png",
+      "entity_type": "palladium:custom_projectile",
+      "title": { "translate": "ability.title.satsu.fireworks" },
+      "description": { "translate": "description.Fireworks" },
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 15,
-      "gui_position": [-3, 3],
+      "gui_position": [-4, -0.5],
+      "start_value": 0,
+      "max_value": 20,
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:toggle",
+            "type": "palladium:activation",
+            "ticks": 8,
             "cooldown": 0,
             "key_type": "key_bind",
             "needs_empty_hand": false
@@ -5598,10 +5603,177 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor",
-                "min_score": 6,
-                "max_score": 6
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.6"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.7"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.8"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.9"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.10"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.11"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.12"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.13"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.14"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.15"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.16"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.17"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.18"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.19.tiger"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.20"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.21"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.22"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.23"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.24"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.25"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.26"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.27"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.28"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.29"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.30"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.31"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.32"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.33"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.34"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.35"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.36"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.37"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.38"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.39"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.40"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.41"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.42"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.43"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.44"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.45"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.46"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.47"
+                  }
+                ]
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -5626,11 +5798,6 @@
                 ]
               }
             ]
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.6.MKStealh_Armor"
           }
         ]
       }
@@ -5641,7 +5808,7 @@
       "title": { "translate": "ability.title.satsu.stealht.mode" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 15,
+      "list_index": 16,
       "gui_position": [-3, 3],
       "conditions": {
         "enabling": [
@@ -5922,7 +6089,7 @@
       "description": { "translate": "description.superior.telekinesis" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 15,
+      "list_index": 16,
       "gui_position": [4, 3],
       "start_value": 0,
       "max_value": 32,
@@ -6871,7 +7038,7 @@
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 15,
+      "list_index": 16,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
@@ -6937,7 +7104,7 @@
       "title": { "translate": "ability.title.satsu.decrease.Speed" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 16,
+      "list_index": 17,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
@@ -7003,7 +7170,7 @@
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 15,
+      "list_index": 16,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
@@ -7069,7 +7236,7 @@
       "title": { "translate": "ability.title.satsu.decrease.Speed" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 16,
+      "list_index": 17,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
