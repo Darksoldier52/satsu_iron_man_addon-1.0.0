@@ -4614,6 +4614,17 @@
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.choose_armor.test",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
           }
         ]
       }
@@ -7374,18 +7385,6 @@
               },
               {
                 "type": "palladium:has_tag",
-                "tag": "mark.21"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.40"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.47"
-              },
-              {
-                "type": "palladium:has_tag",
                 "tag": "mark.50"
               },
               {
@@ -7513,18 +7512,6 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "satsu.iron.man.nano.armor"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.21"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.40"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.47"
               },
               {
                 "type": "palladium:has_tag",
