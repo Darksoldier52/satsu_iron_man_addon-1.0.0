@@ -69,6 +69,11 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "uni.beam.hand.2"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mini_fireworks"
               }
             ]
           }
@@ -105,6 +110,11 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "uni.beam.hand.2"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mini_fireworks"
               }
             ]
           }
@@ -151,6 +161,11 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "mark.1873.throw.smoke"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mini_fireworks"
               }
             ]
           }
@@ -251,8 +266,8 @@
       "swinging_arm": "none",
       "yawOverride": -999,
       "pitchOverride": -999,
-      "yawOffset": -10,
-      "pitchOffset": 25,
+      "yawOffset": -50,
+      "pitchOffset": 55,
       "yawInaccuracy": 0,
       "pitchInaccuracy": 0,
       "count": 1,
@@ -292,8 +307,8 @@
       "swinging_arm": "none",
       "yawOverride": -999,
       "pitchOverride": -999,
-      "yawOffset": 10,
-      "pitchOffset": 25,
+      "yawOffset": 50,
+      "pitchOffset": 55,
       "yawInaccuracy": 0,
       "pitchInaccuracy": 0,
       "count": 1,
@@ -333,7 +348,7 @@
       "swinging_arm": "none",
       "yawOverride": -999,
       "pitchOverride": -999,
-      "yawOffset": -20,
+      "yawOffset": -10,
       "pitchOffset": 25,
       "yawInaccuracy": 0,
       "pitchInaccuracy": 0,
@@ -374,7 +389,7 @@
       "swinging_arm": "none",
       "yawOverride": -999,
       "pitchOverride": -999,
-      "yawOffset": 20,
+      "yawOffset": 10,
       "pitchOffset": 25,
       "yawInaccuracy": 0,
       "pitchInaccuracy": 0,
@@ -1492,6 +1507,16 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "firework_projectile.2"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "ability": "mini_fireworks.firework_projectile"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "ability": "mini_fireworks.firework_projectile.2"
               }
             ]
           }
