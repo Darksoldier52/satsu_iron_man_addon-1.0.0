@@ -5635,6 +5635,92 @@
         ]
       }
     },
+    "stealht": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/invis.png",
+      "title": { "translate": "ability.title.satsu.stealht.mode" },
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": 15,
+      "gui_position": [-3, 3],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.ark.energy",
+                        "min_score": 0,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.ark.energy",
+                        "min_score": -10000,
+                        "max_score": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor",
+                "min_score": 6,
+                "max_score": 6
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Armor_powers_stat_upgrades"
+              },
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "min_score": 1,
+                    "max_score": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.6.MKStealh_Armor"
+          }
+        ]
+      }
+    },
     "extremis.stealht": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/invis.png",
@@ -7068,7 +7154,7 @@
       "title": { "translate": "ability.title.satsu.arms.edit" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 18,
+      "list_index": 19,
       "description": { "translate": "description.satsu.arms.edit" },
       "commands": [
         "scoreboard players add @s satsu.iron.man.arms.set 1",
@@ -7213,7 +7299,7 @@
       "title": { "translate": "ability.title.satsu.beams.edit" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 19,
+      "list_index": 20,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [
         "execute as @s unless score @s satsu.iron.man.armor.energy.beams matches 0.. run scoreboard players set @s satsu.iron.man.armor.energy.beams 0"
@@ -7377,7 +7463,7 @@
       "title": { "translate": "ability.title.satsu.beams.next" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 20,
+      "list_index": 21,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [],
       "commands": [
@@ -7422,7 +7508,7 @@
       "title": { "translate": "ability.title.satsu.beams.prev" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 21,
+      "list_index": 22,
       "description": { "translate": "description.Armor_powers_stat_upgrades" },
       "first_tick_commands": [
         "scoreboard players set @s satsu.prev.iron.man.anim 0"
@@ -7470,7 +7556,7 @@
       "description": { "translate": "description.Fireworks" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 22,
+      "list_index": 23,
       "gui_position": [-4, -0.5],
       "start_value": 0,
       "max_value": 20,
@@ -7588,7 +7674,7 @@
       "description": { "translate": "description.maximun.pulse.animation" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 23,
+      "list_index": 24,
       "gui_position": [-4, -0],
       "start_value": 0,
       "max_value": 50,
@@ -7962,7 +8048,7 @@
       "title": { "translate": "ability.title.satsu.sword.enable" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 24,
+      "list_index": 25,
       "first_tick_commands": ["tag @s add satsu.iron.man.enable.sword"],
       "commands": [""],
       "last_tick_commands": [""],
@@ -8043,7 +8129,7 @@
       "title": { "translate": "ability.title.satsu.sword.enable" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 24,
+      "list_index": 25,
       "first_tick_commands": ["tag @s remove satsu.iron.man.enable.sword"],
       "commands": [""],
       "last_tick_commands": [""],
@@ -8145,7 +8231,7 @@
       "description": { "translate": "description.force_field" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 25,
+      "list_index": 26,
       "gui_position": [-5, -0],
       "first_tick_commands": ["tag @s add ark.decharge"],
       "commands": ["function satsu_iron_man_addon:force_field"],
@@ -8189,7 +8275,7 @@
       "description": { "translate": "description.satsu.cook.ark" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 26,
+      "list_index": 27,
       "gui_position": [-5.5, -0.3],
       "commands": [""],
       "last_tick_commands": [
