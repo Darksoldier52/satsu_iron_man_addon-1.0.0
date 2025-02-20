@@ -87,6 +87,50 @@
         ]
       }
     },
+    "remove.ark.command.satsu.iron.man.enable.armor": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [],
+      "commands": [""],
+      "last_tick_commands": [
+        "execute as @s[scores={satsu.iron.man.dampened=1}] run tag @s add satsu.iron.man.enable.armor",
+        "execute as @s[scores={satsu.iron.man.dampened=2}] run tag @s remove satsu.iron.man.enable.armor"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:items/dampened_ark",
+            "ability": "remove.ark.command"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1,
+                "max_score": 1
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived.perm",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:items/dampened_ark",
+            "ability": "skill_tree"
+          }
+        ]
+      }
+    },
     "remove.ark.command.damage": {
       "type": "palladium:command",
       "hidden": true,
