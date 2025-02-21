@@ -1,6 +1,7 @@
 
 scoreboard objectives add satsu.iron.man.addon.uuid dummy
 scoreboard objectives add satsu.iron.man.armor.remote dummy
+scoreboard objectives add satsu.iron.man.addon.glasses.equip dummy
 scoreboard objectives add satsu.iron.man.addon.ark.skin.max dummy
 scoreboard objectives add satsu.iron.man.addon.give.ia.tarjet dummy
 scoreboard objectives add satsu.iron.man.addon.ark.skin.choose dummy
