@@ -8383,17 +8383,6 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.remote",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
-          },
-          {
             "type": "palladium:in_water"
           },
           {
@@ -8613,12 +8602,41 @@
                           {
                             "type": "palladium:has_tag",
                             "tag": "mark.50"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "mark.1873"
                           }
                         ]
                       }
                     ]
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "aquatic_breath_remote": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [],
+      "commands": ["effect give @s minecraft:water_breathing 1 2 true"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.remote",
+                "min_score": 1,
+                "max_score": 1
+              },
+              {
+                "type": "palladium:in_water"
               }
             ]
           }
