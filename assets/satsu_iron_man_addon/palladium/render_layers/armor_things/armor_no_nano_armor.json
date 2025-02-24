@@ -38,7 +38,20 @@
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_0_#TIMER"
       },
-      "conditions": []
+      "conditions": [
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_set/armors",
+              "ability": "stealht_animation_timer",
+              "property": "value",
+              "min": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "geckolib:default",
@@ -94,9 +107,11 @@
           "type": "palladium:not",
           "conditions": [
             {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.rbg.on.off",
-              "min_score": 0
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_set/armors",
+              "ability": "stealht_animation_timer",
+              "property": "value",
+              "min": 1
             }
           ]
         }
@@ -113,11 +128,11 @@
         "transformers": [
           {
             "type": "palladium:alpha_mask",
-            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit/transformation_#TIMER.png"
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/stealh_modes/transformation_#STEALH.png"
           }
         ],
         "variables": {
-          "TIMER": {
+          "STEALH": {
             "type": "palladium:ability_integer_property",
             "power": "satsu_iron_man_addon:armor_set/armors",
             "ability": "stealht_animation_timer",
@@ -128,8 +143,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 6
+            "min": 0
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -137,7 +151,7 @@
             "min": 0
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_1_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_1_#STEALH"
       },
       "conditions": [
         {
@@ -159,11 +173,11 @@
         "transformers": [
           {
             "type": "palladium:alpha_mask",
-            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit/transformation_#TIMER.png"
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/stealh_modes/transformation_#STEALH.png"
           }
         ],
         "variables": {
-          "TIMER": {
+          "STEALH": {
             "type": "palladium:ability_integer_property",
             "power": "satsu_iron_man_addon:armor_set/armors",
             "ability": "stealht_animation_timer",
@@ -177,7 +191,7 @@
             "min": 0
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_1_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_1_#STEALH"
       },
       "render_type": "glow",
       "conditions": [

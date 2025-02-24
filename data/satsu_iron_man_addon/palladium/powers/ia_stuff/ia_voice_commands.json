@@ -560,6 +560,14 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.8"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.9"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.16"
                   },
                   {
