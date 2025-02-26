@@ -106,8 +106,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 1,
-            "max_score": 1
+            "min_score": 2,
+            "max_score": 2
           }
         ]
       }
@@ -129,12 +129,41 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 2,
-            "max_score": 2
+            "min_score": 3,
+            "max_score": 3
           },
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor.mk2.unlock",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "choose.armor.22.mk.3": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": "Next armor",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 1,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 22"],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 4,
+            "max_score": 4
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.mk3.unlock",
             "min_score": 1,
             "max_score": 1
           }
@@ -158,8 +187,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 3,
-            "max_score": 3
+            "min_score": 5,
+            "max_score": 5
           },
           {
             "type": "palladium:objective_score",
@@ -187,12 +216,157 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 4,
-            "max_score": 4
+            "min_score": 6,
+            "max_score": 6
           },
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor.mk6.unlock",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "choose.armor.20.mk.7": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": "Next armor",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 0,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 20"],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 7,
+            "max_score": 7
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.mk7.unlock",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "choose.armor.24.mk.8": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": "Next armor",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 0,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 24"],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 8,
+            "max_score": 8
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.mk8.unlock",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "choose.armor.25.mk.9": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": "Next armor",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 0,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 25"],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 9,
+            "max_score": 9
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.mk9.unlock",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "choose.armor.26.mk.10": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": "Next armor",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 0,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 26"],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 10,
+            "max_score": 10
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.mk10.unlock",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "choose.armor.27.mk.11": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": "Next armor",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 0,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 27"],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 11,
+            "max_score": 11
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.mk10.unlock",
             "min_score": 1,
             "max_score": 1
           }
@@ -216,8 +390,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 5,
-            "max_score": 5
+            "min_score": 12,
+            "max_score": 12
           },
           {
             "type": "palladium:objective_score",
@@ -245,8 +419,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 6,
-            "max_score": 6
+            "min_score": 13,
+            "max_score": 13
           },
           {
             "type": "palladium:objective_score",
@@ -274,8 +448,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 7,
-            "max_score": 7
+            "min_score": 14,
+            "max_score": 14
           },
           {
             "type": "palladium:objective_score",
@@ -303,8 +477,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 8,
-            "max_score": 8
+            "min_score": 15,
+            "max_score": 15
           },
           {
             "type": "palladium:objective_score",
@@ -332,8 +506,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 9,
-            "max_score": 9
+            "min_score": 16,
+            "max_score": 16
           },
           {
             "type": "palladium:objective_score",
@@ -361,8 +535,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 10,
-            "max_score": 10
+            "min_score": 17,
+            "max_score": 17
           },
           {
             "type": "palladium:objective_score",
@@ -390,8 +564,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 11,
-            "max_score": 11
+            "min_score": 18,
+            "max_score": 18
           },
           {
             "type": "palladium:objective_score",
@@ -419,8 +593,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 12,
-            "max_score": 12
+            "min_score": 19,
+            "max_score": 19
           },
           {
             "type": "palladium:objective_score",
@@ -448,8 +622,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 13,
-            "max_score": 13
+            "min_score": 20,
+            "max_score": 20
           },
           {
             "type": "palladium:objective_score",
@@ -477,8 +651,8 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 14,
-            "max_score": 14
+            "min_score": 21,
+            "max_score": 21
           },
           {
             "type": "palladium:objective_score",
@@ -506,12 +680,41 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 15,
-            "max_score": 15
+            "min_score": 22,
+            "max_score": 22
           },
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor.16.unknow.blooded.armor.unlock",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "choose.armor.mark.1873": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": "Next armor",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 8,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 18"],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 23,
+            "max_score": 23
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.mk.1873.unlock",
             "min_score": 1,
             "max_score": 1
           }
@@ -535,12 +738,41 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 16,
-            "max_score": 16
+            "min_score": 24,
+            "max_score": 24
           },
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor.superior.unlock",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "choose.armor.1.mk.extremis": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": "Next armor",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 9,
+      "description": "This is the skill tree that will allow you to unlock your various Iron man armors",
+      "first_tick_commands": [],
+      "commands": ["scoreboard players set @s satsu.iron.man.choose_armor 10"],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.choose_armor.test",
+            "min_score": 25,
+            "max_score": 25
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.mk.extremis.unlock",
             "min_score": 1,
             "max_score": 1
           }
