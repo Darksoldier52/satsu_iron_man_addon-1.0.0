@@ -3532,6 +3532,31 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.1"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.2"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.3"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.4"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.5"
+              }
+            ]
           }
         ]
       }
@@ -3679,6 +3704,31 @@
                     "max_score": 13
                   }
                 ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.1"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.2"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.3"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.4"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.5"
+                  }
+                ]
               }
             ]
           }
@@ -3812,6 +3862,31 @@
                     "objective": "satsu.iron.man.armor",
                     "min_score": 13,
                     "max_score": 13
+                  }
+                ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.1"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.2"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.3"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.4"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.5"
                   }
                 ]
               }
