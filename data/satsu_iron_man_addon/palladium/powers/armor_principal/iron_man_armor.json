@@ -3012,7 +3012,7 @@
           {
             "type": "palladium:held",
             "ticks": 6,
-            "cooldown": 28,
+            "cooldown": 80,
             "key_type": "right_click",
             "needs_empty_hand": false
           }
@@ -3155,7 +3155,7 @@
           {
             "type": "palladium:held",
             "ticks": 6,
-            "cooldown": 28,
+            "cooldown": 80,
             "key_type": "left_click",
             "needs_empty_hand": false
           }
