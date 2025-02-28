@@ -1350,7 +1350,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.12"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 55",
+        "scoreboard players set @s satsu.iron.man.strength 45",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 50"
+      ],
       "last_tick_commands": ["tag @s remove mark.12"],
       "conditions": {
         "enabling": [
@@ -1363,12 +1368,17 @@
         ]
       }
     },
-    "set.scoreboard.armor.29": {
+    "set.scoreboard.armor.29.mk13": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.13"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 58",
+        "scoreboard players set @s satsu.iron.man.strength 48",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 43"
+      ],
       "last_tick_commands": ["tag @s remove mark.13"],
       "conditions": {
         "enabling": [
