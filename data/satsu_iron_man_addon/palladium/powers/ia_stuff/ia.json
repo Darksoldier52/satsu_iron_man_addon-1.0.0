@@ -252,21 +252,22 @@
     },
     "remote_mode": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/voice_commands.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/remote.png",
       "title": {
-        "translate": "ability.title.satsu.voice.comands.ia"
+        "translate": "ability.title.satsu.remote.mode"
       },
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [-1, 1],
-      "description": { "translate": "description.satsu.voice.comands.ia" },
+      "description": { "translate": "description.satsu.remote.mode" },
       "conditions": {
         "unlocking": [
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
             "ability": "ia_powers_stat_upgrades"
-          }]
+          }
+        ]
       }
     },
     "voice_commands": {
