@@ -186,6 +186,26 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.unknow.blooded.armor"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.1"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.2"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.3"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.4"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.5"
                   }
                 ]
               }
@@ -266,6 +286,26 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.unknow.blooded.armor"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.1"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.2"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.3"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.4"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.5"
                   }
                 ]
               }
