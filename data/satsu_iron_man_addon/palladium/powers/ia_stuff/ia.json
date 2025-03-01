@@ -263,6 +263,12 @@
       "conditions": {
         "unlocking": [
           {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.glasses.equip",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
             "ability": "ia_powers_stat_upgrades"
