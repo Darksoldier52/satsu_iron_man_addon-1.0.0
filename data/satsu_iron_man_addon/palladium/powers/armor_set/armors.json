@@ -1339,6 +1339,366 @@
         ]
       }
     },
+    "set.scoreboard.armor.31": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 31,
+            "max_score": 31
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.32": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 32,
+            "max_score": 32
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.33": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 33,
+            "max_score": 33
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.34": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 34,
+            "max_score": 34
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.35": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 35,
+            "max_score": 35
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.36": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 36,
+            "max_score": 36
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.37": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 37,
+            "max_score": 37
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.38": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 38,
+            "max_score": 38
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.39": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 39,
+            "max_score": 39
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.40": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 40,
+            "max_score": 40
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.41": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 41,
+            "max_score": 41
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.42": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 42,
+            "max_score": 42
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.43": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 43,
+            "max_score": 43
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.44": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 44,
+            "max_score": 44
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.45": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 45,
+            "max_score": 45
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.46": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 46,
+            "max_score": 46
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.47": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 47,
+            "max_score": 47
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.48": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 48,
+            "max_score": 48
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.49": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 49,
+            "max_score": 49
+          }
+        ]
+      }
+    },
+    "set.scoreboard.armor.50": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min_score": 50,
+            "max_score": 50
+          }
+        ]
+      }
+    },
     "choose.armor.set.animation_timer": {
       "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
