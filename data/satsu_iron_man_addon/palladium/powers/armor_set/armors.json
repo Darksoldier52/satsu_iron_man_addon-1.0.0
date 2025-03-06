@@ -1172,9 +1172,9 @@
       "first_tick_commands": ["tag @s add mark.25"],
       "commands": [
         "scoreboard players set @s satsu.iron.man.flame 5",
-        "scoreboard players set @s satsu.iron.man.durability 95",
-        "scoreboard players set @s satsu.iron.man.strength 45",
-        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 45"
+        "scoreboard players set @s satsu.iron.man.durability 83",
+        "scoreboard players set @s satsu.iron.man.strength 65",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 60"
       ],
       "last_tick_commands": ["tag @s remove mark.25"],
       "conditions": {
@@ -1354,7 +1354,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.15"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 65",
+        "scoreboard players set @s satsu.iron.man.strength 52",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 48"
+      ],
       "last_tick_commands": ["tag @s remove mark.15"],
       "conditions": {
         "enabling": [
@@ -1372,7 +1377,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.17"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 68",
+        "scoreboard players set @s satsu.iron.man.strength 54",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 50"
+      ],
       "last_tick_commands": ["tag @s remove mark.17"],
       "conditions": {
         "enabling": [
@@ -1390,7 +1400,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.18"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 70",
+        "scoreboard players set @s satsu.iron.man.strength 56",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 52"
+      ],
       "last_tick_commands": ["tag @s remove mark.18"],
       "conditions": {
         "enabling": [
@@ -1408,7 +1423,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.20"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 75",
+        "scoreboard players set @s satsu.iron.man.strength 60",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 55"
+      ],
       "last_tick_commands": ["tag @s remove mark.20"],
       "conditions": {
         "enabling": [
@@ -1426,7 +1446,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.22"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 78",
+        "scoreboard players set @s satsu.iron.man.strength 62",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 57"
+      ],
       "last_tick_commands": ["tag @s remove mark.22"],
       "conditions": {
         "enabling": [
@@ -1444,7 +1469,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.23"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 80",
+        "scoreboard players set @s satsu.iron.man.strength 64",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 59"
+      ],
       "last_tick_commands": ["tag @s remove mark.23"],
       "conditions": {
         "enabling": [
@@ -1462,7 +1492,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.24"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 85",
+        "scoreboard players set @s satsu.iron.man.strength 66",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 61"
+      ],
       "last_tick_commands": ["tag @s remove mark.24"],
       "conditions": {
         "enabling": [
@@ -1480,7 +1515,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.26"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 88",
+        "scoreboard players set @s satsu.iron.man.strength 68",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 63"
+      ],
       "last_tick_commands": ["tag @s remove mark.26"],
       "conditions": {
         "enabling": [
@@ -1498,7 +1538,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.27"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 90",
+        "scoreboard players set @s satsu.iron.man.strength 70",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 65"
+      ],
       "last_tick_commands": ["tag @s remove mark.27"],
       "conditions": {
         "enabling": [
@@ -1516,7 +1561,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.28"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.durability 93",
+        "scoreboard players set @s satsu.iron.man.strength 72",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 67"
+      ],
       "last_tick_commands": ["tag @s remove mark.28"],
       "conditions": {
         "enabling": [
