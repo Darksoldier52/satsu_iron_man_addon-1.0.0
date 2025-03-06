@@ -1129,6 +1129,10 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.25"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.30.iron.destroyer"
                   },
                   {
@@ -1301,6 +1305,10 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.25"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.30.iron.destroyer"
                   },
                   {
@@ -1468,6 +1476,10 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.23"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.25"
                   },
                   {
                     "type": "palladium:has_tag",
@@ -1667,6 +1679,10 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.25"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.30.iron.destroyer"
                   },
                   {
@@ -1863,6 +1879,10 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.23"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.25"
                   },
                   {
                     "type": "palladium:has_tag",
@@ -3106,6 +3126,16 @@
                 "max_score": 13
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.25.drill.ground"
+              }
+            ]
           }
         ]
       }
@@ -3437,6 +3467,16 @@
                     "tag": "mark.13"
                   }
                 ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.drill.ground"
+                  }
+                ]
               }
             ]
           }
@@ -3579,6 +3619,16 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.13"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.drill.ground"
                   }
                 ]
               }
@@ -4367,6 +4417,16 @@
                     "tag": "mark.5"
                   }
                 ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.drill.ground"
+                  }
+                ]
               }
             ]
           }
@@ -4525,6 +4585,16 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.5"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.drill.ground"
                   }
                 ]
               }
@@ -6314,7 +6384,7 @@
     },
     "Satsu.Armor.23.mk25": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_23.png",
       "title": { "translate": "ability.title.satsu.mark.25" },
       "description": { "translate": "description.iron.man.mark.25" },
       "hidden": false,
@@ -7067,6 +7137,16 @@
                     "max_score": 1
                   }
                 ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.drill.ground"
+                  }
+                ]
               }
             ]
           }
@@ -7369,7 +7449,7 @@
           {
             "type": "palladium:activation",
             "tick": 32,
-            "cooldown": 0,
+            "cooldown": 30,
             "key_type": "key_bind",
             "needs_empty_hand": false
           }
@@ -7408,6 +7488,9 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.25"
+              },
+              {
+                "type": "palladium:on_ground"
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -9851,6 +9934,14 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "animation.projectile.2",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "animation.projectile.3",
                 "property": "value",
                 "min": 1,
@@ -10372,6 +10463,10 @@
                       },
                       {
                         "type": "palladium:has_tag",
+                        "tag": "mark.25"
+                      },
+                      {
+                        "type": "palladium:has_tag",
                         "tag": "mark.30.iron.destroyer"
                       },
                       {
@@ -10489,6 +10584,10 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.23"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.25"
                   },
                   {
                     "type": "palladium:has_tag",

@@ -1170,7 +1170,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": ["tag @s add mark.25"],
-      "commands": [""],
+      "commands": [
+        "scoreboard players set @s satsu.iron.man.flame 5",
+        "scoreboard players set @s satsu.iron.man.durability 95",
+        "scoreboard players set @s satsu.iron.man.strength 45",
+        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 45"
+      ],
       "last_tick_commands": ["tag @s remove mark.25"],
       "conditions": {
         "enabling": [
@@ -1806,6 +1811,10 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.23"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.25"
                   },
                   {
                     "type": "palladium:has_tag",
