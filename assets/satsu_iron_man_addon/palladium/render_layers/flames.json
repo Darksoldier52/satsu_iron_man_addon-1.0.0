@@ -55,6 +55,16 @@
                   "ability": "animation.projectile.mk1.3"
                 },
                 {
+                  "type": "palladium:ability_enabled",
+                  "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                  "ability": "uni.beam.hand.1"
+                },
+                {
+                  "type": "palladium:ability_enabled",
+                  "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                  "ability": "uni.beam.hand.2"
+                },
+                {
                   "type": "palladium:objective_score",
                   "objective": "satsu.iron.man.rbg.on.off",
                   "min_score": 0
@@ -94,6 +104,32 @@
                   "property": "value",
                   "min": "20",
                   "max": "20"
+                },
+                {
+                  "type": "palladium:ability_integer_property",
+                  "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                  "ability": "mini.gun.right",
+                  "property": "value",
+                  "min": "1",
+                  "max": "10"
+                },
+                {
+                  "type": "palladium:ability_integer_property",
+                  "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                  "ability": "mini.gun.left",
+                  "property": "value",
+                  "min": "1",
+                  "max": "10"
+                },
+                {
+                  "type": "palladium:ability_enabled",
+                  "power": "satsu_iron_man_addon:kube_animations",
+                  "ability": "mark.1873.clap_smoke_hands"
+                },
+                {
+                  "type": "palladium:ability_enabled",
+                  "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                  "ability": "mark.1873.throw.smoke"
                 }
               ]
             }
@@ -255,6 +291,16 @@
               "type": "palladium:ability_enabled",
               "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
               "ability": "animation.projectile.3"
+            },
+            {
+              "type": "palladium:ability_enabled",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "uni.beam.hand.1"
+            },
+            {
+              "type": "palladium:ability_enabled",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "uni.beam.hand.2"
             },
             {
               "type": "palladium:ability_enabled",

@@ -62,6 +62,22 @@
       "operation": 0,
       "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1"
     },
+    "sitting": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": [
+        "execute as @e[type=armor_stand] run data merge entity @e[tag=sentinel,type=armor_stand,limit=1,sort=nearest,distance=0..2] {Pose:{Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f],Head:[34f,0f,0f]}}"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:command_result",
+            "command": "execute if entity @s[type=wolf,nbt={Sitting:1b}]"
+          }
+        ]
+      }
+    },
     "animation_timer": {
       "type": "palladium:repeating_animation_timer",
       "hidden": true,
@@ -75,6 +91,15 @@
             "conditions": [
               {
                 "type": "palladium:is_moving"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:command_result",
+                "command": "execute if entity @s[type=wolf,nbt={Sitting:1b}]"
               }
             ]
           }

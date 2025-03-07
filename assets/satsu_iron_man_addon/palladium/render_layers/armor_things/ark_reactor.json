@@ -2,23 +2,89 @@
   "type": "palladium:compound",
   "layers": [
     {
-      "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/player.geo.json",
-        "slim": "satsu_iron_man_addon:geo/player_slim.geo.json"
-      },
+      "type": "palladium:skin_overlay",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_suit_reactor_lights_#X.png",
+        "base": "satsu_iron_man_addon:textures/models/ark_reactor/reactor_#A_#X.png",
         "variables": {
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor.actived",
             "min": 0,
             "max": 1
+          },
+          "A": {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.ark.skin",
+            "min": 0
           }
         }
       },
-      "render_type": "glow"
+      "conditions": [
+        {
+          "type": "palladium:or",
+          "conditions": [
+            {
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "interpolate",
+              "property": "value",
+              "min": 0,
+              "max": 0
+            },
+            {
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "no_nanoarmor_anim",
+              "property": "value",
+              "min": 0,
+              "max": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "palladium:skin_overlay",
+      "texture": {
+        "base": "satsu_iron_man_addon:textures/models/ark_reactor/reactor_glow_#A_#X.png",
+        "variables": {
+          "X": {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min": 0,
+            "max": 1
+          },
+          "A": {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.ark.skin",
+            "min": 0
+          }
+        }
+      },
+      "render_type": "glow",
+      "conditions": [
+        {
+          "type": "palladium:or",
+          "conditions": [
+            {
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "interpolate",
+              "property": "value",
+              "min": 0,
+              "max": 0
+            },
+            {
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "no_nanoarmor_anim",
+              "property": "value",
+              "min": 0,
+              "max": 0
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "geckolib:default",
@@ -28,6 +94,27 @@
       },
       "texture": "#entity",
       "conditions": [
+        {
+          "type": "palladium:or",
+          "conditions": [
+            {
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "interpolate",
+              "property": "value",
+              "min": 1,
+              "max": 12
+            },
+            {
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "no_nanoarmor_anim",
+              "property": "value",
+              "min": 1,
+              "max": 16
+            }
+          ]
+        },
         {
           "type": "palladium:not",
           "conditions": [
@@ -40,7 +127,7 @@
                   "ability": "interpolate",
                   "property": "value",
                   "min": 12,
-                  "max": 16
+                  "max": 17
                 },
                 {
                   "type": "palladium:ability_integer_property",
@@ -51,6 +138,17 @@
                   "max": 16
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor.remote",
+              "min_score": 1,
+              "max_score": 1
             }
           ]
         }
@@ -67,8 +165,117 @@
         {
           "type": "palladium:objective_score",
           "objective": "satsu.iron.man.mask",
-          "min": 0,
-          "max": 0
+          "min_score": 0,
+          "max_score": 1
+        },
+        {
+          "type": "palladium:or",
+          "conditions": [
+            {
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "mask_animation_timer",
+              "property": "value",
+              "min": 1,
+              "max": 15
+            },
+            {
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "mask_animation_timer_off",
+              "property": "value",
+              "min": 1,
+              "max": 17
+            }
+          ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor.remote",
+              "min_score": 1,
+              "max_score": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "geckolib:default",
+      "model": {
+        "normal": "satsu_iron_man_addon:geo/player_head_overlay.geo.json",
+        "slim": "satsu_iron_man_addon:geo/player_head_slim_overlay.geo.json"
+      },
+      "texture": "#entity",
+      "conditions": [
+        {
+          "type": "palladium:and",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.mask",
+              "min_score": 0,
+              "max_score": 1
+            },
+            {
+              "type": "palladium:or",
+              "conditions": [
+                {
+                  "type": "palladium:ability_integer_property",
+                  "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                  "ability": "mask_animation_timer",
+                  "property": "value",
+                  "min": 1,
+                  "max": 15
+                },
+                {
+                  "type": "palladium:ability_integer_property",
+                  "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                  "ability": "mask_animation_timer_off",
+                  "property": "value",
+                  "min": 1,
+                  "max": 17
+                }
+              ]
+            },
+            {
+              "type": "palladium:not",
+              "conditions": [
+                {
+                  "type": "palladium:ability_integer_property",
+                  "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                  "ability": "no_nanoarmor_anim",
+                  "property": "value",
+                  "min": 1,
+                  "max": 16
+                }
+              ]
+            },
+            {
+              "type": "palladium:not",
+              "conditions": [
+                {
+                  "type": "palladium:objective_score",
+                  "objective": "satsu.iron.man.armor",
+                  "min_score": 1,
+                  "max_score": 1
+                }
+              ]
+            },
+            {
+              "type": "palladium:not",
+              "conditions": [
+                {
+                  "type": "palladium:objective_score",
+                  "objective": "satsu.iron.man.armor.remote",
+                  "min_score": 1,
+                  "max_score": 1
+                }
+              ]
+            }
+          ]
         }
       ]
     }

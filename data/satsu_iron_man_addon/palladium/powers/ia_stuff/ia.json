@@ -14,9 +14,9 @@
       "title": {
         "translate": "ability.title.satsu.ia_powers_stat_upgrades"
       },
-      "hidden": true,
+      "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [0, -3.3],
+      "gui_position": [0, 0],
       "description": { "translate": "description.ia_skill_stat" },
       "first_tick_commands": [
         "execute as @s unless score @s satsu.iron.man.addon.ia.unlock.skill.tree matches 0.. run scoreboard players set @s satsu.iron.man.addon.ia.unlock.skill.tree 1"
@@ -41,15 +41,39 @@
         ]
       }
     },
+    "remove.ia.tarjet": {
+      "type": "palladium:command",
+      "icon": "#satsu_iron_man_addon:ia_icon",
+      "title": {
+        "translate": "ability.title.satsu.remove.ia"
+      },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, 1],
+      "description": { "translate": "description.satsu.remove.ia" },
+      "first_tick_commands": ["function satsu_iron_man_addon:ia/remove_ia"],
+      "commands": [""],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:scoreboard_score_buyable",
+            "objective": "SatsuIronManArmorSkillPoint",
+            "score": 0,
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
+            "description": { "text": "Armor Skill Point" }
+          }
+        ]
+      }
+    },
     "Armor_powers_stat_upgrades": {
       "type": "palladium:dummy",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
         "translate": "ability.title.satsu.ia_powers_stat_upgrades"
       },
-      "hidden": false,
+      "hidden": true,
       "hidden_in_bar": true,
-      "gui_position": [0, -2.8],
+      "gui_position": [0, 0],
       "description": { "translate": "description.ia_skill_stat" },
       "conditions": {
         "unlocking": [
@@ -71,7 +95,7 @@
       },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [0, -2.2],
+      "gui_position": [0, 0.5],
       "first_tick_commands": [
         "execute as @s[scores={satsu.iron.man.addon.ia.unlock.skill.tree=1..}] run scoreboard players add @s satsu.iron.man.addon.ia.unlock.skill.tree 1",
         "execute as @s[scores={satsu.iron.man.addon.ia.unlock.skill.tree=3..}] run scoreboard players set @s satsu.iron.man.addon.ia.unlock.skill.tree 1",
@@ -112,9 +136,9 @@
       "description": {
         "translate": "description.satsu.unlock.lock.ia.gui"
       },
-      "hidden": false,
+      "hidden": true,
       "hidden_in_bar": true,
-      "gui_position": [0, -1.2],
+      "gui_position": [0, -0.5],
       "first_tick_commands": [
         "execute as @s[scores={satsu.iron.man.addon.ia.unlock.icon.in.hud=1..}] run scoreboard players add @s satsu.iron.man.addon.ia.unlock.icon.in.hud 1",
         "execute as @s[scores={satsu.iron.man.addon.ia.unlock.icon.in.hud=3..}] run scoreboard players set @s satsu.iron.man.addon.ia.unlock.icon.in.hud 1",
@@ -140,9 +164,8 @@
         "translate": "ability.title.satsu.ia.gui"
       },
       "description": { "translate": "description.satsu.ia.gui" },
-      "hidden": false,
+      "hidden": true,
       "hidden_in_bar": true,
-      "gui_position": [0, -1.7],
       "texture": "#satsu_iron_man_addon:ia_icon",
       "texture_width": 32,
       "texture_height": 32,
@@ -165,14 +188,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -182,6 +216,11 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "ia_powers_stat_upgrades"
+          },
           {
             "type": "palladium:and",
             "conditions": [
@@ -211,6 +250,46 @@
         ]
       }
     },
+    "remote_mode": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/remote.png",
+      "title": {
+        "translate": "ability.title.satsu.remote.mode"
+      },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-1, 1],
+      "description": { "translate": "description.satsu.remote.mode" },
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.glasses.equip",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "ia_powers_stat_upgrades"
+          }
+        ]
+      }
+    },
+    "voice_commands": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/voice_commands.png",
+      "title": {
+        "translate": "ability.title.satsu.voice.comands.ia"
+      },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, 1.5],
+      "description": { "translate": "description.satsu.voice.comands.ia" },
+      "conditions": {
+        "unlocking": []
+      }
+    },
     "see.energy.unlock.lock.1": {
       "type": "palladium:dummy",
       "icon": "#satsu_iron_man_addon:ark_energy",
@@ -222,8 +301,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -246,14 +358,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -275,8 +398,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -299,14 +455,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -328,8 +495,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -352,14 +552,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -381,8 +592,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -405,14 +649,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -434,8 +689,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -458,14 +746,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -487,8 +786,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -511,14 +843,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -540,8 +883,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -564,14 +940,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -593,8 +980,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -617,14 +1037,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -646,8 +1077,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -670,14 +1134,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -699,8 +1174,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -723,14 +1231,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -752,8 +1271,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -776,14 +1328,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -805,8 +1368,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -829,14 +1425,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -856,7 +1463,7 @@
       },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [2, -2.2],
+      "gui_position": [1, 0],
       "first_tick_commands": [
         "execute as @s run scoreboard players add @s satsu.iron.man.addon.energy.ia.unlock.icon.in.hud 1",
         "execute as @s[scores={satsu.iron.man.addon.energy.ia.unlock.icon.in.hud=3..}] run scoreboard players set @s satsu.iron.man.addon.energy.ia.unlock.icon.in.hud 1",
@@ -865,6 +1472,11 @@
       "commands": [""],
       "conditions": {
         "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "ia_powers_stat_upgrades"
+          },
           {
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
@@ -884,7 +1496,6 @@
       "description": { "translate": "description.satsu.energy.gui" },
       "hidden": true,
       "hidden_in_bar": true,
-      "gui_position": [2, -1.7],
       "texture": "satsu_iron_man_addon:textures/gui/armors/gui_for_ark_energy/see_energy.png",
       "texture_width": 32,
       "texture_height": 32,
@@ -928,14 +1539,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -976,14 +1598,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1001,9 +1634,9 @@
       "description": {
         "translate": "description.satsu.unlock.lock.ia.sentinel"
       },
-      "hidden": false,
+      "hidden": true,
       "hidden_in_bar": true,
-      "gui_position": [1, -1.7],
+      "gui_position": [-1, 0],
       "first_tick_commands": [
         "execute as @s run scoreboard players add @s satsu.iron.man.addon.unlock.lock.sentinel.armor 1",
         "execute as @s[scores={satsu.iron.man.addon.unlock.lock.sentinel.armor=3..}] run scoreboard players set @s satsu.iron.man.addon.unlock.lock.sentinel.armor 1",
@@ -1012,6 +1645,11 @@
       "commands": [""],
       "conditions": {
         "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "ia_powers_stat_upgrades"
+          },
           {
             "type": "palladium:scoreboard_score_buyable",
             "objective": "SatsuIronManArmorSkillPoint",
@@ -1079,6 +1717,24 @@
         ]
       }
     },
+    "animation_timer_sentinel_dummy.in.skill.bar": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "title": { "translate": "ability.title.satsu.sentinel" },
+      "description": { "translate": "description.satsu.sentinel" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-1, 0],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "ia_powers_stat_upgrades"
+          }
+        ]
+      }
+    },
     "animation_timer_sentinel_dummy": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
@@ -1087,7 +1743,7 @@
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 0,
-      "gui_position": [1, -2.2],
+      "gui_position": [-2, 0.5],
       "conditions": {
         "enabling": [
           {
@@ -1101,26 +1757,65 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
+            "type": "palladium:or",
             "conditions": [
               {
                 "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "tag": "mark.50"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.50.superior"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.unknow.blooded.armor"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.1873"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
               }
             ]
           },
           {
-            "type": "palladium:or",
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "animation_timer_sentinel_dummy.in.skill.bar"
+          },
+          {
+            "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:ia_stuff/ia",
-                "ability": "Armor_powers_stat_upgrades"
+                "type": "palladium:has_power",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor"
               },
               {
-                "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:ia_stuff/ia",
-                "ability": "sentinel.armor.unlock.lock"
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_unlocked",
+                    "power": "satsu_iron_man_addon:ia_stuff/ia",
+                    "ability": "Armor_powers_stat_upgrades"
+                  },
+                  {
+                    "type": "palladium:ability_unlocked",
+                    "power": "satsu_iron_man_addon:ia_stuff/ia",
+                    "ability": "sentinel.armor.unlock.lock"
+                  }
+                ]
               }
             ]
           }
@@ -1142,6 +1837,35 @@
         ],
         "unlocking": [
           {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.50"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.50.superior"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.unknow.blooded.armor"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.1873"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
+              }
+            ]
+          },
+          {
+            "type": "palladium:has_power",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor"
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -1153,31 +1877,13 @@
         ]
       }
     },
-    "test_sentinel": {
+    "armor_sentinel": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
       "commands": [
         "tag @s add sentinel_one",
-        "scoreboard players add @s satsu.iron.man.addon.enable.sentinel 1",
-        "execute if entity @s[tag=grave.facing.east] run summon wolf ~-1 ~ ~ {CustomNameVisible:1b,CustomName:'{\"translate\":\"satsu.iron.man.addon.entity.name.armor.sentinel\"}',Silent:1b,Tags:[\"tamed_wolf\",\"new\",\"sentinel\"]}",
-        "execute if entity @s[tag=grave.facing.west] run summon wolf ~1 ~ ~ {CustomNameVisible:1b,CustomName:'{\"translate\":\"satsu.iron.man.addon.entity.name.armor.sentinel\"}',Silent:1b,Tags:[\"tamed_wolf\",\"new\",\"sentinel\"]}",
-        "execute if entity @s[tag=grave.facing.south] run summon wolf ~ ~ ~-1 {CustomNameVisible:1b,CustomName:'{\"translate\":\"satsu.iron.man.addon.entity.name.armor.sentinel\"}',Silent:1b,Tags:[\"tamed_wolf\",\"new\",\"sentinel\"]}",
-        "execute if entity @s[tag=grave.facing.north] run summon wolf ~ ~ ~1 {CustomNameVisible:1b,CustomName:'{\"translate\":\"satsu.iron.man.addon.entity.name.armor.sentinel\"}',Silent:1b,Tags:[\"tamed_wolf\",\"new\",\"sentinel\"]}",
-        "execute as @e[type=wolf] run superpower add satsu_iron_man_addon:ia_stuff/sentinel_stats @s",
-        "function satsu_iron_man_addon:spawn_armor_sentinel",
-        "execute if entity @s[tag=grave.facing.east] run summon armor_stand ~-1 ~ ~ {Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,NoBasePlate:1b,CustomName:'{\"translate\":\"satsu.iron.man.addon.entity.name.armor.sentinel\"}',NoGravity:1b,Tags:[\"sentinel\"],Pose:{Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f],Head:[0f,0f,0f]}}",
-        "execute if entity @s[tag=grave.facing.west] run summon armor_stand ~1 ~ ~ {Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,NoBasePlate:1b,CustomName:'{\"translate\":\"satsu.iron.man.addon.entity.name.armor.sentinel\"}',NoGravity:1b,Tags:[\"sentinel\"],Pose:{Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f],Head:[0f,0f,0f]}}",
-        "execute if entity @s[tag=grave.facing.south] run summon armor_stand ~ ~ ~-1 {Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,NoBasePlate:1b,CustomName:'{\"translate\":\"satsu.iron.man.addon.entity.name.armor.sentinel\"}',NoGravity:1b,Tags:[\"sentinel\"],Pose:{Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f],Head:[0f,0f,0f]}}",
-        "execute if entity @s[tag=grave.facing.north] run summon armor_stand ~ ~ ~1 {Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,NoBasePlate:1b,CustomName:'{\"translate\":\"satsu.iron.man.addon.entity.name.armor.sentinel\"}',NoGravity:1b,Tags:[\"sentinel\"],Pose:{Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f],Head:[0f,0f,0f]}}",
-        "execute as @e[type=minecraft:armor_stand,tag=sentinel,limit=1,sort=nearest] run superpower add satsu_iron_man_addon:ia_stuff/iron_man_sentinel @s",
-        "execute as @s run scoreboard players operation @e[type=minecraft:armor_stand] satsu.iron.man.armor = @s satsu.iron.man.armor",
-        "execute as @s run scoreboard players operation @e[type=minecraft:armor_stand] satsu.iron.man.mask = @s satsu.iron.man.mask",
-        "execute as @s run scoreboard players operation @e[type=minecraft:wolf] satsu.iron.man.durability = @s satsu.iron.man.durability",
-        "execute as @s run scoreboard players operation @e[type=minecraft:wolf] satsu.iron.man.strength = @s satsu.iron.man.strength",
-        "scale set pehkui:hitbox_height 2 @e[type=wolf,sort=nearest,limit=1]",
-        "ride @e[type=minecraft:armor_stand,tag=sentinel,limit=1,sort=nearest] mount @e[type=minecraft:wolf,tag=sentinel,limit=1,sort=nearest]",
-        "scale set pehkui:hitbox_width 2 @e[type=wolf,sort=nearest,limit=1]"
+        "scoreboard players add @s satsu.iron.man.addon.enable.sentinel 1"
       ],
       "conditions": {
         "enabling": [
@@ -1197,6 +1903,9 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
+      "first_tick_commands": [
+        "function satsu_iron_man_addon:sentinels/spawn_sentinel"
+      ],
       "commands": [
         "scoreboard players set @s satsu.iron.man.armor.actived 1",
         "scoreboard players set @s satsu.iron.man.armor.actived.perm 1"
@@ -1210,6 +1919,11 @@
             "property": "value",
             "min": 1,
             "max": 3
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "power": "null",
+            "ability": "animation_timer_sentinel"
           }
         ],
         "unlocking": []
@@ -1223,7 +1937,7 @@
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 1,
-      "gui_position": [-1, -2.2],
+      "gui_position": [-2, -0.5],
       "start_value": 1,
       "max_value": 20,
       "conditions": {
@@ -1239,34 +1953,57 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:has_tag",
-            "tag": "sentinel_nearest"
-          },
-          {
-            "type": "palladium:or",
+            "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.enable.sentinel",
-                "min_score": 2,
-                "max_score": 2
+                "type": "palladium:has_tag",
+                "tag": "sentinel.false"
+              }
+            ]
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "animation_timer_sentinel_dummy.in.skill.bar"
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:has_power",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor"
               },
               {
-                "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:ia_stuff/ia",
-                "ability": "Armor_powers_stat_upgrades"
+                "type": "palladium:has_tag",
+                "tag": "sentinel_nearest"
               },
               {
-                "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:ia_stuff/ia",
-                "ability": "sentinel.armor.unlock.lock"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.enable.sentinel",
+                    "min_score": 2,
+                    "max_score": 2
+                  },
+                  {
+                    "type": "palladium:ability_unlocked",
+                    "power": "satsu_iron_man_addon:ia_stuff/ia",
+                    "ability": "Armor_powers_stat_upgrades"
+                  },
+                  {
+                    "type": "palladium:ability_unlocked",
+                    "power": "satsu_iron_man_addon:ia_stuff/ia",
+                    "ability": "sentinel.armor.unlock.lock"
+                  }
+                ]
               }
             ]
           }
         ]
       }
     },
-    "kill_test_sentinel": {
+    "kill_armor_sentinel": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -1289,6 +2026,33 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.ark.energy",
+                        "min_score": 0,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.ark.energy",
+                        "min_score": -10000,
+                        "max_score": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
           {
             "type": "palladium:has_tag",
             "tag": "sentinel_nearest"
@@ -1315,14 +2079,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1344,7 +2119,7 @@
       },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [-2, -1.8],
+      "gui_position": [0, -2],
       "first_tick_commands": [
         "execute as @s run scoreboard players add @s satsu.iron.man.addon.unlock.lock.scan.abilitie 1",
         "execute as @s[scores={satsu.iron.man.addon.unlock.lock.scan.abilitie=3..}] run scoreboard players set @s satsu.iron.man.addon.unlock.lock.scan.abilitie 1",
@@ -1359,6 +2134,41 @@
             "score": 0,
             "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
             "description": { "text": "Armor Skill Point" }
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "ia_powers_stat_upgrades"
+          }
+        ]
+      }
+    },
+    "scan_enemies_enable.in.skill.tree": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/scan.png",
+      "title": {
+        "translate": "ability.title.satsu.ia.scan.abilitie"
+      },
+      "description": {
+        "translate": "description.satsu.ia.scan.abilitie"
+      },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, -0.5],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "ia_powers_stat_upgrades"
+          },
+          {
+            "type": "palladium:scoreboard_score_buyable",
+            "objective": "SatsuIronManArmorSkillPoint",
+            "score": 30,
+            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
+            "description": { "text": "Armor Skill Point" }
           }
         ]
       }
@@ -1371,7 +2181,7 @@
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 2,
-      "gui_position": [-2, -2.2],
+      "gui_position": [0, -1.5],
       "first_tick_commands": [""],
       "commands": [
         "scoreboard players add @s satsu.iron.man.scan.enemies 1",
@@ -1390,11 +2200,49 @@
         ],
         "unlocking": [
           {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "scan_enemies_enable.in.skill.tree"
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1427,14 +2275,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1460,8 +2319,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1484,14 +2376,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1517,8 +2420,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1541,14 +2477,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1574,8 +2521,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1598,14 +2578,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1631,8 +2622,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1655,14 +2679,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1688,8 +2723,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1712,14 +2780,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1745,8 +2824,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1769,14 +2881,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1802,8 +2925,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1826,14 +2982,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1859,8 +3026,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1883,14 +3083,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1916,8 +3127,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1940,14 +3184,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -1973,8 +3228,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1997,14 +3285,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -2030,8 +3329,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -2054,14 +3386,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -2087,8 +3430,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -2111,14 +3487,25 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived.perm",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
+                    "objective": "satsu.iron.man.addon.glasses.equip",
                     "min_score": 1,
                     "max_score": 1
                   }
@@ -2153,8 +3540,21 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:command_result",
-            "command": "execute if entity @s[scores={satsu.iron.man.armor.ark.energy=10000..}]"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:command_result",
+                "command": "execute if entity @s[scores={satsu.iron.man.armor.ark.energy=10000..}] unless score @s satsu.iron.man.ark.upgraded.max.energy matches 0.."
+              },
+              {
+                "type": "palladium:command_result",
+                "command": "execute if entity @s[scores={satsu.iron.man.armor.ark.energy=20000..}] if entity @s[scores={satsu.iron.man.ark.upgraded.max.energy=1}]"
+              },
+              {
+                "type": "palladium:command_result",
+                "command": "execute if entity @s[scores={satsu.iron.man.armor.ark.energy=80000..}] if entity @s[scores={satsu.iron.man.ark.upgraded.max.energy=2}]"
+              }
+            ]
           }
         ],
         "unlocking": []
@@ -2210,7 +3610,8 @@
         "execute as @s[scores={satsu.iron.man.addon.ia.name=10}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.10\",\"color\":\"#fe0f0f\"}",
         "execute as @s[scores={satsu.iron.man.addon.ia.name=11}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.11\",\"color\":\"#4682b4\"}",
         "execute as @s[scores={satsu.iron.man.addon.ia.name=12}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.12\",\"color\":\"#0067fe\"}",
-        "execute as @s[scores={satsu.iron.man.addon.ia.name=13}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.13\",\"color\":\"#c0c0c0\"}"],
+        "execute as @s[scores={satsu.iron.man.addon.ia.name=13}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.text.ia.warning.energy.name.13\",\"color\":\"#c0c0c0\"}"
+      ],
       "conditions": {
         "enabling": [
           {
@@ -2245,8 +3646,27 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:command_result",
-            "command": "execute if entity @s[scores={satsu.iron.man.armor.ark.energy=10500..}]"
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.ark.overcharged.test",
+            "min_score": 10,
+            "max_score": 10
+          },
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:command_result",
+                "command": "execute if entity @s[scores={satsu.iron.man.armor.ark.energy=10500..}] unless score @s satsu.iron.man.ark.upgraded.max.energy matches 0.."
+              },
+              {
+                "type": "palladium:command_result",
+                "command": "execute if entity @s[scores={satsu.iron.man.armor.ark.energy=20500..}] if entity @s[scores={satsu.iron.man.ark.upgraded.max.energy=1}]"
+              },
+              {
+                "type": "palladium:command_result",
+                "command": "execute if entity @s[scores={satsu.iron.man.armor.ark.energy=80500..}] if entity @s[scores={satsu.iron.man.ark.upgraded.max.energy=2}]"
+              }
+            ]
           }
         ],
         "unlocking": []
