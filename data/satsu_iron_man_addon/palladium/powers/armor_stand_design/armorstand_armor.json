@@ -28,7 +28,7 @@
             "conditions": [
               {
                 "type": "palladium:command_result",
-                "command": "execute if entity @p if score @s satsu.iron.man.armor = @p satsu.iron.man.armor"
+                "command": "execute if entity @p if score @s satsu.iron.man.armor = @p satsu.iron.man.armor if score @s grave.ID = @p grave.ID"
               }
             ]
           }

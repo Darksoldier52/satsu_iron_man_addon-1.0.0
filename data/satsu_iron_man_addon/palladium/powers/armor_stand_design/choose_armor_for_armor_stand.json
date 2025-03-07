@@ -1005,7 +1005,7 @@
         "DieOnBlockHit": true,
         "CommandOnEntityHit": "function satsu_iron_man_addon:armorstand_design/set_armor_design_for_armor_stand",
         "Damage": 0,
-        "Size": 0.2,
+        "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 80,
         "Tags": ["sentinel"],
