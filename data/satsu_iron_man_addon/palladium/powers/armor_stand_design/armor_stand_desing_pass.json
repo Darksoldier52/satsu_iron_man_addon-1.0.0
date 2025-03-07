@@ -17,7 +17,7 @@
         "execute as @e[type=!minecraft:player,sort=nearest,limit=1,distance=0..1.8] run scoreboard players operation @s satsu.iron.man.armor = @e[type=minecraft:player,sort=nearest,limit=1] satsu.iron.man.choose_armor",
         "execute as @e[type=!minecraft:player,sort=nearest,limit=1,distance=0..1.8] run scoreboard players operation @s grave.ID = @e[type=minecraft:player,sort=nearest,limit=1] grave.ID",
         "execute as @e[type=!minecraft:player,sort=nearest,limit=1,distance=0..1.8] run superpower add satsu_iron_man_addon:armor_stand_design/armorstand_armor @s",
-        "execute as @e[type=!minecraft:player,sort=nearest,limit=1,distance=0..1.8] run superpower remove satsu_iron_man_addon:armor_stand_design/armor_stand_desing_pass @s"
+        "execute as @e[sort=nearest,limit=1,distance=0..1.8] run superpower remove satsu_iron_man_addon:armor_stand_design/armor_stand_desing_pass @s"
       ],
       "last_tick_commands": [],
       "conditions": {
