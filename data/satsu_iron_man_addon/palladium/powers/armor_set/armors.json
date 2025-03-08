@@ -1341,7 +1341,7 @@
         ]
       }
     },
-    "set.scoreboard.armor.30": {
+    "set.scoreboard.armor.30.mark.14": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -1364,7 +1364,7 @@
         ]
       }
     },
-    "set.scoreboard.armor.31": {
+    "set.scoreboard.armor.31.mark.15": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
