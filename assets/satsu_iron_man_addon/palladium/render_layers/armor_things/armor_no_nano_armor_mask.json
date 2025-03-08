@@ -569,7 +569,8 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh/iron_man_suit_#X_2_#STEALH_night"
+
+        "output": "satsu_iron_man_addon:textures/models/armor/stealht_night_mask/iron_man_suit_#X_2_#STEALH_night"
       },
       "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
       "animation_controller": [
@@ -583,38 +584,23 @@
       ],
       "conditions": [
         {
-          "type": "palladium:or",
-          "conditions": [
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 6,
-              "max_score": 6
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 25,
-              "max_score": 25
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 27,
-              "max_score": 27
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 31,
-              "max_score": 31
-            }
-          ]
+          "type": "palladium:objective_score",
+          "objective": "satsu.iron.man.armor",
+          "min_score": 6,
+          "max_score": 6
         },
         {
           "type": "palladium:ability_enabled",
           "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
           "ability": "mask_animation_timer_off",
+          "property": "value",
+          "min": 1,
+          "max": 16
+        },
+        {
+          "type": "palladium:ability_integer_property",
+          "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+          "ability": "no_nanoarmor_anim",
           "property": "value",
           "min": 1,
           "max": 16
@@ -653,7 +639,8 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh/iron_man_suit_#X_2_#STEALH_night"
+
+        "output": "satsu_iron_man_addon:textures/models/armor/stealht_night_mask/iron_man_suit_#X_2_#STEALH_night"
       },
       "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
       "animation_controller": [
@@ -667,38 +654,23 @@
       ],
       "conditions": [
         {
-          "type": "palladium:or",
-          "conditions": [
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 6,
-              "max_score": 6
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 25,
-              "max_score": 25
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 27,
-              "max_score": 27
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 31,
-              "max_score": 31
-            }
-          ]
+          "type": "palladium:objective_score",
+          "objective": "satsu.iron.man.armor",
+          "min_score": 6,
+          "max_score": 6
         },
         {
           "type": "palladium:ability_enabled",
           "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
           "ability": "mask_animation_timer",
+          "property": "value",
+          "min": 1,
+          "max": 16
+        },
+        {
+          "type": "palladium:ability_integer_property",
+          "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+          "ability": "no_nanoarmor_anim",
           "property": "value",
           "min": 1,
           "max": 16
@@ -731,7 +703,7 @@
             "min": 0
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh/iron_man_suit_lights_#X_2_#STEALH_night"
+        "output": "satsu_iron_man_addon:textures/models/armor/stealht_night_mask/iron_man_suit_lights_#X_2_#STEALH_night"
       },
       "render_type": "glow",
       "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
@@ -746,38 +718,23 @@
       ],
       "conditions": [
         {
-          "type": "palladium:or",
-          "conditions": [
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 6,
-              "max_score": 6
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 25,
-              "max_score": 25
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 27,
-              "max_score": 27
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 31,
-              "max_score": 31
-            }
-          ]
+          "type": "palladium:objective_score",
+          "objective": "satsu.iron.man.armor",
+          "min_score": 6,
+          "max_score": 6
         },
         {
           "type": "palladium:ability_enabled",
           "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
           "ability": "mask_animation_timer_off",
+          "property": "value",
+          "min": 1,
+          "max": 16
+        },
+        {
+          "type": "palladium:ability_integer_property",
+          "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+          "ability": "no_nanoarmor_anim",
           "property": "value",
           "min": 1,
           "max": 16
@@ -810,7 +767,7 @@
             "min": 0
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh/iron_man_suit_lights_#X_2_#STEALH_night"
+        "output": "satsu_iron_man_addon:textures/models/armor/stealht_night_mask/iron_man_suit_lights_#X_2_#STEALH_night"
       },
       "render_type": "glow",
       "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
@@ -825,38 +782,23 @@
       ],
       "conditions": [
         {
-          "type": "palladium:or",
-          "conditions": [
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 6,
-              "max_score": 6
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 25,
-              "max_score": 25
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 27,
-              "max_score": 27
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 31,
-              "max_score": 31
-            }
-          ]
+          "type": "palladium:objective_score",
+          "objective": "satsu.iron.man.armor",
+          "min_score": 6,
+          "max_score": 6
         },
         {
           "type": "palladium:ability_enabled",
           "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
           "ability": "mask_animation_timer",
+          "property": "value",
+          "min": 1,
+          "max": 16
+        },
+        {
+          "type": "palladium:ability_integer_property",
+          "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+          "ability": "no_nanoarmor_anim",
           "property": "value",
           "min": 1,
           "max": 16
