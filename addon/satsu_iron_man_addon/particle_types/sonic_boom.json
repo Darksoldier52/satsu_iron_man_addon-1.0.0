@@ -2,7 +2,8 @@
   "lifetime": 15,
   "has_physics": false,
   "gravity": 0,
-  "quad_size": 2,
+  "quad_size": 1,
   "render_type": "lit",
-  "texture_type": "aging"
+  "texture_type": "aging",
+  "brightness": 240
 }

@@ -7382,7 +7382,7 @@
         "enabling": [
           {
             "type": "palladium:toggle",
-            "cooldown": 230,
+            "cooldown": 0,
             "key_type": "key_bind",
             "needs_empty_hand": false
           }
@@ -7456,7 +7456,7 @@
     },
     "mk.15.sonic_dampened": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/invis.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/sonic_howl.png",
       "title": { "translate": "ability.title.satsu.stealht.mode" },
       "hidden": false,
       "hidden_in_bar": false,

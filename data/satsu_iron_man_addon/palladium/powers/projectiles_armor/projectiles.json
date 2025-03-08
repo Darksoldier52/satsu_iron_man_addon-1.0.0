@@ -547,6 +547,23 @@
         ]
       }
     },
+    "force_slow_command": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": ["tag @s add sonic.dampened"],
+      "commands": [""],
+      "last_tick_commands": ["tag @s remove sonic.dampened"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "mk.15.sonic_dampened"
+          }
+        ]
+      }
+    },
     "sonic_dampened_projectil": {
       "type": "gravestone:projectile",
       "hidden": true,
@@ -562,15 +579,15 @@
       "pitchInaccuracy": 0,
       "count": 1,
       "entity_data": {
-        "SetEntityOnFireSeconds": 8,
+        "SetEntityOnFireSeconds": 0,
         "KnockbackStrength": 0,
-        "Damage": 6,
+        "Damage": 0,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
         "DieOnEntityHit": true,
         "DieOnBlockHit": true,
-        "CommandOnEntityHit": "",
+        "CommandOnEntityHit": "effect give @e[tag=!sonic.dampened,distance=0..3,sort=nearest] minecraft:slowness 10 255 true",
         "CommandOnBlockHit": "",
         "Appearances": [
           {
