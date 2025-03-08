@@ -575,7 +575,7 @@
         "Appearances": [
           {
             "Type": "particles",
-            "ParticleType": "grave.ht:clap",
+            "ParticleType": "satsu_iron_man_addon:sonic_boom",
             "Spread": 0.3
           }
         ]
