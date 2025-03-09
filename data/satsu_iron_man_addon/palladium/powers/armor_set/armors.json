@@ -1438,7 +1438,7 @@
         ]
       }
     },
-    "set.scoreboard.armor.32": {
+    "set.scoreboard.armor.32.mark.17": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,

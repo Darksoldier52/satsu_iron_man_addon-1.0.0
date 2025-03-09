@@ -818,6 +818,10 @@
               },
               {
                 "type": "palladium:has_tag",
+                "tag": "mark.17"
+              },
+              {
+                "type": "palladium:has_tag",
                 "tag": "mark.19.tiger"
               },
               {
@@ -933,6 +937,10 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.16"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.17"
               },
               {
                 "type": "palladium:has_tag",
