@@ -1,0 +1,2 @@
+execute as @e[type=!palladium:custom_projectile,tag=!design_armor_stand,sort=nearest,limit=1,distance=0..3] run superpower add satsu_iron_man_addon:armor_stand_design/armor_stand_desing_pass @s
+execute as @e[tag=design_armor_stand] run tag @s remove design_armor_stand
