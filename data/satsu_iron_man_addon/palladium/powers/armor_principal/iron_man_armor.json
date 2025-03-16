@@ -761,7 +761,7 @@
       "hidden_in_bar": true,
       "gui_position": [3.5, 0.5],
       "score_value": "satsu.iron.man.strength",
-      "Division_Amount": "1",
+      "Division_Amount": "2",
       "Attribute_Type": "minecraft:generic.attack_damage",
       "UUID": "f780d74f-5bab-432d-b60d-0748e5788bd8",
       "Attribute_Mod": "addition",
@@ -5440,9 +5440,7 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "commands": [
-        "scoreboard players set @s satsu.iron.man.animation.armor 2"
-      ],
+      "commands": [""],
       "conditions": {
         "enabling": [
           {
@@ -7108,7 +7106,7 @@
         "enabling": [
           {
             "type": "palladium:activation",
-            "ticks": 8,
+            "ticks": 20,
             "cooldown": 100,
             "key_type": "key_bind",
             "needs_empty_hand": false
@@ -11000,6 +10998,14 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "Telekinesis",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mark.1873.throw.smoke",
                 "property": "value",
                 "min": 1,
                 "max": 5

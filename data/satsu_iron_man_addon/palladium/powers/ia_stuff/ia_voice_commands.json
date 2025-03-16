@@ -266,6 +266,7 @@
         "execute as @e[tag=sentinel.test] run scoreboard players operation @s grave.ID = @e[type=minecraft:player,sort=nearest] grave.ID",
         "scoreboard players set @s satsu.iron.man.armor.remote 1",
         "execute unless score @s[tag=!sentinel.false] satsu.iron.man.animation.armor matches 1 run function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
+        "execute unless score @s[tag=sentinel.false] satsu.iron.man.animation.armor matches 1 run function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
         "execute as @s[tag=sentinel.false] as @e[tag=sentinel] run function satsu_iron_man_addon:ia/swap_sentinels",
         "execute as @s[tag=sentinel.false] as @e[tag=sentinel] run function satsu_iron_man_addon:sentinels/kill_one_sentinel"
       ],
@@ -286,6 +287,15 @@
                 "objective": "satsu.iron.man.armor.remote",
                 "min_score": 1,
                 "max_score": 1
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "sentinel_one"
               }
             ]
           }
@@ -744,6 +754,61 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.extremis"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "not.enabled_remote.tag.sentinel_one": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "tag @s remove give.sentinel.one"
+      ],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "give.sentinel.one"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.50"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.50.superior"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.unknow.blooded.armor"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.1873"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.extremis"
+                      }
+                    ]
                   }
                 ]
               }

@@ -326,9 +326,12 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
+            "type": "palladium:ability_integer_property",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "mini_fireworks"
+            "ability": "mini_fireworks",
+            "property": "value",
+            "min": 8,
+            "max": 20
           }
         ]
       }
@@ -367,9 +370,12 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
+            "type": "palladium:ability_integer_property",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "mini_fireworks"
+            "ability": "mini_fireworks",
+            "property": "value",
+            "min": 8,
+            "max": 20
           }
         ]
       }
