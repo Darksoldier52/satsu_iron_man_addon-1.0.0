@@ -293,6 +293,136 @@
       "hidden": true,
       "hidden_in_bar": true,
       "body_parts": [
+        "chest_overlay",
+        "right_arm_overlay",
+        "left_arm_overlay",
+        "right_leg_overlay",
+        "left_leg_overlay",
+        "cape"
+      ],
+      "affects_first_person": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "interpolate",
+                    "property": "value",
+                    "min": 17,
+                    "max": 17
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "no_nanoarmor_anim",
+                    "property": "value",
+                    "min": 16,
+                    "max": 16
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "shrink_body_overlay": {
+      "type": "palladium:shrink_body_overlay",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "max_value": 6,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "interpolate",
+                    "property": "value",
+                    "min": 1,
+                    "max": 17
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "no_nanoarmor_anim",
+                    "property": "value",
+                    "min": 1,
+                    "max": 16
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.mask",
+                    "min_score": 0,
+                    "max_score": 0
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "satsu.iron.man.nano.armor"
+                      },
+                      {
+                        "type": "palladium:or",
+                        "conditions": [
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "mark.50"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "mark.unknow.blooded.armor"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "mark.1873"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "mark.extremis"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "mark.taken"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "hide_player_remote": {
+      "type": "palladium:hide_body_part",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "body_parts": [
         "right_arm",
         "left_arm",
         "head",
@@ -309,27 +439,12 @@
       ],
       "affects_first_person": true,
       "conditions": {
-        "unlocking": [
+        "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "interpolate",
-                "property": "value",
-                "min": 1,
-                "max": 17
-              },
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "no_nanoarmor_anim",
-                "property": "value",
-                "min": 1,
-                "max": 16
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.remote",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -2474,7 +2589,7 @@
       }
     },
     "interpolate": {
-      "type": "palladium:shrink_body_overlay",
+      "type": "palladium:animation_timer",
       "hidden": true,
       "hidden_in_bar": true,
       "max_value": 17,
@@ -2716,7 +2831,7 @@
       }
     },
     "no_nanoarmor": {
-      "type": "palladium:shrink_body_overlay",
+      "type": "palladium:animation_timer",
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
@@ -2751,7 +2866,7 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min_score": 2
+            "min_score": 0
           }
         ]
       }

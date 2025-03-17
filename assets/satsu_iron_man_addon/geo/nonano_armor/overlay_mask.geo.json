@@ -13,7 +13,7 @@
 			"bones": [
 				{
 					"name": "armorHead",
-					"pivot": [0, 26, 0]
+					"pivot": [0, 24, 0]
 				},
 				{
 					"name": "mask",
@@ -22,15 +22,16 @@
 					"cubes": [
 						{
 							"origin": [-4, 24, -4],
-							"size": [8, 8, 0],
+							"size": [8, 8, 8],
+							"inflate": 0.25,
 							"uv": {
 								"north": {"uv": [8, 8], "uv_size": [8, 8]}
 							}
 						},
 						{
 							"origin": [-4, 24, -4],
-							"size": [8, 8, 0],
-							"inflate": 0.3,
+							"size": [8, 8, 8],
+							"inflate": 0.5,
 							"uv": {
 								"north": {"uv": [40, 8], "uv_size": [8, 8]}
 							}
