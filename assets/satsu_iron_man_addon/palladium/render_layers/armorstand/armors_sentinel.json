@@ -85,10 +85,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y.png",
         "transformers": [
@@ -136,10 +133,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y.png",
         "transformers": [
@@ -187,10 +181,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y_0_glow.png",
         "transformers": [
@@ -245,10 +236,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y_0_glow.png",
         "transformers": [
