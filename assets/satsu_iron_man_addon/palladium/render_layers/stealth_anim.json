@@ -28,7 +28,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 35
+            "max": 36
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -71,6 +71,12 @@
               "objective": "satsu.iron.man.armor",
               "min_score": 33,
               "max_score": 33
+            },
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 36,
+              "max_score": 36
             }
           ]
         }
@@ -103,7 +109,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 35
+            "max": 36
           }
         },
         "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_1_#STEALH"
@@ -142,6 +148,12 @@
               "objective": "satsu.iron.man.armor",
               "min_score": 33,
               "max_score": 33
+            },
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 36,
+              "max_score": 36
             }
           ]
         },
