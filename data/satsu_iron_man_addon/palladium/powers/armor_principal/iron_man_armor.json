@@ -6730,7 +6730,7 @@
         ]
       }
     },
-    "Satsu.Armor.36.23": {
+    "Satsu.Armor.36.mk23": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_36.png",
       "title": { "translate": "ability.title.satsu.mark.23" },
@@ -6772,7 +6772,7 @@
               {
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Satsu.Armor.36.23"
+                "ability": "Satsu.Armor.36.mk23"
               }
             ]
           }
@@ -8514,10 +8514,10 @@
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/invis.png",
       "title": { "translate": "ability.title.satsu.stealht.mode" },
-      "hidden": true,
+      "hidden": false,
       "hidden_in_bar": false,
       "list_index": 17,
-      "gui_position": [-7, 3],
+      "gui_position": [11, 3],
       "conditions": {
         "enabling": [
           {
@@ -8589,7 +8589,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.6.MKStealh_Armor"
+            "ability": "Satsu.Armor.36.mk23"
           }
         ]
       }
