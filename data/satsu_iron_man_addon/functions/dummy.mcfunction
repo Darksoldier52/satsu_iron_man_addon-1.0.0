@@ -103,6 +103,7 @@ scoreboard objectives add satsu.iron.man.armor.mk18.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.mk20.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.mk22.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.mk23.unlock dummy
+scoreboard objectives add satsu.iron.man.armor.mk24.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.mk25.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.mk.extremis.unlock dummy
 scoreboard objectives add satsu.iron.man.armor.mk.1873.unlock dummy
