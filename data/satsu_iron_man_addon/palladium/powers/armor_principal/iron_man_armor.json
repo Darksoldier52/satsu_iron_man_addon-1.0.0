@@ -1141,6 +1141,22 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.27"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.28"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.29"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.30"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.30.iron.destroyer"
                   },
                   {
@@ -1325,6 +1341,22 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.27"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.28"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.29"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.30"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.30.iron.destroyer"
                   },
                   {
@@ -1504,6 +1536,22 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.26"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.27"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.28"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.29"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.30"
                   },
                   {
                     "type": "palladium:has_tag",
@@ -1715,6 +1763,22 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.27"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.28"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.29"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.30"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.30.iron.destroyer"
                   },
                   {
@@ -1923,6 +1987,22 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.26"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.27"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.28"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.29"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.30"
                   },
                   {
                     "type": "palladium:has_tag",
@@ -2726,6 +2806,22 @@
               },
               {
                 "type": "palladium:has_tag",
+                "tag": "mark.27"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.28"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.29"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.30"
+              },
+              {
+                "type": "palladium:has_tag",
                 "tag": "mark.45"
               },
               {
@@ -3180,7 +3276,7 @@
             "conditions": [
               {
                 "type": "palladium:or",
-                "conditions":[
+                "conditions": [
                   {
                     "type": "palladium:ability_enabled",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -3190,7 +3286,8 @@
                     "type": "palladium:ability_enabled",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "Mark.26.drill.ground"
-                  }]
+                  }
+                ]
               }
             ]
           }
@@ -3533,7 +3630,7 @@
                 "conditions": [
                   {
                     "type": "palladium:or",
-                    "conditions":[
+                    "conditions": [
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -3543,7 +3640,8 @@
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                         "ability": "Mark.26.drill.ground"
-                      }]
+                      }
+                    ]
                   }
                 ]
               }
@@ -3704,7 +3802,7 @@
                 "conditions": [
                   {
                     "type": "palladium:or",
-                    "conditions":[
+                    "conditions": [
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -3714,7 +3812,8 @@
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                         "ability": "Mark.26.drill.ground"
-                      }]
+                      }
+                    ]
                   }
                 ]
               }
@@ -4535,7 +4634,7 @@
                 "conditions": [
                   {
                     "type": "palladium:or",
-                    "conditions":[
+                    "conditions": [
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -4545,7 +4644,8 @@
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                         "ability": "Mark.26.drill.ground"
-                      }]
+                      }
+                    ]
                   }
                 ]
               }
@@ -4714,7 +4814,7 @@
                 "conditions": [
                   {
                     "type": "palladium:or",
-                    "conditions":[
+                    "conditions": [
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -4724,7 +4824,8 @@
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                         "ability": "Mark.26.drill.ground"
-                      }]
+                      }
+                    ]
                   }
                 ]
               }
@@ -6779,7 +6880,7 @@
         ]
       }
     },
-    "Satsu.Armor.37.24": {
+    "Satsu.Armor.37.mk24": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_37.png",
       "title": { "translate": "ability.title.satsu.mark.24" },
@@ -6801,7 +6902,7 @@
           },
           {
             "type": "palladium:ability_unlocked",
-            "ability": "Satsu.Armor.36.23"
+            "ability": "Satsu.Armor.36.mk23"
           }
         ]
       }
@@ -6821,7 +6922,7 @@
               {
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Satsu.Armor.37.24"
+                "ability": "Satsu.Armor.37.mk24"
               }
             ]
           }
@@ -6848,7 +6949,7 @@
           },
           {
             "type": "palladium:ability_unlocked",
-            "ability": "Satsu.Armor.37.24"
+            "ability": "Satsu.Armor.37.mk24"
           }
         ]
       }
@@ -7634,7 +7735,7 @@
                 "conditions": [
                   {
                     "type": "palladium:or",
-                    "conditions":[
+                    "conditions": [
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -7644,7 +7745,8 @@
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                         "ability": "Mark.26.drill.ground"
-                      }]
+                      }
+                    ]
                   }
                 ]
               }
@@ -7898,7 +8000,7 @@
                 "conditions": [
                   {
                     "type": "palladium:or",
-                    "conditions":[
+                    "conditions": [
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -7908,7 +8010,8 @@
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                         "ability": "Mark.26.drill.ground"
-                      }]
+                      }
+                    ]
                   }
                 ]
               }
@@ -12195,6 +12298,22 @@
                       },
                       {
                         "type": "palladium:has_tag",
+                        "tag": "mark.27"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.28"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.29"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.30"
+                      },
+                      {
+                        "type": "palladium:has_tag",
                         "tag": "mark.30.iron.destroyer"
                       },
                       {
@@ -12324,6 +12443,22 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.26"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.27"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.28"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.29"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.30"
                   },
                   {
                     "type": "palladium:has_tag",

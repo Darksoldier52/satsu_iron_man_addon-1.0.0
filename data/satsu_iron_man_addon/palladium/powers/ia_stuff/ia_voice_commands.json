@@ -694,6 +694,22 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.27"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.28"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.29"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.30"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.30.iron.destroyer"
                   },
                   {

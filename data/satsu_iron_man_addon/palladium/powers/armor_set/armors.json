@@ -1654,7 +1654,7 @@
         ]
       }
     },
-    "set.scoreboard.armor.35": {
+    "set.scoreboard.armor.35.mark.22": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -1677,7 +1677,7 @@
         ]
       }
     },
-    "set.scoreboard.armor.36": {
+    "set.scoreboard.armor.36.mark.23": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -1700,7 +1700,7 @@
         ]
       }
     },
-    "set.scoreboard.armor.37": {
+    "set.scoreboard.armor.37.mark.24": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -1723,7 +1723,7 @@
         ]
       }
     },
-    "set.scoreboard.armor.38": {
+    "set.scoreboard.armor.38.mark.26": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -2121,6 +2121,22 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.26"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.27"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.28"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.29"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.30"
                   },
                   {
                     "type": "palladium:has_tag",
