@@ -3,10 +3,7 @@
   "layers": [
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_0.png",
         "transformers": [
@@ -26,7 +23,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -58,10 +55,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
         "transformers": [
@@ -81,7 +75,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_0_#TIMER"
@@ -131,10 +125,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_0.png",
         "transformers": [
@@ -154,7 +145,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -186,10 +177,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
         "transformers": [
@@ -209,7 +197,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_0_#TIMER"
@@ -259,10 +247,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
         "transformers": [
@@ -282,7 +267,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_0_#MASK"
@@ -332,10 +317,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_1.png",
         "transformers": [
@@ -357,7 +339,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -398,10 +380,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_1.png",
         "transformers": [
@@ -423,7 +402,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_1_#TIMER"
@@ -459,10 +438,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_1.png",
         "transformers": [
@@ -484,7 +460,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -525,10 +501,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_1.png",
         "transformers": [
@@ -550,7 +523,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_1_#TIMER"
@@ -591,10 +564,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_1.png",
         "transformers": [
@@ -616,7 +586,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -662,10 +632,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_1.png",
         "transformers": [
@@ -687,7 +654,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_1_#TIMER"
@@ -729,10 +696,7 @@
 
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_0.png",
         "transformers": [
@@ -752,7 +716,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -774,10 +738,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
         "transformers": [
@@ -797,7 +758,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_0_#TIMER"
@@ -841,10 +802,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_slim_helmet.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_0.png",
         "transformers": [
@@ -864,7 +822,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -886,10 +844,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_slim_helmet.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
         "transformers": [
@@ -909,7 +864,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_0_#TIMER"
@@ -944,10 +899,7 @@
 
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_#S.png",
         "transformers": [
@@ -967,7 +919,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "S": {
             "type": "palladium:objective_score",
@@ -1007,10 +959,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y.png",
         "transformers": [
@@ -1030,7 +979,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -1058,10 +1007,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y.png",
         "transformers": [
@@ -1081,7 +1027,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -1109,10 +1055,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y_#S_glow.png",
         "transformers": [
@@ -1132,7 +1075,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -1167,10 +1110,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
-        "slim": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y_#S_glow.png",
         "transformers": [
@@ -1190,7 +1130,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -1246,7 +1186,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",

@@ -9,16 +9,7 @@
     "size": [1, 1],
     "bloom": 3,
     "rotation": 10,
-    "rotation_speed": 8,
-    "particles": [
-      {
-        "particle_type": "minecraft:dust_color_transition",
-        "options": "0.98 0.98 0.98 4 0.98 0 0.9",
-        "amount": 10,
-        "motion": [1, 1, 1],
-        "motion_random": [1, 1, 1]
-      }
-    ]
+    "rotation_speed": 8
   },
   {
     "type": "palladium:lightning",
