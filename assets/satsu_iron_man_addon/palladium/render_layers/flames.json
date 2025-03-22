@@ -3,10 +3,7 @@
   "layers": [
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/flames.geo.json",
-        "slim": "satsu_iron_man_addon:geo/flames_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/flames.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/flames/flame_#X_#Y.png",
         "variables": {
@@ -149,10 +146,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/flames_down.geo.json",
-        "slim": "satsu_iron_man_addon:geo/flames_down_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/flames_down.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/flames/flame_#X_#Y.png",
         "variables": {
@@ -248,10 +242,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/flames.geo.json",
-        "slim": "satsu_iron_man_addon:geo/flames_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/flames.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/flames/flame_#X_#Y.png",
         "transformers": [
@@ -341,10 +332,7 @@
     },
     {
       "type": "geckolib:default",
-      "model": {
-        "normal": "satsu_iron_man_addon:geo/flames_down.geo.json",
-        "slim": "satsu_iron_man_addon:geo/flames_down_slim.geo.json"
-      },
+      "model": "satsu_iron_man_addon:geo/flames_down.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/flames/flame_#X_#Y.png",
         "transformers": [
