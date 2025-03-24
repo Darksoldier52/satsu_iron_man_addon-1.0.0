@@ -587,7 +587,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 0,
         "KnockbackStrength": 0,
-        "Damage": 2,
+        "Damage": 4,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
@@ -621,6 +621,10 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.18"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.22"
               }
             ]
           }
@@ -644,7 +648,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 0,
         "KnockbackStrength": 0,
-        "Damage": 2,
+        "Damage": 4,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
@@ -678,6 +682,10 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.18"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.22"
               }
             ]
           }
@@ -971,7 +979,67 @@
               },
               {
                 "type": "palladium:has_tag",
+                "tag": "mark.23"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.24"
+              },
+              {
+                "type": "palladium:has_tag",
                 "tag": "mark.25"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.26"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.27"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.28"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.29"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.30"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.31"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.32"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.33"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.34"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.35"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.36"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.37"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.38"
               },
               {
                 "type": "palladium:has_tag",
@@ -983,7 +1051,27 @@
               },
               {
                 "type": "palladium:has_tag",
+                "tag": "mark.41"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.42"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.43"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.44"
+              },
+              {
+                "type": "palladium:has_tag",
                 "tag": "mark.45"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.46"
               }
             ]
           }
@@ -1097,7 +1185,67 @@
               },
               {
                 "type": "palladium:has_tag",
+                "tag": "mark.23"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.24"
+              },
+              {
+                "type": "palladium:has_tag",
                 "tag": "mark.25"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.26"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.27"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.28"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.29"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.30"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.31"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.32"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.33"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.34"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.35"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.36"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.37"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.38"
               },
               {
                 "type": "palladium:has_tag",
@@ -1109,7 +1257,27 @@
               },
               {
                 "type": "palladium:has_tag",
+                "tag": "mark.41"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.42"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.43"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.44"
+              },
+              {
+                "type": "palladium:has_tag",
                 "tag": "mark.45"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.46"
               }
             ]
           }

@@ -9,7 +9,7 @@
         "transformers": [
           {
             "type": "palladium:alpha_mask",
-            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit_no_nano_tech/transformation_#TIMER.png"
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit_ensanble/transformation_#TIMER.png"
           }
         ],
         "variables": {
@@ -19,13 +19,13 @@
             "ability": "no_nanoarmor_anim",
             "property": "value",
             "min": 0,
-            "max": 10
+            "max": 16
           },
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -57,7 +57,7 @@
         "transformers": [
           {
             "type": "palladium:alpha_mask",
-            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit_no_nano_tech/transformation_#TIMER.png"
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit_ensanble/transformation_#TIMER.png"
           }
         ],
         "variables": {
@@ -67,13 +67,13 @@
             "ability": "no_nanoarmor_anim",
             "property": "value",
             "min": 0,
-            "max": 10
+            "max": 16
           },
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask/iron_man_suit_lights_#X_0_#TIMER"
@@ -116,7 +116,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -171,6 +171,18 @@
               "objective": "satsu.iron.man.armor",
               "min_score": 33,
               "max_score": 33
+            },
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 36,
+              "max_score": 36
+            },
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 39,
+              "max_score": 39
             }
           ]
         }
@@ -200,7 +212,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh/iron_man_suit_lights_#X_1_#STEALH"
@@ -250,6 +262,18 @@
               "objective": "satsu.iron.man.armor",
               "min_score": 33,
               "max_score": 33
+            },
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 36,
+              "max_score": 36
+            },
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 39,
+              "max_score": 39
             }
           ]
         }
@@ -279,7 +303,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -354,7 +378,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/armor/stealht_night_mask/iron_man_suit_lights_#X_2_#STEALH_night"
@@ -423,7 +447,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -489,7 +513,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 34
+            "max": 40
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh_night/iron_man_suit_lights_#X_3_#STEALH"
