@@ -1795,7 +1795,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "playsound satsu_iron_man_addon:energyblast.throw ambient @a ~ ~ ~ 1 0"
+        "playsound satsu_iron_man_addon:new_blast ambient @a ~ ~ ~ 1 1"
       ],
       "commands": [""],
       "conditions": {
