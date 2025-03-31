@@ -9519,7 +9519,7 @@
         "enabling": [
           {
             "type": "palladium:toggle",
-            "cooldown": 190,
+            "cooldown": 230,
             "key_type": "key_bind",
             "needs_empty_hand": false
           }
