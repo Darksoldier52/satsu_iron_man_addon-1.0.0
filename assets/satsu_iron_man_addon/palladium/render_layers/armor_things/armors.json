@@ -1227,7 +1227,7 @@
             "max": 6
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/shields/repulser_shield_nano/animation_#SHIELD"
+        "output": "satsu_iron_man_addon:textures/models/shields_nanotech/repulser_shield/animation_#SHIELD"
       },
       "conditions": [
         {
