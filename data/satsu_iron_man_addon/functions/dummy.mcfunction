@@ -1,5 +1,6 @@
 
 scoreboard objectives add satsu.iron.man.addon.raycast_distance dummy
+scoreboard objectives add satsu.iron.man.addon.punch minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add satsu.iron.man.addon.Ymotion dummy
 scoreboard objectives add satsu.iron.man.armor.stealh.night dummy
 scoreboard objectives add satsu.iron.man.addon.uuid dummy
@@ -69,6 +70,7 @@ scoreboard objectives add satsu.iron.man.closed.armors dummy
 scoreboard objectives add satsu.iron.man.superpower dummy
 scoreboard objectives add satsu.iron.man.break dummy
 scoreboard objectives add satsu.iron.man.armor.sword dummy
+scoreboard objectives add satsu.iron.man.armor.ark.energy.anim dummy
 scoreboard objectives add satsu.iron.man.armor.ark.energy dummy
 scoreboard objectives add satsu.iron.man.armor.ark.energy.max dummy
 scoreboard objectives add satsu.iron.man.armor.ark_energy_full_or_off dummy

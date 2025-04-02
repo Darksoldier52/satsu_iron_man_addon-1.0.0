@@ -226,6 +226,80 @@
         ]
       }
     },
+    "remove_ark_energy_anim": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": [
+        "function satsu_iron_man_addon:ark_energy_animation/not_maxim"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "ark.upgrade.max.energy.1"
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.ark.upgraded.max.energy",
+                "min_score": 1,
+                "max_score": 2
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "remove_ark_energy_anim_1": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": [
+        "function satsu_iron_man_addon:ark_energy_animation/first_upgrade"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "ark.upgrade.max.energy.1"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.ark.upgraded.max.energy",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "remove_ark_energy_anim_max": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "commands": [
+        "function satsu_iron_man_addon:ark_energy_animation/second_upgrade"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "ark.upgrade.max.energy.2"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.ark.upgraded.max.energy",
+            "min_score": 2,
+            "max_score": 2
+          }
+        ]
+      }
+    },
     "give_ark_energy": {
       "type": "palladium:command",
       "hidden": true,
@@ -446,7 +520,8 @@
       ],
       "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 8",
-        "scoreboard players add @s satsu.iron.man.addon.xp 15"],
+        "scoreboard players add @s satsu.iron.man.addon.xp 15"
+      ],
       "last_tick_commands": [""],
       "conditions": {
         "enabling": [
@@ -476,7 +551,8 @@
       ],
       "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 5",
-        "scoreboard players add @s satsu.iron.man.addon.xp 15"],
+        "scoreboard players add @s satsu.iron.man.addon.xp 15"
+      ],
       "last_tick_commands": [""],
       "conditions": {
         "enabling": [
