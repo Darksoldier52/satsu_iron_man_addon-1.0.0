@@ -17107,6 +17107,64 @@
             "type": "palladium:in_water"
           },
           {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.10"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.37"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.42"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.43"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.44"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.45"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.46"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.47"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.48"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.49"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.50"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.1873"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -17124,42 +17182,6 @@
                       {
                         "type": "palladium:or",
                         "conditions": [
-                          {
-                            "type": "palladium:has_tag",
-                            "tag": "mark.1"
-                          },
-                          {
-                            "type": "palladium:has_tag",
-                            "tag": "mark.2"
-                          },
-                          {
-                            "type": "palladium:has_tag",
-                            "tag": "mark.3"
-                          },
-                          {
-                            "type": "palladium:has_tag",
-                            "tag": "mark.4"
-                          },
-                          {
-                            "type": "palladium:has_tag",
-                            "tag": "mark.5"
-                          },
-                          {
-                            "type": "palladium:has_tag",
-                            "tag": "mark.6"
-                          },
-                          {
-                            "type": "palladium:has_tag",
-                            "tag": "mark.7"
-                          },
-                          {
-                            "type": "palladium:has_tag",
-                            "tag": "mark.8"
-                          },
-                          {
-                            "type": "palladium:has_tag",
-                            "tag": "mark.9"
-                          },
                           {
                             "type": "palladium:has_tag",
                             "tag": "mark.10"
