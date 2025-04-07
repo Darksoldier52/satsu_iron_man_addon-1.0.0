@@ -465,7 +465,7 @@
       "icon": "palladium:textures/icon/size.png",
       "hidden": true,
       "hidden_in_bar": true,
-      "scale": 1.3,
+      "scale": 1.2,
       "conditions": {
         "enabling": [
           {
@@ -512,12 +512,6 @@
                 "tag": "alien"
               }
             ]
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor",
-            "min_score": 13,
-            "max_score": 13
           }
         ]
       }
