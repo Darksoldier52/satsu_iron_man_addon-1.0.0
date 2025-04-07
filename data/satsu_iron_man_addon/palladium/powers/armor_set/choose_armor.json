@@ -131,15 +131,14 @@
             "max_score": 3
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk2.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.14.Mk2"
           },
           {
             "type": "palladium:ability_enabled",
@@ -170,15 +169,14 @@
             "max_score": 4
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk3.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.22.Mk3"
           },
           {
             "type": "palladium:ability_enabled",
@@ -209,15 +207,14 @@
             "max_score": 5
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk5.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.17.mk5"
           },
           {
             "type": "palladium:ability_enabled",
@@ -248,15 +245,14 @@
             "max_score": 6
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk6.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.3.mk6"
           },
           {
             "type": "palladium:ability_enabled",
@@ -287,15 +283,14 @@
             "max_score": 7
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk7.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.3.mk7"
           },
           {
             "type": "palladium:ability_enabled",
@@ -326,15 +321,14 @@
             "max_score": 8
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk8.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.24.mk8"
           },
           {
             "type": "palladium:ability_enabled",
@@ -365,15 +359,14 @@
             "max_score": 9
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk9.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.25.mk9"
           },
           {
             "type": "palladium:ability_enabled",
@@ -404,15 +397,14 @@
             "max_score": 10
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk10.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.26.mk10"
           },
           {
             "type": "palladium:ability_enabled",
@@ -443,15 +435,14 @@
             "max_score": 11
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk11.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.27.mk11"
           },
           {
             "type": "palladium:ability_enabled",
@@ -482,15 +473,14 @@
             "max_score": 12
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk12.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.28.mk12"
           },
           {
             "type": "palladium:ability_enabled",
@@ -521,15 +511,14 @@
             "max_score": 13
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk13.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.29.mk13"
           },
           {
             "type": "palladium:ability_enabled",
@@ -560,15 +549,14 @@
             "max_score": 14
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk14.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.30.mk14"
           },
           {
             "type": "palladium:ability_enabled",
@@ -599,15 +587,14 @@
             "max_score": 15
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk15.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.31.mk15"
           },
           {
             "type": "palladium:ability_enabled",
@@ -638,15 +625,14 @@
             "max_score": 16
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.6.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.6.MKStealh_Armor"
           },
           {
             "type": "palladium:ability_enabled",
@@ -677,15 +663,14 @@
             "max_score": 17
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk17.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.32.mk17"
           },
           {
             "type": "palladium:ability_enabled",
@@ -716,15 +701,14 @@
             "max_score": 18
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk18.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.33.mk18"
           },
           {
             "type": "palladium:ability_enabled",
@@ -755,15 +739,14 @@
             "max_score": 19
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.5.mk19.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.5.mk.19.tiger"
           },
           {
             "type": "palladium:ability_enabled",
@@ -794,15 +777,14 @@
             "max_score": 20
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk20.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.34.mk20"
           },
           {
             "type": "palladium:ability_enabled",
@@ -833,12 +815,6 @@
             "max_score": 21
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.8.unlock",
-            "min_score": 1,
-            "max_score": 1
-          },
-          {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "Armor_powers_stat_upgrades"
@@ -847,6 +823,11 @@
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.8.MKMidas"
           }
         ]
       }
@@ -872,15 +853,14 @@
             "max_score": 22
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk22.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.35.mk22"
           },
           {
             "type": "palladium:ability_enabled",
@@ -911,12 +891,6 @@
             "max_score": 23
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk23.unlock",
-            "min_score": 1,
-            "max_score": 1
-          },
-          {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "Armor_powers_stat_upgrades"
@@ -925,6 +899,11 @@
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.36.mk23"
           }
         ]
       }
@@ -950,15 +929,14 @@
             "max_score": 24
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk24.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.37.mk24"
           },
           {
             "type": "palladium:ability_enabled",
@@ -989,12 +967,6 @@
             "max_score": 25
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.8.unlock",
-            "min_score": 1,
-            "max_score": 1
-          },
-          {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "Armor_powers_stat_upgrades"
@@ -1003,6 +975,11 @@
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.23.mk25"
           }
         ]
       }
@@ -1028,15 +1005,14 @@
             "max_score": 26
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk26.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.38.mk26"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1067,15 +1043,14 @@
             "max_score": 27
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk27.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.39.mk27"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1106,15 +1081,14 @@
             "max_score": 28
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk28.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.40.mk28"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1145,15 +1119,14 @@
             "max_score": 29
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk29.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.41.mk29"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1184,15 +1157,14 @@
             "max_score": 30
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk30.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.42.mk30"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1223,15 +1195,14 @@
             "max_score": 31
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk31.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.43.mk31"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1262,15 +1233,14 @@
             "max_score": 32
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk32.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.44.mk32"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1301,15 +1271,14 @@
             "max_score": 33
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk33.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.45.mk33"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1340,15 +1309,14 @@
             "max_score": 34
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk34.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.46.mk34"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1379,15 +1347,14 @@
             "max_score": 35
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk35.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.47.mk35"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1414,19 +1381,18 @@
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 37,
-            "max_score": 37
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk36.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "min_score": 36,
+            "max_score": 36
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "Armor_powers_stat_upgrades"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.48.mk36"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1455,12 +1421,6 @@
             "objective": "satsu.iron.man.choose_armor.test",
             "min_score": 37,
             "max_score": 37
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk36.unlock",
-            "min_score": 1,
-            "max_score": 1
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1496,15 +1456,14 @@
             "max_score": 38
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.15.mk30.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.15.mk.30.Iron.destroyer"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1535,15 +1494,14 @@
             "max_score": 39
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.39.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.2.MK39"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1574,15 +1532,14 @@
             "max_score": 40
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.9.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.9.MK40"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1611,12 +1568,6 @@
             "objective": "satsu.iron.man.choose_armor.test",
             "min_score": 41,
             "max_score": 41
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.43.unlock",
-            "min_score": 1,
-            "max_score": 1
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1652,15 +1603,14 @@
             "max_score": 42
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mark.45.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.19.mk.45"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1691,15 +1641,14 @@
             "max_score": 43
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.47.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.0.Mk47"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1730,15 +1679,14 @@
             "max_score": 44
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.11.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.11.MK50"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1769,15 +1717,14 @@
             "max_score": 45
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.16.unknow.blooded.armor.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.16.mark.unknow.blooded.armor"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1808,15 +1755,14 @@
             "max_score": 46
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk.1873.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.18.mark.1873"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1847,15 +1793,14 @@
             "max_score": 47
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.superior.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.1.MKSuperior"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1886,15 +1831,14 @@
             "max_score": 48
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.mk.extremis.unlock",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Armor_powers_stat_upgrades"
           },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Satsu.Armor.10.mark.extremis"
           },
           {
             "type": "palladium:ability_enabled",
