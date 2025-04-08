@@ -576,6 +576,17 @@
                 "tag": "alien"
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor",
+                "min_score": 0,
+                "max_score": 49
+              }
+            ]
           }
         ]
       }
