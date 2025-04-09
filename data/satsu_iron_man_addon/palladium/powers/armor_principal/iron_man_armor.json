@@ -333,7 +333,7 @@
               },
               {
                 "type": "palladium:and",
-                "conditions":[
+                "conditions": [
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.38"
@@ -358,7 +358,8 @@
                         "max": 16
                       }
                     ]
-                  }]
+                  }
+                ]
               }
             ]
           }
@@ -6792,44 +6793,12 @@
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.choose_armor.test",
                     "min_score": 36,
-                    "max_score": 36
-                  },
-                  {
-                    "type": "palladium:ability_unlocked",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "Satsu.Armor.48.mk36"
-                  }
-                ]
-              },
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.choose_armor.test",
-                    "min_score": 37,
-                    "max_score": 37
-                  },
-                  {
-                    "type": "palladium:ability_unlocked",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "Satsu.Armor.15.mk.30.Iron.destroyer"
-                  }
-                ]
-              },
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.choose_armor.test",
-                    "min_score": 38,
                     "max_score": 38
                   },
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "Satsu.Armor.2.MK39"
+                    "ability": "Satsu.Armor.48.mk36"
                   }
                 ]
               },
@@ -6845,7 +6814,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "Satsu.Armor.9.MK40"
+                    "ability": "Satsu.Armor.15.mk.30.Iron.destroyer"
                   }
                 ]
               },
@@ -6861,7 +6830,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "Satsu.Armor.19.mk.45"
+                    "ability": "Satsu.Armor.2.MK39"
                   }
                 ]
               },
@@ -6877,7 +6846,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "Satsu.Armor.0.Mk47"
+                    "ability": "Satsu.Armor.9.MK40"
                   }
                 ]
               },
@@ -6893,7 +6862,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "Satsu.Armor.11.MK50"
+                    "ability": "Satsu.Armor.19.mk.45"
                   }
                 ]
               },
@@ -6909,7 +6878,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "Satsu.Armor.16.mark.unknow.blooded.armor"
+                    "ability": "Satsu.Armor.0.Mk47"
                   }
                 ]
               },
@@ -6925,7 +6894,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "Satsu.Armor.18.mark.1873"
+                    "ability": "Satsu.Armor.11.MK50"
                   }
                 ]
               },
@@ -6941,7 +6910,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "Satsu.Armor.1.MKSuperior"
+                    "ability": "Satsu.Armor.16.mark.unknow.blooded.armor"
                   }
                 ]
               },
@@ -6953,6 +6922,38 @@
                     "objective": "satsu.iron.man.choose_armor.test",
                     "min_score": 46,
                     "max_score": 46
+                  },
+                  {
+                    "type": "palladium:ability_unlocked",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Satsu.Armor.18.mark.1873"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.choose_armor.test",
+                    "min_score": 47,
+                    "max_score": 47
+                  },
+                  {
+                    "type": "palladium:ability_unlocked",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Satsu.Armor.1.MKSuperior"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.choose_armor.test",
+                    "min_score": 48,
+                    "max_score": 48
                   },
                   {
                     "type": "palladium:ability_unlocked",
@@ -15442,11 +15443,13 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:energy_beams/energy_beams"
+        "superpower add satsu_iron_man_addon:energy_beams/energy_beams",
+        "execute as @s[scores={satsu.iron.man.armor.energy.beams=1..}] run superpower add satsu_iron_man_addon:energy_beams/energy_beams_nano"
       ],
       "commands": [""],
       "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:energy_beams/energy_beams"
+        "superpower remove satsu_iron_man_addon:energy_beams/energy_beams",
+        "execute as @s[scores={satsu.iron.man.armor.energy.beams=0..}] run superpower remove satsu_iron_man_addon:energy_beams/energy_beams_nano"
       ],
       "conditions": {
         "enabling": [
@@ -15464,17 +15467,38 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "energy_beam"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "commands_energy_beams.hands": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "superpower add satsu_iron_man_addon:energy_beams/energy_beams_hands"
+      ],
+      "commands": [""],
+      "last_tick_commands": [
+        "superpower remove satsu_iron_man_addon:energy_beams/energy_beams_hands"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "uni.beam.hand.1"
               },
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "uni.beam.hand.2"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "energy_beam"
               }
             ]
           }
@@ -15809,6 +15833,39 @@
         "enabling": [
           {
             "type": "palladium:crouching"
+          }
+        ]
+      }
+    },
+    "tool_hands": {
+      "type": "palladium:tool_hands",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "drop_block_tags": [
+        "minecraft:mineable/pickaxe",
+        "minecraft:needs_iron_tool"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "enable_sword"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.30.vibranuim.blades"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.33.vibranuim.blades"
+              }
+            ]
           }
         ]
       }
