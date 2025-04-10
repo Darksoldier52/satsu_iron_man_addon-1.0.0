@@ -13215,7 +13215,7 @@
     },
     "mk.37.water_movement": {
       "type": "gravestone:movement",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/sonic_howl.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/water_movement.png",
       "title": { "translate": "ability.title.satsu.water.movement" },
       "description": { "translate": "description.satsu.water.movement" },
       "hidden": false,
