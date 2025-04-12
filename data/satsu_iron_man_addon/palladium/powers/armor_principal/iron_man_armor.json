@@ -2493,6 +2493,14 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.41"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.42"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.45"
                   },
                   {
@@ -2806,6 +2814,48 @@
         ]
       }
     },
+    "armor_activate.animation_timer.mark.41-42": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 64,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.animation.armor",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Armor_powers_stat_upgrades"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "enable_armor"
+              }
+            ]
+          },
+          {
+            "type": "palladium:has_tag",
+            "tag": "mark.41"
+          },
+          {
+            "type": "palladium:and",
+            "conditions": []
+          }
+        ]
+      }
+    },
     "armor_activate.command": {
       "type": "palladium:command",
       "hidden": true,
@@ -2868,6 +2918,14 @@
                 "property": "value",
                 "min": 10,
                 "max": 11
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate.animation_timer.mark.41-42",
+                "property": "value",
+                "min": 1,
+                "max": 31
               },
               {
                 "type": "palladium:ability_integer_property",
