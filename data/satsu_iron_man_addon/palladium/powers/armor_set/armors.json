@@ -164,6 +164,10 @@
                 ]
               },
               {
+                "type": "palladium:mod_loaded",
+                "mod_id": "adastra resources"
+              },
+              {
                 "type": "palladium:command_result",
                 "command": "execute if entity @s[scores={satsu.iron.man.addon.altura=1010..}]"
               },
@@ -260,6 +264,10 @@
                     "tag": "mark.taken"
                   }
                 ]
+              },
+              {
+                "type": "palladium:mod_loaded",
+                "mod_id": "adastra resources"
               },
               {
                 "type": "palladium:or",
@@ -364,6 +372,10 @@
                     "tag": "mark.taken"
                   }
                 ]
+              },
+              {
+                "type": "palladium:mod_loaded",
+                "mod_id": "adastra resources"
               },
               {
                 "type": "palladium:or",
