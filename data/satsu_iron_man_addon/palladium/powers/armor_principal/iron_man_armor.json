@@ -10760,7 +10760,7 @@
       "hidden_in_bar": true,
       "gui_position": [23, 3.3],
       "attribute": "minecraft:generic.armor",
-      "amount": 35,
+      "amount": 10,
       "operation": 0,
       "uuid": "b679de99-9744-4cd1-83ca-ed123bb07291",
       "conditions": {
@@ -10797,7 +10797,7 @@
       "hidden_in_bar": true,
       "gui_position": [23, 3.6],
       "attribute": "minecraft:generic.attack_damage",
-      "amount": 15,
+      "amount": 8,
       "operation": 0,
       "uuid": "f732d74f-5bab-432d-b60d-0748e5788bd8",
       "conditions": {
@@ -16253,6 +16253,11 @@
                     "type": "palladium:ability_enabled",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "flares_flames"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "enable_sword"
                   }
                 ]
               }
