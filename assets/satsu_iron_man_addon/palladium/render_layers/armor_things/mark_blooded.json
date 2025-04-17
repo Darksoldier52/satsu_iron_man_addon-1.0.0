@@ -8,7 +8,7 @@
         "slim": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_slim.geo.json"
       },
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -45,7 +45,7 @@
         "slim": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_slim.geo.json"
       },
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -106,7 +106,7 @@
         "slim": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_slim.geo.json"
       },
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "transformers": [
           {
             "type": "palladium:color",
@@ -174,7 +174,7 @@
         "slim": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_slim_helmet.geo.json"
       },
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -211,7 +211,7 @@
         "slim": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_slim_helmet.geo.json"
       },
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -272,7 +272,7 @@
         "slim": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_slim_helmet.geo.json"
       },
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "transformers": [
           {
             "type": "palladium:color",

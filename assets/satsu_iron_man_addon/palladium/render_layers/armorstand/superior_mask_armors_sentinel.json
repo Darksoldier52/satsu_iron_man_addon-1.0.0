@@ -5,7 +5,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/armor_stand/armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
@@ -69,7 +69,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/armor_stand/armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_#S.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_#S.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
@@ -127,7 +127,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/armor_stand/armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_mask_#Y.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
@@ -174,7 +174,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/armor_stand/armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_mask_#Y.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
@@ -221,7 +221,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/armor_stand/armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y_#S_glow.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
@@ -275,7 +275,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/armor_stand/armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y_#S_glow.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
@@ -329,7 +329,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/armor_stand/armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y_#S_glow.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -402,7 +402,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/armor_stand/armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_mask_#Y_#S_glow.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",

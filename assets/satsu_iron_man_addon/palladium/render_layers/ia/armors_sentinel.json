@@ -5,7 +5,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/sentinel/sentinel_armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
@@ -68,7 +68,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/sentinel/sentinel_armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
@@ -326,7 +326,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/sentinel/sentinel_armor_silver_centurion.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
         "variables": {
           "X": {
             "type": "palladium:objective_score",
@@ -371,7 +371,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/sentinel/sentinel_armor_silver_centurion.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "variables": {
           "X": {
             "type": "palladium:objective_score",
@@ -417,7 +417,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/sentinel/igor_armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_#X_1.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_1.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
@@ -454,7 +454,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/sentinel/igor_armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_lights_#X_1.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_1.png",
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
