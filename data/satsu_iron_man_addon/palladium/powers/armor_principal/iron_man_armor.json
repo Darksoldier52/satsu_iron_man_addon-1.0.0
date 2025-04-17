@@ -5780,31 +5780,12 @@
         ]
       }
     },
-    "Armor_edit_dummy_in_bar": {
-      "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/personalizate_things.png",
-      "title": { "translate": "ability.title.satsu.armor.edit" },
-      "description": { "translate": "description.satsu.armor.edit" },
-      "hidden": false,
-      "hidden_in_bar": true,
-      "gui_position": [-2, -0],
-      "conditions": {
-        "enabling": [],
-        "unlocking": [
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
-          }
-        ]
-      }
-    },
     "Armor_edit": {
       "type": "palladium:ability_wheel",
       "icon": "satsu_iron_man_addon:textures/gui/armors/personalizate_things.png",
       "title": { "translate": "ability.title.satsu.armor.edit" },
       "description": { "translate": "description.satsu.armor.edit" },
-      "hidden": true,
+      "hidden": false,
       "hidden_in_bar": false,
       "list_index": 4,
       "gui_position": [-2, -0],
@@ -5826,92 +5807,82 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "Armor_powers_stat_upgrades"
           },
           {
-            "type": "palladium:not",
-            "conditions": [
+            "type": "palladium:and",
+            "conditions":[
               {
-                "type": "palladium:and",
+                "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:or",
+                    "type": "palladium:and",
                     "conditions": [
                       {
-                        "type": "palladium:ability_integer_property",
-                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                        "ability": "interpolate",
-                        "property": "value",
-                        "min": 17,
-                        "max": 17
-                      },
-                      {
-                        "type": "palladium:ability_integer_property",
-                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                        "ability": "no_nanoarmor_anim",
-                        "property": "value",
-                        "min": 15,
-                        "max": 16
+                        "type": "palladium:or",
+                        "conditions": [
+                          {
+                            "type": "palladium:objective_score",
+                            "objective": "satsu.iron.man.armor.ark.energy",
+                            "min_score": 0,
+                            "max_score": 1
+                          },
+                          {
+                            "type": "palladium:objective_score",
+                            "objective": "satsu.iron.man.armor.ark.energy",
+                            "min_score": -10000,
+                            "max_score": 0
+                          }
+                        ]
                       }
                     ]
-                  },
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.unlocking.set.block",
-                    "min_score": 1,
-                    "max_score": 2
                   }
                 ]
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "flight_unlock_skill_tree": {
-      "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/5fly.png",
-      "title": { "translate": "ability.title.satsu.flight.edit" },
-      "hidden": false,
-      "hidden_in_bar": true,
-      "gui_position": [-3, 0.5],
-      "description": { "translate": "description.satsu.flight.edit" },
-      "conditions": {
-        "enabling": [],
-        "unlocking": [
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_edit_dummy_in_bar"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Armor_powers_stat_upgrades"
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:or",
+                        "conditions": [
+                          {
+                            "type": "palladium:ability_integer_property",
+                            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                            "ability": "interpolate",
+                            "property": "value",
+                            "min": 17,
+                            "max": 17
+                          },
+                          {
+                            "type": "palladium:ability_integer_property",
+                            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                            "ability": "no_nanoarmor_anim",
+                            "property": "value",
+                            "min": 15,
+                            "max": 16
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.unlocking.set.block",
+                        "min_score": 1,
+                        "max_score": 2
+                      }
+                    ]
+                  }
+                ]
+              }]
           }
         ]
       }
@@ -5920,8 +5891,9 @@
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/5fly.png",
       "title": { "translate": "ability.title.satsu.flight.edit" },
-      "hidden": true,
+      "hidden": false,
       "hidden_in_bar": false,
+      "gui_position": [-3, 0.5],
       "list_index": 5,
       "description": { "translate": "description.satsu.flight.edit" },
       "commands": [
@@ -5940,78 +5912,75 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_edit"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
+            "type": "palladium:and",
+            "conditions":[
               {
-                "type": "palladium:has_tag",
-                "tag": "satsu.iron.man.nano.armor"
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Armor_powers_stat_upgrades"
               },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.21"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.40"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.47"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.50"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.50.superior"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.unknow.blooded.armor"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.1873"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.extremis"
-              }
-            ]
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
               {
                 "type": "palladium:or",
                 "conditions": [
                   {
                     "type": "palladium:has_tag",
-                    "tag": "mark.1"
+                    "tag": "satsu.iron.man.nano.armor"
                   },
                   {
                     "type": "palladium:has_tag",
-                    "tag": "mark.2"
+                    "tag": "mark.50"
                   },
                   {
                     "type": "palladium:has_tag",
-                    "tag": "mark.16"
+                    "tag": "mark.50.superior"
                   },
                   {
                     "type": "palladium:has_tag",
-                    "tag": "mark.30"
+                    "tag": "mark.unknow.blooded.armor"
                   },
                   {
                     "type": "palladium:has_tag",
-                    "tag": "mark.39"
+                    "tag": "mark.1873"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.extremis"
                   }
                 ]
-              }
-            ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.1"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.2"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.16"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.30"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.39"
+                      }
+                    ]
+                  }
+                ]
+              }]
           }
         ]
       }
@@ -6620,7 +6589,7 @@
     },
     "choose_armor_wheel": {
       "type": "palladium:ability_wheel",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/personalizate_things.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/choose_armor.png",
       "title": { "translate": "ability.title.satsu.armor.edit" },
       "description": { "translate": "description.satsu.armor.edit" },
       "hidden": true,
@@ -6683,8 +6652,8 @@
     },
     "choose_armor_wheel_nanoarmors": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/personalizate_things.png",
-      "title": { "translate": "ability.title.satsu.armor.edit" },
+      "icon": "satsu_iron_man_addon:textures/gui/armors/choose_armor.png",
+      "title": { "translate": "ability.title.satsu.armor.list.nanoarmor" },
       "description": { "translate": "description.satsu.armor.edit" },
       "hidden": true,
       "hidden_in_bar": false,
@@ -6777,8 +6746,8 @@
     },
     "choose_armor_wheel_normal_list": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/personalizate_things.png",
-      "title": { "translate": "ability.title.satsu.armor.edit" },
+      "icon": "satsu_iron_man_addon:textures/gui/armors/choose_armor.png",
+      "title": { "translate": "ability.title.satsu.armor.list.normal" },
       "description": { "translate": "description.satsu.armor.edit" },
       "hidden": true,
       "hidden_in_bar": false,
@@ -15253,7 +15222,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_edit_dummy_in_bar"
+            "ability": "Armor_edit"
           }
         ]
       }
