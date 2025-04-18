@@ -8,11 +8,11 @@
   "primary_color": "#2af4f5",
   "secondary_color": "#0aacac",
   "abilities": {
-    "ia_powers_stat_upgrades": {
+    "ia_skill_bar": {
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -41,11 +41,11 @@
         ]
       }
     },
-    "Armor_powers_stat_upgrades": {
+    "Armor_skill_bar": {
       "type": "palladium:dummy",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -66,7 +66,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "description": { "translate": "description.ia_skill_stat" },
       "hidden": true,
@@ -110,7 +110,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -270,7 +270,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -396,7 +396,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -500,7 +500,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -605,7 +605,7 @@
       "type": "palladium:animation_timer",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -1038,7 +1038,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -1162,7 +1162,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -1263,7 +1263,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -1385,7 +1385,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -1480,7 +1480,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -1547,7 +1547,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -1716,7 +1716,7 @@
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,

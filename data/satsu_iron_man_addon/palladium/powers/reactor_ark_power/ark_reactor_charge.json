@@ -8,16 +8,16 @@
   "primary_color": "#2af4f5",
   "secondary_color": "#0aacac",
   "abilities": {
-    "Armor_powers_stat_upgrades": {
+    "Armor_skill_bar": {
       "type": "palladium:dummy",
       "icon": "#satsu_iron_man_addon:armor_icon_ability",
       "title": {
-        "translate": "ability.title.satsu.Armor_powers_stat_upgrades"
+        "translate": "ability.title.satsu.Armor_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
       "gui_position": [0, -2.8],
-      "description": { "translate": "description.Armor_powers_stat_upgrades" },
+      "description": { "translate": "description.Armor_skill_bar" },
       "conditions": {
         "unlocking": [
           {

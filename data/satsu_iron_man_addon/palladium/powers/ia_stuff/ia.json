@@ -9,11 +9,11 @@
   "secondary_color": "#0aacac",
   "allow_bar_shrinking": true,
   "abilities": {
-    "ia_powers_stat_upgrades": {
+    "ia_skill_bar": {
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": false,
       "hidden_in_bar": true,
@@ -46,7 +46,7 @@
       "type": "palladium:ability_wheel",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": false,
       "hidden_in_bar": false,
@@ -150,7 +150,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "Armor_powers_stat_upgrades"
+                    "ability": "Armor_skill_bar"
                   },
                   {
                     "type": "palladium:ability_unlocked",
@@ -247,7 +247,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "Armor_powers_stat_upgrades"
+                    "ability": "Armor_skill_bar"
                   },
                   {
                     "type": "palladium:ability_unlocked",
@@ -265,7 +265,7 @@
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/night_vision.png",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": false,
       "hidden_in_bar": false,
@@ -363,7 +363,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "Armor_powers_stat_upgrades"
+                    "ability": "Armor_skill_bar"
                   },
                   {
                     "type": "palladium:ability_unlocked",
@@ -444,7 +444,7 @@
                       {
                         "type": "palladium:ability_unlocked",
                         "power": "satsu_iron_man_addon:ia_stuff/ia",
-                        "ability": "Armor_powers_stat_upgrades"
+                        "ability": "Armor_skill_bar"
                       },
                       {
                         "type": "palladium:ability_unlocked",
@@ -540,7 +540,7 @@
                       {
                         "type": "palladium:ability_unlocked",
                         "power": "satsu_iron_man_addon:ia_stuff/ia",
-                        "ability": "Armor_powers_stat_upgrades"
+                        "ability": "Armor_skill_bar"
                       },
                       {
                         "type": "palladium:ability_unlocked",
@@ -608,11 +608,11 @@
         ]
       }
     },
-    "Armor_powers_stat_upgrades": {
+    "Armor_skill_bar": {
       "type": "palladium:dummy",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": true,
@@ -762,7 +762,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_powers_stat_upgrades"
+            "ability": "ia_skill_bar"
           },
           {
             "type": "palladium:and",
@@ -779,7 +779,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "Armor_powers_stat_upgrades"
+                    "ability": "Armor_skill_bar"
                   },
                   {
                     "type": "palladium:ability_unlocked",
@@ -814,7 +814,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_powers_stat_upgrades"
+            "ability": "ia_skill_bar"
           }
         ]
       }
@@ -924,7 +924,7 @@
               {
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:ia_stuff/ia",
-                "ability": "Armor_powers_stat_upgrades"
+                "ability": "Armor_skill_bar"
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -940,7 +940,7 @@
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/night_vision.png",
       "title": {
-        "translate": "ability.title.satsu.ia_powers_stat_upgrades"
+        "translate": "ability.title.satsu.ia_skill_bar"
       },
       "hidden": true,
       "hidden_in_bar": false,
@@ -1046,7 +1046,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "Armor_powers_stat_upgrades"
+                    "ability": "Armor_skill_bar"
                   },
                   {
                     "type": "palladium:ability_unlocked",
@@ -2259,7 +2259,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_powers_stat_upgrades"
+            "ability": "ia_skill_bar"
           },
           {
             "type": "palladium:scoreboard_score_buyable",
@@ -2310,7 +2310,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "Armor_powers_stat_upgrades"
+                    "ability": "Armor_skill_bar"
                   },
                   {
                     "type": "palladium:ability_unlocked",
@@ -2440,7 +2440,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_powers_stat_upgrades"
+            "ability": "ia_skill_bar"
           },
           {
             "type": "palladium:scoreboard_score_buyable",
@@ -2492,7 +2492,7 @@
               {
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:ia_stuff/ia",
-                "ability": "Armor_powers_stat_upgrades"
+                "ability": "Armor_skill_bar"
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -2522,7 +2522,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_powers_stat_upgrades"
+            "ability": "ia_skill_bar"
           }
         ]
       }
@@ -2606,7 +2606,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "Armor_powers_stat_upgrades"
+                    "ability": "Armor_skill_bar"
                   },
                   {
                     "type": "palladium:ability_unlocked",
@@ -2793,7 +2793,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "Armor_powers_stat_upgrades"
+                    "ability": "Armor_skill_bar"
                   },
                   {
                     "type": "palladium:ability_unlocked",
@@ -2942,7 +2942,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_powers_stat_upgrades"
+            "ability": "ia_skill_bar"
           }
         ]
       }
@@ -2965,7 +2965,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_powers_stat_upgrades"
+            "ability": "ia_skill_bar"
           },
           {
             "type": "palladium:scoreboard_score_buyable",
@@ -3072,7 +3072,7 @@
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "Armor_powers_stat_upgrades"
+                    "ability": "Armor_skill_bar"
                   },
                   {
                     "type": "palladium:ability_unlocked",

@@ -19,7 +19,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:or",
@@ -80,7 +80,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           }
         ]
       }
@@ -110,7 +110,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_enabled",
@@ -145,7 +145,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -185,7 +185,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -225,7 +225,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -265,7 +265,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -305,7 +305,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -345,7 +345,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -385,7 +385,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -425,7 +425,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -465,7 +465,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -505,7 +505,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -545,7 +545,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -585,7 +585,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -625,7 +625,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -665,7 +665,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -705,7 +705,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -745,7 +745,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -785,7 +785,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -825,7 +825,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -865,7 +865,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_enabled",
@@ -905,7 +905,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -945,7 +945,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_enabled",
@@ -985,7 +985,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1025,7 +1025,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_enabled",
@@ -1065,7 +1065,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1105,7 +1105,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1145,7 +1145,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1185,7 +1185,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1225,7 +1225,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1265,7 +1265,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1305,7 +1305,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1345,7 +1345,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1385,7 +1385,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1425,7 +1425,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1465,7 +1465,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1505,7 +1505,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1545,7 +1545,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1585,7 +1585,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1625,7 +1625,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1665,7 +1665,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1705,7 +1705,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1745,7 +1745,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1785,7 +1785,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1825,7 +1825,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1865,7 +1865,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1905,7 +1905,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1945,7 +1945,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1985,7 +1985,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -2025,7 +2025,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -2065,7 +2065,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -2105,7 +2105,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -2145,7 +2145,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -2185,7 +2185,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -2225,7 +2225,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -2266,7 +2266,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_enabled",
@@ -2304,7 +2304,7 @@
               {
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Armor_powers_stat_upgrades"
+                "ability": "Armor_skill_bar"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -2347,7 +2347,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Armor_powers_stat_upgrades"
+            "ability": "Armor_skill_bar"
           },
           {
             "type": "palladium:ability_enabled",
