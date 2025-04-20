@@ -6471,7 +6471,7 @@
       "type": "palladium:gui_overlay",
       "description": { "translate": "description.iron.man.energy.pulse" },
       "texture": "#satsu_iron_man_addon:choose_armor_third_person",
-      "texture_width": 32,
+      "texture_width": 64,
       "texture_height": 64,
       "translate": [0, 0, 0],
       "rotate": [0, 0, 0],
