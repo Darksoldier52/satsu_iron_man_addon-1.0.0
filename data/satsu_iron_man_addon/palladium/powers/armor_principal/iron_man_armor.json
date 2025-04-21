@@ -17533,8 +17533,8 @@
     "nano_hand_blade": {
       "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/gui/armors/nano_hand_blade.png",
-      "title": { "translate": "ability.title.satsu.nano_handblade" },
-      "description": { "translate": "description.satsu.nano_handblade" },
+      "title": { "translate": "ability.title.satsu.nano_hand_blade" },
+      "description": { "translate": "description.satsu.nano_hand_blade" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 21,
