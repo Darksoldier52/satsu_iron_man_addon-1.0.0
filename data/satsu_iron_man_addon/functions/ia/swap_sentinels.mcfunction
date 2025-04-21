@@ -1,1 +1,1 @@
-execute at @s run tp @p[palladium.power=satsu_iron_man_addon:armor_principal/iron_man_armor] ~ ~ ~
+execute at @s if score @s grave.ID = @p grave.ID run tp @p[palladium.power=satsu_iron_man_addon:armor_principal/iron_man_armor] ~ ~ ~

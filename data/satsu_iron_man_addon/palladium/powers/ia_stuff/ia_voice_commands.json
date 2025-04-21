@@ -281,7 +281,6 @@
         "attribute @s minecraft:generic.max_health base set 10",
         "execute unless score @s[tag=sentinel.false] satsu.iron.man.animation.armor matches 1 run function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
         "function satsu_iron_man_addon:sentinels/spawn_remote_sentinel",
-        "execute as @e[tag=sentinel.test] run scoreboard players operation @s grave.ID = @e[type=minecraft:player,sort=nearest] grave.ID",
         "scoreboard players set @s satsu.iron.man.armor.remote 1",
         "execute unless score @s[tag=!sentinel.false] satsu.iron.man.animation.armor matches 1 run function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
         "execute unless score @s[tag=sentinel.false] satsu.iron.man.animation.armor matches 1 run function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
