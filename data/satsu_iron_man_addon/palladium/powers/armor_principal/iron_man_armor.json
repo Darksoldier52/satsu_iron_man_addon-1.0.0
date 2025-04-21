@@ -3266,52 +3266,13 @@
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
-      "max_value": 11,
+      "max_value": 18,
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_sword"
-              }
-            ]
-          },
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "satsu.iron.man.nano.armor"
-              },
-              {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.50"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.50.superior"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.unknow.blooded.armor"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.1873"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.extremis"
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "enable_sword"
           }
         ]
       }
@@ -4408,8 +4369,9 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "satsu.iron.man.enable.sword"
+                    "type": "palladium:ability_enabled",
+                    "power": "null",
+                    "ability": "enable_sword"
                   }
                 ]
               },
@@ -4610,8 +4572,9 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "satsu.iron.man.enable.sword"
+                    "type": "palladium:ability_enabled",
+                    "power": "null",
+                    "ability": "enable_sword"
                   }
                 ]
               },
@@ -4828,8 +4791,9 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "satsu.iron.man.enable.sword"
+                    "type": "palladium:ability_enabled",
+                    "power": "null",
+                    "ability": "enable_sword"
                   }
                 ]
               },
@@ -4980,8 +4944,9 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "satsu.iron.man.enable.sword"
+                    "type": "palladium:ability_enabled",
+                    "power": "null",
+                    "ability": "enable_sword"
                   }
                 ]
               },
@@ -5084,8 +5049,9 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "satsu.iron.man.enable.sword"
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "enable_sword"
               }
             ]
           },
@@ -5176,8 +5142,9 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "satsu.iron.man.enable.sword"
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "enable_sword"
               }
             ]
           },
@@ -5474,8 +5441,9 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "satsu.iron.man.enable.sword"
+                    "type": "palladium:ability_enabled",
+                    "power": "null",
+                    "ability": "enable_sword"
                   }
                 ]
               },
@@ -5684,8 +5652,9 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "satsu.iron.man.enable.sword"
+                    "type": "palladium:ability_enabled",
+                    "power": "null",
+                    "ability": "enable_sword"
                   }
                 ]
               },
@@ -16836,50 +16805,6 @@
         ]
       }
     },
-    "enable_sword": {
-      "type": "palladium:dummy",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:has_tag",
-            "tag": "satsu.iron.man.enable.sword"
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived.perm",
-                "min_score": 1
-              },
-              {
-                "type": "palladium:not",
-                "conditions": [
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
-                    "min_score": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "alien"
-              }
-            ]
-          }
-        ]
-      }
-    },
     "sword.destroy_speed": {
       "type": "palladium:attribute_modifier",
       "hidden": true,
@@ -16944,8 +16869,9 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "satsu.iron.man.enable.sword"
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "enable_sword"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -16966,20 +16892,17 @@
         ]
       }
     },
-    "enable_sword.1": {
-      "type": "palladium:command",
+    "enable_sword": {
+      "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/energy_sword.png",
       "title": { "translate": "ability.title.satsu.sword.enable" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 21,
-      "first_tick_commands": ["tag @s add satsu.iron.man.enable.sword"],
-      "commands": [""],
-      "last_tick_commands": [""],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action",
+            "type": "palladium:toggle",
             "cooldown": 0,
             "key_type": "key_bind",
             "needs_empty_hand": false,
@@ -16988,20 +16911,16 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.unlock_sword",
-            "min_score": 0
-          },
-          {
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "satsu.iron.man.permanet.sword"
-              },
-              {
                 "type": "palladium:and",
                 "conditions": [
+                  {
+                    "type": "palladium:ability_unlocked",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "arms_unlock_skill_tree"
+                  },
                   {
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -17012,122 +16931,6 @@
                     "objective": "satsu.iron.man.addon.nano.armor.things",
                     "min_score": 3,
                     "max_score": 3
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived.perm",
-                "min_score": 1
-              },
-              {
-                "type": "palladium:not",
-                "conditions": [
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
-                    "min_score": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "satsu.iron.man.enable.sword"
-              }
-            ]
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "alien"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "enable_sword.2": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/energy_sword.png",
-      "title": { "translate": "ability.title.satsu.sword.enable" },
-      "hidden": true,
-      "hidden_in_bar": false,
-      "list_index": 21,
-      "first_tick_commands": ["tag @s remove satsu.iron.man.enable.sword"],
-      "commands": [""],
-      "last_tick_commands": [""],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:action",
-            "cooldown": 0,
-            "key_type": "key_bind",
-            "needs_empty_hand": false,
-            "allow_scrolling_when_crouching": true
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.unlock_sword",
-            "min_score": 0
-          },
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "satsu.iron.man.permanet.sword"
-              },
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_unlocked",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                    "ability": "arms.move"
-                  },
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.nano.armor.things",
-                    "min_score": 3,
-                    "max_score": 3
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "palladium:has_tag",
-            "tag": "satsu.iron.man.enable.sword"
-          },
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived.perm",
-                "min_score": 1
-              },
-              {
-                "type": "palladium:not",
-                "conditions": [
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived.perm",
-                    "min_score": 1
                   }
                 ]
               }
