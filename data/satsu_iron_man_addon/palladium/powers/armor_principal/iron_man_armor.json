@@ -18130,14 +18130,15 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [""],
-      "commands": [
-        "execute if entity @e[tag=sentinel,sort=nearest,distance=0..3] run tag @s add sentinel.false.nearest",
-        "execute unless entity @e[tag=sentinel,distance=0..3] run tag @s remove sentinel.false.nearest"
-      ],
-      "last_tick_commands": [""],
+      "first_tick_commands": ["tag @s add sentinel.false.nearest"],
+      "commands": [""],
+      "last_tick_commands": ["tag @s remove sentinel.false.nearest"],
       "conditions": {
         "enabling": [
+          {
+            "type": "palladium:command_result",
+            "command": "execute if entity @e[tag=sentinel,sort=nearest,distance=0..3] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID"
+          },
           {
             "type": "palladium:not",
             "conditions": [

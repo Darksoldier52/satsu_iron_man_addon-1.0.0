@@ -943,7 +943,6 @@
         "attribute @s minecraft:generic.max_health base set 10",
         "execute unless score @s[tag=sentinel.false] satsu.iron.man.animation.armor matches 1 run function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
         "function satsu_iron_man_addon:sentinels/spawn_remote_sentinel",
-        "execute as @e[tag=sentinel.test] run scoreboard players operation @s grave.ID = @e[type=minecraft:player,sort=nearest] grave.ID",
         "scoreboard players set @s satsu.iron.man.armor.remote 1",
         "execute unless score @s[tag=!sentinel.false] satsu.iron.man.animation.armor matches 1 run function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
         "execute unless score @s[tag=sentinel.false] satsu.iron.man.animation.armor matches 1 run function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
@@ -2514,25 +2513,6 @@
         ]
       }
     },
-    "sentinel_nearest": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "first_tick_commands": [""],
-      "commands": [
-        "execute if entity @e[tag=sentinel,sort=nearest,distance=0..3] run tag @s add sentinel_nearest",
-        "execute unless entity @e[tag=sentinel,distance=0..3] run tag @s remove sentinel_nearest"
-      ],
-      "last_tick_commands": [""],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:has_tag",
-            "tag": "sentinel_one"
-          }
-        ]
-      }
-    },
     "sentinel.armor.unlock.lock": {
       "type": "palladium:dummy",
       "hidden": true,
@@ -2994,8 +2974,8 @@
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor"
               },
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_nearest"
+                "type": "palladium:command_result",
+                "command": "execute if entity @e[tag=sentinel,sort=nearest,distance=0..3] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID"
               },
               {
                 "type": "palladium:or",
@@ -3074,8 +3054,8 @@
             ]
           },
           {
-            "type": "palladium:has_tag",
-            "tag": "sentinel_nearest"
+            "type": "palladium:command_result",
+            "command": "execute if entity @e[tag=sentinel,sort=nearest,distance=0..3] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID"
           }
         ]
       }
