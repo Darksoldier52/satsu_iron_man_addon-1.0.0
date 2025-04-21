@@ -80,7 +80,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_boost_energy_beams/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_boost_energy_beams/light/iron_man_suit_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -242,7 +242,7 @@
             "max": 51
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_handblade/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_handblade/light/iron_man_suit_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
