@@ -5,7 +5,7 @@ scoreboard objectives add satsu.iron.man.addon.gui.overlay.armor dummy
 scoreboard objectives add satsu.iron.man.addon.raycast_distance dummy
 scoreboard objectives add satsu.iron.man.addon.punch minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add satsu.iron.man.addon.Ymotion dummy
-scoreboard objectives add satsu.iron.man.armor.stealh.night dummy
+scoreboard objectives remove satsu.iron.man.armor.stealh.night
 scoreboard objectives remove satsu.iron.man.addon.uuid
 scoreboard objectives add satsu.iron.man.armor.remote dummy
 scoreboard objectives add satsu.iron.man.addon.glasses.equip dummy
@@ -131,7 +131,7 @@ scoreboard objectives remove satsu.iron.man.armor.mk.1873.unlock
 scoreboard objectives remove satsu.iron.man.armor.15.mk30.unlock
 scoreboard objectives remove satsu.iron.man.armor.mark.45.unlock
 scoreboard objectives add satsu.iron.man.symbiote.metalized dummy
-scoreboard objectives add satsu.iron.man.armor.16.unknow.blooded.armor.unlock dummy
+scoreboard objectives remove satsu.iron.man.armor.16.unknow.blooded.armor.unlock
 scoreboard objectives add satsu.iron.man.rbg.on.off dummy
 scoreboard objectives add satsu.iron.man.speed dummy
 scoreboard objectives add satsu.iron.man.ark.upgraded dummy
