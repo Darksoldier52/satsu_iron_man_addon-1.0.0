@@ -126,7 +126,7 @@
     },
     "choose.armor.11.MK50": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_11.png",
       "title": { "translate": "ability.title.satsu.mark.50" },
       "description": { "translate": "description.iron.man.mark.50" },
       "hidden": true,
@@ -165,7 +165,7 @@
     },
     "choose.armor.57.mk.85": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_57.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_57.png",
       "title": { "translate": "ability.title.satsu.mark.85" },
       "description": { "translate": "description.iron.man.mark.85" },
       "hidden": true,
@@ -204,7 +204,7 @@
     },
     "choose.armor.unknow.blooded.armor": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_16.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_16.png",
       "title": { "translate": "ability.title.satsu.mark.unknow.blooded" },
       "description": {
         "translate": "description.iron.man.mark.unknow.blooded"
@@ -245,7 +245,7 @@
     },
     "choose.armor.mark.1873": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_18.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_18.png",
       "title": { "translate": "ability.title.satsu.mark.1873" },
       "description": {
         "translate": "description.iron.man.mark.1873"
@@ -286,7 +286,7 @@
     },
     "choose.armor.1.MKSuperior": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_1.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_1.png",
       "title": { "translate": "ability.title.satsu.mark.50.superior" },
       "description": { "translate": "description.iron.man.superior.armor" },
       "hidden": true,
@@ -325,7 +325,7 @@
     },
     "choose.armor.1.mk.extremis": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_10.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_10.png",
       "title": { "translate": "ability.title.satsu.mark.extremis" },
       "description": {
         "translate": "description.iron.man.mark.extremis"
@@ -391,7 +391,7 @@
             "ability": "Armor_skill_bar"
           },
           {
-            "type": "palladium:ability_enabled",
+            "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
           }
@@ -470,7 +470,7 @@
             "ability": "Armor_skill_bar"
           },
           {
-            "type": "palladium:ability_enabled",
+            "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
           }

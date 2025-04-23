@@ -126,7 +126,7 @@
     },
     "choose.armor.27.mk.11": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_27.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_27.png",
       "title": { "translate": "ability.title.satsu.mark.11" },
       "hidden": true,
       "hidden_in_bar": true,
@@ -164,7 +164,7 @@
     },
     "choose.armor.31.mk.15": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_31.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_31.png",
       "title": { "translate": "ability.title.satsu.mark.15" },
       "hidden": true,
       "hidden_in_bar": true,
@@ -202,7 +202,7 @@
     },
     "choose.armor.6.mk.16.stealht": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_6.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_6.png",
       "title": { "translate": "ability.title.satsu.mark.stealh" },
       "hidden": true,
       "hidden_in_bar": true,
@@ -240,7 +240,7 @@
     },
     "choose.armor.33.mk.18": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_33.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_33.png",
       "title": { "translate": "ability.title.satsu.mark.18" },
       "hidden": true,
       "hidden_in_bar": true,
@@ -278,7 +278,7 @@
     },
     "choose.armor.36.mk.23": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_36.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_36.png",
       "title": { "translate": "ability.title.satsu.mark.23" },
       "hidden": true,
       "hidden_in_bar": true,
@@ -302,7 +302,7 @@
             "ability": "Armor_skill_bar"
           },
           {
-            "type": "palladium:ability_enabled",
+            "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
           },
@@ -316,7 +316,7 @@
     },
     "choose.armor.39.mk.27": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_39.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_39.png",
       "title": { "translate": "ability.title.satsu.mark.27" },
       "description": { "translate": "description.iron.man.mark.27" },
       "hidden": true,
@@ -379,7 +379,7 @@
             "ability": "Armor_skill_bar"
           },
           {
-            "type": "palladium:ability_enabled",
+            "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
           }
@@ -458,7 +458,7 @@
             "ability": "Armor_skill_bar"
           },
           {
-            "type": "palladium:ability_enabled",
+            "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
           }
