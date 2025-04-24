@@ -195,12 +195,6 @@
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "ark.upgrade.max.energy.1"
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.ark.upgraded.max.energy",
-                "min_score": 1,
-                "max_score": 2
               }
             ]
           }
@@ -222,10 +216,14 @@
             "ability": "ark.upgrade.max.energy.1"
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.ark.upgraded.max.energy",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "ark.upgrade.max.energy.2"
+              }
+            ]
           }
         ]
       }
@@ -245,10 +243,14 @@
             "ability": "ark.upgrade.max.energy.2"
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.ark.upgraded.max.energy",
-            "min_score": 2,
-            "max_score": 2
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "ark.upgrade.max.energy.1"
+              }
+            ]
           }
         ]
       }
@@ -308,10 +310,9 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.ark.upgraded",
-            "min_score": 2,
-            "max_score": 2
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "ark.upgrade.thing.1"
           },
           {
             "type": "palladium:objective_score",
@@ -367,18 +368,73 @@
         ]
       }
     },
-    "set_energy": {
+    "set_energy_1000..": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [""],
       "commands": [
-        "execute as @s unless score @s satsu.iron.man.ark.upgraded.max.energy matches 0.. as @s[scores={satsu.iron.man.armor.ark.energy=10000..}] run scoreboard players set @s satsu.iron.man.armor.ark.energy 10000",
-        "execute as @s[scores={satsu.iron.man.ark.upgraded.max.energy=1}] as @s[scores={satsu.iron.man.armor.ark.energy=20000..}] run scoreboard players set @s satsu.iron.man.armor.ark.energy 20000",
-        "execute as @s[scores={satsu.iron.man.ark.upgraded.max.energy=2}] as @s[scores={satsu.iron.man.armor.ark.energy=80000..}] run scoreboard players set @s satsu.iron.man.armor.ark.energy 80000"
+        "execute as @s[scores={satsu.iron.man.armor.ark.energy=10000..}] run scoreboard players set @s satsu.iron.man.armor.ark.energy 10000"
       ],
       "conditions": {
-        "enabling": []
+        "enabling": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "ark.upgrade.max.energy.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "set_energy_20000..": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "execute as @s[scores={satsu.iron.man.armor.ark.energy=20000..}] run scoreboard players set @s satsu.iron.man.armor.ark.energy 20000"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "ark.upgrade.max.energy.1"
+          }
+        ]
+      }
+    },
+    "set_energy_80000..": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "execute as @s[scores={satsu.iron.man.armor.ark.energy=80000..}] run scoreboard players set @s satsu.iron.man.armor.ark.energy 80000"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "ark.upgrade.max.energy.2"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "ark.upgrade.max.energy.1"
+              }
+            ]
+          }
+        ]
       }
     },
     "energyblast.remove.ark.energy": {

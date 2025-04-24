@@ -17256,7 +17256,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
-      "max_score":15,
+      "max_score": 15,
       "conditions": {
         "enabling": [
           {
@@ -17265,7 +17265,7 @@
           },
           {
             "type": "palladium:not",
-            "conditions":[
+            "conditions": [
               {
                 "type": "palladium:or",
                 "conditions": [
@@ -17446,7 +17446,8 @@
                     "max": 5
                   }
                 ]
-              }]
+              }
+            ]
           }
         ]
       }
@@ -20687,9 +20688,7 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [-0, -2],
-      "first_tick_commands": [
-        "execute as @s run scoreboard players set @s satsu.iron.man.ark.upgraded.max.energy 1"
-      ],
+      "first_tick_commands": [""],
       "commands": [
         "execute as @s unless score @s satsu.iron.man.addon.ark.skin.choose matches 0.. as @s run scoreboard players set @s satsu.iron.man.addon.ark.skin 1"
       ],
@@ -20701,12 +20700,6 @@
               {
                 "type": "palladium:ability_unlocked",
                 "ability": "ark.upgrade.max.energy.2"
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.ark.upgraded.max.energy",
-                "min_score": 2,
-                "max_score": 2
               }
             ]
           }
@@ -20737,8 +20730,7 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [0, -3],
-      "first_tick_commands": [
-        "execute as @s run scoreboard players set @s satsu.iron.man.ark.upgraded.max.energy 2"
+      "first_tick_commands": [""
       ],
       "commands": [
         "execute as @s unless score @s satsu.iron.man.addon.ark.skin.choose matches 0.. as @s run scoreboard players set @s satsu.iron.man.addon.ark.skin 2"
