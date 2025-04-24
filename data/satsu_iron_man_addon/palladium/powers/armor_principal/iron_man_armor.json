@@ -16934,7 +16934,7 @@
       }
     },
     "maximun.pulse.animation": {
-      "type": "palladium:repeating_animation_timer",
+      "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/gui/armors/maximum_pulse.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.maximum.pulse" },
@@ -17025,36 +17025,399 @@
         ]
       }
     },
-    "maximun.pulse.tag": {
+    "maximun.pulse.give.tag": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "commands": ["tag @s add maximum.pulse"],
+      "first_tick_commands": ["tag @s add maximum.pulse"],
+      "commands": [""],
+      "last_tick_commands": [""],
       "conditions": {
-        "unlocking": [
+        "enabling": [
           {
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:animation_timer_ability",
+                "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "maximun.pulse.animation",
-                "min": 50,
-                "max": 50
+                "ability": "Telekinesis",
+                "property": "value",
+                "min": 1,
+                "max": 5
               },
               {
-                "type": "palladium:animation_timer_ability",
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mark.1873.throw.smoke",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "energy.pulse_right",
-                "min": 0
+                "property": "value",
+                "min": 1,
+                "max": 5
               },
               {
-                "type": "palladium:animation_timer_ability",
+                "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "nano_fireworks.back",
-                "min": 0
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "energy.pulse_left",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "flamethrower.mark.1.right",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "flamethrower.mark.1.left",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mini.gun.left",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mini.gun.right",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "nano_grenade_launcher_left",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "nano_grenade_launcher_right",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "maximun.pulse.animation",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "uni.beam.hand.2",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mini_fireworks",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "nano_fireworks",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mk.1.rocket",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "flares_flames",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "uni.beam.hand.1",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "uni.beam.hand.2",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mk.15.sonic_dampened",
+                "property": "value",
+                "min": 1,
+                "max": 5
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mk.36.sonic_dampened",
+                "property": "value",
+                "min": 1,
+                "max": 5
               }
             ]
+          }
+        ]
+      }
+    },
+    "maximun.animation_remove": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_score":15,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "maximum.pulse"
+          },
+          {
+            "type": "palladium:not",
+            "conditions":[
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Telekinesis",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "mark.1873.throw.smoke",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "energy.pulse_right",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "nano_fireworks.back",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "energy.pulse_left",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "flamethrower.mark.1.right",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "flamethrower.mark.1.left",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "mini.gun.left",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "mini.gun.right",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "nano_grenade_launcher_left",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "nano_grenade_launcher_right",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "maximun.pulse.animation",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "uni.beam.hand.2",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "mini_fireworks",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "nano_fireworks",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "mk.1.rocket",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "flares_flames",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "uni.beam.hand.1",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "uni.beam.hand.2",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "mk.15.sonic_dampened",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "mk.36.sonic_dampened",
+                    "property": "value",
+                    "min": 1,
+                    "max": 5
+                  }
+                ]
+              }]
+          }
+        ]
+      }
+    },
+    "maximun.pulse.remove.tag": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": ["tag @s remove maximum.pulse"],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "maximun.animation_remove",
+            "property": "value",
+            "min": 15,
+            "max": 15
           }
         ]
       }
@@ -18676,23 +19039,6 @@
       "commands": [
         "scoreboard players operation @s satsu.iron.man.animation.armor.reset = @s satsu.iron.man.animation.armor"
       ]
-    },
-    "set_scoreboard_projectiles": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "first_tick_commands": [],
-      "commands": [
-        "scoreboard players operation @e[type=palladium:custom_projectile,sort=nearest,limit=1,distance=0..3] grave.ID = @p grave.ID"
-      ],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:command_result",
-            "command": "execute if entity @e[type=palladium:custom_projectile,sort=nearest,distance=0..3] unless score @e[type=palladium:custom_projectile,limit=1,sort=nearest] grave.ID matches 0.."
-          }
-        ]
-      }
     },
     "commands_projectiles": {
       "type": "palladium:command",
