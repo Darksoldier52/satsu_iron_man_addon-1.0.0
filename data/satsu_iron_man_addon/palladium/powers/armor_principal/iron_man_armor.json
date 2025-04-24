@@ -874,7 +874,7 @@
       "hidden_in_bar": true,
       "attribute": "palladium:flight_flexibility",
       "uuid": "578be4fb-af04-42f2-4328-e6ccdc0d99e2",
-      "amount": -800,
+      "amount": 1,
       "operation": 0,
       "conditions": {
         "enabling": [
