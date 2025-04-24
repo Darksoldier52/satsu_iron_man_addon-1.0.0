@@ -8,6 +8,49 @@
   "primary_color": "#2af4f5",
   "secondary_color": "#0aacac",
   "abilities": {
+    "wheel": {
+      "type": "palladium:ability_wheel",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "abilities": [
+        "choose.armor.28.mk.12",
+        "choose.armor.29.mk.13",
+        "choose.armor.30.mk.14",
+        "choose.armor.31.mk.15",
+        "choose.armor.6.mk.16.stealht",
+        "choose.armor.33.mk.18",
+        "choose.armor.35.mk.22",
+        "choose.armor.41.mk.29",
+        "choose.armor.44.mk.32"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "choose.armor.move"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.prev.iron.man.armor.anim",
+                "min_score": 0,
+                "max_score": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
     "interpolate_choose": {
       "type": "palladium:animation_timer",
       "hidden": true,
@@ -39,7 +82,7 @@
       "type": "palladium:render_layer",
       "hidden": true,
       "hidden_in_bar": true,
-      "render_layer": "satsu_iron_man_addon:armor_things/choose_armors/mini_armor_in_hand_speed"
+      "render_layer": "satsu_iron_man_addon:armor_things/mini_armor_in_hand"
     },
     "fixing_command": {
       "type": "palladium:command",
@@ -59,7 +102,7 @@
       "first_tick_commands": [
         "scoreboard players set @s satsu.prev.iron.man.armor.anim 0"
       ],
-      "commands": ["function satsu_iron_man_addon:choose"],
+      "commands": [""],
       "last_tick_commands": [],
       "conditions": {
         "enabling": [
@@ -84,26 +127,26 @@
         ]
       }
     },
-    "choose.armor.25.mk.9": {
+    "choose.armor.28.mk.12": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_28.png",
+      "title": { "translate": "ability.title.satsu.mark.12" },
       "hidden": true,
       "hidden_in_bar": true,
       "list_index": 0,
       "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 25"
+        "scoreboard players set @s satsu.iron.man.choose_armor 28"
       ],
       "commands": [""],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [],
-        "unlocking": [
+        "enabling": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 2,
-            "max_score": 2
-          },
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -112,7 +155,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.25.mk9"
+            "ability": "Satsu.Armor.28.mk12"
           },
           {
             "type": "palladium:ability_enabled",
@@ -122,26 +165,26 @@
         ]
       }
     },
-    "choose.armor.26.mk.10": {
+    "choose.armor.29.mk.13": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_29.png",
+      "title": { "translate": "ability.title.satsu.mark.13" },
       "hidden": true,
       "hidden_in_bar": true,
       "list_index": 0,
       "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 26"
+        "scoreboard players set @s satsu.iron.man.choose_armor 29"
       ],
       "commands": [""],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [],
-        "unlocking": [
+        "enabling": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 3,
-            "max_score": 3
-          },
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -150,7 +193,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.26.mk10"
+            "ability": "Satsu.Armor.29.mk13"
           },
           {
             "type": "palladium:ability_enabled",
@@ -160,64 +203,26 @@
         ]
       }
     },
-    "choose.armor.5.mk.19.tiger": {
+    "choose.armor.30.mk.14": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 3,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 5"
-      ],
-      "commands": [""],
-      "last_tick_commands": [],
-      "conditions": {
-        "enabling": [],
-        "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 4,
-            "max_score": 4
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.5.mk.19.tiger"
-          },
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "choose.armor.move"
-          }
-        ]
-      }
-    },
-    "choose.armor.34.mk.20": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_30.png",
+      "title": { "translate": "ability.title.satsu.mark.14" },
       "hidden": true,
       "hidden_in_bar": true,
       "list_index": 0,
       "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 34"
+        "scoreboard players set @s satsu.iron.man.choose_armor 30"
       ],
       "commands": [""],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [],
-        "unlocking": [
+        "enabling": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 5,
-            "max_score": 5
-          },
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -226,7 +231,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.34.mk20"
+            "ability": "Satsu.Armor.30.mk14"
           },
           {
             "type": "palladium:ability_enabled",
@@ -236,64 +241,26 @@
         ]
       }
     },
-    "choose.armor.8.MKMidas": {
+    "choose.armor.31.mk.15": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 2,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 8"
-      ],
-      "commands": [""],
-      "last_tick_commands": [],
-      "conditions": {
-        "enabling": [],
-        "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 6,
-            "max_score": 6
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "choose.armor.move"
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.8.MKMidas"
-          }
-        ]
-      }
-    },
-    "choose.armor.43.mk.31": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_31.png",
+      "title": { "translate": "ability.title.satsu.mark.15" },
       "hidden": true,
       "hidden_in_bar": true,
       "list_index": 0,
       "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 43"
+        "scoreboard players set @s satsu.iron.man.choose_armor 31"
       ],
       "commands": [""],
       "last_tick_commands": [],
       "conditions": {
-        "enabling": [],
-        "unlocking": [
+        "enabling": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 7,
-            "max_score": 7
-          },
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -302,7 +269,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.43.mk31"
+            "ability": "Satsu.Armor.31.mk15"
           },
           {
             "type": "palladium:ability_enabled",
@@ -312,252 +279,23 @@
         ]
       }
     },
-    "choose.armor.9.MK40": {
+    "choose.armor.6.mk.16.stealht": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 4,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 9"
-      ],
-      "commands": [""],
-      "last_tick_commands": [],
-      "conditions": {
-        "enabling": [],
-        "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 8,
-            "max_score": 8
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.9.MK40"
-          },
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "choose.armor.move"
-          }
-        ]
-      }
-    },
-    "choose.armor.11.MK50": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 7,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 11"
-      ],
-      "commands": [""],
-      "last_tick_commands": [],
-      "conditions": {
-        "enabling": [],
-        "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 9,
-            "max_score": 9
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.11.MK50"
-          },
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "choose.armor.move"
-          }
-        ]
-      }
-    },
-    "choose.armor.unknow.blooded.armor": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 8,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 16"
-      ],
-      "commands": [""],
-      "last_tick_commands": [],
-      "conditions": {
-        "enabling": [],
-        "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 10,
-            "max_score": 10
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.16.mark.unknow.blooded.armor"
-          },
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "choose.armor.move"
-          }
-        ]
-      }
-    },
-    "choose.armor.mark.1873": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 8,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 18"
-      ],
-      "commands": [""],
-      "last_tick_commands": [],
-      "conditions": {
-        "enabling": [],
-        "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 11,
-            "max_score": 11
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.18.mark.1873"
-          },
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "choose.armor.move"
-          }
-        ]
-      }
-    },
-    "choose.armor.1.MKSuperior": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 9,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 1"
-      ],
-      "commands": [""],
-      "last_tick_commands": [],
-      "conditions": {
-        "enabling": [],
-        "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 12,
-            "max_score": 12
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.1.MKSuperior"
-          },
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "choose.armor.move"
-          }
-        ]
-      }
-    },
-    "choose.armor.1.mk.extremis": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 9,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 10"
-      ],
-      "commands": [""],
-      "last_tick_commands": [],
-      "conditions": {
-        "enabling": [],
-        "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.choose_armor.test",
-            "min_score": 13,
-            "max_score": 13
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Satsu.Armor.10.mark.extremis"
-          },
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "choose.armor.move"
-          }
-        ]
-      }
-    },
-
-    "choose.armor.increase": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_6.png",
+      "title": { "translate": "ability.title.satsu.mark.stealh" },
       "hidden": true,
       "hidden_in_bar": true,
       "list_index": 1,
       "first_tick_commands": [
-        "scoreboard players add @s satsu.iron.man.choose_armor.test 1"
+        "scoreboard players set @s satsu.iron.man.choose_armor 6"
       ],
       "commands": [""],
       "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "next.armor.choose.armor"
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -567,6 +305,11 @@
             "ability": "armor_skill_bar"
           },
           {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.6.MKStealh_Armor"
+          },
+          {
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
@@ -574,41 +317,156 @@
         ]
       }
     },
-    "decrease.choose.armor.14.mk2": {
+    "choose.armor.33.mk.18": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
-      "title": "Prev armor",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_33.png",
+      "title": { "translate": "ability.title.satsu.mark.18" },
       "hidden": true,
       "hidden_in_bar": true,
-      "list_index": 2,
+      "list_index": 0,
       "first_tick_commands": [
-        "scoreboard players remove @s satsu.iron.man.choose_armor.test 1"
+        "scoreboard players set @s satsu.iron.man.choose_armor 33"
       ],
       "commands": [""],
       "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "prev.armor.choose.armor"
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "choose.armor.move"
-              }
-            ]
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.33.mk18"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "choose.armor.move"
+          }
+        ]
+      }
+    },
+    "choose.armor.35.mk.22": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_35.png",
+      "title": { "translate": "ability.title.satsu.mark.22" },
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 0,
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.choose_armor 35"
+      ],
+      "commands": [""],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.35.mk22"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "choose.armor.move"
+          }
+        ]
+      }
+    },
+    "choose.armor.41.mk.29": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_41.png",
+      "title": { "translate": "ability.title.satsu.mark.29" },
+      "description": { "translate": "description.iron.man.mark.29" },
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 0,
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.choose_armor 41"
+      ],
+      "commands": [""],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.41.mk29"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "choose.armor.move"
+          }
+        ]
+      }
+    },
+    "choose.armor.44.mk.32": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_44.png",
+      "title": { "translate": "ability.title.satsu.mark.32" },
+      "description": { "translate": "description.iron.man.mark.32" },
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 0,
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.choose_armor 44"
+      ],
+      "commands": [""],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "Satsu.Armor.44.mk32"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "choose.armor.move"
           }
         ]
       }
@@ -626,7 +484,7 @@
         "execute as @s[scores={satsu.iron.man.choose_armor=1}] unless score @s satsu.iron.man.mask matches 0.. run scoreboard players set @s satsu.iron.man.mask 0",
         "scoreboard players set @s satsu.prev.iron.man.armor.anim 1",
         "scoreboard players reset @s satsu.iron.man.armor.set",
-        "superpower remove satsu_iron_man_addon:armor_set/choose_armor/choose_armor_speed",
+        "superpower remove satsu_iron_man_addon:armor_set/choose_armor/choose_armor",
         "tag @s add mecano.comprobacion",
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel"
       ],
@@ -646,7 +504,7 @@
             "ability": "armor_skill_bar"
           },
           {
-            "type": "palladium:ability_enabled",
+            "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "choose.armor.move"
           }
