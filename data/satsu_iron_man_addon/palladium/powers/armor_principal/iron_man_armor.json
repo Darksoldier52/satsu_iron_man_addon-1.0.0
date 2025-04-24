@@ -14263,6 +14263,7 @@
       "hidden_in_bar": true,
       "commands": [
         "execute as @s anchored eyes run particle minecraft:sweep_attack ^ ^ ^1 0.1 0.1 0.1 0 1 normal",
+        "playsound minecraft:entity.player.attack.crit master @p ~ ~ ~ 1 1",
         "function satsu_iron_man_addon:raycast/damage/main"
       ],
       "conditions": {
@@ -17868,6 +17869,7 @@
       "hidden_in_bar": true,
       "commands": [
         "execute as @s anchored eyes run particle minecraft:sweep_attack ^ ^ ^1 0.1 0.1 0.1 0 1 normal",
+        "playsound minecraft:entity.player.attack.crit master @p ~ ~ ~ 1 1",
         "function satsu_iron_man_addon:raycast/nano_katar/main"
       ],
       "conditions": {

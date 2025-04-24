@@ -64,8 +64,8 @@
                 ]
               },
               {
-                "type": "palladium:command_result",
-                "command": "execute if entity @s[scores={satsu.iron.man.addon.altura=300..}]"
+                "type": "satsy_iron_man_addon:height_bool_condition",
+                "max_height": 300
               },
               {
                 "type": "palladium:or",
@@ -168,8 +168,8 @@
                 "mod_id": "ad_astra"
               },
               {
-                "type": "palladium:command_result",
-                "command": "execute if entity @s[scores={satsu.iron.man.addon.altura=1010..}]"
+                "type": "satsy_iron_man_addon:height_bool_condition",
+                "max_height": 1010
               },
               {
                 "type": "palladium:or",
