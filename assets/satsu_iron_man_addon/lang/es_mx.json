@@ -228,6 +228,7 @@
   "ability.title.satsu.mark.48": "Mark 48      ",
   "ability.title.satsu.mark.49": "Mark 48      ",
   "ability.title.satsu.mark.50": "Mark 50      ",
+  "ability.title.satsu.mark.85": "Mark 85      ",
   "ability.title.satsu.mark.50.superior": "Mark modelo 50      ",
   "ability.title.satsu.mark.unknow.blooded": "Mark Borde Sangrante      ",
   "ability.title.satsu.mark.1873": "Mark 1873 (Steampunk)      ",
@@ -316,6 +317,32 @@
   "ability.title.satsu.config_gui": "Configurar HUD de la armadura",
   "ability.title.satsu.ground.attack": "Ataque terrestre",
   "ability.title.satsu.rocket": "Cohete",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  "ability.title.satsu.armor.list.nanoarmor": "Armaduras de nanotecnologia",
+  "ability.title.satsu.armor.list.heartbreaker": "Armaduras clase Rompecorazones",
+  "ability.title.satsu.armor.list.silver.centurion": "Armaduras clase Silver centurion",
+  "ability.title.satsu.armor.list.speed": "Armaduras clase Velocidad",
+  "ability.title.satsu.armor.list.stealth": "Armaduras clase invisivilidad",
+  "ability.title.satsu.armor.list.striker": "Armaduras clase Striker",
+  "ability.title.satsu.armor.list.normal": "Lista normal",
   "satsu.iron.man.addon.personalizate.on": "Personalizar activado",
   "satsu.iron.man.addon.personalizate.off": "Personalizar desactivado",
   "satsu.iron.man.addon.failsafe.on": "Seguro de vida activado",

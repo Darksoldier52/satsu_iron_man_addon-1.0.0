@@ -228,6 +228,7 @@
   "ability.title.satsu.mark.48": "Mark 48      ",
   "ability.title.satsu.mark.49": "Mark 48      ",
   "ability.title.satsu.mark.50": "Mark 50      ",
+  "ability.title.satsu.mark.85": "Mark 85      ",
   "ability.title.satsu.mark.50.superior": "Mark model 50      ",
   "ability.title.satsu.mark.unknow.blooded": "Mark Blood Border      ",
   "ability.title.satsu.mark.1873": "Mark 1873 (Steampunk)      ",
@@ -316,6 +317,31 @@
   "ability.title.satsu.config_gui": "Configure Armor HUD",
   "ability.title.satsu.ground.attack": "Ground attack",
   "ability.title.satsu.rocket": "Rocket",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "ability.title.satsu.armor.list.nanoarmor": "Nanotech Armors",
+  "ability.title.satsu.armor.list.heartbreaker": "Heartbreaker Class Armors",
+  "ability.title.satsu.armor.list.silver.centurion": "Silver Centurion Class Armors", 
+  "ability.title.satsu.armor.list.speed": "Speed Class Armors",
+  "ability.title.satsu.armor.list.stealth": "Stealth Class Armors",
+  "ability.title.satsu.armor.list.striker": "Striker Class Armors",
+  "ability.title.satsu.armor.list.normal": "Normal List",
   "satsu.iron.man.addon.personalizate.on": "Customize activated",
   "satsu.iron.man.addon.personalizate.off": "Customize deactivated",
   "satsu.iron.man.addon.failsafe.on": "Failsafe activated",

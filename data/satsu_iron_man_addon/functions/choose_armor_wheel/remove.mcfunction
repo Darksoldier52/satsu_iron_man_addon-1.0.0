@@ -5,3 +5,4 @@ superpower remove satsu_iron_man_addon:armor_set/choose_armor/choose_armor
 superpower remove satsu_iron_man_addon:armor_set/choose_armor/choose_armor_silver_centurion
 superpower remove satsu_iron_man_addon:armor_set/choose_armor/choose_armor_speed
 superpower remove satsu_iron_man_addon:armor_set/choose_armor/choose_armor_stealth
+superpower remove satsu_iron_man_addon:armor_set/choose_armor/choose_armor_striker
