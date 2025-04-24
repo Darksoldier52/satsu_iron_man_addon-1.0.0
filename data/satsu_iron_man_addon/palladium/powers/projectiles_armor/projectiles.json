@@ -55,6 +55,11 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "nano_fireworks"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "mk.1.rocket"
               },
               {
@@ -112,6 +117,11 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "mini_fireworks"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "nano_fireworks"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -183,6 +193,11 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "mini_fireworks"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "nano_fireworks"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -367,12 +382,25 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "mini_fireworks",
-            "property": "value",
-            "min": 8,
-            "max": 20
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mini_fireworks",
+                "property": "value",
+                "min": 8,
+                "max": 20
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "nano_fireworks",
+                "property": "value",
+                "min": 8,
+                "max": 20
+              }
+            ]
           }
         ]
       }
@@ -411,12 +439,25 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "mini_fireworks",
-            "property": "value",
-            "min": 8,
-            "max": 20
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "mini_fireworks",
+                "property": "value",
+                "min": 8,
+                "max": 20
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "nano_fireworks",
+                "property": "value",
+                "min": 8,
+                "max": 20
+              }
+            ]
           }
         ]
       }
@@ -565,7 +606,7 @@
           {
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "animation.projectile.2"
+            "ability": "nano_fireworks.back"
           }
         ]
       }
@@ -606,7 +647,7 @@
           {
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "animation.projectile.2"
+            "ability": "nano_fireworks.back"
           }
         ]
       }
@@ -2731,9 +2772,7 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        ""
-      ],
+      "first_tick_commands": [""],
       "commands": [
         "playsound satsu_iron_man_addon:new_blast ambient @a ~ ~ ~ 1 1"
       ],
