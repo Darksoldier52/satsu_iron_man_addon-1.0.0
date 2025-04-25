@@ -5772,6 +5772,37 @@
         ]
       }
     },
+    "looping_sound": {
+      "type": "palladium:play_sound",
+      "sound": "satsu_iron_man_addon:new_beam",
+      "looping": true,
+      "volume": 1,
+      "pitch": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "uni.beam.hand.1"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "uni.beam.hand.2"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "energy_beam"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "Armor_edit_dummy": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/personalizate_things.png",
