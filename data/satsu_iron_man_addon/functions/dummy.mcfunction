@@ -5,23 +5,23 @@ scoreboard objectives add satsu.iron.man.addon.gui.overlay.armor dummy
 scoreboard objectives add satsu.iron.man.addon.raycast_distance dummy
 scoreboard objectives add satsu.iron.man.addon.punch minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add satsu.iron.man.addon.Ymotion dummy
-scoreboard objectives add satsu.iron.man.armor.stealh.night dummy
+scoreboard objectives remove satsu.iron.man.armor.stealh.night
 scoreboard objectives remove satsu.iron.man.addon.uuid
 scoreboard objectives add satsu.iron.man.armor.remote dummy
 scoreboard objectives add satsu.iron.man.addon.glasses.equip dummy
 scoreboard objectives add satsu.iron.man.addon.ark.skin.max dummy
-scoreboard objectives add satsu.iron.man.addon.give.ia.tarjet dummy
+scoreboard objectives remove satsu.iron.man.addon.give.ia.tarjet
 scoreboard objectives add satsu.iron.man.addon.ark.skin.choose dummy
 scoreboard objectives add satsu.iron.man.addon.ark.skin dummy
 scoreboard objectives add satsu.iron.man.armor.energy.pulse.or.energy.beam dummy
 scoreboard objectives add satsu.iron.man.armor.energy.pulse.hand dummy
 scoreboard objectives add satsu.iron.man.addon.unlocking.set.block dummy
 scoreboard objectives add satsu.iron.man.addon.ia.name dummy
-scoreboard objectives add satsu.iron.man.addon.ia.name.power dummy
+scoreboard objectives remove satsu.iron.man.addon.ia.name.power
 scoreboard objectives add satsu.iron.man.addon.ia.name.choose dummy
 scoreboard objectives add satsu.iron.man.addon.enable.sentinel dummy
-scoreboard objectives add satsu.iron.man.addon.ia.interaction dummy
-scoreboard objectives add satsu.iron.man.addon.ia.night.vision dummy
+scoreboard objectives remove satsu.iron.man.addon.ia.interaction
+scoreboard objectives remove satsu.iron.man.addon.ia.night.vision
 scoreboard objectives add satsu.iron.man.addon.unlock.lock.scan.abilitie dummy
 scoreboard objectives add satsu.iron.man.addon.unlock.lock.sentinel.armor dummy
 scoreboard objectives add satsu.iron.man.addon.ia.unlock.icon.in.hud dummy
@@ -35,7 +35,7 @@ scoreboard objectives add satsu.iron.man.addon.damage.taken minecraft.custom:min
 scoreboard objectives add satsu.iron.man.superior.color dummy
 scoreboard objectives add satsu.iron.man.armor.ark.beam.color.icon dummy
 scoreboard objectives add satsu.iron.man.armor.energy.pulse.flame.thrower.icon dummy
-scoreboard objectives add satsu.iron.man.addon.altura dummy
+scoreboard objectives remove satsu.iron.man.addon.altura
 scoreboard objectives add satsu.iron.man.mask dummy
 scoreboard objectives add satsu.iron.man.animation.armor dummy
 scoreboard objectives add satsu.iron.man.animation.armor.reset dummy
@@ -72,7 +72,7 @@ scoreboard objectives add satsu.iron.man.dampened dummy
 scoreboard objectives add satsu.iron.man.closed.armors dummy
 scoreboard objectives add satsu.iron.man.superpower dummy
 scoreboard objectives add satsu.iron.man.break dummy
-scoreboard objectives add satsu.iron.man.armor.sword dummy
+scoreboard objectives remove satsu.iron.man.armor.sword
 scoreboard objectives add satsu.iron.man.armor.ark.energy.anim dummy
 scoreboard objectives add satsu.iron.man.armor.ark.energy dummy
 scoreboard objectives add satsu.iron.man.armor.ark.energy.max dummy
@@ -131,11 +131,11 @@ scoreboard objectives remove satsu.iron.man.armor.mk.1873.unlock
 scoreboard objectives remove satsu.iron.man.armor.15.mk30.unlock
 scoreboard objectives remove satsu.iron.man.armor.mark.45.unlock
 scoreboard objectives add satsu.iron.man.symbiote.metalized dummy
-scoreboard objectives add satsu.iron.man.armor.16.unknow.blooded.armor.unlock dummy
+scoreboard objectives remove satsu.iron.man.armor.16.unknow.blooded.armor.unlock
 scoreboard objectives add satsu.iron.man.rbg.on.off dummy
 scoreboard objectives add satsu.iron.man.speed dummy
-scoreboard objectives add satsu.iron.man.ark.upgraded dummy
-scoreboard objectives add satsu.iron.man.ark.upgraded.max.energy dummy
+scoreboard objectives remove satsu.iron.man.ark.upgraded
+scoreboard objectives remove satsu.iron.man.ark.upgraded.max.energy
 scoreboard objectives add satsu.iron.man.addon.xp dummy
-scoreboard objectives add satsu.iron.man.skil.point.kill.mob minecraft.custom:minecraft.mob_kills
+scoreboard objectives remove satsu.iron.man.skil.point.kill.mob
 scoreboard objectives add Health health
