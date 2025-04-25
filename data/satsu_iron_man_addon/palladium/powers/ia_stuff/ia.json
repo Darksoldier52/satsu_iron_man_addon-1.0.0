@@ -649,11 +649,6 @@
                         "type": "palladium:ability_unlocked",
                         "power": "satsu_iron_man_addon:ia_stuff/ia",
                         "ability": "armor_skill_bar"
-                      },
-                      {
-                        "type": "palladium:ability_unlocked",
-                        "power": "satsu_iron_man_addon:ia_stuff/ia",
-                        "ability": "scan.abiltie.unlock.lock"
                       }
                     ]
                   },
@@ -3060,89 +3055,6 @@
         ]
       }
     },
-    "scan.abiltie.unlock.lock": {
-      "type": "palladium:dummy",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "conditions": {
-        "unlocking": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.unlock.lock.scan.abilitie",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.actived",
-                        "min_score": 1,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.actived.perm",
-                        "min_score": 1,
-                        "max_score": 1
-                      }
-                    ]
-                  },
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "unlock.lock.scan.abiltie": {
-      "type": "palladium:command",
-      "icon": "#satsu_iron_man_addon:ark_energy",
-      "title": {
-        "translate": "ability.title.satsu.unlock.lock.ia.scan.abilitie"
-      },
-      "description": {
-        "translate": "description.satsu.unlock.lock.ia.scan.abilitie"
-      },
-      "hidden": false,
-      "hidden_in_bar": true,
-      "gui_position": [0, -2],
-      "first_tick_commands": [
-        "execute as @s run scoreboard players add @s satsu.iron.man.addon.unlock.lock.scan.abilitie 1",
-        "execute as @s[scores={satsu.iron.man.addon.unlock.lock.scan.abilitie=3..}] run scoreboard players set @s satsu.iron.man.addon.unlock.lock.scan.abilitie 1",
-        "ability lock @s satsu_iron_man_addon:ia_stuff/ia unlock.lock.scan.abiltie"
-      ],
-      "commands": [""],
-      "conditions": {
-        "unlocking": [
-          {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 0,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_skill_bar"
-          }
-        ]
-      }
-    },
     "scan_enemies_enable.in.skill.tree": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/scan.png",
@@ -3296,11 +3208,6 @@
                     "type": "palladium:ability_unlocked",
                     "power": "satsu_iron_man_addon:ia_stuff/ia",
                     "ability": "armor_skill_bar"
-                  },
-                  {
-                    "type": "palladium:ability_unlocked",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan.abiltie.unlock.lock"
                   }
                 ]
               },

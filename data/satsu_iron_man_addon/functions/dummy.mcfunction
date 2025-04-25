@@ -18,11 +18,11 @@ scoreboard objectives add satsu.iron.man.armor.energy.pulse.hand dummy
 scoreboard objectives add satsu.iron.man.addon.unlocking.set.block dummy
 scoreboard objectives add satsu.iron.man.addon.ia.name dummy
 scoreboard objectives remove satsu.iron.man.addon.ia.name.power
-scoreboard objectives add satsu.iron.man.addon.ia.name.choose dummy
+scoreboard objectives remove satsu.iron.man.addon.ia.name.choose
 scoreboard objectives add satsu.iron.man.addon.enable.sentinel dummy
 scoreboard objectives remove satsu.iron.man.addon.ia.interaction
 scoreboard objectives remove satsu.iron.man.addon.ia.night.vision
-scoreboard objectives add satsu.iron.man.addon.unlock.lock.scan.abilitie dummy
+scoreboard objectives remove satsu.iron.man.addon.unlock.lock.scan.abilitie
 scoreboard objectives add satsu.iron.man.addon.unlock.lock.sentinel.armor dummy
 scoreboard objectives add satsu.iron.man.addon.ia.unlock.icon.in.hud dummy
 scoreboard objectives add satsu.iron.man.addon.energy.ia.unlock.icon.in.hud dummy
