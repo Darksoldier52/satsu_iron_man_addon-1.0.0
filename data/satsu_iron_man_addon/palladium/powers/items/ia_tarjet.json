@@ -65,7 +65,11 @@
     "ia.1": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_1.png",
-      "title": { "translate": "ability.title.satsu.ia.name.1" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.1",
+        "bold": true,
+        "color": "#ffa500"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -95,7 +99,11 @@
     "ia.2": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_2.png",
-      "title": { "translate": "ability.title.satsu.ia.name.2" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.2",
+        "bold": true,
+        "color": "#ffb6c1"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -125,7 +133,11 @@
     "ia.3": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_3.png",
-      "title": { "translate": "ability.title.satsu.ia.name.3" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.3",
+        "bold": true,
+        "color": "#9370db"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -155,7 +167,11 @@
     "ia.4": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_4.png",
-      "title": { "translate": "ability.title.satsu.ia.name.4" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.4",
+        "bold": true,
+        "color": "#708090"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -185,7 +201,11 @@
     "ia.5": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_5.png",
-      "title": { "translate": "ability.title.satsu.ia.name.5" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.5",
+        "bold": true,
+        "color": "#00bfff"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -215,7 +235,11 @@
     "ia.6": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_6.png",
-      "title": { "translate": "ability.title.satsu.ia.name.6" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.6",
+        "bold": true,
+        "color": "#ffe800"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -245,7 +269,11 @@
     "ia.7": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_7.png",
-      "title": { "translate": "ability.title.satsu.ia.name.7" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.7",
+        "bold": true,
+        "color": "#09f42c"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -275,7 +303,11 @@
     "ia.8": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_8.png",
-      "title": { "translate": "ability.title.satsu.ia.name.8" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.8",
+        "bold": true,
+        "color": "#98fb98"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -305,7 +337,11 @@
     "ia.9": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_9.png",
-      "title": { "translate": "ability.title.satsu.ia.name.9" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.9",
+        "bold": true,
+        "color": "#55fb9e"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -335,7 +371,11 @@
     "ia.10": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_10.png",
-      "title": { "translate": "ability.title.satsu.ia.name.10" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.10",
+        "bold": true,
+        "color": "#fe0f0f"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -365,7 +405,11 @@
     "ia.11": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_11.png",
-      "title": { "translate": "ability.title.satsu.ia.name.11" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.11",
+        "bold": true,
+        "color": "#4682b4"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,
@@ -395,7 +439,11 @@
     "ia.12": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_12.png",
-      "title": { "translate": "ability.title.satsu.ia.name.12" },
+      "title": {
+        "translate": "ability.title.satsu.ia.name.12",
+        "bold": true,
+        "color": "#0067fe"
+      },
       "description": { "translate": "description.satsu.ia.choose" },
       "hidden": false,
       "hidden_in_bar": false,

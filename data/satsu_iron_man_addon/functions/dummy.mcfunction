@@ -49,13 +49,12 @@ scoreboard objectives add satsu.iron.man.choose_armor dummy
 scoreboard objectives add satsu.iron.man.choose_armor.test dummy
 scoreboard objectives add satsu.iron.man.flight_speed_max dummy
 scoreboard objectives add satsu.iron.man.unlock_sword dummy
-scoreboard objectives add satsu.iron.man.armor dummy
 scoreboard objectives add satsu.iron.man.armor.actived dummy
 scoreboard objectives add satsu.iron.man.armor.anim dummy
 scoreboard objectives add satsu.iron.man.mask dummy
 scoreboard objectives add satsu.iron.man.armor.actived.perm dummy
 scoreboard objectives add satsu.iron.man.flight.set dummy
-scoreboard objectives add satsu.iron.man.failsafe.set dummy
+scoreboard objectives remove satsu.iron.man.failsafe.set
 scoreboard objectives add satsu.iron.man.armor.set dummy
 scoreboard objectives add satsu.iron.man.personalize.things dummy
 scoreboard objectives add satsu.iron.man.flame dummy
@@ -77,7 +76,7 @@ scoreboard objectives add satsu.iron.man.armor.ark.energy.anim dummy
 scoreboard objectives add satsu.iron.man.armor.ark.energy dummy
 scoreboard objectives add satsu.iron.man.armor.ark.energy.max dummy
 scoreboard objectives add satsu.iron.man.armor.ark_energy_full_or_off dummy
-scoreboard objectives add satsu.iron.man.scan.enemies dummy
+scoreboard objectives remove satsu.iron.man.scan.enemies
 scoreboard objectives remove satsu.iron.man.armor.47.unlock
 scoreboard objectives remove satsu.iron.man.armor.superior.unlock
 scoreboard objectives remove satsu.iron.man.armor.39.unlock

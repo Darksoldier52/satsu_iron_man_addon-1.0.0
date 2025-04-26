@@ -637,7 +637,7 @@
       "title": { "translate": "ability.title.satsu.Flight" },
       "description": { "translate": "description.flight" },
       "score_value": "satsu.iron.man.flight_speed",
-      "Division_Amount": "90",
+      "Division_Amount": "100",
       "Attribute_Type": "palladium:flight_speed",
       "UUID": "e40d2ec9-1558-43b9-a8ff-60b7045ddc92",
       "Attribute_Mod": "addition",
@@ -17362,6 +17362,25 @@
         "unlocking": []
       }
     },
+    "nano_hand_blade.destroy_speed": {
+      "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "gui_position": [-1, -2],
+      "attribute": "palladium:destroy_speed",
+      "amount": 13,
+      "operation": 0,
+      "uuid": "561be4fb-af04-42f2-3498-e6ccdc0d99e1",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "nano_hand_blade"
+          }
+        ]
+      }
+    },
     "nano_hand_blade.FlashParticle": {
       "type": "palladium:command",
       "first_tick_commands": [
@@ -17576,7 +17595,7 @@
       "attribute": "palladium:destroy_speed",
       "amount": 20,
       "operation": 0,
-      "uuid": "312be4fb-af04-42f2-8948-e6ccdc0d99e1",
+      "uuid": "348be4fb-af04-42f2-3788-e6ccdc0d99e1",
       "conditions": {
         "enabling": [
           {
