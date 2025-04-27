@@ -23,7 +23,7 @@ scoreboard objectives add satsu.iron.man.addon.enable.sentinel dummy
 scoreboard objectives remove satsu.iron.man.addon.ia.interaction
 scoreboard objectives remove satsu.iron.man.addon.ia.night.vision
 scoreboard objectives remove satsu.iron.man.addon.unlock.lock.scan.abilitie
-scoreboard objectives add satsu.iron.man.addon.unlock.lock.sentinel.armor dummy
+scoreboard objectives remove satsu.iron.man.addon.unlock.lock.sentinel.armor
 scoreboard objectives add satsu.iron.man.addon.ia.unlock.icon.in.hud dummy
 scoreboard objectives add satsu.iron.man.addon.energy.ia.unlock.icon.in.hud dummy
 scoreboard objectives add satsu.iron.man.addon.ia.choose dummy
@@ -42,14 +42,13 @@ scoreboard objectives add satsu.iron.man.animation.armor.reset dummy
 scoreboard objectives remove satsu.iron.man.armor.actived.perm
 scoreboard objectives add satsu.iron.man.armor dummy
 scoreboard objectives add satsu.iron.man.armor.actived dummy
-scoreboard objectives add satsu.iron.man.armor.anim dummy
+scoreboard objectives remove satsu.iron.man.armor.anim
 scoreboard objectives add satsu.iron.man.flight_speed dummy
 scoreboard objectives add satsu.iron.man.flight_speed.choose dummy
 scoreboard objectives add satsu.iron.man.choose_armor dummy
 scoreboard objectives add satsu.iron.man.choose_armor.test dummy
 scoreboard objectives add satsu.iron.man.flight_speed_max dummy
 scoreboard objectives add satsu.iron.man.unlock_sword dummy
-scoreboard objectives add satsu.iron.man.armor.anim dummy
 scoreboard objectives add satsu.iron.man.mask dummy
 scoreboard objectives add satsu.iron.man.flight.set dummy
 scoreboard objectives remove satsu.iron.man.failsafe.set
@@ -73,7 +72,7 @@ scoreboard objectives remove satsu.iron.man.armor.sword
 scoreboard objectives add satsu.iron.man.armor.ark.energy.anim dummy
 scoreboard objectives add satsu.iron.man.armor.ark.energy dummy
 scoreboard objectives add satsu.iron.man.armor.ark.energy.max dummy
-scoreboard objectives add satsu.iron.man.armor.ark_energy_full_or_off dummy
+scoreboard objectives remove satsu.iron.man.armor.ark_energy_full_or_off
 scoreboard objectives remove satsu.iron.man.scan.enemies
 scoreboard objectives remove satsu.iron.man.armor.47.unlock
 scoreboard objectives remove satsu.iron.man.armor.superior.unlock
