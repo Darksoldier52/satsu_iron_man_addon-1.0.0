@@ -1055,10 +1055,12 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.remove.ark",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:items/handle",
+            "ability": "animation.finished.animation_timer",
+            "property": "value",
+            "min": 2,
+            "max": 2
           },
           {
             "type": "palladium:not",

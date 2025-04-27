@@ -71,14 +71,13 @@
       "first_tick_commands": [],
       "commands": [""],
       "last_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.remove.ark 1",
         "tag @s add animation.finished"
       ],
       "conditions": {
         "enabling": [
           {
             "type": "palladium:ability_integer_property",
-            "power": "null",
+            "power": "satsu_iron_man_addon:items/handle",
             "ability": "remove_ark_animation_timer",
             "property": "value",
             "min": 30,
@@ -107,7 +106,7 @@
         "enabling": [
           {
             "type": "palladium:ability_integer_property",
-            "power": "null",
+            "power": "satsu_iron_man_addon:items/handle",
             "ability": "remove_ark_animation_timer",
             "property": "value",
             "min": 1,
@@ -159,7 +158,6 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "execute as @s[tag=animation.finished,scores={satsu.iron.man.remove.ark=1..}] run scoreboard players reset @s satsu.iron.man.remove.ark",
         "tag @s remove animation.finished"
       ],
       "commands": [""],
@@ -169,7 +167,7 @@
         "unlocking": [
           {
             "type": "palladium:ability_integer_property",
-            "power": "null",
+            "power": "satsu_iron_man_addon:items/handle",
             "ability": "animation.finished.animation_timer",
             "property": "value",
             "min": 2,
