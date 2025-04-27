@@ -9,7 +9,7 @@ scoreboard objectives remove satsu.iron.man.armor.stealh.night
 scoreboard objectives remove satsu.iron.man.addon.uuid
 scoreboard objectives add satsu.iron.man.armor.remote dummy
 scoreboard objectives add satsu.iron.man.addon.glasses.equip dummy
-scoreboard objectives add satsu.iron.man.addon.ark.skin.max dummy
+scoreboard objectives remove satsu.iron.man.addon.ark.skin.max
 scoreboard objectives remove satsu.iron.man.addon.give.ia.tarjet
 scoreboard objectives add satsu.iron.man.addon.ark.skin.choose dummy
 scoreboard objectives add satsu.iron.man.addon.ark.skin dummy
@@ -57,17 +57,17 @@ scoreboard objectives add satsu.iron.man.armor.set dummy
 scoreboard objectives add satsu.iron.man.personalize.things dummy
 scoreboard objectives add satsu.iron.man.flame dummy
 scoreboard objectives add satsu.iron.man.strength dummy
-scoreboard objectives add satsu.iron.man.strength.health health
+scoreboard objectives remove satsu.iron.man.strength.health
 scoreboard objectives add satsu.iron.man.durability dummy
 scoreboard objectives add satsu.iron.man.pickaxe.velocity dummy
 scoreboard objectives add satsu.prev.iron.man.armor dummy
 scoreboard objectives add satsu.prev.iron.man.armor.anim dummy
 scoreboard objectives add satsu.iron.man.arms.set dummy
 scoreboard objectives add satsu.iron.man.armor.energy.beams dummy
-scoreboard objectives remove satsu.iron.man.remove.ark dummy
+scoreboard objectives remove satsu.iron.man.remove.ark
 scoreboard objectives add satsu.iron.man.dampened dummy
 scoreboard objectives add satsu.iron.man.closed.armors dummy
-scoreboard objectives add satsu.iron.man.superpower dummy
+scoreboard objectives remove satsu.iron.man.superpower
 scoreboard objectives add satsu.iron.man.break dummy
 scoreboard objectives remove satsu.iron.man.armor.sword
 scoreboard objectives add satsu.iron.man.armor.ark.energy.anim dummy
