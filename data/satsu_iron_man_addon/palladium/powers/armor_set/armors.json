@@ -2650,15 +2650,13 @@
       "list_index": -1,
       "gui_position": [-2, -1],
       "first_tick_commands": [
-        "tag @s add suit.expulsion",
         "scoreboard players set @s satsu.iron.man.superior.color 1",
         "scoreboard players set @s satsu.iron.man.flame 10"
       ],
       "commands": [""],
       "last_tick_commands": [
         "scoreboard players set @s satsu.iron.man.superior.color 0",
-        "scoreboard players set @s satsu.iron.man.flame 8",
-        "tag @s remove suit.expulsion"
+        "scoreboard players set @s satsu.iron.man.flame 8"
       ],
       "conditions": {
         "enabling": [

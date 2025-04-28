@@ -8,39 +8,6 @@
   "primary_color": "#2af4f5",
   "secondary_color": "#0aacac",
   "abilities": {
-    "ia_skill_bar": {
-      "type": "palladium:command",
-      "icon": "#satsu_iron_man_addon:ia_icon",
-      "title": {
-        "translate": "ability.title.satsu.ia_skill_bar"
-      },
-      "hidden": true,
-      "hidden_in_bar": true,
-      "gui_position": [0, -3.3],
-      "description": { "translate": "description.ia_skill_stat" },
-      "first_tick_commands": [
-        "execute as @s unless score @s satsu.iron.man.addon.ia.unlock.skill.tree matches 0.. run scoreboard players set @s satsu.iron.man.addon.ia.unlock.skill.tree 1"
-      ],
-      "commands": [""],
-      "conditions": {
-        "unlocking": [
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "alien"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
     "armor_skill_bar": {
       "type": "palladium:dummy",
       "icon": "#satsu_iron_man_addon:ia_icon",
@@ -899,25 +866,6 @@
         ]
       }
     },
-    "enabled_remote_slowness.command": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "commands": ["effect give @s minecraft:slowness 1 255 true"],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-            "ability": "enabled_remote_slowness.timer",
-            "property": "value",
-            "min": 1,
-            "max": 15
-          }
-        ],
-        "unlocking": []
-      }
-    },
     "enabled_remote.tag.sentinel": {
       "type": "palladium:command",
       "hidden": true,
@@ -1259,9 +1207,9 @@
         "execute as @s[scores={satsu.iron.man.addon.ia.name=12}] run tellraw @s {\"translate\":\"satsu.iron.man.addon.text.ia.interaction.night.vision.12\",\"color\":\"#0067fe\"}",
         "execute as @s[scores={satsu.iron.man.addon.ia.name=13}] run tellraw @s {\"translate\":\"satsu.iron.man.addon.text.ia.interaction.night.vision.13\",\"color\":\"#c0c0c0\"}"
       ],
-      "commands": [""],
+      "commands": ["effect give @s minecraft:night_vision infinite 2 true"],
       "last_tick_commands": [
-        "tag @s remove night_vision",
+        "effect clear @s minecraft:night_vision",
         "execute as @s[scores={satsu.iron.man.addon.ia.name=1}] run tellraw @s {\"translate\":\"satsu.iron.man.addon.text.ia.interaction.disable.night.vision.1\",\"color\":\"#ffa500\"}",
         "execute as @s[scores={satsu.iron.man.addon.ia.name=2}] run tellraw @s {\"translate\":\"satsu.iron.man.addon.text.ia.interaction.disable.night.vision.2\",\"color\":\"#ffb6c1\"}",
         "execute as @s[scores={satsu.iron.man.addon.ia.name=3}] run tellraw @s {\"translate\":\"satsu.iron.man.addon.text.ia.interaction.disable.night.vision.3\",\"color\":\"#9370db\"}",
@@ -1382,95 +1330,6 @@
                     "type": "palladium:ability_enabled",
                     "power": "null",
                     "ability": "ia.13"
-                  }
-                ]
-              },
-              {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.actived",
-                        "min_score": 1,
-                        "max_score": 1
-                      }
-                    ]
-                  },
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "night_vision": {
-      "type": "palladium:command",
-      "icon": "#satsu_iron_man_addon:ia_icon",
-      "title": {
-        "translate": "ability.title.satsu.ia_skill_bar"
-      },
-      "hidden": true,
-      "hidden_in_bar": true,
-      "gui_position": [0, -2.8],
-      "description": { "translate": "description.ia_skill_stat" },
-      "first_tick_commands": [
-        "effect give @s minecraft:night_vision infinite 2 true"
-      ],
-      "commands": [""],
-      "last_tick_commands": ["effect clear @s minecraft:night_vision"],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:has_tag",
-            "tag": "night_vision"
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:not",
-                "conditions": [
-                  {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:or",
-                        "conditions": [
-                          {
-                            "type": "palladium:objective_score",
-                            "objective": "satsu.iron.man.armor.actived",
-                            "min_score": 1,
-                            "max_score": 1
-                          }
-                        ]
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "sentinel_one"
-                      },
-                      {
-                        "type": "palladium:not",
-                        "conditions": [
-                          {
-                            "type": "palladium:objective_score",
-                            "objective": "satsu.iron.man.addon.glasses.equip",
-                            "min_score": 1,
-                            "max_score": 1
-                          }
-                        ]
-                      }
-                    ]
                   }
                 ]
               },

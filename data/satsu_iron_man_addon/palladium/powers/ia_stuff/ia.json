@@ -9,39 +9,6 @@
   "secondary_color": "#0aacac",
   "allow_bar_shrinking": true,
   "abilities": {
-    "ia_skill_bar": {
-      "type": "palladium:command",
-      "icon": "#satsu_iron_man_addon:ia_icon",
-      "title": {
-        "translate": "ability.title.satsu.ia_skill_bar"
-      },
-      "hidden": false,
-      "hidden_in_bar": true,
-      "gui_position": [0, 0],
-      "description": { "translate": "description.ia_skill_stat" },
-      "first_tick_commands": [
-        "execute as @s unless score @s satsu.iron.man.addon.ia.unlock.skill.tree matches 0.. run scoreboard players set @s satsu.iron.man.addon.ia.unlock.skill.tree 1"
-      ],
-      "commands": [""],
-      "conditions": {
-        "unlocking": [
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "alien"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
     "ability_wheel": {
       "type": "palladium:ability_wheel",
       "icon": "#satsu_iron_man_addon:ia_icon",
@@ -716,7 +683,7 @@
       }
     },
     "unlock.lock.ia.icon": {
-      "type": "palladium:command",
+      "type": "palladium:dummy",
       "icon": "#satsu_iron_man_addon:ia_icon",
       "title": { "translate": "ability.title.satsu.unlock.lock.ia.gui" },
       "description": {

@@ -13202,69 +13202,6 @@
         ]
       }
     },
-    "Mark.25.drill.ground.command": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "first_tick_commands": ["tag @s add striker.ground.drill"],
-      "commands": [
-        "execute at @a run particle block minecraft:dirt ~ ~ ~ 5 2 5 0.1 100 force",
-        "execute as @e[tag=!striker.ground.drill,distance=..8] run effect give @s slowness 1 2 true"
-      ],
-      "last_tick_commands": [
-        "execute as @s[scores={satsu.iron.man.break=1}] run fill ~-2 ~-1 ~-2 ~2 ~-5 ~2 minecraft:air destroy",
-        "tag @s remove striker.ground.drill"
-      ],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Mark.25.drill.ground"
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "Mark.25.drill.ground.aoe_damage": {
-      "type": "gravestone:aoe_damage",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "radius": 8,
-      "damage": 4,
-      "fire_seconds": 0,
-      "tag_ex": "exclusion_tag",
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Mark.25.drill.ground"
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "Mark.25.drill.ground.play_sound": {
-      "type": "palladium:play_sound",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "sound": "satsu_iron_man_addon:striker.dig",
-      "volume": 1,
-      "pitch": 1,
-      "looping": true,
-      "play_self": false,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Mark.25.drill.ground"
-          }
-        ],
-        "unlocking": []
-      }
-    },
     "Mark.25.ground.attack": {
       "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/gui/armors/striker_hammer_attack.png",
@@ -13368,109 +13305,6 @@
             ]
           }
         ]
-      }
-    },
-    "Mark.25.ground.attack.command": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "first_tick_commands": [
-        "playsound minecraft:entity.generic.explode ambient @a ~ ~ ~ 1 1.5",
-        "tag @s add striker.ground.attack"
-      ],
-      "commands": [
-        "particle explosion ~ ~ ~ 0 0 0 1 0 normal",
-        "execute at @a run particle block minecraft:dirt ~ ~ ~ 5 2 5 0.1 100 force",
-        "execute as @e[tag=!striker.ground.attack,distance=..6] run effect give @s slowness 6 2 true"
-      ],
-      "last_tick_commands": [
-        "execute as @s[scores={satsu.iron.man.break=1}] run fill ~-1 ~-1 ~-2 ~1 ~-2 ~2 minecraft:air destroy",
-        "tag @s remove striker.ground.attack"
-      ],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.25.ground.attack",
-                "property": "value",
-                "min": 12,
-                "max": 12
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.25.ground.attack"
-              }
-            ]
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "Mark.25.ground.attack.aoe_knockback": {
-      "type": "gravestone:aoe_knockback",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "radius": 5,
-      "knockback": 1,
-      "tag_ex": "exclusion_tag",
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.25.ground.attack",
-                "property": "value",
-                "min": 12,
-                "max": 12
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.25.ground.attack"
-              }
-            ]
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "Mark.25.ground.attack.aoe_damage": {
-      "type": "gravestone:aoe_damage",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "radius": 5,
-      "damage": 6,
-      "tag_ex": "exclusion_tag",
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.25.ground.attack",
-                "property": "value",
-                "min": 12,
-                "max": 12
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.25.ground.attack"
-              }
-            ]
-          }
-        ],
-        "unlocking": []
       }
     },
     "Mark.26.drill.ground": {
@@ -13578,69 +13412,6 @@
         ]
       }
     },
-    "Mark.26.drill.ground.command": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "first_tick_commands": ["tag @s add striker.ground.drill"],
-      "commands": [
-        "execute at @a run particle block minecraft:dirt ~ ~ ~ 5 2 5 0.1 100 force",
-        "execute as @e[tag=!striker.ground.drill,distance=..8] run effect give @s slowness 1 2 true"
-      ],
-      "last_tick_commands": [
-        "execute as @s[scores={satsu.iron.man.break=1}] run fill ~-2 ~-1 ~-2 ~2 ~-5 ~2 minecraft:air destroy",
-        "tag @s remove striker.ground.drill"
-      ],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Mark.26.drill.ground"
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "Mark.26.drill.ground.aoe_damage": {
-      "type": "gravestone:aoe_damage",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "radius": 8,
-      "damage": 4,
-      "fire_seconds": 0,
-      "tag_ex": "exclusion_tag",
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Mark.26.drill.ground"
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "Mark.26.drill.ground.play_sound": {
-      "type": "palladium:play_sound",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "sound": "satsu_iron_man_addon:striker.dig",
-      "volume": 1,
-      "pitch": 1,
-      "looping": true,
-      "play_self": false,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Mark.26.drill.ground"
-          }
-        ],
-        "unlocking": []
-      }
-    },
     "Mark.26.ground.attack": {
       "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/gui/armors/striker_hammer_green_attack.png",
@@ -13746,7 +13517,115 @@
         ]
       }
     },
-    "Mark.26.ground.attack.command": {
+    "Mark.25-26-29.drill.ground.command": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": ["tag @s add striker.ground.drill"],
+      "commands": [
+        "execute at @a run particle block minecraft:dirt ~ ~ ~ 5 2 5 0.1 100 force",
+        "execute as @e[tag=!striker.ground.drill,distance=..8] run effect give @s slowness 1 2 true"
+      ],
+      "last_tick_commands": [
+        "execute as @s[scores={satsu.iron.man.break=1}] run fill ~-2 ~-1 ~-2 ~2 ~-5 ~2 minecraft:air destroy",
+        "tag @s remove striker.ground.drill"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.25.drill.ground"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.26.drill.ground"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.29.drill.ground"
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "Mark.25-26-29.drill.ground.aoe_damage": {
+      "type": "gravestone:aoe_damage",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "radius": 8,
+      "damage": 4,
+      "fire_seconds": 0,
+      "tag_ex": "exclusion_tag",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.25.drill.ground"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.26.drill.ground"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.29.drill.ground"
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "Mark.25-26-29.drill.ground.play_sound": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "sound": "satsu_iron_man_addon:striker.dig",
+      "volume": 1,
+      "pitch": 1,
+      "looping": true,
+      "play_self": false,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.25.drill.ground"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.26.drill.ground"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "Mark.29.drill.ground"
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "Mark.25-26-29.ground.attack.command": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -13766,20 +13645,61 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.26.ground.attack",
-                "property": "value",
-                "min": 12,
-                "max": 12
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.ground.attack",
+                    "property": "value",
+                    "min": 12,
+                    "max": 12
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.ground.attack"
+                  }
+                ]
               },
               {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.26.ground.attack"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.26.ground.attack",
+                    "property": "value",
+                    "min": 12,
+                    "max": 12
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.26.ground.attack"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.29.ground.attack",
+                    "property": "value",
+                    "min": 12,
+                    "max": 12
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.29.ground.attack"
+                  }
+                ]
               }
             ]
           }
@@ -13787,7 +13707,7 @@
         "unlocking": []
       }
     },
-    "Mark.26.ground.attack.aoe_knockback": {
+    "Mark.25-26-29.ground.attack.aoe_knockback": {
       "type": "gravestone:aoe_knockback",
       "hidden": true,
       "hidden_in_bar": true,
@@ -13797,20 +13717,61 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.26.ground.attack",
-                "property": "value",
-                "min": 12,
-                "max": 12
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.ground.attack",
+                    "property": "value",
+                    "min": 12,
+                    "max": 12
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.ground.attack"
+                  }
+                ]
               },
               {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.26.ground.attack"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.26.ground.attack",
+                    "property": "value",
+                    "min": 12,
+                    "max": 12
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.26.ground.attack"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.29.ground.attack",
+                    "property": "value",
+                    "min": 12,
+                    "max": 12
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.29.ground.attack"
+                  }
+                ]
               }
             ]
           }
@@ -13818,7 +13779,7 @@
         "unlocking": []
       }
     },
-    "Mark.26.ground.attack.aoe_damage": {
+    "Mark.25-26-29.ground.attack.aoe_damage": {
       "type": "gravestone:aoe_damage",
       "hidden": true,
       "hidden_in_bar": true,
@@ -13828,20 +13789,61 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.26.ground.attack",
-                "property": "value",
-                "min": 12,
-                "max": 12
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.ground.attack",
+                    "property": "value",
+                    "min": 12,
+                    "max": 12
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.25.ground.attack"
+                  }
+                ]
               },
               {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.26.ground.attack"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.26.ground.attack",
+                    "property": "value",
+                    "min": 12,
+                    "max": 12
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.26.ground.attack"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.29.ground.attack",
+                    "property": "value",
+                    "min": 12,
+                    "max": 12
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "ability": "Mark.29.ground.attack"
+                  }
+                ]
               }
             ]
           }
@@ -14166,69 +14168,6 @@
         ]
       }
     },
-    "Mark.29.drill.ground.command": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "first_tick_commands": ["tag @s add striker.ground.drill"],
-      "commands": [
-        "execute at @a run particle block minecraft:dirt ~ ~ ~ 5 2 5 0.1 100 force",
-        "execute as @e[tag=!striker.ground.drill,distance=..8] run effect give @s slowness 1 2 true"
-      ],
-      "last_tick_commands": [
-        "execute as @s[scores={satsu.iron.man.break=1}] run fill ~-2 ~-1 ~-2 ~2 ~-5 ~2 minecraft:air destroy",
-        "tag @s remove striker.ground.drill"
-      ],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Mark.29.drill.ground"
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "Mark.29.drill.ground.aoe_damage": {
-      "type": "gravestone:aoe_damage",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "radius": 8,
-      "damage": 4,
-      "fire_seconds": 0,
-      "tag_ex": "exclusion_tag",
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Mark.29.drill.ground"
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "Mark.29.drill.ground.play_sound": {
-      "type": "palladium:play_sound",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "sound": "satsu_iron_man_addon:striker.dig",
-      "volume": 1,
-      "pitch": 1,
-      "looping": true,
-      "play_self": false,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "Mark.29.drill.ground"
-          }
-        ],
-        "unlocking": []
-      }
-    },
     "Mark.29.ground.attack": {
       "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/gui/armors/striker_hammer_red_attack.png",
@@ -14337,109 +14276,6 @@
             ]
           }
         ]
-      }
-    },
-    "Mark.29.ground.attack.command": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "first_tick_commands": [
-        "playsound minecraft:entity.generic.explode ambient @a ~ ~ ~ 1 1.5",
-        "tag @s add striker.ground.attack"
-      ],
-      "commands": [
-        "particle explosion ~ ~ ~ 0 0 0 1 0 normal",
-        "execute at @a run particle block minecraft:dirt ~ ~ ~ 5 2 5 0.1 100 force",
-        "execute as @e[tag=!striker.ground.attack,distance=..6] run effect give @s slowness 6 2 true"
-      ],
-      "last_tick_commands": [
-        "execute as @s[scores={satsu.iron.man.break=1}] run fill ~-1 ~-1 ~-2 ~1 ~-2 ~2 minecraft:air destroy",
-        "tag @s remove striker.ground.attack"
-      ],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.29.ground.attack",
-                "property": "value",
-                "min": 12,
-                "max": 12
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.29.ground.attack"
-              }
-            ]
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "Mark.29.ground.attack.aoe_knockback": {
-      "type": "gravestone:aoe_knockback",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "radius": 5,
-      "knockback": 1,
-      "tag_ex": "exclusion_tag",
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.29.ground.attack",
-                "property": "value",
-                "min": 12,
-                "max": 12
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.29.ground.attack"
-              }
-            ]
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "Mark.29.ground.attack.aoe_damage": {
-      "type": "gravestone:aoe_damage",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "radius": 5,
-      "damage": 6,
-      "tag_ex": "exclusion_tag",
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.29.ground.attack",
-                "property": "value",
-                "min": 12,
-                "max": 12
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "Mark.29.ground.attack"
-              }
-            ]
-          }
-        ],
-        "unlocking": []
       }
     },
     "Mark.30.vibranuim.blades": {
@@ -15251,6 +15087,11 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "Mark.33.vibranuim.blades"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "nano_katar"
               }
             ]
           }
@@ -18632,33 +18473,6 @@
           }
         ],
         "unlocking": []
-      }
-    },
-    "nano_katar.FlashParticle": {
-      "type": "palladium:command",
-      "first_tick_commands": [
-        "execute as @s anchored eyes run particle minecraft:sweep_attack ^ ^ ^1 0.1 0.1 0.1 0 1 normal",
-        "scoreboard players reset @s satsu.iron.man.addon.damage.stealh"
-      ],
-      "commands": [""],
-      "hidden": true,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:command_result",
-            "command": "execute if score @s satsu.iron.man.addon.damage.stealh matches 1.."
-          },
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "nano_katar"
-              }
-            ]
-          }
-        ]
       }
     },
     "nano_hand_blade": {
