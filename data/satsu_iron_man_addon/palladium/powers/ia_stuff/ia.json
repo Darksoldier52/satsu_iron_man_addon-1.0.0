@@ -764,7 +764,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_skill_bar"
+            "ability": "armor_skill_bar"
           },
           {
             "type": "palladium:and",
@@ -816,7 +816,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_skill_bar"
+            "ability": "armor_skill_bar"
           }
         ]
       }
@@ -2157,7 +2157,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "ia_skill_bar"
+            "ability": "armor_skill_bar"
           },
           {
             "type": "palladium:experience_level_buyable",
@@ -2309,6 +2309,19 @@
             "power": "satsu_iron_man_addon:ia_stuff/ia",
             "ability": "armor_skill_bar"
           }
+        ]
+      }
+    },
+    "animation_timer_sentinel_dummy.in.skill.bar_2": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "title": { "translate": "ability.title.satsu.sentinel" },
+      "description": { "translate": "description.satsu.sentinel" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-1, 0],
+      "conditions": {
+        "unlocking": [
         ]
       }
     },
@@ -2488,7 +2501,7 @@
       "hidden_in_bar": true,
       "commands": [
         "tag @s add sentinel_one",
-        "scoreboard players add @s satsu.iron.man.addon.enable.sentinel 1"
+        "scoreboard players set @s satsu.iron.man.addon.enable.sentinel 2"
       ],
       "conditions": {
         "enabling": [
@@ -2582,12 +2595,6 @@
             ]
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.ia.wheel.things",
-            "min_score": 3,
-            "max_score": 3
-          },
-          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -2599,7 +2606,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "animation_timer_sentinel_dummy.in.skill.bar"
+            "ability": "animation_timer_sentinel_dummy.in.skill.bar_2"
           },
           {
             "type": "palladium:and",
@@ -2620,11 +2627,6 @@
                     "objective": "satsu.iron.man.addon.enable.sentinel",
                     "min_score": 2,
                     "max_score": 2
-                  },
-                  {
-                    "type": "palladium:ability_unlocked",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "armor_skill_bar"
                   }
                 ]
               }
