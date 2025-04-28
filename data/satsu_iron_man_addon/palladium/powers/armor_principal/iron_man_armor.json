@@ -6176,87 +6176,77 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "flight_speed.move"
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.50"
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.flight_speed",
-                        "min_score": 65,
-                        "max_score": 164
-                      }
-                    ]
+                    "type": "palladium:has_tag",
+                    "tag": "mark.50"
                   },
                   {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.30.iron.destroyer"
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.flight_speed",
-                        "min_score": 65,
-                        "max_score": 74
-                      }
-                    ]
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.flight_speed",
+                    "min_score": 65,
+                    "max_score": 164
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.30.iron.destroyer"
                   },
                   {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.unknow.blooded.armor"
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.flight_speed",
-                        "min_score": 65,
-                        "max_score": 164
-                      }
-                    ]
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.flight_speed",
+                    "min_score": 65,
+                    "max_score": 74
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.unknow.blooded.armor"
                   },
                   {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.1873"
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.flight_speed",
-                        "min_score": 65,
-                        "max_score": 164
-                      }
-                    ]
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.flight_speed",
+                    "min_score": 65,
+                    "max_score": 164
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.1873"
                   },
                   {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.extremis"
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.flight_speed",
-                        "min_score": 65,
-                        "max_score": 164
-                      }
-                    ]
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.flight_speed",
+                    "min_score": 65,
+                    "max_score": 164
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.extremis"
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.flight_speed",
+                    "min_score": 65,
+                    "max_score": 164
                   }
                 ]
               }
