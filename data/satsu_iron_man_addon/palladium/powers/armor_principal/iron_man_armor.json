@@ -9589,7 +9589,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 40,
+            "xp_level": 13,
             "flat_levels": true
           },
           {
@@ -9615,7 +9615,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 50,
+            "xp_level": 14,
             "flat_levels": true
           },
           {
@@ -9641,7 +9641,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 60,
+            "xp_level": 15,
             "flat_levels": true
           },
           {
@@ -9664,7 +9664,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 70,
+            "xp_level": 15,
             "flat_levels": true
           },
           {
@@ -9687,7 +9687,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 80,
+            "xp_level": 16,
             "flat_levels": true
           },
           {
@@ -9710,7 +9710,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 90,
+            "xp_level": 17,
             "flat_levels": true
           },
           {
@@ -9733,7 +9733,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 100,
+            "xp_level": 18,
             "flat_levels": true
           },
           {
@@ -9759,7 +9759,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 111,
+            "xp_level": 19,
             "flat_levels": true
           },
           {
@@ -9785,7 +9785,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 112,
+            "xp_level": 20,
             "flat_levels": true
           },
           {
@@ -9811,7 +9811,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 113,
+            "xp_level": 21,
             "flat_levels": true
           },
           {
@@ -9837,7 +9837,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 114,
+            "xp_level": 22,
             "flat_levels": true
           },
           {
@@ -9863,7 +9863,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 115,
+            "xp_level": 23,
             "flat_levels": true
           },
           {
@@ -9889,7 +9889,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 116,
+            "xp_level": 24,
             "flat_levels": true
           },
           {
@@ -9915,7 +9915,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 117,
+            "xp_level": 25,
             "flat_levels": true
           },
           {
@@ -9941,7 +9941,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 118,
+            "xp_level": 26,
             "flat_levels": true
           },
           {
@@ -9967,7 +9967,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 119,
+            "xp_level": 27,
             "flat_levels": true
           },
           {
@@ -9993,7 +9993,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 120,
+            "xp_level": 28,
             "flat_levels": true
           },
           {
@@ -10019,7 +10019,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 121,
+            "xp_level": 29,
             "flat_levels": true
           },
           {
@@ -10045,7 +10045,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 122,
+            "xp_level": 26,
             "flat_levels": true
           },
           {
@@ -10071,7 +10071,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 123,
+            "xp_level": 27,
             "flat_levels": true
           },
           {
@@ -10097,7 +10097,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 124,
+            "xp_level": 28,
             "flat_levels": true
           },
           {
@@ -10123,7 +10123,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 125,
+            "xp_level": 25,
             "flat_levels": true
           },
           {
@@ -10149,7 +10149,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 126,
+            "xp_level": 26,
             "flat_levels": true
           },
           {
@@ -10175,7 +10175,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 127,
+            "xp_level": 27,
             "flat_levels": true
           },
           {
@@ -10201,7 +10201,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 128,
+            "xp_level": 28,
             "flat_levels": true
           },
           {
@@ -10227,7 +10227,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 129,
+            "xp_level": 29,
             "flat_levels": true
           },
           {
@@ -10253,7 +10253,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 130,
+            "xp_level": 27,
             "flat_levels": true
           },
           {
@@ -10279,7 +10279,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 131,
+            "xp_level": 30,
             "flat_levels": true
           },
           {
@@ -10305,7 +10305,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 132,
+            "xp_level": 30,
             "flat_levels": true
           },
           {
@@ -10331,7 +10331,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 133,
+            "xp_level": 31,
             "flat_levels": true
           },
           {
@@ -10357,7 +10357,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 134,
+            "xp_level": 32,
             "flat_levels": true
           },
           {
@@ -10383,7 +10383,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 135,
+            "xp_level": 33,
             "flat_levels": true
           },
           {
@@ -10409,7 +10409,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 136,
+            "xp_level": 34,
             "flat_levels": true
           },
           {
@@ -10435,7 +10435,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 137,
+            "xp_level": 35,
             "flat_levels": true
           },
           {
@@ -10461,7 +10461,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 138,
+            "xp_level": 34,
             "flat_levels": true
           },
           {
@@ -10487,7 +10487,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 139,
+            "xp_level": 35,
             "flat_levels": true
           },
           {
@@ -10513,7 +10513,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 140,
+            "xp_level": 37,
             "flat_levels": true
           },
           {
@@ -10539,7 +10539,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 145,
+            "xp_level": 38,
             "flat_levels": true
           },
           {
@@ -10565,7 +10565,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 147,
+            "xp_level": 36,
             "flat_levels": true
           },
           {
@@ -10591,7 +10591,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 155,
+            "xp_level": 37,
             "flat_levels": true
           },
           {
@@ -10622,7 +10622,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 150,
+            "xp_level": 39,
             "flat_levels": true
           },
           {
@@ -10650,7 +10650,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 87,
+            "xp_level": 40,
             "flat_levels": true
           },
           {
@@ -10674,7 +10674,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 130,
+            "xp_level": 41,
             "flat_levels": true
           },
           {
@@ -10730,7 +10730,7 @@
         "unlocking": [
           {
             "type": "palladium:experience_level_buyable",
-            "xp_level": 120,
+            "xp_level": 42,
             "flat_levels": true
           },
           {
@@ -19808,7 +19808,7 @@
       "first_tick_commands": [
         "superpower add satsu_iron_man_addon:armor_principal/iron_man_armor_voice_commands",
         "superpower add satsu_iron_man_addon:armor_set/armors",
-        "superpower add satsu_iron_man_addon:armor_principal/iron_man_xp",
+        "superpower remove satsu_iron_man_addon:armor_principal/iron_man_xp",
         "superpower add satsu_iron_man_addon:armor_renderlayers/armor_renderlayer",
         "superpower add satsu_iron_man_addon:reactor_ark_power/ark_reactor_charge",
         "execute as @s unless score @s satsu.iron.man.armor.energy.pulse.hand matches 0.. run scoreboard players set @s satsu.iron.man.armor.energy.pulse.hand 1"
