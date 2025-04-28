@@ -362,12 +362,25 @@
               "min_score": 0
             }
           ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "flight_anim",
+              "property": "value",
+              "min": 14,
+              "max": 16
+            }
+          ]
         }
       ]
     },
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/armor_boost_flames.geo.json",
+      "model": "satsu_iron_man_addon:geo/flames/feet_thruster_flame.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/flames/flame_#X_#Y.png",
         "variables": {
@@ -386,19 +399,6 @@
       },
       "render_type": "glow",
       "conditions": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:is_hovering_or_flying"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "mk.1.fly"
-              }
-            ]
-          },
         {
           "type": "palladium:ability_integer_property",
           "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -406,32 +406,6 @@
           "property": "value",
           "min": 14,
           "max": 16
-        },
-        {
-          "type": "palladium:not",
-          "conditions": [
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.rbg.on.off",
-              "min_score": 0
-            }
-          ]
-        },
-        {
-          "type": "palladium:or",
-          "conditions": [
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.flight.set",
-              "min_score": 1,
-              "max_score": 1
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.flight_speed",
-              "min_score": 7
-            }
-          ]
         }
       ]
     },
@@ -584,80 +558,17 @@
           "type": "palladium:objective_score",
           "objective": "satsu.iron.man.rbg.on.off",
           "min_score": 0
-        }
-      ]
-    },
-    {
-      "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/armor_boost_flames.geo.json",
-      "texture": {
-        "base": "satsu_iron_man_addon:textures/models/flames/flame_#X_#Y.png",
-        "transformers": [
-          {
-            "type": "palladium:color",
-            "color": "##B",
-            "ignore_blank": true
-          }
-        ],
-        "variables": {
-          "X": {
-            "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "flames",
-            "property": "value"
-          },
-          "Y": {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.flame",
-            "min_score": 0
-          },
-          "B": {
-            "type": "palladium:string_property",
-            "property": "satsuironmanrgb"
-          }
-        }
-      },
-      "render_type": "glow",
-      "conditions": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:is_hovering_or_flying"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "mk.1.fly"
-              }
-            ]
-          },
-        {
-          "type": "palladium:ability_integer_property",
-          "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-          "ability": "flight_anim",
-          "property": "value",
-          "min": 14,
-          "max": 16
         },
         {
-          "type": "palladium:objective_score",
-          "objective": "satsu.iron.man.rbg.on.off",
-          "min_score": 0
-        },
-        {
-          "type": "palladium:or",
+          "type": "palladium:not",
           "conditions": [
             {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.flight.set",
-              "min_score": 1,
-              "max_score": 1
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.flight_speed",
-              "min_score": 7
+              "type": "palladium:ability_integer_property",
+              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "ability": "flight_anim",
+              "property": "value",
+              "min": 14,
+              "max": 16
             }
           ]
         }

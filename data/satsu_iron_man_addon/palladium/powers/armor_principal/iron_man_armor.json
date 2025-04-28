@@ -6170,7 +6170,15 @@
             "ability": "armor_skill_bar"
           },
           {
-            "type": "palladium:is_hovering_or_flying"
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:is_hovering_or_flying"
+              },
+              {
+                "type": "palladium:is_fast_flying"
+              }
+            ]
           },
           {
             "type": "palladium:or",
@@ -6187,6 +6195,21 @@
                     "objective": "satsu.iron.man.flight_speed",
                     "min_score": 65,
                     "max_score": 164
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.50.superior"
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.flight_speed",
+                    "min_score": 66,
+                    "max_score": 165
                   }
                 ]
               },
@@ -8338,6 +8361,21 @@
                         "objective": "satsu.iron.man.flight_speed",
                         "min_score": 65,
                         "max_score": 164
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.50.superior"
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.flight_speed",
+                        "min_score": 66,
+                        "max_score": 165
                       }
                     ]
                   },
