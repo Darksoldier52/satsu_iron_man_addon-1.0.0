@@ -86,38 +86,6 @@
         "unlocking": []
       }
     },
-    "dummy": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
-      "title": { "translate": "ability.title.satsu.see.xp" },
-      "description": { "translate": "description.satsu.off.on" },
-      "hidden": false,
-      "hidden_in_bar": true,
-      "gui_position": [0, 0.5],
-      "first_tick_commands": [
-        "execute as @s run scoreboard players add @s satsu.iron.man.addon.skill.point.see 1",
-        "execute as @s[scores={satsu.iron.man.addon.skill.point.see=2..}] run scoreboard players reset @s satsu.iron.man.addon.skill.point.see",
-        "ability lock @s satsu_iron_man_addon:armor_principal/iron_man_armor dummy"
-      ],
-      "commands": [""],
-      "last_tick_commands": [""],
-      "conditions": {
-        "unlocking": [
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 0,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
-          }
-        ]
-      }
-    },
     "dummy_gui": {
       "type": "palladium:ability_wheel",
       "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_11.png",
@@ -144,11 +112,9 @@
             "ability": "armor_skill_bar"
           },
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 0,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 0,
+            "flat_levels": true
           }
         ]
       }
@@ -4024,11 +3990,9 @@
         "enabling": [],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 0,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 0,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9597,11 +9561,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 10,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 10,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9626,11 +9588,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 40,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 40,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9654,11 +9614,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 50,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 50,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9682,11 +9640,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 60,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 60,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9707,11 +9663,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 70,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 70,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9732,11 +9686,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 80,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 80,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9757,11 +9709,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 90,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 90,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9782,11 +9732,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 100,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 100,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9810,11 +9758,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 111,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 111,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9838,11 +9784,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 112,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 112,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9866,11 +9810,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 113,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 113,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9894,11 +9836,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 114,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 114,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9922,11 +9862,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 115,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 115,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9950,11 +9888,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 116,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 116,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -9978,11 +9914,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 117,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 117,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10006,11 +9940,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 118,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 118,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10034,11 +9966,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 119,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 119,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10062,11 +9992,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 120,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 120,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10090,11 +10018,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 121,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 121,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10118,11 +10044,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 122,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 122,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10146,11 +10070,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 123,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 123,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10174,11 +10096,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 124,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 124,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10202,11 +10122,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 125,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 125,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10230,11 +10148,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 126,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 126,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10258,11 +10174,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 127,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 127,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10286,11 +10200,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 128,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 128,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10314,11 +10226,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 129,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 129,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10342,11 +10252,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 130,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 130,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10370,11 +10278,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 131,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 131,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10398,11 +10304,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 132,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 132,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10426,11 +10330,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 133,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 133,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10454,11 +10356,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 134,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 134,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10482,11 +10382,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 135,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 135,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10510,11 +10408,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 136,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 136,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10538,11 +10434,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 137,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 137,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10566,11 +10460,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 138,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 138,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10594,11 +10486,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 139,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 139,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10622,11 +10512,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 140,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 140,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10650,11 +10538,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 145,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 145,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10678,11 +10564,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 147,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 147,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10706,11 +10590,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 550,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 155,
+            "flat_levels": true
           },
           {
             "type": "palladium:objective_score",
@@ -10739,11 +10621,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 150,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 150,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10769,11 +10649,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 86,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 87,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10795,11 +10673,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 200,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 130,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10825,11 +10701,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 890,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 180,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -10855,11 +10729,9 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 220,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 120,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -17698,11 +17570,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 300,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 90,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -17783,11 +17653,9 @@
             "ability": "arms_unlock_skill_tree"
           },
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 0,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 0,
+            "flat_levels": true
           }
         ]
       }
@@ -17816,11 +17684,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 600,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 100,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -18314,11 +18180,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 76,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 45,
+            "flat_levels": true
           },
           {
             "type": "palladium:and",
@@ -18462,11 +18326,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 430,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 58,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -18517,11 +18379,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 90,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 33,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -18565,11 +18425,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 80,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 20,
+            "flat_levels": true
           },
           {
             "type": "palladium:not",
@@ -18825,11 +18683,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 87,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 48,
+            "flat_levels": true
           },
           {
             "type": "palladium:not",
@@ -19041,11 +18897,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 90,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 35,
+            "flat_levels": true
           },
           {
             "type": "palladium:not",
@@ -19137,11 +18991,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 95,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 85,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -19341,11 +19193,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 60,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 38,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -19795,11 +19645,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 90,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 40,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
@@ -19852,11 +19700,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:scoreboard_score_buyable",
-            "objective": "satsu.iron.man.addon.skill.point",
-            "score": 60,
-            "icon": "satsu_iron_man_addon:textures/gui/armors/mark/mark_head_icon_8.png",
-            "description": { "text": "Armor Skill Point" }
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 10,
+            "flat_levels": true
           },
           {
             "type": "palladium:ability_unlocked",
