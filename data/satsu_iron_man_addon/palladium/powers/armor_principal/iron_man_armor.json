@@ -21274,6 +21274,30 @@
           }
         ]
       }
+    },
+    "ark.upgrade.max.energy.3": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:reactor_ark_recharge_on",
+      "title": { "translate": "ability.title.ark.upgrade.max.energy.3" },
+      "description": {
+        "translate": "description.satsu.ark.upgrade.max.energy.3"
+      },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, -3.5],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "ark.upgrade.max.energy.2"
+          },
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 10,
+            "flat_levels": true
+          }
+        ]
+      }
     }
   }
 }
