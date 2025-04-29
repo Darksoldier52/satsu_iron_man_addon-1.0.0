@@ -520,7 +520,7 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "tag @s add mark.3",
-        "scoreboard players set @s satsu.iron.man.flame 1",
+        "scoreboard players set @s satsu.iron.man.flame 0",
         "scoreboard players set @s satsu.iron.man.durability 5",
         "scoreboard players set @s satsu.iron.man.flight_speed 59",
         "scoreboard players set @s satsu.iron.man.strength 3",
@@ -545,7 +545,7 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "tag @s add mark.5",
-        "scoreboard players set @s satsu.iron.man.flame 1",
+        "scoreboard players set @s satsu.iron.man.flame 0",
         "scoreboard players set @s satsu.iron.man.durability 6",
         "scoreboard players set @s satsu.iron.man.flight_speed 59",
         "scoreboard players set @s satsu.iron.man.strength 4",
@@ -2153,7 +2153,7 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "tag @s add mark.47",
-        "scoreboard players set @s satsu.iron.man.flame 1",
+        "scoreboard players set @s satsu.iron.man.flame 0",
         "scoreboard players set @s satsu.iron.man.durability 37",
         "scoreboard players set @s satsu.iron.man.flight_speed 64",
         "scoreboard players set @s satsu.iron.man.strength 32",
@@ -2178,7 +2178,7 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "tag @s add mark.50",
-        "scoreboard players set @s satsu.iron.man.flame 1",
+        "scoreboard players set @s satsu.iron.man.flame 0",
         "scoreboard players set @s satsu.iron.man.durability 40",
         "scoreboard players set @s satsu.iron.man.flight_speed 64",
         "scoreboard players set @s satsu.iron.man.strength 37"
