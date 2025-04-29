@@ -16413,7 +16413,7 @@
     },
     "Telekinesis": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/5bolts.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/thunders.png",
       "title": { "translate": "ability.title.satsu.electrokinesis" },
       "description": { "translate": "description.superior.electrokinesis" },
       "hidden": false,
