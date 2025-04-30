@@ -471,7 +471,7 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "uni.beam.hand.2"
+                "ability": "uni.beam.hand.left"
               },
               {
                 "type": "palladium:ability_enabled",
