@@ -471,7 +471,7 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "uni.beam.hand.2"
+                "ability": "uni.beam.hand.left"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -508,7 +508,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
-      "max_value": 6,
+      "max_value": 3,
       "conditions": {
         "unlocking": [
           {
@@ -516,6 +516,9 @@
             "conditions": [
               {
                 "type": "palladium:is_fast_flying"
+              },
+              {
+                "type": "palladium:is_moving"
               },
               {
                 "type": "palladium:is_hovering_or_flying"
@@ -566,7 +569,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
-      "max_value": 6,
+      "max_value": 3,
       "conditions": {
         "unlocking": [
           {
@@ -574,6 +577,9 @@
             "conditions": [
               {
                 "type": "palladium:is_fast_flying"
+              },
+              {
+                "type": "palladium:is_moving"
               },
               {
                 "type": "palladium:is_hovering_or_flying"
@@ -625,7 +631,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
-      "max_value": 6,
+      "max_value": 3,
       "conditions": {
         "unlocking": [
           {
@@ -704,7 +710,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
-      "max_value": 6,
+      "max_value": 3,
       "conditions": {
         "unlocking": [
           {

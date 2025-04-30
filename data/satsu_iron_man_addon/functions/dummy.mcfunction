@@ -1,4 +1,5 @@
 
+scoreboard objectives add satsu.iron.man.addon.energy.beam.powerfull dummy
 scoreboard objectives add satsu.iron.man.addon.ia.wheel.things dummy
 scoreboard objectives add satsu.iron.man.addon.nano.armor.things dummy
 scoreboard objectives add satsu.iron.man.addon.gui.overlay.armor dummy
@@ -128,7 +129,7 @@ scoreboard objectives remove satsu.iron.man.armor.15.mk30.unlock
 scoreboard objectives remove satsu.iron.man.armor.mark.45.unlock
 scoreboard objectives add satsu.iron.man.symbiote.metalized dummy
 scoreboard objectives remove satsu.iron.man.armor.16.unknow.blooded.armor.unlock
-scoreboard objectives add satsu.iron.man.rbg.on.off dummy
+scoreboard objectives remove satsu.iron.man.rbg.on.off
 scoreboard objectives add satsu.iron.man.speed dummy
 scoreboard objectives remove satsu.iron.man.ark.upgraded
 scoreboard objectives remove satsu.iron.man.ark.upgraded.max.energy
