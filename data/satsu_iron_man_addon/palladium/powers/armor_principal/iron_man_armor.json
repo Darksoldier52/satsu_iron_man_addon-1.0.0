@@ -542,6 +542,10 @@
                           {
                             "type": "palladium:has_tag",
                             "tag": "mark.taken"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "mark.infinity.ultron"
                           }
                         ]
                       }
@@ -3219,6 +3223,10 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.taken"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.infinity.ultron"
                   }
                 ]
               }
@@ -3610,6 +3618,10 @@
                       {
                         "type": "palladium:has_tag",
                         "tag": "mark.taken"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.infinity.ultron"
                       }
                     ]
                   }
@@ -9999,6 +10011,10 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.extremis"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.infinity.ultron"
               }
             ]
           },
@@ -10139,6 +10155,10 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.extremis"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.infinity.ultron"
               }
             ]
           },

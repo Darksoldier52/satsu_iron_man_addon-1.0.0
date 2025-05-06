@@ -1092,10 +1092,21 @@
             "ability": "nano_rial"
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor",
-            "min_score": 18,
-            "max_score": 18
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor",
+                "min_score": 18,
+                "max_score": 18
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor",
+                "min_score": 53,
+                "max_score": 53
+              }
+            ]
           }
         ]
       }
@@ -1148,10 +1159,21 @@
             "ability": "nano_rial"
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor",
-            "min_score": 18,
-            "max_score": 18
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor",
+                "min_score": 18,
+                "max_score": 18
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor",
+                "min_score": 53,
+                "max_score": 53
+              }
+            ]
           }
         ]
       }
@@ -2078,6 +2100,12 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.30.iron.destroyer"
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor",
+                "min_score": 53,
+                "max_score": 53
               }
             ]
           }
@@ -2138,6 +2166,12 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.30.iron.destroyer"
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor",
+                "min_score": 53,
+                "max_score": 53
               }
             ]
           }
@@ -2515,6 +2549,10 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.1873"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.infinity.ultron"
               }
             ]
           }
@@ -2569,6 +2607,10 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.1873"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.infinity.ultron"
               }
             ]
           }
