@@ -6452,6 +6452,15 @@
                         "tag": "mark.extremis"
                       }
                     ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.infinity.ultron"
+                      }
+                    ]
                   }
                 ]
               }
@@ -6576,6 +6585,21 @@
                     "max_score": 164
                   }
                 ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.infinity.ultron"
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.flight_speed",
+                    "min_score": 67,
+                    "max_score": 165
+                  }
+                ]
               }
             ]
           },
@@ -6641,6 +6665,10 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.extremis"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.infinity.ultron"
               }
             ]
           },
@@ -7185,6 +7213,15 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.extremis"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.infinity.ultron"
                   }
                 ]
               }
@@ -7970,6 +8007,21 @@
                         "max_score": 163
                       }
                     ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.infinity.ultron"
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.flight_speed",
+                        "min_score": 66,
+                        "max_score": 165
+                      }
+                    ]
                   }
                 ]
               }
@@ -8744,6 +8796,21 @@
                         "objective": "satsu.iron.man.flight_speed",
                         "min_score": 65,
                         "max_score": 164
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.infinity.ultron"
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.flight_speed",
+                        "min_score": 67,
+                        "max_score": 165
                       }
                     ]
                   }
