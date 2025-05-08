@@ -15,7 +15,7 @@
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:ultron/armor_principal/iron_man_armor",
             "ability": "flight_anim",
             "property": "value"
           },
@@ -26,7 +26,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors_feet_thruster/iron_man/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors_feet_thruster/iron_man/iron_man_suit_#X_0_#TIMER"
       }
     },
     {
@@ -43,7 +43,7 @@
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:ultron/armor_principal/iron_man_armor",
             "ability": "flight_anim",
             "property": "value"
           },
@@ -54,7 +54,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors_feet_thruster/iron_man_lights/iron_man_suit_lights_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/ultron/iron_man_armors_feet_thruster/iron_man_lights/iron_man_suit_lights_#X_0_#TIMER"
       },
       "render_type": "glow"
     }

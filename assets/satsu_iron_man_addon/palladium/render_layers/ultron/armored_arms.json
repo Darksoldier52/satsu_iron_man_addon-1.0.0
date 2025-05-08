@@ -34,7 +34,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_boost_energy_beams/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_boost_energy_beams/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -80,7 +80,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_boost_energy_beams/light/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_boost_energy_beams/light/iron_man_suit_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -121,7 +121,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_katar/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_katar/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -161,7 +161,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_katar/light/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_katar/light/iron_man_suit_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -202,7 +202,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_handblade/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_handblade/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -242,7 +242,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_handblade/light/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_handblade/light/iron_man_suit_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -289,7 +289,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_rial/no_light/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_rial/no_light/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -335,7 +335,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_rial/light/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_rial/light/iron_man_suit_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -382,7 +382,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_mallet/no_light/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_mallet/no_light/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -428,7 +428,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_mallet/light/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_mallet/light/iron_man_suit_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -475,7 +475,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_grenade_launcher/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_grenade_launcher/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -521,7 +521,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights_grenade_launcher/iron_man_suit_lights_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights_grenade_launcher/iron_man_suit_lights_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -568,7 +568,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_rial/no_light_fireworks/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_rial/no_light_fireworks/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -614,7 +614,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_rial/light_fireworks/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/nano_rial/light_fireworks/iron_man_suit_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -661,7 +661,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_grenade_launcher_nano_flares_flames/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_grenade_launcher_nano_flares_flames/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -707,7 +707,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights_grenade_launcher_nano_flares_flames/iron_man_suit_lights_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights_grenade_launcher_nano_flares_flames/iron_man_suit_lights_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -748,7 +748,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/pinchers_left/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/pinchers_left/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {

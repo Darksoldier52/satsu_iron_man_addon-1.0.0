@@ -2727,92 +2727,92 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "energy_projectile"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "energy_projectile.left"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "energy_projectile.damage.6"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "energy_projectile.left.damage.6"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "energy_projectile.damage.18"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "energy_projectile.left.damage.18"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "energy_projectile.mk.1873"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "energy_projectile.left.mk.1873"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "energy_projectile.mk.blooded"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "energy_projectile.left.mk.blooded"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "maximun.pulse.break"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "maximun.pulse.not.break"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "nano_grenade_projectile.damage.18"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "nano_grenade_projectile.left.damage.18"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "nano_grenade_projectile.blood.damage.18"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "nano_grenade_projectile.blood.left.damage.18"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "nano_grenade_projectile.blood.damage.18"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "nano_grenade_projectile.1873.left.damage.18"
               }
             ]
@@ -2930,22 +2930,22 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "firework_projectile"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "firework_projectile.2"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "mini_fireworks.firework_projectile"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "mini_fireworks.firework_projectile.2"
               }
             ]

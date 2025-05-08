@@ -86,7 +86,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "fall_flying",
                             "property": "value",
                             "min": 1,
@@ -104,7 +104,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "colocacion_de_armadura",
                             "property": "value",
                             "min": 1,
@@ -122,7 +122,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "mark.5_anim",
                             "property": "value",
                             "min": 1,
@@ -140,7 +140,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "superior_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -155,7 +155,7 @@
                     "conditions": [
                       {
                         "type": "palladium:ability_integer_property",
-                        "power": "satsu_iron_man_addon:kube_animations",
+                        "power": "satsu_iron_man_addon:ultron/kube_animations",
                         "ability": "blooded_activaded_anim",
                         "property": "value",
                         "min": 1,
@@ -171,7 +171,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "mark_45_anim",
                             "property": "value",
                             "min": 1,
@@ -207,7 +207,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "mark_50_anim",
                             "property": "value",
                             "min": 1,
@@ -225,7 +225,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "mark.taken_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -243,7 +243,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -261,7 +261,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "remove_ark_animation_timer",
                             "property": "value",
                             "min": 1,
@@ -279,7 +279,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "first_attack_for_mark_unknow",
                             "property": "value",
                             "min": 1,
@@ -297,7 +297,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "dampened_ark_animation_timer",
                             "property": "value",
                             "min": 1,
@@ -409,7 +409,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:kube_animations",
+                "power": "satsu_iron_man_addon:ultron/kube_animations",
                 "ability": "armor_sentinel_anim",
                 "property": "value",
                 "min": 1,
@@ -417,21 +417,21 @@
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:kube_animations",
+                "power": "satsu_iron_man_addon:ultron/kube_animations",
                 "ability": "mark.1873.clap_smoke_hands",
                 "property": "value",
                 "min": 1
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:kube_animations",
+                "power": "satsu_iron_man_addon:ultron/kube_animations",
                 "ability": "blade_attack_1",
                 "property": "value",
                 "min": 1
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:kube_animations",
+                "power": "satsu_iron_man_addon:ultron/kube_animations",
                 "ability": "blade_attack_2",
                 "property": "value",
                 "min": 1
@@ -820,7 +820,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -828,7 +828,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "superior_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -836,7 +836,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "blooded_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -844,7 +844,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "mark_47_anim",
                     "property": "value",
                     "min": 1,
@@ -852,7 +852,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "mark_50_anim",
                     "property": "value",
                     "min": 1,
@@ -860,7 +860,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "mark.5_anim",
                     "property": "value",
                     "min": 1,
@@ -928,7 +928,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -936,7 +936,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "blooded_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -996,7 +996,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -1004,7 +1004,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "blooded_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -1064,7 +1064,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -1072,7 +1072,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "blooded_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -1156,7 +1156,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -1164,7 +1164,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "blooded_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -1229,7 +1229,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -1237,7 +1237,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "superior_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -1302,7 +1302,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -1310,7 +1310,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "superior_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -1375,7 +1375,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -1383,7 +1383,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "superior_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -1448,7 +1448,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -1456,7 +1456,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "superior_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -1625,7 +1625,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -1633,7 +1633,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "superior_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -1744,7 +1744,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "armor_sentinel_anim",
                     "property": "value",
                     "min": 1,
@@ -1752,7 +1752,7 @@
                   },
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:kube_animations",
+                    "power": "satsu_iron_man_addon:ultron/kube_animations",
                     "ability": "blooded_activaded_anim",
                     "property": "value",
                     "min": 1,
@@ -1884,7 +1884,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -1892,7 +1892,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -1932,7 +1932,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -1940,7 +1940,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -1980,7 +1980,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -1988,7 +1988,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2052,7 +2052,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2060,7 +2060,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2108,7 +2108,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2116,7 +2116,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2180,7 +2180,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2188,7 +2188,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2244,7 +2244,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2252,7 +2252,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2292,7 +2292,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2300,7 +2300,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2345,7 +2345,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2353,7 +2353,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2409,7 +2409,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2417,7 +2417,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2457,7 +2457,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2465,7 +2465,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2510,7 +2510,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2518,7 +2518,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2574,7 +2574,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2582,7 +2582,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2638,7 +2638,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2646,7 +2646,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2760,7 +2760,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2768,7 +2768,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2808,7 +2808,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2816,7 +2816,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2856,7 +2856,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2864,7 +2864,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2920,7 +2920,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2928,7 +2928,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -2968,7 +2968,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -2976,7 +2976,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -3016,7 +3016,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -3024,7 +3024,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -3426,7 +3426,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -3434,7 +3434,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -3490,7 +3490,7 @@
                         "conditions": [
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "armor_sentinel_anim",
                             "property": "value",
                             "min": 1,
@@ -3498,7 +3498,7 @@
                           },
                           {
                             "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
+                            "power": "satsu_iron_man_addon:ultron/kube_animations",
                             "ability": "blooded_activaded_anim",
                             "property": "value",
                             "min": 1,

@@ -1447,12 +1447,12 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "firework_projectile"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "firework_projectile.2"
               }
             ]
@@ -1482,12 +1482,12 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "maximun.pulse.break"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "maximun.pulse.not.break"
               }
             ]

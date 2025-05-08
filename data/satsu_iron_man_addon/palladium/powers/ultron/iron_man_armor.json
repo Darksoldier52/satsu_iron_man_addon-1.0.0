@@ -13382,11 +13382,11 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:projectiles_armor/projectiles"
+        "superpower add satsu_iron_man_addon:ultron/projectiles_armor/projectiles"
       ],
       "commands": [""],
       "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:projectiles_armor/projectiles"
+        "superpower remove satsu_iron_man_addon:ultron/projectiles_armor/projectiles"
       ],
       "conditions": {
         "enabling": [

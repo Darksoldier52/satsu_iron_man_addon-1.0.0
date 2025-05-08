@@ -4,7 +4,7 @@
     {
       "type": "palladium:skin_overlay",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/ark_reactor/reactor_0_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/ark_reactor/reactor_0_0.png",
         "variables": {
           "X": {
             "type": "palladium:objective_score",
@@ -65,7 +65,7 @@
     {
       "type": "palladium:skin_overlay",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/ark_reactor/reactor_glow_0_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/ark_reactor/reactor_glow_0_0.png",
         "variables": {
           "X": {
             "type": "palladium:objective_score",
@@ -127,7 +127,7 @@
     {
       "type": "palladium:skin_overlay",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/ark_reactor/reactor_1_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/ark_reactor/reactor_1_0.png",
         "variables": {
           "X": {
             "type": "palladium:objective_score",
@@ -183,7 +183,7 @@
     {
       "type": "palladium:skin_overlay",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/ark_reactor/reactor_glow_1_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/ark_reactor/reactor_glow_1_0.png",
         "variables": {
           "X": {
             "type": "palladium:objective_score",
@@ -240,7 +240,7 @@
     {
       "type": "palladium:skin_overlay",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/ark_reactor/reactor_2_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/ark_reactor/reactor_2_0.png",
         "variables": {
           "X": {
             "type": "palladium:objective_score",
@@ -296,7 +296,7 @@
     {
       "type": "palladium:skin_overlay",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/ark_reactor/reactor_glow_2_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/ark_reactor/reactor_glow_2_0.png",
         "variables": {
           "X": {
             "type": "palladium:objective_score",
