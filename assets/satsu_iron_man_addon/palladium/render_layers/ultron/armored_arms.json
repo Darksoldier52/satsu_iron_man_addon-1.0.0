@@ -799,7 +799,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/pinchers_right/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/pinchers_right/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
