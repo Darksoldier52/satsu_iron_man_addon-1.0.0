@@ -5,7 +5,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -32,7 +32,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -57,7 +57,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -78,7 +78,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -120,7 +120,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -147,7 +147,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -172,7 +172,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -193,7 +193,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -235,7 +235,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -256,7 +256,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_0_#MASK"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_0_#MASK"
       },
       "render_type": "glow",
       "conditions": [
@@ -298,7 +298,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_1.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man/iron_man_suit_#X_1.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -327,7 +327,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_1_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_#X_1_#TIMER"
       },
       "conditions": [
         {
@@ -361,7 +361,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_1.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_1.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -384,7 +384,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_1_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_1_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -419,7 +419,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_1.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man/iron_man_suit_#X_1.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -448,7 +448,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_1_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_#X_1_#TIMER"
       },
       "conditions": [
         {
@@ -482,7 +482,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_1.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_1.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -505,7 +505,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_1_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_1_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -545,7 +545,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_1.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man/iron_man_suit_#X_1.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -574,7 +574,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_1_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_#X_1_#TIMER"
       },
       "conditions": [
         {
@@ -613,7 +613,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_1.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_1.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -636,7 +636,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_1_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_1_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -677,7 +677,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -704,7 +704,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -719,7 +719,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -740,7 +740,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -776,7 +776,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -803,7 +803,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_#X_0_#TIMER"
       },
       "conditions": [
         {
@@ -818,7 +818,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/blooded_armor/blooded_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -839,7 +839,7 @@
             "max": 53
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -866,7 +866,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_#S.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_lights_#X_#S.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -893,7 +893,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_#X_#S_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_#S_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -919,7 +919,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_mask_#Y.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man/iron_man_suit_mask_#Y.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -946,7 +946,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_mask_#Y_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/ultron/iron_man_armors/iron_man/iron_man_suit_mask_#Y_#TIMER"
       },
       "conditions": [
         {
@@ -967,7 +967,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_mask_#Y.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man/iron_man_suit_mask_#Y.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -994,7 +994,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_mask_#Y_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/ultron/iron_man_armors/iron_man/iron_man_suit_mask_#Y_#TIMER"
       },
       "conditions": [
         {
@@ -1015,7 +1015,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -1048,7 +1048,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/ultron/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow_#TIMER"
       },
       "conditions": [
         {
@@ -1070,7 +1070,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow.png",
+        "base": "satsu_iron_man_addon:textures/models/ultron/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -1103,7 +1103,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/ultron/iron_man_armors/iron_man_lights/iron_man_suit_mask_#Y_#S_glow_#TIMER"
       },
       "conditions": [
         {
@@ -1153,7 +1153,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/superior_armor/iron_man_suit_1_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/ultron/superior_armor/iron_man_suit_1_0_#TIMER"
       },
       "conditions": [
         {
@@ -1185,7 +1185,7 @@
             "max": 6
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/shields_nanotech/repulser_shield/animation_#SHIELD"
+        "output": "satsu_iron_man_addon:textures/models/ultron/shields_nanotech/repulser_shield/animation_#SHIELD"
       },
       "conditions": [
         {
