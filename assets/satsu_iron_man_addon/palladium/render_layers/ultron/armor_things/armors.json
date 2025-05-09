@@ -23,7 +23,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -75,7 +75,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           }
         },
         "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_0_#TIMER"
@@ -138,7 +138,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -190,7 +190,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           }
         },
         "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_0_#TIMER"
@@ -253,7 +253,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           }
         },
         "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_0_#MASK"
@@ -318,7 +318,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -336,14 +336,8 @@
             {
               "type": "palladium:objective_score",
               "objective": "satsu.iron.man.armor",
-              "min_score": 6,
-              "max_score": 6
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 10,
-              "max_score": 10
+              "min_score": 1,
+              "max_score": 1
             }
           ]
         },
@@ -381,7 +375,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           }
         },
         "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_1_#TIMER"
@@ -402,14 +396,8 @@
             {
               "type": "palladium:objective_score",
               "objective": "satsu.iron.man.armor",
-              "min_score": 6,
-              "max_score": 6
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 10,
-              "max_score": 10
+              "min_score": 1,
+              "max_score": 1
             }
           ]
         }
@@ -439,7 +427,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -465,14 +453,8 @@
             {
               "type": "palladium:objective_score",
               "objective": "satsu.iron.man.armor",
-              "min_score": 6,
-              "max_score": 6
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 10,
-              "max_score": 10
+              "min_score": 1,
+              "max_score": 1
             }
           ]
         }
@@ -502,7 +484,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           }
         },
         "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_1_#TIMER"
@@ -565,7 +547,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -633,7 +615,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           }
         },
         "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_1_#TIMER"
@@ -695,7 +677,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -737,7 +719,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           }
         },
         "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_0_#TIMER"
@@ -794,7 +776,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -836,7 +818,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           }
         },
         "output": "satsu_iron_man_addon:textures/models/ultron/armor/iron_man_suit_lights_#X_0_#TIMER"
@@ -884,7 +866,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "S": {
             "type": "palladium:objective_score",
@@ -937,7 +919,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -985,7 +967,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -1033,7 +1015,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -1088,7 +1070,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -1144,7 +1126,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
             "min": 0,
-            "max": 53
+            "max": 3
           },
           "Y": {
             "type": "palladium:objective_score",

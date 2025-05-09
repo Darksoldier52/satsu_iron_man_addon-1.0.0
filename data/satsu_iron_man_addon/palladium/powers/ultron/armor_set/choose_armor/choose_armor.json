@@ -174,7 +174,7 @@
       "hidden_in_bar": true,
       "list_index": 0,
       "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 17"
+        "scoreboard players set @s satsu.iron.man.choose_armor 0"
       ],
       "commands": [""],
       "last_tick_commands": [],
@@ -212,7 +212,7 @@
       "hidden_in_bar": true,
       "list_index": 1,
       "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 6"
+        "scoreboard players set @s satsu.iron.man.choose_armor 1"
       ],
       "commands": [""],
       "last_tick_commands": [],
@@ -253,7 +253,7 @@
       "hidden_in_bar": true,
       "list_index": 9,
       "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 10"
+        "scoreboard players set @s satsu.iron.man.choose_armor 2"
       ],
       "commands": [""],
       "last_tick_commands": [],
@@ -294,7 +294,7 @@
       "hidden_in_bar": true,
       "list_index": 9,
       "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.choose_armor 53"
+        "scoreboard players set @s satsu.iron.man.choose_armor 3"
       ],
       "commands": [""],
       "last_tick_commands": [],

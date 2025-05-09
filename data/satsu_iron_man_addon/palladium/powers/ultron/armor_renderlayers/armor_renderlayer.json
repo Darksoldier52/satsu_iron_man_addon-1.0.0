@@ -66,31 +66,7 @@
                 "conditions": [
                   {
                     "type": "palladium:has_tag",
-                    "tag": "mark.30.iron.destroyer"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.50"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.50.superior"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.unknow.blooded.armor"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.1873"
-                  },
-                  {
-                    "type": "palladium:has_tag",
                     "tag": "mark.extremis"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.taken"
                   },
                   {
                     "type": "palladium:has_tag",
@@ -138,22 +114,6 @@
           {
             "type": "palladium:or",
             "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.1"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.2"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.3"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.4"
-              },
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.5"
@@ -219,21 +179,8 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor",
-                "min_score": 2,
-                "max_score": 9
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor",
-                "min_score": 13
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.47"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.45"
+                "min_score": 1,
+                "max_score": 1
               }
             ]
           },
@@ -375,21 +322,8 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor",
-                "min_score": 2,
-                "max_score": 10
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor",
-                "min_score": 13
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.47"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.45"
+                "min_score": 0,
+                "max_score": 1
               }
             ]
           },
