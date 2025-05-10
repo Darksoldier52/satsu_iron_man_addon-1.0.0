@@ -8906,17 +8906,8 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [0, 2.5],
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.armor.mk5.unlock 1"
-      ],
-      "commands": [""],
       "conditions": {
         "unlocking": [
-          {
-            "type": "palladium:experience_level_buyable",
-            "xp_level": 14,
-            "flat_levels": true
-          },
           {
             "type": "palladium:ability_unlocked",
             "ability": "armor.skill.tree"
@@ -8932,10 +8923,6 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [-1, 2.5],
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.armor.6.unlock 1"
-      ],
-      "commands": [""],
       "conditions": {
         "unlocking": [
           {
@@ -8960,10 +8947,6 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [1, 2.5],
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.armor.mk.extremis.unlock 1"
-      ],
-      "commands": [""],
       "conditions": {
         "unlocking": [
           {
@@ -8988,7 +8971,6 @@
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [2, 2.5],
-      "commands": [""],
       "conditions": {
         "unlocking": [
           {
