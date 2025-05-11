@@ -542,6 +542,10 @@
                           {
                             "type": "palladium:has_tag",
                             "tag": "mark.taken"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "model.prime"
                           }
                         ]
                       }
@@ -3219,6 +3223,10 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.taken"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "model.prime"
                   }
                 ]
               }
@@ -3610,6 +3618,10 @@
                       {
                         "type": "palladium:has_tag",
                         "tag": "mark.taken"
+                      },
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "model.prime"
                       }
                     ]
                   }
