@@ -13849,7 +13849,7 @@
         "enabling": [
           {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:kube_animations",
+            "power": "satsu_iron_man_addon:ultron/kube_animations",
             "ability": "shield_put_animation",
             "property": "value",
             "min": 6,
