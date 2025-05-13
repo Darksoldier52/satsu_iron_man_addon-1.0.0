@@ -23,7 +23,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color",
             "min": 0,
-            "max": 51
+            "max": 11
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -34,14 +34,13 @@
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime/model_prime_#X_0_#TIMER"
       },
-      "conditions": [
-      ]
+      "conditions": []
     },
     {
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_without_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime/model_prime_0_#P.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime/model_prime_gold_#P.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -58,7 +57,8 @@
           "P": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color.plate",
-            "min": 1
+            "min": 0,
+            "max": 5
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -67,10 +67,9 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime_gold_things/model_prime_0_#P_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime_gold_things/model_prime_gold_#P_#TIMER"
       },
-      "conditions": [
-      ]
+      "conditions": []
     },
     {
       "type": "geckolib:default",
@@ -93,7 +92,8 @@
           "B": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color.black",
-            "min": 0
+            "min": 0,
+            "max": 6
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -104,8 +104,7 @@
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime_black_things/model_prime_black_#B_#TIMER"
       },
-      "conditions": [
-      ]
+      "conditions": []
     },
     {
       "type": "geckolib:default",
@@ -170,7 +169,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color",
             "min": 0,
-            "max": 51
+            "max": 11
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -181,14 +180,13 @@
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors_helmet/iron_man/model_prime/model_prime_#X_0_#TIMER"
       },
-      "conditions": [
-      ]
+      "conditions": []
     },
     {
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/nano_armor_helmet.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime/model_prime_0_#P.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime/model_prime_gold_#P.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
@@ -205,7 +203,8 @@
           "P": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color.plate",
-            "min": 1
+            "min": 0,
+            "max": 5
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -214,10 +213,9 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors_helmet/iron_man/model_prime_gold_things/model_prime_0_#P_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors_helmet/iron_man/model_prime_gold_things/model_prime_gold_#P_#TIMER"
       },
-      "conditions": [
-      ]
+      "conditions": []
     },
     {
       "type": "geckolib:default",
@@ -240,7 +238,8 @@
           "B": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color.black",
-            "min": 0
+            "min": 0,
+            "max": 6
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -251,8 +250,7 @@
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors_helmet/iron_man/model_prime_black_things_helmet/model_prime_black_#B_#TIMER"
       },
-      "conditions": [
-      ]
+      "conditions": []
     },
     {
       "type": "geckolib:default",
