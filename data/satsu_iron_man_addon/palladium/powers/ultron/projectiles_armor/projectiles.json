@@ -2813,6 +2813,11 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
+                "ability": "nano_grenade_projectile.1873.damage.18"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:ultron/projectiles_armor/projectiles",
                 "ability": "nano_grenade_projectile.1873.left.damage.18"
               }
             ]
@@ -2856,7 +2861,7 @@
                   {
                     "type": "palladium:animation_timer_ability",
                     "power": "satsu_iron_man_addon:ultron/armor_principal/iron_man_armor",
-                    "ability": "mini.gun.right",
+                    "ability": "mini.gun.left",
                     "min": 10,
                     "max": 10
                   },
