@@ -1,5 +1,5 @@
 {
-  "name": "Armors",
+  "name": "armors_scoreboards",
   "persistent_data": true,
   "background": "satsu_iron_man_addon:textures/gui/block/background.png",
   "icon": "#satsu_iron_man_addon:armor_icon_ability",
