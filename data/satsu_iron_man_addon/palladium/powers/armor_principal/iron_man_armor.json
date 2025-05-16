@@ -3259,6 +3259,31 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:items/nanoparticle_main_color_change",
+                    "ability": "action"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:items/nanoparticle_secondary_color_change",
+                    "ability": "action"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:items/nanoparticle_thirdy_color_change",
+                    "ability": "action"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3697,6 +3722,31 @@
                 "objective": "satsu.iron.man.armor.actived",
                 "min_score": 1,
                 "max_score": 1
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:items/nanoparticle_main_color_change",
+                    "ability": "action"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:items/nanoparticle_secondary_color_change",
+                    "ability": "action"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:items/nanoparticle_thirdy_color_change",
+                    "ability": "action"
+                  }
+                ]
               }
             ]
           }
@@ -21575,6 +21625,14 @@
                           {
                             "type": "palladium:has_tag",
                             "tag": "mark.1873"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "mark.extremis"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "model.prime"
                           }
                         ]
                       }
@@ -21765,6 +21823,14 @@
                                   {
                                     "type": "palladium:has_tag",
                                     "tag": "mark.1873"
+                                  },
+                                  {
+                                    "type": "palladium:has_tag",
+                                    "tag": "mark.extremis"
+                                  },
+                                  {
+                                    "type": "palladium:has_tag",
+                                    "tag": "model.prime"
                                   }
                                 ]
                               }
@@ -21856,6 +21922,14 @@
                           {
                             "type": "palladium:has_tag",
                             "tag": "mark.1873"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "mark.extremis"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "model.prime"
                           }
                         ]
                       }
@@ -22046,6 +22120,14 @@
                                   {
                                     "type": "palladium:has_tag",
                                     "tag": "mark.1873"
+                                  },
+                                  {
+                                    "type": "palladium:has_tag",
+                                    "tag": "mark.extremis"
+                                  },
+                                  {
+                                    "type": "palladium:has_tag",
+                                    "tag": "model.prime"
                                   }
                                 ]
                               }
