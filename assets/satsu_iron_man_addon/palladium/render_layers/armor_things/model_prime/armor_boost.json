@@ -23,7 +23,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color",
             "min": 0,
-            "max": 51
+            "max": 12
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors_feet_thruster/iron_man/model_prime/model_prime_#X_0_#TIMER"
@@ -119,7 +119,7 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color",
             "min": 0,
-            "max": 51
+            "max": 12
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors_feet_thruster/iron_man_lights/iron_man/model_prime/lights/model_prime_0_0_#TIMER"

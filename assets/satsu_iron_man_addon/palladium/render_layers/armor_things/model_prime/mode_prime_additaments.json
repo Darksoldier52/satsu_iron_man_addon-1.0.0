@@ -38,7 +38,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime/additaments/model_prime_#A_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors_body/iron_man/model_prime/additaments/model_prime_#A_0_#TIMER"
       },
       "conditions": [
         {
@@ -76,10 +76,10 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color",
             "min": 0,
-            "max": 51
+            "max": 12
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime/additaments/model_prime_#A_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors_body_lights/iron_man/model_prime/additaments/model_prime_#A_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -137,7 +137,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors_helmet/iron_man/model_prime/additaments/model_prime_#A_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime_helmet/additaments/model_prime_#A_0_#TIMER"
       },
       "conditions": [
         {
@@ -175,10 +175,10 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color",
             "min": 0,
-            "max": 51
+            "max": 12
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors_helmet/iron_man/model_prime/lights/model_prime_#A_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime_helmet_lights/additaments/model_prime_#A_0_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -227,10 +227,10 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.addon.model.prime.color",
             "min": 0,
-            "max": 51
+            "max": 12
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors_helmet_1/iron_man/model_prime/lights/additaments/model_prime_#A_0_#MASK"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime_2/additaments/model_prime_#A_0_#MASK"
       },
       "render_type": "glow",
       "conditions": [
