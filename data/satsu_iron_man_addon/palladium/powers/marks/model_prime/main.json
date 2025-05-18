@@ -51,6 +51,8 @@
       ],
       "commands": [""],
       "last_tick_commands": [
+        "execute as @s[scores={satsu.iron.man.armor.remote=1}] if entity @e[tag=sentinel.test,distance=0..30] run tag @s add sentinel_one",
+        "execute as @s[scores={satsu.iron.man.armor.remote=1}] run function satsu_iron_man_addon:remote_mode/disable",
         "tag @s remove model.prime",
         "tag @s remove satsu.iron.man.suit.set"
       ],
