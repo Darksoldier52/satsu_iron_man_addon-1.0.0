@@ -39,6 +39,17 @@
               "max_score": 50
             }
           ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 60,
+              "max_score": 60
+            }
+          ]
         }
       ]
     },
@@ -89,6 +100,17 @@
               "objective": "satsu.iron.man.armor",
               "min_score": 50,
               "max_score": 50
+            }
+          ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 60,
+              "max_score": 60
             }
           ]
         }
@@ -147,6 +169,17 @@
               "objective": "satsu.iron.man.armor",
               "min_score": 50,
               "max_score": 50
+            }
+          ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 60,
+              "max_score": 60
             }
           ]
         }
@@ -207,6 +240,17 @@
               "max_score": 50
             }
           ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 60,
+              "max_score": 60
+            }
+          ]
         }
       ]
     },
@@ -271,6 +315,17 @@
               "max_score": 50
             }
           ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 60,
+              "max_score": 60
+            }
+          ]
         }
       ],
       "render_type": "glow"
@@ -334,6 +389,17 @@
               "objective": "satsu.iron.man.armor",
               "min_score": 50,
               "max_score": 50
+            }
+          ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 60,
+              "max_score": 60
             }
           ]
         }
@@ -410,6 +476,17 @@
               "max_score": 50
             }
           ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 60,
+              "max_score": 60
+            }
+          ]
         }
       ],
       "render_type": "glow"
@@ -476,6 +553,17 @@
               "objective": "satsu.iron.man.armor",
               "min_score": 50,
               "max_score": 50
+            }
+          ]
+        },
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:objective_score",
+              "objective": "satsu.iron.man.armor",
+              "min_score": 60,
+              "max_score": 60
             }
           ]
         }
