@@ -166,7 +166,7 @@
           "conditions": [
             {
               "type": "palladium:ability_integer_property",
-              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "power": "satsu_iron_man_addon:marks/mark_30/main",
               "ability": "Mark.30.vibranuim.blades",
               "property": "value",
               "min": 1,
@@ -174,7 +174,7 @@
             },
             {
               "type": "palladium:ability_integer_property",
-              "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+              "power": "satsu_iron_man_addon:marks/mark_33/main",
               "ability": "Mark.33.vibranuim.blades",
               "property": "value",
               "min": 1,

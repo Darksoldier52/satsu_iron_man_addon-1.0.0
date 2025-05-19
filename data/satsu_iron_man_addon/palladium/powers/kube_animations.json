@@ -1861,7 +1861,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_25/main",
                     "ability": "Mark.25.drill.ground",
                     "property": "value",
                     "min": 1,
@@ -1869,7 +1869,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_25/main",
                     "ability": "Mark.25.drill.ground"
                   },
                   {
@@ -1909,7 +1909,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_26/main",
                     "ability": "Mark.26.drill.ground",
                     "property": "value",
                     "min": 1,
@@ -1917,7 +1917,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_26/main",
                     "ability": "Mark.26.drill.ground"
                   },
                   {
@@ -1957,7 +1957,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.drill.ground",
                     "property": "value",
                     "min": 1,
@@ -1965,7 +1965,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.drill.ground"
                   },
                   {
@@ -2021,7 +2021,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_25/main",
                     "ability": "Mark.25.drill.ground",
                     "property": "value",
                     "min": 1,
@@ -2029,7 +2029,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_25/main",
                     "ability": "Mark.25.drill.ground"
                   },
                   {
@@ -2077,7 +2077,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_26/main",
                     "ability": "Mark.26.drill.ground",
                     "property": "value",
                     "min": 1,
@@ -2085,7 +2085,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_26/main",
                     "ability": "Mark.26.drill.ground"
                   },
                   {
@@ -2149,7 +2149,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.drill.ground",
                     "property": "value",
                     "min": 1,
@@ -2157,7 +2157,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.drill.ground"
                   },
                   {
@@ -2221,7 +2221,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_25/main",
                     "ability": "Mark.25.ground.attack",
                     "property": "value",
                     "min": 1,
@@ -2229,7 +2229,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_25/main",
                     "ability": "Mark.25.ground.attack"
                   },
                   {
@@ -2269,7 +2269,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_26/main",
                     "ability": "Mark.26.ground.attack",
                     "property": "value",
                     "min": 1,
@@ -2277,7 +2277,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_26/main",
                     "ability": "Mark.26.ground.attack"
                   },
                   {
@@ -2322,7 +2322,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.ground.attack",
                     "property": "value",
                     "min": 1,
@@ -2330,7 +2330,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.ground.attack"
                   },
                   {
@@ -2386,7 +2386,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_25/main",
                     "ability": "Mark.25.ground.attack",
                     "property": "value",
                     "min": 6,
@@ -2394,7 +2394,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_25/main",
                     "ability": "Mark.25.ground.attack"
                   },
                   {
@@ -2434,7 +2434,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_26/main",
                     "ability": "Mark.26.ground.attack",
                     "property": "value",
                     "min": 6,
@@ -2442,7 +2442,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_26/main",
                     "ability": "Mark.26.ground.attack"
                   },
                   {
@@ -2487,7 +2487,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.ground.attack",
                     "property": "value",
                     "min": 6,
@@ -2495,7 +2495,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.ground.attack"
                   },
                   {
@@ -2551,7 +2551,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.ground.attack",
                     "property": "value",
                     "min": 1,
@@ -2559,7 +2559,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.ground.attack"
                   },
                   {
@@ -2615,7 +2615,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.ground.attack",
                     "property": "value",
                     "min": 6,
@@ -2623,7 +2623,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_29/main",
                     "ability": "Mark.29.ground.attack"
                   },
                   {
@@ -2676,7 +2676,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "power": "satsu_iron_man_addon:marks/mark_1873_nano/main",
                 "ability": "mark.1873.clap_smoke_hands",
                 "property": "value",
                 "min": 1,
@@ -2684,7 +2684,7 @@
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "power": "satsu_iron_man_addon:marks/mark_1873_nano/main",
                 "ability": "mark.1873.clap_smoke_hands"
               }
             ]
@@ -2705,7 +2705,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "power": "satsu_iron_man_addon:marks/mark_1873_nano/main",
                 "ability": "mark.1873.clap_smoke_hands",
                 "property": "value",
                 "min": 16,
@@ -2713,7 +2713,7 @@
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "power": "satsu_iron_man_addon:marks/mark_1873_nano/main",
                 "ability": "mark.1873.clap_smoke_hands"
               }
             ]
@@ -2737,7 +2737,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_30/main",
                     "ability": "Mark.30.vibranuim.blades.attack",
                     "property": "value",
                     "min": 1,
@@ -2745,7 +2745,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_30/main",
                     "ability": "Mark.30.vibranuim.blades.attack"
                   },
                   {
@@ -2785,7 +2785,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_33/main",
                     "ability": "Mark.33.vibranuim.blades.attack",
                     "property": "value",
                     "min": 1,
@@ -2793,7 +2793,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_33/main",
                     "ability": "Mark.33.vibranuim.blades.attack"
                   },
                   {
@@ -2897,7 +2897,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_30/main",
                     "ability": "Mark.30.vibranuim.blades.attack",
                     "property": "value",
                     "min": 6,
@@ -2905,7 +2905,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_30/main",
                     "ability": "Mark.30.vibranuim.blades.attack"
                   },
                   {
@@ -2945,7 +2945,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_33/main",
                     "ability": "Mark.33.vibranuim.blades.attack",
                     "property": "value",
                     "min": 6,
@@ -2953,7 +2953,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_33/main",
                     "ability": "Mark.33.vibranuim.blades.attack"
                   },
                   {
@@ -3167,7 +3167,7 @@
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "power": "satsu_iron_man_addon:marks/mark_37/main",
                 "ability": "mk.37.water_movement"
               }
             ]
@@ -3191,7 +3191,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_38/main",
                     "ability": "mk.38.pick_entity"
                   }
                 ]
@@ -3217,7 +3217,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_38/main",
                     "ability": "mk.38.crush",
                     "property": "value",
                     "min": 0,
@@ -3225,7 +3225,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                    "power": "satsu_iron_man_addon:marks/mark_38/main",
                     "ability": "mk.38.crush"
                   }
                 ]
