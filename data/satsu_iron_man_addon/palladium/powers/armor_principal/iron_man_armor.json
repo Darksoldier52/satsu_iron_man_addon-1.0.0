@@ -2704,6 +2704,10 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "model.prime"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.41"
                   },
                   {
@@ -2887,8 +2891,21 @@
             ]
           },
           {
-            "type": "palladium:has_tag",
-            "tag": "mark.50"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.50"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.unknow.blooded.armor"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "model.prime"
+              }
+            ]
           },
           {
             "type": "palladium:and",
@@ -2932,49 +2949,6 @@
           {
             "type": "palladium:has_tag",
             "tag": "mark.5"
-          },
-          {
-            "type": "palladium:and",
-            "conditions": []
-          }
-        ]
-      }
-    },
-    "armor_activate.animation_timer.blooded": {
-      "type": "palladium:animation_timer",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 0,
-      "start_value": 0,
-      "max_value": 20,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.animation.armor",
-            "min_score": 1,
-            "max_score": 1
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
-              }
-            ]
-          },
-          {
-            "type": "palladium:has_tag",
-            "tag": "mark.unknow.blooded.armor"
           },
           {
             "type": "palladium:and",
