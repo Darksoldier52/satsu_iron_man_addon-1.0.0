@@ -29,6 +29,25 @@
         "enabling": []
       }
     },
+    "mask_sound": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "playsound satsu_iron_man_addon:new_mask_sound ambient @a ~ ~ ~ 1"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "mask_activate"
+          }
+        ],
+        "unlocking": []
+      }
+    },
     "particles.right_hand.left_hand": {
       "type": "palladium:particles",
       "hidden": true,
