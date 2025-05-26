@@ -855,6 +855,79 @@
         ]
       }
     },
+    "increase_chest_beam": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": { "translate": "ability.title.satsu.beams.next" },
+      "description": { "translate": "description.armor_skill_bar" },
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 21,
+      "first_tick_commands": [],
+      "commands": [
+        "scoreboard players set @s satsu.prev.iron.man.anim 0",
+        "execute as @s[scores={satsu.iron.man.armor.energy.beams=0..1}] run scoreboard players add @s satsu.iron.man.armor.energy.beams 1"
+      ],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.energy.beams",
+            "min_score": 0,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "decrease_chest_beam": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
+      "title": { "translate": "ability.title.satsu.beams.prev" },
+      "description": { "translate": "description.armor_skill_bar" },
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 22,
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.prev.iron.man.anim 0"
+      ],
+      "commands": [
+        "scoreboard players set @s satsu.prev.iron.man.anim 0",
+        "execute as @s[scores={satsu.iron.man.armor.energy.beams=1..3}] run scoreboard players remove @s satsu.iron.man.armor.energy.beams 1"
+      ],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.energy.beams",
+            "min_score": 1
+          }
+        ]
+      }
+    },
     "nano_fireworks.back": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/fire_work.png",

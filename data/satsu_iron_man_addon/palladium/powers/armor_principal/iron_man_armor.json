@@ -559,6 +559,14 @@
                           },
                           {
                             "type": "palladium:has_tag",
+                            "tag": "mark.80"
+                          },
+                          {
+                            "type": "palladium:has_tag",
+                            "tag": "mark.85"
+                          },
+                          {
+                            "type": "palladium:has_tag",
                             "tag": "mark.unknow.blooded.armor"
                           },
                           {
@@ -2626,6 +2634,14 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.80"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.85"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.50.superior"
                   },
                   {
@@ -2716,6 +2732,14 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.50"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.80"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.85"
               },
               {
                 "type": "palladium:has_tag",
@@ -2921,6 +2945,14 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.50"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.80"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.85"
                   },
                   {
                     "type": "palladium:has_tag",
@@ -3211,6 +3243,14 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.50"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.80"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.85"
                   },
                   {
                     "type": "palladium:has_tag",
@@ -6247,6 +6287,36 @@
                 "conditions": [
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.80"
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.flight_speed",
+                    "min_score": 65,
+                    "max_score": 194
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.85"
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.flight_speed",
+                    "min_score": 65,
+                    "max_score": 204
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.50.superior"
                   },
                   {
@@ -6376,6 +6446,14 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.50"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.80"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.85"
               },
               {
                 "type": "palladium:has_tag",
@@ -6899,6 +6977,24 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.50"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.80"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.65"
                   }
                 ]
               },
@@ -7661,6 +7757,36 @@
                         "objective": "satsu.iron.man.flight_speed",
                         "min_score": 64,
                         "max_score": 163
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.80"
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.flight_speed",
+                        "min_score": 64,
+                        "max_score": 193
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.85"
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.flight_speed",
+                        "min_score": 64,
+                        "max_score": 203
                       }
                     ]
                   },
@@ -8460,6 +8586,36 @@
                     "conditions": [
                       {
                         "type": "palladium:has_tag",
+                        "tag": "mark.80"
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.flight_speed",
+                        "min_score": 65,
+                        "max_score": 194
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
+                        "tag": "mark.85"
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.flight_speed",
+                        "min_score": 65,
+                        "max_score": 204
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:has_tag",
                         "tag": "mark.50.superior"
                       },
                       {
@@ -8634,6 +8790,14 @@
               },
               {
                 "type": "palladium:has_tag",
+                "tag": "mark.80"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.85"
+              },
+              {
+                "type": "palladium:has_tag",
                 "tag": "mark.50.superior"
               },
               {
@@ -8698,79 +8862,6 @@
                 ]
               }
             ]
-          }
-        ]
-      }
-    },
-    "increase_chest_beam": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "title": { "translate": "ability.title.satsu.beams.next" },
-      "description": { "translate": "description.armor_skill_bar" },
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 21,
-      "first_tick_commands": [],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.anim 0",
-        "execute as @s[scores={satsu.iron.man.armor.energy.beams=0..1}] run scoreboard players add @s satsu.iron.man.armor.energy.beams 1"
-      ],
-      "last_tick_commands": [],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_wheel",
-            "cooldown": 0
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.beams",
-            "min_score": 0,
-            "max_score": 1
-          }
-        ]
-      }
-    },
-    "decrease_chest_beam": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
-      "title": { "translate": "ability.title.satsu.beams.prev" },
-      "description": { "translate": "description.armor_skill_bar" },
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 22,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.prev.iron.man.anim 0"
-      ],
-      "commands": [
-        "scoreboard players set @s satsu.prev.iron.man.anim 0",
-        "execute as @s[scores={satsu.iron.man.armor.energy.beams=1..3}] run scoreboard players remove @s satsu.iron.man.armor.energy.beams 1"
-      ],
-      "last_tick_commands": [],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_wheel",
-            "cooldown": 0
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.beams",
-            "min_score": 1
           }
         ]
       }
@@ -8988,8 +9079,7 @@
             ]
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "force_field": {
@@ -9059,8 +9149,7 @@
             ]
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "nano_katar": {
@@ -9132,8 +9221,7 @@
             ]
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "nano_katar.attack": {
@@ -9205,8 +9293,7 @@
             ]
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "nano_hand_blade": {
@@ -9278,8 +9365,7 @@
             ]
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "nano_rial": {
@@ -9351,8 +9437,7 @@
             ]
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "nano_mallet": {
