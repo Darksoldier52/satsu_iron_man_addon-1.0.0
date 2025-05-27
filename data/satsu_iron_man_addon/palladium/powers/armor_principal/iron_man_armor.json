@@ -10064,6 +10064,83 @@
         ]
       }
     },
+    "nano_energy_boosters": {
+      "type": "palladium:repeating_animation_timer",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/flare_flame.png",
+      "title": { "translate": "ability.title.satsu.flare.flame" },
+      "description": { "translate": "description.satsu.flare.flame" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "gui_position": [-9, -0.5],
+      "list_index": 21,
+      "start_value": 0,
+      "max_value": 20,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/mark_80/main",
+                "ability": "nano_flares_flames"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/mark_85/main",
+                "ability": "nano_flares_flames"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/mark_blooded/main",
+                "ability": "nano_flares_flames"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/mark_extremis/main",
+                "ability": "nano_flares_flames"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/mark_1873_nano/main",
+                "ability": "nano_flares_flames"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/mark_taken/main",
+                "ability": "nano_flares_flames"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/model_50/main",
+                "ability": "nano_flares_flames"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/model_30_iron_destroyer/main",
+                "ability": "nano_flares_flames"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/model_prime/main",
+                "ability": "nano_flares_flames"
+              }
+            ]
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "alien"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "top_left": {
       "type": "palladium:gui_overlay",
       "texture": "#satsu_iron_man_addon:ark_energy",
