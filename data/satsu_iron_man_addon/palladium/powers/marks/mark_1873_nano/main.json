@@ -2494,6 +2494,138 @@
         "unlocking": []
       }
     },
+    "energy_projectile.mk.1873": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 2.5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": 20,
+      "pitchOffset": 25,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 8,
+        "KnockbackStrength": 0,
+        "Damage": 6,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 60,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/blooded_iron_man_pulse",
+        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/blooded_iron_man_pulse",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#c17000"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:animation_timer_ability",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "energy.pulse_right",
+            "min": 5,
+            "max": 5
+          }
+        ]
+      }
+    },
+    "energy_projectile.left.mk.1873": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 2.5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": -20,
+      "pitchOffset": 25,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 8,
+        "KnockbackStrength": 0,
+        "Damage": 6,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 60,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/blooded_iron_man_pulse",
+        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/blooded_iron_man_pulse",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#c17000"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:animation_timer_ability",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "energy.pulse_left",
+            "min": 5,
+            "max": 5
+          }
+        ]
+      }
+    },
+    "energyblast.throw.sound": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "playsound satsu_iron_man_addon:new_blast ambient @a ~ ~ ~ 1 1"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "energy_projectile.mk.1873"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "energy_projectile.left.mk.1873"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "maximun.pulse.break"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "maximun.pulse.not.break"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "nano_grenade_projectile.1873.right.damage.18"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "nano_grenade_projectile.1873.left.damage.18"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "no-list:aim_off_arm": {
       "type": "palladium:aim",
       "hidden": true,
