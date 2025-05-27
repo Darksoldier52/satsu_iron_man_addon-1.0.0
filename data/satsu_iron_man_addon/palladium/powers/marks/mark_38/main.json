@@ -6,6 +6,66 @@
   "icon": "#satsu_iron_man_addon:armor_icon_ability",
   "gui_display_type": "tree",
   "abilities": {
+    "hide_player_remote": {
+      "type": "palladium:hide_body_part",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "body_parts": [
+        "right_arm",
+        "left_arm",
+        "head",
+        "head_overlay",
+        "chest",
+        "chest_overlay",
+        "right_arm_overlay",
+        "left_arm_overlay",
+        "right_leg",
+        "right_leg_overlay",
+        "left_leg",
+        "left_leg_overlay",
+        "cape"
+      ],
+      "affects_first_person": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.38"
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:ability_integer_property",
+                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                        "ability": "interpolate",
+                        "property": "value",
+                        "min": 8,
+                        "max": 17
+                      },
+                      {
+                        "type": "palladium:ability_integer_property",
+                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                        "ability": "no_nanoarmor_anim",
+                        "property": "value",
+                        "min": 8,
+                        "max": 16
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
     "durability.igor": {
       "type": "gravestone:stat_ability",
       "hidden": true,
