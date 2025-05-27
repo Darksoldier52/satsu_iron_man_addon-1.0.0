@@ -592,6 +592,75 @@
         ]
       }
     },
+    "force_field.knockback": {
+      "type": "palladium:attribute_modifier",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/ark_force_field.png",
+      "title": { "translate": "ability.title.satsu.force.field" },
+      "description": { "translate": "description.force_field" },
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": 17,
+      "gui_position": [-8, 3],
+      "attribute": "minecraft:generic.knockback_resistance",
+      "uuid": "e23d2ec9-1558-43b9-a8ff-60b7045ddc92",
+      "amount": 2,
+      "operation": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "force_field.shield.animation_timer",
+            "property": "value",
+            "min": 7,
+            "max": 7
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "force_field.command": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "effect give @s minecraft:resistance infinite 255 true"
+      ],
+      "commands": [""],
+      "last_tick_commands": ["effect clear @s minecraft:resistance"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "force_field.shield.animation_timer",
+            "property": "value",
+            "min": 7,
+            "max": 7
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "force_field.damage_immunity": {
+      "type": "palladium:damage_immunity",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "damage_sources": ["minecraft:is_projectile", "minecraft:is_explosion"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "force_field.shield.animation_timer",
+            "property": "value",
+            "min": 7,
+            "max": 7
+          }
+        ],
+        "unlocking": []
+      }
+    },
     "no-list:aim_off_arm": {
       "type": "palladium:aim",
       "hidden": true,
