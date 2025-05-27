@@ -437,15 +437,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -537,15 +532,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -653,15 +643,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -732,15 +717,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:not",
@@ -816,15 +796,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -906,15 +881,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:not",
@@ -977,15 +947,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:not",
@@ -1070,15 +1035,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:not",
@@ -1130,15 +1090,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:not",
@@ -1189,15 +1144,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:not",
@@ -1249,15 +1199,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:not",
@@ -2737,15 +2682,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -2862,15 +2802,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -3195,15 +3130,10 @@
             "max_score": 1
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:not",
@@ -3268,15 +3198,10 @@
             "max_score": 0
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -3374,15 +3299,10 @@
             "ability": "armor_activate_skil_tree_dummy_close_armor"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -3528,15 +3448,10 @@
             "ability": "armor_activate_skil_tree_dummy_close_armor"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -3730,15 +3645,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -3804,15 +3714,10 @@
             "ability": "armor_activate_skil_tree_dummy_close_armor"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -4677,15 +4582,10 @@
             "ability": "armor_skill_bar"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -4764,15 +4664,10 @@
             "ability": "armor_skill_bar"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -6224,15 +6119,10 @@
             ]
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -6387,15 +6277,10 @@
             "ability": "armor_skill_bar"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:or",
@@ -8835,9 +8720,7 @@
       "icon": "satsu_iron_man_addon:textures/gui/armors/energy_sword.png",
       "title": { "translate": "ability.title.satsu.sword.enable" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "gui_position": [-5, -0.5],
-      "list_index": 21,
+      "hidden_in_bar": true,
       "start_value": 0,
       "max_value": 18,
       "conditions": {
@@ -8907,8 +8790,7 @@
       "title": { "translate": "ability.title.satsu.force.field" },
       "description": { "translate": "description.force_field" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "list_index": 21,
+      "hidden_in_bar": true,
       "gui_position": [-5, -0],
       "conditions": {
         "enabling": [
@@ -8977,8 +8859,7 @@
       "title": { "translate": "ability.title.satsu.throw.blades" },
       "description": { "translate": "description.satsu.throw.blades" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "list_index": 21,
+      "hidden_in_bar": true,
       "gui_position": [-6, -0.5],
       "start_value": 0,
       "max_value": 10,
@@ -9049,8 +8930,7 @@
       "title": { "translate": "ability.title.satsu.throw.blades.attack" },
       "description": { "translate": "description.satsu.throw.blades.attack" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "list_index": 22,
+      "hidden_in_bar": true,
       "gui_position": [16, 3.5],
       "start_value": 0,
       "max_value": 15,
@@ -9121,9 +9001,7 @@
       "title": { "translate": "ability.title.satsu.nano_hand_blade" },
       "description": { "translate": "description.satsu.nano_hand_blade" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "list_index": 21,
-      "gui_position": [-7, -0],
+      "hidden_in_bar": true,
       "start_value": 0,
       "max_value": 10,
       "conditions": {
@@ -9193,9 +9071,7 @@
       "title": { "translate": "ability.title.satsu.nano_rial" },
       "description": { "translate": "description.satsu.nano_rial" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "list_index": 21,
-      "gui_position": [-7, -0.5],
+      "hidden_in_bar": true,
       "start_value": 0,
       "max_value": 8,
       "conditions": {
@@ -9265,8 +9141,7 @@
       "title": { "translate": "ability.title.satsu.nano_mallet" },
       "description": { "translate": "description.satsu.nano_mallet" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "gui_position": [-8, -0],
+      "hidden_in_bar": true,
       "list_index": 21,
       "start_value": 0,
       "max_value": 8,
@@ -9346,8 +9221,7 @@
       "icon": "satsu_iron_man_addon:textures/gui/armors/nano_mallet_smash.png",
       "title": { "translate": "ability.title.satsu.nano_mallet.smash" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "list_index": 22,
+      "hidden_in_bar": true,
       "start_value": 0,
       "max_value": 16,
       "conditions": {
@@ -9427,9 +9301,7 @@
       "title": { "translate": "ability.title.satsu.nano_grenade_launcher" },
       "description": { "translate": "description.satsu.nano_grenade_launcher" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "gui_position": [-8, -0.5],
-      "list_index": 21,
+      "hidden_in_bar": true,
       "start_value": 0,
       "max_value": 8,
       "conditions": {
@@ -9906,9 +9778,7 @@
       "title": { "translate": "ability.title.satsu.fireworks" },
       "description": { "translate": "description.Fireworks" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "list_index": 21,
-      "gui_position": [-9, -0],
+      "hidden_in_bar": true,
       "start_value": 0,
       "max_value": 20,
       "conditions": {
@@ -9988,9 +9858,7 @@
       "title": { "translate": "ability.title.satsu.flare.flame" },
       "description": { "translate": "description.satsu.flare.flame" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "gui_position": [-9, -0.5],
-      "list_index": 21,
+      "hidden_in_bar": true,
       "start_value": 0,
       "max_value": 20,
       "conditions": {
@@ -10070,9 +9938,7 @@
       "title": { "translate": "ability.title.satsu.flare.flame" },
       "description": { "translate": "description.satsu.flare.flame" },
       "hidden": true,
-      "hidden_in_bar": false,
-      "gui_position": [-9, -0.5],
-      "list_index": 21,
+      "hidden_in_bar": true,
       "start_value": 0,
       "max_value": 20,
       "conditions": {
@@ -10197,15 +10063,10 @@
             "ability": "armor_skill_bar"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
