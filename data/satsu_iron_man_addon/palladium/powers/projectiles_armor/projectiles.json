@@ -20,11 +20,6 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "mini.gun.left"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "maximun.pulse.animation"
               },
               {
@@ -58,11 +53,6 @@
           {
             "type": "palladium:or",
             "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "mini.gun.right"
-              },
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -448,128 +438,6 @@
         ]
       }
     },
-    "mini_gunprojectile": {
-      "type": "gravestone:projectile",
-      "hidden": true,
-      "hidden_in_bar": false,
-      "entity_type": "palladium:custom_projectile",
-      "velocity": 3,
-      "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
-      "yawOffset": 50,
-      "pitchOffset": 55,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 10,
-      "count": 2,
-      "entity_data": {
-        "SetEntityOnFireSeconds": 0,
-        "KnockbackStrength": 0,
-        "Damage": 4,
-        "Size": 0.1,
-        "Gravity": 0.0,
-        "Lifetime": 70,
-        "DieOnEntityHit": true,
-        "DieOnBlockHit": true,
-        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
-        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
-        "Appearances": [
-          {
-            "Type": "renderLayer",
-            "RenderLayer": "satsu_iron_man_addon:bullet"
-          }
-        ]
-      },
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:animation_timer_ability",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "mini.gun.right",
-            "min": 10,
-            "max": 10
-          },
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.13"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.18"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.22"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "mini_gunprojectile.left": {
-      "type": "gravestone:projectile",
-      "hidden": true,
-      "hidden_in_bar": false,
-      "entity_type": "palladium:custom_projectile",
-      "velocity": 3,
-      "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
-      "yawOffset": -50,
-      "pitchOffset": 55,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 10,
-      "count": 2,
-      "entity_data": {
-        "SetEntityOnFireSeconds": 0,
-        "KnockbackStrength": 0,
-        "Damage": 4,
-        "Size": 0.1,
-        "Gravity": 0.0,
-        "Lifetime": 70,
-        "DieOnEntityHit": true,
-        "DieOnBlockHit": true,
-        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
-        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
-        "Appearances": [
-          {
-            "Type": "renderLayer",
-            "RenderLayer": "satsu_iron_man_addon:bullet"
-          }
-        ]
-      },
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:animation_timer_ability",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "mini.gun.left",
-            "min": 10,
-            "max": 10
-          },
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.13"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.18"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.22"
-              }
-            ]
-          }
-        ]
-      }
-    },
     "maximun.pulse.not.break": {
       "type": "palladium:projectile",
       "hidden": true,
@@ -717,49 +585,6 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "nano_grenade_projectile.1873.left.damage.18"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "minigun.throw.sound": {
-      "type": "palladium:play_sound",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "sound": "satsu_iron_man_addon:minigun",
-      "volume": 1,
-      "pitch": 1,
-      "looping": true,
-      "play_self": false,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:animation_timer_ability",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "mini.gun.right",
-                "min": 1,
-                "max": 10
-              },
-              {
-                "type": "palladium:animation_timer_ability",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "mini.gun.left",
-                "min": 1,
-                "max": 10
-              }
-            ]
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "nano_rial"
               }
             ]
           }

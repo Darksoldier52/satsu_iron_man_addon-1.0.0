@@ -10186,22 +10186,6 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "mini.gun.left",
-                "property": "value",
-                "min": 1,
-                "max": 5
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "mini.gun.right",
-                "property": "value",
-                "min": 1,
-                "max": 5
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "maximun.pulse.animation",
                 "property": "value",
                 "min": 1,
@@ -10218,14 +10202,6 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "mini_fireworks",
-                "property": "value",
-                "min": 1,
-                "max": 5
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "nano_fireworks",
                 "property": "value",
                 "min": 1,
@@ -10235,14 +10211,6 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "mk.1.rocket",
-                "property": "value",
-                "min": 1,
-                "max": 5
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "flares_flames",
                 "property": "value",
                 "min": 1,
                 "max": 5
