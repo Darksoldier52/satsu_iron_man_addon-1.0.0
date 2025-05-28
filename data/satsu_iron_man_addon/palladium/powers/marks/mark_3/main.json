@@ -436,12 +436,10 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "energy_projectile"
               },
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:projectiles_armor/projectiles",
                 "ability": "energy_projectile.left"
               }
             ]
