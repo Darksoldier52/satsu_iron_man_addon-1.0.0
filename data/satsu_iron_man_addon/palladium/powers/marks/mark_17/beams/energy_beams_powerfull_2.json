@@ -23,7 +23,7 @@
         "enabling": [
           {
             "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:marks/mark_17/main",
             "ability": "energy_beam"
           }
         ],
