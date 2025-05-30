@@ -1528,7 +1528,7 @@
       "icon": "satsu_iron_man_addon:textures/gui/armors/ark_beam_0.png",
       "title": { "translate": "ability.title.satsu.energy_beam" },
       "description": { "translate": "description.energy_beam" },
-      "hidden": false,
+      "hidden": true,
       "hidden_in_bar": false,
       "list_index": 2,
       "gui_position": [4.3, -1],
@@ -1800,25 +1800,12 @@
             "max_score": 1
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "interpolate",
-                "property": "value",
-                "min": 17,
-                "max": 17
-              },
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "no_nanoarmor_anim",
-                "property": "value",
-                "min": 15,
-                "max": 16
-              }
-            ]
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "no_nanoarmor_anim",
+            "property": "value",
+            "min": 15,
+            "max": 16
           }
         ]
       }
@@ -2096,7 +2083,7 @@
       "icon": "#satsu_iron_man_addon:ark_beam_hand",
       "title": { "translate": "ability.title.satsu.ark.beam.for.hands" },
       "description": { "translate": "description.satsu.ark.beam.for.hands" },
-      "hidden": false,
+      "hidden": true,
       "hidden_in_bar": false,
       "list_index": 4,
       "gui_position": [5, -1],
@@ -2168,15 +2155,6 @@
             ]
           },
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.1"
-              }
-            ]
-          },
-          {
             "type": "palladium:and",
             "conditions": [
               {
@@ -2212,31 +2190,6 @@
                 ]
               }
             ]
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.1"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.2"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.3"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.4"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.5"
-              }
-            ]
           }
         ]
       }
@@ -2246,7 +2199,7 @@
       "icon": "satsu_iron_man_addon:textures/gui/armors/5fly.png",
       "title": { "translate": "ability.title.satsu.flight.edit" },
       "description": { "translate": "description.satsu.flight.edit" },
-      "hidden": false,
+      "hidden": true,
       "hidden_in_bar": false,
       "gui_position": [-3, 0.5],
       "commands": [
