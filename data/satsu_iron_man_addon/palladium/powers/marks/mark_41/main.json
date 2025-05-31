@@ -442,18 +442,17 @@
       }
     },
     "armor_toughness": {
-      "type": "gravestone:stat_ability",
+      "type": "palladium:attribute_modifier",
       "icon": "minecraft:iron_chestplate",
       "title": { "translate": "ability.title.satsu.durability" },
       "description": { "translate": "description.satsu.durability" },
       "hidden": true,
       "hidden_in_bar": true,
       "gui_position": [3.5, -1],
-      "score_value": "satsu.iron.man.durability",
-      "Division_Amount": "1",
-      "Attribute_Type": "minecraft:generic.armor_toughness",
-      "UUID": "b719de99-9744-4cd1-83ca-ed123bb07291",
-      "Attribute_Mod": "addition",
+      "attribute": "minecraft:generic.armor_toughness",
+      "uuid": "b719de99-9744-4cd1-83ca-ed123bb07291",
+      "amount": 20,
+      "operation": 0,
       "conditions": {
         "enabling": [
           {
@@ -771,7 +770,6 @@
         "tag @s add mark.41",
         "scoreboard players set @s satsu.iron.man.armor 51",
         "scoreboard players set @s satsu.iron.man.flame 0",
-        "scoreboard players set @s satsu.iron.man.durability 30",
         "scoreboard players set @s satsu.iron.man.flight_speed 65",
         "scoreboard players set @s satsu.iron.man.strength 25",
         "scoreboard players set @s satsu.iron.man.pickaxe.velocity 89",
