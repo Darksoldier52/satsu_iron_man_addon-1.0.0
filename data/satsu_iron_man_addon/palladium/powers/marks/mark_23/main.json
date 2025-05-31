@@ -523,18 +523,17 @@
       }
     },
     "strength": {
-      "type": "gravestone:stat_ability",
+      "type": "palladium:attribute_modifier",
       "icon": "satsu_iron_man_addon:textures/gui/armors/strength.png",
       "title": { "translate": "ability.title.satsu.strength" },
       "description": { "translate": "description.satsu.strength" },
       "hidden": true,
       "hidden_in_bar": true,
       "gui_position": [3.5, 0.5],
-      "score_value": "satsu.iron.man.strength",
-      "Division_Amount": "2",
-      "Attribute_Type": "minecraft:generic.attack_damage",
-      "UUID": "f780d74f-5bab-432d-b60d-0748e5788bd8",
-      "Attribute_Mod": "addition",
+      "attribute": "minecraft:generic.attack_damage",
+      "uuid": "f780d74f-5bab-432d-b60d-0748e5788bd8",
+      "amount": 6,
+      "operation": 0,
       "conditions": {
         "enabling": [
           {
@@ -771,7 +770,6 @@
         "scoreboard players set @s satsu.iron.man.armor 36",
         "scoreboard players set @s satsu.iron.man.flame 0",
         "scoreboard players set @s satsu.iron.man.flight_speed 63",
-        "scoreboard players set @s satsu.iron.man.strength 12",
         "scoreboard players set @s satsu.iron.man.pickaxe.velocity 59",
         "execute as @s[scores={satsu.iron.man.animation.armor=0}] run function satsu_iron_man_addon:sentinels/spawn_false_sentinel"
       ],
