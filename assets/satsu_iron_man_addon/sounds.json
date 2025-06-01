@@ -43,5 +43,10 @@
     "category": "player",
     "sounds": ["satsu_iron_man_addon:fly_sound"],
     "subtitle": "fly_sound"
+  },
+  "mark_1_fire": {
+    "category": "player",
+    "sounds": ["satsu_iron_man_addon:mark_1_fire"],
+    "subtitle": "mark_1_fire"
   }
 }
