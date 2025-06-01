@@ -72,9 +72,9 @@ scoreboard objectives remove satsu.iron.man.failsafe.set
 scoreboard objectives add satsu.iron.man.armor.set dummy
 scoreboard objectives add satsu.iron.man.personalize.things dummy
 scoreboard objectives add satsu.iron.man.flame dummy
-scoreboard objectives add satsu.iron.man.strength dummy
+scoreboard objectives remove satsu.iron.man.strength
 scoreboard objectives remove satsu.iron.man.strength.health
-scoreboard objectives add satsu.iron.man.durability dummy
+scoreboard objectives remove satsu.iron.man.durability
 scoreboard objectives add satsu.iron.man.pickaxe.velocity dummy
 scoreboard objectives add satsu.prev.iron.man.armor dummy
 scoreboard objectives add satsu.prev.iron.man.armor.anim dummy

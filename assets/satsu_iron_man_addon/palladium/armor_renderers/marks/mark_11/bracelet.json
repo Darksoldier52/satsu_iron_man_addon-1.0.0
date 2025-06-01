@@ -3,6 +3,7 @@
   "model_layers": "satsu_iron_man_addon:player",
   "render_layers": [
     "satsu_iron_man_addon:armor_things/armor_no_nano_armor",
+    "satsu_iron_man_addon:armor_things/stealht/main",
     "satsu_iron_man_addon:armor_things/armor_no_nano_armor_mask"
   ]
 }
