@@ -5245,12 +5245,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_1873_nano/beams/beam",
+        "superpower add satsu_iron_man_addon:marks/mark_1873_nano/beams/chest/beam",
         "execute as @s[scores={satsu.iron.man.armor.energy.beams=1..}] run superpower add satsu_iron_man_addon:marks/mark_1873_nano/beams/chest/energy_beams_nano"
       ],
       "commands": [""],
       "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_1873_nano/beams/beam",
+        "superpower remove satsu_iron_man_addon:marks/mark_1873_nano/beams/chest/beam",
         "execute as @s[scores={satsu.iron.man.armor.energy.beams=0..}] run superpower remove satsu_iron_man_addon:marks/mark_1873_nano/beams/chest/energy_beams_nano"
       ],
       "conditions": {
