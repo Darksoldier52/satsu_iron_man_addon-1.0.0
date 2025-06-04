@@ -1624,11 +1624,6 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "energy.pulse_left"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_3/main",
-                "ability": "flares_flames"
               }
             ]
           }
@@ -1650,30 +1645,6 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "energy.pulse_right"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_3/main",
-                "ability": "flares_flames"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "no-list:show_both_arms": {
-      "type": "palladium:show_both_arms",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_3/main",
-                "ability": "flares_flames"
               }
             ]
           }
@@ -1685,7 +1656,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
-      "velocity": 3,
+      "velocity": 0.5,
       "swinging_arm": "none",
       "yawOverride": -999,
       "pitchOverride": -999,
@@ -1698,7 +1669,7 @@
         "KnockbackStrength": 0,
         "Damage": 0,
         "Size": 0.1,
-        "Gravity": 0.3,
+        "Gravity": 1,
         "Lifetime": 60,
         "DieOnEntityHit": true,
         "DieOnBlockHit": true,
@@ -1732,7 +1703,7 @@
                     "type": "palladium:ability_integer_property",
                     "ability": "flares_flames",
                     "property": "value",
-                    "min": 19,
+                    "min": 12,
                     "max": 19
                   }
                 ]
@@ -1747,7 +1718,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
-      "velocity": 3,
+      "velocity": 0.5,
       "swinging_arm": "none",
       "yawOverride": -999,
       "pitchOverride": -999,
@@ -1760,7 +1731,7 @@
         "KnockbackStrength": 0,
         "Damage": 0,
         "Size": 0.1,
-        "Gravity": 0.3,
+        "Gravity": 1,
         "Lifetime": 60,
         "DieOnEntityHit": true,
         "DieOnBlockHit": true,
@@ -1794,7 +1765,7 @@
                     "type": "palladium:ability_integer_property",
                     "ability": "flares_flames",
                     "property": "value",
-                    "min": 19,
+                    "min": 12,
                     "max": 19
                   }
                 ]
@@ -1940,11 +1911,11 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_3/beams/beam"
+        "superpower add satsu_iron_man_addon:marks/mark_3/beams/chest/beam"
       ],
       "commands": [""],
       "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_3/beams/beam"
+        "superpower remove satsu_iron_man_addon:marks/mark_3/beams/chest/beam"
       ],
       "conditions": {
         "enabling": [

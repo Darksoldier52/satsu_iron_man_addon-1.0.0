@@ -3420,11 +3420,11 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_19/beams/beam"
+        "superpower add satsu_iron_man_addon:marks/mark_19/beams/chest/beam"
       ],
       "commands": [""],
       "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_19/beams/beam"
+        "superpower remove satsu_iron_man_addon:marks/mark_19/beams/chest/beam"
       ],
       "conditions": {
         "enabling": [

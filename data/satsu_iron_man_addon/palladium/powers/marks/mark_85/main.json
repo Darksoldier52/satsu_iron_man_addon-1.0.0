@@ -2603,6 +2603,7 @@
         "waepons.choose_wheel.nano_katar",
         "waepons.choose_wheel.nano_hand_blade",
         "waepons.choose_wheel.force_field",
+        "waepons.choose_wheel_nano_energy_boosters",
         "waepons.choose_wheel.cook_ark"
       ],
       "conditions": {
@@ -2965,6 +2966,32 @@
       "hidden_in_bar": false,
       "first_tick_commands": [
         "scoreboard players set @s satsu.iron.man.addon.nano.armor.things 12"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose"
+          }
+        ]
+      }
+    },
+    "waepons.choose_wheel_nano_energy_boosters": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/energy_boosters.png",
+      "title": { "translate": "ability.title.satsu.energy.boosters" },
+      "description": { "translate": "description.satsu.energy.boosters" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.addon.nano.armor.things 13"
       ],
       "commands": [""],
       "conditions": {
@@ -4248,7 +4275,7 @@
     },
     "nano_energy_boosters": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/energy_boosters.png",
       "title": { "translate": "ability.title.satsu.energy.boosters" },
       "description": { "translate": "description.satsu.energy.boosters" },
       "hidden": true,
@@ -4303,6 +4330,28 @@
       "last_tick_commands": [
         "superpower remove satsu_iron_man_addon:marks/mark_85/beams/energy_boosters/beam @s"
       ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "nano_energy_boosters",
+            "property": "value",
+            "min": 20,
+            "max": 20
+          }
+        ]
+      }
+    },
+    "energy_boosters.chest.remove.ark.energy": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 20"
+      ],
+      "last_tick_commands": [""],
       "conditions": {
         "enabling": [
           {
@@ -5139,23 +5188,6 @@
         ]
       }
     },
-    "remove_ark_energy.blades": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "commands": [
-        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 1"
-      ],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "nano_katar"
-          }
-        ]
-      }
-    },
     "remove_ark_energy.nano_sword": {
       "type": "palladium:command",
       "hidden": true,
@@ -5200,7 +5232,7 @@
         ]
       }
     },
-    "remove_ark_energy.nano_mallet": {
+    "remove_ark_energy.nano_mallet.blades": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -5216,6 +5248,11 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "nano_mallet"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "nano_katar"
               }
             ]
           }
@@ -5261,12 +5298,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_85/beams/beam",
+        "superpower add satsu_iron_man_addon:marks/mark_85/beams/chest/beam",
         "execute as @s[scores={satsu.iron.man.armor.energy.beams=1..}] run superpower add satsu_iron_man_addon:marks/mark_85/beams/chest/energy_beams_nano"
       ],
       "commands": [""],
       "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_85/beams/beam",
+        "superpower remove satsu_iron_man_addon:marks/mark_85/beams/chest/beam",
         "execute as @s[scores={satsu.iron.man.armor.energy.beams=0..}] run superpower remove satsu_iron_man_addon:marks/mark_85/beams/chest/energy_beams_nano"
       ],
       "conditions": {
