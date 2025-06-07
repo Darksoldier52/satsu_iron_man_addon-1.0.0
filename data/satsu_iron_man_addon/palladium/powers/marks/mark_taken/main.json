@@ -4198,6 +4198,21 @@
         ]
       }
     },
+    "damage_taken.animation": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value":0,
+      "max_value":10,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "damage_taken"
+          }
+        ]
+      }
+    },
     "tool_hands": {
       "type": "palladium:tool_hands",
       "hidden": true,
