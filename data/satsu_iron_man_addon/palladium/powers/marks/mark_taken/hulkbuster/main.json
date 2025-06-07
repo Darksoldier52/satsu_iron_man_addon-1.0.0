@@ -352,15 +352,14 @@
         ]
       }
     },
-    "taken_increase": {
-      "type": "palladium:command",
+    "taken_projectile": {
+      "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
       "title": { "translate": "ability.title.satsu.flare.flame" },
       "description": { "translate": "description.satsu.flare.flame" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 0,
-      "commands":["say hola"],
       "conditions": {
         "enabling": [
           {

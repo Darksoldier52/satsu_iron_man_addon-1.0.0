@@ -1267,6 +1267,27 @@
             "objective": "satsu.iron.man.armor.actived",
             "min_score": 1,
             "max_score": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.mask",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/mark_taken/main",
+                    "ability": "taken_increase"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -4258,6 +4279,7 @@
       "hidden_in_bar": true,
       "scale": 1.35,
       "first_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.mask 1",
         "superpower add satsu_iron_man_addon:marks/mark_taken/hulkbuster/main"
       ],
       "commands": [""],
