@@ -4215,7 +4215,7 @@
       "list_index": 14,
       "gui_position": [11.5, 3.5],
       "start_value": 0,
-      "max_value": 32,
+      "max_value": 6,
       "conditions": {
         "enabling": [
           {
@@ -4301,8 +4301,8 @@
           {
             "type": "palladium:ability_integer_property",
             "ability": "mark.1873.clap_smoke_hands",
-            "min": 32,
-            "max": 32
+            "min": 4,
+            "max": 4
           }
         ],
         "unlocking": [
