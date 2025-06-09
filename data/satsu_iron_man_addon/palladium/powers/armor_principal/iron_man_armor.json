@@ -2921,6 +2921,21 @@
                     "max_score": 174
                   }
                 ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.taken"
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.flight_speed",
+                    "min_score": 64,
+                    "max_score": 207
+                  }
+                ]
               }
             ]
           },
@@ -2993,6 +3008,10 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "model.prime"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.taken"
               }
             ]
           },
