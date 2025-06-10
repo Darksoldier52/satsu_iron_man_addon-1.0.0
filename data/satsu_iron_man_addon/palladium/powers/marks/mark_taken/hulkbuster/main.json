@@ -461,21 +461,44 @@
       }
     },
     "taken_projectile": {
-      "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
-      "title": { "translate": "ability.title.satsu.flare.flame" },
-      "description": { "translate": "description.satsu.flare.flame" },
+      "type": "gravestone:projectile",
       "hidden": true,
       "hidden_in_bar": true,
-      "list_index": 0,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 2.5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": 0,
+      "pitchOffset": 10,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 0,
+        "KnockbackStrength": 2,
+        "Damage": 2,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 60,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "",
+        "CommandOnBlockHit": "",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#586363"
+          }
+        ]
+      },
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:toggle",
-            "ticks": 20,
-            "cooldown": 0,
-            "key_type": "key_bind",
-            "needs_empty_hand": false
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:marks/mark_taken/main",
+            "ability": "taken_increase_projectil"
           }
         ],
         "unlocking": [
