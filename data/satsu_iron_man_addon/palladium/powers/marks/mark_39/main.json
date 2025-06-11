@@ -38,31 +38,9 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:or",
@@ -308,31 +286,9 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:or",
@@ -703,14 +659,9 @@
                 "max_height": 1010
               },
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1
-                  }
-                ]
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1
               }
             ]
           }
@@ -746,14 +697,9 @@
                 "max_height": 1010
               },
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1
-                  }
-                ]
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1
               }
             ]
           }
@@ -779,14 +725,9 @@
                 "mod_id": "ad_astra"
               },
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1
-                  }
-                ]
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1
               },
               {
                 "type": "palladium:objective_score",
@@ -1249,31 +1190,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:has_tag",
@@ -1347,31 +1266,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1547,31 +1444,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:crouching"
@@ -1710,31 +1585,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1775,31 +1628,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:and",
@@ -1899,31 +1730,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:and",
@@ -2188,31 +1997,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:or",
@@ -2334,31 +2121,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:ability_unlocked",
@@ -2435,31 +2200,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:and",
@@ -2533,31 +2276,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:and",
@@ -2887,31 +2608,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:objective_score",
@@ -2971,31 +2670,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:ability_unlocked",
@@ -3042,31 +2719,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:ability_unlocked",
@@ -3115,31 +2770,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:and",
@@ -3204,31 +2837,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": 0,
-                        "max_score": 1
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.ark.energy",
-                        "min_score": -10000,
-                        "max_score": 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
           },
           {
             "type": "palladium:and",
