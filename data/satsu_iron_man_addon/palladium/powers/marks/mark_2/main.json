@@ -2006,6 +2006,24 @@
         ]
       }
     },
+    "no-list:show_both_arms": {
+      "type": "palladium:show_both_arms",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "energy.pulse_left"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "commands_energy_beams": {
       "type": "palladium:command",
       "hidden": true,
