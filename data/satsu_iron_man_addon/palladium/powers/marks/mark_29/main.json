@@ -1376,12 +1376,12 @@
                   {
                     "type": "palladium:ability_enabled",
                     "power": "satsu_iron_man_addon:marks/mark_29/main",
-                    "ability": "Mark.29.drill.ground"
+                    "ability": "drill.ground"
                   },
                   {
                     "type": "palladium:ability_enabled",
                     "power": "satsu_iron_man_addon:marks/mark_29/main",
-                    "ability": "Mark.29.ground.attack"
+                    "ability": "ground.attack"
                   }
                 ]
               }
@@ -1510,12 +1510,12 @@
                   {
                     "type": "palladium:ability_enabled",
                     "power": "satsu_iron_man_addon:marks/mark_29/main",
-                    "ability": "Mark.29.drill.ground"
+                    "ability": "drill.ground"
                   },
                   {
                     "type": "palladium:ability_enabled",
                     "power": "satsu_iron_man_addon:marks/mark_29/main",
-                    "ability": "Mark.29.ground.attack"
+                    "ability": "ground.attack"
                   }
                 ]
               }
@@ -1812,12 +1812,12 @@
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:marks/mark_29/main",
-                        "ability": "Mark.29.drill.ground"
+                        "ability": "drill.ground"
                       },
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:marks/mark_29/main",
-                        "ability": "Mark.29.ground.attack"
+                        "ability": "ground.attack"
                       }
                     ]
                   }
@@ -1969,12 +1969,12 @@
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:marks/mark_29/main",
-                        "ability": "Mark.29.drill.ground"
+                        "ability": "drill.ground"
                       },
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:marks/mark_29/main",
-                        "ability": "Mark.29.ground.attack"
+                        "ability": "ground.attack"
                       }
                     ]
                   }
@@ -2510,12 +2510,12 @@
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:marks/mark_29/main",
-                        "ability": "Mark.29.drill.ground"
+                        "ability": "drill.ground"
                       },
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:marks/mark_29/main",
-                        "ability": "Mark.29.ground.attack"
+                        "ability": "ground.attack"
                       }
                     ]
                   }
@@ -2637,12 +2637,12 @@
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:marks/mark_29/main",
-                        "ability": "Mark.29.drill.ground"
+                        "ability": "drill.ground"
                       },
                       {
                         "type": "palladium:ability_enabled",
                         "power": "satsu_iron_man_addon:marks/mark_29/main",
-                        "ability": "Mark.29.ground.attack"
+                        "ability": "ground.attack"
                       }
                     ]
                   }
@@ -3201,11 +3201,11 @@
                     "conditions": [
                       {
                         "type": "palladium:ability_enabled",
-                        "ability": "Mark.29.drill.ground"
+                        "ability": "drill.ground"
                       },
                       {
                         "type": "palladium:ability_enabled",
-                        "ability": "Mark.29.ground.attack"
+                        "ability": "ground.attack"
                       },
                       {
                         "type": "palladium:ability_enabled",
@@ -3297,11 +3297,11 @@
                     "conditions": [
                       {
                         "type": "palladium:ability_enabled",
-                        "ability": "Mark.29.drill.ground"
+                        "ability": "drill.ground"
                       },
                       {
                         "type": "palladium:ability_enabled",
-                        "ability": "Mark.29.ground.attack"
+                        "ability": "ground.attack"
                       },
                       {
                         "type": "palladium:ability_enabled",
@@ -3353,11 +3353,11 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "Mark.29.drill.ground"
+                    "ability": "drill.ground"
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "Mark.29.ground.attack"
+                    "ability": "ground.attack"
                   },
                   {
                     "type": "palladium:ability_enabled",
@@ -3704,7 +3704,7 @@
         ]
       }
     },
-    "Mark.29.drill.ground": {
+    "drill.ground": {
       "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/gui/armors/striker_hammer_red.png",
       "title": { "translate": "ability.title.satsu.dril.ground" },
@@ -3785,7 +3785,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "Mark.29.ground.attack"
+                    "ability": "ground.attack"
                   }
                 ]
               }
@@ -3794,7 +3794,7 @@
         ]
       }
     },
-    "Mark.29.ground.attack": {
+    "ground.attack": {
       "type": "palladium:animation_timer",
       "icon": "satsu_iron_man_addon:textures/gui/armors/striker_hammer_red_attack.png",
       "title": { "translate": "ability.title.satsu.ground.attack" },
@@ -3875,7 +3875,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "Mark.29.drill.ground"
+                    "ability": "drill.ground"
                   }
                 ]
               }
@@ -3898,7 +3898,7 @@
               {
                 "type": "palladium:ability_integer_property",
                 "power": "satsu_iron_man_addon:marks/mark_29/main",
-                "ability": "Mark.29.drill.ground",
+                "ability": "drill.ground",
                 "property": "value",
                 "min": 1,
                 "max": 32
@@ -3906,7 +3906,7 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:marks/mark_29/main",
-                "ability": "Mark.29.drill.ground"
+                "ability": "drill.ground"
               },
               {
                 "type": "palladium:not",
@@ -3957,7 +3957,7 @@
               {
                 "type": "palladium:ability_integer_property",
                 "power": "satsu_iron_man_addon:marks/mark_29/main",
-                "ability": "Mark.29.drill.ground",
+                "ability": "drill.ground",
                 "property": "value",
                 "min": 1,
                 "max": 32
@@ -3965,7 +3965,7 @@
               {
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:marks/mark_29/main",
-                "ability": "Mark.29.drill.ground"
+                "ability": "drill.ground"
               },
               {
                 "type": "palladium:and",
@@ -4010,7 +4010,7 @@
         ]
       }
     },
-    "Mark.25-26-29.drill.ground.command": {
+    "drill.ground.command": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -4032,7 +4032,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "Mark.29.drill.ground"
+                "ability": "drill.ground"
               }
             ]
           }
@@ -4040,7 +4040,7 @@
         "unlocking": []
       }
     },
-    "Mark.25-26-29.drill.ground.aoe_damage": {
+    "drill.ground.aoe_damage": {
       "type": "gravestone:aoe_damage",
       "hidden": true,
       "hidden_in_bar": true,
@@ -4055,7 +4055,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "Mark.29.drill.ground"
+                "ability": "drill.ground"
               }
             ]
           }
@@ -4063,7 +4063,7 @@
         "unlocking": []
       }
     },
-    "Mark.25-26-29.drill.ground.play_sound": {
+    "drill.ground.play_sound": {
       "type": "palladium:play_sound",
       "hidden": true,
       "hidden_in_bar": true,
@@ -4079,7 +4079,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "Mark.29.drill.ground"
+                "ability": "drill.ground"
               }
             ]
           }
@@ -4104,7 +4104,7 @@
                   {
                     "type": "palladium:ability_integer_property",
                     "power": "satsu_iron_man_addon:marks/mark_29/main",
-                    "ability": "Mark.29.ground.attack",
+                    "ability": "ground.attack",
                     "property": "value",
                     "min": 1,
                     "max": 6
@@ -4112,7 +4112,7 @@
                   {
                     "type": "palladium:ability_enabled",
                     "power": "satsu_iron_man_addon:marks/mark_29/main",
-                    "ability": "Mark.29.ground.attack"
+                    "ability": "ground.attack"
                   },
                   {
                     "type": "palladium:not",
@@ -4168,7 +4168,7 @@
                   {
                     "type": "palladium:ability_integer_property",
                     "power": "satsu_iron_man_addon:marks/mark_29/main",
-                    "ability": "Mark.29.ground.attack",
+                    "ability": "ground.attack",
                     "property": "value",
                     "min": 6,
                     "max": 12
@@ -4176,7 +4176,7 @@
                   {
                     "type": "palladium:ability_enabled",
                     "power": "satsu_iron_man_addon:marks/mark_29/main",
-                    "ability": "Mark.29.ground.attack"
+                    "ability": "ground.attack"
                   },
                   {
                     "type": "palladium:not",
@@ -4215,7 +4215,7 @@
         ]
       }
     },
-    "Mark.25-26-29.ground.attack.command": {
+    "ground.attack.command": {
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
@@ -4242,14 +4242,14 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "ability": "Mark.29.ground.attack",
+                    "ability": "ground.attack",
                     "property": "value",
                     "min": 12,
                     "max": 12
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "Mark.29.ground.attack"
+                    "ability": "ground.attack"
                   }
                 ]
               }
@@ -4259,7 +4259,7 @@
         "unlocking": []
       }
     },
-    "Mark.25-26-29.ground.attack.aoe_knockback": {
+    "ground.attack.aoe_knockback": {
       "type": "gravestone:aoe_knockback",
       "hidden": true,
       "hidden_in_bar": true,
@@ -4276,14 +4276,14 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "ability": "Mark.29.ground.attack",
+                    "ability": "ground.attack",
                     "property": "value",
                     "min": 12,
                     "max": 12
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "Mark.29.ground.attack"
+                    "ability": "ground.attack"
                   }
                 ]
               }
@@ -4293,7 +4293,7 @@
         "unlocking": []
       }
     },
-    "Mark.25-26-29.ground.attack.aoe_damage": {
+    "ground.attack.aoe_damage": {
       "type": "gravestone:aoe_damage",
       "hidden": true,
       "hidden_in_bar": true,
@@ -4310,14 +4310,14 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "ability": "Mark.29.ground.attack",
+                    "ability": "ground.attack",
                     "property": "value",
                     "min": 12,
                     "max": 12
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "Mark.29.ground.attack"
+                    "ability": "ground.attack"
                   }
                 ]
               }
@@ -4964,14 +4964,14 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "ability": "Mark.29.drill.ground",
+                    "ability": "drill.ground",
                     "property": "value",
                     "min": 1,
                     "max": 32
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "Mark.29.drill.ground"
+                    "ability": "drill.ground"
                   }
                 ]
               }
