@@ -1661,7 +1661,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_sword"
                   }
                 ]
@@ -1671,7 +1670,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_mallet"
                   }
                 ]
@@ -1681,7 +1679,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_grenade_launcher"
                   }
                 ]
@@ -1794,7 +1791,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_sword"
                   }
                 ]
@@ -1804,7 +1800,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_mallet"
                   }
                 ]
@@ -1814,7 +1809,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_grenade_launcher"
                   }
                 ]
@@ -1963,7 +1957,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_sword"
                   }
                 ]
@@ -2046,7 +2039,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_sword"
                   }
                 ]
@@ -2358,7 +2350,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_sword"
                   }
                 ]
@@ -2451,7 +2442,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_sword"
                   }
                 ]
@@ -4645,7 +4635,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_mallet"
                   }
                 ]
@@ -4752,7 +4741,6 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                     "ability": "nano_mallet"
                   }
                 ]
@@ -5268,39 +5256,6 @@
             "ability": "nano_grenade_launcher_right",
             "min": 5,
             "max": 5
-          },
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.30.iron.destroyer"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.47"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.50"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.85"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.50.superior"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.extremis"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "model.prime"
-              }
-            ]
           }
         ]
       }
@@ -5345,39 +5300,6 @@
             "ability": "nano_grenade_launcher_left",
             "min": 5,
             "max": 5
-          },
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.30.iron.destroyer"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.47"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.50"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.85"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.50.superior"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.extremis"
-              },
-              {
-                "type": "palladium:has_tag",
-                "tag": "model.prime"
-              }
-            ]
           }
         ]
       }
