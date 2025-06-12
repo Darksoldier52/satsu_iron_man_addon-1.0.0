@@ -15,7 +15,7 @@
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:marks/mark_85/main",
             "ability": "mask_animation_timer",
             "property": "value"
           },
@@ -50,7 +50,7 @@
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:marks/mark_85/main",
             "ability": "mask_animation_timer",
             "property": "value"
           },
@@ -95,7 +95,7 @@
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:marks/mark_85/main",
             "ability": "mask_animation_timer",
             "property": "value"
           },
@@ -141,7 +141,7 @@
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:marks/mark_85/main",
             "ability": "mask_animation_timer",
             "property": "value"
           },
