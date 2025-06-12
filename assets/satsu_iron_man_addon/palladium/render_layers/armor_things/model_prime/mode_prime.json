@@ -142,6 +142,10 @@
               "type": "palladium:objective_score",
               "objective": "satsu.iron.man.armor.ark.energy",
               "min_score": 1
+            },
+            {
+              "type": "palladium:entity_type",
+              "entity_type": "minecraft:armor_stand"
             }
           ]
         }
@@ -288,6 +292,10 @@
               "type": "palladium:objective_score",
               "objective": "satsu.iron.man.armor.ark.energy",
               "min_score": 1
+            },
+            {
+              "type": "palladium:entity_type",
+              "entity_type": "minecraft:armor_stand"
             }
           ]
         }
@@ -329,6 +337,10 @@
               "type": "palladium:objective_score",
               "objective": "satsu.iron.man.armor.ark.energy",
               "min_score": 1
+            },
+            {
+              "type": "palladium:entity_type",
+              "entity_type": "minecraft:armor_stand"
             }
           ]
         }
