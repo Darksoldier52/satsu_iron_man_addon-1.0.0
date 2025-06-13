@@ -100,10 +100,13 @@
           "max_score": 1
         },
         {
-          "type": "palladium:objective_score",
-          "objective": "satsu.iron.man.mask",
-          "max": 1,
-          "min": 1
+          "type": "palladium:not",
+          "condition": {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.mask",
+            "max": 0,
+            "min": 0
+          }
         }
       ]
     },
@@ -202,10 +205,13 @@
           "max_score": 1
         },
         {
-          "type": "palladium:objective_score",
-          "objective": "satsu.iron.man.mask",
-          "max": 1,
-          "min": 1
+          "type": "palladium:not",
+          "condition": {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.mask",
+            "max": 0,
+            "min": 0
+          }
         }
       ],
       "render_type": "glow"
