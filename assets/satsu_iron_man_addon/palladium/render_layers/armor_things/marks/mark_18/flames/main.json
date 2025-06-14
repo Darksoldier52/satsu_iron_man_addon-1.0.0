@@ -55,16 +55,6 @@
                 {
                   "type": "palladium:ability_enabled",
                   "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "energy.pulse_right"
-                },
-                {
-                  "type": "palladium:ability_enabled",
-                  "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "energy.pulse_left"
-                },
-                {
-                  "type": "palladium:ability_enabled",
-                  "power": "satsu_iron_man_addon:marks/mark_85/main",
                   "ability": "uni.beam.hand.right"
                 },
                 {

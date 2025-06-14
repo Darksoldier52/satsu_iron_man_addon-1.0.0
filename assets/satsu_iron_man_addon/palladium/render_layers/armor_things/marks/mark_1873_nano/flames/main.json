@@ -106,22 +106,6 @@
                   "ability": "flares_flames"
                 },
                 {
-                  "type": "palladium:ability_integer_property",
-                  "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "mini.gun.right",
-                  "property": "value",
-                  "min": "1",
-                  "max": "10"
-                },
-                {
-                  "type": "palladium:ability_integer_property",
-                  "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "mini.gun.left",
-                  "property": "value",
-                  "min": "1",
-                  "max": "10"
-                },
-                {
                   "type": "palladium:ability_enabled",
                   "power": "satsu_iron_man_addon:marks/mark_85/main",
                   "ability": "nano_mallet"
@@ -135,6 +119,16 @@
                   "type": "palladium:ability_enabled",
                   "power": "satsu_iron_man_addon:marks/mark_85/main",
                   "ability": "nano_grenade_launcher_right"
+                },
+                {
+                  "type": "palladium:ability_enabled",
+                  "power": "satsu_iron_man_addon:kube_animations",
+                  "ability": "mark.1873.clap_smoke_hands"
+                },
+                {
+                  "type": "palladium:ability_enabled",
+                  "power": "satsu_iron_man_addon:marks/mark_85/main",
+                  "ability": "mark.1873.throw.smoke"
                 }
               ]
             }

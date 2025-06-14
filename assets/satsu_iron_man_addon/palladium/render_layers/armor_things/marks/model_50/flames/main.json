@@ -98,12 +98,25 @@
                 {
                   "type": "palladium:ability_enabled",
                   "power": "satsu_iron_man_addon:marks/mark_85/main",
+                  "ability": "Telekinesis"
+                },
+                {
+                  "type": "palladium:ability_enabled",
+                  "power": "satsu_iron_man_addon:marks/mark_85/main",
                   "ability": "mini_fireworks"
                 },
                 {
                   "type": "palladium:ability_enabled",
                   "power": "satsu_iron_man_addon:marks/mark_85/main",
                   "ability": "flares_flames"
+                },
+                {
+                  "type": "palladium:ability_integer_property",
+                  "power": "satsu_iron_man_addon:marks/mark_85/main",
+                  "ability": "suit_expulsion_animation_timer",
+                  "property": "value",
+                  "min": "20",
+                  "max": "20"
                 },
                 {
                   "type": "palladium:ability_integer_property",

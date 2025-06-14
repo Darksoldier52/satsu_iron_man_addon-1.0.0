@@ -23,17 +23,7 @@
       "render_type": "glow",
       "conditions": [
         {
-          "type": "palladium:or",
-          "conditions": [
-            {
-              "type": "palladium:is_hovering_or_flying"
-            },
-            {
-              "type": "palladium:ability_enabled",
-              "power": "satsu_iron_man_addon:marks/mark_1/main",
-              "ability": "mk.1.fly"
-            }
-          ]
+          "type": "palladium:is_hovering_or_flying"
         },
         {
           "type": "palladium:not",
@@ -54,27 +44,12 @@
                 {
                   "type": "palladium:ability_enabled",
                   "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "flamethrower.mark.1.right"
-                },
-                {
-                  "type": "palladium:ability_enabled",
-                  "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "flamethrower.mark.1.left"
-                },
-                {
-                  "type": "palladium:ability_enabled",
-                  "power": "satsu_iron_man_addon:marks/mark_85/main",
                   "ability": "uni.beam.hand.right"
                 },
                 {
                   "type": "palladium:ability_enabled",
                   "power": "satsu_iron_man_addon:marks/mark_85/main",
                   "ability": "uni.beam.hand.left"
-                },
-                {
-                  "type": "palladium:objective_score",
-                  "objective": "satsu.iron.man.rbg.on.off",
-                  "min_score": 0
                 },
                 {
                   "type": "palladium:ability_enabled",
@@ -102,11 +77,6 @@
                 {
                   "type": "palladium:ability_enabled",
                   "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "Telekinesis"
-                },
-                {
-                  "type": "palladium:ability_enabled",
-                  "power": "satsu_iron_man_addon:marks/mark_85/main",
                   "ability": "mini_fireworks"
                 },
                 {
@@ -115,38 +85,19 @@
                   "ability": "flares_flames"
                 },
                 {
-                  "type": "palladium:ability_integer_property",
-                  "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "suit_expulsion_animation_timer",
-                  "property": "value",
-                  "min": "20",
-                  "max": "20"
-                },
-                {
-                  "type": "palladium:ability_integer_property",
-                  "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "mini.gun.right",
-                  "property": "value",
-                  "min": "1",
-                  "max": "10"
-                },
-                {
-                  "type": "palladium:ability_integer_property",
-                  "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "mini.gun.left",
-                  "property": "value",
-                  "min": "1",
-                  "max": "10"
-                },
-                {
                   "type": "palladium:ability_enabled",
-                  "power": "satsu_iron_man_addon:kube_animations",
-                  "ability": "mark.1873.clap_smoke_hands"
+                  "power": "satsu_iron_man_addon:marks/mark_85/main",
+                  "ability": "nano_mallet"
                 },
                 {
                   "type": "palladium:ability_enabled",
                   "power": "satsu_iron_man_addon:marks/mark_85/main",
-                  "ability": "mark.1873.throw.smoke"
+                  "ability": "nano_grenade_launcher_left"
+                },
+                {
+                  "type": "palladium:ability_enabled",
+                  "power": "satsu_iron_man_addon:marks/mark_85/main",
+                  "ability": "nano_grenade_launcher_right"
                 }
               ]
             }
@@ -176,17 +127,7 @@
       "render_type": "glow",
       "conditions": [
         {
-          "type": "palladium:or",
-          "conditions": [
-            {
-              "type": "palladium:is_hovering_or_flying"
-            },
-            {
-              "type": "palladium:ability_enabled",
-              "power": "satsu_iron_man_addon:marks/mark_1/main",
-              "ability": "mk.1.fly"
-            }
-          ]
+          "type": "palladium:is_hovering_or_flying"
         },
         {
           "type": "palladium:not",
