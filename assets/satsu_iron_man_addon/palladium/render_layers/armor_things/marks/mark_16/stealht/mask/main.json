@@ -408,6 +408,14 @@
       ],
       "conditions": [
         {
+          "type": "palladium:ability_integer_property",
+          "power": "satsu_iron_man_addon:marks/mark_16/main",
+          "ability": "stealht_night_animation_timer",
+          "property": "value",
+          "min": 1,
+          "max": 17
+        },
+        {
           "type": "palladium:or",
           "conditions": [
             {
@@ -468,6 +476,14 @@
         }
       ],
       "conditions": [
+        {
+          "type": "palladium:ability_integer_property",
+          "power": "satsu_iron_man_addon:marks/mark_16/main",
+          "ability": "stealht_night_animation_timer",
+          "property": "value",
+          "min": 1,
+          "max": 17
+        },
         {
           "type": "palladium:or",
           "conditions": [

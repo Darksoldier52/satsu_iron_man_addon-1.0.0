@@ -34,7 +34,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh/iron_man_suit_#X_1_#STEALH"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors_mark_18/iron_man/iron_man_suit_#X_1_#STEALH"
       },
       "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
       "animation_controller": [
@@ -47,55 +47,7 @@
           }
         }
       ],
-      "conditions": [
-        {
-          "type": "palladium:or",
-          "conditions": [
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 6,
-              "max_score": 6
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 25,
-              "max_score": 25
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 27,
-              "max_score": 27
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 31,
-              "max_score": 31
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 33,
-              "max_score": 33
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 36,
-              "max_score": 36
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 39,
-              "max_score": 39
-            }
-          ]
-        }
-      ]
+      "conditions": []
     },
     {
       "type": "geckolib:default",
@@ -124,7 +76,7 @@
             "max": 59
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh/iron_man_suit_lights_#X_1_#STEALH"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors_mark_18/iron_man_lights/iron_man_suit_lights_#X_1_#STEALH"
       },
       "render_type": "glow",
       "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
@@ -150,53 +102,6 @@
             {
               "type": "palladium:entity_type",
               "entity_type": "minecraft:armor_stand"
-            }
-          ]
-        },
-        {
-          "type": "palladium:or",
-          "conditions": [
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 6,
-              "max_score": 6
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 25,
-              "max_score": 25
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 27,
-              "max_score": 27
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 31,
-              "max_score": 31
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 33,
-              "max_score": 33
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 36,
-              "max_score": 36
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 39,
-              "max_score": 39
             }
           ]
         }
@@ -408,6 +313,14 @@
       ],
       "conditions": [
         {
+          "type": "palladium:ability_integer_property",
+          "power": "satsu_iron_man_addon:marks/mark_18/main",
+          "ability": "stealht_night_animation_timer",
+          "property": "value",
+          "min": 1,
+          "max": 17
+        },
+        {
           "type": "palladium:or",
           "conditions": [
             {
@@ -469,6 +382,14 @@
       ],
       "conditions": [
         {
+          "type": "palladium:ability_integer_property",
+          "power": "satsu_iron_man_addon:marks/mark_18/main",
+          "ability": "stealht_night_animation_timer",
+          "property": "value",
+          "min": 1,
+          "max": 17
+        },
+        {
           "type": "palladium:or",
           "conditions": [
             {
@@ -479,23 +400,6 @@
             {
               "type": "palladium:entity_type",
               "entity_type": "minecraft:armor_stand"
-            }
-          ]
-        },
-        {
-          "type": "palladium:or",
-          "conditions": [
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 6,
-              "max_score": 6
-            },
-            {
-              "type": "palladium:objective_score",
-              "objective": "satsu.iron.man.armor",
-              "min_score": 33,
-              "max_score": 33
             }
           ]
         }
