@@ -22,6 +22,25 @@
     }
   },
   "abilities": {
+    "armor": {
+      "type": "palladium:dummy",
+      "icon": "#satsu_iron_man_addon:armor_icon_ability",
+      "title": { "translate": "ability.title.satsu.mark.25" },
+      "description": { "translate": "description.iron.man.mark.25" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_activate_skil_tree_dummy"
+          }
+        ]
+      }
+    },
     "flight": {
       "type": "gravestone:stat_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/5fly.png",
@@ -156,7 +175,7 @@
       "gui_position": [2.8, -1],
       "attribute": "minecraft:generic.armor",
       "uuid": "b379de99-9744-4cd1-83ca-ed123bb07291",
-      "amount": 17,
+      "amount": 24.3,
       "operation": 0,
       "conditions": {
         "enabling": [

@@ -1,5 +1,5 @@
 {
-  "name": { "translate": "ability.title.satsu.mark.21" },
+  "name": { "translate": "ability.title.satsu.mark.21.midas" },
   "persistent_data": true,
   "allow_bar_shrinking": true,
   "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
@@ -40,6 +40,25 @@
     }
   },
   "abilities": {
+    "armor": {
+      "type": "palladium:dummy",
+      "icon": "#satsu_iron_man_addon:armor_icon_ability",
+      "title": { "translate": "ability.title.satsu.mark.21.midas" },
+      "description": { "translate": "description.iron.man.mark.21.midas" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_activate_skil_tree_dummy"
+          }
+        ]
+      }
+    },
     "flight": {
       "type": "gravestone:stat_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/5fly.png",

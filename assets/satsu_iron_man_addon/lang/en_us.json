@@ -179,101 +179,103 @@
   "description.satsu.durability": "Receives a durability increase with diferents armors",
   "description.satsu.strength": "Receives a strength increase with diferents armors",
   "description.satsu.fall_resistance": "You are quite resistant to falls",
-  "description.iron.man.mark.1": "Your first armor, capable of flying, shooting flames (to put it on you need to create an armor placement block) Durability:15    Strength: 1",
+  "description.iron.man.mark.1": "Mark 1 is your first armor, it has flamethrowers and a launchable missile; With your boots you have the ability to fly but not for long or at great heights (to put it on you need to create an armor placement block) Durability:15    Strength: 1",
 
-  "description.iron.man.mark.2": "An armor stronger than the previous one with some improvements, more durability and plasma shots and launching an incredible energy beam (to put it on you need to create an armor placement block) Durability:15    Strength: 1    Flight speed: 6",
+  "description.iron.man.mark.2": "Mark 2 is primarily a flight prototype although it doesn't reach much height, it has plasma bursts and a chest uni-beam (to put it on you need to create an armor placement block) Durability:15    Strength: 1    Flight Speed: 6",
 
-  "description.iron.man.mark.3": "(to put it on you need to create an armor placement block) /Has flare/ Durability:20    Strength: 3    Flight speed: 6",
+  "description.iron.man.mark.3": "Mark 3, by changing material eliminates flight restrictions reaching more height (to put it on you need to create an armor placement block) /Has flare/ Durability:20    Strength: 3    Flight Speed: 6",
   
-  "description.iron.man.mark.5": "Mark 5 is a more resistant armor with more strength, and it fixes the flaw of not being able to fly at great heights, which you'll carry in a briefcase Durability:10    Strength: 4    Flight speed: 6",
+  "description.iron.man.mark.5": "Mark 5 is the first portable armor; although weaker than its predecessors, it's carried in a briefcase Durability:10    Strength: 4    Flight Speed: 6",
 
-  "description.iron.man.mark.6": "Mark 6 is a successor to mark 5, with improvements in strength and durability plus you won't have to carry a briefcase but a sentinel accompanying you /Has flare/ Durability:20    Strength: 1    Flight speed: 6",
+  "description.iron.man.mark.6": "Mark 6 is the direct successor to mark 5, It has a red and silver design, although this one is no longer carried in a briefcase it has a sentinel with a prehensile system with which you can join to wear the armor /Has flare/ Durability:20    Strength: 1    Flight Speed: 6",
 
-  "description.iron.man.mark.7": "Mark 7 is a successor to mark 6, with improvements in strength and durability /Has flare/ Durability:21    Strength: 8    Flight speed: 6",
+  "description.iron.man.mark.7": "Mark 7 is a successor to mark 6, with improvements in strength and durability while having the same prehensile system as mark 7 /Has flare/ Durability:21    Strength: 8    Flight Speed: 6",
 
-  "description.iron.man.mark.8": "Mark 8 is a successor to mark 7, with improvements in strength and durability /Has flare/ Durability:21    Strength: 8    Flight speed: 6",
+  "description.iron.man.mark.8": "Mark 8 is a successor to mark 7, with improvements in strength and durability while having the same prehensile system as mark 7 /Has flare/ Durability:21    Strength: 8    Flight Speed: 6",
+
+  "description.iron.man.mark.9": "Mark 9 is the prototype of mark 10, which is an armor that slightly improves speed while having the same prehensile system as mark 7 Durability:22    Strength: 8    Flight Speed: 6.15",
+
+  "description.iron.man.mark.10": "Mark 10 is a successor to mark 9, has a greater flight system, with more speed while being an underwater breathing prototype, uses mark 7's prehensile system /Has flare/ Durability:22    Strength: 9    Flight Speed: 6.25",
   
-  "description.iron.man.mark.9": "Mark 9 is the prototype of mark 10, which is an armor that improves speed a bit Durability:22    Strength: 8    Flight speed: 6.15",
+  "description.iron.man.mark.11": "Mark 11 is a prototype of stealth-type armors, its camouflage lasts shortly, uses mark 7's prehensile system Durability:22    Strength: 6    Flight Speed: 6.15",
 
-  "description.iron.man.mark.10": "Mark 10 is a successor to mark 9, Compared to its prototype it has a considerable increase over its previous versions /Has flare/ Durability:22    Strength: 9    Flight speed: 6.25",
+  "description.iron.man.mark.12": "Mark 12 is one of the first War Machine prototypes, It has a black and silver design, uses mark 7's prehensile system Durability:22    Strength: 9    Flight Speed: 6.15",
+
+  "description.iron.man.mark.13": "Mark 13 is another War Machine prototype, It has a black and silver design, It's a lighter model compared to its predecessors increasing flight speed, Instead of shooting plasma you have a minigun in your hand, so your shots are faster, uses mark 7's prehensile system /Has flare/ Durability:22    Strength: 9    Flight Speed: 6.35",
+
+  "description.iron.man.mark.14": "Mark 14 is another War Machine prototype, It has a black and silver design, uses mark 7's prehensile system Durability:22    Strength: 10    Flight Speed: 6.25",
+
+  "description.iron.man.mark.15": "Mark 15 known as Sneaky is a stealth class armor, It has a black and silver design; camouflage duration is now longer while having a sonic tranquilization system, uses mark 7's prehensile system /Has flare/ Durability:22    Strength: 10    Flight Speed: 6.25",
+
+  "description.iron.man.mark.Stealh": "Mark 16 known as Nightclub is a stealth class armor, camouflage duration is designed 100% for its use, has a color change system at night and day, uses mark 7's prehensile system Durability:22    Strength: 3    Flight Speed: 6.25",
+
+  "description.iron.man.mark.17": "Mark 17 known as Heartbreaker is the first Heartbreaker class armor, this type of armor is characterized by its more powerful chest arc beam; while handling a large cooldown for this, uses mark 7's prehensile system /Has flare/ Durability:22    Strength: 10    Flight Speed: 6.25",
+
+  "description.iron.man.mark.18": "Mark 18 known as Cassanova is another Heartbreaker class armor along with stealth class, has its predecessors' camouflage system, color change and at the same time the more powerful chest arc beam, instead of shooting plasma you have a minigun in your hand, so your shots are faster, uses mark 7's prehensile system /Has flare/ Durability:23    Strength: 11    Flight Speed: 6.25",
+
+  "description.iron.man.mark.19.tiger": "Mark 19 known as Tiger is the first prototype of fast flight armors, this type is characterized by the ability to fly faster and have a trail of the same color as the armor, uses mark 7's prehensile system /Has flare/ Durability:23    Strength: 8    Flight Speed: 6.45",
+
+  "description.iron.man.mark.20": "Mark 20 known as Python, Has a black and gold design is the successor to mark 19, similarly is a fast flight armor, having the black and gold color trail, uses mark 7's prehensile system /Has flare/ Durability:23    Strength: 12    Flight Speed: 6.55",
+
+  "description.iron.man.mark.21.midas": "Mark 21 known as Midas, Has a totally gold design based on mark 7, is completely gold, while being characterized as a fast flight armor, like its brothers of this type it has the characteristic trail and increased flight capability, uses mark 7's prehensile system /Has flare/ Durability:24    Strength: 6    Flight Speed: 6.65",
+
+  "description.iron.man.mark.22": "Mark 22 known as Hotrod is a War Machine armor, with a peculiar design based on the hotrod car, Has miniguns on each forearm, uses mark 7's prehensile system Durability:24    Strength: 12    Flight Speed: 6.45",
+
+  "description.iron.man.mark.23": "Mark 23 known as Shades, Has a design with spots is a stealth class armor, like its predecessors can become totally invisible, at the same time is a fire-resistant armor, uses mark 7's prehensile system /Has flare/ Durability:24    Strength: 12    Flight Speed: 6.45",
+
+  "description.iron.man.mark.24": "Mark 24 known as Tank is a Heartbreaker class armor, this type of armor is characterized by its more powerful chest beam, uses mark 7's prehensile system /Has flare/ Durability:24    Strength: 13    Flight Speed: 6.45",
+
+  "description.iron.man.mark.25": "Mark 25 known as Striker is the first of a new class, has two prehensile hammers with which you can break ground more easily, besides having the ability to drill or make a strong attack with the hammers, uses mark 7's prehensile system /Has flare/ Durability:24    Strength: 13    Flight Speed: 6.45",
+
+  "description.iron.man.mark.26": "Mark 26 known as Gamma is the successor to mark 25, has two prehensile hammers with which you can break ground more easily, besides having the ability to drill or make a strong attack with the hammers, uses mark 7's prehensile system /Has flare/ Durability:24    Strength: 13    Flight Speed: 6.45",
+
+  "description.iron.man.mark.27": "Mark 27 known as Disco Has a peculiar color pattern based on disco balls, while being stealth class, uses mark 7's prehensile system /Has flare/ Durability:24    Strength: 14    Flight Speed: 6.45",
+
+  "description.iron.man.mark.28": "Mark 28 known as Jack is the successor to mark 27, Has a peculiar color pattern based on disco balls like its predecessor, uses mark 7's prehensile system Durability:24    Strength: 14    Flight Speed: 6.45",
+
+  "description.iron.man.mark.29": "Mark 29 known as Fiddler is a Heartbreaker class armor, having the chest beam increase, while having prehensile hammers with which you can break ground more easily, besides having the ability to drill or make a strong attack with the hammers, uses mark 7's prehensile system /Has flare/ Durability:24    Strength: 15    Flight Speed: 6.45",
+
+  "description.iron.man.mark.30": "Mark 30 known as Blue steel is the first of the silver centurion series models, Has a light blue and silver design, Has retractable vibranium daggers for close combat, Additionally they are capable of mining, uses mark 7's prehensile system /Has flare/ Durability:25    Strength: 16    Flight Speed: 6.45",
+
+  "description.iron.man.mark.31": "Mark 31 known as Piston is the second armor of the silver centurion series models, Has a green and silver design, this unlike its brothers is a fast flight armor, uses mark 7's prehensile system /Has flare/ Durability:25    Strength: 17    Flight Speed: 6.75",
+
+  "description.iron.man.mark.32": "Mark 32 known as Romeo is the definitive version of Heartbreaker armors, Has a black and silver design, while having fast flight, uses mark 7's prehensile system /Has flare/ Durability:25    Strength: 18    Flight Speed: 6.65",
   
-  "description.iron.man.mark.11": "Mark 11 is a successor to mark 10, designed for camouflage environments thanks to its invisibility system although it's not as strong as its predecessor but more resistant Durability:22    Strength: 6    Flight speed: 6.15",
+  "description.iron.man.mark.33": "Mark 33 known as Silver centurion is the third armor of the Silver centurion series, Has a red and silver design, like blue steel has retractable vibranium daggers that are capable of mining, uses mark 7's prehensile system /Has flare/ Durability:25    Strength: 18    Flight Speed: 6.45",
 
-  "description.iron.man.mark.12": "Mark 12 is a successor to mark 11 /Has flare/ Durability:22    Strength: 9    Flight speed: 6.15",
+  "description.iron.man.mark.34": "Mark 34 known as Southpaw is the first of the Disaster Rescue armors, its design is quite similar to mark 14 and has a claw that allows it to grab entities to carry them or throw them away, uses mark 7's prehensile system Durability:24    Strength: 19    Flight Speed: 6.25",
 
-  "description.iron.man.mark.13": "Mark 13 is a successor to mark 12, It's a lighter model compared to its predecessors increasing flight speed, Instead of shooting plasma you have a minigun in your hand, so your shots are faster /Has flare/ Durability:22    Strength: 9    Flight speed: 6.35",
+  "description.iron.man.mark.35": "Mark 35 known as Red Snapper is the second of the Disaster Rescue armors, its design retains the typical red with yellow and silver colors; Has dual claws that allow it to grab entities to carry them or throw them away, uses mark 7's prehensile system Durability:25    Strength: 20    Flight Speed: 6.25",
 
-  "description.iron.man.mark.14": "Mark 14 is a successor to mark 13 Durability:22    Strength: 10    Flight speed: 6.25",
+  "description.iron.man.mark.36": "Mark 36 known as Peacemaker is the third of the Disaster Rescue armors, its design is the same as the Red Snapper armor with the difference of orange, silver and black colors; Like mark 15 sneaky has sonic tranquilizers, uses mark 7's prehensile system Durability:26    Strength: 21    Flight Speed: 6.15",
 
-  "description.iron.man.mark.15": "Mark 15 is a successor to mark 14, Has an active camouflage system for longer than the previous armor plus a sonic neutralization system /Has flare/ Durability:22    Strength: 10    Flight speed: 6.25",
+  "description.iron.man.mark.37": "Mark 37 known as Hammerhead is the direct successor to mark 10, which had underwater breathing, has an aquamarine design with gold and various underwater capabilities as well as improved swimming in a unique way and a repulsor shield, uses mark 7's prehensile system Durability:27    Strength: 22    Flight Speed: 6.45",
 
-  "description.iron.man.mark.Stealh": "Mark 16 has an improved active camouflage system, although it's not as resistant or strong as its predecessor, suitable for stealth missions Durability:22    Strength: 3    Flight speed: 6.25",
+  "description.iron.man.mark.38": "Mark 38 known as Igor is a unique class armor, With a blue and silver design, Capable of lifting heavy things like mobs and crushing them, uses mark 7's prehensile system Durability:28    Strength: 23    Flight Speed: 6.05",
 
-  "description.iron.man.mark.17": "Mark 17 is a successor to mark 16; Has a better arc beam while having an energy shield /Has flare/ Durability:22    Strength: 10    Flight speed: 6.25",
+  "description.iron.man.mark.39": "Mark 39 known as Starboost is an armor designed to travel between planets (Only available with Ad astra or Cosmic Horizons), uses mark 7's prehensile system /Has flare/ Durability:29    Strength: 25    Flight Speed: 6.65",
 
-  "description.iron.man.mark.18": "Mark 18 is a successor to mark 17; Has a better arc beam while having an energy shield, at the same time integrating the color and camouflage system of mark 16 (Nightclub), Instead of shooting plasma you have a minigun in your hand, so your shots are faster /Has flare/ Durability:23    Strength: 11    Flight speed: 6.25",
+  "description.iron.man.mark.40": "Mark 40 known as Shotgun is the final version of fast flight armors, having a great increase in this while like its brothers has the characteristic trail, uses mark 7's prehensile system /Has flare/ Durability:28    Strength: 8    Flight Speed: 6.85",
 
-  "description.iron.man.mark.19.tiger": "Mark 19 is a model based purely on speed being a prototype of mark 20, having a considerable increase over others while having the ability to considerably increase speed for fast flights /Has flare/ Durability:23    Strength: 8    Flight speed: 6.45",
+  "description.iron.man.mark.45": "Armor made of strong gold and basta alloy /Has flare/ Durability:35    Strength: 30    Flight Speed: 6.55",
 
-  "description.iron.man.mark.20": "Mark 20 is the successor to mark 19, similarly it's a model based on speed having an increase in this, like its predecessor can increase flight speed /Has flare/ Durability:23    Strength: 12    Flight speed: 6.55",
-
-  "description.iron.man.mark.21.midas": "Mark 21 like its predecessor is a model based on speed /Has flare/ Durability:24    Strength: 6    Flight speed: 6.65",
-
-  "description.iron.man.mark.22": "Mark 22 is a successor to mark 21, with a peculiar design based on the hotrod car, Has miniguns on each forearm Durability:24    Strength: 12    Flight speed: 6.45",
-
-  "description.iron.man.mark.23": "Mark 23 is a successor to mark 22, with a peculiar design and the ability to become invisible just like Nightclub or Sneaky /Has flare/ Durability:24    Strength: 12    Flight speed: 6.45",
-
-  "description.iron.man.mark.24": "Mark 24 is a successor to mark 23, with a design and weaponry of Heartbreaker or Casanova /Has flare/ Durability:24    Strength: 13    Flight speed: 6.45",
-
-  "description.iron.man.mark.25": "The Striker armor is the successor to mark 24, has two large hammers that you can use to break the ground and mine faster /Has flare/ Durability:24    Strength: 13    Flight speed: 6.45",
-
-  "description.iron.man.mark.26": "The Gamma armor is the successor to mark 25, has two large hammers that you can use to break the ground and mine faster /Has flare/ Durability:24    Strength: 13    Flight speed: 6.45",
+  "description.iron.man.mark.47": "Armor more resistant than mark 45 /Has flare/ Durability:37    Strength: 32    Flight Speed: 6.55",
   
-  "description.iron.man.mark.27": "The Disco armor is the successor to mark 26, Has a peculiar color pattern based on disco balls /Has flare/ Durability:24    Strength: 14    Flight speed: 6.45",
+  "description.iron.man.superior.armor": "An endosymbiotic armor, quite strong, capable of launching energy beams to paralyze enemies (You need to craft a metalized symbiote to unlock it) Durability:65    Strength: 47    Flight Speed: 6.55",
 
-  "description.iron.man.mark.28": "The Jack armor is the successor to mark 27, Has a peculiar color pattern based on disco balls like its predecessor Durability:24    Strength: 14    Flight speed: 6.45",
+  "description.iron.man.mark.50": "Mark 50 is the first armor made of nanotechnology, has retractable daggers, two different swords, a shield and several more upgrades Durability:40    Strength: 37    Flight Speed: 6.55",
 
-  "description.iron.man.mark.29": "The Fiddler armor is the successor to mark 24, Has a pneumatic hammer like the previous Gamma and Striker armors, plus the repulsor shield and improvements from the Heartbreaker model series /Has flare/ Durability:24    Strength: 15    Flight speed: 6.45",
+  "description.iron.man.mark.85": "Mark 85 is a nanotechnology armor with a gold and red design with gray accents. It has retractable daggers, two different swords, a shield and several more upgrades Durability:40    Strength: 37    Flight Speed: 6.55",
 
-  "description.iron.man.mark.30": "The Blue Steel armor is the first of the Silver Centurion model series, Has retractable vibranium daggers for close combat, Plus they are capable of mining /Has flare/ Durability:25    Strength: 16    Flight speed: 6.45",
+  "description.iron.man.mark.Iron.destroyer": "A uru armor that has magical properties /Has luck, jump and water agility effects/ Durability:40    Strength: 38    Flight Speed: 6.55",
 
-  "description.iron.man.mark.31": "The Piston armor is the second armor of the Silver Centurion model series, it's made for flying quickly like other previous models based on speed /Has flare/ Durability:25    Strength: 17    Flight speed: 6.75",
-
-  "description.iron.man.mark.32": "The Romeo armor is the successor to the Fiddler armor, Maintains the basic abilities of a Heartbreaker plus having an increase in speed /Has flare/ Durability:25    Strength: 18    Flight speed: 6.65",
+  "description.iron.man.mark.unknow.blooded": "Enchanted nanotechnology armor to fight against vampires (slows enemies with its plasma projectiles, besides being able to advance time, slow it down or stop it) Durability:45    Strength: 46    Flight Speed: 6.55",
   
-  "description.iron.man.mark.33": "The Silver Centurion armor is the third armor of the Silver Centurion series, like Blue Steel it has retractable vibranium daggers that are capable of mining /Has flare/ Durability:25    Strength: 18    Flight speed: 6.45",
+  "description.iron.man.mark.1873": "An armor made of nanotechnology with steampunk appearance (With smoke abilities) Durability:43    Strength: 46    Flight Speed: 6.55",
 
-  "description.iron.man.mark.34": "The Southpaw armor is the first of the Disaster Rescue armors, its design is quite similar to mark 14 and has a claw that allows it to grab entities to carry them or throw them away Durability:24    Strength: 19    Flight speed: 6.25",
-
-  "description.iron.man.mark.35": "The Red Snapper armor is the second of the Disaster Rescue armors, its design retains the typical red with yellow and silver colors; Has dual claws that allow it to grab entities to carry them or throw them away Durability:25    Strength: 20    Flight speed: 6.25",
-
-  "description.iron.man.mark.36": "The Peacemaker armor is the third of the Disaster Rescue armors, its design is the same as the Red Snapper armor with the difference of orange, silver and black colors; Like mark 15 sneaky it has sonic tranquilizers Durability:26    Strength: 21    Flight speed: 6.15",
-
-  "description.iron.man.mark.37": "The Hammerhead armor is the direct successor to mark 10, which had underwater breathing, has an aquamarine design with gold and various underwater capabilities as well as an improvement to swim in a unique way and a repulsor shield Durability:27    Strength: 22    Flight speed: 6.45",
+  "description.iron.man.mark.extremis": "A nanotechnology armor made with the extremis virus Durability:65    Strength: 55    Flight Speed: 6.55",
   
-  "description.iron.man.mark.38": "The Igor armor is a unique class armor, Capable of lifting heavy things like mobs and crushing them Durability:28    Strength: 23    Flight speed: 6.05",
-
-  "description.iron.man.mark.39": "Mark 39 Starboost is an armor designed to travel between planets (Only available with Ad astra) /Has flare/ Durability:29    Strength: 25    Flight speed: 6.65",
-
-  "description.iron.man.mark.40": "The Shotgun armor is the final version of speed-based models, having greater speed than other armors of this same type /Has flare/ Durability:28    Strength: 8    Flight speed: 6.85",
-
-  "description.iron.man.mark.45": "Armor made of strong gold alloy /Has flare/ Durability:35    Strength: 30    Flight speed: 6.55",
-
-  "description.iron.man.mark.47": "Armor more resistant than mark 45 /Has flare/ Durability:37    Strength: 32    Flight speed: 6.55",
-  
-  "description.iron.man.superior.armor": "An endosymbiotic armor, quite strong, capable of launching energy beams to paralyze enemies (You need to craft a metallized symbiote to unlock it) Durability:65    Strength: 47    Flight speed: 6.55",
-
-  "description.iron.man.mark.50": " Durability:40    Strength: 37    Flight speed: 6.55",
-
-  "description.iron.man.mark.Iron.destroyer": "A uru armor that has magical properties /Has luck, jump and water agility effects/ Durability:40    Strength: 38    Flight speed: 6.55",
-
-  "description.iron.man.mark.unknow.blooded": "Enchanted nanotechnology armor to fight vampires (slows down enemies with its plasma projectiles, plus being able to advance time, slow it down or stop it) Durability:45    Strength: 46    Flight speed: 6.55",
-  
-  "description.iron.man.mark.1873": "An armor made of nanotechnology with steampunk appearance (With smoke abilities) Durability:43    Strength: 46    Flight speed: 6.55",
-
-  "description.iron.man.mark.extremis": "A nanotechnology armor made with the extremis virus Durability:65    Strength: 55    Flight speed: 6.55",
-  
-  "description.iron.man.mark.model.prime": "A nanotechnology armor capable of being customized Durability:44    Strength: 38    Flight speed: 6.57",
+  "description.iron.man.mark.model.prime": "A nanotechnology armor capable of customization Durability:44    Strength: 38    Flight Speed: 6.57",
 
   "description.ark.upgrade.thing.1": "By unlocking this the ark reactor will recharge itself and will not overcharge so as not to damage you",
   "description.ark.upgrade.thing.2": "By unlocking this the ark reactor will recharge itself and will not overcharge so as not to damage you when you are using the armor",
