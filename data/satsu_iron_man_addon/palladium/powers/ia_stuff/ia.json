@@ -419,6 +419,14 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.80"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "mark.85"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.50.superior"
                   },
                   {
@@ -2381,6 +2389,14 @@
               },
               {
                 "type": "palladium:has_tag",
+                "tag": "mark.80"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.85"
+              },
+              {
+                "type": "palladium:has_tag",
                 "tag": "mark.50.superior"
               },
               {
@@ -2457,6 +2473,14 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "mark.50"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.80"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.85"
               },
               {
                 "type": "palladium:has_tag",
