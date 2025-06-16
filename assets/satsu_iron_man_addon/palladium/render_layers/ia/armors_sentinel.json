@@ -658,9 +658,11 @@
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:ia_stuff/iron_man_sentinel",
             "ability": "interpolate",
-            "property": "value"
+            "property": "value",
+            "min": 0,
+            "max": 16
           },
           "X": {
             "type": "palladium:objective_score",
@@ -691,12 +693,20 @@
       "model": "satsu_iron_man_addon:geo/sentinel/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime/model_prime_gold_0.png",
+        "transformers": [
+          {
+            "type": "palladium:alpha_mask",
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit_ensanble_armor_stand/transformation_#TIMER.png"
+          }
+        ],
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:ia_stuff/iron_man_sentinel",
             "ability": "interpolate",
-            "property": "value"
+            "property": "value",
+            "min": 0,
+            "max": 16
           },
           "P": {
             "type": "palladium:objective_score",
@@ -726,12 +736,20 @@
       "model": "satsu_iron_man_addon:geo/sentinel/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime/model_prime_black_0.png",
+        "transformers": [
+          {
+            "type": "palladium:alpha_mask",
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit_ensanble_armor_stand/transformation_#TIMER.png"
+          }
+        ],
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:ia_stuff/iron_man_sentinel",
             "ability": "interpolate",
-            "property": "value"
+            "property": "value",
+            "min": 0,
+            "max": 16
           },
           "B": {
             "type": "palladium:objective_score",
@@ -761,12 +779,20 @@
       "model": "satsu_iron_man_addon:geo/sentinel/sentinel_armor.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/model_prime/lights/model_prime_0_0.png",
+        "transformers": [
+          {
+            "type": "palladium:alpha_mask",
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit_ensanble_armor_stand/transformation_#TIMER.png"
+          }
+        ],
         "variables": {
           "TIMER": {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "power": "satsu_iron_man_addon:ia_stuff/iron_man_sentinel",
             "ability": "interpolate",
-            "property": "value"
+            "property": "value",
+            "min": 0,
+            "max": 16
           },
           "X": {
             "type": "palladium:objective_score",
