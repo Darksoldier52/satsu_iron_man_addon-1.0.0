@@ -1149,7 +1149,7 @@
                 "power": "satsu_iron_man_addon:ia_stuff/ia",
                 "ability": "animation_timer_kill_sentinel",
                 "property": "value",
-                "min": 2,
+                "min": 1,
                 "max": 20
               }
             ]
