@@ -207,7 +207,7 @@
 
   "description.iron.man.mark.15": "La mark 15 conocida como Sneaky es una armadura de clase sigilo,Tiene un diseño negro y plateado; la duracion del camuflaje ahora es más al mismo tiempo que posee un sistema de tranquilizacion sonica, usa el sistema prensíl de la mark 7 /Posee bengala/ Durabilidad:22    Fuerza: 10    Velocidad de vuelo: 6.25",
 
-  "description.iron.man.mark.Stealh": "La mark 16 conocida como Discoteca es una armadura de clase sigilo, la duracion del camuflaje esta diseñada al 100% para su uso, posee un sistema de cambio de color en la noche y el dia, usa el sistema prensíl de la mark 7 Durabilidad:22    Fuerza: 3    Velocidad de vuelo: 6.25",
+  "description.iron.man.mark.Stealh": "La mark 16 conocida como Discoteca es una armadura de clase sigilo, la duracion del camuflaje esta diseñada para su uso, posee un sistema de cambio de color en la noche y el dia, usa el sistema prensíl de la mark 7 Durabilidad:22    Fuerza: 3    Velocidad de vuelo: 6.25",
 
   "description.iron.man.mark.17": "La mark 17 conocida como Rompecorazones la primera armadura clase Rompecorazones, este tipo de armadura se caracteriza por su rayo arc del pecho mas potente; al mismo tiempo que maneja un cooldown grande para este, usa el sistema prensíl de la mark 7 /Posee bengala/ Durabilidad:22    Fuerza: 10    Velocidad de vuelo: 6.25",
 
@@ -559,6 +559,7 @@
   "ability.title.satsu.recipe_table": "Portaplanos",
   "ability.title.satsu.mark.model.prime": "Model Prime",
   "ability.title.satsu.give.recipe": "Obtener plano",
+  "ability.title.satsu.call.sentinel": "Llamar sentinela",
   "satsu.iron.man.addon.personalizate.on": "Personalizar activado",
   "satsu.iron.man.addon.personalizate.off": "Personalizar desactivado",
   "satsu.iron.man.addon.failsafe.on": "Seguro de vida activado",

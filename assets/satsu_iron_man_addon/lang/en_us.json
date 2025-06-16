@@ -207,7 +207,7 @@
 
   "description.iron.man.mark.15": "Mark 15 known as Sneaky is a stealth class armor, It has a black and silver design; camouflage duration is now longer while having a sonic tranquilization system, uses mark 7's prehensile system /Has flare/ Durability:22    Strength: 10    Flight Speed: 6.25",
 
-  "description.iron.man.mark.Stealh": "Mark 16 known as Nightclub is a stealth class armor, camouflage duration is designed 100% for its use, has a color change system at night and day, uses mark 7's prehensile system Durability:22    Strength: 3    Flight Speed: 6.25",
+  "description.iron.man.mark.Stealh": "Mark 16 known as Nightclub is a stealth class armor, camouflage duration is designed for its use, has a color change system at night and day, uses mark 7's prehensile system Durability:22    Strength: 3    Flight Speed: 6.25",
 
   "description.iron.man.mark.17": "Mark 17 known as Heartbreaker is the first Heartbreaker class armor, this type of armor is characterized by its more powerful chest arc beam; while handling a large cooldown for this, uses mark 7's prehensile system /Has flare/ Durability:22    Strength: 10    Flight Speed: 6.25",
 
@@ -559,6 +559,7 @@
   "ability.title.satsu.recipe_table": "Blueprint holder",
   "ability.title.satsu.mark.model.prime": "Model Prime",
   "ability.title.satsu.give.recipe": "Get blueprint",
+  "ability.title.satsu.call.sentinel": "Call Sentinel",
   "satsu.iron.man.addon.personalizate.on": "Customize activated",
   "satsu.iron.man.addon.personalizate.off": "Customize deactivated",
   "satsu.iron.man.addon.failsafe.on": "Failsafe activated",
