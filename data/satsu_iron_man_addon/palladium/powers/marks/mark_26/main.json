@@ -643,7 +643,7 @@
         "tag @s add satsu.iron.man.suit.set",
         "tag @s add mark.26",
         "scoreboard players set @s satsu.iron.man.armor 38",
-        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.flame 4",
         "scoreboard players set @s satsu.iron.man.flight_speed 63",
         "scoreboard players set @s satsu.iron.man.pickaxe.velocity 63"
       ],
