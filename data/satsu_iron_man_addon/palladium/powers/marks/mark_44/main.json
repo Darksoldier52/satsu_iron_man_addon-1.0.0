@@ -29,6 +29,7 @@
       "description": { "translate": "description.iron.man.mark.44" },
       "hidden": false,
       "hidden_in_bar": true,
+      "gui_position": [0, 0],
       "conditions": {
         "enabling": [
         ],
