@@ -1830,6 +1830,15 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
+                    "type": "palladium:ability_enabled",
+                    "ability": "nano_mallet"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.armor.uni.beam.hand",
                     "min_score": 1
@@ -1905,6 +1914,15 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_sword"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "nano_mallet"
                   }
                 ]
               },
