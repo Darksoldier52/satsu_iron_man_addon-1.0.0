@@ -1,6 +1,5 @@
 {
   "name": { "translate": "ability.title.satsu.mark.1" },
-  "persistent_data": true,
   "allow_bar_shrinking": true,
   "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
   "background": "satsu_iron_man_addon:textures/gui/block/background.png",
@@ -29,6 +28,7 @@
       "description": { "translate": "description.iron.man.mark.1" },
       "hidden": false,
       "hidden_in_bar": true,
+      "gui_position": [0, 0],
       "conditions": {
         "enabling": [
         ],

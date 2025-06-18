@@ -1,6 +1,5 @@
 {
   "name": { "translate": "ability.title.satsu.mark.taken" },
-  "persistent_data": true,
   "allow_bar_shrinking": true,
   "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
   "background": "satsu_iron_man_addon:textures/gui/block/background.png",
@@ -29,6 +28,7 @@
       "description": { "translate": "description.iron.man.mark.taken" },
       "hidden": false,
       "hidden_in_bar": true,
+      "gui_position": [0, 0],
       "conditions": {
         "enabling": [
         ],
@@ -1967,6 +1967,15 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
+                    "type": "palladium:ability_enabled",
+                    "ability": "nano_mallet"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.armor.uni.beam.hand",
                     "min_score": 1
@@ -2042,6 +2051,15 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_sword"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "nano_mallet"
                   }
                 ]
               },
@@ -3648,6 +3666,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "mini.gun.right"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "nano_grenade_launcher_right"
                   },
                   {
                     "type": "palladium:ability_enabled",

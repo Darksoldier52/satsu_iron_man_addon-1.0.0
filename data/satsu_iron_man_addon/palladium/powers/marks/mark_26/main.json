@@ -1,6 +1,5 @@
 {
   "name": { "translate": "ability.title.satsu.mark.26" },
-  "persistent_data": true,
   "allow_bar_shrinking": true,
   "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
   "background": "satsu_iron_man_addon:textures/gui/block/background.png",
@@ -29,6 +28,7 @@
       "description": { "translate": "description.iron.man.mark.26" },
       "hidden": false,
       "hidden_in_bar": true,
+      "gui_position": [0, 0],
       "conditions": {
         "enabling": [
         ],
@@ -643,7 +643,7 @@
         "tag @s add satsu.iron.man.suit.set",
         "tag @s add mark.26",
         "scoreboard players set @s satsu.iron.man.armor 38",
-        "scoreboard players set @s satsu.iron.man.flame 0",
+        "scoreboard players set @s satsu.iron.man.flame 4",
         "scoreboard players set @s satsu.iron.man.flight_speed 63",
         "scoreboard players set @s satsu.iron.man.pickaxe.velocity 63"
       ],
