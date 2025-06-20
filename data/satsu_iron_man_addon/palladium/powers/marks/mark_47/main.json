@@ -2720,7 +2720,7 @@
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.flight_speed",
                 "min_score": 64,
-                "max_score": 73
+                "max_score": 83
               }
             ]
           }
@@ -2769,7 +2769,7 @@
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.flight_speed",
                 "min_score": 65,
-                "max_score": 74
+                "max_score": 84
               }
             ]
           }

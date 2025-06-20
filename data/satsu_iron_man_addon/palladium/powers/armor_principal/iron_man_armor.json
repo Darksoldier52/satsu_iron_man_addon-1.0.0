@@ -1,5 +1,5 @@
 {
-  "name": { "translate": "ability.title.satsu.armors" },
+  "name": { "translate": "ability.title.arc.reactor" },
   "persistent_data": true,
   "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
   "background": "satsu_iron_man_addon:textures/gui/block/background.png",
@@ -970,7 +970,7 @@
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.flight_speed",
                     "min_score": 65,
-                    "max_score": 164
+                    "max_score": 2044
                   }
                 ]
               },
@@ -985,7 +985,7 @@
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.flight_speed",
                     "min_score": 65,
-                    "max_score": 194
+                    "max_score": 204
                   }
                 ]
               },
@@ -1000,7 +1000,7 @@
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.flight_speed",
                     "min_score": 65,
-                    "max_score": 204
+                    "max_score": 214
                   }
                 ]
               },
@@ -1015,7 +1015,7 @@
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.flight_speed",
                     "min_score": 66,
-                    "max_score": 165
+                    "max_score": 205
                   }
                 ]
               },
@@ -1030,7 +1030,7 @@
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.flight_speed",
                     "min_score": 65,
-                    "max_score": 74
+                    "max_score": 204
                   }
                 ]
               },
@@ -1045,7 +1045,7 @@
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.flight_speed",
                     "min_score": 65,
-                    "max_score": 164
+                    "max_score": 204
                   }
                 ]
               },
@@ -1060,7 +1060,7 @@
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.flight_speed",
                     "min_score": 65,
-                    "max_score": 164
+                    "max_score": 204
                   }
                 ]
               },
@@ -1075,7 +1075,7 @@
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.flight_speed",
                     "min_score": 65,
-                    "max_score": 164
+                    "max_score": 204
                   }
                 ]
               },
@@ -1090,7 +1090,7 @@
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.flight_speed",
                     "min_score": 65,
-                    "max_score": 174
+                    "max_score": 214
                   }
                 ]
               },
@@ -1104,7 +1104,7 @@
                   {
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 64,
+                    "min_score": 65,
                     "max_score": 207
                   }
                 ]

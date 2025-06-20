@@ -2566,7 +2566,7 @@
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.flight_speed",
                 "min_score": 65,
-                "max_score": 94
+                "max_score": 104
               }
             ]
           }
@@ -2615,7 +2615,7 @@
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.flight_speed",
                 "min_score": 66,
-                "max_score": 95
+                "max_score": 105
               }
             ]
           }
