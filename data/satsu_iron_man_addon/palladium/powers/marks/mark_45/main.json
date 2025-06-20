@@ -30,8 +30,7 @@
       "hidden_in_bar": true,
       "gui_position": [0, 2],
       "conditions": {
-        "enabling": [
-        ],
+        "enabling": [],
         "unlocking": [
           {
             "type": "palladium:ability_unlocked",
@@ -100,6 +99,10 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -222,6 +225,10 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -397,6 +404,10 @@
         "unlocking": [
           {
             "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
+          {
+            "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "armor_activate_skil_tree_dummy"
           }
@@ -449,6 +460,10 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -504,6 +519,10 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -927,6 +946,12 @@
               }
             ]
           }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          }
         ]
       }
     },
@@ -998,7 +1023,12 @@
             ]
           }
         ],
-        "unlocking": []
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          }
+        ]
       }
     },
     "mask.up.trigger": {
@@ -1278,8 +1308,7 @@
             ]
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "remove_armor": {
@@ -1643,6 +1672,10 @@
         ],
         "unlocking": [
           {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -1874,6 +1907,10 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
           {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor.ark.energy",
