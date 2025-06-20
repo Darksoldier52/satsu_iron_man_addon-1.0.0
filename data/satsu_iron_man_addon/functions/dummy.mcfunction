@@ -1,4 +1,5 @@
 
+scoreboard objectives add satsu.iron.man.addon.armor.choose dummy
 scoreboard objectives add satsu.iron.man.addon.armor.chest dummy
 scoreboard objectives add satsu.iron.man.addon.armor.head dummy
 scoreboard objectives add satsu.iron.man.addon.armor.right.arm dummy
