@@ -43,7 +43,7 @@
     },
     "flight": {
       "type": "gravestone:stat_ability",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/5fly.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/fly.png",
       "title": { "translate": "ability.title.satsu.Flight" },
       "description": { "translate": "description.flight" },
       "hidden": true,
@@ -2568,7 +2568,7 @@
     },
     "flight_unlock": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/5fly.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/fly.png",
       "title": { "translate": "ability.title.satsu.flight.edit" },
       "description": { "translate": "description.satsu.flight.edit" },
       "hidden": true,
@@ -2602,7 +2602,7 @@
     },
     "flight_speed.move": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/5fly.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/fly.png",
       "title": { "translate": "ability.title.satsu.Choose.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
