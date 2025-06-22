@@ -374,6 +374,7 @@
 
   
   "description.iron.man.aquatic_breath": "When you use the helmet activated you will be able to breathe underwater",
+  "description.iron.man.fire_resistance": "With the armor equipped you are resistant to fire",
   "ability.title.satsu.dampened": "Arc damper",
   "ability.title.satsu.armors.branch": "Armor branch",
   "ability.title.satsu.armor_skill_bar": "Skill tree                                                      ",
@@ -587,6 +588,7 @@
 
 
   "ability.title.satsu.aquatic_breath": "Underwater Breathing",
+  "ability.title.satsu.fire_resistance": "Fire Resistance",
   "satsu.iron.man.addon.personalizate.on": "Customize activated",
   "satsu.iron.man.addon.personalizate.off": "Customize deactivated",
   "satsu.iron.man.addon.failsafe.on": "Failsafe activated",

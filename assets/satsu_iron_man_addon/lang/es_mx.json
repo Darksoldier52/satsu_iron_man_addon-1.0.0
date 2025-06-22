@@ -374,6 +374,7 @@
 
   
   "description.iron.man.aquatic_breath": "Cuando uses el casco activado podras respirar bajo del agua",
+  "description.iron.man.fire_resistance": "Con la armadura puesta eres resistente al fuego",
   "ability.title.satsu.dampened": "Amortiguador de arc",
   "ability.title.satsu.armors.branch": "Rama de armaduras",
   "ability.title.satsu.armor_skill_bar": "Árbol de habilidades                                                      ",
@@ -587,6 +588,7 @@
 
 
   "ability.title.satsu.aquatic_breath": "Respiracion bajo del agua",
+  "ability.title.satsu.fire_resistance": "Resistencia al Fuego",
   "satsu.iron.man.addon.personalizate.on": "Personalizar activado",
   "satsu.iron.man.addon.personalizate.off": "Personalizar desactivado",
   "satsu.iron.man.addon.failsafe.on": "Seguro de vida activado",
