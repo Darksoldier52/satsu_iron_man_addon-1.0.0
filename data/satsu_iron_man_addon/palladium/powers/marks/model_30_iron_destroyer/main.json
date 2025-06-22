@@ -887,6 +887,9 @@
     },
     "aquatic_breath": {
       "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/aquatic_breath.png",
+      "title": { "translate": "ability.title.satsu.aquatic_breath" },
+      "description": { "translate": "description.iron.man.aquatic_breath" },
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [0.5, 3.25],

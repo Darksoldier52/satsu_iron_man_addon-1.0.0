@@ -365,6 +365,15 @@
   "description.satsu.taken.hulkbuster": "Incrementa tu tamaño al de una hulkbuster mientras aumentas tu fuerza",
   "description.satsu.recipe_table": "Aqui podras encontrar los planos para crear tus armaduras",
   "description.satsu.give.recipe": "Al hacer click derecho puedes darte los planos de la armadura",
+
+
+
+
+
+
+
+  
+  "description.iron.man.aquatic_breath": "Cuando uses el casco activado podras respirar bajo del agua",
   "ability.title.satsu.dampened": "Amortiguador de arc",
   "ability.title.satsu.armors.branch": "Rama de armaduras",
   "ability.title.satsu.armor_skill_bar": "Árbol de habilidades                                                      ",
@@ -563,6 +572,21 @@
   "ability.title.satsu.give.recipe": "Obtener plano",
   "ability.title.satsu.call.sentinel": "Llamar sentinela",
   "ability.title.arc.reactor": "Reactor Arc",
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  "ability.title.satsu.aquatic_breath": "Respiracion bajo del agua",
   "satsu.iron.man.addon.personalizate.on": "Personalizar activado",
   "satsu.iron.man.addon.personalizate.off": "Personalizar desactivado",
   "satsu.iron.man.addon.failsafe.on": "Seguro de vida activado",
