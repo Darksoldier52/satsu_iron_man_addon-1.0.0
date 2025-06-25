@@ -1527,7 +1527,7 @@
         "enabling": [
           {
             "type": "palladium:held",
-            "cooldown": 120
+            "cooldown": 132
           },
           {
             "type": "palladium:not",
