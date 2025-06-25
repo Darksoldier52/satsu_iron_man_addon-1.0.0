@@ -275,6 +275,8 @@
 
   "description.iron.man.mark.extremis": "Una armadura nanotecnologica hecha con el virus extremis Durabilidad:65    Fuerza: 55    Velocidad de vuelo: 6.55",
   
+  "description.iron.man.mark.taken": "Una armadura nanotecnologica Durabilidad:65    Fuerza: 55    Velocidad de vuelo: 6.55",
+  
   "description.iron.man.mark.model.prime": "Una armadura de nanotecnologia capaz de personalizarse Durabilidad:44    Fuerza: 38    Velocidad de vuelo: 6.57",
 
   "description.ark.upgrade.thing.1": "Al desbloquear esto el reactor ark se recargará solo y no se sobrecargará para no dañarte",
@@ -467,6 +469,7 @@
   "ability.title.satsu.mark.unknow.blooded": "Mark Borde Sangrante      ",
   "ability.title.satsu.mark.1873": "Mark 1873 (Steampunk)      ",
   "ability.title.satsu.mark.extremis": "Mark Extremis      ",
+  "ability.title.satsu.mark.taken": "Mark Taken      ",
   "ability.title.satsu.arms.edit": "Editar Armas",
   "ability.title.satsu.beams.edit": "Editar rayos",
   "ability.title.satsu.beams.next": "Aumentar rayos",
