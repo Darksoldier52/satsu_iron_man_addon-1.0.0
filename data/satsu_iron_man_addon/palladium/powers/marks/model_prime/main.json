@@ -2891,6 +2891,7 @@
         "waepons.choose_wheel.nano_hand_blade",
         "waepons.choose_wheel_stealth",
         "waepons.choose_wheel.force_field",
+        "waepons.choose_wheel_nano_stabilizer",
         "waepons.choose_wheel.cook_ark"
       ],
       "conditions": {
@@ -3340,6 +3341,32 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor.energy.beams",
             "min_score": 1
+          }
+        ]
+      }
+    },
+    "waepons.choose_wheel_nano_stabilizer": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/stabilizer.png",
+      "title": { "translate": "ability.title.satsu.stabilizer" },
+      "description": { "translate": "description.satsu.stabilizer" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "first_tick_commands": [
+        "function satsu_iron_man_addon:nano_weapons/stabilizer"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose"
           }
         ]
       }
@@ -4826,9 +4853,9 @@
           },
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.nano.armor.things",
-            "min_score": 14,
-            "max_score": 14
+            "objective": "satsu.iron.man.addon.nano.stabilizer",
+            "min_score": 1,
+            "max_score": 1
           },
           {
             "type": "palladium:not",
@@ -4848,7 +4875,7 @@
       "hidden_in_bar": true,
       "attribute": "palladium:flight_flexibility",
       "uuid": "42218bf2-9bb5-4572-a04b-183870217aca",
-      "amount": -6000,
+      "amount": -600000,
       "operation": 0,
       "conditions": {
         "enabling": [

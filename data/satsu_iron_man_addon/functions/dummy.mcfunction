@@ -1,4 +1,5 @@
 
+scoreboard objectives add satsu.iron.man.addon.nano.stabilizer dummy
 scoreboard objectives add satsu.iron.man.addon.nano.weapon.hammer dummy
 scoreboard objectives add satsu.iron.man.addon.nano.weapon.sword dummy
 scoreboard objectives add satsu.iron.man.addon.nano.weapon.large.sword dummy
