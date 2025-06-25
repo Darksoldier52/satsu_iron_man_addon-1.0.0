@@ -4746,6 +4746,65 @@
         ]
       }
     },
+    "nano_stabilizer": {
+      "type": "palladium:animation_timer",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/flare_flame.png",
+      "title": { "translate": "ability.title.satsu.flare.flame" },
+      "description": { "translate": "description.satsu.flare.flame" },
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 12,
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "arms_unlock_skill_tree"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.nano.armor.things",
+            "min_score": 14,
+            "max_score": 14
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "alien"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "nano_stabilizer_flexibility": {
+      "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "attribute": "palladium:flight_flexibility",
+      "uuid": "42218bf2-9bb5-4572-a04b-183870217aca",
+      "amount": -6000,
+      "operation": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "nano_stabilizer",
+            "property": "value",
+            "min": 12,
+            "max": 12
+          }
+        ]
+      }
+    },
     "taken_teleport": {
       "type": "satsu_iron_man_addon:teleport",
       "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/taken/tp.png",
