@@ -1,1 +1,1 @@
-scoreboard players set @s satsu.iron.man.addon.armor.right_arm 0
+scoreboard players set @s satsu.iron.man.addon.armor.right.arm 0

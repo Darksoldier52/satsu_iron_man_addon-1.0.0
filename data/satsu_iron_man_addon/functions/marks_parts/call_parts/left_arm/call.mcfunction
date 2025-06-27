@@ -1,1 +1,1 @@
-scoreboard players set @s satsu.iron.man.addon.armor.left_arm 0
+scoreboard players set @s satsu.iron.man.addon.armor.left.arm 0

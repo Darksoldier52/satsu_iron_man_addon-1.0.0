@@ -43,8 +43,12 @@
     "puting": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
-      "title": { "translate": "ability.title.satsu.metodo.de.colocacion.llamado" },
-      "description": { "translate": "description.satsu.metodo.de.colocacion.llamado" },
+      "title": {
+        "translate": "ability.title.satsu.metodo.de.colocacion.llamado"
+      },
+      "description": {
+        "translate": "description.satsu.metodo.de.colocacion.llamado"
+      },
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [0.5, 1],
@@ -1708,7 +1712,8 @@
       "hidden": true,
       "hidden_in_bar": true,
       "commands": [
-        "function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease"
+        "function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
+        "function satsu_iron_man_addon:marks_parts/call_parts/give_all/main"
       ],
       "conditions": {
         "enabling": [
@@ -3584,14 +3589,18 @@
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 11,
-      "first_tick_commands": [
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [
         "function satsu_iron_man_addon:marks_parts/throw_parts/chest/throw"
       ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action"
+            "type": "palladium:activation",
+            "ticks": 1,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
           }
         ],
         "unlocking": [
@@ -3607,6 +3616,66 @@
             "property": "value",
             "min": 16,
             "max": 16
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.chest",
+            "min_score": 0,
+            "max_score": 0
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.chest",
+            "min_score": 0,
+            "max_score": 0
+          }
+        ]
+      }
+    },
+    "parts.choose.chest_throw": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": 0,
+      "pitchOffset": 25,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 0,
+        "KnockbackStrength": 0,
+        "Damage": 19,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 90,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "",
+        "CommandOnBlockHit": "",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#090809"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "parts.choose.chest"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.chest",
+            "min_score": 0,
+            "max_score": 0
           }
         ]
       }
@@ -3620,14 +3689,18 @@
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 11,
-      "first_tick_commands": [
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [
         "function satsu_iron_man_addon:marks_parts/throw_parts/head/throw"
       ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action"
+            "type": "palladium:activation",
+            "ticks": 1,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
           }
         ],
         "unlocking": [
@@ -3643,6 +3716,60 @@
             "property": "value",
             "min": 16,
             "max": 16
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.head",
+            "min_score": 0,
+            "max_score": 0
+          }
+        ]
+      }
+    },
+    "parts.choose.head_throw": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": 0,
+      "pitchOffset": 25,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 0,
+        "KnockbackStrength": 0,
+        "Damage": 19,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 90,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "",
+        "CommandOnBlockHit": "",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#090809"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "parts.choose.head"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.head",
+            "min_score": 0,
+            "max_score": 0
           }
         ]
       }
@@ -3656,14 +3783,18 @@
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 11,
-      "first_tick_commands": [
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [
         "function satsu_iron_man_addon:marks_parts/throw_parts/right_arm/throw"
       ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action"
+            "type": "palladium:activation",
+            "ticks": 1,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
           }
         ],
         "unlocking": [
@@ -3679,6 +3810,60 @@
             "property": "value",
             "min": 16,
             "max": 16
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.right.arm",
+            "min_score": 0,
+            "max_score": 0
+          }
+        ]
+      }
+    },
+    "parts.choose.right_arm_throw": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": 20,
+      "pitchOffset": 0,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 0,
+        "KnockbackStrength": 0,
+        "Damage": 19,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 90,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "",
+        "CommandOnBlockHit": "",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#090809"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "parts.choose.right_arm"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.right.arm",
+            "min_score": 0,
+            "max_score": 0
           }
         ]
       }
@@ -3692,14 +3877,18 @@
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 11,
-      "first_tick_commands": [
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [
         "function satsu_iron_man_addon:marks_parts/throw_parts/left_arm/throw"
       ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action"
+            "type": "palladium:activation",
+            "ticks": 1,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
           }
         ],
         "unlocking": [
@@ -3715,6 +3904,60 @@
             "property": "value",
             "min": 16,
             "max": 16
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.left.arm",
+            "min_score": 0,
+            "max_score": 0
+          }
+        ]
+      }
+    },
+    "parts.choose.left_arm_throw": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": -20,
+      "pitchOffset": 0,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 0,
+        "KnockbackStrength": 0,
+        "Damage": 19,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 90,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "",
+        "CommandOnBlockHit": "",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#090809"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "parts.choose.left_arm"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.chest",
+            "min_score": 0,
+            "max_score": 0
           }
         ]
       }
@@ -3730,14 +3973,18 @@
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 11,
-      "first_tick_commands": [
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [
         "function satsu_iron_man_addon:marks_parts/throw_parts/right_shoulder/throw"
       ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action"
+            "type": "palladium:activation",
+            "ticks": 1,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
           }
         ],
         "unlocking": [
@@ -3753,6 +4000,60 @@
             "property": "value",
             "min": 16,
             "max": 16
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.right.shoulder",
+            "min_score": 0,
+            "max_score": 0
+          }
+        ]
+      }
+    },
+    "parts.choose.right_shoulder_throw": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": 20,
+      "pitchOffset": 0,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 0,
+        "KnockbackStrength": 0,
+        "Damage": 19,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 90,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "",
+        "CommandOnBlockHit": "",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#090809"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "parts.choose.right_shoulder"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.right.shoulder",
+            "min_score": 0,
+            "max_score": 0
           }
         ]
       }
@@ -3768,14 +4069,18 @@
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 11,
-      "first_tick_commands": [
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [
         "function satsu_iron_man_addon:marks_parts/throw_parts/left_shoulder/throw"
       ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action"
+            "type": "palladium:activation",
+            "ticks": 1,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
           }
         ],
         "unlocking": [
@@ -3791,6 +4096,60 @@
             "property": "value",
             "min": 16,
             "max": 16
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.left.shoulder",
+            "min_score": 0,
+            "max_score": 0
+          }
+        ]
+      }
+    },
+    "parts.choose.left_shoulder_throw": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": -20,
+      "pitchOffset": 0,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 0,
+        "KnockbackStrength": 0,
+        "Damage": 19,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 90,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "",
+        "CommandOnBlockHit": "",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#090809"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "parts.choose.left_shoulder"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.left.shoulder",
+            "min_score": 0,
+            "max_score": 0
           }
         ]
       }
@@ -3804,14 +4163,18 @@
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 11,
-      "first_tick_commands": [
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [
         "function satsu_iron_man_addon:marks_parts/throw_parts/right_leg/throw"
       ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action"
+            "type": "palladium:activation",
+            "ticks": 1,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
           }
         ],
         "unlocking": [
@@ -3827,6 +4190,60 @@
             "property": "value",
             "min": 16,
             "max": 16
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.right.leg",
+            "min_score": 0,
+            "max_score": 0
+          }
+        ]
+      }
+    },
+    "parts.choose.right_leg_throw": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": 20,
+      "pitchOffset": 0,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 0,
+        "KnockbackStrength": 0,
+        "Damage": 19,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 90,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "",
+        "CommandOnBlockHit": "",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#090809"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "parts.choose.right_leg"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.right.leg",
+            "min_score": 0,
+            "max_score": 0
           }
         ]
       }
@@ -3840,14 +4257,18 @@
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 11,
-      "first_tick_commands": [
+      "first_tick_commands": [""],
+      "commands": [""],
+      "last_tick_commands": [
         "function satsu_iron_man_addon:marks_parts/throw_parts/left_leg/throw"
       ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action"
+            "type": "palladium:activation",
+            "ticks": 1,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
           }
         ],
         "unlocking": [
@@ -3863,6 +4284,60 @@
             "property": "value",
             "min": 16,
             "max": 16
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.left.leg",
+            "min_score": 0,
+            "max_score": 0
+          }
+        ]
+      }
+    },
+    "parts.choose.left_leg_throw": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 5,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": -20,
+      "pitchOffset": 0,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 0,
+        "KnockbackStrength": 0,
+        "Damage": 19,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 90,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "",
+        "CommandOnBlockHit": "",
+        "Appearances": [
+          {
+            "Type": "laser",
+            "Thickness": 0.1,
+            "Color": "#090809"
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "parts.choose.left_leg"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.left.leg",
+            "min_score": 0,
+            "max_score": 0
           }
         ]
       }

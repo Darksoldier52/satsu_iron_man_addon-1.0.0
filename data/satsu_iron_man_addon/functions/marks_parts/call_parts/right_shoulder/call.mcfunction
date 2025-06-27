@@ -1,1 +1,1 @@
-scoreboard players set @s satsu.iron.man.addon.armor.right_shoulder 0
+scoreboard players set @s satsu.iron.man.addon.armor.right.shoulder 0
