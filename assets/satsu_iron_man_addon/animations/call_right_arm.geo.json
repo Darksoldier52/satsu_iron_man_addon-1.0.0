@@ -80,6 +80,18 @@
 					}
 				}
 			}
+		},
+		"animation.minecraft:call.body": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.3,
+			"bones": {
+				"call_body": {
+					"position": {
+						"0.0": [0, 8, -50],
+						"0.3": [0, 0, 0]
+					}
+				}
+			}
 		}
 	}
 }
