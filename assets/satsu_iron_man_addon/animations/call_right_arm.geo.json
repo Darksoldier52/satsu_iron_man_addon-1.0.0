@@ -92,6 +92,22 @@
 					}
 				}
 			}
+		},
+		"animation.minecraft:call.head": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.3,
+			"bones": {
+				"call_mask": {
+					"position": {
+						"0.0": {
+							"vector": [0, 19, 50]
+						},
+						"0.3": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
 		}
 	}
 }
