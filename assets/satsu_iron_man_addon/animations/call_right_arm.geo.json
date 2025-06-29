@@ -3,14 +3,14 @@
 	"animations": {
 		"animation.minecraft:call.right.arm": {
 			"loop": "hold_on_last_frame",
-			"animation_length": 5.1,
+			"animation_length": 0.3,
 			"bones": {
-				"armorRightArm": {
+				"call": {
 					"position": {
 						"0.0": {
-							"vector": [-50, 6, 0]
+							"vector": [-50, 9, 0]
 						},
-						"5.1": {
+						"0.3": {
 							"vector": [0, 0, 0]
 						}
 					}

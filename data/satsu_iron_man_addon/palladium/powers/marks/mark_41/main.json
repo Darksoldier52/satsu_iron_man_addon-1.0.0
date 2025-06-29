@@ -1710,11 +1710,27 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action",
-            "cooldown": 0,
-            "key_type": "key_bind",
-            "needs_empty_hand": false,
-            "allow_scrolling_when_crouching": true
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "armor_activate.animation_timer.mark.41-42",
+                    "property": "value",
+                    "min": 12,
+                    "max": 13
+                  },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                ]
+              }
+            ]
           }
         ]
       }
