@@ -1557,6 +1557,41 @@
         ]
       }
     },
+    "bones_alpha_mask_right_arm.trigger": {
+      "type": "geckolib:render_layer_animation",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_41/armor/right_arm/main",
+      "controller": "call.part.control",
+      "animation_trigger": "call.part",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "armor_activate.animation_timer.mark.41-42",
+                    "property": "value",
+                    "min": 12,
+                    "max": 13
+                  },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
     "bones_colocation_left_leg": {
       "type": "palladium:animation_timer",
       "hidden": true,
@@ -1589,6 +1624,41 @@
         ]
       }
     },
+    "bones_alpha_mask_left_leg.trigger": {
+      "type": "geckolib:render_layer_animation",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_41/armor/left_leg/main",
+      "controller": "call.part.control",
+      "animation_trigger": "call.part",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "armor_activate.animation_timer.mark.41-42",
+                    "property": "value",
+                    "min": 29,
+                    "max": 30
+                  },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
     "bones_colocation_right_leg": {
       "type": "palladium:animation_timer",
       "hidden": true,
@@ -1614,6 +1684,41 @@
                     "type": "palladium:ability_enabled",
                     "ability": "armor_activate.animation_timer.mark.41-42"
                   }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bones_alpha_mask_right_leg.trigger": {
+      "type": "geckolib:render_layer_animation",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_41/armor/right_leg/main",
+      "controller": "call.part.control",
+      "animation_trigger": "call.part",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "armor_activate.animation_timer.mark.41-42",
+                    "property": "value",
+                    "min": 38,
+                    "max": 39
+                  },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
                 ]
               }
             ]
@@ -1697,6 +1802,47 @@
         ]
       }
     },
+    "bones_alpha_mask_left_shoulder.trigger": {
+      "type": "geckolib:render_layer_animation",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_41/armor/left_shoulder/main",
+      "controller": "call.part.control",
+      "animation_trigger": "call.part",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "armor_activate.animation_timer.mark.41-42",
+                    "property": "value",
+                    "min": 12,
+                    "max": 13
+                  },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.armor.left.shoulder",
+                    "min_score": 0,
+                    "max_score": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
     "bones_alpha_mask_right_arm": {
       "type": "palladium:animation_timer",
       "hidden": true,
@@ -1735,41 +1881,6 @@
         ]
       }
     },
-    "bones_alpha_mask_right_arm.trigger": {
-      "type": "geckolib:render_layer_animation",
-      "hidden": false,
-      "hidden_in_bar": false,
-      "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_41/armor/right_arm/main",
-      "controller": "call.part.control",
-      "animation_trigger": "call.part",
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_integer_property",
-                    "ability": "armor_activate.animation_timer.mark.41-42",
-                    "property": "value",
-                    "min": 12,
-                    "max": 13
-                  },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.actived",
-                        "min_score": 1,
-                        "max_score": 1
-                      }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
     "bones_alpha_mask_right_shoulder": {
       "type": "palladium:animation_timer",
       "hidden": true,
@@ -1795,6 +1906,47 @@
                     "type": "palladium:ability_enabled",
                     "ability": "armor_activate.animation_timer.mark.41-42"
                   },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.armor.right.shoulder",
+                    "min_score": 0,
+                    "max_score": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bones_alpha_mask_right_shoulder.trigger": {
+      "type": "geckolib:render_layer_animation",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_41/armor/right_shoulder/main",
+      "controller": "call.part.control",
+      "animation_trigger": "call.part",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "armor_activate.animation_timer.mark.41-42",
+                    "property": "value",
+                    "min": 29,
+                    "max": 30
+                  },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
                   {
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.addon.armor.right.shoulder",
