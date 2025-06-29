@@ -7,12 +7,20 @@
 			"bones": {
 				"call": {
 					"position": {
-						"0.0": {
-							"vector": [-50, 9, 0]
-						},
-						"0.3": {
-							"vector": [0, 0, 0]
-						}
+						"0.0": [-50, 9, 0],
+						"0.3": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.minecraft:call.left.arm": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.3,
+			"bones": {
+				"call": {
+					"position": {
+						"0.0": [50, 9, 0],
+						"0.3": [0, 0, 0]
 					}
 				}
 			}

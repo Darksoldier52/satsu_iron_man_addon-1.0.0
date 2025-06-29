@@ -25,7 +25,12 @@
 				},
 				{
 					"name": "armorLeftArm",
-					"pivot": [5, 22, 0],
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "call",
+					"parent": "armorLeftArm",
+					"pivot": [0, 0, 0],
 					"cubes": [
 						{
 							"origin": [4, 12, -2],
