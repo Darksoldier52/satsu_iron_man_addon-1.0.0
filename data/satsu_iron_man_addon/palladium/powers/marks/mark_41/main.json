@@ -3869,7 +3869,7 @@
     },
     "parts.chest": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/chest.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.chest" },
       "description": { "translate": "description.satsu.part.chest" },
@@ -3896,7 +3896,7 @@
     },
     "parts.head": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/head.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.head" },
       "description": { "translate": "description.satsu.part.head" },
@@ -3923,7 +3923,7 @@
     },
     "parts.right_arm": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/right_arm.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.right_arm" },
       "description": { "translate": "description.satsu.part.right_arm" },
@@ -3950,7 +3950,7 @@
     },
     "parts.left_arm": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/left_arm.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.left_arm" },
       "description": { "translate": "description.satsu.part.left_arm" },
@@ -3977,7 +3977,7 @@
     },
     "parts.right_shoulder": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/right_shoulder.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.right_shoulder" },
       "description": { "translate": "description.satsu.part.right_shoulder" },
@@ -4004,7 +4004,7 @@
     },
     "parts.left_shoulder": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/left_shoulder.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.left_shoulder" },
       "description": { "translate": "description.satsu.part.left_shoulder" },
@@ -4031,7 +4031,7 @@
     },
     "parts.right_leg": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/right_leg.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.right_leg" },
       "description": { "translate": "description.satsu.part.right_leg" },
@@ -4058,7 +4058,7 @@
     },
     "parts.left_leg": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/left_leg.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.left_leg" },
       "description": { "translate": "description.satsu.part.left_leg" },
@@ -4085,7 +4085,7 @@
     },
     "parts.choose.chest": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/chest.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.throw.chest" },
       "description": { "translate": "description.satsu.part.throw.chest" },
@@ -4185,7 +4185,7 @@
     },
     "parts.choose.head": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/head.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.throw.head" },
       "description": { "translate": "description.satsu.part.throw.head" },
@@ -4279,7 +4279,7 @@
     },
     "parts.choose.right_arm": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/right_arm.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.throw.right_arm" },
       "description": { "translate": "description.satsu.part.throw.right_arm" },
@@ -4373,7 +4373,7 @@
     },
     "parts.choose.left_arm": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/left_arm.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.throw.left_arm" },
       "description": { "translate": "description.satsu.part.throw.left_arm" },
@@ -4467,7 +4467,7 @@
     },
     "parts.choose.right_shoulder": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/right_shoulder.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.throw.right_shoulder" },
       "description": {
@@ -4563,7 +4563,7 @@
     },
     "parts.choose.left_shoulder": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/left_shoulder.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.throw.left_shoulder" },
       "description": {
@@ -4659,7 +4659,7 @@
     },
     "parts.choose.right_leg": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/right_leg.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.throw.right_leg" },
       "description": { "translate": "description.satsu.part.throw.right_leg" },
@@ -4753,7 +4753,7 @@
     },
     "parts.choose.left_leg": {
       "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/mark_41/throw/left_leg.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.part.throw.left_leg" },
       "description": { "translate": "description.satsu.part.throw.left_leg" },
