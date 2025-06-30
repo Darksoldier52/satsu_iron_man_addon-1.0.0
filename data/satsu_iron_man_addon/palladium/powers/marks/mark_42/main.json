@@ -1523,11 +1523,8 @@
                     "type": "palladium:not",
                     "conditions": [
                       {
-                        "type": "palladium:ability_integer_property",
-                        "ability": "armor_activate.animation_timer.mark.41-42",
-                        "property": "value",
-                        "min": 1,
-                        "max": 64
+                        "type": "palladium:ability_enabled",
+                        "ability": "armor_activate.animation_timer.mark.41-42"
                       }
                     ]
                   }
@@ -1612,11 +1609,8 @@
                     "type": "palladium:not",
                     "conditions": [
                       {
-                        "type": "palladium:ability_integer_property",
-                        "ability": "armor_activate.animation_timer.mark.41-42",
-                        "property": "value",
-                        "min": 1,
-                        "max": 64
+                        "type": "palladium:ability_enabled",
+                        "ability": "armor_activate.animation_timer.mark.41-42"
                       }
                     ]
                   }
@@ -1701,11 +1695,8 @@
                     "type": "palladium:not",
                     "conditions": [
                       {
-                        "type": "palladium:ability_integer_property",
-                        "ability": "armor_activate.animation_timer.mark.41-42",
-                        "property": "value",
-                        "min": 1,
-                        "max": 64
+                        "type": "palladium:ability_enabled",
+                        "ability": "armor_activate.animation_timer.mark.41-42"
                       }
                     ]
                   }
@@ -1790,11 +1781,8 @@
                     "type": "palladium:not",
                     "conditions": [
                       {
-                        "type": "palladium:ability_integer_property",
-                        "ability": "armor_activate.animation_timer.mark.41-42",
-                        "property": "value",
-                        "min": 1,
-                        "max": 64
+                        "type": "palladium:ability_enabled",
+                        "ability": "armor_activate.animation_timer.mark.41-42"
                       }
                     ]
                   }
@@ -1865,8 +1853,43 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:ability_integer_property",
-                "ability": "armor_activate.animation_timer.mark.41-42",
+                "type": "palladium:ability_enabled",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 1,
+                "max": 31
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 1,
+                "max": 31
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "left_shoulder_animation",
+                "property": "value",
+                "min": 1,
+                "max": 31
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "right_shoulder_animation",
+                "property": "value",
+                "min": 1,
+                "max": 31
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "left_leg_animation",
+                "property": "value",
+                "min": 1,
+                "max": 31
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "right_leg_animation",
                 "property": "value",
                 "min": 1,
                 "max": 31
