@@ -1832,6 +1832,92 @@
         ]
       }
     },
+    "head_animation": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 19,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.animation.armor",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.armor.head",
+                        "min_score": 0,
+                        "max_score": 0
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:ability_enabled",
+                        "ability": "armor_activate.animation_timer.mark.41-42"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "armor_activate.animation_timer.mark.41-42",
+                    "property": "value",
+                    "min": 45,
+                    "max": 64
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.armor.head",
+                    "min_score": 0,
+                    "max_score": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_skill_bar"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "enable_armor"
+              }
+            ]
+          },
+          {
+            "type": "palladium:and",
+            "conditions": []
+          }
+        ]
+      }
+    },
     "armor_activate.command": {
       "type": "palladium:command",
       "hidden": true,
@@ -1852,6 +1938,20 @@
           {
             "type": "palladium:or",
             "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "head_animation",
+                "property": "value",
+                "min": 1,
+                "max": 31
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "chest_animation",
+                "property": "value",
+                "min": 1,
+                "max": 31
+              },
               {
                 "type": "palladium:ability_enabled",
                 "ability": "left_arm_animation",
@@ -2613,14 +2713,14 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "ability": "armor_activate.animation_timer.mark.41-42",
+                    "ability": "head_animation",
                     "property": "value",
-                    "min": 45,
-                    "max": 64
+                    "min": 1,
+                    "max": 19
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "armor_activate.animation_timer.mark.41-42"
+                    "ability": "head_animation"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -2652,16 +2752,14 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "ability": "armor_activate.animation_timer.mark.41-42",
+                    "ability": "head_animation",
                     "property": "value",
-                    "min": 44,
-                    "max": 45
+                    "min": 1,
+                    "max": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:ability_enabled",
+                    "ability": "head_animation"
                   },
                   {
                     "type": "palladium:objective_score",
