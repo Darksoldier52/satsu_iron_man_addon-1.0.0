@@ -206,8 +206,8 @@ PalladiumEvents.registerAnimations((event) => {
           // third person animations
           builder
             .get("left_arm")
-            .setXRotDegrees(0)
-            .setYRotDegrees(0)
+            .setXRotDegrees(2.5)
+            .setYRotDegrees(-15)
             .setZRotDegrees(0)
             .moveX(0)
             .moveY(0)
@@ -215,8 +215,8 @@ PalladiumEvents.registerAnimations((event) => {
             .animate("InOutCubic", progress);
           builder
             .get("right_arm")
-            .setXRotDegrees(0)
-            .setYRotDegrees(0)
+            .setXRotDegrees(2.5)
+            .setYRotDegrees(15)
             .setZRotDegrees(0)
             .moveX(0)
             .moveY(0)
@@ -235,15 +235,15 @@ PalladiumEvents.registerAnimations((event) => {
             .get("left_leg")
             .setXRotDegrees(0)
             .setYRotDegrees(0)
-            .setZRotDegrees(-25)
-            .moveX(0)
+            .setZRotDegrees(-12.5)
+            .moveX(-1)
             .moveY(-3)
-            .moveZ(-3)
+            .moveZ(-4)
             .animate("InOutCubic", progress);
           builder
             .get("right_leg")
             .setXRotDegrees(0)
-            .setYRotDegrees(0)
+            .setYRotDegrees(15)
             .setZRotDegrees(0)
             .moveX(0)
             .moveY(0)
@@ -291,8 +291,8 @@ PalladiumEvents.registerAnimations((event) => {
           // third person animations
           builder
             .get("left_arm")
-            .setXRotDegrees(0)
-            .setYRotDegrees(0)
+            .setXRotDegrees(2.5)
+            .setYRotDegrees(-15)
             .setZRotDegrees(0)
             .moveX(0)
             .moveY(0)
@@ -300,8 +300,8 @@ PalladiumEvents.registerAnimations((event) => {
             .animate("InOutCubic", progress);
           builder
             .get("right_arm")
-            .setXRotDegrees(0)
-            .setYRotDegrees(0)
+            .setXRotDegrees(2.5)
+            .setYRotDegrees(15)
             .setZRotDegrees(0)
             .moveX(0)
             .moveY(0)
@@ -329,10 +329,10 @@ PalladiumEvents.registerAnimations((event) => {
             .get("right_leg")
             .setXRotDegrees(0)
             .setYRotDegrees(0)
-            .setZRotDegrees(25)
-            .moveX(0)
+            .setZRotDegrees(12.5)
+            .moveX(1)
             .moveY(-3)
-            .moveZ(-3)
+            .moveZ(-4)
             .animate("InOutCubic", progress);
           builder;
           builder;
