@@ -3611,7 +3611,7 @@
     },
     "call": {
       "type": "palladium:ability_wheel",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/on.png",
+      "icon": "#satsu_iron_man_addon:enable_armor_icon",
       "title": { "translate": "ability.title.satsu.beams.edit" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
