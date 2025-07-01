@@ -1370,10 +1370,6 @@
                     "max_score": 1
                   }
                 ]
-              },
-              {
-                "type": "palladium:entity_type",
-                "entity_type": "minecraft:armor_stand"
               }
             ]
           }
@@ -1799,6 +1795,10 @@
                     "max_score": 0
                   }
                 ]
+              },
+              {
+                "type": "palladium:entity_type",
+                "entity_type": "minecraft:armor_stand"
               }
             ]
           }
@@ -1837,6 +1837,10 @@
                     "max_score": 0
                   }
                 ]
+              },
+              {
+                "type": "palladium:entity_type",
+                "entity_type": "minecraft:armor_stand"
               }
             ]
           }
@@ -1916,6 +1920,10 @@
                     "max_score": 0
                   }
                 ]
+              },
+              {
+                "type": "palladium:entity_type",
+                "entity_type": "minecraft:armor_stand"
               }
             ]
           }
@@ -1954,6 +1962,10 @@
                     "max_score": 0
                   }
                 ]
+              },
+              {
+                "type": "palladium:entity_type",
+                "entity_type": "minecraft:armor_stand"
               }
             ]
           }
@@ -2033,6 +2045,10 @@
                     "max_score": 0
                   }
                 ]
+              },
+              {
+                "type": "palladium:entity_type",
+                "entity_type": "minecraft:armor_stand"
               }
             ]
           }
@@ -2071,6 +2087,10 @@
                     "max_score": 0
                   }
                 ]
+              },
+              {
+                "type": "palladium:entity_type",
+                "entity_type": "minecraft:armor_stand"
               }
             ]
           }
@@ -2109,6 +2129,10 @@
                     "max_score": 0
                   }
                 ]
+              },
+              {
+                "type": "palladium:entity_type",
+                "entity_type": "minecraft:armor_stand"
               }
             ]
           }
@@ -2188,6 +2212,10 @@
                     "max_score": 0
                   }
                 ]
+              },
+              {
+                "type": "palladium:entity_type",
+                "entity_type": "minecraft:armor_stand"
               }
             ]
           }
