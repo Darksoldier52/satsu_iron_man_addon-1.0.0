@@ -14,7 +14,16 @@
       "cause_fire": false,
       "smelt_blocks": false,
       "conditions": {
-        "enabling": []
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "nano_energy_boosters",
+            "property": "value",
+            "min": 20,
+            "max": 20
+          }
+        ]
       }
     },
     "energy_beam.2": {
@@ -29,7 +38,16 @@
       "cause_fire": false,
       "smelt_blocks": false,
       "conditions": {
-        "enabling": []
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "nano_energy_boosters",
+            "property": "value",
+            "min": 20,
+            "max": 20
+          }
+        ]
       }
     },
     "energy_beam.3": {
@@ -44,7 +62,16 @@
       "cause_fire": false,
       "smelt_blocks": false,
       "conditions": {
-        "enabling": []
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "nano_energy_boosters",
+            "property": "value",
+            "min": 20,
+            "max": 20
+          }
+        ]
       }
     },
     "energy_beam.4": {
@@ -59,7 +86,16 @@
       "cause_fire": false,
       "smelt_blocks": false,
       "conditions": {
-        "enabling": []
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "nano_energy_boosters",
+            "property": "value",
+            "min": 20,
+            "max": 20
+          }
+        ]
       }
     },
     "energy_beam.5": {
@@ -74,7 +110,16 @@
       "cause_fire": false,
       "smelt_blocks": false,
       "conditions": {
-        "enabling": []
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "nano_energy_boosters",
+            "property": "value",
+            "min": 20,
+            "max": 20
+          }
+        ]
       }
     },
     "energy_beam.6": {
@@ -89,7 +134,16 @@
       "cause_fire": false,
       "smelt_blocks": false,
       "conditions": {
-        "enabling": []
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "nano_energy_boosters",
+            "property": "value",
+            "min": 20,
+            "max": 20
+          }
+        ]
       }
     }
   }
