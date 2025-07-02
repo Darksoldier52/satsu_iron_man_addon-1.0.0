@@ -2327,7 +2327,6 @@
       "commands": [""],
       "last_tick_commands": [
         "tag @s remove mark.41",
-        "function satsu_iron_man_addon:marks_parts/throw_parts/give_all/main",
         "tag @s remove satsu.iron.man.suit.set"
       ],
       "conditions": {
