@@ -3007,8 +3007,7 @@
         "waepons.choose_wheel_stealth",
         "waepons.choose_wheel_hidden",
         "waepons.choose_wheel.force_field",
-        "waepons.choose_wheel_nano_stabilizer",
-        "waepons.choose_wheel.cook_ark"
+        "waepons.choose_wheel_nano_stabilizer"
       ],
       "conditions": {
         "enabling": [
