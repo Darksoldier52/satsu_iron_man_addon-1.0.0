@@ -434,7 +434,7 @@
         ]
       }
     },
-    "taken_increase.size": {
+    "hulkbuster.size": {
       "type": "palladium:size",
       "hidden": true,
       "hidden_in_bar": true,
@@ -443,30 +443,52 @@
         "enabling": [
           {
             "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:marks/mark_taken/main",
-            "ability": "taken_increase"
+            "power": "satsu_iron_man_addon:marks/model_prime/main",
+            "ability": "hulkbuster"
           }
         ]
       }
     },
-    "taken_projectile": {
-      "type": "gravestone:projectile",
+    "sonic_clap": {
+      "type": "palladium:animation_timer",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "title": { "translate": "ability.title.satsu.hulkbuster" },
+      "description": { "translate": "description.satsu.hulkbuster" },
       "hidden": true,
       "hidden_in_bar": true,
+      "list_index": 11,
+      "max_distance": 5,
+      "start_value": 0,
+      "max_value": 10,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:marks/model_prime/main",
+            "ability": "hulkbuster_sonic_clap"
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "sonic_clap.projectile_no_break": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
       "entity_type": "palladium:custom_projectile",
-      "velocity": 2.5,
+      "velocity": 1,
       "swinging_arm": "none",
       "yawOverride": -999,
       "pitchOverride": -999,
-      "yawOffset": 0,
-      "pitchOffset": 10,
+      "yawOffset": 5,
+      "pitchOffset": 25,
       "yawInaccuracy": 0,
       "pitchInaccuracy": 0,
       "count": 1,
       "entity_data": {
         "SetEntityOnFireSeconds": 0,
-        "KnockbackStrength": 2,
-        "Damage": 2,
+        "KnockbackStrength": 1.8,
+        "Damage": 18,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
@@ -476,34 +498,110 @@
         "CommandOnBlockHit": "",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#586363"
+            "Type": "particles",
+            "ParticleType": "satsu_iron_man_addon:sonic_clap",
+            "Spread": 0.1
           }
         ]
       },
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:marks/mark_taken/main",
-            "ability": "taken_increase_projectil"
-          }
-        ],
-        "unlocking": [
+            "type": "palladium:ability_integer_property",
+            "ability": "sonic_clap",
+            "property": "value",
+            "min": 9,
+            "max": 9
+          },
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "arms_unlock_skill_tree"
+            "type": "palladium:ability_enabled",
+            "ability": "sonic_clap"
           },
           {
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.break",
+                "min_score": 1,
+                "max_score": 1
               }
             ]
+          }
+        ]
+      }
+    },
+    "sonic_clap.projectile.destroy": {
+      "type": "gravestone:projectile",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "entity_type": "palladium:custom_projectile",
+      "velocity": 1.8,
+      "swinging_arm": "none",
+      "yawOverride": -999,
+      "pitchOverride": -999,
+      "yawOffset": 5,
+      "pitchOffset": 25,
+      "yawInaccuracy": 0,
+      "pitchInaccuracy": 0,
+      "count": 1,
+      "entity_data": {
+        "SetEntityOnFireSeconds": 0,
+        "ExplosionRadius": 4,
+        "ExplosionBlockInteraction": "BREAK",
+        "KnockbackStrength": 1.8,
+        "Damage": 18,
+        "Size": 0.1,
+        "Gravity": 0.0,
+        "Lifetime": 60,
+        "DieOnEntityHit": true,
+        "DieOnBlockHit": true,
+        "CommandOnEntityHit": "",
+        "CommandOnBlockHit": "",
+        "Appearances": [
+          {
+            "Type": "particles",
+            "ParticleType": "satsu_iron_man_addon:sonic_clap",
+            "Spread": 0.1
+          }
+        ]
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "sonic_clap",
+            "property": "value",
+            "min": 9,
+            "max": 9
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "sonic_clap"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.break",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "sound": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "playsound minecraft:entity.generic.explode ambient @a ~ ~ ~ 1 1.8"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "null",
+            "ability": "sonic_clap"
           }
         ]
       }
