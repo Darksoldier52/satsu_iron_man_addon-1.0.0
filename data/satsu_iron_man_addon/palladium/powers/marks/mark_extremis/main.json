@@ -772,7 +772,8 @@
       "last_tick_commands": [
         "tag @s remove mark.extremis",
         "scoreboard players set @s satsu.iron.man.superior.color 0",
-        "tag @s remove satsu.iron.man.suit.set"
+        "tag @s remove satsu.iron.man.suit.set",
+        "function satsu_iron_man_addon:flight/set_0"
       ],
       "conditions": {
         "enabling": []

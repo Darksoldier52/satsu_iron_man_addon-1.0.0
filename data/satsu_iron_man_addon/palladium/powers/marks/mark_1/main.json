@@ -517,7 +517,8 @@
       "last_tick_commands": [
         "tag @s remove mark.1",
         "tag @s remove satsu.iron.man.suit.set",
-        "scoreboard players reset @s satsu.iron.man.armor.energy.pulse.flame.thrower.icon"
+        "scoreboard players reset @s satsu.iron.man.armor.energy.pulse.flame.thrower.icon",
+        "function satsu_iron_man_addon:flight/set_0"
       ],
       "conditions": {
         "enabling": []

@@ -723,7 +723,8 @@
         "tag @s remove mark.29",
         "tag @s remove satsu.iron.man.suit.set",
         "superpower remove satsu_iron_man_addon:marks/mecano_calll",
-        "execute if entity @e[tag=sentinel] run function satsu_iron_man_addon:sentinels/kill_one_sentinel"
+        "execute if entity @e[tag=sentinel] run function satsu_iron_man_addon:sentinels/kill_one_sentinel",
+        "function satsu_iron_man_addon:flight/set_0"
       ],
       "conditions": {
         "enabling": []
