@@ -3362,6 +3362,17 @@
                 "max_score": 0
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.addon.unlocking.set.block",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
           }
         ]
       }
@@ -3551,7 +3562,7 @@
       "title": { "translate": "ability.title.satsu.armor.edit" },
       "description": { "translate": "description.satsu.armor.edit" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 4,
       "gui_position": [-2, -0],
       "commands": [
@@ -3702,14 +3713,13 @@
         ]
       }
     },
-    "ark_beam_for_hands": {
+    "test_wheel.ark_beam_for_hands": {
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ark_beam_hand",
       "title": { "translate": "ability.title.satsu.ark.beam.for.hands" },
       "description": { "translate": "description.satsu.ark.beam.for.hands" },
       "hidden": false,
       "hidden_in_bar": false,
-      "list_index": 4,
       "gui_position": [0, 2.55],
       "first_tick_commands": [
         "scoreboard objectives add satsu.iron.man.armor.uni.beam.hand dummy",
@@ -3725,10 +3735,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action",
-            "cooldown": 0,
-            "key_type": "key_bind",
-            "needs_empty_hand": false
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -3741,20 +3749,6 @@
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "armor_activate_skil_tree_dummy_close_armor"
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.unlocking.set.block",
-            "min_score": 1,
-            "max_score": 2
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:crouching"
-              }
-            ]
           },
           {
             "type": "palladium:and",
