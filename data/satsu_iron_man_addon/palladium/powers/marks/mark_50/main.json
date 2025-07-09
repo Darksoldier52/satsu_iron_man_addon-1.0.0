@@ -62,7 +62,9 @@
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
       "title": { "translate": "ability.title.satsu.metodo.de.colocacion.nano" },
-      "description": { "translate": "description.satsu.metodo.de.colocacion.nano" },
+      "description": {
+        "translate": "description.satsu.metodo.de.colocacion.nano"
+      },
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [0.5, 1],
@@ -3557,8 +3559,128 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:crouching"
+              }
+            ]
           }
         ]
+      }
+    },
+    "clavar_escudo": {
+      "type": "palladium:animation_timer",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/clavar_escudo.png",
+      "title": { "translate": "ability.title.satsu.clavar.escudo" },
+      "description": { "translate": "description.force_field" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 11,
+      "gui_position": [-5, -0],
+      "start_value": 0,
+      "max_value": 10,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:activation",
+            "ticks": 75,
+            "cooldown": 100,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "arms_unlock_skill_tree"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.nano.armor.things",
+            "min_score": 4,
+            "max_score": 4
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_beam"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:crouching"
+          },
+          {
+            "type": "palladium:on_ground"
+          }
+        ]
+      }
+    },
+    "clavar_escudo.slowness": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "execute as @e[distance=0.1..] run damage @s 2",
+        "particle minecraft:explosion ~ ~ ~",
+        "playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 1.9",
+        "effect give @s minecraft:slowness infinite 255 true"
+      ],
+      "commands": [""],
+      "last_tick_commands": ["effect clear @s minecraft:slowness"],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "clavar_escudo"
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "force_field.shield.animation_timer",
+            "property": "value",
+            "min": 7,
+            "max": 7
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "clavar_escudo.aoe_knockback": {
+      "type": "gravestone:aoe_knockback",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "radius": 2,
+      "knockback": 2,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "clavar_escudo"
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "force_field.shield.animation_timer",
+            "property": "value",
+            "min": 7,
+            "max": 7
+          }
+        ],
+        "unlocking": []
       }
     },
     "shield_put_animation": {
@@ -3566,7 +3688,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
-      "max_value": 6,
+      "max_value": 10,
       "conditions": {
         "enabling": [
           {
@@ -3588,8 +3710,17 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "force_field"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "force_field"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "clavar_escudo"
+              }
+            ]
           }
         ],
         "unlocking": [
