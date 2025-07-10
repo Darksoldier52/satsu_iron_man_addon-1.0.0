@@ -2185,7 +2185,7 @@
       "icon": "#satsu_iron_man_addon:ark_beam_hand",
       "title": { "translate": "ability.title.satsu.ark.beam.for.hands" },
       "description": { "translate": "description.satsu.ark.beam.for.hands" },
-      "hidden": false,
+      "hidden": true,
       "hidden_in_bar": false,
       "gui_position": [0, 2.55],
       "first_tick_commands": [
