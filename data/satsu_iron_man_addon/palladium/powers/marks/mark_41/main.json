@@ -3573,7 +3573,7 @@
         ]
       }
     },
-    "test_wheel": {
+    "weapons_wheel": {
       "type": "palladium:ability_wheel",
       "icon": "satsu_iron_man_addon:textures/gui/armors/personalizate_things.png",
       "title": { "translate": "ability.title.satsu.weapons.choose" },
@@ -3583,10 +3583,10 @@
       "list_index": 3,
       "gui_position": [4.3, -1],
       "abilities": [
-        "test_wheel.rockets",
-        "test_wheel.flares",
-        "test_wheel.ark_beam_for_hands",
-        "test_wheel.flight_unlock"
+        "weapons_wheel.rockets",
+        "weapons_wheel.flares",
+        "weapons_wheel.ark_beam_for_hands",
+        "weapons_wheel.flight_unlock"
       ],
       "texture": "null",
       "disable_mouse_scrolling": false,
@@ -3812,7 +3812,7 @@
         ]
       }
     },
-    "test_wheel.ark_beam_for_hands": {
+    "weapons_wheel.ark_beam_for_hands": {
       "type": "palladium:command",
       "icon": "#satsu_iron_man_addon:ark_beam_hand",
       "title": { "translate": "ability.title.satsu.ark.beam.for.hands" },
@@ -4263,7 +4263,7 @@
         "unlocking": []
       }
     },
-    "test_wheel.flight_unlock": {
+    "weapons_wheel.flight_unlock": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/fly.png",
       "title": { "translate": "ability.title.satsu.flight.edit" },
