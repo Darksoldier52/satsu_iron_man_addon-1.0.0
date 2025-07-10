@@ -2,13 +2,32 @@
   "name": "energy_beams_hands",
   "icon": "#satsu_iron_man_addon:armor_icon_ability",
   "abilities": {
+    "energybeam.remove.ark.energy_beam_hand_uni_bram": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 10"
+      ],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:marks/mark_7/main",
+            "ability": "red_beams"
+          }
+        ]
+      }
+    },
     "energy_beam_hand_uni_bram": {
       "type": "palladium:energy_beam",
       "hidden": true,
       "hidden_in_bar": false,
-      "energy_beam": "satsu_iron_man_addon:uni_beams_hand/uni_beam_hand",
-      "damage": 3.5,
-      "max_distance": 15,
+      "energy_beam": "satsu_iron_man_addon:uni_beams_hand/red_mini/uni_beam_hand",
+      "damage": 10,
+      "max_distance": 20,
       "speed": 0.8,
       "set_on_fire_seconds": 1,
       "cause_fire": false,
@@ -18,7 +37,7 @@
           {
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:marks/mark_7/main",
-            "ability": "uni.beam.hand.right"
+            "ability": "red_beams"
           }
         ],
         "unlocking": [
@@ -29,9 +48,9 @@
       "type": "palladium:energy_beam",
       "hidden": true,
       "hidden_in_bar": false,
-      "energy_beam": "satsu_iron_man_addon:uni_beams_hand/uni_beam_hand_left",
-      "damage": 3.5,
-      "max_distance": 15,
+      "energy_beam": "satsu_iron_man_addon:uni_beams_hand/red_mini/uni_beam_hand_left",
+      "damage": 10,
+      "max_distance": 20,
       "speed": 0.8,
       "set_on_fire_seconds": 1,
       "cause_fire": false,
@@ -41,7 +60,7 @@
           {
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:marks/mark_7/main",
-            "ability": "uni.beam.hand.left"
+            "ability": "red_beams"
           }
         ],
         "unlocking": [
