@@ -58,5 +58,30 @@
     "category": "player",
     "sounds": ["satsu_iron_man_addon:marks/taken/aoe_damage"],
     "subtitle": "taken_damage"
+  },
+  "mark_6_40_suit_up": {
+    "category": "player",
+    "sounds": ["satsu_iron_man_addon:mark_6_40/suitup"],
+    "subtitle": "mark_6_40_suit_up"
+  },
+  "nanomask": {
+    "category": "player",
+    "sounds": ["satsu_iron_man_addon:nanotech/nanomask"],
+    "subtitle": "nanomask"
+  },
+  "mcunano": {
+    "category": "player",
+    "sounds": ["satsu_iron_man_addon:nanotech/mcunano"],
+    "subtitle": "mcunano"
+  },
+  "suitup": {
+    "category": "player",
+    "sounds": ["satsu_iron_man_addon:mark_6_40/suitup"],
+    "subtitle": "suitup"
+  },
+  "superior_enable": {
+    "category": "player",
+    "sounds": ["satsu_iron_man_addon:superior/superior_enable"],
+    "subtitle": "superior_enable"
   }
 }
