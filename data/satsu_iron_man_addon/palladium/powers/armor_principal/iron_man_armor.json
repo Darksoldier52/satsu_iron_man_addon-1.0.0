@@ -539,6 +539,10 @@
                   },
                   {
                     "type": "palladium:has_tag",
+                    "tag": "mark.41"
+                  },
+                  {
+                    "type": "palladium:has_tag",
                     "tag": "mark.50"
                   },
                   {
@@ -576,10 +580,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.taken"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.41"
                   },
                   {
                     "type": "palladium:has_tag",
@@ -679,48 +679,6 @@
         ]
       }
     },
-    "armor_activate.animation_timer.mark.41-42": {
-      "type": "palladium:animation_timer",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "start_value": 0,
-      "max_value": 64,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.animation.armor",
-            "min_score": 1,
-            "max_score": 1
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
-              }
-            ]
-          },
-          {
-            "type": "palladium:has_tag",
-            "tag": "mark.41"
-          },
-          {
-            "type": "palladium:and",
-            "conditions": []
-          }
-        ]
-      }
-    },
     "armor_activate.command": {
       "type": "palladium:command",
       "hidden": true,
@@ -756,14 +714,6 @@
                 "property": "value",
                 "min": 10,
                 "max": 19
-              },
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_activate.animation_timer.mark.41-42",
-                "property": "value",
-                "min": 1,
-                "max": 31
               }
             ]
           }
@@ -972,9 +922,8 @@
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 65,
-                    "max_score": 2044
+                    "objective": "satsu.iron.man.flight_speed.choose",
+                    "min_score": 2
                   }
                 ]
               },
@@ -987,9 +936,8 @@
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 65,
-                    "max_score": 204
+                    "objective": "satsu.iron.man.flight_speed.choose",
+                    "min_score": 2
                   }
                 ]
               },
@@ -1002,9 +950,8 @@
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 65,
-                    "max_score": 214
+                    "objective": "satsu.iron.man.flight_speed.choose",
+                    "min_score": 2
                   }
                 ]
               },
@@ -1017,9 +964,8 @@
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 66,
-                    "max_score": 205
+                    "objective": "satsu.iron.man.flight_speed.choose",
+                    "min_score": 2
                   }
                 ]
               },
@@ -1032,9 +978,8 @@
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 65,
-                    "max_score": 204
+                    "objective": "satsu.iron.man.flight_speed.choose",
+                    "min_score": 2
                   }
                 ]
               },
@@ -1047,9 +992,8 @@
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 65,
-                    "max_score": 204
+                    "objective": "satsu.iron.man.flight_speed.choose",
+                    "min_score": 2
                   }
                 ]
               },
@@ -1062,9 +1006,8 @@
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 65,
-                    "max_score": 204
+                    "objective": "satsu.iron.man.flight_speed.choose",
+                    "min_score": 2
                   }
                 ]
               },
@@ -1077,9 +1020,8 @@
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 65,
-                    "max_score": 204
+                    "objective": "satsu.iron.man.flight_speed.choose",
+                    "min_score": 2
                   }
                 ]
               },
@@ -1092,9 +1034,8 @@
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 65,
-                    "max_score": 214
+                    "objective": "satsu.iron.man.flight_speed.choose",
+                    "min_score": 2
                   }
                 ]
               },
@@ -1107,9 +1048,8 @@
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.flight_speed",
-                    "min_score": 65,
-                    "max_score": 207
+                    "objective": "satsu.iron.man.flight_speed.choose",
+                    "min_score": 2
                   }
                 ]
               }
@@ -2379,7 +2319,8 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease"
+        "function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
+        "function satsu_iron_man_addon:marks_parts/reset/reset_armor_parts"
       ],
       "commands": [""],
       "last_tick_commands": [""],
@@ -2681,10 +2622,6 @@
                       },
                       {
                         "type": "palladium:has_tag",
-                        "tag": "mark.41"
-                      },
-                      {
-                        "type": "palladium:has_tag",
                         "tag": "mark.42"
                       },
                       {
@@ -2875,10 +2812,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "mark.40"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.41"
                   },
                   {
                     "type": "palladium:has_tag",

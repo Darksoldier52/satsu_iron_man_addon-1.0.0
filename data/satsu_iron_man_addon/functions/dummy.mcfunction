@@ -1,4 +1,6 @@
 
+scoreboard objectives add satsu.iron.man.armor.weapon dummy
+scoreboard objectives add satsu.iron.man.armor.model.prime.stealth dummy
 scoreboard objectives add satsu.iron.man.addon.nano.stabilizer dummy
 scoreboard objectives add satsu.iron.man.addon.nano.weapon.hammer dummy
 scoreboard objectives add satsu.iron.man.addon.nano.weapon.sword dummy
@@ -6,6 +8,16 @@ scoreboard objectives add satsu.iron.man.addon.nano.weapon.large.sword dummy
 scoreboard objectives add satsu.iron.man.addon.nano.weapon.katar dummy
 scoreboard objectives add satsu.iron.man.addon.nano.weapon.grenade_launcher dummy
 scoreboard objectives add satsu.iron.man.addon.nano.weapon.rial dummy
+scoreboard objectives add satsu.iron.man.addon.armor.choose dummy
+scoreboard objectives add satsu.iron.man.addon.armor.all dummy
+scoreboard objectives add satsu.iron.man.addon.armor.chest dummy
+scoreboard objectives add satsu.iron.man.addon.armor.head dummy
+scoreboard objectives add satsu.iron.man.addon.armor.right.arm dummy
+scoreboard objectives add satsu.iron.man.addon.armor.left.arm dummy
+scoreboard objectives add satsu.iron.man.addon.armor.right.shoulder dummy
+scoreboard objectives add satsu.iron.man.addon.armor.left.shoulder dummy
+scoreboard objectives add satsu.iron.man.addon.armor.right.leg dummy
+scoreboard objectives add satsu.iron.man.addon.armor.left.leg dummy
 scoreboard objectives add satsu.iron.man.armor.85.nano.mask dummy
 scoreboard objectives add satsu.iron.man.armor.85.old.mask dummy
 scoreboard objectives add satsu.iron.man.addon.model.prime.additaments.choose dummy
@@ -61,7 +73,7 @@ scoreboard objectives remove satsu.iron.man.armor.actived.perm
 scoreboard objectives add satsu.iron.man.armor dummy
 scoreboard objectives add satsu.iron.man.armor.actived dummy
 scoreboard objectives remove satsu.iron.man.armor.anim
-scoreboard objectives add satsu.iron.man.flight_speed dummy
+scoreboard objectives remove satsu.iron.man.flight_speed
 scoreboard objectives add satsu.iron.man.flight_speed.choose dummy
 scoreboard objectives add satsu.iron.man.choose_armor dummy
 scoreboard objectives add satsu.iron.man.choose_armor.test dummy

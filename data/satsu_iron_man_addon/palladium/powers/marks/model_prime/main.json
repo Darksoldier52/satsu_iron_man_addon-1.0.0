@@ -1,5 +1,5 @@
 {
-  "name": { "translate": "ability.title.satsu.model.prime" },
+  "name": { "translate": "ability.title.satsu.mark.model.prime" },
   "allow_bar_shrinking": true,
   "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
   "background": "minecraft:textures/block/iron_block.png",
@@ -62,7 +62,9 @@
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
       "title": { "translate": "ability.title.satsu.metodo.de.colocacion.nano" },
-      "description": { "translate": "description.satsu.metodo.de.colocacion.nano" },
+      "description": {
+        "translate": "description.satsu.metodo.de.colocacion.nano"
+      },
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [0.5, 1],
@@ -77,17 +79,16 @@
       }
     },
     "flight": {
-      "type": "gravestone:stat_ability",
+      "type": "palladium:attribute_modifier",
       "icon": "satsu_iron_man_addon:textures/gui/armors/fly.png",
       "title": { "translate": "ability.title.satsu.Flight" },
       "description": { "translate": "description.flight" },
-      "hidden": false,
+      "hidden": true,
       "hidden_in_bar": true,
-      "score_value": "satsu.iron.man.flight_speed",
-      "Division_Amount": "83",
-      "Attribute_Type": "palladium:flight_speed",
-      "UUID": "e40d2ec9-1558-43b9-a8ff-60b7045ddc92",
-      "Attribute_Mod": "addition",
+      "attribute": "palladium:flight_speed",
+      "uuid": "e40d2ec9-1558-43b9-a8ff-60b7045ddc92",
+      "amount": 0.77,
+      "operation": 0,
       "gui_position": [1, 0.5],
       "conditions": {
         "enabling": [
@@ -119,7 +120,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
@@ -190,7 +191,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "score_value": "satsu.iron.man.flight_speed.choose",
-      "Division_Amount": "400",
+      "Division_Amount": "200",
       "Attribute_Type": "palladium:flight_speed",
       "UUID": "e85d2ec9-1558-43b9-a8ff-60b7045ddc92",
       "Attribute_Mod": "addition",
@@ -587,10 +588,21 @@
             "conditions": [
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 2,
                 "max": 17
+              },
+              {
+                "type": "palladium:not",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.model.prime.stealth",
+                    "min_score": 1,
+                    "max_score": 1
+                  }
+                ]
               }
             ]
           }
@@ -606,7 +618,7 @@
         "unlocking": [
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 1,
             "max": 17
@@ -619,6 +631,17 @@
                 "objective": "satsu.iron.man.mask",
                 "min_score": 0,
                 "max_score": 0
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.model.prime.stealth",
+                "min_score": 1,
+                "max_score": 1
               }
             ]
           }
@@ -656,6 +679,96 @@
       }
     },
     "interpolate": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "max_value": 17,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "satsu.iron.man.suit.set"
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:ability_unlocked",
+                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                        "ability": "armor_skill_bar"
+                      },
+                      {
+                        "type": "palladium:ability_enabled",
+                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                        "ability": "enable_armor"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:or",
+                        "conditions": [
+                          {
+                            "type": "palladium:ability_enabled",
+                            "power": "satsu_iron_man_addon:items/nanoparticle_main_color_change",
+                            "ability": "action"
+                          },
+                          {
+                            "type": "palladium:ability_enabled",
+                            "power": "satsu_iron_man_addon:items/nanoparticle_secondary_color_change",
+                            "ability": "action"
+                          },
+                          {
+                            "type": "palladium:ability_enabled",
+                            "power": "satsu_iron_man_addon:items/nanoparticle_thirdy_color_change",
+                            "ability": "action"
+                          },
+                          {
+                            "type": "palladium:ability_enabled",
+                            "power": "satsu_iron_man_addon:items/nanoparticle_additaments",
+                            "ability": "action"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.model.prime.stealth",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:entity_type",
+                "entity_type": "minecraft:armor_stand"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "animation": {
       "type": "palladium:animation_timer",
       "hidden": true,
       "hidden_in_bar": true,
@@ -804,6 +917,17 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "type": "palladium:not",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.model.prime.stealth",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               },
@@ -824,15 +948,15 @@
         "tag @s add satsu.iron.man.suit.set",
         "tag @s add model.prime",
         "scoreboard players set @s satsu.iron.man.armor 60",
-        "scoreboard players set @s satsu.iron.man.flame 0",
-        "scoreboard players set @s satsu.iron.man.flight_speed 64"
+        "scoreboard players set @s satsu.iron.man.flame 0"
       ],
       "commands": [""],
       "last_tick_commands": [
         "execute as @s[scores={satsu.iron.man.armor.remote=1}] if entity @e[tag=sentinel.test,distance=0..30] run tag @s add sentinel_one",
         "execute as @s[scores={satsu.iron.man.armor.remote=1}] run function satsu_iron_man_addon:remote_mode/disable",
         "tag @s remove model.prime",
-        "tag @s remove satsu.iron.man.suit.set"
+        "tag @s remove satsu.iron.man.suit.set",
+        "function satsu_iron_man_addon:flight/set_0"
       ],
       "conditions": {
         "enabling": []
@@ -1057,7 +1181,7 @@
       }
     },
     "particles.right_hand.left_hand": {
-      "type": "palladium:particles",
+      "type": "palladium:dummy",
       "hidden": true,
       "hidden_in_bar": true,
       "emitter": [
@@ -1078,7 +1202,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
@@ -1111,30 +1235,20 @@
                     "ability": "uni.beam.hand.left"
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.personalize.things",
-                    "min_score": 1,
-                    "max_score": 1
-                  },
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.set",
-                    "min_score": 1,
-                    "max_score": 1
-                  },
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.arms.set",
-                    "min_score": 1,
-                    "max_score": 1
-                  },
-                  {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_fireworks"
                   },
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_flares_flames"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "nano_grenade_launcher_right"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "nano_grenade_launcher_left"
                   },
                   {
                     "type": "palladium:ability_integer_property",
@@ -1208,7 +1322,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
@@ -1324,6 +1438,38 @@
             "objective": "satsu.iron.man.armor.actived",
             "min_score": 1,
             "max_score": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.model.prime.stealth",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.mask",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1397,7 +1543,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
@@ -1411,6 +1557,21 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_katar.attack"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
                   }
                 ]
               }
@@ -1491,7 +1652,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
@@ -1621,7 +1782,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
@@ -1676,7 +1837,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -1797,7 +1958,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -1954,7 +2115,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -2036,7 +2197,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -2080,7 +2241,7 @@
         "execute as @s[scores={satsu.iron.man.personalize.things=2..}] run title @s actionbar {\"translate\":\"satsu.iron.man.addon.personalizate.off\",\"color\":\"blue\"}}",
         "ability lock @s satsu_iron_man_addon:armor_principal/iron_man_armor dummy"
       ],
-      "abilities": ["flight_unlock", "arms_unlock"],
+      "abilities": ["flight_unlock"],
       "conditions": {
         "enabling": [
           {
@@ -2106,7 +2267,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 1,
                 "max": 17
@@ -2124,7 +2285,7 @@
                     "conditions": [
                       {
                         "type": "palladium:ability_integer_property",
-                        "ability": "interpolate",
+                        "ability": "animation",
                         "property": "value",
                         "min": 17,
                         "max": 17
@@ -2286,7 +2447,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -2347,7 +2508,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -2430,7 +2591,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -2745,7 +2906,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 1,
             "max": 17
@@ -2764,7 +2925,7 @@
         ]
       }
     },
-    "flight_speed": {
+    "increase.flight_speed": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
@@ -2773,12 +2934,12 @@
       "hidden_in_bar": false,
       "list_index": 6,
       "first_tick_commands": [],
-      "commands": ["scoreboard players add @s satsu.iron.man.flight_speed 1"],
+      "commands": ["function satsu_iron_man_addon:flight/increase"],
       "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:toggle",
+            "type": "palladium:action",
             "key_type": "scroll_up"
           }
         ],
@@ -2802,9 +2963,9 @@
             "conditions": [
               {
                 "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.flight_speed",
-                "min_score": 64,
-                "max_score": 210
+                "objective": "satsu.iron.man.flight_speed.choose",
+                "min_score": 0,
+                "max_score": 420
               }
             ]
           }
@@ -2821,13 +2982,13 @@
       "list_index": 7,
       "first_tick_commands": [],
       "commands": [
-        "scoreboard players remove @s satsu.iron.man.flight_speed 1"
+        "function satsu_iron_man_addon:flight/decrease"
       ],
       "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:toggle",
+            "type": "palladium:action",
             "key_type": "scroll_down"
           }
         ],
@@ -2851,9 +3012,9 @@
             "conditions": [
               {
                 "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.flight_speed",
-                "min_score": 65,
-                "max_score": 211
+                "objective": "satsu.iron.man.flight_speed.choose",
+                "min_score": 2,
+                "max_score": 422
               }
             ]
           }
@@ -2877,6 +3038,7 @@
       "abilities": [
         "increase_chest_beam",
         "decrease_chest_beam",
+        "waepons.choose_wheel_hulkbuster",
         "waepons.choose_wheel_rockets",
         "waepons.choose_wheel.maximum.pulse",
         "waepons.choose_wheel_nano_rockets",
@@ -2890,9 +3052,9 @@
         "waepons.choose_wheel.nano_katar",
         "waepons.choose_wheel.nano_hand_blade",
         "waepons.choose_wheel_stealth",
+        "waepons.choose_wheel_hidden",
         "waepons.choose_wheel.force_field",
-        "waepons.choose_wheel_nano_stabilizer",
-        "waepons.choose_wheel.cook_ark"
+        "waepons.choose_wheel_nano_stabilizer"
       ],
       "conditions": {
         "enabling": [
@@ -2907,12 +3069,6 @@
             "min_score": 1
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.arms.set",
-            "min_score": 1,
-            "max_score": 1
-          },
-          {
             "type": "palladium:ability_unlocked",
             "ability": "armor"
           },
@@ -2924,7 +3080,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 1,
             "max": 17
@@ -2955,6 +3111,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2982,6 +3153,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3008,6 +3194,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3034,6 +3235,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3060,6 +3276,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3086,6 +3317,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3112,6 +3358,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3138,6 +3399,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3164,6 +3440,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3190,6 +3481,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3217,6 +3523,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3243,6 +3564,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3268,6 +3604,103 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "waepons.choose_wheel_hidden": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/prime/hidden/main.png",
+      "title": { "translate": "ability.title.satsu.hidden.mode" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "first_tick_commands": [
+        "function satsu_iron_man_addon:marks/model_prime/hidden/main"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "waepons.choose_wheel_hulkbuster": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "entity_type": "palladium:custom_projectile",
+      "title": { "translate": "ability.title.satsu.hulkbuster" },
+      "description": { "translate": "description.satsu.hulkbuster" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.addon.nano.armor.things 14"
+      ],
+      "commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3304,6 +3737,21 @@
             "objective": "satsu.iron.man.armor.energy.beams",
             "min_score": 0,
             "max_score": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3341,6 +3789,21 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor.energy.beams",
             "min_score": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3367,6 +3830,21 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3421,10 +3899,25 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3480,7 +3973,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
@@ -3492,6 +3985,21 @@
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.addon.nano.weapon.hammer",
                 "min_score": 1
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
               }
             ]
           }
@@ -3536,6 +4044,21 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "alien"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
                   }
                 ]
               }
@@ -3676,6 +4199,21 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "energy_beam"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
                   }
                 ]
               }
@@ -3959,10 +4497,25 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -4100,10 +4653,25 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -4236,10 +4804,25 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -4279,6 +4862,21 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "alien"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
               }
             ]
           }
@@ -4475,6 +5073,21 @@
                 "tag": "alien"
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -4536,7 +5149,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -4571,6 +5184,21 @@
                         "ability": "nano_katar.attack"
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
                   }
                 ]
               }
@@ -4636,7 +5264,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -4671,6 +5299,21 @@
                         "ability": "nano_katar.attack"
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
                   }
                 ]
               }
@@ -4767,6 +5410,21 @@
                 "min_score": 1
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -4826,6 +5484,21 @@
                 "min_score": 1
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -4863,6 +5536,21 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "alien"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
               }
             ]
           }
@@ -4933,6 +5621,152 @@
                 "tag": "alien"
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "power": "satsu_iron_man_addon:marks/model_prime/main",
+                    "ability": "hulkbuster"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "hulkbuster": {
+      "type": "palladium:animation_timer",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "title": { "translate": "ability.title.satsu.hulkbuster" },
+      "description": { "translate": "description.satsu.hulkbuster" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 11,
+      "max_distance": 5,
+      "start_value": 0,
+      "max_value": 6,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "ticks": 20,
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.nano.armor.things",
+            "min_score": 14,
+            "max_score": 14
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "interpolate",
+            "property": "value",
+            "min": 1,
+            "max": 17
+          }
+        ]
+      }
+    },
+    "hulkbuster.command": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "scale": 1.35,
+      "first_tick_commands": [
+        "scale set pehkui:eye_height 1.3",
+        "scoreboard players set @s satsu.iron.man.mask 1",
+        "superpower add satsu_iron_man_addon:marks/model_prime/hulkbuster/main"
+      ],
+      "commands": [""],
+      "last_tick_commands": [
+        "scale set pehkui:eye_height 1",
+        "superpower remove satsu_iron_man_addon:marks/model_prime/hulkbuster/main"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "hulkbuster"
+          }
+        ]
+      }
+    },
+    "hulkbuster_sonic_clap": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/abilities/clap_sonic.png",
+      "title": {
+        "translate": "ability.title.satsu.sonic.clap"
+      },
+      "description": {
+        "translate": "description.satsu.sonic.clap"
+      },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 12,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:activation",
+            "ticks": 12,
+            "cooldown": 100,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "interpolate",
+            "property": "value",
+            "min": 1,
+            "max": 17
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "hulkbuster"
           }
         ]
       }
@@ -5470,6 +6304,10 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "nano_katar.attack"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "hulkbuster_sonic_clap"
               }
             ]
           }
