@@ -928,11 +928,11 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "energy.pulse_right"
+                    "ability": "mini.gun.right"
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "energy.pulse_left"
+                    "ability": "mini.gun.left"
                   },
                   {
                     "type": "palladium:ability_enabled",
@@ -1394,13 +1394,13 @@
                 "conditions": [
                   {
                     "type": "palladium:animation_timer_ability",
-                    "ability": "energy.pulse_right",
+                    "ability": "mini.gun.right",
                     "min": 5,
                     "max": 5
                   },
                   {
                     "type": "palladium:animation_timer_ability",
-                    "ability": "energy.pulse_left",
+                    "ability": "mini.gun.left",
                     "min": 5,
                     "max": 5
                   }
@@ -1674,6 +1674,65 @@
             "max": 16
           }
         ]
+      }
+    },
+    "repulsor": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 10,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "mini.gun.right"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "mini.gun.left"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "uni.beam.hand.right"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "uni.beam.hand.left"
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "repulsor.sound": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "sound": "satsu_iron_man_addon:entity.armor.repulsor",
+      "volume": 1,
+      "pitch": 1,
+      "looping": true,
+      "play_self": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "repulsor",
+            "property": "value",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "repulsor"
+          }
+        ],
+        "unlocking": []
       }
     },
     "mini.gun.right": {
@@ -2775,7 +2834,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy.pulse_left"
+                "ability": "mini.gun.left"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -2812,11 +2871,11 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy.pulse_right"
+                "ability": "mini.gun.right"
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy.pulse_left"
+                "ability": "mini.gun.left"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -2859,11 +2918,11 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "energy.pulse_right"
+                    "ability": "mini.gun.right"
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "energy.pulse_left"
+                    "ability": "mini.gun.left"
                   },
                   {
                     "type": "palladium:ability_enabled",
