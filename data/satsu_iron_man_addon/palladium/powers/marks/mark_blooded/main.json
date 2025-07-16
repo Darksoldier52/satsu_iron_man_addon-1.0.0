@@ -79,9 +79,6 @@
             "type": "palladium:has_movement_input"
           },
           {
-            "type": "palladium:is_moving"
-          },
-          {
             "type": "palladium:on_ground"
           },
           {
