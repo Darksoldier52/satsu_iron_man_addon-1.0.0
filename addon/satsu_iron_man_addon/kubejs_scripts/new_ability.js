@@ -90,7 +90,7 @@ StartupEvents.registry("palladium:abilities", (event) => {
       "ID of the power to add"
     )
     // Handler for what happens during EVERY tick of the ability being active, make sure to check the 'enabled' parameter
-    .tick((entity, entry, holder, enabled) => {
+    .firstTick((entity, entry, holder, enabled) => {
       if (enabled) {
         const power_path = entry.getPropertyByName("power_path");
         const powerid = entry.getPropertyByName("powerid");
