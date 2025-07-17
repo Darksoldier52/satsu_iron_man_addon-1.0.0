@@ -2202,7 +2202,7 @@
       "title": { "translate": "ability.title.satsu.armor.edit" },
       "description": { "translate": "description.satsu.armor.edit" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 4,
       "gui_position": [-2, -0],
       "commands": [
