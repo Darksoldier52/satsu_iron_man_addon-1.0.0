@@ -180,11 +180,23 @@
             "max_score": 1
           },
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
-            "property": "value",
-            "min": 15,
-            "max": 16
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_leg_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_leg_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              }
+            ]
           },
           {
             "type": "palladium:objective_score",
@@ -1275,10 +1287,10 @@
         "unlocking": [
           {
             "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
+            "ability": "chest_animation",
             "property": "value",
-            "min": 2,
-            "max": 16
+            "min": 1,
+            "max": 17
           },
           {
             "type": "palladium:objective_score",
@@ -1299,10 +1311,10 @@
         "unlocking": [
           {
             "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
+            "ability": "right_leg_animation",
             "property": "value",
-            "min": 2,
-            "max": 16
+            "min": 1,
+            "max": 18
           },
           {
             "type": "palladium:objective_score",
@@ -1323,10 +1335,10 @@
         "unlocking": [
           {
             "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
+            "ability": "left_leg_animation",
             "property": "value",
-            "min": 2,
-            "max": 16
+            "min": 1,
+            "max": 18
           },
           {
             "type": "palladium:objective_score",
@@ -1347,10 +1359,17 @@
         "unlocking": [
           {
             "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
+            "ability": "right_arm_animation",
             "property": "value",
-            "min": 2,
-            "max": 16
+            "min": 1,
+            "max": 18
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "right_shoulder_animation",
+            "property": "value",
+            "min": 1,
+            "max": 18
           },
           {
             "type": "palladium:objective_score",
@@ -1377,10 +1396,17 @@
         "unlocking": [
           {
             "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
+            "ability": "left_arm_animation",
             "property": "value",
-            "min": 2,
-            "max": 16
+            "min": 1,
+            "max": 18
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "left_shoulder_animation",
+            "property": "value",
+            "min": 1,
+            "max": 18
           },
           {
             "type": "palladium:objective_score",
@@ -1406,11 +1432,65 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
-            "property": "value",
-            "min": 2,
-            "max": 16
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 1,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 1,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_leg_animation",
+                "property": "value",
+                "min": 1,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_leg_animation",
+                "property": "value",
+                "min": 1,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_shoulder_animation",
+                "property": "value",
+                "min": 1,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_shoulder_animation",
+                "property": "value",
+                "min": 1,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "chest_animation",
+                "property": "value",
+                "min": 1,
+                "max": 17
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "head_animation",
+                "property": "value",
+                "min": 1,
+                "max": 19
+              }
+            ]
           }
         ]
       }
@@ -3246,56 +3326,6 @@
         ]
       }
     },
-    "no_nanoarmor_anim": {
-      "type": "palladium:animation_timer",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "start_value": 0,
-      "max_value": 16,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "satsu.iron.man.suit.set"
-                  },
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:ability_unlocked",
-                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                        "ability": "armor_skill_bar"
-                      },
-                      {
-                        "type": "palladium:ability_enabled",
-                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                        "ability": "enable_armor"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
-                    "min_score": 1,
-                    "max_score": 1
-                  }
-                ]
-              },
-              {
-                "type": "palladium:entity_type",
-                "entity_type": "minecraft:armor_stand"
-              }
-            ]
-          }
-        ]
-      }
-    },
     "set.scoreboard.armor.19.mark.45": {
       "type": "palladium:command",
       "hidden": true,
@@ -3767,35 +3797,6 @@
                     "ability": "mask_activate"
                   }
                 ]
-              },
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.mask",
-                    "min_score": 1,
-                    "max_score": 1
-                  },
-                  {
-                    "type": "palladium:ability_integer_property",
-                    "ability": "no_nanoarmor_anim",
-                    "property": "value",
-                    "min": 12,
-                    "max": 13
-                  },
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.armor.actived",
-                        "min_score": 1,
-                        "max_score": 1
-                      }
-                    ]
-                  }
-                ]
               }
             ]
           }
@@ -3841,11 +3842,23 @@
             "max_score": 1
           },
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
-            "property": "value",
-            "min": 15,
-            "max": 16
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -3935,11 +3948,23 @@
             "max_score": 1
           },
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
-            "property": "value",
-            "min": 15,
-            "max": 16
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_leg_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_leg_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              }
+            ]
           }
         ]
       }
@@ -4904,13 +4929,6 @@
             "max_score": 1
           },
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
-            "property": "value",
-            "min": 15,
-            "max": 16
-          },
-          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -5009,9 +5027,9 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
+            "ability": "chest_animation",
             "property": "value",
-            "min": 15,
+            "min": 16,
             "max": 16
           }
         ]
@@ -5138,11 +5156,23 @@
             "max_score": 1
           },
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
-            "property": "value",
-            "min": 15,
-            "max": 16
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              }
+            ]
           },
           {
             "type": "palladium:or",
@@ -5287,10 +5317,10 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "no_nanoarmor_anim",
+                "ability": "right_arm_animation",
                 "property": "value",
-                "min": 15,
-                "max": 16
+                "min": 18,
+                "max": 18
               },
               {
                 "type": "palladium:not",
@@ -5361,10 +5391,10 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "no_nanoarmor_anim",
+                "ability": "left_arm_animation",
                 "property": "value",
-                "min": 15,
-                "max": 16
+                "min": 18,
+                "max": 18
               },
               {
                 "type": "palladium:not",
@@ -5429,11 +5459,37 @@
             "max_score": 1
           },
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
-            "property": "value",
-            "min": 15,
-            "max": 16
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_leg_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_leg_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              }
+            ]
           }
         ]
       }
@@ -5494,11 +5550,23 @@
             "max_score": 1
           },
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
-            "property": "value",
-            "min": 15,
-            "max": 16
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              }
+            ]
           }
         ]
       }
@@ -5559,11 +5627,23 @@
             "max_score": 1
           },
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
-            "property": "value",
-            "min": 15,
-            "max": 16
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              }
+            ]
           }
         ]
       }
@@ -5605,7 +5685,7 @@
       "hidden_in_bar": true,
       "list_index": 4,
       "gui_position": [-2, -0],
-      "abilities": [ "arms_unlock"],
+      "abilities": ["arms_unlock"],
       "conditions": {
         "enabling": [
           {
@@ -5805,11 +5885,23 @@
                 "max_score": 1
               },
               {
-                "type": "palladium:ability_integer_property",
-                "ability": "no_nanoarmor_anim",
-                "property": "value",
-                "min": 15,
-                "max": 16
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "right_arm_animation",
+                    "property": "value",
+                    "min": 18,
+                    "max": 18
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "left_arm_animation",
+                    "property": "value",
+                    "min": 18,
+                    "max": 18
+                  }
+                ]
               }
             ]
           },
@@ -5891,11 +5983,23 @@
                 "max_score": 1
               },
               {
-                "type": "palladium:ability_integer_property",
-                "ability": "no_nanoarmor_anim",
-                "property": "value",
-                "min": 15,
-                "max": 16
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "right_arm_animation",
+                    "property": "value",
+                    "min": 18,
+                    "max": 18
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "left_arm_animation",
+                    "property": "value",
+                    "min": 18,
+                    "max": 18
+                  }
+                ]
               }
             ]
           }
@@ -5955,10 +6059,10 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "no_nanoarmor_anim",
+                "ability": "right_arm_animation",
                 "property": "value",
-                "min": 15,
-                "max": 16
+                "min": 18,
+                "max": 18
               },
               {
                 "type": "palladium:not",
@@ -6034,10 +6138,10 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "no_nanoarmor_anim",
+                "ability": "left_arm_animation",
                 "property": "value",
-                "min": 15,
-                "max": 16
+                "min": 18,
+                "max": 18
               },
               {
                 "type": "palladium:not",
@@ -6330,11 +6434,23 @@
             "max_score": 1
           },
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "no_nanoarmor_anim",
-            "property": "value",
-            "min": 1,
-            "max": 16
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_leg_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_leg_animation",
+                "property": "value",
+                "min": 18,
+                "max": 18
+              }
+            ]
           },
           {
             "type": "palladium:not",
