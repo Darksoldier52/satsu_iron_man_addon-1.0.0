@@ -132,5 +132,8 @@
   },
   "entity.armor.repulsor": {
     "sounds": ["satsu_iron_man_addon:repulsor"]
+  },
+  "entity.armor.land": {
+    "sounds": ["satsu_iron_man_addon:land"]
   }
 }
