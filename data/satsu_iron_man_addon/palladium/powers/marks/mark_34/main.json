@@ -40,6 +40,71 @@
         ]
       }
     },
+    "walk.sound": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "sound": "satsu_iron_man_addon:entity.armor.walk.sound",
+      "volume": 0.3,
+      "pitch": 1,
+      "looping": true,
+      "play_self": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "walk.sound.animation_timer",
+            "property": "value",
+            "min": 2,
+            "max": 9
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "walk.sound.animation_timer"
+          }
+        ]
+      }
+    },
+    "walk.sound.animation_timer": {
+      "type": "palladium:repeating_animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 9,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:has_movement_input"
+          },
+          {
+            "type": "palladium:on_ground"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "alien"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:crouching"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "class": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/pincher_red.png",
@@ -688,6 +753,31 @@
         ]
       }
     },
+    "no_nanoarmor_anim.sound": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "sound": "satsu_iron_man_addon:suitup",
+      "volume": 0.7,
+      "pitch": 1,
+      "looping": true,
+      "play_self": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "no_nanoarmor_anim",
+                "min": "1",
+                "max": "15"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "set.scoreboard.armor.46.mark.34": {
       "type": "palladium:command",
       "hidden": true,
@@ -725,6 +815,44 @@
         "minecraft:ignites_armor_stands",
         "minecraft:is_freezing"
       ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "alien"
+              }
+            ]
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          }
+        ]
+      }
+    },
+    "projectile_resistance": {
+      "type": "palladium:damage_immunity",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": ["minecraft:arrow", "minecraft:barrier"]
+      },
+      "title": { "translate": "ability.title.satsu.projectile_resistance" },
+      "description": { "translate": "description.iron.man.projectile_resistance" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, 3.25],
+      "damage_sources": ["minecraft:is_projectile"],
       "conditions": {
         "enabling": [
           {
@@ -1640,6 +1768,65 @@
         ]
       }
     },
+    "repulsor": {
+      "type": "palladium:animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 10,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "energy.pulse_right"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "energy.pulse_left"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "uni.beam.hand.right"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "uni.beam.hand.left"
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "repulsor.sound": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "sound": "satsu_iron_man_addon:entity.armor.repulsor",
+      "volume": 1,
+      "pitch": 1,
+      "looping": true,
+      "play_self": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "repulsor",
+            "property": "value",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "repulsor"
+          }
+        ],
+        "unlocking": []
+      }
+    },
     "energy.pulse_right": {
       "type": "palladium:repeating_animation_timer",
       "hidden": true,
@@ -1776,15 +1963,11 @@
       }
     },
     "energyblast.remove.ark.energy": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:decrease_scoreboard",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 10",
-        "xp add @s 1"
-      ],
-      "commands": [""],
-      "last_tick_commands": [""],
+      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
+      "quantity": 10,
       "conditions": {
         "enabling": [
           {
@@ -1976,11 +2159,7 @@
       "first_tick_commands": [
         "scoreboard objectives add satsu.iron.man.armor.uni.beam.hand dummy",
         "scoreboard players add @s satsu.iron.man.armor.uni.beam.hand 1",
-        "scoreboard players add @s satsu.iron.man.armor.energy.pulse.or.energy.beam 1",
-        "execute as @s[scores={satsu.iron.man.armor.uni.beam.hand=1}] run tag @s add hand.uni.beam",
-        "execute as @s[scores={satsu.iron.man.armor.uni.beam.hand=2..}] run tag @s remove hand.uni.beam",
-        "execute as @s[scores={satsu.iron.man.armor.uni.beam.hand=2..}] run scoreboard players reset @s satsu.iron.man.armor.uni.beam.hand",
-        "execute as @s[scores={satsu.iron.man.armor.energy.pulse.or.energy.beam=2..}] run scoreboard players reset @s satsu.iron.man.armor.energy.pulse.or.energy.beam"
+        "execute as @s[scores={satsu.iron.man.armor.uni.beam.hand=2..}] run scoreboard players set @s satsu.iron.man.armor.uni.beam.hand 0"
       ],
       "commands": [""],
       "last_tick_commands": [""],
@@ -2074,10 +2253,6 @@
                 "tag": "energy.pulse"
               },
               {
-                "type": "palladium:has_tag",
-                "tag": "hand.uni.beam"
-              },
-              {
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "armor_skill_bar"
@@ -2151,10 +2326,6 @@
                 "tag": "energy.pulse"
               },
               {
-                "type": "palladium:has_tag",
-                "tag": "hand.uni.beam"
-              },
-              {
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "armor_skill_bar"
@@ -2187,14 +2358,11 @@
       }
     },
     "energybeam.remove.ark.energy": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:decrease_scoreboard",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [""],
-      "commands": [
-        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 1"
-      ],
-      "last_tick_commands": [""],
+      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
+      "quantity": 1,
       "conditions": {
         "enabling": [
           {
@@ -2225,14 +2393,11 @@
       }
     },
     "energybeam.remove.ark.energy_powerfull.1": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:decrease_scoreboard",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [""],
-      "commands": [
-        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 3"
-      ],
-      "last_tick_commands": [""],
+      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
+      "quantity": 3,
       "conditions": {
         "enabling": [
           {
@@ -2258,14 +2423,11 @@
       }
     },
     "energybeam.remove.ark.energy_powerfull.2": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:decrease_scoreboard",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [""],
-      "commands": [
-        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 6"
-      ],
-      "last_tick_commands": [""],
+      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
+      "quantity": 6,
       "conditions": {
         "enabling": [
           {
@@ -2291,16 +2453,11 @@
       }
     },
     "commands_energy_beams.hands": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_34/beams/hands/energy_beams_hands"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_34/beams/hands/energy_beams_hands"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/mark_34/beams/hands/energy_beams_hands",
       "conditions": {
         "enabling": [
           {
@@ -2332,16 +2489,11 @@
       }
     },
     "commands_energy_beams.hands_powerfull.1": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_34/beams/hands/energy_beams_hands_powerfull_1"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_34/beams/hands/energy_beams_hands_powerfull_1"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/mark_34/beams/hands/energy_beams_hands_powerfull_1",
       "conditions": {
         "enabling": [
           {
@@ -2368,16 +2520,11 @@
       }
     },
     "commands_energy_beams.hands_powerfull.2": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_34/beams/hands/energy_beams_hands_powerfull_2"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_34/beams/hands/energy_beams_hands_powerfull_2"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/mark_34/beams/hands/energy_beams_hands_powerfull_2",
       "conditions": {
         "enabling": [
           {
@@ -2496,16 +2643,15 @@
       }
     },
     "increase.flight_speed": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:increase_scoreboard",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 6,
-      "first_tick_commands": [],
-      "commands": ["function satsu_iron_man_addon:flight/increase"],
-      "last_tick_commands": [],
+      "scoreboard_name": "satsu.iron.man.flight_speed.choose",
+      "quantity": 2,
       "conditions": {
         "enabling": [
           {
@@ -2543,18 +2689,15 @@
       }
     },
     "remove.flight_speed": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:decrease_scoreboard",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
       "title": { "translate": "ability.title.satsu.decrease.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 7,
-      "first_tick_commands": [],
-      "commands": [
-        "function satsu_iron_man_addon:flight/decrease"
-      ],
-      "last_tick_commands": [],
+      "scoreboard_name": "satsu.iron.man.flight_speed.choose",
+      "quantity": 2,
       "conditions": {
         "enabling": [
           {
@@ -3108,16 +3251,11 @@
       }
     },
     "commands_energy_beams": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_34/beams/chest/beam"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_34/beams/chest/beam"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/mark_34/beams/chest/beam",
       "conditions": {
         "enabling": [
           {
@@ -3150,16 +3288,11 @@
       }
     },
     "commands_energy_beams_powerfull_1": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_34/beams/chest/energy_beams_powerfull_1"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_34/beams/chest/energy_beams_powerfull_1"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/mark_34/beams/chest/energy_beams_powerfull_1",
       "conditions": {
         "enabling": [
           {
@@ -3182,16 +3315,11 @@
       }
     },
     "commands_energy_beams_powerfull_2": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_34/beams/chest/energy_beams_powerfull_2"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_34/beams/chest/energy_beams_powerfull_2"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/mark_34/beams/chest/energy_beams_powerfull_2",
       "conditions": {
         "enabling": [
           {
@@ -3214,14 +3342,11 @@
       }
     },
     "energybeam-chest.remove.ark.energy": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:decrease_scoreboard",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [""],
-      "commands": [
-        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 3"
-      ],
-      "last_tick_commands": [""],
+      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
+      "quantity": 3,
       "conditions": {
         "enabling": [
           {
@@ -3248,14 +3373,11 @@
       }
     },
     "energybeam-chest.remove.ark.energy_1": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:decrease_scoreboard",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [""],
-      "commands": [
-        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 6"
-      ],
-      "last_tick_commands": [""],
+      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
+      "quantity": 6,
       "conditions": {
         "enabling": [
           {
@@ -3277,14 +3399,11 @@
       }
     },
     "energybeam-chest.remove.ark.energy_2": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:decrease_scoreboard",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [""],
-      "commands": [
-        "scoreboard players remove @s satsu.iron.man.armor.ark.energy 12"
-      ],
-      "last_tick_commands": [""],
+      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
+      "quantity": 12,
       "conditions": {
         "enabling": [
           {
