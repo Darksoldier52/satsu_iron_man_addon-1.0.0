@@ -2395,7 +2395,7 @@
       }
     },
     "uni.beam.hand.right": {
-      "type": "palladium:animation_timer",
+      "type": "palladium:dummy",
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
@@ -2461,7 +2461,7 @@
       }
     },
     "uni.beam.hand.left": {
-      "type": "palladium:repeating_animation_timer",
+      "type": "palladium:dummy",
       "hidden": true,
       "hidden_in_bar": true,
       "start_value": 0,
