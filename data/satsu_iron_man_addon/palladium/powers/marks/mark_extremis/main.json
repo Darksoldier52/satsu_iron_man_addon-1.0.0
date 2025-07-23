@@ -90,6 +90,15 @@
             "conditions": [
               {
                 "type": "palladium:has_tag",
+                "tag": "sentinel_one"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
                 "tag": "alien"
               }
             ]
@@ -956,8 +965,8 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [],
-      "commands": ["adastra planets"],
+      "first_tick_commands": ["adastra planets"],
+      "commands": [""],
       "conditions": {
         "enabling": [
           {
@@ -6815,6 +6824,15 @@
               {
                 "type": "palladium:has_tag",
                 "tag": "alien"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "sentinel_one"
               }
             ]
           }
