@@ -727,8 +727,8 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scoreboard players reset @s[tag=satsu.iron.man.enable.armor] satsu.iron.man.armor.actived",
-        "scoreboard players reset @s[tag=!satsu.iron.man.enable.armor] satsu.iron.man.armor.actived"
+        "scoreboard players set @s[tag=satsu.iron.man.enable.armor] satsu.iron.man.armor.actived 0",
+        "scoreboard players set @s[tag=!satsu.iron.man.enable.armor] satsu.iron.man.armor.actived 0"
       ],
       "commands": [""],
       "last_tick_commands": [""],
