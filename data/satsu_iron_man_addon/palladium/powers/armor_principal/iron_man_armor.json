@@ -2300,16 +2300,11 @@
       }
     },
     "commands_projectiles": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:projectiles_armor/projectiles"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:projectiles_armor/projectiles"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "projectiles_armor/projectiles",
       "conditions": {
         "enabling": [
           {
