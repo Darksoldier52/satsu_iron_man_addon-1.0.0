@@ -2,6 +2,35 @@
   "name": "energy_beams_hands",
   "icon": "#satsu_iron_man_addon:armor_icon_ability",
   "abilities": {
+    "destroy_block": {
+      "type": "palladium:destroy_block",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "range": 20,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "energy_beam_hand_uni_bram"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "energy_beam_hand_uni_bram.left"
+              }
+            ]
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.break",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
     "remove.energy.red_beams": {
       "type": "satsu_iron_man_addon:decrease_scoreboard",
       "hidden": true,
