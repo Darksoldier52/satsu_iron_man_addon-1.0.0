@@ -2580,13 +2580,13 @@
       "list_index": 3,
       "gui_position": [4.3, -1],
       "abilities": [
+        "waepons.choose_wheel_nano_rockets",
+        "waepons.choose_wheel_nano_flares_flames",
         "weapons_wheel.ark_beam_for_hands",
         "weapons_wheel.repulser",
         "weapons_wheel.Energy.Pulse",
         "waepons.choose_wheel.nano_grenade_launcher",
         "waepons.choose_wheel.nano_rial",
-        "waepons.choose_wheel_nano_rockets",
-        "waepons.choose_wheel_nano_flares_flames",
         "weapons_wheel.flight_unlock"
       ],
       "texture": "null",
