@@ -1155,34 +1155,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -1230,34 +1269,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 2,
-                "max_score": 2
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 2,
+                    "max_score": 2
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 2,
+                    "max_score": 2
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -1305,34 +1383,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 3,
-                "max_score": 3
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 3,
+                    "max_score": 3
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 3,
+                    "max_score": 3
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -1380,34 +1497,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 4,
-                "max_score": 4
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 4,
+                    "max_score": 4
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 4,
+                    "max_score": 4
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -1455,34 +1611,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 5,
-                "max_score": 5
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 5,
+                    "max_score": 5
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 5,
+                    "max_score": 5
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -1530,34 +1725,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 6,
-                "max_score": 6
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 6,
+                    "max_score": 6
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 6,
+                    "max_score": 6
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -1605,34 +1839,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 7,
-                "max_score": 7
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 7,
+                    "max_score": 7
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 7,
+                    "max_score": 7
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -1794,34 +2067,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 9,
-                "max_score": 9
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 9,
+                    "max_score": 9
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 9,
+                    "max_score": 9
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -1869,34 +2181,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 10,
-                "max_score": 10
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 10,
+                    "max_score": 10
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 10,
+                    "max_score": 10
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -1944,34 +2295,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 11,
-                "max_score": 11
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 11,
+                    "max_score": 11
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 11,
+                    "max_score": 11
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -2019,34 +2409,73 @@
             ]
           },
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.ia.name",
-                "min_score": 12,
-                "max_score": 12
-              },
-              {
-                "type": "palladium:or",
+                "type": "palladium:and",
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.actived",
+                    "objective": "satsu.iron.man.armor.hud.enabled",
                     "min_score": 1,
                     "max_score": 1
                   },
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 12,
+                    "max_score": 12
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.energy.ia.unlock.icon.in.hud",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.addon.ia.name",
+                    "min_score": 12,
+                    "max_score": 12
+                  },
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.actived",
+                        "min_score": 1,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.addon.glasses.equip",
+                        "min_score": 1,
+                        "max_score": 1
+                      }
+                    ]
                   }
                 ]
               }

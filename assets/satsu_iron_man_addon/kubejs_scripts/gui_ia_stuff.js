@@ -359,7 +359,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0xffa500
         );
@@ -389,7 +389,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0xffb6c1
         );
@@ -419,7 +419,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0x9370db
         );
@@ -449,7 +449,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0x708090
         );
@@ -479,7 +479,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0x00bfff
         );
@@ -509,7 +509,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0xffe800
         );
@@ -539,7 +539,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0x09f42c
         );
@@ -569,7 +569,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0x98fb98
         );
@@ -599,7 +599,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0x55fb9e
         );
@@ -629,7 +629,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0xfe0f0f
         );
@@ -659,7 +659,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0x4682b4
         );
@@ -689,7 +689,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
         guiUtil.drawString(
           poseStack,
           Component.string("Energy: " + value),
-          40,
+          50,
           180,
           0x0067fe
         );
