@@ -131,6 +131,7 @@
     },
     "First_person_gui_option": {
       "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/hud/hud_first_person.png",
       "title": {
         "translate": "satsu.iron.man.addon.text.select_config_gui_hud.1"
       },
@@ -162,6 +163,7 @@
     },
     "third_person_gui_option": {
       "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/hud/hud_third_person.png",
       "title": {
         "translate": "satsu.iron.man.addon.text.select_config_gui_hud.2"
       },
@@ -193,6 +195,13 @@
     },
     "none_gui_option": {
       "type": "palladium:dummy",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "minecraft:barrier",
+          "satsu_iron_man_addon:textures/gui/armors/hud/hud_first_person.png"
+        ]
+      },
       "title": {
         "translate": "satsu.iron.man.addon.text.select_config_gui_hud.3"
       },
