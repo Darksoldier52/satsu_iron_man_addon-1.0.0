@@ -1973,7 +1973,7 @@
       "icon": {
         "type": "palladium:compound",
         "icons": [
-          "satsu_iron_man_addon:textures/gui/armors/disable_enabled_shoots/main_0.png",
+          "#satsu_iron_man_addon:ark_disable_enable",
           "satsu_iron_man_addon:textures/gui/armors/personalizate_things.png"
         ]
       },
