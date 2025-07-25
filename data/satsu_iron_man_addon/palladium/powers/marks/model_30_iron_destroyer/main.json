@@ -1401,10 +1401,10 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [""],
-      "commands": [
+      "first_tick_commands": [
         "playsound satsu_iron_man_addon:nanomask player @a[distance=0..5] ~ ~ ~ 1 1 1"
       ],
+      "commands": [""],
       "conditions": {
         "enabling": [
           {
@@ -3875,18 +3875,11 @@
       }
     },
     "commands_energy_beams": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/beam",
-        "execute as @s[scores={satsu.iron.man.armor.energy.beams=1..}] run superpower add satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/energy_beams_nano"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/beam",
-        "execute as @s[scores={satsu.iron.man.armor.energy.beams=0..}] run superpower remove satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/energy_beams_nano"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/model_30_iron_destroyer/beams/chest/beam",
       "conditions": {
         "enabling": [
           {
@@ -3919,18 +3912,11 @@
       }
     },
     "commands_energy_beams_powerfull_1": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/energy_beams_powerfull_1",
-        "execute as @s[scores={satsu.iron.man.armor.energy.beams=1..}] run superpower add satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/energy_beams_nano"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/energy_beams_powerfull_1",
-        "execute as @s[scores={satsu.iron.man.armor.energy.beams=0..}] run superpower remove satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/energy_beams_nano"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/model_30_iron_destroyer/beams/chest/energy_beams_powerfull_1",
       "conditions": {
         "enabling": [
           {
@@ -3953,18 +3939,11 @@
       }
     },
     "commands_energy_beams_powerfull_2": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/energy_beams_powerfull_2",
-        "execute as @s[scores={satsu.iron.man.armor.energy.beams=1..}] run superpower add satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/energy_beams_nano"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/energy_beams_powerfull_2",
-        "execute as @s[scores={satsu.iron.man.armor.energy.beams=0..}] run superpower remove satsu_iron_man_addon:marks/model_30_iron_destroyer/beams/chest/energy_beams_nano"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/model_30_iron_destroyer/beams/chest/energy_beams_powerfull_2",
       "conditions": {
         "enabling": [
           {
@@ -3981,6 +3960,32 @@
             "objective": "satsu.iron.man.addon.energy.beam.powerfull",
             "min_score": 2,
             "max_score": 2
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "energy_beams_nano": {
+      "type": "satsu_iron_man_addon:add_power_per_tick",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/model_30_iron_destroyer/beams/chest/energy_beams_nano",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "energy_beam"
+              }
+            ]
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.energy.beams",
+            "min_score": 1
           }
         ],
         "unlocking": []
