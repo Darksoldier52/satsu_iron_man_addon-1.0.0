@@ -130,7 +130,7 @@
       }
     },
     "First_person_gui_option": {
-      "type": "palladium:dummy",
+      "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/hud/hud_first_person.png",
       "title": {
         "translate": "satsu.iron.man.addon.text.select_config_gui_hud.1"
@@ -162,7 +162,7 @@
       }
     },
     "third_person_gui_option": {
-      "type": "palladium:dummy",
+      "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/hud/hud_third_person.png",
       "title": {
         "translate": "satsu.iron.man.addon.text.select_config_gui_hud.2"
@@ -194,7 +194,7 @@
       }
     },
     "none_gui_option": {
-      "type": "palladium:dummy",
+      "type": "palladium:command",
       "icon": {
         "type": "palladium:compound",
         "icons": [
@@ -227,131 +227,6 @@
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "dummy_gui"
-          }
-        ]
-      }
-    },
-    "hud_armor": {
-      "type": "palladium:gui_overlay",
-      "texture": "satsu_iron_man_addon:textures/gui/hud/hud_armor/armor_hud_0.png",
-      "texture_width": 256,
-      "texture_height": 256,
-      "translate": [0, 0, 0],
-      "rotate": [0, 0, 0],
-      "scale": [1, 1, 1],
-      "alignment": "stretch",
-      "hidden": true,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:ability_integer_property",
-                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                        "ability": "interpolate",
-                        "property": "value",
-                        "min": 1,
-                        "max": 17
-                      },
-                      {
-                        "type": "palladium:ability_integer_property",
-                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                        "ability": "no_nanoarmor_anim",
-                        "property": "value",
-                        "min": 13,
-                        "max": 16
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.addon.glasses.equip",
-                        "min_score": 1,
-                        "max_score": 1
-                      }
-                    ]
-                  },
-                  {
-                    "type": "gravestone:perspective",
-                    "looking": "FIRST_PERSON"
-                  },
-                  {
-                    "type": "palladium:not",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.addon.gui.overlay.armor",
-                        "min_score": 1,
-                        "max_score": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:ability_integer_property",
-                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                        "ability": "interpolate",
-                        "property": "value",
-                        "min": 1,
-                        "max": 17
-                      },
-                      {
-                        "type": "palladium:ability_integer_property",
-                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                        "ability": "no_nanoarmor_anim",
-                        "property": "value",
-                        "min": 13,
-                        "max": 16
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.addon.glasses.equip",
-                        "min_score": 1,
-                        "max_score": 1
-                      }
-                    ]
-                  },
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.gui.overlay.armor",
-                    "min_score": 1,
-                    "max_score": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.gui.overlay.armor",
-                "min_score": 2,
-                "max_score": 2
-              }
-            ]
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:has_tag",
-                "tag": "mark.1"
-              }
-            ]
           }
         ]
       }
