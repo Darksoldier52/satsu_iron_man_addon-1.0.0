@@ -16,7 +16,7 @@
             "conditions": [
               {
                 "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.85.old.mask",
+                "objective": "satsu.iron.man.mask",
                 "min_score": 0,
                 "max_score": 0
               },
@@ -47,7 +47,7 @@
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.85.old.mask",
+                    "objective": "satsu.iron.man.mask",
                     "min_score": 1,
                     "max_score": 1
                   },
@@ -63,7 +63,7 @@
                 "conditions": [
                   {
                     "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.85.old.mask",
+                    "objective": "satsu.iron.man.mask",
                     "min_score": 1,
                     "max_score": 1
                   },

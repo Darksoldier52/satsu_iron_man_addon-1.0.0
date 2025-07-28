@@ -1412,17 +1412,6 @@
             "property": "value",
             "min": 1,
             "max": 17
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.mask",
-                "min_score": 0,
-                "max_score": 0
-              }
-            ]
           }
         ]
       }
@@ -3678,63 +3667,28 @@
         ]
       }
     },
-    "mask_activate": {
-      "type": "palladium:ability_wheel",
-      "icon": "#satsu_iron_man_addon:mask_icon",
-      "title": { "translate": "ability.title.satsu.enable_mask" },
-      "description": { "translate": "description.armor_skill_bar" },
-      "hidden": true,
-      "hidden_in_bar": false,
-      "list_index": 1,
-      "abilities": ["mask_activate_old", "mask_activate_nano"],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:held",
-            "cooldown": 0
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.ark.energy",
-            "min_score": 1
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.actived",
-            "min_score": 1,
-            "max_score": 1
-          }
-        ]
-      }
-    },
     "mask_activate_old": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/85/mask/front_up.png",
       "title": { "translate": "ability.title.satsu.mark.85.front.up" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
-      "hidden_in_bar": true,
+      "hidden_in_bar": false,
       "list_index": 1,
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_wheel",
+            "type": "palladium:action",
             "cooldown": 0
           }
         ],
         "unlocking": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.mask",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:ability_integer_property",
+            "ability": "mask_animation_timer",
+            "property": "value",
+            "min": 17,
+            "max": 17
           }
         ]
       }
@@ -3743,7 +3697,7 @@
       "type": "satsu_iron_man_addon:set_scoreboard",
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.armor.85.old.mask",
+      "scoreboard_name": "satsu.iron.man.mask",
       "quantity": 1,
       "conditions": {
         "enabling": [
@@ -3753,7 +3707,7 @@
           },
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.85.old.mask",
+            "objective": "satsu.iron.man.mask",
             "min_score": 0,
             "max_score": 0
           },
@@ -3773,7 +3727,7 @@
       "type": "satsu_iron_man_addon:set_scoreboard",
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.armor.85.old.mask",
+      "scoreboard_name": "satsu.iron.man.mask",
       "quantity": 0,
       "conditions": {
         "enabling": [
@@ -3783,26 +3737,9 @@
           },
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.85.old.mask",
+            "objective": "satsu.iron.man.mask",
             "min_score": 1,
             "max_score": 1
-          }
-        ]
-      }
-    },
-    "mask_activate_nano": {
-      "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/marks_abilities/85/mask/mask_off.png",
-      "title": { "translate": "ability.title.satsu.mark.85.mask.off" },
-      "description": { "translate": "description.armor_skill_bar" },
-      "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 1,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_wheel",
-            "cooldown": 0
           }
         ]
       }
@@ -3818,62 +3755,20 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "mask_activate_nano"
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "mask_activate_nano.1": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
-      "hidden": true,
-      "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.mask",
-      "quantity": 1,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "ability": "mask_activate_nano"
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.mask",
-            "min_score": 0,
-            "max_score": 0
-          },
-          {
-            "type": "palladium:not",
+            "type": "palladium:or",
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "mask_activate_nano.0"
+                "ability": "mask_activate_nano"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "call.head"
               }
             ]
           }
-        ]
-      }
-    },
-    "mask_activate_nano.0": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
-      "hidden": true,
-      "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.mask",
-      "quantity": 0,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_enabled",
-            "ability": "mask_activate_nano"
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.mask",
-            "min_score": 1,
-            "max_score": 1
-          }
-        ]
+        ],
+        "unlocking": []
       }
     },
     "energy_beam": {
