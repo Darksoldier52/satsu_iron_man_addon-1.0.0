@@ -5076,8 +5076,15 @@
             "conditions": [
               {
                 "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.energy.pulse.hand",
+                "min_score": 1,
+                "max_score": 1
+              },
+              {
+                "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor.uni.beam.hand",
-                "min_score": 1
+                "min_score": 1,
+                "max_score": 1
               },
               {
                 "type": "palladium:objective_score",
@@ -5247,6 +5254,12 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor.energy.pulse",
+                "min_score": 1,
+                "max_score": 1
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.energy.pulse.hand",
                 "min_score": 1,
                 "max_score": 1
               },
