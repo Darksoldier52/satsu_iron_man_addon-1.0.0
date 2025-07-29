@@ -138,5 +138,8 @@
   },
   "entity.armor.holo_shield": {
     "sounds": ["satsu_iron_man_addon:nanotech/holoshield"]
+  },
+  "entity.armor.suit.up.taken": {
+    "sounds": ["satsu_iron_man_addon:suits_sounds/taken/main"]
   }
 }
