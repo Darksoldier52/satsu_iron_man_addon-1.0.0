@@ -2633,6 +2633,49 @@
         ]
       }
     },
+    "red_beams": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/red_mini_beam.png",
+      "title": { "translate": "ability.title.satsu.red.mini.beams" },
+      "description": { "translate": "description.satsu.red.mini.beams" },
+      "hidden": false,
+      "hidden_in_bar": false,
+      "gui_position": [0, 2.5],
+      "conditions": {
+        "enabling": [
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_activate_skil_tree_dummy_close_armor"
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1,
+                "max_score": 1
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "no_nanoarmor_anim",
+                "property": "value",
+                "min": 15,
+                "max": 16
+              }
+            ]
+          }
+        ]
+      }
+    },
     "energyblast.remove.ark.energy": {
       "type": "satsu_iron_man_addon:decrease_scoreboard",
       "hidden": true,

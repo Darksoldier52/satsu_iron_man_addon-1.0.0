@@ -3042,10 +3042,10 @@
       "icon": "satsu_iron_man_addon:textures/gui/armors/red_mini_beam.png",
       "title": { "translate": "ability.title.satsu.red.mini.beams" },
       "description": { "translate": "description.satsu.red.mini.beams" },
-      "hidden": true,
+      "hidden": false,
       "hidden_in_bar": false,
       "list_index": 4,
-      "gui_position": [-1, 3.99],
+      "gui_position": [0, 2.5],
       "start_value": 0,
       "max_value": 20,
       "conditions": {
