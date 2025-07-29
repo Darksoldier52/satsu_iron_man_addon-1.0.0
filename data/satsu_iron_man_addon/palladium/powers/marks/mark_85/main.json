@@ -5043,8 +5043,6 @@
       "type": "palladium:dummy",
       "hidden": true,
       "hidden_in_bar": true,
-      "start_value": 0,
-      "max_value": 20,
       "conditions": {
         "enabling": [
           {
@@ -5064,12 +5062,6 @@
           {
             "type": "palladium:and",
             "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse.hand",
-                "min_score": 1,
-                "max_score": 1
-              },
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor.uni.beam.hand",
@@ -5124,8 +5116,6 @@
       "type": "palladium:dummy",
       "hidden": true,
       "hidden_in_bar": true,
-      "start_value": 0,
-      "max_value": 20,
       "conditions": {
         "enabling": [
           {
@@ -5244,12 +5234,6 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse.hand",
                 "min_score": 1,
                 "max_score": 1
               },
@@ -6598,6 +6582,13 @@
                 "ability": "waepons.choose"
               },
               {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 17,
+                "max": 17
+              },
+              {
                 "type": "palladium:not",
                 "conditions": [
                   {
@@ -7058,6 +7049,25 @@
             "type": "palladium:and",
             "conditions": [
               {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 17,
+                "max": 17
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 17,
+                "max": 17
+              }
+            ]
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
                 "type": "palladium:ability_enabled",
                 "ability": "nano_katar"
               }
@@ -7159,19 +7169,51 @@
         ]
       }
     },
-    "nano_katar.attribute": {
+    "nano_katar.right.attribute": {
       "type": "palladium:attribute_modifier",
       "hidden": true,
       "hidden_in_bar": true,
       "attribute": "minecraft:generic.attack_damage",
       "uuid": "f690d74f-5bab-432d-b60d-0748e3208bd8",
-      "amount": 3.1,
+      "amount": 1.55,
       "operation": 0,
       "conditions": {
         "enabling": [
           {
             "type": "palladium:ability_enabled",
             "ability": "nano_katar"
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "right_arm_animation",
+            "property": "value",
+            "min": 17,
+            "max": 17
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "nano_katar.left.attribute": {
+      "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "attribute": "minecraft:generic.attack_damage",
+      "uuid": "0442d2fb-5a1f-457a-bef5-77381eb1392a",
+      "amount": 1.55,
+      "operation": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "nano_katar"
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "left_arm_animation",
+            "property": "value",
+            "min": 17,
+            "max": 17
           }
         ],
         "unlocking": []
@@ -7213,7 +7255,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "right_arm_animation",
             "property": "value",
             "min": 17,
             "max": 17
@@ -7373,6 +7415,25 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 17,
+                "max": 17
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 17,
+                "max": 17
+              }
+            ]
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -7775,7 +7836,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "interpolate",
+                "ability": "left_arm_animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -7869,6 +7930,25 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 17,
+                "max": 17
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 17,
+                "max": 17
+              }
+            ]
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -8039,6 +8119,25 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 17,
+                "max": 17
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 17,
+                "max": 17
+              }
+            ]
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -8223,8 +8322,11 @@
             "ability": "arms_unlock_skill_tree"
           },
           {
-            "type": "palladium:ability_unlocked",
-            "ability": "waepons.choose"
+            "type": "palladium:ability_integer_property",
+            "ability": "chest_animation",
+            "property": "value",
+            "min": 17,
+            "max": 17
           },
           {
             "type": "palladium:objective_score",
