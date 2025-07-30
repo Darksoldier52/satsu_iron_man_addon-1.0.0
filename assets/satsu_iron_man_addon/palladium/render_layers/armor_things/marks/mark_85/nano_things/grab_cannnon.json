@@ -1,0 +1,56 @@
+{
+  "type": "palladium:compound",
+  "layers": [
+    {
+      "type": "geckolib:default",
+      "model": "satsu_iron_man_addon:geo/nano_armors/grab_cannon.geo.json",
+      "texture": {
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_grab_cannon/no_light/iron_man_suit_#X_0.png",
+        "variables": {
+          "TIMER": {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:marks/mark_85/main",
+            "ability": "nano_sword",
+            "property": "value",
+            "min": 0,
+            "max": 18
+          },
+          "X": {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min": 0,
+            "max": 59
+          }
+        },
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_energysword/no_light/iron_man_suit_#X_0_#TIMER"
+      },
+      "conditions": []
+    },
+    {
+      "type": "geckolib:default",
+      "model": "satsu_iron_man_addon:geo/nano_armors/grab_cannon.geo.json",
+      "texture": {
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_#X_0.png",
+        "variables": {
+          "TIMER": {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:marks/mark_85/main",
+            "ability": "nano_sword",
+            "property": "value",
+            "min": 0,
+            "max": 18
+          },
+          "X": {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor",
+            "min": 0,
+            "max": 59
+          }
+        },
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_energysword/light/iron_man_suit_#X_0_#TIMER"
+      },
+      "render_type": "glow",
+      "conditions": []
+    }
+  ]
+}
