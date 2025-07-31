@@ -3340,7 +3340,7 @@
         ]
       }
     },
-    "energy_projectile.damage.18": {
+    "energy_projectile.damage": {
       "type": "gravestone:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -3357,7 +3357,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.5,
-        "Damage": 18,
+        "Damage": 7.3,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
@@ -3384,7 +3384,7 @@
         ]
       }
     },
-    "energy_projectile.left.damage.18": {
+    "energy_projectile.left.damage": {
       "type": "gravestone:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -3401,7 +3401,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.5,
-        "Damage": 18,
+        "Damage": 7.3,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,

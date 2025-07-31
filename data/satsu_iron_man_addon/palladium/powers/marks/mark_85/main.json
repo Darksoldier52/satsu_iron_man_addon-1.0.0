@@ -9250,7 +9250,7 @@
         ]
       }
     },
-    "energy_projectile.damage.18": {
+    "energy_projectile.damage": {
       "type": "gravestone:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -9267,7 +9267,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.5,
-        "Damage": 18,
+        "Damage": 7.3,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
@@ -9294,7 +9294,7 @@
         ]
       }
     },
-    "energy_projectile.left.damage.18": {
+    "energy_projectile.left.damage": {
       "type": "gravestone:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -9311,7 +9311,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.5,
-        "Damage": 18,
+        "Damage": 7.3,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
@@ -9355,7 +9355,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.6,
-        "Damage": 18,
+        "Damage": 3.6,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
@@ -9403,7 +9403,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.6,
-        "Damage": 18,
+        "Damage": 3.6,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
@@ -9451,7 +9451,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.6,
-        "Damage": 18,
+        "Damage": 8.3,
         "Size": 0.4,
         "Gravity": 0.2,
         "Lifetime": 60,
@@ -9495,7 +9495,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.6,
-        "Damage": 18,
+        "Damage": 8.3,
         "Size": 0.4,
         "Gravity": 0.2,
         "Lifetime": 60,
@@ -9539,7 +9539,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 3,
         "KnockbackStrength": 1.2,
-        "Damage": 18,
+        "Damage": 8.2,
         "Size": 0.4,
         "Gravity": 0,
         "Lifetime": 60,
@@ -9583,7 +9583,7 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 3,
         "KnockbackStrength": 1.2,
-        "Damage": 18,
+        "Damage": 8.2,
         "Size": 0.4,
         "Gravity": 0,
         "Lifetime": 60,
@@ -9625,11 +9625,11 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.damage.18"
+                "ability": "energy_projectile.damage"
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.left.damage.18"
+                "ability": "energy_projectile.left.damage"
               },
               {
                 "type": "palladium:ability_enabled",
