@@ -4170,7 +4170,7 @@
       "count": 1,
       "entity_data": {
         "KnockbackStrength": 0,
-        "Damage": 1,
+        "Damage": 8,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
@@ -4225,7 +4225,7 @@
       "count": 1,
       "entity_data": {
         "KnockbackStrength": 0,
-        "Damage": 1,
+        "Damage": 8,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
