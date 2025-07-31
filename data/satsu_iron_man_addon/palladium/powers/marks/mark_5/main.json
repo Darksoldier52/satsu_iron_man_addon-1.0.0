@@ -1371,7 +1371,7 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "mini_fireworks"
+                    "ability": "shoulder_rockets"
                   },
                   {
                     "type": "palladium:ability_enabled",
@@ -1693,7 +1693,7 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_enabled",
-                    "ability": "mini_fireworks"
+                    "ability": "shoulder_rockets"
                   },
                   {
                     "type": "palladium:ability_enabled",
@@ -1954,7 +1954,7 @@
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "mini_fireworks"
+                "ability": "shoulder_rockets"
               },
               {
                 "type": "palladium:ability_enabled",
