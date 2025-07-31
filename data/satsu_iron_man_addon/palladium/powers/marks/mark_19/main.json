@@ -3333,10 +3333,6 @@
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "shoulder_rockets"
-              },
-              {
-                "type": "palladium:ability_enabled",
                 "ability": "flares_flames"
               }
             ]
@@ -3362,10 +3358,6 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "energy.pulse_right"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "shoulder_rockets"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -3634,10 +3626,6 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "uni.beam.hand.left"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "shoulder_rockets"
               },
               {
                 "type": "palladium:ability_enabled",
