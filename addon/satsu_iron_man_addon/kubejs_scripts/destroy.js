@@ -1,3 +1,4 @@
+//Made by Codecreality
 StartupEvents.registry("palladium:abilities", (event) => {
   event
     .create("satsu_iron_man_addon:destroy_block")
