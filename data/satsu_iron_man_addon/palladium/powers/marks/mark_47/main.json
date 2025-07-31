@@ -2325,16 +2325,8 @@
                   {
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.armor.uni.beam.hand",
-                    "min_score": 1
-                  }
-                ]
-              },
-              {
-                "type": "palladium:not",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "ability": "red_beams"
+                    "min_score": 1,
+                    "max_score": 2
                   }
                 ]
               }
@@ -2404,16 +2396,8 @@
                   {
                     "type": "palladium:objective_score",
                     "objective": "satsu.iron.man.armor.uni.beam.hand",
-                    "min_score": 1
-                  }
-                ]
-              },
-              {
-                "type": "palladium:not",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "ability": "red_beams"
+                    "min_score": 1,
+                    "max_score": 2
                   }
                 ]
               }
@@ -2864,7 +2848,8 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor.uni.beam.hand",
-                "min_score": 1
+                "min_score": 1,
+                "max_score": 1
               },
               {
                 "type": "palladium:objective_score",
@@ -2896,15 +2881,6 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_sword"
-                  }
-                ]
-              },
-              {
-                "type": "palladium:not",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "ability": "red_beams"
                   }
                 ]
               }
@@ -2980,15 +2956,6 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_sword"
-                  }
-                ]
-              },
-              {
-                "type": "palladium:not",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "ability": "red_beams"
                   }
                 ]
               }
@@ -3191,21 +3158,25 @@
       }
     },
     "commands_energy_beams.red_beams": {
-      "type": "palladium:command",
+      "type": "satsu_iron_man_addon:add_power_per_tick",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "superpower add satsu_iron_man_addon:marks/mark_47/beams/hands/red/energy_beams_hands"
-      ],
-      "commands": [""],
-      "last_tick_commands": [
-        "superpower remove satsu_iron_man_addon:marks/mark_47/beams/hands/red/energy_beams_hands"
-      ],
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/mark_47/beams/hands/red/energy_beams_hands",
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "red_beams"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "red_beams.right_arm"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "red_beams.left_arm"
+              }
+            ]
           }
         ],
         "unlocking": []
@@ -3908,10 +3879,6 @@
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "red_beams"
-              },
-              {
-                "type": "palladium:ability_enabled",
                 "ability": "red_beams.left_arm"
               }
             ]
@@ -3945,10 +3912,6 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "flares_flames"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "red_beams"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -4221,10 +4184,6 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "flares_flames"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "red_beams"
               },
               {
                 "type": "palladium:ability_enabled",
