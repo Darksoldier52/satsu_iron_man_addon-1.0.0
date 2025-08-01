@@ -8277,14 +8277,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "right_arm_animation",
-                "property": "value",
-                "min": 17,
-                "max": 17
-              },
-              {
-                "type": "palladium:ability_integer_property",
-                "ability": "left_arm_animation",
+                "ability": "chest_animation",
                 "property": "value",
                 "min": 17,
                 "max": 17
@@ -8295,10 +8288,6 @@
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "arms_unlock_skill_tree"
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "ability": "waepons.choose"
           },
           {
             "type": "palladium:objective_score",
@@ -8355,6 +8344,18 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 17,
+                "max": 17
+              }
+            ]
+          },
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
