@@ -36,14 +36,14 @@
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh/iron_man_suit_#X_1_#STEALH"
       },
-      "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
+      "animation_file": "satsu_iron_man_addon:animations/new_mask_animation.geo.json",
       "animation_controller": [
         {
           "name": "mask.up",
           "transition_tick_time": 10,
           "triggers": {
-            "mask.up": "animation.minecraft:mask.up",
-            "mask.on": "animation.minecraft:mask.down"
+            "mask.up": "open",
+            "mask.on": "close"
           }
         }
       ],
@@ -127,14 +127,14 @@
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh/iron_man_suit_lights_#X_1_#STEALH"
       },
       "render_type": "glow",
-      "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
+      "animation_file": "satsu_iron_man_addon:animations/new_mask_animation.geo.json",
       "animation_controller": [
         {
           "name": "mask.up",
           "transition_tick_time": 10,
           "triggers": {
-            "mask.up": "animation.minecraft:mask.up",
-            "mask.on": "animation.minecraft:mask.down"
+            "mask.up": "open",
+            "mask.on": "close"
           }
         }
       ],
@@ -234,14 +234,14 @@
 
         "output": "satsu_iron_man_addon:textures/models/armor/stealht_night_mask/iron_man_suit_#X_2_#STEALH_night"
       },
-      "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
+      "animation_file": "satsu_iron_man_addon:animations/new_mask_animation.geo.json",
       "animation_controller": [
         {
           "name": "mask.up",
           "transition_tick_time": 10,
           "triggers": {
-            "mask.up": "animation.minecraft:mask.up",
-            "mask.on": "animation.minecraft:mask.down"
+            "mask.up": "open",
+            "mask.on": "close"
           }
         }
       ],
@@ -303,14 +303,14 @@
         "output": "satsu_iron_man_addon:textures/models/armor/stealht_night_mask/iron_man_suit_lights_#X_2_#STEALH_night"
       },
       "render_type": "glow",
-      "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
+      "animation_file": "satsu_iron_man_addon:animations/new_mask_animation.geo.json",
       "animation_controller": [
         {
           "name": "mask.up",
           "transition_tick_time": 10,
           "triggers": {
-            "mask.up": "animation.minecraft:mask.up",
-            "mask.on": "animation.minecraft:mask.down"
+            "mask.up": "open",
+            "mask.on": "close"
           }
         }
       ],
@@ -387,14 +387,14 @@
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh_night/iron_man_suit_#X_3_#STEALH"
       },
-      "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
+      "animation_file": "satsu_iron_man_addon:animations/new_mask_animation.geo.json",
       "animation_controller": [
         {
           "name": "mask.up",
           "transition_tick_time": 10,
           "triggers": {
-            "mask.up": "animation.minecraft:mask.up",
-            "mask.on": "animation.minecraft:mask.down"
+            "mask.up": "open",
+            "mask.on": "close"
           }
         }
       ],
@@ -448,14 +448,14 @@
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask_stealh_night/iron_man_suit_lights_#X_3_#STEALH"
       },
       "render_type": "glow",
-      "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
+      "animation_file": "satsu_iron_man_addon:animations/new_mask_animation.geo.json",
       "animation_controller": [
         {
           "name": "mask.up",
           "transition_tick_time": 10,
           "triggers": {
-            "mask.up": "animation.minecraft:mask.up",
-            "mask.on": "animation.minecraft:mask.down"
+            "mask.up": "open",
+            "mask.on": "close"
           }
         }
       ],

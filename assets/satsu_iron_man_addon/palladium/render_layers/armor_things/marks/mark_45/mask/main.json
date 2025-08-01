@@ -34,7 +34,7 @@
             "max": 1
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask/iron_man_suit_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask/iron_man/mask/iron_man_mask_#X_0_#TIMER"
       },
       "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
       "animation_controller": [
@@ -93,7 +93,7 @@
             "max": 52
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask/iron_man_suit_lights_#X_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/mask/iron_man/mask/iron_man_mask_light_#X_0_#TIMER"
       },
       "render_type": "glow",
       "animation_file": "satsu_iron_man_addon:animations/overlay_mask_animation.geo.json",
