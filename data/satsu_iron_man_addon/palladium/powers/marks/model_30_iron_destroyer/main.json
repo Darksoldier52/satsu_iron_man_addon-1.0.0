@@ -2339,6 +2339,7 @@
         "waepons.choose_wheel.nano_rial",
         "waepons.choose_wheel.grab_cannon",
         "waepons.choose_wheel_nano_rockets",
+        "waepons.choose_wheel.rocket",
         "waepons.choose_wheel_nano_flares_flames",
         "weapons_wheel.flight_unlock"
       ],
@@ -3659,10 +3660,6 @@
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "nano_fireworks"
-              },
-              {
-                "type": "palladium:ability_enabled",
                 "ability": "nano_flares_flames"
               }
             ]
@@ -3704,10 +3701,6 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "maximun.pulse.animation"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "nano_fireworks"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -3760,10 +3753,6 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "uni.beam.hand.left"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "nano_fireworks"
               },
               {
                 "type": "palladium:ability_enabled",
