@@ -2021,6 +2021,10 @@
               },
               {
                 "type": "palladium:ability_enabled",
+                "ability": "rocket"
+              },
+              {
+                "type": "palladium:ability_enabled",
                 "ability": "nano_flares_flames"
               }
             ]
@@ -3704,6 +3708,10 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "nano_fireworks"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "rocket"
               },
               {
                 "type": "palladium:ability_enabled",
