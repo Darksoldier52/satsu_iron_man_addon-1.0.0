@@ -223,6 +223,19 @@
             "cooldown": 0
           },
           {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "satsu.iron.man.suit.set"
+              },
+              {
+                "type": "palladium:command_result",
+                "command": "execute if entity @s[nbt={Inventory:[{Slot:102b}]}]"
+              }
+            ]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -372,10 +385,36 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
+                      },
+                      {
+                        "type": "palladium:mod_loaded",
+                        "mod_id": "curios"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
+                      },
+                      {
+                        "type": "palladium:mod_loaded",
+                        "mod_id": "trinkets"
+                      }
+                    ]
                   }
                 ]
               }
@@ -424,6 +463,19 @@
             "type": "palladium:chat_toggle",
             "chat_message": "remote on",
             "cooldown": 0
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "satsu.iron.man.suit.set"
+              },
+              {
+                "type": "palladium:command_result",
+                "command": "execute if entity @s[nbt={Inventory:[{Slot:102b}]}]"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -544,10 +596,36 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
+                      },
+                      {
+                        "type": "palladium:mod_loaded",
+                        "mod_id": "curios"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
+                      },
+                      {
+                        "type": "palladium:mod_loaded",
+                        "mod_id": "trinkets"
+                      }
+                    ]
                   }
                 ]
               }
@@ -726,10 +804,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -884,10 +993,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -920,6 +1060,82 @@
               {
                 "type": "palladium:command_result",
                 "command": "execute if entity @s[nbt={Inventory:[{Slot:102b}]}]"
+              }
+            ]
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.remote",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "disabled_remote_not_glasses": {
+      "type": "palladium:command",
+      "icon": "#satsu_iron_man_addon:ia_icon",
+      "title": {
+        "translate": "ability.title.satsu.ia_skill_bar"
+      },
+      "hidden": true,
+      "hidden_in_bar": true,
+      "gui_position": [0, -2.8],
+      "description": { "translate": "description.ia_skill_stat" },
+      "first_tick_commands": [
+        "function satsu_iron_man_addon:remote_mode/disable_emergency",
+        "function satsu_iron_man_addon:marks_parts/call_parts/give_all/main"
+      ],
+      "commands": [""],
+      "last_tick_commands": [""],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
+                      },
+                      {
+                        "type": "palladium:mod_loaded",
+                        "mod_id": "curios"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
+                      },
+                      {
+                        "type": "palladium:mod_loaded",
+                        "mod_id": "trinkets"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -1079,10 +1295,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -1588,10 +1835,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -1760,10 +2038,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -1908,10 +2217,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2028,10 +2368,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2235,10 +2606,41 @@
                     "type": "palladium:and",
                     "conditions": [
                       {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.addon.glasses.equip",
-                        "min_score": 1,
-                        "max_score": 1
+                        "type": "palladium:or",
+                        "conditions": [
+                          {
+                            "type": "palladium:and",
+                            "conditions": [
+                              {
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "curios:head"
+                              },
+                              {
+                                "type": "palladium:mod_loaded",
+                                "mod_id": "curios"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "palladium:and",
+                            "conditions": [
+                              {
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "trinkets:head/face"
+                              },
+                              {
+                                "type": "palladium:mod_loaded",
+                                "mod_id": "trinkets"
+                              }
+                            ]
+                          }
+                        ]
                       },
                       {
                         "type": "palladium:or",
@@ -2410,10 +2812,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2455,10 +2888,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2500,10 +2964,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2545,10 +3040,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2590,10 +3116,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2635,10 +3192,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2680,10 +3268,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2725,10 +3344,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2770,10 +3420,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2815,10 +3496,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2860,10 +3572,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2905,10 +3648,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2950,10 +3724,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2995,10 +3800,41 @@
                     "max_score": 1
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.addon.glasses.equip",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "curios"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "palladium:and",
+                        "conditions": [
+                          {
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
+                          },
+                          {
+                            "type": "palladium:mod_loaded",
+                            "mod_id": "trinkets"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
