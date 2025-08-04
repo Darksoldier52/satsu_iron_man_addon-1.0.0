@@ -148,7 +148,7 @@
             "max": 12
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_grab_cannon/right/light/grab_cannon_11_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_grab_cannon/left/light/grab_cannon_#X_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -309,7 +309,7 @@
             "max": 12
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_grab_cannon/left/light/grab_cannon_11_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_grab_cannon/left/light/grab_cannon_#X_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
