@@ -415,6 +415,7 @@
       "description": { "translate": "description.iron.man.fire_resistance" },
       "hidden": true,
       "hidden_in_bar": false,
+      "list_index": 0,
       "gui_position": [0, -1],
       "conditions": {
         "enabling": [
@@ -423,6 +424,15 @@
             "cooldown": 80,
             "key_type": "right_click",
             "needs_empty_hand": false
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "ability": "right_beam.2"
+              }
+            ]
           }
         ],
         "unlocking": [
@@ -443,6 +453,47 @@
         "amount": 40
       }
     },
+    "right_beam.2": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
+      "title": { "translate": "ability.title.satsu.fire_resistance" },
+      "description": { "translate": "description.iron.man.fire_resistance" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 0,
+      "gui_position": [0, -1],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:held",
+            "cooldown": 120,
+            "key_type": "right_click",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 20,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "right_beam.1"
+          },
+          {
+            "type": "palladium:energy_bar",
+            "power": "satsu_iron_man_addon:extremis/main",
+            "energy_bar": "extremis_energy",
+            "min": 1000
+          }
+        ]
+      },
+      "energy_bar_usage": {
+        "energy_bar": "extremis_energy",
+        "amount": 60
+      }
+    },
     "fire_sound": {
       "type": "palladium:play_sound",
       "hidden": true,
@@ -461,6 +512,11 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:extremis/main",
                 "ability": "right_beam.1"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:extremis/main",
+                "ability": "right_beam.2"
               }
             ]
           }
@@ -476,9 +532,19 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:extremis/main",
-            "ability": "right_beam.1"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:extremis/main",
+                "ability": "right_beam.1"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:extremis/main",
+                "ability": "right_beam.2"
+              }
+            ]
           }
         ],
         "unlocking": []
@@ -499,6 +565,11 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:extremis/main",
                 "ability": "right_beam.1"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:extremis/main",
+                "ability": "right_beam.2"
               }
             ]
           }
