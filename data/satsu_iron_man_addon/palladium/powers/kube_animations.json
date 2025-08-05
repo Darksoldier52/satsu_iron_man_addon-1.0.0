@@ -189,24 +189,6 @@
                           {
                             "type": "palladium:ability_integer_property",
                             "power": "satsu_iron_man_addon:kube_animations",
-                            "ability": "mark_50_anim",
-                            "property": "value",
-                            "min": 1,
-                            "max": 6
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:or",
-                        "conditions": [
-                          {
-                            "type": "palladium:ability_integer_property",
-                            "power": "satsu_iron_man_addon:kube_animations",
                             "ability": "mark.taken_activaded_anim",
                             "property": "value",
                             "min": 1,
@@ -995,9 +977,6 @@
                 "type": "palladium:ability_enabled",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
                 "ability": "armor_activate.animation_timer.mark.50"
-              },
-              {
-                "type": "palladium:on_ground"
               }
             ]
           },
