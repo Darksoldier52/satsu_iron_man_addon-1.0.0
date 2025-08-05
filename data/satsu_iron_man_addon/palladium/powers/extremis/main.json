@@ -1,0 +1,501 @@
+{
+  "name": { "translate": "ability.title.satsu.extremis.power" },
+  "persistent_data": true,
+  "allow_bar_shrinking": false,
+  "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
+  "background": "minecraft:textures/block/yellow_terracotta.png",
+  "icon": {
+    "type": "palladium:compound",
+    "icons": [
+      "satsu_iron_man_addon:textures/gui/extremis/dna.png",
+      "satsu_iron_man_addon:textures/gui/extremis/flame_2.png"
+    ]
+  },
+  "gui_display_type": "tree",
+  "primary_color": "#ff5a00",
+  "secondary_color": "#ffd500",
+  "energy_bars": {
+    "extremis_energy": {
+      "max": 8000,
+      "auto_increase_per_tick": -50,
+      "auto_increase_interval": 100,
+      "color": "#f77630"
+    }
+  },
+  "abilities": {
+    "armor": {
+      "type": "palladium:dummy",
+      "title": { "translate": "ability.title.satsu.extremis.power" },
+      "description": { "translate": "description.iron.man.mark.extremis" },
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/extremis/dna.png",
+          "satsu_iron_man_addon:textures/gui/extremis/flame_2.png"
+        ]
+      },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, 0],
+      "conditions": {
+        "enabling": [],
+        "unlocking": []
+      }
+    },
+    "extremis.regen.base": {
+      "type": "palladium:healing",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/heart.png",
+      "title": { "translate": "ability.title.satsu.healing" },
+      "description": { "translate": "description.satsu.extremis.healing" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "list_index": 15,
+      "gui_position": [1, -0.5],
+      "frequency": 2,
+      "amount": 0.2,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "ability": "extremis.regen.1"
+              }
+            ]
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          }
+        ]
+      }
+    },
+    "extremis.regen.1": {
+      "type": "palladium:healing",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/heart.png",
+      "title": { "translate": "ability.title.satsu.healing" },
+      "description": { "translate": "description.satsu.extremis.healing" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "list_index": 15,
+      "gui_position": [1.3, -1],
+      "frequency": 3,
+      "amount": 0.4,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "ability": "extremis.regen.2"
+              }
+            ]
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 15,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "extremis.regen.base"
+          }
+        ]
+      }
+    },
+    "extremis.regen.2": {
+      "type": "palladium:healing",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/heart.png",
+      "title": { "translate": "ability.title.satsu.healing" },
+      "description": { "translate": "description.satsu.extremis.healing" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "list_index": 15,
+      "gui_position": [0.8, -1.5],
+      "frequency": 5,
+      "amount": 0.5,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "ability": "extremis.regen.3"
+              }
+            ]
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 25,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "extremis.regen.1"
+          }
+        ]
+      }
+    },
+    "extremis.regen.3": {
+      "type": "palladium:healing",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/heart.png",
+      "title": { "translate": "ability.title.satsu.healing" },
+      "description": { "translate": "description.satsu.extremis.healing" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "list_index": 15,
+      "gui_position": [1.3, -2],
+      "frequency": 10,
+      "amount": 0.8,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "ability": "extremis.regen.4"
+              }
+            ]
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 30,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "extremis.regen.2"
+          }
+        ]
+      }
+    },
+    "extremis.durability.base": {
+      "type": "palladium:attribute_modifier",
+      "icon": "minecraft:iron_chestplate",
+      "title": { "translate": "ability.title.satsu.durability" },
+      "description": { "translate": "description.satsu.extremis.durability" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, -1.8],
+      "attribute": "minecraft:generic.armor",
+      "amount": 3.5,
+      "operation": 0,
+      "uuid": "b459de99-9744-4cd1-83ca-ed123bb07291",
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          }
+        ]
+      }
+    },
+    "extremis.durability.1": {
+      "type": "palladium:attribute_modifier",
+      "icon": "minecraft:iron_chestplate",
+      "title": { "translate": "ability.title.satsu.durability" },
+      "description": { "translate": "description.satsu.extremis.durability" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, -2.4],
+      "attribute": "minecraft:generic.armor",
+      "amount": 2.5,
+      "operation": 0,
+      "uuid": "bc4487a1-91b5-431d-8445-b6147f931f96",
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 15,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "extremis.durability.base"
+          }
+        ]
+      }
+    },
+    "extremis.durability.2": {
+      "type": "palladium:attribute_modifier",
+      "icon": "minecraft:iron_chestplate",
+      "title": { "translate": "ability.title.satsu.durability" },
+      "description": { "translate": "description.satsu.extremis.durability" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, -3],
+      "attribute": "minecraft:generic.armor",
+      "amount": 2.5,
+      "operation": 0,
+      "uuid": "e557b545-79f2-4332-894a-76b4f33b817d",
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 15,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "extremis.durability.1"
+          }
+        ]
+      }
+    },
+    "extremis.durability.3": {
+      "type": "palladium:attribute_modifier",
+      "icon": "minecraft:iron_chestplate",
+      "title": { "translate": "ability.title.satsu.durability" },
+      "description": { "translate": "description.satsu.extremis.durability" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, -3.7],
+      "attribute": "minecraft:generic.armor",
+      "amount": 2,
+      "operation": 0,
+      "uuid": "23643973-95a4-42ad-a235-9928a0ca764b",
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 15,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "extremis.durability.2"
+          }
+        ]
+      }
+    },
+    "extremis.strength.base": {
+      "type": "palladium:attribute_modifier",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/strength.png",
+      "title": { "translate": "ability.title.satsu.strength" },
+      "description": { "translate": "description.satsu.extremis.strength" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-1, -0.5],
+      "attribute": "minecraft:generic.attack_damage",
+      "amount": 2,
+      "operation": 0,
+      "uuid": "f732d74f-5bab-432d-b60d-0748e5788bd8",
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          }
+        ]
+      }
+    },
+    "extremis.strength.1": {
+      "type": "palladium:attribute_modifier",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/strength.png",
+      "title": { "translate": "ability.title.satsu.strength" },
+      "description": { "translate": "description.satsu.extremis.strength" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-1.3, -1],
+      "attribute": "minecraft:generic.attack_damage",
+      "amount": 2.5,
+      "operation": 0,
+      "uuid": "06d955dd-77f7-4d86-8ae5-c8cc13a7bbde",
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 15,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "extremis.strength.base"
+          }
+        ]
+      }
+    },
+    "extremis.strength.2": {
+      "type": "palladium:attribute_modifier",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/strength.png",
+      "title": { "translate": "ability.title.satsu.strength" },
+      "description": { "translate": "description.satsu.extremis.strength" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-0.8, -1.5],
+      "attribute": "minecraft:generic.attack_damage",
+      "amount": 2.5,
+      "operation": 0,
+      "uuid": "da52aa7f-32a3-416b-bf2a-da61d8621607",
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 20,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "extremis.strength.1"
+          }
+        ]
+      }
+    },
+    "extremis.strength.3": {
+      "type": "palladium:attribute_modifier",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/strength.png",
+      "title": { "translate": "ability.title.satsu.strength" },
+      "description": { "translate": "description.satsu.extremis.strength" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-1.3, -2],
+      "attribute": "minecraft:generic.attack_damage",
+      "amount": 1,
+      "operation": 0,
+      "uuid": "135a977e-3ae3-41fc-9952-7c1807b8f19d",
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 25,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "extremis.strength.2"
+          }
+        ]
+      }
+    },
+    "fire_resistance": {
+      "type": "palladium:damage_immunity",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
+      "title": { "translate": "ability.title.satsu.fire_resistance" },
+      "description": { "translate": "description.iron.man.fire_resistance" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [0, -1],
+      "damage_sources": [
+        "minecraft:is_fire",
+        "minecraft:ignites_armor_stands",
+        "minecraft:is_freezing"
+      ],
+      "conditions": {
+        "enabling": [],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          }
+        ]
+      }
+    },
+    "right_beam.1": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
+      "title": { "translate": "ability.title.satsu.fire_resistance" },
+      "description": { "translate": "description.iron.man.fire_resistance" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "gui_position": [0, -1],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:held",
+            "cooldown": 20,
+            "key_type": "right_click",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          }
+        ]
+      }
+    },
+    "fire_sound": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "sound": "satsu_iron_man_addon:mark_1_fire",
+      "volume": 1,
+      "pitch": 1,
+      "looping": true,
+      "play_self": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:extremis/main",
+                "ability": "right_beam.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "right_beam.add": {
+      "type": "satsu_iron_man_addon:add_power_per_tick",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "extremis/beams/hands/main",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:extremis/main",
+            "ability": "right_beam.1"
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "no-list:aim_main_arm": {
+      "type": "palladium:aim",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "time": 1,
+      "arm": "main_arm",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:extremis/main",
+                "ability": "right_beam.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
