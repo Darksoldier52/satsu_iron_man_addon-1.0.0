@@ -291,7 +291,7 @@
       "hidden_in_bar": true,
       "gui_position": [-1, -0.5],
       "attribute": "minecraft:generic.attack_damage",
-      "amount": 2,
+      "amount": 1,
       "operation": 0,
       "uuid": "f732d74f-5bab-432d-b60d-0748e5788bd8",
       "conditions": {
@@ -313,7 +313,7 @@
       "hidden_in_bar": true,
       "gui_position": [-1.3, -1],
       "attribute": "minecraft:generic.attack_damage",
-      "amount": 2.5,
+      "amount": 1.5,
       "operation": 0,
       "uuid": "06d955dd-77f7-4d86-8ae5-c8cc13a7bbde",
       "conditions": {
@@ -340,7 +340,7 @@
       "hidden_in_bar": true,
       "gui_position": [-0.8, -1.5],
       "attribute": "minecraft:generic.attack_damage",
-      "amount": 2.5,
+      "amount": 1,
       "operation": 0,
       "uuid": "da52aa7f-32a3-416b-bf2a-da61d8621607",
       "conditions": {
@@ -408,6 +408,45 @@
         ]
       }
     },
+    "fire_aspect": {
+      "type": "palladium:fire_aspect",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
+      "title": { "translate": "ability.title.satsu.fire_resistance" },
+      "description": { "translate": "description.iron.man.fire_resistance" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 0,
+      "gui_position": [0, -1],
+      "time": 5,
+      "should_stack_time": false,
+      "max_time": 5,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
+          {
+            "type": "palladium:energy_bar",
+            "power": "satsu_iron_man_addon:extremis/main",
+            "energy_bar": "extremis_energy",
+            "min": 10
+          }
+        ]
+      },
+      "energy_bar_usage": {
+        "energy_bar": "extremis_energy",
+        "amount": 1
+      }
+    },
     "right_beam.1": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
@@ -415,7 +454,7 @@
       "description": { "translate": "description.iron.man.fire_resistance" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 0,
+      "list_index": 1,
       "gui_position": [0, -1],
       "conditions": {
         "enabling": [
@@ -460,7 +499,7 @@
       "description": { "translate": "description.iron.man.fire_resistance" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 0,
+      "list_index": 1,
       "gui_position": [0, -1],
       "conditions": {
         "enabling": [
@@ -507,6 +546,10 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
+                "ability": "fire_aspect"
+              },
+              {
+                "type": "palladium:ability_enabled",
                 "ability": "right_beam.1"
               },
               {
@@ -535,6 +578,19 @@
             "property": "value",
             "min": 5,
             "max": 5
+          },
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "right_beam.1"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "right_beam.2"
+              }
+            ]
           }
         ]
       }
@@ -572,6 +628,19 @@
             "property": "value",
             "min": 1,
             "max": 5
+          },
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "right_beam.1"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "right_beam.2"
+              }
+            ]
           }
         ]
       }
