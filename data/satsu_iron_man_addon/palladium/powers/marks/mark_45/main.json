@@ -41,10 +41,10 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "ability": "no_nanoarmor_anim",
+                    "ability": "head_animation",
                     "property": "value",
-                    "min": 13,
-                    "max": 16
+                    "min": 19,
+                    "max": 19
                   },
                   {
                     "type": "gravestone:perspective",
@@ -79,10 +79,10 @@
                 "conditions": [
                   {
                     "type": "palladium:ability_integer_property",
-                    "ability": "no_nanoarmor_anim",
+                    "ability": "head_animation",
                     "property": "value",
-                    "min": 13,
-                    "max": 16
+                    "min": 19,
+                    "max": 19
                   },
                   {
                     "type": "palladium:not",
