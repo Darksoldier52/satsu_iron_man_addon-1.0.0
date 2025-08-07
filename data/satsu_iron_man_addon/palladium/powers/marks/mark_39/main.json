@@ -912,7 +912,7 @@
         "superpower add satsu_iron_man_addon:marks/mecano_calll",
         "tag @s add satsu.iron.man.suit.set",
         "tag @s add mark.39",
-        "scoreboard players set @s satsu.iron.man.armor 2",
+        "scoreboard players set @s satsu.iron.man.armor 39",
         "scoreboard players set @s satsu.iron.man.flame 8",
         "scoreboard players set @s satsu.iron.man.pickaxe.velocity 59"
       ],

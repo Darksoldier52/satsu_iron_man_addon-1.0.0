@@ -1154,7 +1154,7 @@
       "first_tick_commands": [
         "tag @s add satsu.iron.man.suit.set",
         "tag @s add mark.50.superior",
-        "scoreboard players set @s satsu.iron.man.armor 1",
+        "scoreboard players set @s satsu.iron.man.armor 500",
         "scoreboard players set @s satsu.iron.man.pickaxe.velocity 90",
         "scoreboard players set @s satsu.iron.man.flame 8"
       ],
@@ -7425,8 +7425,8 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor",
-                "min_score": 1,
-                "max_score": 1
+                "min_score": 500,
+                "max_score": 500
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -7517,8 +7517,8 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor",
-                "min_score": 1,
-                "max_score": 1
+                "min_score": 500,
+                "max_score": 500
               },
               {
                 "type": "palladium:ability_unlocked",

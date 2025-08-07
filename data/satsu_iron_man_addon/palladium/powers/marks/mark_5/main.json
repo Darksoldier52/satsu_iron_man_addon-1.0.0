@@ -1162,7 +1162,7 @@
       "first_tick_commands": [
         "tag @s add satsu.iron.man.suit.set",
         "tag @s add mark.5",
-        "scoreboard players set @s satsu.iron.man.armor 17",
+        "scoreboard players set @s satsu.iron.man.armor 5",
         "scoreboard players set @s satsu.iron.man.flame 0",
         "scoreboard players set @s satsu.iron.man.pickaxe.velocity 20"
       ],

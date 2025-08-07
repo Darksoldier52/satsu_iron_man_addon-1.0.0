@@ -3656,8 +3656,8 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor",
-                "min_score": 6,
-                "max_score": 6
+                "min_score": 16,
+                "max_score": 16
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -8336,8 +8336,8 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor",
-                "min_score": 1,
-                "max_score": 1
+                "min_score": 500,
+                "max_score": 500
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -8420,8 +8420,8 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor",
-                "min_score": 1,
-                "max_score": 1
+                "min_score": 500,
+                "max_score": 500
               },
               {
                 "type": "palladium:ability_unlocked",
