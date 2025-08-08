@@ -16,7 +16,7 @@
   "energy_bars": {
     "extremis_energy": {
       "max": 80000,
-      "auto_increase_per_tick": 80000,
+      "auto_increase_per_tick": 30,
       "color": "#f77630"
     }
   },
@@ -863,6 +863,28 @@
             ]
           }
         ]
+      }
+    },
+    "shader_effect_white": {
+      "type": "palladium:shader_effect",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "shader": "extremis:shaders/orange.json",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "mouth_anim",
+            "property": "value",
+            "min": 8,
+            "max": 8
+          },
+          {
+            "type": "gravestone:perspective",
+            "looking": "FIRST_PERSON"
+          }
+        ],
+        "unlocking": []
       }
     },
     "fire_sound": {
