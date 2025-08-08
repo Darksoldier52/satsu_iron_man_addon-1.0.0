@@ -24,8 +24,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -70,8 +69,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -117,8 +115,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_katar/right/iron_man_suit_85_0_#TIMER"
@@ -165,8 +162,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_katar/light/right/iron_man_suit_85_0_#TIMER"
@@ -214,8 +210,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_katar/left/iron_man_suit_85_0_#TIMER"
@@ -262,8 +257,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_katar/light/left/iron_man_suit_85_0_#TIMER"
@@ -311,8 +305,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_handblade/iron_man_suit_85_0_#TIMER"
@@ -351,8 +344,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           }
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_handblade/light/iron_man_suit_85_0_#TIMER"
@@ -392,8 +384,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -446,8 +437,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -501,8 +491,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -555,8 +544,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -610,8 +598,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -656,8 +643,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -703,8 +689,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -757,8 +742,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -812,8 +796,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -866,8 +849,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -921,8 +903,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
@@ -967,8 +948,7 @@
           "X": {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor",
-            "min": 0,
-            "max": 59
+            "min": 1
           },
           "Y": {
             "type": "palladium:objective_score",
