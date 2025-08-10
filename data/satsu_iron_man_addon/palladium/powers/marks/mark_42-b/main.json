@@ -3056,9 +3056,9 @@
       "type": "geckolib:render_layer_animation",
       "hidden": true,
       "hidden_in_bar": true,
-      "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_42-b/armor/head/main",
-      "controller": "call.part.control",
-      "animation_trigger": "call.part",
+      "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_42-b/mask/main",
+      "controller": "mask.up",
+      "animation_trigger": "call.part.head",
       "conditions": {
         "enabling": [
           {
@@ -3097,7 +3097,7 @@
       "hidden_in_bar": true,
       "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_42-b/mask/main",
       "controller": "mask.up",
-      "animation_trigger": "call.part",
+      "animation_trigger": "call.part.front",
       "conditions": {
         "enabling": [
           {
@@ -3449,7 +3449,7 @@
       "first_tick_commands": [
         "tag @s add satsu.iron.man.suit.set",
         "tag @s add mark.42-b",
-        "scoreboard players set @s satsu.iron.man.armor 53",
+        "scoreboard players set @s satsu.iron.man.armor 422",
         "scoreboard players set @s satsu.iron.man.flame 0",
         "scoreboard players set @s satsu.iron.man.flight_speed 64"
       ],

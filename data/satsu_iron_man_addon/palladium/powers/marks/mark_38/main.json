@@ -1038,7 +1038,7 @@
         "superpower add satsu_iron_man_addon:marks/mecano_calll",
         "tag @s add satsu.iron.man.suit.set",
         "tag @s add mark.38",
-        "scoreboard players set @s satsu.iron.man.armor 50",
+        "scoreboard players set @s satsu.iron.man.armor 38",
         "scoreboard players set @s satsu.iron.man.flame 0",
         "scoreboard players set @s satsu.iron.man.pickaxe.velocity 87"
       ],
@@ -1588,8 +1588,8 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor",
-                "min_score": 13,
-                "max_score": 13
+                "min_score": 1,
+                "max_score": 1
               }
             ]
           }
@@ -1679,8 +1679,8 @@
               {
                 "type": "palladium:objective_score",
                 "objective": "satsu.iron.man.armor",
-                "min_score": 13,
-                "max_score": 13
+                "min_score": 1,
+                "max_score": 1
               }
             ]
           }

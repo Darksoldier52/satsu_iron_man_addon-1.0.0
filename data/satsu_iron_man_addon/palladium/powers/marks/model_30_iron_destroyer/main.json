@@ -978,7 +978,7 @@
       "first_tick_commands": [
         "tag @s add satsu.iron.man.suit.set",
         "tag @s add mark.30.iron.destroyer",
-        "scoreboard players set @s satsu.iron.man.armor 15",
+        "scoreboard players set @s satsu.iron.man.armor 301",
         "scoreboard players set @s satsu.iron.man.flame 10",
         "scoreboard players set @s satsu.iron.man.pickaxe.velocity 35"
       ],
