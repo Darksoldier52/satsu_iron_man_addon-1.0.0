@@ -596,7 +596,7 @@
     },
     "right_beam.1": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
+      "icon": "satsu_iron_man_addon:textures/gui/extremis/extremis_hand_beam.png",
       "title": { "translate": "ability.title.satsu.extremis.beam.hand" },
       "description": { "translate": "description.iron.man.extremis.beam.1" },
       "hidden": false,
@@ -646,7 +646,7 @@
     },
     "right_beam.2": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
+      "icon": "satsu_iron_man_addon:textures/gui/extremis/extremis_hand_beam.png",
       "title": { "translate": "ability.title.satsu.extremis.beam.hand" },
       "description": { "translate": "description.iron.man.extremis.beam.2" },
       "hidden": false,
@@ -715,7 +715,7 @@
     },
     "mouth_beam.dummy": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
+      "icon": "satsu_iron_man_addon:textures/gui/extremis/extremis_mouth_beam.png",
       "title": { "translate": "ability.title.satsu.extremis.beam.mouth" },
       "description": { "translate": "description.iron.man.extremis.mouth.1" },
       "hidden": false,
@@ -738,7 +738,7 @@
     },
     "mouth_beam.1": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
+      "icon": "satsu_iron_man_addon:textures/gui/extremis/extremis_mouth_beam.png",
       "title": { "translate": "ability.title.satsu.extremis.beam.hand" },
       "hidden": true,
       "hidden_in_bar": false,
@@ -786,7 +786,7 @@
     },
     "mouth_beam.dummy.2": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
+      "icon": "satsu_iron_man_addon:textures/gui/extremis/extremis_mouth_beam.png",
       "title": { "translate": "ability.title.satsu.extremis.beam.mouth" },
       "description": { "translate": "description.iron.man.extremis.mouth.1" },
       "hidden": false,
@@ -809,7 +809,7 @@
     },
     "mouth_beam.2": {
       "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_resistance.png",
+      "icon": "satsu_iron_man_addon:textures/gui/extremis/extremis_mouth_beam.png",
       "title": { "translate": "ability.title.satsu.extremis.beam.hand" },
       "hidden": true,
       "hidden_in_bar": false,

@@ -14,7 +14,7 @@
       "damage": 12,
       "max_distance": 5,
       "speed": 0.5,
-      "set_on_fire_seconds": 2,
+      "set_on_fire_seconds": 6,
       "cause_fire": false,
       "smelt_blocks": true,
       "conditions": {
@@ -38,7 +38,7 @@
       "damage": 15,
       "max_distance": 10,
       "speed": 0.5,
-      "set_on_fire_seconds": 2,
+      "set_on_fire_seconds": 6,
       "cause_fire": false,
       "smelt_blocks": true,
       "conditions": {
