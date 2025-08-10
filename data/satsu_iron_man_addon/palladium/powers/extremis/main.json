@@ -745,7 +745,7 @@
     "mouth_beam.1": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/extremis/extremis_mouth_beam.png",
-      "title": { "translate": "ability.title.satsu.extremis.beam.hand" },
+      "title": { "translate": "ability.title.satsu.extremis.beam.mouth" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 2,
@@ -800,7 +800,7 @@
         ]
       },
       "title": { "translate": "ability.title.satsu.extremis.beam.mouth" },
-      "description": { "translate": "description.iron.man.extremis.mouth.1" },
+      "description": { "translate": "description.iron.man.extremis.mouth.2" },
       "hidden": false,
       "hidden_in_bar": false,
       "gui_position": [0.5, 1.7],
@@ -828,7 +828,7 @@
           "satsu_iron_man_addon:textures/gui/extremis/1.png"
         ]
       },
-      "title": { "translate": "ability.title.satsu.extremis.beam.hand" },
+      "title": { "translate": "ability.title.satsu.extremis.beam.mouth" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 2,
