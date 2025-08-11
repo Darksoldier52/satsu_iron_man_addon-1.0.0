@@ -6769,7 +6769,7 @@
         "enabling": [
           {
             "type": "palladium:activation",
-            "ticks": 33,
+            "ticks": 8,
             "cooldown": 190,
             "key_type": "key_bind",
             "needs_empty_hand": false
