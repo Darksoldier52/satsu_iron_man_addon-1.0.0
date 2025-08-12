@@ -1566,7 +1566,7 @@
               },
               {
                 "type": "palladium:ability_integer_property",
-                "ability": "head_animation",
+                "ability": "mask_animation_timer",
                 "property": "value",
                 "min": 1,
                 "max": 17
@@ -1587,7 +1587,7 @@
             "type": "palladium:ability_integer_property",
             "ability": "mask_animation_timer",
             "property": "value",
-            "min": 1,
+            "min": 8,
             "max": 17
           }
         ]
@@ -4030,15 +4030,68 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
+            "type": "palladium:ability_integer_property",
+            "ability": "mask_animation_timer",
+            "property": "value",
+            "min": 8,
+            "max": 16
+          },
+          {
+            "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:ability_enabled",
-                "ability": "mask_activate_nano"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "call.head"
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "right_arm_animation",
+                    "property": "value",
+                    "min": 1,
+                    "max": 16
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "left_arm_animation",
+                    "property": "value",
+                    "min": 1,
+                    "max": 16
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "right_leg_animation",
+                    "property": "value",
+                    "min": 1,
+                    "max": 16
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "left_leg_animation",
+                    "property": "value",
+                    "min": 1,
+                    "max": 16
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "right_shoulder_animation",
+                    "property": "value",
+                    "min": 1,
+                    "max": 16
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "left_shoulder_animation",
+                    "property": "value",
+                    "min": 1,
+                    "max": 16
+                  },
+                  {
+                    "type": "palladium:ability_integer_property",
+                    "ability": "chest_animation",
+                    "property": "value",
+                    "min": 1,
+                    "max": 16
+                  }
+                ]
               }
             ]
           }
