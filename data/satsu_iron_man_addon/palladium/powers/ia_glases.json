@@ -17,7 +17,7 @@
       "list_index": 0,
       "gui_position": [0, 0],
       "commands": [
-        "playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1 1 1",
+        "playsound minecraft:item.armor.equip_generic player @a[distance=0..1] ~ ~ ~ 1 1 1",
         "scoreboard players reset @s satsu.iron.man.addon.glasses.equip",
         "superpower remove satsu_iron_man_addon:ia_glases @s",
         "give @s satsu_iron_man_addon:ia_glases 1",
