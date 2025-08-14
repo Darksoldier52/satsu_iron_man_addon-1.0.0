@@ -6195,40 +6195,10 @@
             "ability": "flight_speed.move"
           },
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.80"
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.flight_speed.choose",
-                        "min_score": 0,
-                        "max_score": 406
-                      }
-                    ]
-                  },
-                  {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.flight_speed.choose",
-                        "min_score": 0,
-                        "max_score": 426
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.flight_speed.choose",
+            "min_score": 0,
+            "max_score": 406
           }
         ]
       }
@@ -6266,40 +6236,10 @@
             "ability": "flight_speed.move"
           },
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.80"
-                      },
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.flight_speed.choose",
-                        "min_score": 2,
-                        "max_score": 408
-                      }
-                    ]
-                  },
-                  {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.flight_speed.choose",
-                        "min_score": 2,
-                        "max_score": 428
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.flight_speed.choose",
+            "min_score": 2,
+            "max_score": 408
           }
         ]
       }
