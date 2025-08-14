@@ -280,6 +280,8 @@
 
   "description.iron.man.mark.50": "La mark 50 es la primera armadura hecha de nanotecnologia, posee dagas retraibles, dos diferentes espadas, un escudo y varias mejoras mas Durabilidad:40    Fuerza: 37    Velocidad de vuelo: 6.55",
 
+  "description.iron.man.mark.80": "La mark 80 es una armadura de nanotecnologia con un diseño rojo con toques grises y dorados. Posee dagas retraibles, dos diferentes espadas, un escudo y varias mejoras mas Durabilidad:40    Fuerza: 37    Velocidad de vuelo: 6.55",
+
   "description.iron.man.mark.85": "La mark 85 es una armadura de nanotecnologia con un diseño dorado y rojo con toques grises. Posee dagas retraibles, dos diferentes espadas, un escudo y varias mejoras mas Durabilidad:40    Fuerza: 37    Velocidad de vuelo: 6.55",
 
   "description.iron.man.mark.Iron.destroyer": "Una armadura de uru que posee propiedades mágicas /Posee efectos de suerte, salto y agilidad en el agua/ Durabilidad:40    Fuerza: 38    Velocidad de vuelo: 6.55",
@@ -510,6 +512,7 @@
   "ability.title.satsu.mark.48": "Mark 48      ",
   "ability.title.satsu.mark.49": "Mark 48      ",
   "ability.title.satsu.mark.50": "Mark 50      ",
+  "ability.title.satsu.mark.80": "Mark 80      ",
   "ability.title.satsu.mark.85": "Mark 85      ",
   "ability.title.satsu.mark.50.superior": "Mark modelo 50      ",
   "ability.title.satsu.mark.unknow.blooded": "Mark Borde Sangrante      ",
