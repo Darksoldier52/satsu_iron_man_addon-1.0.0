@@ -4352,17 +4352,13 @@
       }
     },
     "waepons.choose_wheel.nano_rial": {
-      "type": "palladium:command",
+      "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/nano_rial.png",
       "title": { "translate": "ability.title.satsu.nano_rial" },
       "description": { "translate": "description.satsu.nano_rial" },
       "hidden": false,
       "hidden_in_bar": false,
       "gui_position": [1, 4.5],
-      "first_tick_commands": [
-        "function satsu_iron_man_addon:nano_weapons/rial"
-      ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
@@ -4391,6 +4387,74 @@
             ]
           }
         ]
+      }
+    },
+    "nano_rial.set.0": {
+      "type": "satsu_iron_man_addon:set_property",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_nano_type_of_shoot",
+      "number": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose_wheel.nano_rial"
+          },
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_of_shoot",
+            "min": 2,
+            "max": 2
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "nano_rial.set.1"
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "nano_rial.set.1": {
+      "type": "satsu_iron_man_addon:set_property",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_nano_type_of_shoot",
+      "number": 2,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose_wheel.nano_rial"
+          },
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_of_shoot",
+            "min": 0,
+            "max": 1000
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "nano_rial.set.0"
+              },
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_nano_type_of_shoot",
+                "min": 2,
+                "max": 2
+              }
+            ]
+          }
+        ],
+        "unlocking": []
       }
     },
     "waepons.choose_wheel.nano_mallet": {
@@ -4435,17 +4499,13 @@
       }
     },
     "waepons.choose_wheel.nano_grenade_launcher": {
-      "type": "palladium:command",
+      "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/nano_grenade_launcher.png",
       "title": { "translate": "ability.title.satsu.nano_grenade_launcher" },
       "description": { "translate": "description.satsu.nano_grenade_launcher" },
       "hidden": false,
       "hidden_in_bar": false,
       "gui_position": [0, 4.5],
-      "first_tick_commands": [
-        "function satsu_iron_man_addon:nano_weapons/grenade_launcher"
-      ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
@@ -4474,6 +4534,68 @@
             ]
           }
         ]
+      }
+    },
+    "nano_grenade_launcher.set.0": {
+      "type": "satsu_iron_man_addon:set_property",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_nano_type_of_shoot",
+      "number": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose_wheel.nano_grenade_launcher"
+          },
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_of_shoot",
+            "min": 1,
+            "max": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "nano_grenade_launcher.set.1"
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "nano_grenade_launcher.set.1": {
+      "type": "satsu_iron_man_addon:set_property",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_nano_type_of_shoot",
+      "number": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose_wheel.nano_grenade_launcher"
+          },
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_of_shoot",
+            "min": 0,
+            "max": 1000
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "nano_grenade_launcher.set.0"
+              }
+            ]
+          }
+        ],
+        "unlocking": []
       }
     },
     "waepons.choose_wheel_nano_rockets": {
@@ -4598,17 +4720,13 @@
       }
     },
     "waepons.choose_wheel.grab_cannon": {
-      "type": "palladium:command",
+      "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/type_of_shoots/grab_cannon.png",
       "title": { "translate": "ability.title.satsu.grab_cannon" },
       "description": { "translate": "description.satsu.grab_cannon" },
       "hidden": false,
       "hidden_in_bar": false,
       "gui_position": [-1, 4.5],
-      "first_tick_commands": [
-        "function satsu_iron_man_addon:nano_weapons/grab_cannon"
-      ],
-      "commands": [""],
       "conditions": {
         "enabling": [
           {
@@ -4622,6 +4740,74 @@
             "ability": "weapons_wheel"
           }
         ]
+      }
+    },
+    "grab_cannon.set.0": {
+      "type": "satsu_iron_man_addon:set_property",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_nano_type_of_shoot",
+      "number": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose_wheel.grab_cannon"
+          },
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_of_shoot",
+            "min": 3,
+            "max": 3
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "grab_cannon.set.1"
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "grab_cannon.set.1": {
+      "type": "satsu_iron_man_addon:set_property",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_nano_type_of_shoot",
+      "number": 3,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose_wheel.grab_cannon"
+          },
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_of_shoot",
+            "min": 0,
+            "max": 1000
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "grab_cannon.set.0"
+              },
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_nano_type_of_shoot",
+                "min": 3,
+                "max": 3
+              }
+            ]
+          }
+        ],
+        "unlocking": []
       }
     },
     "waepons.choose_wheel.rocket": {
@@ -5864,9 +6050,10 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.nano.weapon.rial",
-            "min_score": 1
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_of_shoot",
+            "min": 2,
+            "max": 2
           }
         ],
         "unlocking": [
@@ -6152,9 +6339,10 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.nano.weapon.grenade_launcher",
-            "min_score": 1
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_of_shoot",
+            "min": 1,
+            "max": 1
           }
         ],
         "unlocking": [
@@ -7248,9 +7436,10 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.nano.weapon.grab_cannon",
-            "min_score": 1
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_of_shoot",
+            "min": 3,
+            "max": 3
           }
         ],
         "unlocking": [
