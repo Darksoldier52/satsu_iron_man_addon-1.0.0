@@ -54,10 +54,10 @@
                     "type": "palladium:not",
                     "conditions": [
                       {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.mask",
-                        "min_score": 0,
-                        "max_score": 0
+                        "type": "palladium:integer_property",
+                        "property": "satsu_mask_value",
+                        "min": 0,
+                        "max": 0
                       }
                     ]
                   },
@@ -88,10 +88,10 @@
                     "type": "palladium:not",
                     "conditions": [
                       {
-                        "type": "palladium:objective_score",
-                        "objective": "satsu.iron.man.mask",
-                        "min_score": 0,
-                        "max_score": 0
+                        "type": "palladium:integer_property",
+                        "property": "satsu_mask_value",
+                        "min": 0,
+                        "max": 0
                       }
                     ]
                   },
@@ -968,10 +968,10 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.mask",
-                "min_score": 0,
-                "max_score": 0
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 0,
+                "max": 0
               }
             ]
           },
@@ -1258,10 +1258,10 @@
                     ]
                   },
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.mask",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
                   },
                   {
                     "type": "palladium:objective_score",
@@ -1432,9 +1432,9 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.mask",
-                "min_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1
               }
             ]
           }
@@ -1579,10 +1579,10 @@
                             "max_score": 1
                           },
                           {
-                            "type": "palladium:objective_score",
-                            "objective": "satsu.iron.man.mask",
-                            "min_score": 0,
-                            "max_score": 0
+                            "type": "palladium:integer_property",
+                            "property": "satsu_mask_value",
+                            "min": 0,
+                            "max": 0
                           }
                         ]
                       }
@@ -2037,10 +2037,10 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.mask",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
                   },
                   {
                     "type": "palladium:ability_enabled",
@@ -2055,11 +2055,11 @@
       }
     },
     "mask_set.0": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:set_property",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.mask",
-      "quantity": 0,
+      "name": "satsu_mask_value",
+      "number": 0,
       "conditions": {
         "enabling": [
           {
@@ -2067,10 +2067,10 @@
             "ability": "mask_activate"
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.mask",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
           },
           {
             "type": "palladium:not",
@@ -2085,11 +2085,11 @@
       }
     },
     "mask_set.1": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:set_property",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.mask",
-      "quantity": 1,
+      "name": "satsu_mask_value",
+      "number": 1,
       "conditions": {
         "enabling": [
           {
@@ -2097,10 +2097,10 @@
             "ability": "mask_activate"
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.mask",
-            "min_score": 0,
-            "max_score": 0
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 0,
+            "max": 0
           },
           {
             "type": "palladium:not",
@@ -7637,7 +7637,6 @@
       "scale": 1.35,
       "first_tick_commands": [
         "scale set pehkui:eye_height 1.3",
-        "scoreboard players set @s satsu.iron.man.mask 1",
         "superpower add satsu_iron_man_addon:marks/model_prime/hulkbuster/main"
       ],
       "commands": [""],
@@ -7645,6 +7644,21 @@
         "scale set pehkui:eye_height 1",
         "superpower remove satsu_iron_man_addon:marks/model_prime/hulkbuster/main"
       ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "hulkbuster"
+          }
+        ]
+      }
+    },
+    "hulkbuster.mask.set": {
+      "type": "satsu_iron_man_addon:set_property",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_mask_value",
+      "number": 1,
       "conditions": {
         "enabling": [
           {
