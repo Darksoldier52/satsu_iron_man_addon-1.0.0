@@ -1,7 +1,7 @@
 {
   "name": { "translate": "ability.title.satsu.mark.43" },
   "allow_bar_shrinking": true,
-  "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
+  "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/ability_bar_iron_man.png",
   "background": "minecraft:textures/block/iron_block.png",
   "icon": "#satsu_iron_man_addon:armor_icon_ability",
   "gui_display_type": "tree",
@@ -120,10 +120,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.glasses.equip",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
+                      },
+                      {
+                        "type": "palladium:mod_loaded",
+                        "mod_id": "curios"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
+                      },
+                      {
+                        "type": "palladium:mod_loaded",
+                        "mod_id": "trinkets"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -167,10 +198,41 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.glasses.equip",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
+                      },
+                      {
+                        "type": "palladium:mod_loaded",
+                        "mod_id": "curios"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "palladium:and",
+                    "conditions": [
+                      {
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
+                      },
+                      {
+                        "type": "palladium:mod_loaded",
+                        "mod_id": "trinkets"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -245,8 +307,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -358,8 +429,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           }
@@ -478,8 +558,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -548,8 +637,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -619,8 +717,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -690,8 +797,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -761,8 +877,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -832,8 +957,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -903,8 +1037,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -974,8 +1117,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -1043,8 +1195,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -1108,8 +1269,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           }
@@ -1168,8 +1338,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           }
@@ -1227,8 +1406,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           }
@@ -1297,8 +1485,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           }
@@ -1349,8 +1546,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           }
@@ -1401,8 +1607,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           }
@@ -1683,8 +1898,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           }
@@ -3056,9 +3280,9 @@
       "type": "geckolib:render_layer_animation",
       "hidden": true,
       "hidden_in_bar": true,
-      "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_43/armor/head/main",
-      "controller": "call.part.control",
-      "animation_trigger": "call.part",
+      "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_43/mask/main",
+      "controller": "mask.up",
+      "animation_trigger": "call.part.head",
       "conditions": {
         "enabling": [
           {
@@ -3097,7 +3321,7 @@
       "hidden_in_bar": true,
       "render_layer": "satsu_iron_man_addon:armor_things/marks/mark_43/mask/main",
       "controller": "mask.up",
-      "animation_trigger": "call.part",
+      "animation_trigger": "call.part.front",
       "conditions": {
         "enabling": [
           {
@@ -3180,7 +3404,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "playsound satsu_iron_man_addon:call_parts_arm player @a ~ ~ ~ 1"
+        "playsound satsu_iron_man_addon:call_parts_arm player @a[distance=0..10] ~ ~ ~ 1"
       ],
       "commands": [""],
       "conditions": {
@@ -3447,15 +3671,13 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "tag @s add satsu.iron.man.suit.set",
         "tag @s add mark.43",
-        "scoreboard players set @s satsu.iron.man.armor 54",
+        "scoreboard players set @s satsu.iron.man.armor 43",
         "scoreboard players set @s satsu.iron.man.flame 0"
       ],
       "commands": [""],
       "last_tick_commands": [
         "tag @s remove mark.43",
-        "tag @s remove satsu.iron.man.suit.set",
         "execute if entity @e[tag=sentinel] run function satsu_iron_man_addon:sentinels/kill_one_sentinel",
         "function satsu_iron_man_addon:flight/set_0"
       ],
@@ -3700,8 +3922,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -3791,8 +4022,17 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "alien"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
               }
             ]
           },
@@ -4013,7 +4253,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "playsound satsu_iron_man_addon:new_mask_sound ambient @a ~ ~ ~ 1"
+        "playsound satsu_iron_man_addon:new_mask_sound ambient @a[distance=0..10] ~ ~ ~ 1"
       ],
       "commands": [""],
       "conditions": {
@@ -6897,17 +7137,6 @@
                 "max": 18
               }
             ]
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.set",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
           }
         ]
       }
@@ -7561,7 +7790,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "playsound satsu_iron_man_addon:new_blast ambient @a ~ ~ ~ 1 1"
+        "playsound satsu_iron_man_addon:new_blast ambient @a[distance=0..10] ~ ~ ~ 1 1"
       ],
       "commands": [""],
       "conditions": {

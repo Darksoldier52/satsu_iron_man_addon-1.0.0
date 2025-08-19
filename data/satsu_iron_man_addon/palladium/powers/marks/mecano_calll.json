@@ -1,6 +1,6 @@
 {
   "name": { "translate": "ability.title.satsu.mark.32" },
-  "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/powers.png",
+  "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/ability_bar_iron_man.png",
   "background": "satsu_iron_man_addon:textures/gui/block/background.png",
   "icon": "#satsu_iron_man_addon:armor_icon_ability",
   "gui_display_type": "list",
@@ -26,6 +26,11 @@
           }
         ],
         "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
           {
             "type": "palladium:command_result",
             "command": "execute if entity @s[scores={satsu.iron.man.animation.armor=0}]",
