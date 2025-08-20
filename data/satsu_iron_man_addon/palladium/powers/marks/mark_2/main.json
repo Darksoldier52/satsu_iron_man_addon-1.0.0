@@ -162,11 +162,12 @@
       }
     },
     "hud_armor_variable.enable": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.hud.enabled",
-      "quantity": 1,
+      "score": "satsu.iron.man.armor.hud.enabled",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -178,11 +179,12 @@
       }
     },
     "hud_armor_variable.disable": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.hud.enabled",
-      "quantity": 0,
+      "score": "satsu.iron.man.armor.hud.enabled",
+      "adjustment_type": "set",
+      "adjustment_amount": 0,
       "conditions": {
         "enabling": [
           {
@@ -1276,11 +1278,12 @@
       }
     },
     "armor_activate.command": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.actived",
-      "quantity": 1,
+      "score": "satsu.iron.man.armor.actived",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -1467,11 +1470,12 @@
       }
     },
     "mask_set.0": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.mask",
-      "quantity": 0,
+      "score": "satsu.iron.man.mask",
+      "adjustment_type": "set",
+      "adjustment_amount": 0,
       "conditions": {
         "enabling": [
           {
@@ -1497,11 +1501,12 @@
       }
     },
     "mask_set.1": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.mask",
-      "quantity": 1,
+      "score": "satsu.iron.man.mask",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -1706,14 +1711,15 @@
       }
     },
     "energy_beam_increase_wheel_1": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ark_beam_0.png",
       "title": { "translate": "ability.title.satsu.energy_beam" },
       "description": { "translate": "description.energy_beam" },
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.addon.energy.beam.powerfull",
-      "quantity": 0,
+      "score": "satsu.iron.man.addon.energy.beam.powerfull",
+      "adjustment_type": "set",
+      "adjustment_amount": 0,
       "conditions": {
         "enabling": [
           {
@@ -1729,14 +1735,15 @@
       }
     },
     "energy_beam_increase_wheel_2": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ark_beam_powerfull_1.png",
       "title": { "translate": "ability.title.satsu.energy_beam.2" },
       "description": { "translate": "description.energy_beam" },
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.addon.energy.beam.powerfull",
-      "quantity": 1,
+      "score": "satsu.iron.man.addon.energy.beam.powerfull",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -1752,14 +1759,15 @@
       }
     },
     "energy_beam_increase_wheel_3": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ark_beam_powerfull_2.png",
       "title": { "translate": "ability.title.satsu.energy_beam.3" },
       "description": { "translate": "description.energy_beam" },
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.addon.energy.beam.powerfull",
-      "quantity": 2,
+      "score": "satsu.iron.man.addon.energy.beam.powerfull",
+      "adjustment_type": "set",
+      "adjustment_amount": 2,
       "conditions": {
         "enabling": [
           {
@@ -2051,11 +2059,12 @@
       }
     },
     "energyblast.remove.ark.energy": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 10,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 10,
       "conditions": {
         "enabling": [
           {
@@ -2434,11 +2443,12 @@
       }
     },
     "energybeam-chest.remove.ark.energy": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 3,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 3,
       "conditions": {
         "enabling": [
           {
@@ -2465,11 +2475,12 @@
       }
     },
     "energybeam-chest.remove.ark.energy_1": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 6,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 6,
       "conditions": {
         "enabling": [
           {
@@ -2491,11 +2502,12 @@
       }
     },
     "energybeam-chest.remove.ark.energy_2": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 12,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 12,
       "conditions": {
         "enabling": [
           {

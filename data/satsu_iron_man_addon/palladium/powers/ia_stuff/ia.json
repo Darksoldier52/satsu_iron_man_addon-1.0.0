@@ -197,7 +197,7 @@
       }
     },
     "ability_wheel.enabled_remote": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/remote.png",
       "title": {
         "translate": "ability.title.satsu.remote.mode"
@@ -206,8 +206,9 @@
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 0,
-      "scoreboard_name": "satsu.iron.man.addon.ia.wheel.things",
-      "quantity": 1,
+      "score": "satsu.iron.man.addon.ia.wheel.things",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -330,7 +331,7 @@
       }
     },
     "ability_wheel.night_vision": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/night_vision.png",
       "title": {
         "translate": "ability.title.satsu.ia_skill_bar"
@@ -340,7 +341,8 @@
       "list_index": 0,
       "description": { "translate": "description.ia_skill_stat" },
       "scoreboard_name": "satsu.iron.man.addon.ia.wheel.things",
-      "quantity": 2,
+      "adjustment_type": "set",
+      "adjustment_amount": 2,
       "conditions": {
         "enabling": [
           {
@@ -510,15 +512,16 @@
       }
     },
     "ability_wheel.animation_timer_sentinel_dummy": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/sentinel.png",
       "title": { "translate": "ability.title.satsu.enable.sentinel" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 0,
       "description": { "translate": "description.ia_skill_stat" },
-      "scoreboard_name": "satsu.iron.man.addon.ia.wheel.things",
-      "quantity": 3,
+      "score": "satsu.iron.man.addon.ia.wheel.things",
+      "adjustment_type": "set",
+      "adjustment_amount": 3,
       "conditions": {
         "enabling": [
           {
@@ -620,15 +623,16 @@
       }
     },
     "ability_wheel.scan_enemies_enable": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/scan.png",
       "title": { "translate": "ability.title.satsu.scan.enemies" },
       "description": { "translate": "description.scan_enemies_enable" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 0,
-      "scoreboard_name": "satsu.iron.man.addon.ia.wheel.things",
-      "quantity": 4,
+      "score": "satsu.iron.man.addon.ia.wheel.things",
+      "adjustment_type": "set",
+      "adjustment_amount": 4,
       "conditions": {
         "enabling": [
           {
