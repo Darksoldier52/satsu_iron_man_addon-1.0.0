@@ -294,16 +294,18 @@
             ]
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.armor.right.leg",
-            "min_score": 0,
-            "max_score": 0
+            "type": "palladium:ability_integer_property",
+            "ability": "right_leg_animation",
+            "property": "value",
+            "min": 1,
+            "max": 18
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.armor.left.leg",
-            "min_score": 0,
-            "max_score": 0
+            "type": "palladium:ability_integer_property",
+            "ability": "left_leg_animation",
+            "property": "value",
+            "min": 1,
+            "max": 18
           },
           {
             "type": "palladium:not",
@@ -378,16 +380,18 @@
             ]
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.armor.right.leg",
-            "min_score": 0,
-            "max_score": 0
+            "type": "palladium:ability_integer_property",
+            "ability": "right_leg_animation",
+            "property": "value",
+            "min": 1,
+            "max": 18
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.armor.left.leg",
-            "min_score": 0,
-            "max_score": 0
+            "type": "palladium:ability_integer_property",
+            "ability": "left_leg_animation",
+            "property": "value",
+            "min": 1,
+            "max": 18
           },
           {
             "type": "palladium:not",
