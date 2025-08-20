@@ -4137,6 +4137,106 @@
         ]
       }
     },
+    "increase.max.flight_speed": {
+      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": { "translate": "ability.title.satsu.Increase.Speed" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 8,
+      "score": "satsu.iron.man.flight_speed.choose",
+      "adjustment_type": "set",
+      "adjustment_amount": 408,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "flight_speed.move"
+          },
+          {
+            "type": "palladium:has_power",
+            "power": "satsu_iron_man_addon:ia_stuff/ia"
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.flight_speed.choose",
+                "min_score": 0,
+                "max_score": 406
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "remove.max.flight_speed": {
+      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
+      "title": { "translate": "ability.title.satsu.decrease.Speed" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 9,
+      "score": "satsu.iron.man.flight_speed.choose",
+      "adjustment_type": "set",
+      "adjustment_amount": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "flight_speed.move"
+          },
+          {
+            "type": "palladium:has_power",
+            "power": "satsu_iron_man_addon:ia_stuff/ia"
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.flight_speed.choose",
+                "min_score": 2,
+                "max_score": 408
+              }
+            ]
+          }
+        ]
+      }
+    },
     "waepons.choose": {
       "type": "palladium:ability_wheel",
       "icon": "satsu_iron_man_addon:textures/gui/armors/on.png",
