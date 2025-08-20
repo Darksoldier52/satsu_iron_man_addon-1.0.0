@@ -142,5 +142,8 @@
   },
   "entity.armor.shotgun.sound": {
     "sounds": ["satsu_iron_man_addon:suits_sounds/shotgun/shotgun"]
+  },
+  "entity.armor.fly_sound.fast": {
+    "sounds": ["satsu_iron_man_addon:boost"]
   }
 }
