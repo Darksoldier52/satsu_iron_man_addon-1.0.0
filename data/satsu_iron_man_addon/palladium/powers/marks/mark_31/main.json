@@ -1,7 +1,7 @@
 {
   "name": { "translate": "ability.title.satsu.mark.31" },
   "allow_bar_shrinking": true,
-  "ability_bar_texture": "satsu_iron_man_addon:textures/gui/ability_bars/ability_bar_iron_man.png",
+  "ability_bar_texture": "#satsu_iron_man_addon:armor_hud/ability_bar",
   "background": "minecraft:textures/block/iron_block.png",
   "icon": "#satsu_iron_man_addon:armor_icon_ability",
   "gui_display_type": "tree",
@@ -180,11 +180,12 @@
       }
     },
     "hud_armor_variable.enable": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.hud.enabled",
-      "quantity": 1,
+      "score": "satsu.iron.man.armor.hud.enabled",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -196,11 +197,12 @@
       }
     },
     "hud_armor_variable.disable": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.hud.enabled",
-      "quantity": 0,
+      "score": "satsu.iron.man.armor.hud.enabled",
+      "adjustment_type": "set",
+      "adjustment_amount": 0,
       "conditions": {
         "enabling": [
           {
@@ -293,6 +295,78 @@
           },
           {
             "type": "palladium:on_ground"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "sentinel_one"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:crouching"
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:sprinting"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "run.sound": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "sound": "satsu_iron_man_addon:entity.armor.run.sound",
+      "volume": 0.3,
+      "pitch": 1,
+      "looping": true,
+      "play_self": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:has_movement_input"
+          },
+          {
+            "type": "palladium:on_ground"
+          },
+          {
+            "type": "palladium:sprinting"
           },
           {
             "type": "palladium:objective_score",
@@ -470,6 +544,50 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "flight"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "flight_run_sound"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "flight_run_sound": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "sound": "satsu_iron_man_addon:fly_sound",
+      "volume": 0.1,
+      "pitch": 1.8,
+      "looping": true,
+      "play_self": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:is_hovering_or_flying"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "flight"
+          },
+          {
+            "type": "palladium:sprinting"
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.flight_speed.choose",
+                "min_score": 16,
+                "max_score": 10000000000
+              }
+            ]
           }
         ]
       }
@@ -1501,11 +1619,12 @@
       }
     },
     "armor_activate.command": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.actived",
-      "quantity": 1,
+      "score": "satsu.iron.man.armor.actived",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -2055,6 +2174,7 @@
       ],
       "texture": "null",
       "disable_mouse_scrolling": false,
+      "disable_center_icon": false,
       "conditions": {
         "enabling": [
           {
@@ -2092,14 +2212,15 @@
       }
     },
     "energy_beam_increase_wheel_1": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ark_beam_0.png",
       "title": { "translate": "ability.title.satsu.energy_beam" },
       "description": { "translate": "description.energy_beam" },
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.addon.energy.beam.powerfull",
-      "quantity": 0,
+      "score": "satsu.iron.man.addon.energy.beam.powerfull",
+      "adjustment_type": "set",
+      "adjustment_amount": 0,
       "conditions": {
         "enabling": [
           {
@@ -2115,14 +2236,15 @@
       }
     },
     "energy_beam_increase_wheel_2": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ark_beam_powerfull_1.png",
       "title": { "translate": "ability.title.satsu.energy_beam.2" },
       "description": { "translate": "description.energy_beam" },
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.addon.energy.beam.powerfull",
-      "quantity": 1,
+      "score": "satsu.iron.man.addon.energy.beam.powerfull",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -2138,14 +2260,15 @@
       }
     },
     "energy_beam_increase_wheel_3": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ark_beam_powerfull_2.png",
       "title": { "translate": "ability.title.satsu.energy_beam.3" },
       "description": { "translate": "description.energy_beam" },
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.addon.energy.beam.powerfull",
-      "quantity": 2,
+      "score": "satsu.iron.man.addon.energy.beam.powerfull",
+      "adjustment_type": "set",
+      "adjustment_amount": 2,
       "conditions": {
         "enabling": [
           {
@@ -2207,11 +2330,12 @@
       }
     },
     "energy.pulse.actived": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.armor.energy.pulse",
-      "quantity": 1,
+      "score": "satsu.iron.man.armor.energy.pulse",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -2237,11 +2361,12 @@
       }
     },
     "energy.pulse.disable": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.armor.energy.pulse",
-      "quantity": 0,
+      "score": "satsu.iron.man.armor.energy.pulse",
+      "adjustment_type": "set",
+      "adjustment_amount": 0,
       "conditions": {
         "enabling": [
           {
@@ -2543,6 +2668,7 @@
       ],
       "texture": "null",
       "disable_mouse_scrolling": false,
+      "disable_center_icon": false,
       "conditions": {
         "enabling": [
           {
@@ -2577,7 +2703,7 @@
       }
     },
     "weapons_wheel.rockets": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/fire_work.png",
       "title": { "translate": "ability.title.satsu.fireworks" },
       "description": { "translate": "description.Fireworks" },
@@ -2585,8 +2711,9 @@
       "hidden_in_bar": false,
       "list_index": 3,
       "gui_position": [4.3, -1],
-      "scoreboard_name": "satsu.iron.man.armor.weapon",
-      "quantity": 1,
+      "score": "satsu.iron.man.armor.weapon",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -2622,7 +2749,7 @@
       }
     },
     "weapons_wheel.flares": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/flare_flame.png",
       "title": { "translate": "ability.title.satsu.flare.flame" },
       "description": { "translate": "description.satsu.flare.flame" },
@@ -2630,8 +2757,9 @@
       "hidden_in_bar": false,
       "list_index": 3,
       "gui_position": [4.3, -1],
-      "scoreboard_name": "satsu.iron.man.armor.weapon",
-      "quantity": 2,
+      "score": "satsu.iron.man.armor.weapon",
+      "adjustment_type": "set",
+      "adjustment_amount": 2,
       "conditions": {
         "enabling": [
           {
@@ -2667,7 +2795,7 @@
       }
     },
     "weapons_wheel.red_beams": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/red_mini_beam.png",
       "title": { "translate": "ability.title.satsu.red.mini.beams" },
       "description": { "translate": "description.satsu.red.mini.beams" },
@@ -2675,8 +2803,9 @@
       "hidden_in_bar": false,
       "list_index": 3,
       "gui_position": [4.3, -1],
-      "scoreboard_name": "satsu.iron.man.armor.uni.beam.hand",
-      "quantity": 2,
+      "score": "satsu.iron.man.armor.uni.beam.hand",
+      "adjustment_type": "set",
+      "adjustment_amount": 2,
       "conditions": {
         "enabling": [
           {
@@ -2729,13 +2858,14 @@
       }
     },
     "weapons_wheel.rocket": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/abilities/one_rocket.png",
       "title": { "translate": "ability.title.satsu.fireworks" },
       "hidden": true,
       "hidden_in_bar": false,
-      "scoreboard_name": "satsu.iron.man.armor.weapon",
-      "quantity": 3,
+      "score": "satsu.iron.man.armor.weapon",
+      "adjustment_type": "set",
+      "adjustment_amount": 3,
       "conditions": {
         "enabling": [
           {
@@ -2814,11 +2944,12 @@
       }
     },
     "energyblast.remove.ark.energy": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 10,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 10,
       "conditions": {
         "enabling": [
           {
@@ -2842,15 +2973,16 @@
       }
     },
     "weapons_wheel.ark_beam_for_hands": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "#satsu_iron_man_addon:ark_beam_hand",
       "title": { "translate": "ability.title.satsu.ark.beam.for.hands" },
       "description": { "translate": "description.satsu.ark.beam.for.hands" },
       "hidden": true,
       "hidden_in_bar": false,
       "gui_position": [0, 2.55],
-      "scoreboard_name": "satsu.iron.man.armor.uni.beam.hand",
-      "quantity": 1,
+      "score": "satsu.iron.man.armor.uni.beam.hand",
+      "adjustment_type": "set",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -2908,15 +3040,16 @@
       }
     },
     "weapons_wheel.repulser": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/energy_pulse_0_0_1.png",
       "title": { "translate": "ability.title.satsu.Energy.Pulse" },
       "description": { "translate": "description.Energy.Pulse" },
       "hidden": true,
       "hidden_in_bar": false,
       "gui_position": [0, 2.55],
-      "scoreboard_name": "satsu.iron.man.armor.uni.beam.hand",
-      "quantity": 0,
+      "score": "satsu.iron.man.armor.uni.beam.hand",
+      "adjustment_type": "set",
+      "adjustment_amount": 0,
       "conditions": {
         "enabling": [
           {
@@ -3117,11 +3250,12 @@
       }
     },
     "energybeam.remove.ark.energy": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 1,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -3152,11 +3286,12 @@
       }
     },
     "energybeam.remove.ark.energy_powerfull.1": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 3,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 3,
       "conditions": {
         "enabling": [
           {
@@ -3182,11 +3317,12 @@
       }
     },
     "energybeam.remove.ark.energy_powerfull.2": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 6,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 6,
       "conditions": {
         "enabling": [
           {
@@ -3310,15 +3446,16 @@
       }
     },
     "weapons_wheel.flight_unlock": {
-      "type": "satsu_iron_man_addon:increase_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/fly.png",
       "title": { "translate": "ability.title.satsu.flight.edit" },
       "description": { "translate": "description.satsu.flight.edit" },
       "hidden": true,
       "hidden_in_bar": false,
       "gui_position": [-0.5, 3.25],
-      "scoreboard_name": "satsu.iron.man.flight.set",
-      "quantity": 1,
+      "score": "satsu.iron.man.flight.set",
+      "adjustment_type": "add",
+      "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
@@ -3341,11 +3478,12 @@
       }
     },
     "flight_unlock.set.0": {
-      "type": "satsu_iron_man_addon:set_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.flight.set",
-      "quantity": 0,
+      "score": "satsu.iron.man.flight.set",
+      "adjustment_type": "set",
+      "adjustment_amount": 0,
       "conditions": {
         "enabling": [
           {
@@ -3409,15 +3547,16 @@
       }
     },
     "increase.flight_speed": {
-      "type": "satsu_iron_man_addon:increase_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 6,
-      "scoreboard_name": "satsu.iron.man.flight_speed.choose",
-      "quantity": 2,
+      "score": "satsu.iron.man.flight_speed.choose",
+      "adjustment_type": "add",
+      "adjustment_amount": 2,
       "conditions": {
         "enabling": [
           {
@@ -3455,15 +3594,16 @@
       }
     },
     "remove.flight_speed": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
       "title": { "translate": "ability.title.satsu.decrease.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 7,
-      "scoreboard_name": "satsu.iron.man.flight_speed.choose",
-      "quantity": 2,
+      "score": "satsu.iron.man.flight_speed.choose",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 2,
       "conditions": {
         "enabling": [
           {
@@ -3485,6 +3625,106 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "flight_speed.move"
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.flight_speed.choose",
+                "min_score": 2,
+                "max_score": 212
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "increase.max.flight_speed": {
+      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
+      "title": { "translate": "ability.title.satsu.Increase.Speed" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 8,
+      "score": "satsu.iron.man.flight_speed.choose",
+      "adjustment_type": "set",
+      "adjustment_amount": 212,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "flight_speed.move"
+          },
+          {
+            "type": "palladium:has_power",
+            "power": "satsu_iron_man_addon:ia_stuff/ia"
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.flight_speed.choose",
+                "min_score": 0,
+                "max_score": 210
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "remove.max.flight_speed": {
+      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
+      "title": { "translate": "ability.title.satsu.decrease.Speed" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 9,
+      "score": "satsu.iron.man.flight_speed.choose",
+      "adjustment_type": "set",
+      "adjustment_amount": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind"
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+            "ability": "armor_skill_bar"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "flight_speed.move"
+          },
+          {
+            "type": "palladium:has_power",
+            "power": "satsu_iron_man_addon:ia_stuff/ia"
           },
           {
             "type": "palladium:and",
@@ -4539,11 +4779,12 @@
       }
     },
     "mini_fireworks.remove.ark.energy": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 8,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 8,
       "conditions": {
         "enabling": [
           {
@@ -4570,11 +4811,12 @@
       }
     },
     "rocket.remove.ark.energy": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 15,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 15,
       "conditions": {
         "enabling": [
           {
@@ -4589,11 +4831,12 @@
       }
     },
     "flares.remove.ark.energy": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 5,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 5,
       "conditions": {
         "enabling": [
           {
@@ -4704,11 +4947,12 @@
       }
     },
     "energybeam-chest.remove.ark.energy": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 3,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 3,
       "conditions": {
         "enabling": [
           {
@@ -4735,11 +4979,12 @@
       }
     },
     "energybeam-chest.remove.ark.energy_1": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 6,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 6,
       "conditions": {
         "enabling": [
           {
@@ -4761,11 +5006,12 @@
       }
     },
     "energybeam-chest.remove.ark.energy_2": {
-      "type": "satsu_iron_man_addon:decrease_scoreboard",
+      "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
       "hidden_in_bar": true,
-      "scoreboard_name": "satsu.iron.man.armor.ark.energy",
-      "quantity": 12,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 12,
       "conditions": {
         "enabling": [
           {
