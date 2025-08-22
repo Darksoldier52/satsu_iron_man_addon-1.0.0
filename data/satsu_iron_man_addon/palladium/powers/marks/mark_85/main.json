@@ -4783,12 +4783,11 @@
       }
     },
     "energy.pulse.actived": {
-      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "type": "satsu_iron_man_addon:set_property",
       "hidden": true,
-      "hidden_in_bar": false,
-      "score": "satsu.iron.man.armor.energy.pulse",
-      "adjustment_type": "set",
-      "adjustment_amount": 1,
+      "hidden_in_bar": true,
+      "name": "satsu_armor_weapon_system",
+      "number": 1,
       "conditions": {
         "enabling": [
           {
@@ -4796,10 +4795,10 @@
             "ability": "weapons_wheel.Energy.Pulse"
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.pulse",
-            "min_score": 0,
-            "max_score": 0
+            "type": "palladium:integer_property",
+            "property": "satsu_armor_weapon_system",
+            "min": 0,
+            "max": 0
           },
           {
             "type": "palladium:not",
@@ -4814,12 +4813,11 @@
       }
     },
     "energy.pulse.disable": {
-      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "type": "satsu_iron_man_addon:set_property",
       "hidden": true,
-      "hidden_in_bar": false,
-      "score": "satsu.iron.man.armor.energy.pulse",
-      "adjustment_type": "set",
-      "adjustment_amount": 0,
+      "hidden_in_bar": true,
+      "name": "satsu_armor_weapon_system",
+      "number": 0,
       "conditions": {
         "enabling": [
           {
@@ -4827,10 +4825,10 @@
             "ability": "weapons_wheel.Energy.Pulse"
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.pulse",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:integer_property",
+            "property": "satsu_armor_weapon_system",
+            "min": 1,
+            "max": 1
           }
         ]
       }
@@ -5029,10 +5027,10 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -5158,10 +5156,10 @@
                 "max_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -5405,10 +5403,10 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:ability_enabled",
@@ -5488,10 +5486,10 @@
                 "max_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:ability_enabled",
@@ -5870,10 +5868,10 @@
                 "max_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -5949,10 +5947,10 @@
                 "max_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -6033,10 +6031,10 @@
                 "max_score": 2
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -6102,10 +6100,10 @@
                 "max_score": 2
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:objective_score",
@@ -9088,10 +9086,10 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:objective_score",
@@ -9201,10 +9199,10 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:objective_score",
@@ -9349,9 +9347,10 @@
             "max_score": 1
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.pulse",
-            "min_score": 1
+            "type": "palladium:integer_property",
+            "property": "satsu_armor_weapon_system",
+            "min": 1,
+            "max": 1
           },
           {
             "type": "palladium:not",
@@ -9434,9 +9433,10 @@
             "max_score": 3
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.pulse",
-            "min_score": 1
+            "type": "palladium:integer_property",
+            "property": "satsu_armor_weapon_system",
+            "min": 1,
+            "max": 1
           },
           {
             "type": "palladium:not",
@@ -9677,9 +9677,10 @@
             "max_score": 2
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.pulse",
-            "min_score": 1
+            "type": "palladium:integer_property",
+            "property": "satsu_armor_weapon_system",
+            "min": 1,
+            "max": 1
           },
           {
             "type": "palladium:not",
@@ -10088,10 +10089,10 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:objective_score",
@@ -10201,10 +10202,10 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.pulse",
-                "min_score": 1,
-                "max_score": 1
+                "type": "palladium:integer_property",
+                "property": "satsu_armor_weapon_system",
+                "min": 1,
+                "max": 1
               },
               {
                 "type": "palladium:objective_score",

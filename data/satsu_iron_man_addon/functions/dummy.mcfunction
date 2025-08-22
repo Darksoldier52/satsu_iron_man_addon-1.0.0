@@ -46,9 +46,9 @@ scoreboard objectives remove satsu.iron.man.addon.give.ia.tarjet
 scoreboard objectives add satsu.iron.man.addon.ark.skin.choose dummy
 scoreboard objectives add satsu.iron.man.addon.ark.skin dummy
 scoreboard objectives add satsu.iron.man.armor.uni.beam.hand dummy
-scoreboard objectives add satsu.iron.man.armor.energy.pulse.or.energy.beam dummy
+scoreboard objectives remove satsu.iron.man.armor.energy.pulse.or.energy.beam
 scoreboard objectives add satsu.iron.man.armor.energy.pulse.hand dummy
-scoreboard objectives add satsu.iron.man.armor.energy.pulse dummy
+scoreboard objectives remove satsu.iron.man.armor.energy.pulse
 scoreboard objectives add satsu.iron.man.addon.unlocking.set.block dummy
 scoreboard objectives add satsu.iron.man.addon.ia.name dummy
 scoreboard objectives remove satsu.iron.man.addon.ia.name.power
