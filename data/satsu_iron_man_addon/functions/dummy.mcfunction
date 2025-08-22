@@ -1,5 +1,5 @@
 
-scoreboard objectives add satsu.iron.man.armor.hud.enabled dummy
+scoreboard objectives remove satsu.iron.man.armor.hud.enabled
 scoreboard objectives remove satsu.iron.man.armor.weapon
 scoreboard objectives add satsu.iron.man.armor.model.prime.stealth dummy
 scoreboard objectives add satsu.iron.man.addon.nano.stabilizer dummy

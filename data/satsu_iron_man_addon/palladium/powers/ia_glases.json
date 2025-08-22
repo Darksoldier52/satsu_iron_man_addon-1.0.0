@@ -107,12 +107,11 @@
       }
     },
     "hud_armor_variable.enable": {
-      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "type": "satsu_iron_man_addon:set_property_string",
       "hidden": true,
       "hidden_in_bar": true,
-      "score": "satsu.iron.man.armor.hud.enabled",
-      "adjustment_type": "set",
-      "adjustment_amount": 1,
+      "name": "satsu_iron_man_armor_hud_enabled",
+      "test": "true",
       "conditions": {
         "enabling": [
           {
@@ -124,12 +123,11 @@
       }
     },
     "hud_armor_variable.disable": {
-      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "type": "satsu_iron_man_addon:set_property_string",
       "hidden": true,
       "hidden_in_bar": true,
-      "score": "satsu.iron.man.armor.hud.enabled",
-      "adjustment_type": "set",
-      "adjustment_amount": 0,
+      "name": "satsu_iron_man_armor_hud_enabled",
+      "test": "false",
       "conditions": {
         "enabling": [
           {

@@ -1675,10 +1675,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -1882,10 +1881,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -2089,10 +2087,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -2296,10 +2293,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -2503,10 +2499,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -2710,10 +2705,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -2917,10 +2911,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -3124,10 +3117,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -3331,10 +3323,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -3538,10 +3529,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -3745,10 +3735,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
@@ -3952,10 +3941,9 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.hud.enabled",
-                    "min_score": 1,
-                    "max_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_armor_hud_enabled",
+                    "property_value": "true"
                   },
                   {
                     "type": "palladium:objective_score",
