@@ -27,3 +27,10 @@ PalladiumEvents.registerPropertiesClientSided((event) => {
       event.registerProperty('satsu_armor_weapon_system', 'integer', 1);
     }
 });
+PalladiumEvents.registerPropertiesClientSided((event) => {
+  // Only register for players
+  if (event.getEntityType() === "minecraft:player") {
+      // Arguments: Key of the property, type of the property, default/starting value
+      event.registerProperty('satsu_left_arm', 'string', "true");
+    }
+});
