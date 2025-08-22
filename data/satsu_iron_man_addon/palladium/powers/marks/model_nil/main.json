@@ -1408,6 +1408,45 @@
         ]
       }
     },
+    "render_layer.mark.5.maletin": {
+      "type": "palladium:render_layer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "render_layer": "satsu_iron_man_addon:armor_things/marks/model_nil/maletin",
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "armor_activate.animation_timer.mark.5",
+            "property": "value",
+            "min": 0,
+            "max": 6
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:entity_type_tag",
+                "entity_type_tag": "satsu_iron_man_addon:stands"
+              },
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
     "set.scoreboard.armor.17.mark.5": {
       "type": "palladium:command",
       "hidden": true,
@@ -2492,45 +2531,6 @@
                 "ability": "energy.pulse_left",
                 "min": 5,
                 "max": 5
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "render_layer.mark.5.maletin": {
-      "type": "palladium:render_layer",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "render_layer": "satsu_iron_man_addon:armor_things/marks/model_nil/maletin",
-      "conditions": {
-        "unlocking": [
-          {
-            "type": "palladium:ability_integer_property",
-            "ability": "armor_activate.animation_timer.mark.5",
-            "property": "value",
-            "min": 0,
-            "max": 6
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:entity_type_tag",
-                "entity_type_tag": "satsu_iron_man_addon:stands"
-              },
-              {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "alien"
-                  },
-                  {
-                    "type": "palladium:has_power",
-                    "power": "satsu_iron_man_addon:extremis/main"
-                  }
-                ]
               }
             ]
           }
