@@ -4652,9 +4652,9 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.uni.beam.hand",
-                    "min_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_addon_repulser",
+                    "property_value": "beam"
                   }
                 ]
               }
@@ -4727,9 +4727,9 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor.uni.beam.hand",
-                    "min_score": 1
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_addon_repulser",
+                    "property_value": "beam"
                   }
                 ]
               }
@@ -4827,16 +4827,15 @@
       }
     },
     "weapons_wheel.ark_beam_for_hands": {
-      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "type": "satsu_iron_man_addon:set_property_string",
       "icon": "#satsu_iron_man_addon:ark_beam_hand",
       "title": { "translate": "ability.title.satsu.ark.beam.for.hands" },
       "description": { "translate": "description.satsu.ark.beam.for.hands" },
       "hidden": true,
       "hidden_in_bar": false,
       "gui_position": [0, 2.55],
-      "score": "satsu.iron.man.armor.uni.beam.hand",
-      "adjustment_type": "set",
-      "adjustment_amount": 1,
+      "name": "satsu_iron_man_addon_repulser",
+      "test_value": "beam",
       "conditions": {
         "enabling": [
           {
@@ -4849,16 +4848,14 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.uni.beam.hand",
-                "min_score": 0,
-                "max_score": 0
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_repulser",
+                "property_value": "repulser"
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.uni.beam.hand",
-                "min_score": 2,
-                "max_score": 2
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_repulser",
+                "property_value": "red_beam"
               }
             ]
           },
@@ -4911,16 +4908,15 @@
       }
     },
     "weapons_wheel.repulser": {
-      "type": "satsu_iron_man_addon:scoreboard_ability",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/repulser/energy_pulse_repulser_0_1.png",
+      "type": "satsu_iron_man_addon:set_property_string",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/repulser/repulser_0_1.png",
       "title": { "translate": "ability.title.satsu.Energy.Pulse" },
       "description": { "translate": "description.Energy.Pulse" },
       "hidden": true,
       "hidden_in_bar": false,
       "gui_position": [0, 2.55],
-      "score": "satsu.iron.man.armor.uni.beam.hand",
-      "adjustment_type": "set",
-      "adjustment_amount": 0,
+      "name": "satsu_iron_man_addon_repulser",
+      "test_value": "repulser",
       "conditions": {
         "enabling": [
           {
@@ -4933,16 +4929,14 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.uni.beam.hand",
-                "min_score": 1,
-                "max_score": 1
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_repulser",
+                "property_value": "beam"
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.uni.beam.hand",
-                "min_score": 2,
-                "max_score": 2
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_repulser",
+                "property_value": "red_beam"
               }
             ]
           },
@@ -5003,9 +4997,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.uni.beam.hand",
-                "min_score": 1
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_repulser",
+                 "property_value": "beam"
               },
               {
                 "type": "palladium:objective_score",
@@ -5088,10 +5082,9 @@
                 "max_score": 0
               },
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.uni.beam.hand",
-                "min_score": 1,
-                "max_score": 1
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_repulser",
+                "property_value": "beam"
               },
               {
                 "type": "palladium:integer_property",

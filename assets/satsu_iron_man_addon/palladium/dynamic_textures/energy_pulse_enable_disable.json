@@ -1,5 +1,5 @@
 {
-  "base": "satsu_iron_man_addon:textures/gui/armors/repulser/energy_pulse_#B_#X_#Y.png",
+  "base": "satsu_iron_man_addon:textures/gui/armors/repulser/#B_#X_#Y.png",
   "variables": {
     "X": {
       "type": "palladium:objective_score",
