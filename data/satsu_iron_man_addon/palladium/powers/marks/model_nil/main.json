@@ -4436,6 +4436,28 @@
         ]
       }
     },
+    "tool_hands": {
+      "type": "palladium:tool_hands",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "drop_block_tags": [
+        "minecraft:mineable/pickaxe",
+        "minecraft:needs_iron_tool"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "Mark.33.vibranuim.blades"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "energy_projectile.damage.6": {
       "type": "gravestone:projectile",
       "hidden": true,
@@ -4465,7 +4487,7 @@
           {
             "Type": "laser",
             "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Color": "#0afabd"
           }
         ]
       },
@@ -4509,7 +4531,7 @@
           {
             "Type": "laser",
             "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Color": "#0afabd"
           }
         ]
       },
@@ -5058,6 +5080,27 @@
           }
         ],
         "unlocking": []
+      }
+    },
+    "remove_ark_energy.blades": {
+      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "Mark.33.vibranuim.blades"
+              }
+            ]
+          }
+        ]
       }
     },
     "commands_energy_beams": {
