@@ -10,72 +10,20 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_nano_type_of_shoot",
-            "min": 0,
-            "max": 0
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_armor_weapon_system",
+            "property_value": "true"
           }
         ],
         "unlocking": []
       }
     },
-    "1": {
-      "type": "palladium:command",
-      "hidden": true,
+    "energy.pulse.actived": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": false,
       "hidden_in_bar": false,
-      "commands": ["say propiedad al 1!!"],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_nano_type_of_shoot",
-            "min": 1,
-            "max": 1
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "3": {
-      "type": "palladium:command",
-      "hidden": true,
-      "hidden_in_bar": false,
-      "commands": ["say propiedad al 3!!"],
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_nano_type_of_shoot",
-            "min": 3,
-            "max": 3
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "test_value": {
-      "type": "satsu_iron_man_addon:add_property",
-      "hidden": true,
-      "hidden_in_bar": false,
-      "name": "satsu_nano_type_of_shoot",
-      "number": 1,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:action",
-            "key_type": "key_bind"
-          }
-        ],
-        "unlocking": []
-      }
-    },
-    "test.1": {
-      "type": "satsu_iron_man_addon:set_property",
-      "title": "set 1",
-      "hidden": true,
-      "hidden_in_bar": false,
-      "name": "satsu_nano_type_of_shoot",
-      "number": 0,
+      "name": "satsu_armor_weapon_system",
+      "test_value": "on",
       "conditions": {
         "enabling": [
           {

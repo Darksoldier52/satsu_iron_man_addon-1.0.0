@@ -2321,11 +2321,11 @@
       }
     },
     "energy.pulse.actived": {
-      "type": "satsu_iron_man_addon:set_property",
+      "type": "satsu_iron_man_addon:set_property_string",
       "hidden": true,
       "hidden_in_bar": true,
       "name": "satsu_armor_weapon_system",
-      "number": 1,
+      "test_value": "on",
       "conditions": {
         "enabling": [
           {
@@ -2333,10 +2333,9 @@
             "ability": "weapons_wheel.Energy.Pulse"
           },
           {
-            "type": "palladium:integer_property",
+            "type": "satsu_iron_man_addon:has_property",
             "property": "satsu_armor_weapon_system",
-            "min": 0,
-            "max": 0
+            "property_value": "off"
           },
           {
             "type": "palladium:not",
@@ -2351,11 +2350,11 @@
       }
     },
     "energy.pulse.disable": {
-      "type": "satsu_iron_man_addon:set_property",
+      "type": "satsu_iron_man_addon:set_property_string",
       "hidden": true,
       "hidden_in_bar": true,
       "name": "satsu_armor_weapon_system",
-      "number": 0,
+      "test_value": "off",
       "conditions": {
         "enabling": [
           {
@@ -2363,10 +2362,9 @@
             "ability": "weapons_wheel.Energy.Pulse"
           },
           {
-            "type": "palladium:integer_property",
+            "type": "satsu_iron_man_addon:has_property",
             "property": "satsu_armor_weapon_system",
-            "min": 1,
-            "max": 1
+            "property_value": "on"
           }
         ]
       }
@@ -2548,10 +2546,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -2676,10 +2673,9 @@
                 "property_value": "true"
               },
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -2892,10 +2888,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -2974,10 +2969,9 @@
                 "property_value": "true"
               },
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -3099,7 +3093,7 @@
     },
     "weapons_wheel.repulser": {
       "type": "satsu_iron_man_addon:set_property_string",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/repulser/repulser_0_1.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/repulser/repulser_0_on.png",
       "title": { "translate": "ability.title.satsu.Energy.Pulse" },
       "description": { "translate": "description.Energy.Pulse" },
       "hidden": true,
@@ -3300,10 +3294,9 @@
                  "property_value": "beam"
               },
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -3379,10 +3372,9 @@
                 "property_value": "beam"
               },
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -3462,10 +3454,9 @@
                 "property_value": "red_beam"
               },
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -3530,10 +3521,9 @@
                 "property_value": "red_beam"
               },
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "satsu_iron_man_addon:has_property",
@@ -6412,10 +6402,9 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -6508,10 +6497,9 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "satsu_iron_man_addon:has_property",
@@ -6647,10 +6635,9 @@
             "max": 1
           },
           {
-            "type": "palladium:integer_property",
+            "type": "satsu_iron_man_addon:has_property",
             "property": "satsu_armor_weapon_system",
-            "min": 1,
-            "max": 1
+            "property_value": "on"
           },
           {
             "type": "palladium:not",
@@ -6721,10 +6708,9 @@
             "max": 3
           },
           {
-            "type": "palladium:integer_property",
+            "type": "satsu_iron_man_addon:has_property",
             "property": "satsu_armor_weapon_system",
-            "min": 1,
-            "max": 1
+            "property_value": "on"
           },
           {
             "type": "palladium:not",
@@ -6946,10 +6932,9 @@
             "max": 2
           },
           {
-            "type": "palladium:integer_property",
+            "type": "satsu_iron_man_addon:has_property",
             "property": "satsu_armor_weapon_system",
-            "min": 1,
-            "max": 1
+            "property_value": "on"
           },
           {
             "type": "palladium:not",
@@ -7260,10 +7245,9 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "palladium:ability_unlocked",
@@ -7356,10 +7340,9 @@
                 "min_score": 1
               },
               {
-                "type": "palladium:integer_property",
+                "type": "satsu_iron_man_addon:has_property",
                 "property": "satsu_armor_weapon_system",
-                "min": 1,
-                "max": 1
+                "property_value": "on"
               },
               {
                 "type": "satsu_iron_man_addon:has_property",

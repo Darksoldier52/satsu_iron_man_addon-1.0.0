@@ -1597,11 +1597,11 @@
       }
     },
     "energy.pulse.actived": {
-      "type": "satsu_iron_man_addon:set_property",
+      "type": "satsu_iron_man_addon:set_property_string",
       "hidden": true,
       "hidden_in_bar": true,
       "name": "satsu_armor_weapon_system",
-      "number": 1,
+      "test_value": "on",
       "conditions": {
         "enabling": [
           {
@@ -1609,10 +1609,9 @@
             "ability": "Energy.Pulse"
           },
           {
-            "type": "palladium:integer_property",
+            "type": "satsu_iron_man_addon:has_property",
             "property": "satsu_armor_weapon_system",
-            "min": 0,
-            "max": 0
+            "property_value": "off"
           },
           {
             "type": "palladium:not",
@@ -1627,11 +1626,11 @@
       }
     },
     "energy.pulse.disable": {
-      "type": "satsu_iron_man_addon:set_property",
+      "type": "satsu_iron_man_addon:set_property_string",
       "hidden": true,
       "hidden_in_bar": true,
       "name": "satsu_armor_weapon_system",
-      "number": 0,
+      "test_value": "off",
       "conditions": {
         "enabling": [
           {
@@ -1639,10 +1638,9 @@
             "ability": "Energy.Pulse"
           },
           {
-            "type": "palladium:integer_property",
+            "type": "satsu_iron_man_addon:has_property",
             "property": "satsu_armor_weapon_system",
-            "min": 1,
-            "max": 1
+            "property_value": "on"
           }
         ]
       }
@@ -1665,8 +1663,9 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:has_tag",
-            "tag": "energy.pulse"
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_armor_weapon_system",
+            "property_value": "on"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -1712,8 +1711,9 @@
             "property_value": "true"
           },
           {
-            "type": "palladium:has_tag",
-            "tag": "energy.pulse"
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_armor_weapon_system",
+            "property_value": "on"
           },
           {
             "type": "palladium:ability_unlocked",
