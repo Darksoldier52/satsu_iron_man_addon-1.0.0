@@ -2204,8 +2204,8 @@
       "hidden": true,
       "hidden_in_bar": false,
       "score": "satsu.iron.man.addon.energy.beam.powerfull",
-      "adjustment_amount": "set",
-      "quantity": 4,
+      "adjustment_type": "set",
+      "adjustment_amount": 4,
       "conditions": {
         "enabling": [
           {
