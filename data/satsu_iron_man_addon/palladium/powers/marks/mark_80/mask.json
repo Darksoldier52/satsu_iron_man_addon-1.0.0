@@ -12,20 +12,15 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 0,
-                "max": 0
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_80/main",
-                "ability": "mask_activate_old"
-              }
-            ]
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 0,
+            "max": 0
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "power": "satsu_iron_man_addon:marks/mark_80/main",
+            "ability": "mask_activate_old"
           }
         ]
       }
