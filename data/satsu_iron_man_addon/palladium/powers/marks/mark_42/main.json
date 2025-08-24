@@ -8177,13 +8177,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "energy_beam"
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "energy_beam"
           },
           {
             "type": "palladium:objective_score",
@@ -8204,13 +8199,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "energy_beam"
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "energy_beam"
           },
           {
             "type": "palladium:objective_score",
@@ -8232,13 +8222,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "energy_beam"
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "energy_beam"
           },
           {
             "type": "palladium:not",
@@ -8264,13 +8249,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "energy_beam"
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "energy_beam"
           },
           {
             "type": "palladium:objective_score",
@@ -8291,13 +8271,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "energy_beam"
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "energy_beam"
           },
           {
             "type": "palladium:objective_score",

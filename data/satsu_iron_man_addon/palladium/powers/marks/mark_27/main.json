@@ -3738,15 +3738,10 @@
             "ability": "armor_skill_bar"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -3800,15 +3795,10 @@
             "ability": "armor_skill_bar"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -4025,15 +4015,10 @@
             "ability": "armor_skill_bar"
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.actived",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -4796,13 +4781,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "energy_beam"
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "energy_beam"
           },
           {
             "type": "palladium:objective_score",
@@ -4823,13 +4803,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "energy_beam"
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "energy_beam"
           },
           {
             "type": "palladium:objective_score",
@@ -4851,13 +4826,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "energy_beam"
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "energy_beam"
           },
           {
             "type": "palladium:not",
@@ -4883,13 +4853,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "energy_beam"
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "energy_beam"
           },
           {
             "type": "palladium:objective_score",
@@ -4910,13 +4875,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_enabled",
-                "ability": "energy_beam"
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "energy_beam"
           },
           {
             "type": "palladium:objective_score",

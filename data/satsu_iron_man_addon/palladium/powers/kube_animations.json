@@ -17,20 +17,15 @@
             "max_score": 1
           },
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor_voice_commands",
-                "ability": "flight.fall.animation",
-                "property": "value",
-                "min": 44,
-                "max": 50
-              },
-              {
-                "type": "palladium:on_ground"
-              }
-            ]
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor_voice_commands",
+            "ability": "flight.fall.animation",
+            "property": "value",
+            "min": 44,
+            "max": 50
+          },
+          {
+            "type": "palladium:on_ground"
           },
           {
             "type": "palladium:not",
@@ -307,15 +302,10 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:is_fast_flying"
-              },
-              {
-                "type": "palladium:is_hovering_or_flying"
-              }
-            ]
+            "type": "palladium:is_fast_flying"
+          },
+          {
+            "type": "palladium:is_hovering_or_flying"
           },
           {
             "type": "palladium:not",
@@ -366,15 +356,10 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:is_fast_flying"
-              },
-              {
-                "type": "palladium:is_hovering_or_flying"
-              }
-            ]
+            "type": "palladium:is_fast_flying"
+          },
+          {
+            "type": "palladium:is_hovering_or_flying"
           },
           {
             "type": "palladium:not",

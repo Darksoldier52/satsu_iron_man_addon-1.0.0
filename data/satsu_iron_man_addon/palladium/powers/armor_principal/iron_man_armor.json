@@ -292,12 +292,7 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:is_hovering_or_levitating"
-              }
-            ]
+            "type": "palladium:is_hovering_or_levitating"
           },
           {
             "type": "palladium:or",

@@ -72,72 +72,67 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.1"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.2"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.3"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.4"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.5"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.6"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.7"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.8"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.9"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.10"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.11"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "null",
-                    "ability": "ia.12"
-                  }
-                ]
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.1"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.2"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.3"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.4"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.5"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.6"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.7"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.8"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.9"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.10"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.11"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "ia.12"
               }
             ]
           }
@@ -1049,15 +1044,10 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.remote",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.remote",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -1125,15 +1115,10 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:and",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.remote",
-                "min_score": 1,
-                "max_score": 1
-              }
-            ]
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.remote",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -1348,18 +1333,13 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:objective_score",
-                    "objective": "satsu.iron.man.armor",
-                    "min_score": "6",
-                    "max_score": "49"
-                  }
-                ]
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor",
+                "min_score": "6",
+                "max_score": "49"
               }
             ]
           }
@@ -1385,44 +1365,39 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:and",
+            "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.50"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.80"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.85"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.50.superior"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.unknow.blooded.armor"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.1873"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.extremis"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "model.prime"
-                  }
-                ]
+                "type": "palladium:has_tag",
+                "tag": "mark.50"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.80"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.85"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.50.superior"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.unknow.blooded.armor"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.1873"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "mark.extremis"
+              },
+              {
+                "type": "palladium:has_tag",
+                "tag": "model.prime"
               }
             ]
           }
