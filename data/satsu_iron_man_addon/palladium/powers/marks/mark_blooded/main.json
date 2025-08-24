@@ -4277,25 +4277,15 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "ability": "nano_flares_flames"
-                  },
-                  {
-                    "type": "palladium:ability_integer_property",
-                    "ability": "nano_flares_flames",
-                    "property": "value",
-                    "min": 19,
-                    "max": 19
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "nano_flares_flames"
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "nano_flares_flames",
+            "property": "value",
+            "min": 19,
+            "max": 19
           }
         ]
       }
@@ -4339,25 +4329,15 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "ability": "nano_flares_flames"
-                  },
-                  {
-                    "type": "palladium:ability_integer_property",
-                    "ability": "nano_flares_flames",
-                    "property": "value",
-                    "min": 19,
-                    "max": 19
-                  }
-                ]
-              }
-            ]
+            "type": "palladium:ability_enabled",
+            "ability": "nano_flares_flames"
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "nano_flares_flames",
+            "property": "value",
+            "min": 19,
+            "max": 19
           }
         ]
       }
