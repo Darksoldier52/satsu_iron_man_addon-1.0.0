@@ -296,6 +296,8 @@
   
   "description.iron.man.mark.model.prime": "A nanotechnology armor capable of customization Durability:44    Strength: 38    Flight Speed: 6.57",
 
+  "description.iron.man.model.nil": "An armor made for total stealth, equipped with tasers to paralyze and the ability to pass through walls. Durability:32    Strength: 14.2    Flight Speed: 6.57",
+
   "description.ark.upgrade.thing.1": "By unlocking this the Arc reactor will recharge itself and will not overcharge so as not to damage you",
   "description.ark.upgrade.thing.2": "By unlocking this the Arc reactor will recharge itself and will not overcharge so as not to damage you when you are using the armor",
   "description.iron.man.symbiote_metalized": "A symbiote made of metal capable of enhancing your abilities.",
@@ -429,7 +431,9 @@
   "description.iron.man.extremis.mouth.1": "Focus your inner fire in your throat to launch an energy beam (12 damage)",  
   "description.iron.man.extremis.mouth.2": "Increase the damage level of the beam (15 damage)",  
   "description.iron.man.extremis.fire.punch": "Focus your inner fire in your hands to burn anyone you hit",    
-  "description.satsu.ia.night.vision": "With your AI you have the ability to activate night vision using the voice command or the wheel",  
+  "description.satsu.ia.night.vision": "With your AI you have the ability to activate night vision using the voice command or the wheel", 
+  "description.satsu.intangibility": "When you activate the ability, you will be able to pass through walls and blocks",  
+  "description.satsu.taser_charge": "When you activate the ability, you will be able to charge a taser to paralyze your enemies",  
   "ability.title.satsu.dampened": "Arc damper",
   "ability.title.satsu.armors.branch": "Armor branch",
   "ability.title.satsu.armor_skill_bar": "Skill tree                                                      ",
@@ -520,6 +524,7 @@
   "ability.title.satsu.mark.1873": "Mark 1873 (Steampunk)      ",
   "ability.title.satsu.mark.extremis": "Mark Extremis      ",
   "ability.title.satsu.mark.taken": "Mark Taken      ",
+  "ability.title.satsu.model.nil": "Model NIL      ",
   "ability.title.satsu.arms.edit": "Weapons edit",
   "ability.title.satsu.beams.edit": "Beams edit",
   "ability.title.satsu.beams.next": "Increase beams",
@@ -684,6 +689,8 @@
   "ability.title.satsu.extremis.fire.punch": "Fire punch",  
   "ability.title.satsu.extremis.beam.hand.1": "Extremis lava touch",  
   "ability.title.satsu.ia.night.vision": "Night Vision",  
+  "ability.title.satsu.intangibility": "Phase through walls",  
+  "ability.title.satsu.taser_charge": "Taser Charge",  
   "satsu.iron.man.addon.personalizate.on": "Customize activated",
   "satsu.iron.man.addon.personalizate.off": "Customize deactivated",
   "satsu.iron.man.addon.failsafe.on": "Failsafe activated",

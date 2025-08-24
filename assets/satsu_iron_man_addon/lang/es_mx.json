@@ -296,6 +296,8 @@
   
   "description.iron.man.mark.model.prime": "Una armadura de nanotecnologia capaz de personalizarse Durabilidad:44    Fuerza: 38    Velocidad de vuelo: 6.57",
 
+  "description.iron.man.model.nil": "Una armadura hecha para el sigilo total, cuenta con tasers con los cuales paralizar ademas de poder atravesar las paredes Durabilidad:32    Fuerza: 14.2    Velocidad de vuelo: 6.57",
+
   "description.ark.upgrade.thing.1": "Al desbloquear esto el reactor arc se recargará solo y no se sobrecargará para no dañarte",
   "description.ark.upgrade.thing.2": "Al desbloquear esto el reactor arc se recargará solo y no se sobrecargará para no dañarte cuando uses la armadura",
   "description.iron.man.symbiote_metalized": "Un simbionte hecho de metal capaz de mejorar tus habilidades",
@@ -430,6 +432,8 @@
   "description.iron.man.extremis.mouth.2": "Aumenta el nivel de daño del rayo (15 de daño)",  
   "description.iron.man.extremis.fire.punch": "Concentra tu fuego interior a tus manos para quemar a cualquiera que golpees",  
   "description.satsu.ia.night.vision": "Con tu IA tienes la capacidad de activar la vision nocturna con el comando de voz o con la rueda",  
+  "description.satsu.intangibility": "Cuando actives la habilidad seras capaz de atravesar paredes y bloques",  
+  "description.satsu.taser_charge": "Cuando actives la habilidad seras capaz de cargar un taser para paralizar a tus enemigos",  
   "ability.title.satsu.dampened": "Amortiguador de arc",
   "ability.title.satsu.armors.branch": "Rama de armaduras",
   "ability.title.satsu.armor_skill_bar": "Árbol de habilidades                                                      ",
@@ -520,6 +524,7 @@
   "ability.title.satsu.mark.1873": "Mark 1873 (Steampunk)      ",
   "ability.title.satsu.mark.extremis": "Mark Extremis      ",
   "ability.title.satsu.mark.taken": "Mark Taken      ",
+  "ability.title.satsu.model.nil": "Model NIL      ",
   "ability.title.satsu.arms.edit": "Editar Armas",
   "ability.title.satsu.beams.edit": "Editar rayos",
   "ability.title.satsu.beams.next": "Aumentar rayos",
@@ -684,6 +689,8 @@
   "ability.title.satsu.extremis.fire.punch": "Puños de fuego",  
   "ability.title.satsu.extremis.beam.hand.1": "Toque de lava",  
   "ability.title.satsu.ia.night.vision": "Visión nocturna",  
+  "ability.title.satsu.intangibility": "Atravesar paredes",  
+  "ability.title.satsu.taser_charge": "Carga de taser",  
   "satsu.iron.man.addon.personalizate.on": "Personalizar activado",
   "satsu.iron.man.addon.personalizate.off": "Personalizar desactivado",
   "satsu.iron.man.addon.failsafe.on": "Seguro de vida activado",
