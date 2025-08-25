@@ -1353,7 +1353,7 @@
         "satsu_iron_man_addon:right_hand",
         "satsu_iron_man_addon:left_hand"
       ],
-      "particle_type": "minecraft:smoke",
+      "particle_type": "satsu_iron_man_addon:stealth_smoke",
       "conditions": {
         "enabling": [
           {
@@ -1460,7 +1460,7 @@
         "satsu_iron_man_addon:right_leg",
         "satsu_iron_man_addon:left_leg"
       ],
-      "particle_type": "minecraft:smoke",
+      "particle_type": "satsu_iron_man_addon:stealth_smoke",
       "conditions": {
         "enabling": [
           {
