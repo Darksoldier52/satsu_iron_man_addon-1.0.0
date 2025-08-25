@@ -1566,10 +1566,10 @@
       "title": {
         "translate": "ability.title.satsu.voice.comands.ia"
       },
+      "description": { "translate": "description.satsu.voice.comands.ia" },
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [-1.5, -0.5],
-      "description": { "translate": "description.satsu.voice.comands.ia" },
       "conditions": {
         "unlocking": []
       }
@@ -6716,10 +6716,10 @@
       "icon": "minecraft:beef",
       "title": { "translate": "ability.title.satsu.cook.ark" },
       "description": { "translate": "description.satsu.cook.ark" },
-      "hidden": true,
+      "hidden": false,
       "hidden_in_bar": false,
       "list_index": 4,
-      "gui_position": [-6, -0],
+      "gui_position": [1, -1.55],
       "commands": [""],
       "last_tick_commands": [
         "item modify entity @s weapon.mainhand satsu_iron_man_addon:smelt",
@@ -6776,7 +6776,7 @@
           {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:ia_stuff/ia",
-            "ability": "scan_enemies_enable.in.skill.tree"
+            "ability": "armor_skill_bar"
           },
           {
             "type": "palladium:not",
@@ -6818,6 +6818,77 @@
                 ]
               }
             ]
+          }
+        ]
+      }
+    },
+    "reroute_power": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "title": { "translate": "ability.title.satsu.reroute" },
+      "description": { "translate": "description.satsu.reroute" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [-1, -1.55],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:or",
+                    "conditions": [
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.ark.energy",
+                        "min_score": 0,
+                        "max_score": 1
+                      },
+                      {
+                        "type": "palladium:objective_score",
+                        "objective": "satsu.iron.man.armor.ark.energy",
+                        "min_score": -10000,
+                        "max_score": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.armor.actived",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "satsu_iron_man_addon:ia_stuff/ia",
+            "ability": "voice_commands"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
