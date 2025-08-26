@@ -302,6 +302,9 @@
       "conditions": {
         "unlocking": [
           {
+            "type": "palladium:has_movement_input"
+          },
+          {
             "type": "palladium:is_fast_flying"
           },
           {
@@ -355,6 +358,9 @@
       "max_value": 3,
       "conditions": {
         "unlocking": [
+          {
+            "type": "palladium:has_movement_input"
+          },
           {
             "type": "palladium:is_fast_flying"
           },
