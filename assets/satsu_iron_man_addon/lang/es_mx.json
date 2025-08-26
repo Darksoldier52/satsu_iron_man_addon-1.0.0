@@ -89,6 +89,7 @@
   "item.satsu_iron_man_addon.marks.model_prime.main": "Nano modificador de armadura (Model prime)",
   "item.satsu_iron_man_addon.marks.mark_50.main": "Nano modificador de armadura (Mark 50)",
   "item.satsu_iron_man_addon.marks.mark_80.main": "Nano modificador de armadura (Mark 80)",
+  "item.satsu_iron_man_addon.marks.mark_81.main": "Nano modificador de armadura (Mark 81)",
   "item.satsu_iron_man_addon.marks.mark_85.main": "Nano modificador de armadura (Mark 85)",
   "item.satsu_iron_man_addon.marks.mark_extremis.main": "Nano modificador de armadura (Mark extremis)",
   "item.satsu_iron_man_addon.marks.mark_1873_nano.main": "Nano modificador de armadura (Mark 1873)",
@@ -167,6 +168,7 @@
   "item.satsu_iron_man_addon.recipes.mark_49.main": "Planos del Mark 49",
   "item.satsu_iron_man_addon.recipes.mark_50.main": "Planos del Mark 50",
   "item.satsu_iron_man_addon.recipes.mark_80.main": "Planos del Mark 80",
+  "item.satsu_iron_man_addon.recipes.mark_81.main": "Planos del Mark 81",
   "item.satsu_iron_man_addon.recipes.mark_85.main": "Planos del Mark 85",
   "item.satsu_iron_man_addon.recipes.mark_1873_nano.main": "Planos del Mark 1873",
   "item.satsu_iron_man_addon.recipes.mark_blooded.main": "Planos del Mark Borde Sangrante",
@@ -282,6 +284,8 @@
   "description.iron.man.mark.50": "La mark 50 es la primera armadura hecha de nanotecnologia, posee dagas retraibles, dos diferentes espadas, un escudo y varias mejoras mas Durabilidad:40    Fuerza: 37    Velocidad de vuelo: 6.55",
 
   "description.iron.man.mark.80": "La mark 80 es una armadura de nanotecnologia con un diseño rojo con toques grises y dorados. Posee dagas retraibles, dos diferentes espadas, un escudo y varias mejoras mas Durabilidad:40    Fuerza: 37    Velocidad de vuelo: 6.55",
+
+  "description.iron.man.mark.81": "La mark 81 es una armadura de nanotecnologia con un diseño rojo y dorado con toques grises. Posee dagas retraibles, dos diferentes espadas, un escudo y varias mejoras mas Durabilidad:40    Fuerza: 37    Velocidad de vuelo: 6.55",
 
   "description.iron.man.mark.85": "La mark 85 es una armadura de nanotecnologia con un diseño dorado y rojo con toques grises. Posee dagas retraibles, dos diferentes espadas, un escudo y varias mejoras mas Durabilidad:40    Fuerza: 37    Velocidad de vuelo: 6.55",
 
@@ -521,6 +525,7 @@
   "ability.title.satsu.mark.49": "Mark 48      ",
   "ability.title.satsu.mark.50": "Mark 50      ",
   "ability.title.satsu.mark.80": "Mark 80      ",
+  "ability.title.satsu.mark.81": "Mark 81      ",
   "ability.title.satsu.mark.85": "Mark 85      ",
   "ability.title.satsu.mark.50.superior": "Mark modelo 50      ",
   "ability.title.satsu.mark.unknow.blooded": "Mark Borde Sangrante      ",
