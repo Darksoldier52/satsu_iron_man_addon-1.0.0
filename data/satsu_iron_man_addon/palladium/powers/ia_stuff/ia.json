@@ -4729,7 +4729,7 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:toggle",
+            "type": "palladium:action",
             "cooldown": 0,
             "key_type": "key_bind",
             "needs_empty_hand": false,
@@ -4887,6 +4887,64 @@
         ]
       }
     },
+    "scan_enemies_enable.action.actived": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_addon_enable_scan",
+      "test_value": "true",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "scan_enemies_enable"
+          },
+          {
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_iron_man_addon_enable_scan",
+            "property_value": "false"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "scan_enemies_enable.action.disable"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scan_enemies_enable.action.disable": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_addon_enable_scan",
+      "test_value": "false",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "scan_enemies_enable"
+          },
+          {
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_iron_man_addon_enable_scan",
+            "property_value": "true"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "scan_enemies_enable.action.actived"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "scan_enemies.1": {
       "type": "palladium:entity_glow",
       "hidden": true,
@@ -4895,6 +4953,12 @@
       "distance": 30,
       "conditions": {
         "enabling": [
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
           {
             "type": "palladium:not",
             "conditions": [
@@ -4961,44 +5025,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
-              },
-              {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -5067,6 +5096,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -5132,24 +5167,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -5218,6 +5238,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -5283,24 +5309,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -5369,6 +5380,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -5434,24 +5451,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -5520,6 +5522,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -5585,24 +5593,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -5671,6 +5664,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -5736,24 +5735,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -5822,6 +5806,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -5887,24 +5877,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -5973,6 +5948,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -6038,24 +6019,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -6124,6 +6090,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -6189,24 +6161,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -6275,6 +6232,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -6340,24 +6303,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -6426,6 +6374,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -6491,24 +6445,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
@@ -6577,6 +6516,12 @@
       "conditions": {
         "enabling": [
           {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -6642,24 +6587,9 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia_voice_commands",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "enabled_scan_enemies"
-                  },
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:ia_stuff/ia",
-                    "ability": "scan_enemies_enable"
-                  }
-                ]
+                "type": "satsu_iron_man_addon:has_property",
+                "property": "satsu_iron_man_addon_enable_scan",
+                "property_value": "true"
               },
               {
                 "type": "palladium:objective_score",
