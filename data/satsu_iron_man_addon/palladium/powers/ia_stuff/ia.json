@@ -90,36 +90,18 @@
                             "type": "palladium:or",
                             "conditions": [
                               {
-                                "type": "palladium:and",
-                                "conditions": [
-                                  {
-                                    "type": "palladium:item_in_slot",
-                                    "item": {
-                                      "item": "satsu_iron_man_addon:ia_glases"
-                                    },
-                                    "slot": "curios:head"
-                                  },
-                                  {
-                                    "type": "palladium:mod_loaded",
-                                    "mod_id": "curios"
-                                  }
-                                ]
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "curios:head"
                               },
                               {
-                                "type": "palladium:and",
-                                "conditions": [
-                                  {
-                                    "type": "palladium:item_in_slot",
-                                    "item": {
-                                      "item": "satsu_iron_man_addon:ia_glases"
-                                    },
-                                    "slot": "trinkets:head/face"
-                                  },
-                                  {
-                                    "type": "palladium:mod_loaded",
-                                    "mod_id": "trinkets"
-                                  }
-                                ]
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "trinkets:head/face"
                               }
                             ]
                           }
@@ -142,36 +124,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -259,36 +223,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -326,10 +272,29 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:objective_score",
@@ -363,36 +328,18 @@
                             "type": "palladium:or",
                             "conditions": [
                               {
-                                "type": "palladium:and",
-                                "conditions": [
-                                  {
-                                    "type": "palladium:item_in_slot",
-                                    "item": {
-                                      "item": "satsu_iron_man_addon:ia_glases"
-                                    },
-                                    "slot": "curios:head"
-                                  },
-                                  {
-                                    "type": "palladium:mod_loaded",
-                                    "mod_id": "curios"
-                                  }
-                                ]
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "curios:head"
                               },
                               {
-                                "type": "palladium:and",
-                                "conditions": [
-                                  {
-                                    "type": "palladium:item_in_slot",
-                                    "item": {
-                                      "item": "satsu_iron_man_addon:ia_glases"
-                                    },
-                                    "slot": "trinkets:head/face"
-                                  },
-                                  {
-                                    "type": "palladium:mod_loaded",
-                                    "mod_id": "trinkets"
-                                  }
-                                ]
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "trinkets:head/face"
                               }
                             ]
                           }
@@ -415,36 +362,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -631,10 +560,29 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:objective_score",
@@ -673,36 +621,18 @@
                             "type": "palladium:or",
                             "conditions": [
                               {
-                                "type": "palladium:and",
-                                "conditions": [
-                                  {
-                                    "type": "palladium:item_in_slot",
-                                    "item": {
-                                      "item": "satsu_iron_man_addon:ia_glases"
-                                    },
-                                    "slot": "curios:head"
-                                  },
-                                  {
-                                    "type": "palladium:mod_loaded",
-                                    "mod_id": "curios"
-                                  }
-                                ]
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "curios:head"
                               },
                               {
-                                "type": "palladium:and",
-                                "conditions": [
-                                  {
-                                    "type": "palladium:item_in_slot",
-                                    "item": {
-                                      "item": "satsu_iron_man_addon:ia_glases"
-                                    },
-                                    "slot": "trinkets:head/face"
-                                  },
-                                  {
-                                    "type": "palladium:mod_loaded",
-                                    "mod_id": "trinkets"
-                                  }
-                                ]
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "trinkets:head/face"
                               }
                             ]
                           }
@@ -748,36 +678,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -1050,36 +962,18 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:item_in_slot",
-                    "item": {
-                      "item": "satsu_iron_man_addon:ia_glases"
-                    },
-                    "slot": "curios:head"
-                  },
-                  {
-                    "type": "palladium:mod_loaded",
-                    "mod_id": "curios"
-                  }
-                ]
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
               },
               {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:item_in_slot",
-                    "item": {
-                      "item": "satsu_iron_man_addon:ia_glases"
-                    },
-                    "slot": "trinkets:head/face"
-                  },
-                  {
-                    "type": "palladium:mod_loaded",
-                    "mod_id": "trinkets"
-                  }
-                ]
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
               }
             ]
           },
@@ -1175,36 +1069,18 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:item_in_slot",
-                        "item": {
-                          "item": "satsu_iron_man_addon:ia_glases"
-                        },
-                        "slot": "curios:head"
-                      },
-                      {
-                        "type": "palladium:mod_loaded",
-                        "mod_id": "curios"
-                      }
-                    ]
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "item": "satsu_iron_man_addon:ia_glases"
+                    },
+                    "slot": "curios:head"
                   },
                   {
-                    "type": "palladium:and",
-                    "conditions": [
-                      {
-                        "type": "palladium:item_in_slot",
-                        "item": {
-                          "item": "satsu_iron_man_addon:ia_glases"
-                        },
-                        "slot": "trinkets:head/face"
-                      },
-                      {
-                        "type": "palladium:mod_loaded",
-                        "mod_id": "trinkets"
-                      }
-                    ]
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "item": "satsu_iron_man_addon:ia_glases"
+                    },
+                    "slot": "trinkets:head/face"
                   }
                 ]
               }
@@ -1298,10 +1174,29 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:objective_score",
@@ -1345,36 +1240,18 @@
                             "type": "palladium:or",
                             "conditions": [
                               {
-                                "type": "palladium:and",
-                                "conditions": [
-                                  {
-                                    "type": "palladium:item_in_slot",
-                                    "item": {
-                                      "item": "satsu_iron_man_addon:ia_glases"
-                                    },
-                                    "slot": "curios:head"
-                                  },
-                                  {
-                                    "type": "palladium:mod_loaded",
-                                    "mod_id": "curios"
-                                  }
-                                ]
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "curios:head"
                               },
                               {
-                                "type": "palladium:and",
-                                "conditions": [
-                                  {
-                                    "type": "palladium:item_in_slot",
-                                    "item": {
-                                      "item": "satsu_iron_man_addon:ia_glases"
-                                    },
-                                    "slot": "trinkets:head/face"
-                                  },
-                                  {
-                                    "type": "palladium:mod_loaded",
-                                    "mod_id": "trinkets"
-                                  }
-                                ]
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "trinkets:head/face"
                               }
                             ]
                           }
@@ -1397,36 +1274,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -1524,10 +1383,29 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:objective_score",
@@ -1566,36 +1444,18 @@
                             "type": "palladium:or",
                             "conditions": [
                               {
-                                "type": "palladium:and",
-                                "conditions": [
-                                  {
-                                    "type": "palladium:item_in_slot",
-                                    "item": {
-                                      "item": "satsu_iron_man_addon:ia_glases"
-                                    },
-                                    "slot": "curios:head"
-                                  },
-                                  {
-                                    "type": "palladium:mod_loaded",
-                                    "mod_id": "curios"
-                                  }
-                                ]
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "curios:head"
                               },
                               {
-                                "type": "palladium:and",
-                                "conditions": [
-                                  {
-                                    "type": "palladium:item_in_slot",
-                                    "item": {
-                                      "item": "satsu_iron_man_addon:ia_glases"
-                                    },
-                                    "slot": "trinkets:head/face"
-                                  },
-                                  {
-                                    "type": "palladium:mod_loaded",
-                                    "mod_id": "trinkets"
-                                  }
-                                ]
+                                "type": "palladium:item_in_slot",
+                                "item": {
+                                  "item": "satsu_iron_man_addon:ia_glases"
+                                },
+                                "slot": "trinkets:head/face"
                               }
                             ]
                           }
@@ -1618,36 +1478,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -1712,36 +1554,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -1781,36 +1605,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -1846,36 +1652,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -1918,36 +1706,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -1987,36 +1757,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2052,36 +1804,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2124,36 +1858,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2193,36 +1909,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2258,36 +1956,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2330,36 +2010,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2399,36 +2061,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2464,36 +2108,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2536,36 +2162,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2605,36 +2213,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2670,36 +2260,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2742,36 +2314,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2811,36 +2365,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2876,36 +2412,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -2948,36 +2466,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3017,36 +2517,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3082,36 +2564,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3154,36 +2618,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3223,36 +2669,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3288,36 +2716,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3360,36 +2770,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3429,36 +2821,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3494,36 +2868,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3566,36 +2922,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3635,36 +2973,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3700,36 +3020,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3772,36 +3074,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3841,36 +3125,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3906,36 +3172,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -3978,36 +3226,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -4047,36 +3277,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -4112,36 +3324,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -4738,10 +3932,29 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:objective_score",
@@ -4782,36 +3995,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -4847,36 +4042,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -4954,10 +4131,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -4982,36 +4178,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -5048,36 +4226,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -5096,10 +4256,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -5124,36 +4303,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -5190,36 +4351,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -5238,10 +4381,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -5266,36 +4428,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -5332,36 +4476,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -5380,10 +4506,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -5408,36 +4553,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -5474,36 +4601,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -5522,10 +4631,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -5550,36 +4678,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -5616,36 +4726,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -5664,10 +4756,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -5692,36 +4803,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -5758,36 +4851,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -5806,10 +4881,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -5834,36 +4928,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -5900,36 +4976,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -5948,10 +5006,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -5976,36 +5053,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -6042,36 +5101,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -6090,10 +5131,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -6118,36 +5178,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -6184,36 +5226,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -6232,10 +5256,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -6260,36 +5303,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -6326,36 +5351,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -6374,10 +5381,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -6402,36 +5428,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -6468,36 +5476,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
@@ -6516,10 +5506,29 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:integer_property",
-            "property": "satsu_mask_value",
-            "min": 1,
-            "max": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_mask_value",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "curios:head"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:ia_glases"
+                },
+                "slot": "trinkets:head/face"
+              }
+            ]
           },
           {
             "type": "palladium:not",
@@ -6544,36 +5553,18 @@
                         "type": "palladium:or",
                         "conditions": [
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "curios:head"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "curios"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "curios:head"
                           },
                           {
-                            "type": "palladium:and",
-                            "conditions": [
-                              {
-                                "type": "palladium:item_in_slot",
-                                "item": {
-                                  "item": "satsu_iron_man_addon:ia_glases"
-                                },
-                                "slot": "trinkets:head/face"
-                              },
-                              {
-                                "type": "palladium:mod_loaded",
-                                "mod_id": "trinkets"
-                              }
-                            ]
+                            "type": "palladium:item_in_slot",
+                            "item": {
+                              "item": "satsu_iron_man_addon:ia_glases"
+                            },
+                            "slot": "trinkets:head/face"
                           }
                         ]
                       }
@@ -6610,36 +5601,18 @@
                     "type": "palladium:or",
                     "conditions": [
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "curios:head"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "curios"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "curios:head"
                       },
                       {
-                        "type": "palladium:and",
-                        "conditions": [
-                          {
-                            "type": "palladium:item_in_slot",
-                            "item": {
-                              "item": "satsu_iron_man_addon:ia_glases"
-                            },
-                            "slot": "trinkets:head/face"
-                          },
-                          {
-                            "type": "palladium:mod_loaded",
-                            "mod_id": "trinkets"
-                          }
-                        ]
+                        "type": "palladium:item_in_slot",
+                        "item": {
+                          "item": "satsu_iron_man_addon:ia_glases"
+                        },
+                        "slot": "trinkets:head/face"
                       }
                     ]
                   }
