@@ -3619,7 +3619,6 @@
         "enabling": [
           {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "nano_mallet.smash",
             "property": "value",
             "min": 15,
@@ -3627,7 +3626,6 @@
           },
           {
             "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "nano_mallet.smash"
           }
         ],
