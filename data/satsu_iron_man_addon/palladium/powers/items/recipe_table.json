@@ -2952,7 +2952,7 @@
         ]
       }
     },
-    "taser_charge": {
+    "model.nil.taser_charge": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/abilities/taser_charge.png",
       "entity_type": "palladium:custom_projectile",
@@ -2961,7 +2961,7 @@
       "hidden": false,
       "hidden_in_bar": false,
       "list_index": 4,
-      "gui_position": [16, 2.5],
+      "gui_position": [16.5, 2.9],
       "conditions": {
         "unlocking": [
           {
