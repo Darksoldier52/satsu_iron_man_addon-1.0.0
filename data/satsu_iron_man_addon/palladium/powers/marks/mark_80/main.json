@@ -5137,6 +5137,11 @@
             "property_value": "on"
           },
           {
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_iron_man_addon_repulser",
+            "property_value": "repulser"
+          },
+          {
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "armor_skill_bar"
@@ -9414,19 +9419,17 @@
       }
     },
     "rocket.projectile": {
-      "type": "gravestone:projectile",
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": 50,
       "pitchOffset": 55,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "KnockbackStrength": 0,
         "Damage": 20,
@@ -9457,19 +9460,17 @@
       }
     },
     "mini_fireworks.firework_projectile": {
-      "type": "gravestone:projectile",
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": -35,
       "pitchOffset": 55,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "KnockbackStrength": 0,
         "Damage": 8,
@@ -9505,19 +9506,17 @@
       }
     },
     "mini_fireworks.firework_projectile.2": {
-      "type": "gravestone:projectile",
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": 35,
       "pitchOffset": 55,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "KnockbackStrength": 0,
         "Damage": 8,
@@ -9639,20 +9638,18 @@
         ]
       }
     },
-    "flares_flames.": {
-      "type": "gravestone:projectile",
+    "flares_flames.left": {
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 3,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": -50,
       "pitchOffset": 55,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "KnockbackStrength": 0,
         "Damage": 0,
@@ -9691,20 +9688,18 @@
         ]
       }
     },
-    "flares_flames.2": {
-      "type": "gravestone:projectile",
+    "flares_flames.right": {
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 3,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": 50,
       "pitchOffset": 55,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "KnockbackStrength": 0,
         "Damage": 0,
@@ -10283,20 +10278,18 @@
         ]
       }
     },
-    "energy_projectile.damage": {
-      "type": "gravestone:projectile",
+    "energy_projectile.right.damage": {
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": 20,
       "pitchOffset": 25,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.5,
@@ -10328,19 +10321,17 @@
       }
     },
     "energy_projectile.left.damage": {
-      "type": "gravestone:projectile",
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": -20,
       "pitchOffset": 25,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.5,
@@ -10372,19 +10363,17 @@
       }
     },
     "nano_rial_blue.damage.10": {
-      "type": "gravestone:projectile",
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": 20,
       "pitchOffset": 25,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 2,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.6,
@@ -10420,19 +10409,17 @@
       }
     },
     "nano_rial_blue.left.damage.10": {
-      "type": "gravestone:projectile",
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": -20,
       "pitchOffset": 25,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 2,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.6,
@@ -10468,19 +10455,17 @@
       }
     },
     "nano_grenade_projectile.damage.18": {
-      "type": "gravestone:projectile",
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": 20,
       "pitchOffset": 25,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.6,
@@ -10512,19 +10497,17 @@
       }
     },
     "nano_grenade_projectile.left.damage.18": {
-      "type": "gravestone:projectile",
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": -20,
       "pitchOffset": 25,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.6,
@@ -10556,19 +10539,17 @@
       }
     },
     "grab_cannon_projectile": {
-      "type": "gravestone:projectile",
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
       "entity_type": "palladium:custom_projectile",
       "velocity": 3,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": 20,
       "pitchOffset": 25,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "SetEntityOnFireSeconds": 3,
         "KnockbackStrength": 1.2,
@@ -10600,19 +10581,17 @@
       }
     },
     "grab_cannon_projectile.left": {
-      "type": "gravestone:projectile",
+      "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
       "entity_type": "palladium:custom_projectile",
       "velocity": 3,
       "swinging_arm": "none",
-      "yawOverride": -999,
-      "pitchOverride": -999,
       "yawOffset": -20,
       "pitchOffset": 25,
-      "yawInaccuracy": 0,
-      "pitchInaccuracy": 0,
-      "count": 1,
+      "inaccuracy": 0,
+      "damage_from_player": false,
+      "ignore_player_movement": false,
       "entity_data": {
         "SetEntityOnFireSeconds": 3,
         "KnockbackStrength": 1.2,
@@ -10658,7 +10637,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.damage"
+                "ability": "energy_projectile.right.damage"
               },
               {
                 "type": "palladium:ability_enabled",
