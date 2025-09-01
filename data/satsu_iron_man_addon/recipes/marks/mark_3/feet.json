@@ -4,7 +4,7 @@
     "pattern": [
         " P ",
         "G G",
-        "G G"
+        "B B"
     ],
     "key": {
         "G": {
@@ -12,6 +12,9 @@
         },
         "P": {
             "item": "satsu_iron_man_addon:recipes/mark_3/feet"
+        },
+        "B": {
+            "item": "satsu_iron_man_addon:basic_circuit"
         }
     },
     "result": {

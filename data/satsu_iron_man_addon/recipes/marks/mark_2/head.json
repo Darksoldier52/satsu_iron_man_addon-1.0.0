@@ -3,7 +3,7 @@
     "group": "iron_man",
     "pattern": [
         "RPR",
-        "R R",
+        "B B",
         "   "
     ],
     "key": {
@@ -12,6 +12,9 @@
         },
         "P": {
             "item": "satsu_iron_man_addon:recipes/mark_2/head"
+        },
+        "B": {
+            "item": "satsu_iron_man_addon:basic_circuit"
         }
     },
     "result": {
