@@ -3,7 +3,7 @@
   "allow_bar_shrinking": true,
   "ability_bar_texture": "#satsu_iron_man_addon:armor_hud/ability_bar",
   "background": "minecraft:textures/block/iron_block.png",
-  "icon": "#satsu_iron_man_addon:armor_icon_ability",
+  "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_model_prime.png",
   "gui_display_type": "tree",
   "energy_bars": {
     "energy": {
@@ -4428,10 +4428,6 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "waepons.choose"
-          },
-          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -4447,6 +4443,74 @@
             ]
           }
         ]
+      }
+    },
+    "nano_sword.set.0": {
+      "type": "satsu_iron_man_addon:set_property",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_nano_type_weapon",
+      "number": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose_wheel.nano_sword"
+          },
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_weapon",
+            "min": 1,
+            "max": 1
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "nano_sword.set.1"
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "nano_sword.set.1": {
+      "type": "satsu_iron_man_addon:set_property",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_nano_type_weapon",
+      "number": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose_wheel.nano_sword"
+          },
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_nano_type_weapon",
+            "min": 0,
+            "max": 1000
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "nano_sword.set.0"
+              },
+              {
+                "type": "palladium:integer_property",
+                "property": "satsu_nano_type_weapon",
+                "min": 1,
+                "max": 1
+              }
+            ]
+          }
+        ],
+        "unlocking": []
       }
     },
     "waepons.choose_wheel.force_field": {
@@ -5978,6 +6042,13 @@
           {
             "type": "palladium:ability_unlocked",
             "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "animation",
+            "property": "value",
+            "min": 17,
+            "max": 17
           },
           {
             "type": "palladium:not",
