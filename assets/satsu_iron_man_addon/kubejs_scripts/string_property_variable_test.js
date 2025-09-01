@@ -97,3 +97,17 @@ PalladiumEvents.registerPropertiesClientSided((event) => {
       event.registerProperty('satsu_iron_man_addon_trail', 'string', "true");
     }
 });
+PalladiumEvents.registerPropertiesClientSided((event) => {
+  // Only register for players
+  if (event.getEntityType() === "minecraft:player") {
+      // Arguments: Key of the property, type of the property, default/starting value
+      event.registerProperty('satsu_iron_man_addon_beam_core_color', 'string', "d9f1ff");
+    }
+});
+PalladiumEvents.registerPropertiesClientSided((event) => {
+  // Only register for players
+  if (event.getEntityType() === "minecraft:player") {
+      // Arguments: Key of the property, type of the property, default/starting value
+      event.registerProperty('satsu_iron_man_addon_beam_glow_color', 'string', "3ab2d7");
+    }
+});
