@@ -8,13 +8,13 @@
     ],
     "key": {
         "A": {
-            "item": "satsu_iron_man_addon:iron_gold_alloy"
+            "item": "satsu_iron_man_addon:steel_gold_refined_alloy"
         },
         "P": {
             "item": "satsu_iron_man_addon:recipes/model_nil/main"
         },
         "N": {
-            "item": "satsu_iron_man_addon:nano_circuit"
+            "item": "satsu_iron_man_addon:advanced_circuit"
         }
     },
     "result": {
