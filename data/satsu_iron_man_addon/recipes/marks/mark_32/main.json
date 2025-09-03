@@ -15,6 +15,9 @@
         },
         "P": {
             "item": "satsu_iron_man_addon:recipes/mark_32/main"
+        },
+        "M": {
+            "item": "satsu_iron_man_addon:medium_circuit"
         }
     },
     "result": {
