@@ -15,7 +15,7 @@
 
         },
         "C": {
-            "item": "minecraft:coal"
+            "item": "satsu_iron_man_addon:high_density_carbon"
         },
         "P": {
             "item": "satsu_iron_man_addon:recipes/mark_29/main"
