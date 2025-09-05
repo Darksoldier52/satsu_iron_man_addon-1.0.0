@@ -1111,5 +1111,8 @@
   "advancements.satsu_iron_man_addon.ia.tarjet.description": "Build an AI card for better functionality in your armor",
   "advancements.satsu_iron_man_addon.armor.construct.description": "To put on mark 1 to 3 you need to create this block to put on the armor",
   "advancements.satsu_iron_man_addon.more.description": "You can unlock even more armor...",
-  "advancements.satsu_iron_man_addon.turn.off.description": "Run out of energy"
+  "advancements.satsu_iron_man_addon.turn.off.description": "Run out of energy",
+  "effect.satsu_iron_man_addon.blind": "Blind",
+  "effect.satsu_iron_man_addon.blooding": "Blooding",
+  "effect.satsu_iron_man_addon.paralized": "Paralized"
 }
