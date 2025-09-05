@@ -9,5 +9,5 @@ StartupEvents.registry("mob_effect", (event) => {
       superpowerUtil.addSuperpower(entity, "satsu_iron_man_addon:effect/blind");
     })
     //Replace HEXCODE below with a color's Hex code
-    .color(0xf0e2bd);
+    .color(Color.WHITE);
 });
