@@ -2,7 +2,7 @@
   "name": { "translate": "ability.title.satsu.mark.6" },
   "allow_bar_shrinking": true,
   "ability_bar_texture": "#satsu_iron_man_addon:armor_hud/ability_bar",
-  "background": "minecraft:textures/block/iron_block.png",
+  "background": "satsu_iron_man_addon:textures/block/crafting_table_top.png",
   "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_6.png",
   "gui_display_type": "tree",
   "energy_bars": {
@@ -366,6 +366,31 @@
             "ability": "armor"
           }
         ]
+      }
+    },
+    "mask_no_eat": {
+      "type": "satsu_iron_man_addon:prevent_eat",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "item": "minecraft:apple",
+      "tag": "satsu_iron_man_addon:food",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "no_nanoarmor_anim",
+            "property": "value",
+            "min": 15,
+            "max": 16
+          }
+        ],
+        "unlocking": []
       }
     },
     "flight": {
@@ -982,16 +1007,16 @@
       }
     },
     "pickaxe.velocity": {
-      "type": "gravecore:dynamic_attribute_modifier",
+      "type": "palladium:attribute_modifier",
       "icon": "minecraft:golden_pickaxe",
       "title": { "translate": "ability.title.satsu.pickaxe.velocity" },
       "description": { "translate": "description.satsu.pickaxe.velocity" },
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [-1.35, -1.25],
-      "scoreboard": "satsu.iron.man.pickaxe.velocity",
-      "division_amount": "10",
       "attribute": "palladium:destroy_speed",
+      "amount": 24,
+      "operation": 0,
       "uuid": "f517d74f-5bab-432d-b60d-0890e6448bd8",
       "conditions": {
         "enabling": [
@@ -1210,8 +1235,7 @@
         "superpower add satsu_iron_man_addon:marks/mecano_calll",
         "tag @s add mark.6",
         "scoreboard players set @s satsu.iron.man.armor 6",
-        "scoreboard players set @s satsu.iron.man.flame 0",
-        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 24"
+        "scoreboard players set @s satsu.iron.man.flame 0"
       ],
       "commands": [],
       "last_tick_commands": [
@@ -4227,6 +4251,12 @@
             "property": "value",
             "min": 15,
             "max": 15
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }

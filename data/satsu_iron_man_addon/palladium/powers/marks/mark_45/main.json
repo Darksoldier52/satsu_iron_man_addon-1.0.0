@@ -2,7 +2,7 @@
   "name": { "translate": "ability.title.satsu.mark.45" },
   "allow_bar_shrinking": true,
   "ability_bar_texture": "#satsu_iron_man_addon:armor_hud/ability_bar",
-  "background": "minecraft:textures/block/iron_block.png",
+  "background": "satsu_iron_man_addon:textures/block/crafting_table_top.png",
   "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_45.png",
   "gui_display_type": "tree",
   "energy_bars": {
@@ -399,6 +399,31 @@
             "ability": "armor"
           }
         ]
+      }
+    },
+    "mask_no_eat": {
+      "type": "satsu_iron_man_addon:prevent_eat",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "item": "minecraft:apple",
+      "tag": "satsu_iron_man_addon:food",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "head_animation",
+            "property": "value",
+            "min": 19,
+            "max": 19
+          }
+        ],
+        "unlocking": []
       }
     },
     "flight": {
@@ -1723,7 +1748,7 @@
       "gui_position": [-1.35, -1.25],
       "attribute": "palladium:destroy_speed",
       "uuid": "f517d74f-5bab-432d-b60d-0890e6448bd8",
-      "amount": 47,
+      "amount": 22.5,
       "conditions": {
         "enabling": [
           {
@@ -1784,7 +1809,7 @@
       "gui_position": [-1.35, -1.25],
       "attribute": "palladium:destroy_speed",
       "uuid": "329b91fa-64f6-4a73-b5f4-216e81666ceb",
-      "amount": 47,
+      "amount": 22.5,
       "conditions": {
         "enabling": [
           {
@@ -3868,8 +3893,7 @@
       "first_tick_commands": [
         "tag @s add mark.45",
         "scoreboard players set @s satsu.iron.man.armor 45",
-        "scoreboard players set @s satsu.iron.man.flame 2",
-        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 45"
+        "scoreboard players set @s satsu.iron.man.flame 2"
       ],
       "commands": [""],
       "last_tick_commands": [
@@ -7158,12 +7182,15 @@
       "title": { "translate": "ability.title.satsu.Choose.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 5,
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:toggle"
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.flight.set",
+            "min_score": 1,
+            "max_score": 1
           }
         ],
         "unlocking": [
@@ -7171,12 +7198,6 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor.ark.energy",
             "min_score": 1
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.flight.set",
-            "min_score": 1,
-            "max_score": 1
           },
           {
             "type": "palladium:objective_score",
@@ -7229,7 +7250,7 @@
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 6,
       "score": "satsu.iron.man.flight_speed.choose",
       "adjustment_type": "add",
@@ -7257,6 +7278,9 @@
             "ability": "flight_speed.move"
           },
           {
+            "type": "palladium:is_hovering_or_flying"
+          },
+          {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.flight_speed.choose",
             "min_score": 0,
@@ -7271,7 +7295,7 @@
       "title": { "translate": "ability.title.satsu.decrease.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 7,
       "score": "satsu.iron.man.flight_speed.choose",
       "adjustment_type": "subtract",
@@ -7299,6 +7323,9 @@
             "ability": "flight_speed.move"
           },
           {
+            "type": "palladium:is_hovering_or_flying"
+          },
+          {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.flight_speed.choose",
             "min_score": 2,
@@ -7312,7 +7339,7 @@
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 8,
       "score": "satsu.iron.man.flight_speed.choose",
       "adjustment_type": "set",
@@ -7321,7 +7348,11 @@
         "enabling": [
           {
             "type": "palladium:action",
-            "key_type": "key_bind"
+            "key_type": "scroll_up",
+            "allow_scrolling_when_crouching": false
+          },
+          {
+            "type": "palladium:crouching"
           }
         ],
         "unlocking": [
@@ -7338,6 +7369,9 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "flight_speed.move"
+          },
+          {
+            "type": "palladium:is_hovering_or_flying"
           },
           {
             "type": "palladium:has_power",
@@ -7357,7 +7391,7 @@
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
       "title": { "translate": "ability.title.satsu.decrease.Speed" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 9,
       "score": "satsu.iron.man.flight_speed.choose",
       "adjustment_type": "set",
@@ -7366,7 +7400,11 @@
         "enabling": [
           {
             "type": "palladium:action",
-            "key_type": "key_bind"
+            "key_type": "scroll_down",
+            "allow_scrolling_when_crouching": false
+          },
+          {
+            "type": "palladium:crouching"
           }
         ],
         "unlocking": [
@@ -7383,6 +7421,9 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "flight_speed.move"
+          },
+          {
+            "type": "palladium:is_hovering_or_flying"
           },
           {
             "type": "palladium:has_power",
@@ -8310,6 +8351,12 @@
             "property": "value",
             "min": 15,
             "max": 15
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }

@@ -197,6 +197,10 @@
   "item.satsu_iron_man_addon.high_density_carbon": "Carbono de Alta densidad",
   "item.satsu_iron_man_addon.watch": "Reloj/guante de emergencia",
   "item.satsu_iron_man_addon.lense": "Lentilla de arc",
+  "item.satsu_iron_man_addon.upgrade_kit": "Kit de mejora",
+  "item.satsu_iron_man_addon.upgrade_kit2": "Kit de mejora 2",
+  "item.satsu_iron_man_addon.upgrade_kit3": "Kit de mejora 3",
+  "item.satsu_iron_man_addon.upgrade_kit4": "Kit de mejora 4",
   "block.satsu_iron_man_addon.armored_construct": "Bloque colocacion de armadura",
   "block.satsu_iron_man_addon.reactor_ark_recharge_on": "Bloque de energía Arc Encendido",
   "block.satsu_iron_man_addon.reactor_ark_recharge_off": "Bloque de energía Arc Apagado",
@@ -315,7 +319,7 @@
   
   "description.iron.man.mark.1873": "Una armadura hecha de nanotecnologia con aparencia steampunk (Con habilidades de humo) Durabilidad:43    Fuerza: 46    Velocidad de vuelo: 6.55",
 
-  "description.iron.man.mark.extremis": "Una armadura nanotecnologica hecha con el virus extremis Durabilidad:65    Fuerza: 55    Velocidad de vuelo: 6.55",
+  "description.iron.man.mark.extremis": "Una armadura nanotecnologica hecha con el virus extremis Durabilidad:68    Fuerza: 27.5    Velocidad de vuelo: 6.55",
   
   "description.iron.man.mark.taken": "Una armadura nanotecnologica con un diseño unico y capacidades como la teletransportacion y acceder a una hulkbuster Durabilidad:65    Fuerza: 55    Velocidad de vuelo: 6.55",
   
@@ -340,6 +344,7 @@
   "description.satsu.active.ark": "Activa el reactor Arc",
   "description.superior.suit.expulsion": "Expulsa parte del traje para dañar a los enemigos",
   "description.satsu.off.on": "Activar/Desactivado",
+  "description.satsu.break.off.on": "Al activar o desactiar esta opcion algunos ataques pueden llegar a romper bloques, tal como el maxmimum pulse o el minar con las armaduras striker",
   "description.satsu.flight.edit": "Al activar esta habilidad podras aumentar/disminuir la velocidad de vuelo (Necesitas activar la habilidad de editar armadura)",
   "description.satsu.failsafe.edit": "Al activar esta habilidad podras activar/desactivar la capacidad de la armadura para salvarte cuando estes herido (Necesitas activar la habilidad de editar armadura)",
   "description.satsu.choose.armor": "Al activar esta habilidad podras elegir que armadura colocarte (Necesitas activar la habilidad de editar armadura)",
@@ -463,6 +468,8 @@
   "description.satsu.reroute": "Al iniciar el comando de voz puedes redigir la energia en: Los repulsores (para tener el doble de velocidad aunque gastes el doble de energia)",  
   "description.satsu.trail.off.on": "Al hacer click en la habilidad puedes activar u desactivar el rastro en las armaduras de clase velocidad",  
   "description.satsu.minigun": "Esta armadura es capaz de usar miniguns y balas envez del repulsor cuando sea necesario, puedes escojerlo dentro de la rueda de armas",  
+  "description.satsu.nano.health.spray": "Utiliza un spray para sellar heridas y recuperarte mas facil",  
+  "description.satsu.nano.health.spray.other": "Utiliza un spray para sellar heridas y recuperarte mas facil en otros jugadores",  
   "ability.title.satsu.dampened": "Amortiguador de arc",
   "ability.title.satsu.armors.branch": "Rama de armaduras",
   "ability.title.satsu.armor_skill_bar": "Árbol de habilidades                                                      ",
@@ -739,6 +746,8 @@
   "ability.title.satsu.lense.glow.5": "Glow 5              ",  
   "ability.title.satsu.lense.glow.6": "Glow 6              ",  
   "ability.title.satsu.lense.glow.7": "Glow 7              ",  
+  "ability.title.satsu.nano.health.spray": "Nano Spray de salud            ",  
+  "ability.title.satsu.nano.health.spray.other": "Nano Spray de salud para los demas            ",  
   "satsu.iron.man.addon.personalizate.on": "Personalizar activado",
   "satsu.iron.man.addon.personalizate.off": "Personalizar desactivado",
   "satsu.iron.man.addon.failsafe.on": "Seguro de vida activado",

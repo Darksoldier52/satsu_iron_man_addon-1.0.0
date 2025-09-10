@@ -2,7 +2,7 @@
   "name": { "translate": "ability.title.satsu.mark.30.iron.destroyer" },
   "allow_bar_shrinking": true,
   "ability_bar_texture": "#satsu_iron_man_addon:armor_hud/ability_bar",
-  "background": "minecraft:textures/block/iron_block.png",
+  "background": "satsu_iron_man_addon:textures/block/crafting_table_top.png",
   "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_301.png",
   "gui_display_type": "tree",
   "energy_bars": {
@@ -366,6 +366,31 @@
             "ability": "armor"
           }
         ]
+      }
+    },
+    "mask_no_eat": {
+      "type": "satsu_iron_man_addon:prevent_eat",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "item": "minecraft:apple",
+      "tag": "satsu_iron_man_addon:food",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_mask_value",
+            "min": 1,
+            "max": 1
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "interpolate",
+            "property": "value",
+            "min": 17,
+            "max": 17
+          }
+        ],
+        "unlocking": []
       }
     },
     "flight": {
@@ -982,16 +1007,16 @@
       }
     },
     "pickaxe.velocity": {
-      "type": "gravecore:dynamic_attribute_modifier",
+      "type": "palladium:attribute_modifier",
       "icon": "minecraft:golden_pickaxe",
       "title": { "translate": "ability.title.satsu.pickaxe.velocity" },
       "description": { "translate": "description.satsu.pickaxe.velocity" },
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [-1.35, -1.25],
-      "scoreboard": "satsu.iron.man.pickaxe.velocity",
-      "division_amount": "10",
       "attribute": "palladium:destroy_speed",
+      "amount": 96.2,
+      "operation": 0,
       "uuid": "f517d74f-5bab-432d-b60d-0890e6448bd8",
       "conditions": {
         "enabling": [
@@ -1188,6 +1213,16 @@
                 "entity_type_tag": "satsu_iron_man_addon:stands"
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/model_30_iron_destroyer/repair_self/main",
+                "ability": "modify"
+              }
+            ]
           }
         ]
       }
@@ -1265,6 +1300,16 @@
                 "entity_type_tag": "satsu_iron_man_addon:stands"
               }
             ]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:marks/model_30_iron_destroyer/repair_self/main",
+                "ability": "modify"
+              }
+            ]
           }
         ]
       }
@@ -1276,8 +1321,7 @@
       "first_tick_commands": [
         "tag @s add mark.30.iron.destroyer",
         "scoreboard players set @s satsu.iron.man.armor 301",
-        "scoreboard players set @s satsu.iron.man.flame 10",
-        "scoreboard players set @s satsu.iron.man.pickaxe.velocity 35"
+        "scoreboard players set @s satsu.iron.man.flame 10"
       ],
       "commands": [
         "execute as @s[scores={satsu.iron.man.armor.actived=1..}] run effect give @s minecraft:luck 3 255 true",
@@ -3452,12 +3496,15 @@
       "title": { "translate": "ability.title.satsu.Choose.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 5,
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:toggle"
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.flight.set",
+            "min_score": 1,
+            "max_score": 1
           }
         ],
         "unlocking": [
@@ -3465,12 +3512,6 @@
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.armor.ark.energy",
             "min_score": 1
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.flight.set",
-            "min_score": 1,
-            "max_score": 1
           },
           {
             "type": "palladium:ability_unlocked",
@@ -3499,7 +3540,7 @@
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 6,
       "score": "satsu.iron.man.flight_speed.choose",
       "adjustment_type": "add",
@@ -3527,6 +3568,9 @@
             "ability": "flight_speed.move"
           },
           {
+            "type": "palladium:is_hovering_or_flying"
+          },
+          {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.flight_speed.choose",
             "min_score": 0,
@@ -3541,7 +3585,7 @@
       "title": { "translate": "ability.title.satsu.decrease.Speed" },
       "description": { "translate": "description.armor_skill_bar" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 7,
       "score": "satsu.iron.man.flight_speed.choose",
       "adjustment_type": "subtract",
@@ -3569,6 +3613,9 @@
             "ability": "flight_speed.move"
           },
           {
+            "type": "palladium:is_hovering_or_flying"
+          },
+          {
             "type": "palladium:objective_score",
             "objective": "satsu.iron.man.flight_speed.choose",
             "min_score": 2,
@@ -3582,7 +3629,7 @@
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
       "title": { "translate": "ability.title.satsu.Increase.Speed" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 8,
       "score": "satsu.iron.man.flight_speed.choose",
       "adjustment_type": "set",
@@ -3591,7 +3638,11 @@
         "enabling": [
           {
             "type": "palladium:action",
-            "key_type": "key_bind"
+            "key_type": "scroll_up",
+            "allow_scrolling_when_crouching": false
+          },
+          {
+            "type": "palladium:crouching"
           }
         ],
         "unlocking": [
@@ -3608,6 +3659,9 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "flight_speed.move"
+          },
+          {
+            "type": "palladium:is_hovering_or_flying"
           },
           {
             "type": "palladium:has_power",
@@ -3627,7 +3681,7 @@
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
       "title": { "translate": "ability.title.satsu.decrease.Speed" },
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "list_index": 9,
       "score": "satsu.iron.man.flight_speed.choose",
       "adjustment_type": "set",
@@ -3636,7 +3690,11 @@
         "enabling": [
           {
             "type": "palladium:action",
-            "key_type": "key_bind"
+            "key_type": "scroll_down",
+            "allow_scrolling_when_crouching": false
+          },
+          {
+            "type": "palladium:crouching"
           }
         ],
         "unlocking": [
@@ -3653,6 +3711,9 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "flight_speed.move"
+          },
+          {
+            "type": "palladium:is_hovering_or_flying"
           },
           {
             "type": "palladium:has_power",
@@ -4311,6 +4372,12 @@
             "property": "value",
             "min": 15,
             "max": 15
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
           }
         ]
       }
@@ -4624,6 +4691,23 @@
             "objective": "satsu.iron.man.addon.energy.beam.powerfull",
             "min_score": 2,
             "max_score": 2
+          }
+        ]
+      }
+    },
+    "repair_self": {
+      "type": "satsu_iron_man_addon:add_power_per_tick",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "power_path": "satsu_iron_man_addon",
+      "powerid": "marks/model_30_iron_destroyer/repair_self/main",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "satsu_iron_man_addon:armor_durability",
+            "armor_piece": 2,
+            "divider": 1,
+            "operation_type": "<"
           }
         ]
       }

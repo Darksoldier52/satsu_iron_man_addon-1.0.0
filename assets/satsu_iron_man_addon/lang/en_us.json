@@ -197,6 +197,10 @@
   "item.satsu_iron_man_addon.carbon_mesh": "Carbon mesh",
   "item.satsu_iron_man_addon.high_density_carbon": "High density carbon",
   "item.satsu_iron_man_addon.lense": "Arc lens",
+  "item.satsu_iron_man_addon.upgrade_kit": "Upgrade kit",
+  "item.satsu_iron_man_addon.upgrade_kit2": "Upgrade kit 2",
+  "item.satsu_iron_man_addon.upgrade_kit3": "Upgrade kit 3",
+  "item.satsu_iron_man_addon.upgrade_kit4": "Upgrade kit 4",
   "block.satsu_iron_man_addon.armored_construct": "Armor placement block",
   "block.satsu_iron_man_addon.reactor_ark_recharge_on": "Arc energy block On",
   "block.satsu_iron_man_addon.reactor_ark_recharge_off": "Arc energy block Off",
@@ -314,7 +318,7 @@
   
   "description.iron.man.mark.1873": "An armor made of nanotechnology with steampunk appearance (With smoke abilities) Durability:43    Strength: 46    Flight Speed: 6.55",
 
-  "description.iron.man.mark.extremis": "A nanotechnology armor made with the extremis virus Durability:65    Strength: 55    Flight Speed: 6.55",
+  "description.iron.man.mark.extremis": "A nanotechnology armor made with the extremis virus Durability:68    Strength: 27.5    Flight Speed: 6.55",
   
   "description.iron.man.mark.taken": "Nanotech armor with a unique design and capabilities such as teleportation and access to a Hulkbuster. Durability: 65    Strength: 55    Flight Speed: 6.55",
   
@@ -339,6 +343,7 @@
   "description.satsu.active.ark": "Activates the Arc reactor",
   "description.superior.suit.expulsion": "Ejects part of the suit to damage enemies",
   "description.satsu.off.on": "On/Off",
+  "description.satsu.break.off.on": "By activating or deactivating this option, some attacks may break blocks, such as the max pulse or mining with striker armor",
   "description.satsu.flight.edit": "When activating this ability you can increase/decrease flight speed (You need to activate the armor edit ability)",
   "description.satsu.failsafe.edit": "When activating this ability you can enable/disable the armor's ability to save you when you are hurt (You need to activate the armor edit ability)",
   "description.satsu.choose.armor": "When activating this ability you can choose which armor to put on (You need to activate the armor edit ability)",
@@ -462,6 +467,8 @@
   "description.satsu.reroute": "When you start the voice command you can reroute the energy to: Thrusters (to have double speed, although you will consume double the energy)",  
   "description.satsu.trail.off.on": "By clicking the ability you can enable or disable the trail on speed class armors",  
   "description.satsu.minigun": "This armor is capable of deploying mini gun to fire bullets instead of the repulsor when necessary; you can choose it within the weapon wheel",  
+  "description.satsu.nano.health.spray": "Use a spray to seal wounds and recover more easily",  
+  "description.satsu.nano.health.spray.other": "Use a spray to seal wounds and help other players recover more easily",  
   "ability.title.satsu.dampened": "Arc damper",
   "ability.title.satsu.armors.branch": "Armor branch",
   "ability.title.satsu.armor_skill_bar": "Skill tree                                                      ",
@@ -738,6 +745,8 @@
   "ability.title.satsu.lense.glow.5": "Glow 5              ",  
   "ability.title.satsu.lense.glow.6": "Glow 6              ",  
   "ability.title.satsu.lense.glow.7": "Glow 7              ",  
+  "ability.title.satsu.nano.health.spray": "Nano Health Spray            ",  
+  "ability.title.satsu.nano.health.spray.other": "Nano Health Spray for Others            ",  
   "satsu.iron.man.addon.personalizate.on": "Customize activated",
   "satsu.iron.man.addon.personalizate.off": "Customize deactivated",
   "satsu.iron.man.addon.failsafe.on": "Failsafe activated",
