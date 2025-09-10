@@ -137,7 +137,7 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/marks/all_helmet/main.geo.json",
       "texture": {
-        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/mask/iron_man_mask_nil_1.png",
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/mask/iron_man_mask_light_nil_1.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
