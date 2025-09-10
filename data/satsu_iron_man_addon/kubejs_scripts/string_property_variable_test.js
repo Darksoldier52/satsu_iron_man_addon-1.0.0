@@ -130,3 +130,11 @@ PalladiumEvents.registerProperties((event) => {
     event.registerProperty("satsu.nano.health.spray", "string", "off");
   }
 });
+
+PalladiumEvents.registerProperties((event) => {
+  // Only register for players
+  if (event.getEntityType() === "minecraft:player") {
+    // Arguments: Key of the property, type of the property, default/starting value
+    event.registerProperty("satsu.model_50.color", "string", "acf4fd");
+  }
+});

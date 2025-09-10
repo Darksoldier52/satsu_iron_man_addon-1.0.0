@@ -44,6 +44,11 @@
           {
             "type": "palladium:alpha_mask",
             "mask": "satsu_iron_man_addon:textures/models/alpha_masks/nano_things/nano_grab_cannon/grab_cannon_#TIMER.png"
+          },
+          {
+            "type": "palladium:color",
+            "color": "##S",
+            "ignore_blank": true
           }
         ],
         "variables": {
@@ -54,9 +59,13 @@
             "property": "value",
             "min": 0,
             "max": 8
+          },
+          "S": {
+            "type": "palladium:string_property",
+            "property": "satsu.model_50.color"
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_grab_cannon/right/light/grab_cannon_500_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_grab_cannon/right/light/grab_cannon_500_#S_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
@@ -113,6 +122,11 @@
           {
             "type": "palladium:alpha_mask",
             "mask": "satsu_iron_man_addon:textures/models/alpha_masks/nano_things/nano_grab_cannon/grab_cannon_#TIMER.png"
+          },
+          {
+            "type": "palladium:color",
+            "color": "##S",
+            "ignore_blank": true
           }
         ],
         "variables": {
@@ -123,9 +137,13 @@
             "property": "value",
             "min": 0,
             "max": 8
+          },
+          "S": {
+            "type": "palladium:string_property",
+            "property": "satsu.model_50.color"
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_grab_cannon/left/light/grab_cannon_500_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/nano_grab_cannon/left/light/grab_cannon_500_#S_#TIMER"
       },
       "render_type": "glow",
       "conditions": [
