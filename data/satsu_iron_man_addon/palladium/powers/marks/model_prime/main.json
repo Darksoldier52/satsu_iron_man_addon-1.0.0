@@ -8230,7 +8230,7 @@
         "unlocking": [
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
@@ -8330,7 +8330,7 @@
         "unlocking": [
           {
             "type": "palladium:ability_integer_property",
-            "ability": "interpolate",
+            "ability": "animation",
             "property": "value",
             "min": 17,
             "max": 17
