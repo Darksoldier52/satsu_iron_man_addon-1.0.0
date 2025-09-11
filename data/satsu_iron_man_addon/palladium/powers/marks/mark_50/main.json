@@ -5895,17 +5895,19 @@
         "unlocking": []
       }
     },
-    "force_field.command": {
-      "type": "palladium:command",
+    "force_field.shield": {
+      "type": "gravecore:forcefield",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "effect give @s minecraft:resistance infinite 255 true"
-      ],
-      "commands": [""],
-      "last_tick_commands": ["effect clear @s minecraft:resistance"],
+      "max_health": 220,
+      "scoreboard": "null",
+      "regen_rate": 1,
       "conditions": {
         "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "force_field.shield.animation_timer"
+          },
           {
             "type": "palladium:ability_integer_property",
             "ability": "force_field.shield.animation_timer",
