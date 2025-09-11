@@ -1915,7 +1915,7 @@
       "description": { "translate": "description.iron.man.fire_resistance" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [-1.35, -2.30],
+      "gui_position": [-1.35, -2.3],
       "damage_sources": [
         "minecraft:is_fire",
         "minecraft:ignites_armor_stands",
@@ -2012,7 +2012,7 @@
       "description": { "translate": "description.iron.man.aquatic_breath" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [1.35, -2.30],
+      "gui_position": [1.35, -2.3],
       "first_tick_commands": [
         "effect give @s minecraft:water_breathing infinite 2 true"
       ],
@@ -3667,13 +3667,11 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-      ],
+      "first_tick_commands": [],
       "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 1"
       ],
-      "last_tick_commands": [
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -3707,13 +3705,11 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-      ],
+      "first_tick_commands": [],
       "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 3"
       ],
-      "last_tick_commands": [
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -3742,13 +3738,11 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-      ],
+      "first_tick_commands": [],
       "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 6"
       ],
-      "last_tick_commands": [
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -3878,7 +3872,7 @@
       "description": { "translate": "description.satsu.flight.edit" },
       "hidden": true,
       "hidden_in_bar": false,
-      "gui_position": [-1.35, -2.30],
+      "gui_position": [-1.35, -2.3],
       "score": "satsu.iron.man.flight.set",
       "adjustment_type": "add",
       "adjustment_amount": 1,
@@ -8469,15 +8463,11 @@
       "hidden_in_bar": false,
       "list_index": 13,
       "gui_position": [-10.5, 3.5],
-      "first_tick_commands": [
-        "tag @s add superior.shockwave"
-      ],
+      "first_tick_commands": ["tag @s add superior.shockwave"],
       "commands": [
         "execute at @s as @e run effect give @e[tag=!superior.shockwave,distance=..5] minecraft:slowness 1 255 true"
       ],
-      "last_tick_commands": [
-        "tag @s remove superior.shockwave"
-      ],
+      "last_tick_commands": ["tag @s remove superior.shockwave"],
       "conditions": {
         "enabling": [
           {
@@ -8615,11 +8605,9 @@
       "hidden_in_bar": false,
       "list_index": -1,
       "gui_position": [-2, -1],
-      "first_tick_commands": [
-      ],
+      "first_tick_commands": [],
       "commands": [""],
-      "last_tick_commands": [
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -9464,6 +9452,10 @@
               },
               {
                 "type": "palladium:ability_enabled",
+                "ability": "rocket"
+              },
+              {
+                "type": "palladium:ability_enabled",
                 "ability": "nano_flares_flames"
               },
               {
@@ -9532,6 +9524,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "energy.pulse_left"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "rocket"
                   },
                   {
                     "type": "palladium:ability_enabled",
@@ -9791,9 +9787,7 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "xp add @s 1"
-      ],
+      "first_tick_commands": [""],
       "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 12"
       ],
@@ -9927,13 +9921,11 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-      ],
+      "first_tick_commands": [],
       "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 3"
       ],
-      "last_tick_commands": [
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -9958,13 +9950,11 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-      ],
+      "first_tick_commands": [],
       "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 6"
       ],
-      "last_tick_commands": [
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -9984,13 +9974,11 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-      ],
+      "first_tick_commands": [],
       "commands": [
         "scoreboard players remove @s satsu.iron.man.armor.ark.energy 12"
       ],
-      "last_tick_commands": [
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {

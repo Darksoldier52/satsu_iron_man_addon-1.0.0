@@ -1273,7 +1273,7 @@
       "description": { "translate": "description.iron.man.fire_resistance" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [-1.35, -2.30],
+      "gui_position": [-1.35, -2.3],
       "damage_sources": [
         "minecraft:is_fire",
         "minecraft:ignites_armor_stands",
@@ -3415,7 +3415,7 @@
       "description": { "translate": "description.satsu.flight.edit" },
       "hidden": true,
       "hidden_in_bar": false,
-      "gui_position": [-1.35, -2.30],
+      "gui_position": [-1.35, -2.3],
       "score": "satsu.iron.man.flight.set",
       "adjustment_type": "add",
       "adjustment_amount": 1,
@@ -4608,6 +4608,10 @@
               },
               {
                 "type": "palladium:ability_enabled",
+                "ability": "rocket"
+              },
+              {
+                "type": "palladium:ability_enabled",
                 "ability": "flares_flames"
               },
               {
@@ -4656,6 +4660,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "energy.pulse_left"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "rocket"
                   },
                   {
                     "type": "palladium:ability_enabled",

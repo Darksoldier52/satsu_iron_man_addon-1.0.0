@@ -11310,6 +11310,10 @@
               },
               {
                 "type": "palladium:ability_enabled",
+                "ability": "rocket"
+              },
+              {
+                "type": "palladium:ability_enabled",
                 "ability": "nano_flares_flames"
               },
               {
@@ -11378,6 +11382,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "energy.pulse_left"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "rocket"
                   },
                   {
                     "type": "palladium:ability_enabled",
