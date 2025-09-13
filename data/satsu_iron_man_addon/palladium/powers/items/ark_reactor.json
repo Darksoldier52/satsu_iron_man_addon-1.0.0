@@ -14,9 +14,6 @@
       "list_index": 0,
       "gui_position": [0, -2],
       "commands": [
-        "superpower add satsu_iron_man_addon:armor_principal/iron_man_armor_voice_commands",
-        "superpower add satsu_iron_man_addon:armor_set/armors",
-        "superpower add satsu_iron_man_addon:armor_renderlayers/armor_renderlayer",
         "superpower add satsu_iron_man_addon:reactor_ark_power/ark_reactor_charge",
         "function satsu_iron_man_addon:dummy",
         "function satsu_iron_man_addon:set_scores",

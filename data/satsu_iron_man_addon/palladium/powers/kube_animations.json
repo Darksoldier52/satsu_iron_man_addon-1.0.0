@@ -18,7 +18,7 @@
           },
           {
             "type": "palladium:ability_integer_property",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor_voice_commands",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
             "ability": "flight.fall.animation",
             "property": "value",
             "min": 44,
