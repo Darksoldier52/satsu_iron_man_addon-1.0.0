@@ -4400,7 +4400,7 @@
         "unlocking": []
       }
     },
-    "energy_projectile.right.damage.6": {
+    "energy_projectile.right.damage": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -4415,14 +4415,14 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.5,
-        "Damage": 6,
+        "Damage": 12,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
         "DieOnEntityHit": true,
         "DieOnBlockHit": true,
-        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/pulse",
-        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/pulse",
+        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/superior_iron_man_pulse",
+        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/superior_iron_man_pulse",
         "Appearances": [
           {
             "Type": "laser",
@@ -4442,7 +4442,7 @@
         ]
       }
     },
-    "energy_projectile.left.damage.6": {
+    "energy_projectile.left.damage": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -4457,14 +4457,14 @@
       "entity_data": {
         "SetEntityOnFireSeconds": 8,
         "KnockbackStrength": 1.5,
-        "Damage": 6,
+        "Damage": 12,
         "Size": 0.1,
         "Gravity": 0.0,
         "Lifetime": 60,
         "DieOnEntityHit": true,
         "DieOnBlockHit": true,
-        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/pulse",
-        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/pulse",
+        "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/superior_iron_man_pulse",
+        "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/superior_iron_man_pulse",
         "Appearances": [
           {
             "Type": "laser",
@@ -4499,11 +4499,11 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.right.damage.6"
+                "ability": "energy_projectile.right.damage"
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.left.damage.6"
+                "ability": "energy_projectile.left.damage"
               }
             ]
           }
