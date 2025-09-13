@@ -2054,13 +2054,15 @@
       }
     },
     "mask_sound": {
-      "type": "palladium:command",
+      "type": "palladium:play_sound",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "playsound satsu_iron_man_addon:nanomask player @a[distance=0..5] ~ ~ ~ 1 1 1"
-      ],
-      "commands": [""],
+      "sound": "satsu_iron_man_addon:nanomask",
+      "volume": 1,
+      "pitch": 1,
+      "looping": false,
+      "play_self": false,
+      "play_others": false,
       "conditions": {
         "enabling": [
           {
@@ -5399,13 +5401,15 @@
       }
     },
     "maximum.pulse.sound": {
-      "type": "palladium:command",
+      "type": "palladium:play_sound",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "execute as @s run playsound satsu_iron_man_addon:rivals_iron_man_blast_mcu player @a[distance=0..10] ~ ~ ~ 1 1"
-      ],
-      "commands": [""],
+      "sound": "satsu_iron_man_addon:rivals_iron_man_blast_mcu",
+      "volume": 1,
+      "pitch": 1,
+      "looping": false,
+      "play_self": false,
+      "play_others": false,
       "conditions": {
         "enabling": [
           {
@@ -8339,13 +8343,15 @@
       }
     },
     "energyblast.throw.sound": {
-      "type": "palladium:command",
+      "type": "palladium:play_sound",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": [
-        "execute as @s run playsound satsu_iron_man_addon:rivals_iron_man_blast_mcu player @a[distance=0..10] ~ ~ ~ 1 1"
-      ],
-      "commands": [""],
+      "sound": "satsu_iron_man_addon:rivals_iron_man_blast_mcu",
+      "volume": 1,
+      "pitch": 1,
+      "looping": false,
+      "play_self": false,
+      "play_others": false,
       "conditions": {
         "enabling": [
           {
