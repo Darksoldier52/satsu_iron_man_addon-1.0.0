@@ -24,20 +24,7 @@
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_29_0_#TIMER"
       },
-      "conditions": [
-        {
-          "type": "palladium:not",
-          "conditions": [
-            {
-              "type": "palladium:ability_integer_property",
-              "power": "satsu_iron_man_addon:armor_set/armors",
-              "ability": "stealht_animation_timer",
-              "property": "value",
-              "min": 1
-            }
-          ]
-        }
-      ]
+      "conditions": []
     },
     {
       "type": "geckolib:default",
@@ -75,18 +62,6 @@
             {
               "type": "palladium:entity_type_tag",
               "entity_type_tag": "satsu_iron_man_addon:stands"
-            }
-          ]
-        },
-        {
-          "type": "palladium:not",
-          "conditions": [
-            {
-              "type": "palladium:ability_integer_property",
-              "power": "satsu_iron_man_addon:armor_set/armors",
-              "ability": "stealht_animation_timer",
-              "property": "value",
-              "min": 1
             }
           ]
         }

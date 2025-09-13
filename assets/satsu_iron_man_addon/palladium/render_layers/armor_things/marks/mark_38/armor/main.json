@@ -44,20 +44,7 @@
         },
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors_igor/iron_man/iron_man_suit_38_0_#TIMER"
       },
-      "conditions": [
-        {
-          "type": "palladium:not",
-          "conditions": [
-            {
-              "type": "palladium:ability_integer_property",
-              "power": "satsu_iron_man_addon:armor_set/armors",
-              "ability": "stealht_animation_timer",
-              "property": "value",
-              "min": 1
-            }
-          ]
-        }
-      ]
+      "conditions": []
     },
     {
       "type": "geckolib:default",
@@ -103,20 +90,7 @@
         "output": "satsu_iron_man_addon:textures/models/iron_man_armors_igor/iron_man_lights/iron_man_suit_38_0_#TIMER"
       },
       "render_type": "glow",
-      "conditions": [
-        {
-          "type": "palladium:not",
-          "conditions": [
-            {
-              "type": "palladium:ability_integer_property",
-              "power": "satsu_iron_man_addon:armor_set/armors",
-              "ability": "stealht_animation_timer",
-              "property": "value",
-              "min": 1
-            }
-          ]
-        }
-      ]
+      "conditions": []
     }
   ]
 }
