@@ -10079,6 +10079,57 @@
         "unlocking": []
       }
     },
+    "remove_ark_energy": {
+      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "score": "satsu.iron.man.armor.ark.energy",
+      "adjustment_type": "subtract",
+      "adjustment_amount": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          },
+          {
+            "type": "palladium:is_hovering_or_flying"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "ark.upgrade.thing.2"
+              },
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
     "energybeam-chest.remove.ark.energy": {
       "type": "satsu_iron_man_addon:scoreboard_ability",
       "hidden": true,
