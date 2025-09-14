@@ -214,7 +214,7 @@
             "power": "satsu_iron_man_addon:armor_principal/iron_man_armor"
           },
           {
-            "type": "gravestone:dampened_by",
+            "type": "satsu_iron_man_addon:dampened_by",
             "effect": "minecraft:health_boost"
           },
           {
