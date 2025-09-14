@@ -240,13 +240,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
+                "ability": "armor"
               }
             ]
           },
@@ -312,13 +306,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
+                "ability": "armor"
               }
             ]
           },
@@ -386,13 +374,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
+                "ability": "armor"
               }
             ]
           },
@@ -443,13 +425,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
+                "ability": "armor"
               }
             ]
           },
@@ -510,13 +486,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
+                "ability": "armor"
               }
             ]
           },
@@ -577,13 +547,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
+                "ability": "armor"
               }
             ]
           },
@@ -693,8 +657,7 @@
                     "conditions": [
                       {
                         "type": "palladium:ability_unlocked",
-                        "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                        "ability": "armor_skill_bar"
+                        "ability": "armor"
                       },
                       {
                         "type": "palladium:ability_enabled",
@@ -876,13 +839,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
+                "ability": "armor"
               }
             ]
           },
@@ -1299,13 +1256,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
+                "ability": "armor"
               }
             ]
           }
@@ -1487,8 +1438,7 @@
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
+            "ability": "armor"
           },
           {
             "type": "palladium:objective_score",
@@ -1681,8 +1631,7 @@
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
+            "ability": "armor"
           },
           {
             "type": "palladium:objective_score",
@@ -1729,8 +1678,7 @@
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
+            "ability": "armor"
           },
           {
             "type": "palladium:objective_score",
@@ -1775,8 +1723,7 @@
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
+            "ability": "armor"
           },
           {
             "type": "palladium:objective_score",
@@ -1820,13 +1767,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
-              },
-              {
-                "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "enable_armor"
+                "ability": "armor"
               }
             ]
           },
@@ -1887,8 +1828,7 @@
           },
           {
             "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
+            "ability": "armor"
           },
           {
             "type": "palladium:objective_score",
