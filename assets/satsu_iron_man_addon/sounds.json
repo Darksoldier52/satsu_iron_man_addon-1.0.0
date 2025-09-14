@@ -29,10 +29,20 @@
     "sounds": ["satsu_iron_man_addon:rivals_iron_man_blast"],
     "subtitle": "new_rivals_iron_man_blastmask_sound"
   },
+  "new_blast_potencied": {
+    "category": "player",
+    "sounds": ["satsu_iron_man_addon:rivals_iron_man_blast_potencied"],
+    "subtitle": "new_rivals_iron_man_blastmask_potencied_sound"
+  },
   "rivals_iron_man_blast_mcu": {
     "category": "player",
     "sounds": ["satsu_iron_man_addon:rivals_iron_man_blast_mcu"],
     "subtitle": "rivals_iron_man_blast_mcu"
+  },
+  "rivals_iron_man_blast_potencied_mcu": {
+    "category": "player",
+    "sounds": ["satsu_iron_man_addon:rivals_iron_man_blast_potencied_mcu"],
+    "subtitle": "rivals_iron_man_blast_potencied_mcu"
   },
   "rivals_iron_man_steampower_blast": {
     "category": "player",
