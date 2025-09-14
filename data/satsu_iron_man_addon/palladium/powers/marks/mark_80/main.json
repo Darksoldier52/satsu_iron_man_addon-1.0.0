@@ -230,9 +230,44 @@
         "enabling": [],
         "unlocking": [
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_activate_skil_tree_dummy"
+            "type": "palladium:has_power",
+            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor"
+          },
+          {
+            "type": "gravestone:dampened_by",
+            "effect": "minecraft:health_boost"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:objective_score",
+                    "objective": "satsu.iron.man.closed.armors",
+                    "min_score": 1,
+                    "max_score": 1
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "dampened"
+                  },
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "sentinel_one"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
