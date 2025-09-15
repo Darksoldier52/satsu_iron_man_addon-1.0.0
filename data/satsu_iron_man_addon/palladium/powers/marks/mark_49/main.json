@@ -3406,6 +3406,49 @@
         ]
       }
     },
+    "fly_icon": {
+      "type": "palladium:gui_overlay",
+      "texture": "satsu_iron_man_addon:textures/gui/armors/fly.png",
+      "texture_width": 16,
+      "texture_height": 16,
+      "translate": [5, 45, 0],
+      "rotate": [0, 0, 0],
+      "scale": [1, 1, 2.5],
+      "alignment": "top_left",
+      "hidden": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.flight.set",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_iron_man_armor_hud_enabled",
+            "property_value": "true"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.ark.energy",
+            "min_score": 1
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
     "increase.flight_speed": {
       "type": "satsu_iron_man_addon:scoreboard_ability",
       "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
