@@ -35,6 +35,9 @@ StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:rivals_chest_beam");
 });
 StartupEvents.registry("sound_event", (event) => {
+  event.create("satsu_iron_man_addon:mcu_chest_beam");
+});
+StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:fly_sound");
 });
 StartupEvents.registry("sound_event", (event) => {

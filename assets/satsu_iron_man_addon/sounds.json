@@ -58,6 +58,10 @@
     "category": "player",
     "sounds": ["satsu_iron_man_addon:abilities/chest_or_hand_beam/rivals_iron_man_beam"],
     "subtitle": "rivals_iron_man_beam"
+  },
+  "mcu_chest_beam": {
+    "category": "player",
+    "sounds": ["satsu_iron_man_addon:abilities/chest_or_hand_beam/mcu_iron_man_beam"],
     "subtitle": "rivals_iron_man_beam"
   },
   "fly_sound": {
