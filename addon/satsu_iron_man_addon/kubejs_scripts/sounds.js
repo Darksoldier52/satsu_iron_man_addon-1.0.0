@@ -32,7 +32,7 @@ StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:rivals_iron_man_steampower_blast_potencied");
 });
 StartupEvents.registry("sound_event", (event) => {
-  event.create("satsu_iron_man_addon:new_beam");
+  event.create("satsu_iron_man_addon:rivals_chest_beam");
 });
 StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:fly_sound");

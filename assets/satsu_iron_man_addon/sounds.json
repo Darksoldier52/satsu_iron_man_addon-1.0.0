@@ -54,9 +54,10 @@
     "sounds": ["satsu_iron_man_addon:rivals_iron_man_steampower_blast_potencied"],
     "subtitle": "rivals_iron_man_steampower_blast_potencied"
   },
-  "new_beam": {
+  "rivals_chest_beam": {
     "category": "player",
-    "sounds": ["satsu_iron_man_addon:rivals_iron_man_beam"],
+    "sounds": ["satsu_iron_man_addon:abilities/chest_or_hand_beam/rivals_iron_man_beam"],
+    "subtitle": "rivals_iron_man_beam"
     "subtitle": "rivals_iron_man_beam"
   },
   "fly_sound": {

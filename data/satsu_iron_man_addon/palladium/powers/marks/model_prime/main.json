@@ -2389,7 +2389,7 @@
     },
     "looping_sound": {
       "type": "palladium:play_sound",
-      "sound": "satsu_iron_man_addon:new_beam",
+      "sound": "satsu_iron_man_addon:rivals_chest_beam",
       "looping": true,
       "volume": 1,
       "pitch": 1,
