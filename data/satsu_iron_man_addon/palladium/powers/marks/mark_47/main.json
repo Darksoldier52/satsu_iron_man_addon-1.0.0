@@ -1088,6 +1088,13 @@
         "unlocking": [
           {
             "type": "palladium:ability_integer_property",
+            "ability": "mask_animation_timer",
+            "property": "value",
+            "min": 1,
+            "max": 19
+          },
+          {
+            "type": "palladium:ability_integer_property",
             "ability": "no_nanoarmor_anim",
             "property": "value",
             "min": 1,
