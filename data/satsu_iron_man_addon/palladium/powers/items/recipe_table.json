@@ -2,7 +2,7 @@
   "name": { "translate": "ability.title.satsu.recipe_table" },
   "persistent_data": true,
   "ability_bar_texture": "#satsu_iron_man_addon:armor_hud/ability_bar",
-  "background": "satsu_iron_man_addon:textures/gui/block/background.png",
+  "background": "satsu_iron_man_addon:textures/block/crafting_table_top.png",
   "icon": "satsu_iron_man_addon:textures/block/crafting_table_top.png",
   "gui_display_type": "tree",
   "allow_bar_shrinking": true,
@@ -3886,7 +3886,7 @@
       "description": { "translate": "description.iron.man.mark.42" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [0, 12.75],
+      "gui_position": [0, 12.45],
       "conditions": {
         "unlocking": [
           {
@@ -3908,7 +3908,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [0, 13.25],
+      "gui_position": [0, 13],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_42/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.armor.mark.42.recipe_give"
@@ -3934,7 +3934,7 @@
       "description": { "translate": "description.iron.man.mark.42-b" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [2, 12.75],
+      "gui_position": [2, 12.45],
       "conditions": {
         "unlocking": [
           {
@@ -3956,7 +3956,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [2, 13.25],
+      "gui_position": [2, 13],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_42-b/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.armor.mark.42-b.recipe_give"
@@ -3982,7 +3982,7 @@
       "description": { "translate": "description.iron.man.mark.43" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [4, 12.75],
+      "gui_position": [4, 12.45],
       "conditions": {
         "unlocking": [
           {
@@ -4004,7 +4004,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [4, 13.25],
+      "gui_position": [4, 13],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_43/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.armor.mark.43.recipe_give"
@@ -4030,7 +4030,7 @@
       "description": { "translate": "description.iron.man.mark.45" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [6, 12.75],
+      "gui_position": [6, 12.45],
       "first_tick_commands": [
         "scoreboard players set @s satsu.iron.man.armor.mark.45.unlock 1"
       ],
@@ -4056,7 +4056,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [6, 13.25],
+      "gui_position": [6, 13],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_45/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.19.mk.45.recipe_give"
@@ -4082,7 +4082,7 @@
       "description": { "translate": "description.iron.man.mark.47" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [8, 12.75],
+      "gui_position": [8, 12.45],
       "first_tick_commands": [
         "scoreboard players set @s satsu.iron.man.armor.47.unlock 1"
       ],
@@ -4108,7 +4108,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [8, 13.25],
+      "gui_position": [8, 13],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_47/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.0.Mk47.recipe_give"
