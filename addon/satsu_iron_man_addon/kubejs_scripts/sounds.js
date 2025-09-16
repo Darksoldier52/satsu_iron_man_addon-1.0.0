@@ -122,9 +122,6 @@ StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:entity.armor.mark.46.mask.1");
 });
 StartupEvents.registry("sound_event", (event) => {
-  event.create("satsu_iron_man_addon:entity.armor.mark.46.mask.2");
-});
-StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:entity.armor.mark.5.put.sound");
 });
 StartupEvents.registry("sound_event", (event) => {
