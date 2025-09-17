@@ -162,3 +162,24 @@ PalladiumEvents.registerProperties((event) => {
     event.registerProperty("satsu_iron_man_armor_arc_energy_max", "integer", 10000);
   }
 });
+PalladiumEvents.registerProperties((event) => {
+  // Only register for players
+  if (event.getEntityType() === "minecraft:player") {
+    // Arguments: Key of the property, type of the property, default/starting value
+    event.registerProperty("satsu_iron_man_flight_speed_choose_max", "integer", 0);
+  }
+});
+PalladiumEvents.registerProperties((event) => {
+  // Only register for players
+  if (event.getEntityType() === "minecraft:player") {
+    // Arguments: Key of the property, type of the property, default/starting value
+    event.registerProperty("satsu_iron_man_flight_speed_choose", "integer", 0);
+  }
+});
+PalladiumEvents.registerProperties((event) => {
+  // Only register for players
+  if (event.getEntityType() === "minecraft:player") {
+    // Arguments: Key of the property, type of the property, default/starting value
+    event.registerProperty("satsu_iron_man_flight_speed_choose_max", "integer", 0);
+  }
+});
