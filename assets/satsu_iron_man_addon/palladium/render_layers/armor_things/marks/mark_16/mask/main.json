@@ -78,7 +78,7 @@
           "conditions": [
             {
               "type": "satsu_iron_man_addon:has_property_min",
-              "property": "satsu.iron.man.armor.arc.energy",
+              "property": "satsu_iron_man_armor_arc_energy",
               "property_value_min": 1
             },
             {
@@ -222,7 +222,7 @@
           "conditions": [
             {
               "type": "satsu_iron_man_addon:has_property_min",
-              "property": "satsu.iron.man.armor.arc.energy",
+              "property": "satsu_iron_man_armor_arc_energy",
               "property_value_min": 1
             },
             {
@@ -392,7 +392,7 @@
           "conditions": [
             {
               "type": "satsu_iron_man_addon:has_property_min",
-              "property": "satsu.iron.man.armor.arc.energy",
+              "property": "satsu_iron_man_armor_arc_energy",
               "property_value_min": 1
             },
             {
@@ -539,7 +539,7 @@
           "conditions": [
             {
               "type": "satsu_iron_man_addon:has_property_min",
-              "property": "satsu.iron.man.armor.arc.energy",
+              "property": "satsu_iron_man_armor_arc_energy",
               "property_value_min": 1
             },
             {
