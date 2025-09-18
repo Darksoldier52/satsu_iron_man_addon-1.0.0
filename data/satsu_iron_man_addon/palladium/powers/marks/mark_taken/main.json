@@ -9,13 +9,13 @@
     "energy": {
       "max": {
         "type": "palladium_property",
-        "property": "satsu.iron.man.armor.arc.energy.max",
+        "property": "satsu_iron_man_armor_arc_energy_max",
         "fallback": 0
       },
       "color": "#8ffffd",
       "synced_value": {
         "type": "palladium_property",
-        "property": "satsu.iron.man.armor.arc.energy",
+        "property": "satsu_iron_man_armor_arc_energy",
         "fallback": 0
       }
     }
@@ -456,7 +456,7 @@
         "enabling": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -530,7 +530,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -843,7 +843,7 @@
         "enabling": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -1931,7 +1931,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -2024,7 +2024,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -2204,7 +2204,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -2306,7 +2306,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -2422,7 +2422,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -2514,7 +2514,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -2655,7 +2655,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -2750,7 +2750,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -2880,7 +2880,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -2903,7 +2903,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 10,
       "conditions": {
@@ -2947,7 +2947,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3017,7 +3017,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3103,7 +3103,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3152,7 +3152,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3202,7 +3202,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3234,7 +3234,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3272,7 +3272,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3338,7 +3338,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3418,7 +3418,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3479,7 +3479,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3575,7 +3575,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 1,
       "conditions": {
@@ -3611,7 +3611,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 3,
       "conditions": {
@@ -3642,7 +3642,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 6,
       "conditions": {
@@ -3840,7 +3840,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3890,7 +3890,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3927,7 +3927,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -3971,7 +3971,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -4018,7 +4018,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -4069,7 +4069,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -4136,7 +4136,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -5747,7 +5747,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -5893,7 +5893,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 1,
       "conditions": {
@@ -5931,7 +5931,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -6103,7 +6103,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -6224,7 +6224,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -6563,7 +6563,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -6647,7 +6647,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -6717,7 +6717,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 18,
       "conditions": {
@@ -7276,7 +7276,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -7345,7 +7345,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -7455,7 +7455,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -7540,7 +7540,7 @@
         "unlocking": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -7843,7 +7843,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -7927,7 +7927,7 @@
           },
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           },
           {
@@ -8041,7 +8041,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 30,
       "conditions": {
@@ -9062,7 +9062,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 8,
       "conditions": {
@@ -9108,7 +9108,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 300,
       "conditions": {
@@ -9181,7 +9181,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 2,
       "conditions": {
@@ -9202,7 +9202,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 3,
       "conditions": {
@@ -9218,7 +9218,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 1,
       "conditions": {
@@ -9243,7 +9243,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 12,
       "conditions": {
@@ -9375,14 +9375,14 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 1,
       "conditions": {
         "enabling": [
           {
             "type": "satsu_iron_man_addon:has_property_min",
-            "property": "satsu.iron.man.armor.arc.energy",
+            "property": "satsu_iron_man_armor_arc_energy",
             "property_value_min": 1
           }
         ],
@@ -9426,7 +9426,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 2,
       "conditions": {
@@ -9453,7 +9453,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 4,
       "conditions": {
@@ -9475,7 +9475,7 @@
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
       "hidden_in_bar": true,
-      "property_name": "satsu.iron.man.armor.arc.energy",
+      "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
       "adjustment_amount": 8,
       "conditions": {
