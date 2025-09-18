@@ -3763,7 +3763,7 @@
         ]
       }
     },
-    "energy_projectile.mk.1873": {
+    "energy_pulse_projectile.right": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -3788,9 +3788,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/blooded_iron_man_pulse",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#c17000"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/1873/1873"
           }
         ]
       },
@@ -3805,7 +3804,7 @@
         ]
       }
     },
-    "energy_projectile.left.mk.1873": {
+    "energy_pulse_projectile.left": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -3830,9 +3829,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/blooded_iron_man_pulse",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#c17000"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/1873/1873"
           }
         ]
       },
@@ -3872,9 +3870,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/nano_rial",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#c17000"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/1873/1873"
           }
         ]
       },
@@ -3918,9 +3915,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/nano_rial",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#c17000"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/1873/1873"
           }
         ]
       },
@@ -3964,9 +3960,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/nano_grenade_launcher",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#c17000"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/1873/1873"
           }
         ]
       },
@@ -4006,9 +4001,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/nano_grenade_launcher",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#c17000"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/1873/1873"
           }
         ]
       },
@@ -4040,11 +4034,11 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.mk.1873"
+                "ability": "energy_pulse_projectile.right"
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.left.mk.1873"
+                "ability": "energy_pulse_projectile.left"
               },
               {
                 "type": "palladium:ability_enabled",

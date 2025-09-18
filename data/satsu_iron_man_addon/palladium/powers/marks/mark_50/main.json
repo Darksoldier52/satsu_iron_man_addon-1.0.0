@@ -8007,7 +8007,7 @@
         ]
       }
     },
-    "energy_projectile.right.damage": {
+    "energy_pulse_projectile.right": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -8032,9 +8032,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/superior_iron_man_pulse",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
@@ -8049,7 +8048,7 @@
         ]
       }
     },
-    "energy_projectile.left.damage": {
+    "energy_pulse_projectile.left": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -8074,9 +8073,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/superior_iron_man_pulse",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
@@ -8091,7 +8089,7 @@
         ]
       }
     },
-    "nano_rial_blue.damage.10": {
+    "nano_rial_blue.projectile.right": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -8116,9 +8114,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/nano_rial",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
@@ -8137,7 +8134,7 @@
         ]
       }
     },
-    "nano_rial_blue.left.damage.10": {
+    "nano_rial_blue.projectile.left": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -8162,9 +8159,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/nano_rial",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
@@ -8183,7 +8179,7 @@
         ]
       }
     },
-    "nano_grenade_projectile.damage.18": {
+    "nano_grenade_projectile.right": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -8208,9 +8204,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/nano_grenade_launcher",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
@@ -8225,7 +8220,7 @@
         ]
       }
     },
-    "nano_grenade_projectile.left.damage.18": {
+    "nano_grenade_projectile.left": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -8250,9 +8245,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/nano_grenade_launcher",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
@@ -8267,7 +8261,7 @@
         ]
       }
     },
-    "grab_cannon_projectile": {
+    "grab_cannon_projectile.right": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -8292,9 +8286,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/grab_cannon_launcher",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
@@ -8334,9 +8327,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/grab_cannon_launcher",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
@@ -8368,11 +8360,11 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.right.damage"
+                "ability": "energy_pulse_projectile.right"
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.left.damage"
+                "ability": "energy_pulse_projectile.left"
               }
             ]
           }
@@ -8404,15 +8396,15 @@
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "nano_grenade_projectile.damage.18"
+                "ability": "nano_grenade_projectile.right"
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "nano_grenade_projectile.left.damage.18"
+                "ability": "nano_grenade_projectile.left"
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "grab_cannon_projectile"
+                "ability": "grab_cannon_projectile.right"
               },
               {
                 "type": "palladium:ability_enabled",

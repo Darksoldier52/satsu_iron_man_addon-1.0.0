@@ -930,7 +930,7 @@
         ]
       }
     },
-    "energy_projectile.mk1": {
+    "projectile.mk1": {
       "type": "palladium:projectile",
       "hidden": true,
       "hidden_in_bar": true,
@@ -959,7 +959,7 @@
         ]
       }
     },
-    "energy_projectile.mk1.left": {
+    "projectile.mk1.left": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,

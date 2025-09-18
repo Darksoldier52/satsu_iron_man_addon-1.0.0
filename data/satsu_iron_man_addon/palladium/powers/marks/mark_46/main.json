@@ -4474,7 +4474,7 @@
         "unlocking": []
       }
     },
-    "energy_projectile.right.damage": {
+    "energy_pulse_projectile.right": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -4499,9 +4499,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/superior_iron_man_pulse",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
@@ -4516,7 +4515,7 @@
         ]
       }
     },
-    "energy_projectile.left.damage": {
+    "energy_pulse_projectile.left": {
       "type": "gravecore:projectile",
       "hidden": true,
       "hidden_in_bar": false,
@@ -4541,9 +4540,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/superior_iron_man_pulse",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
@@ -4575,11 +4573,11 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.right.damage"
+                "ability": "energy_pulse_projectile.right"
               },
               {
                 "type": "palladium:ability_enabled",
-                "ability": "energy_projectile.left.damage"
+                "ability": "energy_pulse_projectile.left"
               }
             ]
           }

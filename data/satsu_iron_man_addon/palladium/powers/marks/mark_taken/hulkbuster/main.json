@@ -495,9 +495,8 @@
         "CommandOnBlockHit": "",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#586363"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/taken/taken"
           }
         ]
       },

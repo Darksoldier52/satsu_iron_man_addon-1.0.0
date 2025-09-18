@@ -422,9 +422,8 @@
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/pulse_watch",
         "Appearances": [
           {
-            "Type": "laser",
-            "Thickness": 0.1,
-            "Color": "#0377fc"
+            "Type": "trail",
+            "Trail": "satsu_iron_man_addon:blast/blue/blue"
           }
         ]
       },
