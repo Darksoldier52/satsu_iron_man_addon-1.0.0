@@ -273,10 +273,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -293,12 +304,6 @@
                 "slot": "trinkets:head/face"
               }
             ]
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_armor_arc_energy",
-            "min": 1,
-            "max": 150000
           },
           {
             "type": "palladium:and",
@@ -561,10 +566,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -581,12 +597,6 @@
                 "slot": "trinkets:head/face"
               }
             ]
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_armor_arc_energy",
-            "min": 1,
-            "max": 150000
           },
           {
             "type": "palladium:and",
@@ -1184,10 +1194,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -1204,12 +1225,6 @@
                 "slot": "trinkets:head/face"
               }
             ]
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_armor_arc_energy",
-            "min": 1,
-            "max": 150000
           },
           {
             "type": "satsu_iron_man_addon:has_property",
@@ -1393,10 +1408,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -1413,12 +1439,6 @@
                 "slot": "trinkets:head/face"
               }
             ]
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_armor_arc_energy",
-            "min": 1,
-            "max": 150000
           },
           {
             "type": "palladium:and",
@@ -3932,10 +3952,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -3952,12 +3983,6 @@
                 "slot": "trinkets:head/face"
               }
             ]
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_armor_arc_energy",
-            "min": 1,
-            "max": 150000
           },
           {
             "type": "satsu_iron_man_addon:has_property",
@@ -4131,10 +4156,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -4257,10 +4293,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -4383,10 +4430,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -4509,10 +4567,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -4635,10 +4704,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -4761,10 +4841,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -4887,10 +4978,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -5013,10 +5115,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -5139,10 +5252,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -5265,10 +5389,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -5391,10 +5526,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
@@ -5517,10 +5663,21 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:integer_property",
-                "property": "satsu_mask_value",
-                "min": 1,
-                "max": 1
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_mask_value",
+                    "min": 1,
+                    "max": 1
+                  },
+                  {
+                    "type": "palladium:integer_property",
+                    "property": "satsu_iron_man_armor_arc_energy",
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                ]
               },
               {
                 "type": "palladium:item_in_slot",
