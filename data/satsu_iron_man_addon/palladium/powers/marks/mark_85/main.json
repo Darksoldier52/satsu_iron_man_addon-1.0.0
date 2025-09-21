@@ -8197,6 +8197,13 @@
             "max_score": 4
           },
           {
+            "type": "palladium:ability_integer_property",
+            "ability": "left_arm_animation",
+            "property": "value",
+            "min": 17,
+            "max": 17
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
