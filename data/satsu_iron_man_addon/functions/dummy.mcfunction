@@ -81,7 +81,7 @@ scoreboard objectives remove satsu.iron.man.flight_speed
 scoreboard objectives add satsu.iron.man.flight_speed.choose dummy
 scoreboard objectives add satsu.iron.man.choose_armor dummy
 scoreboard objectives add satsu.iron.man.choose_armor.test dummy
-scoreboard objectives add satsu.iron.man.flight_speed_max dummy
+scoreboard objectives remove satsu.iron.man.flight_speed_max
 scoreboard objectives add satsu.iron.man.unlock_sword dummy
 scoreboard objectives add satsu.iron.man.flight.set dummy
 scoreboard objectives remove satsu.iron.man.failsafe.set

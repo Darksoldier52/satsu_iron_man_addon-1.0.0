@@ -1,7 +1,7 @@
 //Made by FSang18
 StartupEvents.registry("palladium:abilities", (event) => {
   event
-    .create("fsang:property_stat_modifier")
+    .create("satsu_iron_man_addon:property_stat_modifier")
     .icon(palladium.createItemIcon("palladium:vibranium_circuit"))
     .addProperty(
       "property_value",

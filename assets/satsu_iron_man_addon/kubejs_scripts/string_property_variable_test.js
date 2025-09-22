@@ -157,6 +157,6 @@ PalladiumEvents.registerPropertiesClientSided((event) => {
   // Only register for players
   if (event.getEntityType() === "minecraft:player") {
       // Arguments: Key of the property, type of the property, default/starting value
-      event.registerProperty('satsu_iron_man_flight_speed_choose_max', 'integer', 0);
+      event.registerProperty('satsu_iron_man_flight_speed_choose_max', 'integer', 252);
     }
 });
