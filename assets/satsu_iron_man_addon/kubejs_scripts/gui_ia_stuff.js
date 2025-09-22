@@ -8,7 +8,7 @@ function energy_label(minecraft) {
 function velocity_label(minecraft) {
   let username = minecraft.player;
   const velocity_text = Component.translate("satsu.iron.man.addon.text.velocity_on_hud");
-  const velocity_value = palladium.scoreboard.getScore(username, "satsu.iron.man.flight_speed.choose");
+  const velocity_value = palladium.getProperty(username, "satsu_iron_man_flight_speed_choose");
   return Component.join("", velocity_text, velocity_value);
 }
 
