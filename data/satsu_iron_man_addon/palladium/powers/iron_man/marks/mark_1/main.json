@@ -1800,7 +1800,7 @@
     },
     "mk.1.rocket": {
       "type": "palladium:repeating_animation_timer",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/fire_work.png",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/abilities/one_rocket.png",
       "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.rocket" },
       "description": { "translate": "description.satsu.rocket" },
