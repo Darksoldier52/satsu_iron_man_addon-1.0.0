@@ -1984,54 +1984,6 @@
         ]
       }
     },
-    "energy_beam_increase_wheel_4": {
-      "type": "satsu_iron_man_addon:scoreboard_ability",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/ark_beam_powerfull_3.png",
-      "title": { "translate": "ability.title.satsu.energy_beam.4" },
-      "description": { "translate": "description.energy_beam" },
-      "hidden": true,
-      "hidden_in_bar": false,
-      "score": "satsu.iron.man.addon.energy.beam.powerfull",
-      "adjustment_type": "set",
-      "adjustment_amount": 3,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_wheel"
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:ability_unlocked",
-            "ability": "energy_beam_increase_wheel"
-          }
-        ]
-      }
-    },
-    "energy_beam_increase_wheel_5": {
-      "type": "satsu_iron_man_addon:scoreboard_ability",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/ark_beam_powerfull_4.png",
-      "title": { "translate": "ability.title.satsu.energy_beam.5" },
-      "description": { "translate": "description.energy_beam" },
-      "hidden": true,
-      "hidden_in_bar": false,
-      "score": "satsu.iron.man.addon.energy.beam.powerfull",
-      "adjustment_type": "set",
-      "adjustment_amount": 4,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:ability_wheel"
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:ability_unlocked",
-            "ability": "energy_beam_increase_wheel"
-          }
-        ]
-      }
-    },
     "weapons_wheel.Energy.Pulse": {
       "type": "palladium:dummy",
       "icon": "#satsu_iron_man_addon:ark_disable_enable",
