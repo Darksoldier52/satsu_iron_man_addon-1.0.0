@@ -1181,5 +1181,6 @@
   "effect.satsu_iron_man_addon.blind": "Cegado",
   "effect.satsu_iron_man_addon.blooding": "Sangrado",
   "effect.satsu_iron_man_addon.paralized": "Paralizado",
-  "trinkets.slot.chest.arc_reactor": "reactor arc"
+  "curios.identifier.arc_reactor": "Reactor arc",
+  "trinkets.slot.chest.arc_reactor": "Reactor arc"
 }
