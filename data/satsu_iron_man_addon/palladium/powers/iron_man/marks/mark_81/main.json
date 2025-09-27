@@ -6099,7 +6099,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 1,
+      "adjustment_amount": 3,
       "conditions": {
         "enabling": [
           {
@@ -6135,7 +6135,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 3,
+      "adjustment_amount": 6,
       "conditions": {
         "enabling": [
           {
@@ -6166,7 +6166,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 6,
+      "adjustment_amount": 9,
       "conditions": {
         "enabling": [
           {
@@ -8495,7 +8495,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 1,
+      "adjustment_amount": 4,
       "conditions": {
         "enabling": [
           {
@@ -11558,7 +11558,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 10,
+      "adjustment_amount": 20,
       "conditions": {
         "enabling": [
           {
@@ -11651,7 +11651,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 2,
+      "adjustment_amount": 4,
       "conditions": {
         "enabling": [
           {
@@ -11672,7 +11672,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 3,
+      "adjustment_amount": 6,
       "conditions": {
         "enabling": [
           {
@@ -11688,7 +11688,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 1,
+      "adjustment_amount": 2,
       "conditions": {
         "enabling": [
           {
@@ -11897,7 +11897,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 2,
+      "adjustment_amount": 4,
       "conditions": {
         "enabling": [
           {
@@ -11924,7 +11924,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 4,
+      "adjustment_amount": 8,
       "conditions": {
         "enabling": [
           {
@@ -11946,7 +11946,7 @@
       "hidden_in_bar": true,
       "property_name": "satsu_iron_man_armor_arc_energy",
       "adjustment_type": "subtract",
-      "adjustment_amount": 8,
+      "adjustment_amount": 16,
       "conditions": {
         "enabling": [
           {
