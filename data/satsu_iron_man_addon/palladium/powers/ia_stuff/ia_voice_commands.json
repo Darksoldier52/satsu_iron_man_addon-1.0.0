@@ -1378,7 +1378,7 @@
             "type": "palladium:integer_property",
             "property": "satsu_iron_man_armor_arc_energy",
             "min": 1,
-            "max": 150000
+            "max": 2147483647
           },
           {
             "type": "palladium:and",
@@ -1574,7 +1574,7 @@
             "type": "palladium:integer_property",
             "property": "satsu_iron_man_armor_arc_energy",
             "min": 1,
-            "max": 150000
+            "max": 2147483647
           },
           {
             "type": "palladium:and",
@@ -2028,7 +2028,7 @@
             "type": "palladium:integer_property",
             "property": "satsu_iron_man_armor_arc_energy",
             "min": 1,
-            "max": 150000
+            "max": 2147483647
           },
           {
             "type": "palladium:and",
