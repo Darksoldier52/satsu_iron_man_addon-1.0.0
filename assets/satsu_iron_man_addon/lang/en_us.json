@@ -331,6 +331,8 @@
 
   "description.iron.man.model.nil": "An armor made for total stealth, equipped with tasers to paralyze and the ability to pass through walls. Durability:32    Strength: 14.2    Flight Speed: 6.57",
 
+  "description.iron.man.war_machine.mark.1": "The modified Mark 2 is more resistant than the original version and has more weapons, such as miniguns on its arms, a turret, grenade launchers, and several missiles. This armor is placed in the gantry station, just like the Mark 4. Durability: 17    Strength: 5.5    Flight speed: 6",
+
   "description.ark.upgrade.thing.1": "By unlocking this the Arc reactor will recharge itself and will not overcharge so as not to damage you",
   "description.ark.upgrade.thing.2": "By unlocking this the Arc reactor will recharge itself and will not overcharge so as not to damage you when you are using the armor",
   "description.iron.man.symbiote_metalized": "A symbiote made of metal capable of enhancing your abilities.",
@@ -573,6 +575,7 @@
   "ability.title.satsu.mark.extremis": "Mark Extremis      ",
   "ability.title.satsu.mark.taken": "Mark Taken      ",
   "ability.title.satsu.model.nil": "Model NIL      ",
+  "ability.title.satsu.war_machine.mark.1": "War machine Mark 1      ",
   "ability.title.satsu.arms.edit": "Weapons edit",
   "ability.title.satsu.beams.edit": "Beams edit",
   "ability.title.satsu.beams.next": "Increase beams",
@@ -767,6 +770,7 @@
   "ability.title.satsu.ex.wife": "Ex-Wife",  
   "ability.title.satsu.grenade.launcher": "Throw Grenades",  
   "ability.title.satsu.shotgun": "Type of shot: Shotgun",  
+  "ability.title.satsu.gantry": "Enable/Disable Gantry",  
   "satsu.iron.man.addon.personalizate.on": "Customize activated",
   "satsu.iron.man.addon.personalizate.off": "Customize deactivated",
   "satsu.iron.man.addon.failsafe.on": "Failsafe activated",
