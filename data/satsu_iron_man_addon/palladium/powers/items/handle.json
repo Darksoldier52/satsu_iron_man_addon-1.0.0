@@ -193,12 +193,69 @@
       "gui_position": [0, -3.5],
       "first_tick_commands": [],
       "commands": [
-        "give @s satsu_iron_man_addon:ark_reactor",
-        "superpower remove satsu_iron_man_addon:armor_principal/iron_man_armor @s",
-        "superpower remove satsu_iron_man_addon:projectiles_armor/projectiles",
-        "superpower remove satsu_iron_man_addon:energy_beams/energy_beams",
-        "superpower remove satsu_iron_man_addon:armor_principal/iron_man_xp",
-        "superpower remove satsu_iron_man_addon:reactor_ark_power/ark_reactor_charge"
+        "give @s satsu_iron_man_addon:ark_reactor"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:items/handle",
+            "ability": "animation.finished.animation_timer",
+            "property": "value",
+            "min": 2,
+            "max": 2
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": []
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "remove_ark_reactor.curios": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [],
+      "commands": [
+        "curios replace arc_reactor 0 @s with air 1"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "satsu_iron_man_addon:items/handle",
+            "ability": "animation.finished.animation_timer",
+            "property": "value",
+            "min": 2,
+            "max": 2
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": []
+              }
+            ]
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "remove_ark_reactor.trinkets": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [""],
+      "commands": [
+        "trinkets set chest arc_reactor 0 minecraft:air"
       ],
       "conditions": {
         "enabling": [
