@@ -2121,7 +2121,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_81/repair_self/main",
+                "power": "satsu_iron_man_addon:iron_man/marks/mark_82/repair_self/main",
                 "ability": "modify"
               }
             ]
@@ -2172,7 +2172,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "power_path": "satsu_iron_man_addon",
-      "powerid": "marks/mark_82/mask",
+      "powerid": "iron_man/marks/mark_82/mask",
       "conditions": {
         "enabling": []
       }
@@ -2247,7 +2247,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_82/repair_self/main",
+                "power": "satsu_iron_man_addon:iron_man/marks/mark_82/repair_self/main",
                 "ability": "modify"
               }
             ]
@@ -2345,7 +2345,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_82/repair_self/main",
+                "power": "satsu_iron_man_addon:iron_man/marks/mark_82/repair_self/main",
                 "ability": "modify"
               }
             ]
@@ -2443,7 +2443,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_82/repair_self/main",
+                "power": "satsu_iron_man_addon:iron_man/marks/mark_82/repair_self/main",
                 "ability": "modify"
               }
             ]
@@ -2541,7 +2541,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_82/repair_self/main",
+                "power": "satsu_iron_man_addon:iron_man/marks/mark_82/repair_self/main",
                 "ability": "modify"
               }
             ]
@@ -2639,7 +2639,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_82/repair_self/main",
+                "power": "satsu_iron_man_addon:iron_man/marks/mark_82/repair_self/main",
                 "ability": "modify"
               }
             ]
@@ -2737,7 +2737,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_82/repair_self/main",
+                "power": "satsu_iron_man_addon:iron_man/marks/mark_82/repair_self/main",
                 "ability": "modify"
               }
             ]
@@ -2835,7 +2835,7 @@
             "conditions": [
               {
                 "type": "palladium:ability_enabled",
-                "power": "satsu_iron_man_addon:marks/mark_82/repair_self/main",
+                "power": "satsu_iron_man_addon:iron_man/marks/mark_82/repair_self/main",
                 "ability": "modify"
               }
             ]
@@ -6073,7 +6073,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "power_path": "satsu_iron_man_addon",
-      "powerid": "marks/mark_82/beams/hands/red/energy_beams_hands",
+      "powerid": "iron_man/marks/mark_82/beams/hands/red/energy_beams_hands",
       "conditions": {
         "enabling": [
           {
@@ -6196,7 +6196,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "power_path": "satsu_iron_man_addon",
-      "powerid": "marks/mark_82/beams/hands/energy_beams_hands",
+      "powerid": "iron_man/marks/mark_82/beams/hands/energy_beams_hands",
       "conditions": {
         "enabling": [
           {
@@ -6232,7 +6232,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "power_path": "satsu_iron_man_addon",
-      "powerid": "marks/mark_82/beams/hands/energy_beams_hands_powerfull_1",
+      "powerid": "iron_man/marks/mark_82/beams/hands/energy_beams_hands_powerfull_1",
       "conditions": {
         "enabling": [
           {
@@ -6263,7 +6263,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "power_path": "satsu_iron_man_addon",
-      "powerid": "marks/mark_82/beams/hands/energy_beams_hands_powerfull_2",
+      "powerid": "iron_man/marks/mark_82/beams/hands/energy_beams_hands_powerfull_2",
       "conditions": {
         "enabling": [
           {
@@ -11742,7 +11742,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "power_path": "satsu_iron_man_addon",
-      "powerid": "marks/mark_82/beams/chest/beam",
+      "powerid": "iron_man/marks/mark_82/beams/chest/beam",
       "conditions": {
         "enabling": [
           {
@@ -11779,7 +11779,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "power_path": "satsu_iron_man_addon",
-      "powerid": "marks/mark_82/beams/chest/energy_beams_powerfull_1",
+      "powerid": "iron_man/marks/mark_82/beams/chest/energy_beams_powerfull_1",
       "conditions": {
         "enabling": [
           {
@@ -11801,7 +11801,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "power_path": "satsu_iron_man_addon",
-      "powerid": "marks/mark_82/beams/chest/energy_beams_powerfull_2",
+      "powerid": "iron_man/marks/mark_82/beams/chest/energy_beams_powerfull_2",
       "conditions": {
         "enabling": [
           {
@@ -11823,7 +11823,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "power_path": "satsu_iron_man_addon",
-      "powerid": "marks/mark_82/beams/chest/energy_beams_nano",
+      "powerid": "iron_man/marks/mark_82/beams/chest/energy_beams_nano",
       "conditions": {
         "enabling": [
           {
@@ -11967,7 +11967,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "power_path": "satsu_iron_man_addon",
-      "powerid": "marks/mark_82/repair_self/main",
+      "powerid": "iron_man/marks/mark_82/repair_self/main",
       "conditions": {
         "enabling": [
           {
