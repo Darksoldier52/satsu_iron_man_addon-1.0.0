@@ -249,12 +249,6 @@
                 "objective": "satsu.iron.man.armor",
                 "min_score": "1",
                 "max_score": "5"
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor",
-                "min_score": "46",
-                "max_score": "47"
               }
             ]
           },
