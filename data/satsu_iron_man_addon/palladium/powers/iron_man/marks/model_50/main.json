@@ -1215,7 +1215,15 @@
       "type": "palladium:restrict_slots",
       "hidden": true,
       "hidden_in_bar": true,
-      "slots": ["feet", "legs", "head", "curios:head", "curios:back"],
+      "slots": [
+        "feet",
+        "legs",
+        "head",
+        "curios:head",
+        "curios:back",
+        "curios:main_addition_right",
+        "curios:main_addition_left"
+      ],
       "conditions": {
         "enabling": [
           {
