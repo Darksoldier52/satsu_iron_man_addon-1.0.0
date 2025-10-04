@@ -83,12 +83,12 @@ PalladiumEvents.registerAnimations((event) => {
       }
     }
   });
-  event.register("satsu_iron_man_addonmarks/additamens/hammers/maindrill.ground.2", 10, (builder) => {
+  event.register("satsu_iron_man_addonmarks/additamens/hammers/drill_repeating.ground.2_left", 10, (builder) => {
     // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0
     const progress = animationUtil.getAnimationTimerAbilityValue(
       builder.getPlayer(),
       "satsu_iron_man_addon:marks/additamens/hammers/main",
-      "drill_ground_repeating",
+      "drill_ground_repeating_left",
       builder.getPartialTicks()
     );
 
@@ -119,6 +119,40 @@ PalladiumEvents.registerAnimations((event) => {
           .moveY(2)
           .moveZ(0)
           .animate("InOutCubic", progress);
+        builder;
+      }
+    }
+  });
+  event.register("satsu_iron_man_addonmarks/additamens/hammers/drill_repeating.ground.2_right", 10, (builder) => {
+    // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0
+    const progress = animationUtil.getAnimationTimerAbilityValue(
+      builder.getPlayer(),
+      "satsu_iron_man_addon:marks/additamens/hammers/main",
+      "drill_ground_repeating_right",
+      builder.getPartialTicks()
+    );
+
+    // only apply animation if progress is above 0!
+    if (progress > 0.0) {
+      const halfPi = 1.57079632679;
+      // if first person
+      if (builder.isFirstPerson()) {
+        builder
+          .get("left_arm")
+          .setXRotDegrees(0)
+          .setYRotDegrees(0)
+          .setZRotDegrees(0)
+          .animate("InOutCubic", progress);
+      }
+      if (builder.isFirstPerson()) {
+        builder
+          .get("right_arm")
+          .setXRotDegrees(0)
+          .setYRotDegrees(0)
+          .setZRotDegrees(0)
+          .animate("InOutCubic", progress);
+      } else {
+        // third person animations
         builder
           .get("right_arm")
           .moveX(0)
