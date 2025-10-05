@@ -10651,7 +10651,7 @@
     "energy_pulse_projectile.right": {
       "type": "gravecore:projectile",
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
@@ -10692,7 +10692,7 @@
     "energy_pulse_projectile.left": {
       "type": "gravecore:projectile",
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
@@ -10733,7 +10733,7 @@
     "nano_rial_blue.projectile.right": {
       "type": "gravecore:projectile",
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
@@ -10778,7 +10778,7 @@
     "nano_rial_blue.projectile.left": {
       "type": "gravecore:projectile",
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
@@ -10823,7 +10823,7 @@
     "nano_grenade_projectile.right": {
       "type": "gravecore:projectile",
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
@@ -10864,7 +10864,7 @@
     "nano_grenade_projectile.left": {
       "type": "gravecore:projectile",
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 2.5,
       "swinging_arm": "none",
@@ -10905,7 +10905,7 @@
     "grab_cannon_projectile.right": {
       "type": "gravecore:projectile",
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 3,
       "swinging_arm": "none",
@@ -10946,7 +10946,7 @@
     "grab_cannon_projectile.left": {
       "type": "gravecore:projectile",
       "hidden": true,
-      "hidden_in_bar": false,
+      "hidden_in_bar": true,
       "entity_type": "palladium:custom_projectile",
       "velocity": 3,
       "swinging_arm": "none",
