@@ -87,6 +87,7 @@
   "item.satsu_iron_man_addon.marks.mark_50.main": "Nano armor modifier (Mark 50)",
   "item.satsu_iron_man_addon.marks.mark_80.main": "Nano armor modifier (Mark 80)",
   "item.satsu_iron_man_addon.marks.mark_81.main": "Nano armor modifier (Mark 81)",
+  "item.satsu_iron_man_addon.marks.mark_82.main": "Nano reactor arc (Mark 82)",
   "item.satsu_iron_man_addon.marks.mark_85.main": "Nano armor modifier (Mark 85)",
   "item.satsu_iron_man_addon.marks.mark_extremis.main": "Nano armor modifier (Mark extremis)",
   "item.satsu_iron_man_addon.marks.mark_1873_nano.main": "Nano armor modifier (Mark 1873)",
@@ -311,6 +312,7 @@
 
   "description.iron.man.mark.80": "Mark 80 is a nanotechnology armor with a red design with gray and gold accents. It has retractable daggers, two different swords, a shield and several more upgrades Durability:40    Strength: 37    Flight Speed: 6.55",
   "description.iron.man.mark.81": "Mark 81 is a nanotechnology armor with a red and gold design with gray accents. It has retractable daggers, two different swords, a shield and several more upgrades Durability:40    Strength: 37    Flight Speed: 6.55",
+  "description.iron.man.mark.82": "The Mark 82 is a nanotechnology suit with a silver and red design. It has retractable daggers, two different swords, a shield, and several other upgrades, as well as sonic tranquilizers to aid in combat. Durability: 40    Strength: 37    Flight Speed: 6.55",
 
   "description.iron.man.mark.85": "Mark 85 is a nanotechnology armor with a gold and red design with gray accents. It has retractable daggers, two different swords, a shield and several more upgrades Durability:40    Strength: 37    Flight Speed: 6.55",
 
@@ -570,6 +572,7 @@
   "ability.title.satsu.mark.50": "Mark 50      ",
   "ability.title.satsu.mark.80": "Mark 80      ",
   "ability.title.satsu.mark.81": "Mark 81      ",
+  "ability.title.satsu.mark.82": "Mark 82      ",
   "ability.title.satsu.mark.85": "Mark 85      ",
   "ability.title.satsu.mark.50.superior": "Mark model 50      ",
   "ability.title.satsu.mark.unknow.blooded": "Mark Blood Border      ",
