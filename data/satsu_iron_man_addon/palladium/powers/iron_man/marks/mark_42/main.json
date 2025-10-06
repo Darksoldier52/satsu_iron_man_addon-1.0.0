@@ -7650,6 +7650,9 @@
             "cooldown": 30,
             "key_type": "key_bind",
             "needs_empty_hand": false
+          },
+          {
+            "type": "palladium:on_ground"
           }
         ],
         "unlocking": [
@@ -7662,9 +7665,6 @@
           {
             "type": "palladium:and",
             "conditions": [
-              {
-                "type": "palladium:on_ground"
-              },
               {
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -7708,14 +7708,14 @@
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:prehsnyle_hammers"
+                  "item": "satsu_iron_man_addon:additamens/prehsnyle_hammers"
                 },
                 "slot": "curios:main_addition_right"
               },
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:prehsnyle_hammers"
+                  "item": "satsu_iron_man_addon:additamens/prehsnyle_hammers"
                 },
                 "slot": "curios:main_addition_left"
               }
@@ -7757,6 +7757,9 @@
             "cooldown": 0,
             "key_type": "key_bind",
             "needs_empty_hand": false
+          },
+          {
+            "type": "palladium:on_ground"
           }
         ],
         "unlocking": [
@@ -7769,9 +7772,6 @@
           {
             "type": "palladium:and",
             "conditions": [
-              {
-                "type": "palladium:on_ground"
-              },
               {
                 "type": "palladium:ability_unlocked",
                 "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
@@ -7815,14 +7815,14 @@
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:prehsnyle_hammers"
+                  "item": "satsu_iron_man_addon:additamens/prehsnyle_hammers"
                 },
                 "slot": "curios:main_addition_right"
               },
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:prehsnyle_hammers"
+                  "item": "satsu_iron_man_addon:additamens/prehsnyle_hammers"
                 },
                 "slot": "curios:main_addition_left"
               }
@@ -7908,14 +7908,14 @@
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:vibranium_blades"
+                  "item": "satsu_iron_man_addon:additamens/vibranium_blades"
                 },
                 "slot": "curios:main_addition_right"
               },
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:vibranium_blades"
+                  "item": "satsu_iron_man_addon:additamens/vibranium_blades"
                 },
                 "slot": "curios:main_addition_left"
               }
@@ -7964,14 +7964,14 @@
           {
             "type": "palladium:item_in_slot",
             "item": {
-              "item": "satsu_iron_man_addon:vibranium_blades"
+              "item": "satsu_iron_man_addon:additamens/vibranium_blades"
             },
             "slot": "curios:main_addition_right"
           },
           {
             "type": "palladium:item_in_slot",
             "item": {
-              "item": "satsu_iron_man_addon:vibranium_blades"
+              "item": "satsu_iron_man_addon:additamens/vibranium_blades"
             },
             "slot": "curios:main_addition_left"
           },

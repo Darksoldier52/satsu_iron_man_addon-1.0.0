@@ -3956,6 +3956,9 @@
             "cooldown": 30,
             "key_type": "key_bind",
             "needs_empty_hand": false
+          },
+          {
+            "type": "palladium:on_ground"
           }
         ],
         "unlocking": [
@@ -3964,9 +3967,6 @@
             "property": "satsu_iron_man_armor_arc_energy",
             "min": 1,
             "max": 2147483647
-          },
-          {
-            "type": "palladium:on_ground"
           },
           {
             "type": "palladium:ability_unlocked",
@@ -4014,6 +4014,9 @@
             "cooldown": 0,
             "key_type": "key_bind",
             "needs_empty_hand": false
+          },
+          {
+            "type": "palladium:on_ground"
           }
         ],
         "unlocking": [
@@ -4022,9 +4025,6 @@
             "property": "satsu_iron_man_armor_arc_energy",
             "min": 1,
             "max": 2147483647
-          },
-          {
-            "type": "palladium:on_ground"
           },
           {
             "type": "palladium:ability_unlocked",
