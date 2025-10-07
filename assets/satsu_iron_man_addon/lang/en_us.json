@@ -199,6 +199,10 @@
   "item.satsu_iron_man_addon.upgrade_kit3": "Upgrade kit 3",
   "item.satsu_iron_man_addon.upgrade_kit4": "Upgrade kit 4",
   "item.satsu_iron_man_addon.black_suit": "Black bodysuit",
+  "item.satsu_iron_man_addon.additamens.prehnsyle_hammers": "Prehnsyle hammers",
+  "item.satsu_iron_man_addon.additamens.vibranium_blades": "Vibranium blades",
+  "item.satsu_iron_man_addon.additamens.red_beams": "Red energy beam cartridge",
+  "item.satsu_iron_man_addon.additamens.sonic_disruptor": "Sonic disruptor cartridge",
   "item.satsu_iron_man_addon.arc_reactor_portable": "Arc reactor portable",
   "block.satsu_iron_man_addon.armored_construct": "Armor placement block",
   "block.satsu_iron_man_addon.reactor_ark_recharge_on": "Arc energy block On",
@@ -1189,5 +1193,9 @@
   "effect.satsu_iron_man_addon.blind": "Blind",
   "effect.satsu_iron_man_addon.blooding": "Blooding",
   "effect.satsu_iron_man_addon.paralized": "Paralized",
-  "curios.identifier.arc_reactor": "Arc reactor"
+  "curios.identifier.arc_reactor": "Arc reactor",
+  "curios.identifier.main_addition_right": "Armor Addition (Right)",
+  "curios.identifier.main_addition_left": "Addition to armor (Left)",
+  "curios.identifier.secondary_addition_right": "Addition to secondary armor (Right)",
+  "curios.identifier.secondary_addition_left": "Addition to secondary armor (Left)"
 }

@@ -6532,14 +6532,14 @@
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:additamens/prehsnyle_hammers"
+                  "item": "satsu_iron_man_addon:additamens/prehnsyle_hammers"
                 },
                 "slot": "curios:main_addition_right"
               },
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:additamens/prehsnyle_hammers"
+                  "item": "satsu_iron_man_addon:additamens/prehnsyle_hammers"
                 },
                 "slot": "curios:main_addition_left"
               }
@@ -6639,14 +6639,14 @@
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:additamens/prehsnyle_hammers"
+                  "item": "satsu_iron_man_addon:additamens/prehnsyle_hammers"
                 },
                 "slot": "curios:main_addition_right"
               },
               {
                 "type": "palladium:item_in_slot",
                 "item": {
-                  "item": "satsu_iron_man_addon:additamens/prehsnyle_hammers"
+                  "item": "satsu_iron_man_addon:additamens/prehnsyle_hammers"
                 },
                 "slot": "curios:main_addition_left"
               }
