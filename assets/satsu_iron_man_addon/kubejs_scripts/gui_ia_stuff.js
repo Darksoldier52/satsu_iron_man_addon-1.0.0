@@ -21,7 +21,6 @@ function show_label(player, property_name, property_value){
   const text_property = Component.translate("satsu.iron.man.addon.text." + property_name)
   const value = palladium.getProperty(player, property_value);
   return Component.join("", text_property, value);
-
 }
 PalladiumEvents.registerGuiOverlays((event) => {
   event.register(
