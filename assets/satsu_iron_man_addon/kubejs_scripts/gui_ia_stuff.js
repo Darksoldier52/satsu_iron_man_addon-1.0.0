@@ -1,18 +1,8 @@
 // Event for registering HUDs
-function energy_label(player) {
-  const energy_text = Component.translate("satsu.iron.man.addon.text.energy_on_hud");
-  let energy_value = palladium.getProperty(player, "satsu_iron_man_armor_arc_energy");
-  return Component.join("", energy_text, energy_value);
-}
 function positions(player_position, position) {
   const pos_text = Component.translate("satsu.iron.man.addon.text." + position)
   player_position = Math.trunc(player_position)
   return Component.join("", pos_text, player_position);
-}
-function velocity_label(player) {
-  const velocity_text = Component.translate("satsu.iron.man.addon.text.velocity_on_hud");
-  const velocity_value = palladium.getProperty(player, "satsu_iron_man_flight_speed_choose");
-  return Component.join("", velocity_text, velocity_value);
 }
 function ia_color(player) {
   const color = palladium.getProperty(player, "satsu_iron_man_ia_color");
@@ -27,7 +17,12 @@ function armor_durability(player) {
   const durabilityLeft = maxDurability - currentDamage;
   return Component.join("",armor_text, maxDurability, slash, durabilityLeft);
 }
+function show_label(player, property_name, property_value){
+  const text_property = Component.translate("satsu.iron.man.addon.text." + property_name)
+  const value = palladium.getProperty(player, property_value);
+  return Component.join("", text_property, value);
 
+}
 PalladiumEvents.registerGuiOverlays((event) => {
   event.register(
     "satsu_iron_man_addon:Satsu_ark_energy_1",
@@ -42,7 +37,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
       ) {
         guiUtil.drawString(
           poseStack,
-          energy_label(player),
+          show_label(player, "energy_on_hud", "satsu_iron_man_armor_arc_energy"),
           50,
           30,
           ia_color(player)
@@ -65,7 +60,7 @@ PalladiumEvents.registerGuiOverlays((event) => {
       ) {
         guiUtil.drawString(
           poseStack,
-          velocity_label(player),
+          show_label(player, "velocity_on_hud", "satsu_iron_man_flight_speed_choose"),
           50,
           40,
           ia_color(player)
