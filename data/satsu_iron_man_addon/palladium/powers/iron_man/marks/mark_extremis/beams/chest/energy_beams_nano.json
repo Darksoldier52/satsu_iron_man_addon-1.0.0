@@ -20,15 +20,10 @@
           {
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:iron_man/marks/mark_extremis/main",
-            "ability": "energy_beam"
+            "ability": "energy_canonons"
           }
         ],
         "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.beams",
-            "min_score": 1
-          },
           {
             "type": "palladium:not",
             "conditions": [
@@ -56,15 +51,10 @@
           {
             "type": "palladium:ability_enabled",
             "power": "satsu_iron_man_addon:iron_man/marks/mark_extremis/main",
-            "ability": "energy_beam"
+            "ability": "energy_canonons"
           }
         ],
         "unlocking": [
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.beams",
-            "min_score": 2
-          },
           {
             "type": "palladium:not",
             "conditions": [

@@ -2515,6 +2515,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_katar.attack"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -2579,6 +2583,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "uni.beam.hand.left"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           }
@@ -2911,6 +2921,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "nano_flares_flames"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 14,
+                "max": 16
               }
             ]
           }
@@ -3041,6 +3057,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_flares_flames"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -3156,6 +3176,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_flares_flames"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -3320,6 +3344,10 @@
                     "type": "satsu_iron_man_addon:has_property",
                     "property": "satsu_iron_man_addon_repulser",
                     "property_value": "beam"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -3396,6 +3424,10 @@
                     "type": "satsu_iron_man_addon:has_property",
                     "property": "satsu_iron_man_addon_repulser",
                     "property_value": "beam"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -3655,6 +3687,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_katar.attack"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -3727,6 +3763,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_katar.attack"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -3937,6 +3977,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "uni.beam.hand.left"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           },
@@ -3973,6 +4019,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "uni.beam.hand.left"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           },
@@ -4004,6 +4056,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "uni.beam.hand.left"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           },
@@ -4034,6 +4092,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "uni.beam.hand.left"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           },
@@ -4070,6 +4134,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "uni.beam.hand.left"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           },
@@ -4101,6 +4171,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "uni.beam.hand.left"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           },
@@ -4464,8 +4540,6 @@
       "commands": [""],
       "last_tick_commands": [],
       "abilities": [
-        "increase_chest_beam",
-        "decrease_chest_beam",
         "waepons.choose_wheel_hulkbuster",
         "waepons.choose_wheel_rockets",
         "waepons.choose_wheel.maximum.pulse",
@@ -4473,6 +4547,7 @@
         "waepons.choose_wheel.nano_mallet",
         "waepons.choose_wheel.nano_sword",
         "waepons.choose_wheel.nano_katar",
+        "waepons.choose_wheel.energy_canonons",
         "waepons.choose_wheel.nano_hand_blade",
         "waepons.choose_wheel_stealth",
         "waepons.choose_wheel_hidden",
@@ -5577,20 +5652,16 @@
         ]
       }
     },
-    "increase_chest_beam": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_up.png",
-      "title": { "translate": "ability.title.satsu.beams.next" },
-      "description": { "translate": "description.armor_skill_bar" },
+    "waepons.choose_wheel.energy_canonons": {
+      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "title": { "translate": "ability.title.satsu.energy_canonns" },
+      "description": { "translate": "description.satsu.energy_canonns" },
       "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 21,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.prev.iron.man.anim 0",
-        "execute as @s[scores={satsu.iron.man.armor.energy.beams=0..1}] run scoreboard players add @s satsu.iron.man.armor.energy.beams 1"
-      ],
-      "commands": [""],
-      "last_tick_commands": [],
+      "hidden_in_bar": false,
+      "score": "satsu.iron.man.addon.nano.armor.things",
+      "adjustment_type": "set",
+      "adjustment_amount": 3,
       "conditions": {
         "enabling": [
           {
@@ -5600,14 +5671,8 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:ability_unlocked",
-            "ability": "armor"
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.beams",
-            "min_score": 0,
-            "max_score": 1
+            "type": "palladium:ability_enabled",
+            "ability": "waepons.choose"
           },
           {
             "type": "palladium:not",
@@ -5627,52 +5692,34 @@
         ]
       }
     },
-    "decrease_chest_beam": {
-      "type": "palladium:command",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/speed_down.png",
-      "title": { "translate": "ability.title.satsu.beams.prev" },
-      "description": { "translate": "description.armor_skill_bar" },
+    "energy_canonons": {
+      "type": "palladium:animation_timer",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
+      "title": { "translate": "ability.title.satsu.energy_canonns" },
+      "description": { "translate": "description.satsu.energy_canonns" },
       "hidden": true,
-      "hidden_in_bar": true,
-      "list_index": 22,
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.prev.iron.man.anim 0",
-        "scoreboard players set @s satsu.prev.iron.man.anim 0",
-        "execute as @s[scores={satsu.iron.man.armor.energy.beams=1..3}] run scoreboard players remove @s satsu.iron.man.armor.energy.beams 1"
-      ],
-      "commands": [""],
-      "last_tick_commands": [],
+      "hidden_in_bar": false,
+      "list_index": 11,
+      "start_value": 0,
+      "max_value": 16,
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_wheel",
+            "type": "palladium:activation",
+            "ticks": 120,
             "cooldown": 0
           }
         ],
         "unlocking": [
           {
             "type": "palladium:ability_unlocked",
-            "ability": "armor"
+            "ability": "waepons.choose"
           },
           {
             "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.beams",
-            "min_score": 1
-          },
-          {
-            "type": "palladium:not",
-            "conditions": [
-              {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:ability_enabled",
-                    "power": "satsu_iron_man_addon:iron_man/marks/model_prime/main",
-                    "ability": "hulkbuster"
-                  }
-                ]
-              }
-            ]
+            "objective": "satsu.iron.man.addon.nano.armor.things",
+            "min_score": 3,
+            "max_score": 3
           }
         ]
       }
@@ -5693,9 +5740,8 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.armor.energy.beams",
-                "min_score": 1
+                "type": "palladium:ability_enabled",
+                "ability": "energy_canonons"
               },
               {
                 "type": "palladium:ability_enabled",
@@ -7522,7 +7568,15 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
                     "ability": "nano_katar.attack"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -7617,7 +7671,15 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
                     "ability": "nano_katar.attack"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -7818,6 +7880,10 @@
                   {
                     "type": "palladium:ability_enabled",
                     "ability": "nano_katar.attack"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -8837,7 +8903,15 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
                     "ability": "nano_katar.attack"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -8917,7 +8991,15 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
                     "ability": "nano_katar.attack"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "energy_canonons"
                   }
                 ]
               }
@@ -9693,6 +9775,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "nano_flares_flames"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           }
@@ -9749,6 +9837,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "nano_health_spray_other"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           }
@@ -9816,6 +9910,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "hulkbuster_sonic_clap"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           }
@@ -9889,6 +9989,12 @@
               {
                 "type": "palladium:ability_enabled",
                 "ability": "maximun.pulse.animation"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
               }
             ]
           }
@@ -10329,15 +10435,10 @@
         "enabling": [
           {
             "type": "palladium:ability_integer_property",
-            "ability": "energy_beam",
+            "ability": "energy_canonons",
             "property": "value",
-            "min": 6,
-            "max": 6
-          },
-          {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.energy.beams",
-            "min_score": 1
+            "min": 16,
+            "max": 16
           }
         ],
         "unlocking": []

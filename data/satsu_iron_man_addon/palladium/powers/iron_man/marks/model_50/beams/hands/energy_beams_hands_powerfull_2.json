@@ -16,9 +16,21 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man/marks/model_50/main",
-            "ability": "uni.beam.hand.right"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:iron_man/marks/model_50/main",
+                "ability": "uni.beam.hand.right"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "satsu_iron_man_addon:iron_man/marks/model_50/main",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
+              }
+            ]
           }
         ],
         "unlocking": [
@@ -39,9 +51,21 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "power": "satsu_iron_man_addon:iron_man/marks/model_50/main",
-            "ability": "uni.beam.hand.left"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "satsu_iron_man_addon:iron_man/marks/mark_50/main",
+                "ability": "uni.beam.hand.left"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "power": "satsu_iron_man_addon:iron_man/marks/mark_50/main",
+                "ability": "energy_canonons",
+                "min": 16,
+                "max": 16
+              }
+            ]
           }
         ],
         "unlocking": [
