@@ -21,23 +21,23 @@ PalladiumEvents.registerAnimations((event) => {
         // if first person
         if (builder.isFirstPerson()) {
           builder
-            .get("left_arm")
-            .setXRotDegrees(0)
-            .setYRotDegrees(0)
-            .setZRotDegrees(0)
-            .animate("InOutCubic", progress);
-        }
-        if (builder.isFirstPerson()) {
-          builder
-            .get("right_arm")
-            .setXRotDegrees(-80)
-            .setYRotDegrees(0)
-            .setZRotDegrees(-100)
-            .animate("InOutCubic", progress);
+          .get("left_arm")
+          .setXRotDegrees(-50)
+          .setYRotDegrees(0)
+          .setZRotDegrees(100)
+          .animate("InOutCubic", progress);
+      }
+      if (builder.isFirstPerson()) {
+        builder
+          .get("right_arm")
+          .setXRotDegrees(0)
+          .setYRotDegrees(0)
+          .setZRotDegrees(0)
+          .animate("InOutCubic", progress);
         } else {
           // third person animations
           builder
-            .get("right_arm")
+            .get("left_arm")
             .setXRotDegrees(-150)
             .setYRotDegrees(0)
             .animate("InOutCubic", progress);
@@ -67,23 +67,23 @@ PalladiumEvents.registerAnimations((event) => {
         // if first person
         if (builder.isFirstPerson()) {
           builder
-            .get("left_arm")
-            .setXRotDegrees(0)
-            .setYRotDegrees(0)
-            .setZRotDegrees(0)
-            .animate("InOutCubic", progress);
-        }
-        if (builder.isFirstPerson()) {
-          builder
-            .get("right_arm")
-            .setXRotDegrees(-80)
-            .setYRotDegrees(0)
-            .setZRotDegrees(-100)
-            .animate("InOutCubic", progress);
+          .get("left_arm")
+          .setXRotDegrees(-50)
+          .setYRotDegrees(0)
+          .setZRotDegrees(100)
+          .animate("InOutCubic", progress);
+      }
+      if (builder.isFirstPerson()) {
+        builder
+          .get("right_arm")
+          .setXRotDegrees(0)
+          .setYRotDegrees(0)
+          .setZRotDegrees(0)
+          .animate("InOutCubic", progress);
         } else {
           // third person animations
           builder
-            .get("right_arm")
+            .get("left_arm")
             .setXRotDegrees(-90)
             .setYRotDegrees(-40)
             .moveY(1)
