@@ -6218,9 +6218,8 @@
                     "property_value": "beam"
                   },
                   {
-                    "type": "satsu_iron_man_addon:has_property",
-                    "property": "satsu_iron_man_addon_repulser",
-                    "property_value": "rocket"
+                    "type": "palladium:ability_enabled",
+                    "ability": "rocket"
                   }
                 ]
               }
@@ -6302,9 +6301,8 @@
                     "property_value": "beam"
                   },
                   {
-                    "type": "satsu_iron_man_addon:has_property",
-                    "property": "satsu_iron_man_addon_repulser",
-                    "property_value": "rocket"
+                    "type": "palladium:ability_enabled",
+                    "ability": "rocket"
                   }
                 ]
               }
