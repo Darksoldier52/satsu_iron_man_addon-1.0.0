@@ -7711,7 +7711,7 @@
           {
             "type": "palladium:activation",
             "ticks": 120,
-            "cooldown": 0
+            "cooldown": 240
           }
         ],
         "unlocking": [
