@@ -789,6 +789,8 @@
   "ability.title.satsu.shotgun": "Type of shot: Shotgun",  
   "ability.title.satsu.gantry": "Enable/Disable Gantry",  
   "ability.title.satsu.nano.drone": "Nano Drone",  
+  "ability.title.satsu.energy.boosters": "Nano attack boosters",   
+  "ability.title.satsu.change.time": "Modify time",  
   "satsu.iron.man.addon.personalizate.on": "Customize activated",
   "satsu.iron.man.addon.personalizate.off": "Customize deactivated",
   "satsu.iron.man.addon.failsafe.on": "Failsafe activated",

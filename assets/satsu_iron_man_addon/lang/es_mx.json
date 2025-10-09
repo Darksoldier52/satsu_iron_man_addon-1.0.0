@@ -791,6 +791,8 @@
   "ability.title.satsu.shotgun": "Tipo de disparo: Escopeta",  
   "ability.title.satsu.gantry": "Activar/Desactivar Gruá",   
   "ability.title.satsu.nano.drone": "Nano Dron",  
+  "ability.title.satsu.energy.boosters": "Nano potenciador de ataque",  
+  "ability.title.satsu.change.time": "Modificar tiempo",  
   "satsu.iron.man.addon.personalizate.on": "Personalizar activado",
   "satsu.iron.man.addon.personalizate.off": "Personalizar desactivado",
   "satsu.iron.man.addon.failsafe.on": "Seguro de vida activado",
