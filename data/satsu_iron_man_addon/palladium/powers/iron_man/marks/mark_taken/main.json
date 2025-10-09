@@ -1848,6 +1848,10 @@
                   },
                   {
                     "type": "palladium:ability_enabled",
+                    "ability": "rocket"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
                     "ability": "nano_grenade_launcher_right"
                   },
                   {
@@ -2827,9 +2831,19 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "satsu_iron_man_addon:has_property",
-                "property": "satsu_iron_man_addon_repulser",
-                "property_value": "beam"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_addon_repulser",
+                    "property_value": "beam"
+                  },
+                  {
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_addon_repulser",
+                    "property_value": "rocket"
+                  }
+                ]
               }
             ]
           },
@@ -2933,9 +2947,19 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "satsu_iron_man_addon:has_property",
-                "property": "satsu_iron_man_addon_repulser",
-                "property_value": "beam"
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_addon_repulser",
+                    "property_value": "beam"
+                  },
+                  {
+                    "type": "satsu_iron_man_addon:has_property",
+                    "property": "satsu_iron_man_addon_repulser",
+                    "property_value": "rocket"
+                  }
+                ]
               }
             ]
           },
