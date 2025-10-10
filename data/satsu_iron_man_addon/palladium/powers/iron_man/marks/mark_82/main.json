@@ -3637,6 +3637,18 @@
             "max_score": 1
           },
           {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "stealht_animation_timer",
+                "property": "value",
+                "min": 20,
+                "max": 20
+              }
+            ]
+          },
+          {
             "type": "palladium:or",
             "conditions": [
               {
@@ -3747,6 +3759,18 @@
         "enabling": [
           {
             "type": "palladium:is_hovering_or_flying"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "stealht_animation_timer",
+                "property": "value",
+                "min": 20,
+                "max": 20
+              }
+            ]
           },
           {
             "type": "palladium:not",
