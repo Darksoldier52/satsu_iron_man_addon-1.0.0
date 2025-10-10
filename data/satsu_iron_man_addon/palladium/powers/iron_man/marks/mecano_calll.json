@@ -27,9 +27,35 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:arc_reactor"
+                },
+                "slot": "curios:arc_reactor"
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "item": "satsu_iron_man_addon:arc_reactor_portable"
+                    },
+                    "slot": "curios:arc_reactor"
+                  },
+                  {
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "tag": "satsu_iron_man_addon:war_machine/armors"
+                    },
+                    "slot": "chest"
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "palladium:command_result",
@@ -84,9 +110,35 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:arc_reactor"
+                },
+                "slot": "curios:arc_reactor"
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "item": "satsu_iron_man_addon:arc_reactor_portable"
+                    },
+                    "slot": "curios:arc_reactor"
+                  },
+                  {
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "tag": "satsu_iron_man_addon:war_machine/armors"
+                    },
+                    "slot": "chest"
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "palladium:command_result",
@@ -131,9 +183,35 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:arc_reactor"
+                },
+                "slot": "curios:arc_reactor"
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "item": "satsu_iron_man_addon:arc_reactor_portable"
+                    },
+                    "slot": "curios:arc_reactor"
+                  },
+                  {
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "tag": "satsu_iron_man_addon:war_machine/armors"
+                    },
+                    "slot": "chest"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -234,9 +312,30 @@
             "type": "palladium:or",
             "conditions": [
               {
-                "type": "palladium:ability_unlocked",
-                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-                "ability": "armor_skill_bar"
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:arc_reactor"
+                },
+                "slot": "curios:arc_reactor"
+              },
+              {
+                "type": "palladium:and",
+                "conditions": [
+                  {
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "item": "satsu_iron_man_addon:arc_reactor_portable"
+                    },
+                    "slot": "curios:arc_reactor"
+                  },
+                  {
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "tag": "satsu_iron_man_addon:war_machine/armors"
+                    },
+                    "slot": "chest"
+                  }
+                ]
               }
             ]
           },

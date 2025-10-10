@@ -294,8 +294,23 @@
         "enabling": [],
         "unlocking": [
           {
-            "type": "palladium:has_power",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:arc_reactor"
+                },
+                "slot": "curios:arc_reactor"
+              },
+              {
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "item": "satsu_iron_man_addon:arc_reactor_portable"
+                },
+                "slot": "curios:arc_reactor"
+              }
+            ]
           },
           {
             "type": "satsu_iron_man_addon:dampened_by",
@@ -617,9 +632,19 @@
             "ability": "armor"
           },
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_activate_skil_tree_dummy"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate_skil_tree_dummy"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:reactor_arc_portable/main",
+                "ability": "armor_activate_skil_tree_dummy"
+              }
+            ]
           }
         ]
       }
@@ -692,9 +717,19 @@
             "ability": "armor"
           },
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_activate_skil_tree_dummy"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate_skil_tree_dummy"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:reactor_arc_portable/main",
+                "ability": "armor_activate_skil_tree_dummy"
+              }
+            ]
           }
         ]
       }
@@ -869,9 +904,19 @@
             "ability": "armor"
           },
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_activate_skil_tree_dummy"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate_skil_tree_dummy"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:reactor_arc_portable/main",
+                "ability": "armor_activate_skil_tree_dummy"
+              }
+            ]
           }
         ]
       }
@@ -932,9 +977,19 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_activate_skil_tree_dummy"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate_skil_tree_dummy"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:reactor_arc_portable/main",
+                "ability": "armor_activate_skil_tree_dummy"
+              }
+            ]
           }
         ]
       }
@@ -995,9 +1050,19 @@
         ],
         "unlocking": [
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_activate_skil_tree_dummy"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate_skil_tree_dummy"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:reactor_arc_portable/main",
+                "ability": "armor_activate_skil_tree_dummy"
+              }
+            ]
           }
         ]
       }
@@ -1056,9 +1121,19 @@
             "ability": "armor"
           },
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_activate_skil_tree_dummy"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate_skil_tree_dummy"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:reactor_arc_portable/main",
+                "ability": "armor_activate_skil_tree_dummy"
+              }
+            ]
           }
         ]
       }
@@ -1117,9 +1192,19 @@
             "ability": "armor"
           },
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_activate_skil_tree_dummy"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate_skil_tree_dummy"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:reactor_arc_portable/main",
+                "ability": "armor_activate_skil_tree_dummy"
+              }
+            ]
           }
         ]
       }
@@ -1178,9 +1263,19 @@
             "ability": "armor"
           },
           {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_activate_skil_tree_dummy"
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
+                "ability": "armor_activate_skil_tree_dummy"
+              },
+              {
+                "type": "palladium:ability_unlocked",
+                "power": "satsu_iron_man_addon:reactor_arc_portable/main",
+                "ability": "armor_activate_skil_tree_dummy"
+              }
+            ]
           }
         ]
       }
