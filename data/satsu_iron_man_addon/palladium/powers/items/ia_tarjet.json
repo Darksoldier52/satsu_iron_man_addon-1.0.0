@@ -96,6 +96,21 @@
         ]
       }
     },
+    "ia.1.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Jarvis",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.1"
+          }
+        ]
+      }
+    },
     "ia.2": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_2.png",
@@ -127,6 +142,21 @@
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:items/ia_tarjet",
             "ability": "skill_tree"
+          }
+        ]
+      }
+    },
+    "ia.2.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Pepper",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.2"
           }
         ]
       }
@@ -166,6 +196,21 @@
         ]
       }
     },
+    "ia.3.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Friday",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.3"
+          }
+        ]
+      }
+    },
     "ia.4": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_4.png",
@@ -197,6 +242,21 @@
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:items/ia_tarjet",
             "ability": "skill_tree"
+          }
+        ]
+      }
+    },
+    "ia.4.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Edith",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.4"
           }
         ]
       }
@@ -236,6 +296,21 @@
         ]
       }
     },
+    "ia.5.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Karen",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.5"
+          }
+        ]
+      }
+    },
     "ia.6": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_6.png",
@@ -267,6 +342,21 @@
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:items/ia_tarjet",
             "ability": "skill_tree"
+          }
+        ]
+      }
+    },
+    "ia.6.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Katie",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.6"
           }
         ]
       }
@@ -306,6 +396,21 @@
         ]
       }
     },
+    "ia.7.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Helen",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.7"
+          }
+        ]
+      }
+    },
     "ia.8": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_8.png",
@@ -337,6 +442,21 @@
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:items/ia_tarjet",
             "ability": "skill_tree"
+          }
+        ]
+      }
+    },
+    "ia.8.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Tadashi",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.8"
           }
         ]
       }
@@ -376,6 +496,21 @@
         ]
       }
     },
+    "ia.9.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "MotherBoard",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.9"
+          }
+        ]
+      }
+    },
     "ia.10": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_10.png",
@@ -407,6 +542,21 @@
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:items/ia_tarjet",
             "ability": "skill_tree"
+          }
+        ]
+      }
+    },
+    "ia.10.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Tony",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.10"
           }
         ]
       }
@@ -446,6 +596,21 @@
         ]
       }
     },
+    "ia.11.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Veronica",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.11"
+          }
+        ]
+      }
+    },
     "ia.12": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ia/ia_12.png",
@@ -477,6 +642,21 @@
             "type": "palladium:ability_unlocked",
             "power": "satsu_iron_man_addon:items/ia_tarjet",
             "ability": "skill_tree"
+          }
+        ]
+      }
+    },
+    "ia.12.name": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia_name",
+      "test_value": "Ultron",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "ia.12"
           }
         ]
       }

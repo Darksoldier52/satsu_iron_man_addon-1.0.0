@@ -38,8 +38,7 @@
             "needs_empty_hand": false
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "command": {
@@ -47,7 +46,8 @@
       "hidden": true,
       "hidden_in_bar": true,
       "commands": [
-        "function satsu_iron_man_addon:ia/tarjet_with_ia_give_score"
+        "function satsu_iron_man_addon:ia/tarjet_with_ia_give_score",
+        "function satsu_iron_man_addon:ia/tarjet_with_ia_give_power"
       ],
       "conditions": {
         "enabling": [],
