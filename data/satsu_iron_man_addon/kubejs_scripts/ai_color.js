@@ -18,8 +18,7 @@ ServerEvents.commandRegistry((event) => {
             // Send confirmation message
             palladium.setProperty(player, "satsu_iron_man_ia_color", hud_value);
             palladium.setProperty(player, "satsu_iron_man_ia_color_background", background_value);
-
-            return hud_value;
+            return parseInt(hud_value, 16);
           }
         )
       )
