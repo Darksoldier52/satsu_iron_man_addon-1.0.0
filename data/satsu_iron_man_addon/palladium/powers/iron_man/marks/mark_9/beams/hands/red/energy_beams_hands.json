@@ -64,12 +64,13 @@
       "hidden": true,
       "hidden_in_bar": false,
       "energy_beam": "satsu_iron_man_addon:uni_beams_hand/red_mini/uni_beam_hand",
-      "damage": 10,
+      "damage_type": "null",
+      "damage": 0,
       "max_distance": 20,
       "speed": 0.8,
-      "set_on_fire_seconds": 1,
       "cause_fire": false,
       "smelt_blocks": false,
+      "set_on_fire_seconds": 0,
       "conditions": {
         "enabling": [
           {
@@ -86,12 +87,13 @@
       "hidden": true,
       "hidden_in_bar": false,
       "energy_beam": "satsu_iron_man_addon:uni_beams_hand/red_mini/uni_beam_hand_left",
-      "damage": 10,
+      "damage_type": "null",
+      "damage": 0,
       "max_distance": 20,
       "speed": 0.8,
-      "set_on_fire_seconds": 1,
       "cause_fire": false,
       "smelt_blocks": false,
+      "set_on_fire_seconds": 0,
       "conditions": {
         "enabling": [
           {
