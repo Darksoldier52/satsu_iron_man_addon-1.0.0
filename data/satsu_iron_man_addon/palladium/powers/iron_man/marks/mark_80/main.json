@@ -1930,18 +1930,23 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "right_arm_animation",
-            "property": "value",
-            "min": 1,
-            "max": 17
-          },
-          {
-            "type": "palladium:ability_integer_property",
-            "ability": "right_shoulder_animation",
-            "property": "value",
-            "min": 1,
-            "max": 17
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_arm_animation",
+                "property": "value",
+                "min": 1,
+                "max": 17
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "right_shoulder_animation",
+                "property": "value",
+                "min": 1,
+                "max": 17
+              }
+            ]
           }
         ]
       }
@@ -1955,18 +1960,23 @@
       "conditions": {
         "unlocking": [
           {
-            "type": "palladium:ability_integer_property",
-            "ability": "left_arm_animation",
-            "property": "value",
-            "min": 1,
-            "max": 17
-          },
-          {
-            "type": "palladium:ability_integer_property",
-            "ability": "left_shoulder_animation",
-            "property": "value",
-            "min": 1,
-            "max": 17
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_arm_animation",
+                "property": "value",
+                "min": 1,
+                "max": 17
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "left_shoulder_animation",
+                "property": "value",
+                "min": 1,
+                "max": 17
+              }
+            ]
           }
         ]
       }
