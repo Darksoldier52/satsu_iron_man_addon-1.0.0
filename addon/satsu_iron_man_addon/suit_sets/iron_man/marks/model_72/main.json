@@ -1,0 +1,7 @@
+{
+  "tooltip": ["Mark 72"],
+  "armor_material": "satsu_iron_man_addon:iron_man/marks/model_72/main",
+  "chest": {
+    "item_name": "marks/model_72/bracelet"
+  }
+}
