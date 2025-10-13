@@ -10892,6 +10892,135 @@
         ]
       }
     },
+    "nano_increase_size": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/abilities/nano_health_spray_other.png",
+      "title": { "translate": "ability.title.satsu.nano.health.spray" },
+      "description": { "translate": "description.satsu.nano.health.spray" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 15,
+      "first_tick_commands": [
+        "scale add pehkui:height 2",
+        "scale add pehkui:width 2",
+        "scale add pehkui:motion 2"
+      ],
+      "commands": [""],
+      "last_tick_commands": [
+        "scale subtract pehkui:height 2",
+        "scale subtract pehkui:width 2",
+        "scale reset pehkui:motion"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "right_arm_animation",
+            "property": "value",
+            "min": 17,
+            "max": 17
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "nano_decrease_size": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/abilities/nano_health_spray_other.png",
+      "title": { "translate": "ability.title.satsu.nano.health.spray" },
+      "description": { "translate": "description.satsu.nano.health.spray" },
+      "hidden": true,
+      "hidden_in_bar": false,
+      "list_index": 16,
+      "first_tick_commands": [
+        "scale subtract pehkui:height 0.8",
+        "scale subtract pehkui:width 0.8"
+      ],
+      "commands": [""],
+      "last_tick_commands": [
+        "scale add pehkui:height 0.8",
+        "scale add pehkui:width 0.8",
+        "scale reset pehkui:motion"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "right_arm_animation",
+            "property": "value",
+            "min": 17,
+            "max": 17
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "waepons.choose"
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  },
+                  {
+                    "type": "palladium:has_power",
+                    "power": "satsu_iron_man_addon:extremis/main"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
     "nano_health_spray.healing.ray": {
       "type": "satsu_iron_man_addon:entity_damage",
       "hidden": true,
