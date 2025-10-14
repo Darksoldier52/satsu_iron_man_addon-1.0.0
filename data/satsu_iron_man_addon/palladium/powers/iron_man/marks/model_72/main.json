@@ -4758,6 +4758,24 @@
         "unlocking": []
       }
     },
+    "electro_magnetic_shield.shader_effect": {
+      "type": "palladium:shader_effect",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "shader": "satsu_iron_man_addon:shaders/post/rose_purple.json",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "electro_magnetic_shield.shield",
+            "property": "value",
+            "min": 7,
+            "max": 7
+          }
+        ],
+        "unlocking": []
+      }
+    },
     "remove_ark_energy.electro_magnetic_shield": {
       "type": "satsu_iron_man_addon:palladium_property_modifier",
       "hidden": true,
