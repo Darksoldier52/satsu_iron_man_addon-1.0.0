@@ -3,52 +3,72 @@
   "layers": [
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/nonano_armor/marks/full_body_without_mask_front/main.geo.json",
+      "model": "satsu_iron_man_addon:geo/nonano_armor/marks/separado_body_without_mask_front/right_arm.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_720_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
-            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit_ensanble/transformation_#TIMER.png"
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/bones_ensamble/right_arm/#RIGHT_ARM.png"
           }
         ],
         "variables": {
-          "TIMER": {
+          "RIGHT_ARM": {
             "type": "palladium:ability_integer_property",
             "power": "satsu_iron_man_addon:iron_man/marks/model_72/main",
-            "ability": "no_nanoarmor_anim",
+            "ability": "right_arm_animation",
             "property": "value",
             "min": 0,
-            "max": 16
+            "max": 18
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_suit_720_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_right_arm/iron_man_suit_720_0_#RIGHT_ARM"
       },
+      "animation_file": "satsu_iron_man_addon:animations/call_right_arm.geo.json",
+      "animation_controller": [
+        {
+          "name": "call.part.control",
+          "transition_tick_time": 10,
+          "triggers": {
+            "call.part": "animation.minecraft:call.right.arm"
+          }
+        }
+      ],
       "conditions": []
     },
     {
       "type": "geckolib:default",
-      "model": "satsu_iron_man_addon:geo/nonano_armor/marks/full_body_without_mask_front/main.geo.json",
+      "model": "satsu_iron_man_addon:geo/nonano_armor/marks/separado_body_without_mask_front/right_arm.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_lights/iron_man_suit_lights_720_0.png",
         "transformers": [
           {
             "type": "palladium:alpha_mask",
-            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit_ensanble/transformation_#TIMER.png"
+            "mask": "satsu_iron_man_addon:textures/models/alpha_masks/bones_ensamble/right_arm/#RIGHT_ARM.png"
           }
         ],
         "variables": {
-          "TIMER": {
+          "RIGHT_ARM": {
             "type": "palladium:ability_integer_property",
             "power": "satsu_iron_man_addon:iron_man/marks/model_72/main",
-            "ability": "no_nanoarmor_anim",
+            "ability": "right_arm_animation",
             "property": "value",
             "min": 0,
-            "max": 16
+            "max": 18
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_lights_720_0_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man_right_arm/iron_man_suit_lights_720_0_#RIGHT_ARM"
       },
+      "animation_file": "satsu_iron_man_addon:animations/call_right_arm.geo.json",
+      "animation_controller": [
+        {
+          "name": "call.part.control",
+          "transition_tick_time": 10,
+          "triggers": {
+            "call.part": "animation.minecraft:call.right.arm"
+          }
+        }
+      ],
       "render_type": "glow",
       "conditions": [
         {
