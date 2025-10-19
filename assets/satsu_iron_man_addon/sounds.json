@@ -192,5 +192,8 @@
   },
   "entity.effect.dampened_sonic": {
     "sounds": ["satsu_iron_man_addon:effects/dampened_sonic/sonic_extended"]
+  },
+  "entity.armor.mark.shrink_ability": {
+    "sounds": ["satsu_iron_man_addon:nanotech/shrink"]
   }
 }

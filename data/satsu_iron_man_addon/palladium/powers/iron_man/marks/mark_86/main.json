@@ -11208,6 +11208,41 @@
         ]
       }
     },
+    "shrink_ability.sound": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "sound": "satsu_iron_man_addon:entity.armor.mark.shrink_ability",
+      "volume": 0.5,
+      "pitch": 1,
+      "looping": false,
+      "play_self": true,
+      "conditions": {
+        "enabling": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "nano_increase_size"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "nano_increase_size_bigger"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "nano_decrease_size"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "nano_decrease_size_small"
+          }
+                ]
+              }
+        ]
+      }
+    },
     "nano_health_spray.healing.ray": {
       "type": "satsu_iron_man_addon:entity_damage",
       "hidden": true,

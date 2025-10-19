@@ -130,3 +130,7 @@ StartupEvents.registry("sound_event", (event) => {
 StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:entity.effect.dampened_sonic");
 });
+
+StartupEvents.registry("sound_event", (event) => {
+  event.create("satsu_iron_man_addon:entity.armor.mark.shrink_ability");
+});
