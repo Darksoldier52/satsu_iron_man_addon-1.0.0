@@ -1,8 +1,7 @@
 // Register custom animations
 PalladiumEvents.registerAnimations((event) => {
-  event.registerForPower(
+  event.register(
     "satsu_iron_man_addon/marks/mark_25/ground.attack.for.mark.with.hammer",
-        "satsu_iron_man_addon:iron_man/marks/mark_25/main",
     10,
     (builder) => {
       // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0
@@ -88,9 +87,8 @@ PalladiumEvents.registerAnimations((event) => {
       }
     }
   );
-  event.registerForPower(
+  event.register(
     "satsu_iron_man_addon/marks/mark_25/ground.attack.for.mark.with.hammer.2",
-        "satsu_iron_man_addon:iron_man/marks/mark_25/main",
     10,
     (builder) => {
       // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0

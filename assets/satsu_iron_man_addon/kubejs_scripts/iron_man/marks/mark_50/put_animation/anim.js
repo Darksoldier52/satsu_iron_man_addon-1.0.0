@@ -1,8 +1,7 @@
 // Register custom animations
 PalladiumEvents.registerAnimations((event) => {
-  event.registerForPower(
+  event.register(
     "satsu_iron_man_addon/colocacion_de_armadura.7.mark_50.part.1",
-        "satsu_iron_man_addon:iron_man/marks/mark_50/main",
     10,
     (builder) => {
       // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0
@@ -52,9 +51,8 @@ PalladiumEvents.registerAnimations((event) => {
       }
     }
   );
-  event.registerForPower(
+  event.register(
     "satsu_iron_man_addon/colocacion_de_armadura.7.mark_50.part.2",
-        "satsu_iron_man_addon:iron_man/marks/mark_50/main",
     10,
     (builder) => {
       // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0

@@ -1,7 +1,6 @@
 // Register custom animations
 PalladiumEvents.registerAnimations((event) => {
-  event.registerForPower("satsu_iron_man_addon/igor_grab",
-      "satsu_iron_man_addon:iron_man/marks/mark_38/main", 10, (builder) => {
+  event.register("satsu_iron_man_addon/igor_grab", 10, (builder) => {
     // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0
     const progress = animationUtil.getAnimationTimerAbilityValue(
       builder.getPlayer(),
@@ -54,8 +53,7 @@ PalladiumEvents.registerAnimations((event) => {
       }
     }
   });
-  event.registerForPower("satsu_iron_man_addon/igor_crush",
-      "satsu_iron_man_addon:iron_man/marks/mark_38/main", 10, (builder) => {
+  event.register("satsu_iron_man_addon/igor_crush", 10, (builder) => {
     // Gets the current animation timer progress from the ability, returned value is a number from 0.0 to 1.0
     const progress = animationUtil.getAnimationTimerAbilityValue(
       builder.getPlayer(),
