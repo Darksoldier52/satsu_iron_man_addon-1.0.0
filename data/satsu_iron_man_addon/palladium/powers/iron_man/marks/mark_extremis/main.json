@@ -4637,15 +4637,14 @@
       }
     },
     "waepons.choose_wheel.force_field": {
-      "type": "satsu_iron_man_addon:scoreboard_ability",
+      "type": "satsu_iron_man_addon:set_property_string",
       "icon": "satsu_iron_man_addon:textures/gui/armors/ark_force_field.png",
       "title": { "translate": "ability.title.satsu.force.field" },
       "description": { "translate": "description.force_field" },
       "hidden": true,
       "hidden_in_bar": false,
-      "score": "satsu.iron.man.addon.nano.armor.things",
-      "adjustment_type": "set",
-      "adjustment_amount": 4,
+      "name": "satsu_iron_man_nano_weapons_second",
+      "test_value": "shield",
       "conditions": {
         "enabling": [
           {
@@ -6276,7 +6275,7 @@
       "description": { "translate": "description.force_field" },
       "hidden": true,
       "hidden_in_bar": false,
-      "list_index": 11,
+      "list_index": 13,
       "gui_position": [-5, -0],
       "conditions": {
         "enabling": [
@@ -6297,10 +6296,9 @@
             "ability": "waepons.choose"
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.addon.nano.armor.things",
-            "min_score": 4,
-            "max_score": 4
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_iron_man_nano_weapons_second",
+            "property_value": "shield"
           },
           {
             "type": "palladium:not",
@@ -6898,7 +6896,6 @@
       "description": { "translate": "description.satsu.nano_rial" },
       "hidden": true,
       "hidden_in_bar": true,
-      "list_index": 13,
       "gui_position": [-7, -0.5],
       "start_value": 0,
       "max_value": 8,
