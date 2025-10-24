@@ -7639,8 +7639,13 @@
     },
     "weapons_wheel.fire_aspect": {
       "type": "satsu_iron_man_addon:set_property",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/placeholder.png",
-      "entity_type": "palladium:custom_projectile",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/extremis/strength.png",
+          "satsu_iron_man_addon:textures/gui/extremis/flame.png"
+        ]
+      },
       "title": { "translate": "ability.title.satsu.fire.aspect" },
       "description": { "translate": "description.satsu.fire.aspect" },
       "hidden": true,
@@ -7721,7 +7726,6 @@
           "satsu_iron_man_addon:textures/gui/extremis/flame.png"
         ]
       },
-      "entity_type": "palladium:custom_projectile",
       "title": { "translate": "ability.title.satsu.fire.aspect" },
       "description": { "translate": "description.satsu.fire.aspect" },
       "hidden": true,
