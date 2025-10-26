@@ -21,6 +21,12 @@
             "effect": "satsu_iron_man_addon:emp"
           },
           {
+            "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
+            "powers": ["satsu_iron_man_addon:extremis/main"],
+            "namespaces": ["fsang", "fsang_hero"],
+            "ignore_powers": ["fsang:space_power"]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -43,10 +49,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "sentinel_one"
-                  },
-                  {
-                    "type": "palladium:has_power",
-                    "power": "satsu_iron_man_addon:extremis/main"
                   }
                 ]
               }
