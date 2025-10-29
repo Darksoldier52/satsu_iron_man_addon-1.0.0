@@ -7522,8 +7522,7 @@
             "cooldown": 0
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "waepons.choose_wheel.nano_sword": {
@@ -7540,8 +7539,7 @@
             "cooldown": 0
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "nano_sword.set.0": {
@@ -7628,8 +7626,7 @@
             "cooldown": 0
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "waepons.choose_wheel.nano_katar": {
@@ -7646,8 +7643,7 @@
             "cooldown": 0
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "nano_katar.set.0": {
@@ -7732,8 +7728,7 @@
             "cooldown": 0
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "nano_hand_blade.set.0": {
@@ -7909,8 +7904,7 @@
             "cooldown": 0
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "nano_mallet.set.0": {
@@ -8083,8 +8077,7 @@
             "cooldown": 0
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "waepons.choose_wheel_nano_flares_flames": {
@@ -8103,8 +8096,7 @@
             "cooldown": 0
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "waepons.choose_wheel_nano_energy_boosters": {
@@ -8124,8 +8116,7 @@
             "cooldown": 0
           }
         ],
-        "unlocking": [
-        ]
+        "unlocking": []
       }
     },
     "waepons.choose_wheel.grab_cannon": {
@@ -13254,6 +13245,141 @@
             "property": "satsu_iron_man_nano_counts",
             "min": 20001,
             "max": 2147483647
+          }
+        ]
+      }
+    },
+    "recharge.satsu_iron_man_nano_counts.timer": {
+      "type": "palladium:repeating_animation_timer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "start_value": 0,
+      "max_value": 20,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:integer_property",
+            "property": "satsu_iron_man_nano_counts",
+            "min": 1,
+            "max": 2147483647
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.armor.actived",
+            "min_score": 1,
+            "max_score": 1
+          }
+        ]
+      }
+    },
+    "recharge.satsu_iron_man_nano_counts": {
+      "type": "satsu_iron_man_addon:palladium_property_modifier",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "property_name": "satsu_iron_man_nano_counts",
+      "adjustment_type": "add",
+      "adjustment_amount": 50,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "recharge.satsu_iron_man_nano_counts.timer",
+            "property": "value",
+            "min": 20,
+            "max": 20
+          },
+          {
+            "type": "palladium:not",
+            "conditions":[
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "propulsor_anim",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "flight_anim",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "nano_sword",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "nano_katar",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "nano_hand_blade",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "nano_rial",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "nano_grenade_launcher_anim",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "rocket",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "grab_cannon_anim",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "nano_mallet",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "nano_fireworks",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "nano_flares_flames",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "nano_energy_boosters",
+                "min": "1",
+                "max": "200"
+              },
+              {
+                "type": "palladium:ability_integer_property",
+                "ability": "nano_stabilizer",
+                "min": "1",
+                "max": "200"
+              }
+            ]
+          }]
           }
         ]
       }
