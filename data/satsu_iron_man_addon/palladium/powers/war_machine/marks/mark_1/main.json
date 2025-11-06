@@ -4022,10 +4022,6 @@
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
         "Appearances": [
-          {
-            "Type": "renderLayer",
-            "RenderLayer": "satsu_iron_man_addon:bullet"
-          }
         ]
       },
       "conditions": {
@@ -4063,10 +4059,6 @@
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
         "Appearances": [
-          {
-            "Type": "renderLayer",
-            "RenderLayer": "satsu_iron_man_addon:bullet"
-          }
         ]
       },
       "conditions": {
@@ -4078,6 +4070,42 @@
             "max": 10
           }
         ]
+      }
+    },
+    "mini_gunprojectile.right.particle": {
+      "type": "palladium:particles",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "emitter": ["satsu_iron_man_addon:war_machine/right_hand"],
+      "particle_type": "satsu_iron_man_addon:bullet",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:animation_timer_ability",
+            "ability": "mini.gun.right",
+            "min": 10,
+            "max": 10
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "mini_gunprojectile.left.particle": {
+      "type": "palladium:particles",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "emitter": ["satsu_iron_man_addon:war_machine/left_hand"],
+      "particle_type": "satsu_iron_man_addon:bullet",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:animation_timer_ability",
+            "ability": "mini.gun.left",
+            "min": 10,
+            "max": 10
+          }
+        ],
+        "unlocking": []
       }
     },
     "torruet.projectile": {
@@ -4104,10 +4132,6 @@
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
         "Appearances": [
-          {
-            "Type": "renderLayer",
-            "RenderLayer": "satsu_iron_man_addon:bullet"
-          }
         ]
       },
       "conditions": {
@@ -4159,6 +4183,22 @@
             "property_value": "on"
           }
         ]
+      }
+    },
+    "torruet.projectile.particle": {
+      "type": "palladium:particles",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "emitter": ["satsu_iron_man_addon:war_machine/main"],
+      "particle_type": "satsu_iron_man_addon:bullet",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "torruet.projectile"
+          }
+        ],
+        "unlocking": []
       }
     },
     "torruet.projectile.remove.ark.energy": {
@@ -4247,10 +4287,6 @@
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
         "Appearances": [
-          {
-            "Type": "renderLayer",
-            "RenderLayer": "satsu_iron_man_addon:bullet"
-          }
         ]
       },
       "conditions": {
@@ -4288,10 +4324,6 @@
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
         "Appearances": [
-          {
-            "Type": "renderLayer",
-            "RenderLayer": "satsu_iron_man_addon:bullet"
-          }
         ]
       },
       "conditions": {
@@ -4402,10 +4434,6 @@
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/grenade_launcher",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/grenade_launcher",
         "Appearances": [
-          {
-            "Type": "renderLayer",
-            "RenderLayer": "satsu_iron_man_addon:bullet"
-          }
         ]
       },
       "conditions": {
@@ -4443,10 +4471,6 @@
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/grenade_launcher",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/grenade_launcher",
         "Appearances": [
-          {
-            "Type": "renderLayer",
-            "RenderLayer": "satsu_iron_man_addon:bullet"
-          }
         ]
       },
       "conditions": {
