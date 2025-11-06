@@ -8,7 +8,7 @@
       "hidden_in_bar": true,
       "attribute": "palladium:flight_speed",
       "uuid": "2235cd83-0187-4ac9-9059-9d09e9499306",
-      "amount": -0.7,
+      "amount": -0.35,
       "operation": 0,
       "gui_position": [1, 0.5],
       "conditions": {
