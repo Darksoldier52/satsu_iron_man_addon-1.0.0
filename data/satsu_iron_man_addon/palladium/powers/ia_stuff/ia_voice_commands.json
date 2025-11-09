@@ -2499,6 +2499,188 @@
         ]
       }
     },
+    "increase.pickaxe_velocity": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia.pickaxe_velocity",
+      "test_value": "normal",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:chat_action",
+            "chat_message": "increase mine speed",
+            "cooldown": 20
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_iron_man_ia.pickaxe_velocity",
+            "property_value": "low"
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.1"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.2"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.3"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.4"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.5"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.6"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.7"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.8"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.9"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.10"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.11"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.12"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.13"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "decrease.pickaxe_velocity": {
+      "type": "satsu_iron_man_addon:set_property_string",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "name": "satsu_iron_man_ia.pickaxe_velocity",
+      "test_value": "low",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:chat_action",
+            "chat_message": "decrease mine speed",
+            "cooldown": 20
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_iron_man_ia.pickaxe_velocity",
+            "property_value": "normal"
+          },
+          {
+            "type": "palladium:and",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.1"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.2"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.3"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.4"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.5"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.6"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.7"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.8"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.9"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.10"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.11"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.12"
+                  },
+                  {
+                    "type": "palladium:ability_enabled",
+                    "ability": "ia.13"
+                  }
+                ]
+              },
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
     "ia.1": {
       "type": "palladium:dummy",
       "icon": "#satsu_iron_man_addon:ia_icon",
