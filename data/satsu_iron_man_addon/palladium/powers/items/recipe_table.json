@@ -37,11 +37,6 @@
       "commands": [""],
       "conditions": {
         "unlocking": [
-          {
-            "type": "palladium:ability_unlocked",
-            "power": "satsu_iron_man_addon:armor_principal/iron_man_armor",
-            "ability": "armor_skill_bar_skill_tree"
-          }
         ]
       }
     },
