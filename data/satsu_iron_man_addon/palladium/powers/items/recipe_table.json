@@ -49,10 +49,8 @@
       "hidden_in_bar": true,
       "gui_position": [0, 1.5],
       "commands": [
-        "give @s satsu_iron_man_addon:recipes/mark_1/chest",
-        "give @s satsu_iron_man_addon:recipes/mark_1/feet",
-        "give @s satsu_iron_man_addon:recipes/mark_1/head",
-        "give @s satsu_iron_man_addon:recipes/mark_1/legs",
+        "give @s satsu_iron_man_addon:recipes/mark_1/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_1/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.13.Mk1.recipe_give"
       ],
       "conditions": {
@@ -105,10 +103,8 @@
       "hidden_in_bar": true,
       "gui_position": [1, 1.5],
       "commands": [
-        "give @s satsu_iron_man_addon:recipes/mark_2/chest",
-        "give @s satsu_iron_man_addon:recipes/mark_2/feet",
-        "give @s satsu_iron_man_addon:recipes/mark_2/head",
-        "give @s satsu_iron_man_addon:recipes/mark_2/legs",
+        "give @s satsu_iron_man_addon:recipes/mark_2/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_2/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.14.Mk2.recipe_give"
       ],
       "conditions": {
@@ -161,10 +157,8 @@
       "hidden_in_bar": true,
       "gui_position": [2, 1.5],
       "commands": [
-        "give @s satsu_iron_man_addon:recipes/mark_3/chest",
-        "give @s satsu_iron_man_addon:recipes/mark_3/feet",
-        "give @s satsu_iron_man_addon:recipes/mark_3/head",
-        "give @s satsu_iron_man_addon:recipes/mark_3/legs",
+        "give @s satsu_iron_man_addon:recipes/mark_3/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_3/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.22.Mk3.recipe_give"
       ],
       "conditions": {
@@ -213,6 +207,7 @@
       "gui_position": [3, 1.5],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_4/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_4/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.Mk4.recipe_give"
       ],
       "conditions": {
@@ -265,6 +260,7 @@
       "gui_position": [4, 1.5],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_5/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_5/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.17.mk5.recipe_give"
       ],
       "conditions": {
@@ -317,6 +313,7 @@
       "gui_position": [4, 3],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_6/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_6/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.3.mk6.recipe_give"
       ],
       "conditions": {
@@ -366,6 +363,7 @@
       "gui_position": [3, 3],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_7/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_7/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.3.mk7.recipe_give"
       ],
       "conditions": {
@@ -415,6 +413,7 @@
       "gui_position": [2, 3],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_8/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_8/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.24.mk8.recipe_give"
       ],
       "conditions": {
@@ -464,6 +463,7 @@
       "gui_position": [1, 3],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_9/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_9/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.25.mk9.recipe_give"
       ],
       "conditions": {
@@ -513,6 +513,7 @@
       "gui_position": [0, 3],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_10/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_10/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.26.mk10.recipe_give"
       ],
       "conditions": {
@@ -565,6 +566,7 @@
       "gui_position": [0, 4.2],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_11/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_11/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.27.mk11.recipe_give"
       ],
       "conditions": {
@@ -617,6 +619,7 @@
       "gui_position": [1, 4.2],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_12/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_12/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.28.mk12.recipe_give"
       ],
       "conditions": {
@@ -669,6 +672,7 @@
       "gui_position": [2, 4.2],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_13/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_13/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.29.mk13.recipe_give"
       ],
       "conditions": {
@@ -721,6 +725,7 @@
       "gui_position": [3, 4.2],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_14/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_14/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.30.mk14.recipe_give"
       ],
       "conditions": {
@@ -773,6 +778,7 @@
       "gui_position": [4, 4.2],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_15/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_15/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.31.mk15.recipe_give"
       ],
       "conditions": {
@@ -825,6 +831,7 @@
       "gui_position": [4, 5.8],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_16/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_16/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.6.MKStealh_Armor.recipe_give"
       ],
       "conditions": {
@@ -877,6 +884,7 @@
       "gui_position": [3, 5.8],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_17/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_17/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.32.mk17.recipe_give"
       ],
       "conditions": {
@@ -929,6 +937,7 @@
       "gui_position": [2, 6],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_18/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_18/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.33.mk18.recipe_give"
       ],
       "conditions": {
@@ -981,6 +990,7 @@
       "gui_position": [1, 5.8],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_19/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_19/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.5.mk.19.tiger.recipe_give"
       ],
       "conditions": {
@@ -1033,6 +1043,7 @@
       "gui_position": [0, 5.8],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_20/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_20/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.34.mk20.recipe_give"
       ],
       "conditions": {
@@ -1086,6 +1097,7 @@
       "gui_position": [0, 7],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_21/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_21/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.8.MKMidas.recipe_give"
       ],
       "conditions": {
@@ -1138,6 +1150,7 @@
       "gui_position": [1, 7],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_22/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_22/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.35.mk22.recipe_give"
       ],
       "conditions": {
@@ -1190,6 +1203,7 @@
       "gui_position": [2, 7],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_23/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_23/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.36.mk23.recipe_give"
       ],
       "conditions": {
@@ -1242,6 +1256,7 @@
       "gui_position": [3, 7],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_24/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_24/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.37.mk24.recipe_give"
       ],
       "conditions": {
@@ -1294,6 +1309,7 @@
       "gui_position": [4, 7],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_25/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_25/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.23.mk25.recipe_give"
       ],
       "conditions": {
@@ -1346,6 +1362,7 @@
       "gui_position": [4, 8.65],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_26/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_26/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.38.mk26.recipe_give"
       ],
       "conditions": {
@@ -1398,6 +1415,7 @@
       "gui_position": [3, 8.65],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_27/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_27/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.39.mk27.recipe_give"
       ],
       "conditions": {
@@ -1450,6 +1468,7 @@
       "gui_position": [2, 8.65],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_28/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_28/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.40.mk28.recipe_give"
       ],
       "conditions": {
@@ -1502,6 +1521,7 @@
       "gui_position": [1, 8.65],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_29/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_29/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.41.mk29.recipe_give"
       ],
       "conditions": {
@@ -1554,6 +1574,7 @@
       "gui_position": [0, 8.65],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_30/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_30/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.42.mk30.recipe_give"
       ],
       "conditions": {
@@ -1607,6 +1628,7 @@
       "gui_position": [0, 10],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_31/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_31/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.43.mk31.recipe_give"
       ],
       "conditions": {
@@ -1659,6 +1681,7 @@
       "gui_position": [1, 10],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_32/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_32/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.44.mk32.recipe_give"
       ],
       "conditions": {
@@ -1711,6 +1734,7 @@
       "gui_position": [2, 10],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_33/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_33/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.45.mk33.recipe_give"
       ],
       "conditions": {
@@ -1763,6 +1787,7 @@
       "gui_position": [3, 10],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_34/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_34/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.46.mk34.recipe_give"
       ],
       "conditions": {
@@ -1815,6 +1840,7 @@
       "gui_position": [4, 10],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_35/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_35/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.47.mk35.recipe_give"
       ],
       "conditions": {
@@ -1867,6 +1893,7 @@
       "gui_position": [4, 11.5],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_36/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_36/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.48.mk36.recipe_give"
       ],
       "conditions": {
@@ -1919,6 +1946,7 @@
       "gui_position": [3, 11.5],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_37/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_37/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.49.mk37.recipe_give"
       ],
       "conditions": {
@@ -1971,6 +1999,7 @@
       "gui_position": [2, 11.5],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_38/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_38/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.50.mk38.recipe_give"
       ],
       "conditions": {
@@ -2023,6 +2052,7 @@
       "gui_position": [1, 11.5],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_39/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_39/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.2.MK39.recipe_give"
       ],
       "conditions": {
@@ -2075,6 +2105,7 @@
       "gui_position": [0, 11.5],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_40/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_40/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.9.MK40.recipe_give"
       ],
       "conditions": {
@@ -2123,6 +2154,7 @@
       "gui_position": [0, 13],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_41/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_41/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.armor.mark.41.recipe_give"
       ],
       "conditions": {
@@ -2171,6 +2203,7 @@
       "gui_position": [1, 13],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_42/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_42/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.armor.mark.42.recipe_give"
       ],
       "conditions": {
@@ -2219,6 +2252,7 @@
       "gui_position": [2, 13],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_42-b/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_42-b/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.armor.mark.42-b.recipe_give"
       ],
       "conditions": {
@@ -2267,6 +2301,7 @@
       "gui_position": [3, 13],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_43/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_43/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.armor.mark.43.recipe_give"
       ],
       "conditions": {
@@ -2319,6 +2354,7 @@
       "gui_position": [4, 13],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_45/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_45/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.19.mk.45.recipe_give"
       ],
       "conditions": {
@@ -2371,6 +2407,7 @@
       "gui_position": [4, 14.45],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_46/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_46/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.mk.46.recipe_give"
       ],
       "conditions": {
@@ -2423,6 +2460,7 @@
       "gui_position": [3, 14.45],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_47/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_47/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.0.Mk47.recipe_give"
       ],
       "conditions": {
@@ -2475,6 +2513,7 @@
       "gui_position": [2, 14.45],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_50/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_50/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.11.MK50.recipe_give"
       ],
       "conditions": {
@@ -2527,6 +2566,7 @@
       "gui_position": [1, 14.45],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_80/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_80/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.mk.80.recipe_give"
       ],
       "conditions": {
@@ -2579,6 +2619,7 @@
       "gui_position": [0, 14.45],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_81/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_81/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.mk.81.recipe_give"
       ],
       "conditions": {
@@ -2627,6 +2668,7 @@
       "gui_position": [0, 16.35],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_82/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_82/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.mk.82.recipe_give"
       ],
       "conditions": {
@@ -2679,6 +2721,7 @@
       "gui_position": [1, 16.35],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_85/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_85/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.59.mk.85.recipe_give"
       ],
       "conditions": {
@@ -2731,6 +2774,7 @@
       "gui_position": [2, 16.35],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/model_50/main",
+        "recipe give @s satsu_iron_man_addon:marks/model_50/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.1.MKSuperior.recipe_give"
       ],
       "conditions": {
@@ -2785,6 +2829,7 @@
       "gui_position": [3, 16.35],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/model_30_iron_destroyer/main",
+        "recipe give @s satsu_iron_man_addon:marks/model_30_iron_destroyer/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.15.mk.30.Iron.destroyer.recipe_give"
       ],
       "conditions": {
@@ -2835,6 +2880,7 @@
       "gui_position": [4, 16.35],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_blooded/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_blooded/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.16.mark.unknow.blooded.armor.recipe_give"
       ],
       "conditions": {
@@ -2889,6 +2935,7 @@
       "gui_position": [4, 18.25],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_1873_nano/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_1873_nano/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.18.mark.1873.recipe_give"
       ],
       "conditions": {
@@ -2943,6 +2990,7 @@
       "gui_position": [3, 18.25],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_extremis/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_extremis/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.10.mark.extremis.recipe_give"
       ],
       "conditions": {
@@ -2995,6 +3043,7 @@
       "gui_position": [2, 18.25],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/model_nil/main",
+        "recipe give @s satsu_iron_man_addon:marks/model_nil/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.model.nil.recipe_give"
       ],
       "conditions": {
@@ -3049,6 +3098,7 @@
       "gui_position": [1, 18.25],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_taken/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_taken/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.mark.taken.recipe_give"
       ],
       "conditions": {
@@ -3099,6 +3149,7 @@
       "gui_position": [0, 18.25],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/model_prime/main",
+        "recipe give @s satsu_iron_man_addon:marks/model_prime/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.model.prime.recipe_give"
       ],
       "conditions": {
