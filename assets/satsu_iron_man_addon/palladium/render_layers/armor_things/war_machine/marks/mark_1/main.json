@@ -64,6 +64,18 @@
           }
         }
       },
+      "animation_file": "satsu_iron_man_addon:animations/war_machine/torret_mark_1/torret_animation.geo.json",
+      "animation_controller": [
+        {
+          "name": "torret",
+          "transition_tick_time": 10,
+          "triggers": {
+            "start_on": "start_on",
+            "end": "end",
+            "start": "start"
+          }
+        }
+      ],
       "conditions": [
         {
           "type": "palladium:ability_integer_property",
