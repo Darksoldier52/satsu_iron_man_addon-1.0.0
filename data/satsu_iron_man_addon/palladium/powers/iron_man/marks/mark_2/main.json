@@ -305,7 +305,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -365,7 +365,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -430,7 +430,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -553,7 +553,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -630,7 +630,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -798,7 +798,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -872,7 +872,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -943,7 +943,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -1002,7 +1002,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -1065,7 +1065,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -1133,7 +1133,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -1197,7 +1197,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
@@ -1299,7 +1299,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang:dampened"]
           },
           {
             "type": "palladium:not",
