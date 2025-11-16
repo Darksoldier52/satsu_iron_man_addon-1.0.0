@@ -305,7 +305,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -374,7 +374,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -439,7 +439,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -566,7 +566,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -643,7 +643,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -811,7 +811,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -885,7 +885,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -956,7 +956,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -1015,7 +1015,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -1089,7 +1089,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -1152,7 +1152,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -1254,7 +1254,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -1469,7 +1469,7 @@
             "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
             "powers": ["satsu_iron_man_addon:extremis/main"],
             "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
-            "ignore_powers": ["fsang:space_power"]
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
           },
           {
             "type": "palladium:not",
@@ -3240,6 +3240,76 @@
         ]
       }
     },
+    "start_on": {
+      "type": "geckolib:render_layer_animation",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "render_layer": "satsu_iron_man_addon:armor_things/war_machine/marks/mark_1/main",
+      "controller": "torret",
+      "animation_trigger": "start_on",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_iron_man_war_machine_tourret",
+            "property_value": "off"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "weapons_wheel.torruet"
+          }
+        ]
+      }
+    },
+    "end": {
+      "type": "geckolib:render_layer_animation",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "render_layer": "satsu_iron_man_addon:armor_things/war_machine/marks/mark_1/main",
+      "controller": "torret",
+      "animation_trigger": "end",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_iron_man_war_machine_tourret",
+            "property_value": "on"
+          },
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "weapons_wheel.torruet"
+          }
+        ]
+      }
+    },
+    "torret.sound": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "sound": "satsu_iron_man_addon:entity.armor.war_machine.mark.torret",
+      "volume": 0.5,
+      "pitch": 1,
+      "looping": false,
+      "play_self": false,
+      "play_others": false,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "start_on"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "end"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "torret.on": {
       "type": "satsu_iron_man_addon:set_property_string",
       "hidden": true,
@@ -4021,8 +4091,7 @@
         "DieOnBlockHit": true,
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
-        "Appearances": [
-        ]
+        "Appearances": []
       },
       "conditions": {
         "enabling": [
@@ -4058,8 +4127,7 @@
         "DieOnBlockHit": true,
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
-        "Appearances": [
-        ]
+        "Appearances": []
       },
       "conditions": {
         "enabling": [
@@ -4131,8 +4199,7 @@
         "DieOnBlockHit": true,
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
-        "Appearances": [
-        ]
+        "Appearances": []
       },
       "conditions": {
         "enabling": [
@@ -4286,8 +4353,7 @@
         "DieOnBlockHit": true,
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
-        "Appearances": [
-        ]
+        "Appearances": []
       },
       "conditions": {
         "enabling": [
@@ -4323,8 +4389,7 @@
         "DieOnBlockHit": true,
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/bullet",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/bullet",
-        "Appearances": [
-        ]
+        "Appearances": []
       },
       "conditions": {
         "enabling": [
@@ -4433,8 +4498,7 @@
         "DieOnBlockHit": true,
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/grenade_launcher",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/grenade_launcher",
-        "Appearances": [
-        ]
+        "Appearances": []
       },
       "conditions": {
         "enabling": [
@@ -4470,8 +4534,7 @@
         "DieOnBlockHit": true,
         "CommandOnEntityHit": "function satsu_iron_man_addon:projectiles/grenade_launcher",
         "CommandOnBlockHit": "function satsu_iron_man_addon:projectiles/grenade_launcher",
-        "Appearances": [
-        ]
+        "Appearances": []
       },
       "conditions": {
         "enabling": [
