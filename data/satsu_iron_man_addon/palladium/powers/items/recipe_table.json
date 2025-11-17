@@ -104,7 +104,7 @@
       "gui_position": [1, 1.5],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_2/main",
-        "recipe give @s satsu_iron_man_addon:marks/mark_2/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_2/mark_2_black_suit",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.14.Mk2.recipe_give"
       ],
       "conditions": {
@@ -158,7 +158,7 @@
       "gui_position": [2, 1.5],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_3/main",
-        "recipe give @s satsu_iron_man_addon:marks/mark_3/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_3/mark_3_black_suit",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.22.Mk3.recipe_give"
       ],
       "conditions": {
@@ -207,7 +207,7 @@
       "gui_position": [3, 1.5],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_4/main",
-        "recipe give @s satsu_iron_man_addon:marks/mark_4/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_4/mark_4_black_suit",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.Mk4.recipe_give"
       ],
       "conditions": {
@@ -2738,6 +2738,59 @@
         ]
       }
     },
+    "Satsu.Armor.mk.86": {
+      "type": "palladium:dummy",
+      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_86.png",
+      "title": { "translate": "ability.title.satsu.mark.86" },
+      "description": { "translate": "description.iron.man.mark.86" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [2, 15.8],
+      "first_tick_commands": [
+        "scoreboard players set @s satsu.iron.man.armor.mark.86.unlock 1"
+      ],
+      "commands": [""],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 39,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "Satsu.mk.82"
+          }
+        ]
+      }
+    },
+    "Satsu.Armor.mk.86.recipe_give": {
+      "type": "palladium:command",
+      "icon": "satsu_iron_man_addon:textures/item/instruction.png",
+      "title": { "translate": "ability.title.satsu.give.recipe" },
+      "description": { "translate": "description.satsu.give.recipe" },
+      "hidden": false,
+      "hidden_in_bar": true,
+      "gui_position": [2, 16.35],
+      "commands": [
+        "give @s satsu_iron_man_addon:recipes/mark_86/main",
+        "recipe give @s satsu_iron_man_addon:marks/mark_86/main",
+        "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.mk.86.recipe_give"
+      ],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:experience_level_buyable",
+            "xp_level": 0,
+            "flat_levels": true
+          },
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "Satsu.Armor.mk.86"
+          }
+        ]
+      }
+    },
     "Satsu.Armor.1.MKSuperior": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_500.png",
@@ -2745,7 +2798,7 @@
       "description": { "translate": "description.iron.man.superior.armor" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [2, 15.8],
+      "gui_position": [3, 15.8],
       "first_tick_commands": [
         "scoreboard players set @s satsu.iron.man.armor.superior.unlock 1"
       ],
@@ -2759,7 +2812,7 @@
           },
           {
             "type": "palladium:ability_unlocked",
-            "ability": "Satsu.Armor.59.mk.85"
+            "ability": "Satsu.Armor.mk.86"
           }
         ]
       }
@@ -2771,7 +2824,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [2, 16.35],
+      "gui_position": [3, 16.35],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/model_50/main",
         "recipe give @s satsu_iron_man_addon:marks/model_50/main",
@@ -2800,7 +2853,7 @@
       },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [3, 15.8],
+      "gui_position": [4, 15.8],
       "first_tick_commands": [
         "scoreboard players set @s satsu.iron.man.armor.15.mk30.unlock 1"
       ],
@@ -2826,7 +2879,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [3, 16.35],
+      "gui_position": [4, 16.35],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/model_30_iron_destroyer/main",
         "recipe give @s satsu_iron_man_addon:marks/model_30_iron_destroyer/main",
@@ -2855,7 +2908,7 @@
       },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [4, 15.8],
+      "gui_position": [5, 15.8],
       "conditions": {
         "unlocking": [
           {
@@ -2877,7 +2930,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [4, 16.35],
+      "gui_position": [5, 16.35],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_blooded/main",
         "recipe give @s satsu_iron_man_addon:marks/mark_blooded/main",
@@ -2897,34 +2950,34 @@
         ]
       }
     },
-    "Satsu.Armor.18.mark.1873": {
-      "type": "palladium:dummy",
-      "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_1873.png",
-      "title": { "translate": "ability.title.satsu.mark.1873" },
-      "description": {
-        "translate": "description.iron.man.mark.1873"
+      "Satsu.Armor.18.mark.1873": {
+        "type": "palladium:dummy",
+        "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_1873.png",
+        "title": { "translate": "ability.title.satsu.mark.1873" },
+        "description": {
+          "translate": "description.iron.man.mark.1873"
+        },
+        "hidden": false,
+        "hidden_in_bar": true,
+        "gui_position": [5, 17.67],
+        "first_tick_commands": [
+          "scoreboard players set @s satsu.iron.man.armor.mk.1873.unlock 1"
+        ],
+        "commands": [""],
+        "conditions": {
+          "unlocking": [
+            {
+              "type": "palladium:experience_level_buyable",
+              "xp_level": 42,
+              "flat_levels": true
+            },
+            {
+              "type": "palladium:ability_unlocked",
+              "ability": "Satsu.Armor.59.mk.85"
+            }
+          ]
+        }
       },
-      "hidden": false,
-      "hidden_in_bar": true,
-      "gui_position": [4, 17.67],
-      "first_tick_commands": [
-        "scoreboard players set @s satsu.iron.man.armor.mk.1873.unlock 1"
-      ],
-      "commands": [""],
-      "conditions": {
-        "unlocking": [
-          {
-            "type": "palladium:experience_level_buyable",
-            "xp_level": 42,
-            "flat_levels": true
-          },
-          {
-            "type": "palladium:ability_unlocked",
-            "ability": "Satsu.Armor.59.mk.85"
-          }
-        ]
-      }
-    },
     "Satsu.Armor.18.mark.1873.recipe_give": {
       "type": "palladium:command",
       "icon": "satsu_iron_man_addon:textures/item/instruction.png",
@@ -2932,7 +2985,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [4, 18.25],
+      "gui_position": [5, 18.25],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_1873_nano/main",
         "recipe give @s satsu_iron_man_addon:marks/mark_1873_nano/main",
@@ -2961,7 +3014,7 @@
       },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [3, 17.67],
+      "gui_position": [4, 17.67],
       "first_tick_commands": [
         "scoreboard players set @s satsu.iron.man.armor.mk.extremis.unlock 1"
       ],
@@ -2987,7 +3040,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [3, 18.25],
+      "gui_position": [4, 18.25],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_extremis/main",
         "recipe give @s satsu_iron_man_addon:marks/mark_extremis/main",
@@ -3014,7 +3067,7 @@
       "description": { "translate": "description.iron.man.model.nil" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [2, 17.67],
+      "gui_position": [3, 17.67],
       "first_tick_commands": [
         "scoreboard players set @s satsu.iron.man.armor.superior.unlock 1"
       ],
@@ -3040,7 +3093,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [2, 18.25],
+      "gui_position": [3, 18.25],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/model_nil/main",
         "recipe give @s satsu_iron_man_addon:marks/model_nil/main",
@@ -3069,7 +3122,7 @@
       },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [1, 17.67],
+      "gui_position": [2, 17.67],
       "first_tick_commands": [
         "scoreboard players set @s satsu.iron.man.armor.mk.extremis.unlock 1"
       ],
@@ -3095,7 +3148,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [1, 18.25],
+      "gui_position": [2, 18.25],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_taken/main",
         "recipe give @s satsu_iron_man_addon:marks/mark_taken/main",
@@ -3122,7 +3175,7 @@
       "description": { "translate": "description.iron.man.mark.model.prime" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [0, 17.67],
+      "gui_position": [1, 17.67],
       "commands": [""],
       "conditions": {
         "unlocking": [
@@ -3146,7 +3199,7 @@
       "description": { "translate": "description.satsu.give.recipe" },
       "hidden": false,
       "hidden_in_bar": true,
-      "gui_position": [0, 18.25],
+      "gui_position": [1, 18.25],
       "commands": [
         "give @s satsu_iron_man_addon:recipes/model_prime/main",
         "recipe give @s satsu_iron_man_addon:marks/model_prime/main",

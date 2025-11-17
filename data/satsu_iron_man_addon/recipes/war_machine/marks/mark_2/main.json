@@ -1,0 +1,39 @@
+{
+  "type": "palladium:suit_set_tailoring",
+  "suit_set": "satsu_iron_man_addon:war_machine/marks/mark_2/main",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "satsu_iron_man_addon:steel_gold_refined_alloy"
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "item": "satsu_iron_man_addon:medium_circuit"
+      },
+      "count": 10
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:crossbow"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:bow"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:tnt"
+      },
+      "count": 4
+    }
+  ],
+  "tool": {
+    "item": "satsu_iron_man_addon:recipes/war_machine/marks/mark_2/main"
+  }
+}

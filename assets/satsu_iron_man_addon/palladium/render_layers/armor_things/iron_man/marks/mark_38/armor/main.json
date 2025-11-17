@@ -3,6 +3,24 @@
   "layers": [
     {
       "type": "geckolib:default",
+      "model": "satsu_iron_man_addon:geo/nonano_armor/igor_armor_1.geo.json",
+      "texture": {
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_38_1.png"
+      },
+      "conditions": [
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:entity_type_tag",
+              "entity_type_tag": "satsu_iron_man_addon:not_player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "geckolib:default",
       "model": {
         "base": "satsu_iron_man_addon:geo/nonano_armor/igor_armor_#V.geo.json",
         "variables": {

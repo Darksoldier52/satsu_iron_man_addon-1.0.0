@@ -5,6 +5,42 @@
       "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nonano_armor/marks/full_body_without_mask_front/main.geo.json",
       "texture": {
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_11_0.png"
+      },
+      "conditions": [
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:entity_type_tag",
+              "entity_type_tag": "satsu_iron_man_addon:not_player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "geckolib:default",
+      "model": "satsu_iron_man_addon:geo/marks/all_helmet/main.geo.json",
+      "texture": {
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/mask/iron_man_mask_11_0.png"
+      },
+      "conditions": [
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:entity_type_tag",
+              "entity_type_tag": "satsu_iron_man_addon:not_player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "geckolib:default",
+      "model": "satsu_iron_man_addon:geo/nonano_armor/marks/full_body_without_mask_front/main.geo.json",
+      "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_11_0.png",
         "transformers": [
           {
