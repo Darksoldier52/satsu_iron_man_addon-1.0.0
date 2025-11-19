@@ -105,6 +105,7 @@
       "commands": [
         "give @s satsu_iron_man_addon:recipes/mark_2/main",
         "recipe give @s satsu_iron_man_addon:marks/mark_2/mark_2_black_suit",
+        "recipe give @s satsu_iron_man_addon:war_machine/marks/mark_1/mark_1_black_suit",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.14.Mk2.recipe_give"
       ],
       "conditions": {
