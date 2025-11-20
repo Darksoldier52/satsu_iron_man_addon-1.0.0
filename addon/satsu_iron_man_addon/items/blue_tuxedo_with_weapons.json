@@ -1,6 +1,5 @@
 {
   "max_stack_size": 1,
-  "creative_mode_tab": ["satsu_iron_man_addon:iron_man"],
   "rarity": "normal",
   "is_fire_resistant": true,
   "tooltip": ["",
@@ -11,6 +10,6 @@
     }
   ],
   "render_layers": {
-    "curios:body": ["satsu_iron_man_addon:clothes/blue_tuxedo/main"]
+    "curios:body": ["satsu_iron_man_addon:big_shot/main"]
   }
 }

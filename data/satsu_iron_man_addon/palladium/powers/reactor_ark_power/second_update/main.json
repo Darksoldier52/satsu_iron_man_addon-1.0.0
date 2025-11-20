@@ -22,6 +22,13 @@
                     "objective": "satsu.iron.man.armor.actived",
                     "min_score": 1,
                     "max_score": 1
+                  },
+                  {
+                    "type": "palladium:item_in_slot",
+                    "item": {
+                      "item": "satsu_iron_man_addon:blue_tuxedo_with_weapons"
+                    },
+                    "slot": "curios:body"
                   }
                 ]
               }
