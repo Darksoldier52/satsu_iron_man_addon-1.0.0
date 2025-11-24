@@ -992,7 +992,7 @@
       "gui_position": [-1, -0.6],
       "attribute": "minecraft:generic.armor",
       "uuid": "f55c7fb9-9e53-4bf4-976d-d8564485feb8",
-      "amount": 4.025,
+      "amount": 5,
       "operation": 0,
       "conditions": {
         "enabling": [
@@ -1067,7 +1067,7 @@
       "gui_position": [2.8, -1],
       "attribute": "minecraft:generic.armor",
       "uuid": "bd789005-fbdc-4d9f-81f0-ff459e87b957",
-      "amount": 4.025,
+      "amount": 5,
       "operation": 0,
       "conditions": {
         "enabling": [
@@ -1143,7 +1143,7 @@
       "gui_position": [2.8, -1],
       "attribute": "minecraft:generic.armor",
       "uuid": "76c77983-6906-4f3d-8de1-3aa9b117c571",
-      "amount": 4.025,
+      "amount": 5,
       "operation": 0,
       "conditions": {
         "enabling": [
@@ -1219,7 +1219,7 @@
       "gui_position": [2.8, -1],
       "attribute": "minecraft:generic.armor",
       "uuid": "2fb5daec-0dd9-486a-adff-c14e73a2117c",
-      "amount": 4.025,
+      "amount": 5,
       "operation": 0,
       "conditions": {
         "enabling": [
@@ -1295,7 +1295,7 @@
       "gui_position": [2.8, -1],
       "attribute": "minecraft:generic.armor",
       "uuid": "f147f68a-c612-4d54-86a8-25ee508f105d",
-      "amount": 4.025,
+      "amount": 5,
       "operation": 0,
       "conditions": {
         "enabling": [
@@ -1371,7 +1371,7 @@
       "gui_position": [2.8, -1],
       "attribute": "minecraft:generic.armor",
       "uuid": "058ae21c-0e7f-481f-be73-ce7953349ea1",
-      "amount": 4.025,
+      "amount": 5,
       "operation": 0,
       "conditions": {
         "enabling": [
@@ -1447,7 +1447,7 @@
       "gui_position": [2.8, -1],
       "attribute": "minecraft:generic.armor",
       "uuid": "fec01727-9603-443b-bf6d-cca4f1983e2e",
-      "amount": 4.025,
+      "amount": 5,
       "operation": 0,
       "conditions": {
         "enabling": [
@@ -1523,7 +1523,7 @@
       "gui_position": [2.8, -1],
       "attribute": "minecraft:generic.armor",
       "uuid": "a4a996a1-9205-4b32-bd43-e5bb92a03fb9",
-      "amount": 4.025,
+      "amount": 5,
       "operation": 0,
       "conditions": {
         "enabling": [
