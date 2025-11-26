@@ -15,7 +15,6 @@
           }
         }
       },
-      "tint": "#f0a430",
       "render_type": "glow",
       "conditions": [
         {
@@ -160,7 +159,6 @@
           }
         }
       },
-      "tint": "#f0a430",
       "render_type": "glow",
       "conditions": [
         {
@@ -195,7 +193,6 @@
           }
         }
       },
-      "tint": "#f0a430",
       "render_type": "glow",
       "conditions": [
         {
