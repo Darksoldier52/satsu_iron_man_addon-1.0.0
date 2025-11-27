@@ -4324,7 +4324,6 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "scoreboard players set @s satsu.iron.man.addon.armor.all 1",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/throw_parts/give_all/main"
@@ -4468,7 +4467,6 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/call_parts/give_all/main"
       ],
@@ -4645,7 +4643,6 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "scoreboard players set @s satsu.iron.man.addon.armor.all 1",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/throw_parts/give_all/main"
@@ -4789,7 +4786,6 @@
       "hidden_in_bar": true,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/call_parts/give_all/main"
       ],
@@ -4886,7 +4882,6 @@
       "hidden_in_bar": false,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "scoreboard players set @s satsu.iron.man.addon.armor.all 0",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/throw_parts/chest/throw"
@@ -4917,7 +4912,6 @@
       "hidden_in_bar": false,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "scoreboard players set @s satsu.iron.man.addon.armor.all 0",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/throw_parts/head/throw"
@@ -4948,7 +4942,6 @@
       "hidden_in_bar": false,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "scoreboard players set @s satsu.iron.man.addon.armor.all 0",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/throw_parts/right_arm/throw"
@@ -4979,7 +4972,6 @@
       "hidden_in_bar": false,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "scoreboard players set @s satsu.iron.man.addon.armor.all 0",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/throw_parts/left_arm/throw"
@@ -5010,7 +5002,6 @@
       "hidden_in_bar": false,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "scoreboard players set @s satsu.iron.man.addon.armor.all 0",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/throw_parts/right_shoulder/throw"
@@ -5041,7 +5032,6 @@
       "hidden_in_bar": false,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "scoreboard players set @s satsu.iron.man.addon.armor.all 0",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/throw_parts/left_shoulder/throw"
@@ -5072,7 +5062,6 @@
       "hidden_in_bar": false,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "scoreboard players set @s satsu.iron.man.addon.armor.all 0",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/throw_parts/right_leg/throw"
@@ -5103,7 +5092,6 @@
       "hidden_in_bar": false,
       "first_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s remove sentinel.false",
         "scoreboard players set @s satsu.iron.man.addon.armor.all 0",
         "execute as @s unless score @s satsu.iron.man.animation.armor matches 1.. run scoreboard players add @s satsu.iron.man.animation.armor 1",
         "function satsu_iron_man_addon:marks_parts/throw_parts/left_leg/throw"

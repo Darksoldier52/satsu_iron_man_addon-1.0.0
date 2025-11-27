@@ -983,7 +983,7 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": ["tag @s remove sentinel.false"],
+      "first_tick_commands": [""],
       "commands": [""],
       "conditions": {
         "enabling": [
@@ -1178,7 +1178,7 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": ["tag @s remove sentinel.false"],
+      "first_tick_commands": [""],
       "commands": [""],
       "last_tick_commands": ["tag @s add mecano.post.sentinel"],
       "conditions": {

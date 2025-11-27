@@ -370,8 +370,11 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "sentinel.false"
+                    "type": "palladium:command_result",
+                    "command": "execute if entity @e[tag=sentinel,sort=nearest,distance=0..] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID",
+                    "comparison": "==",
+                    "compare_to": 1,
+                    "log": false
                   },
                   {
                     "type": "palladium:command_result",
@@ -386,8 +389,11 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "sentinel.false"
+                    "type": "palladium:command_result",
+                    "command": "execute if entity @e[tag=sentinel,sort=nearest,distance=0..] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID",
+                    "comparison": "==",
+                    "compare_to": 1,
+                    "log": false
                   }
                 ]
               }
@@ -534,8 +540,11 @@
                 "type": "palladium:and",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "sentinel.false"
+                    "type": "palladium:command_result",
+                    "command": "execute if entity @e[tag=sentinel,sort=nearest,distance=0..] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID",
+                    "comparison": "==",
+                    "compare_to": 1,
+                    "log": false
                   },
                   {
                     "type": "palladium:command_result",
@@ -550,8 +559,11 @@
                 "type": "palladium:not",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "sentinel.false"
+                    "type": "palladium:command_result",
+                    "command": "execute if entity @e[tag=sentinel,sort=nearest,distance=0..] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID",
+                    "comparison": "==",
+                    "compare_to": 1,
+                    "log": false
                   }
                 ]
               }
@@ -1088,7 +1100,7 @@
       "hidden_in_bar": true,
       "first_tick_commands": [""],
       "commands": [""],
-      "last_tick_commands": ["tag @s add sentinel.false"],
+      "last_tick_commands": [""],
       "conditions": {
         "enabling": [
           {
