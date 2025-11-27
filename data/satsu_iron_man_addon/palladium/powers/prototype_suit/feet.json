@@ -79,10 +79,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "dampened"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "sentinel_one"
                   }
                 ]
               }
