@@ -1467,7 +1467,7 @@
       "commands": [""],
       "last_tick_commands": [
         "tag @s remove mark.17",
-        "execute if entity @e[tag=sentinel] run function satsu_iron_man_addon:sentinels/kill_one_sentinel",
+        "execute if entity @e[tag=sentinel] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID run function satsu_iron_man_addon:sentinels/kill_one_sentinel",
         "satsu_set_flight_speed 0"
       ],
       "conditions": {
