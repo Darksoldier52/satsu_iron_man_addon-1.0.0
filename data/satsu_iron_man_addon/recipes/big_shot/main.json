@@ -46,5 +46,5 @@
   },
   "tool_icon": "palladium:item/empty_tool_slot_shears",
   "title": "Blue Tuxedo with Weapons",
-  "requires_unlocking": false
+  "requires_unlocking": true
 }
