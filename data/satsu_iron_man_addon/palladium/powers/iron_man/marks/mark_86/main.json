@@ -11360,7 +11360,7 @@
         "enabling": [
           {
             "type": "palladium:action",
-            "cooldown": 0,
+            "cooldown": 25,
             "key_type": "scroll_down",
             "needs_empty_hand": false,
             "allow_scrolling_when_crouching": false
@@ -11394,7 +11394,7 @@
         "enabling": [
           {
             "type": "palladium:action",
-            "cooldown": 0,
+            "cooldown": 25,
             "key_type": "scroll_up",
             "needs_empty_hand": false,
             "allow_scrolling_when_crouching": false
@@ -11413,6 +11413,60 @@
           {
             "type": "palladium:ability_enabled",
             "ability": "nano_increase_decrease"
+          }
+        ]
+      }
+    },
+    "nano_increase_size.return": {
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [
+        "scale set pehkui:height 1",
+        "scale set pehkui:width 1",
+        "scale set pehkui:motion 1"
+      ],
+      "commands": [""],
+      "last_tick_commands": [],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "nano_increase_decrease"
+              }
+            ]
+          }
+        ],
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "ability": "armor"
+          },
+          {
+            "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
+            "powers": [
+              "satsu_iron_man_addon:extremis/main",
+              "satsu_iron_man_addon:ia_stuff/block_sentinel_functions/main"
+            ],
+            "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
+          },
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:or",
+                "conditions": [
+                  {
+                    "type": "palladium:has_tag",
+                    "tag": "alien"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -11487,16 +11541,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale add pehkui:height 1",
-        "scale add pehkui:width 1",
-        "scale add pehkui:motion 1"
+        "scale set pehkui:height 2",
+        "scale set pehkui:width 2",
+        "scale set pehkui:motion 2"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale subtract pehkui:height 1",
-        "scale subtract pehkui:width 1",
-        "scale subtract pehkui:motion 1"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -11563,16 +11613,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale add pehkui:height 2",
-        "scale add pehkui:width 2",
-        "scale add pehkui:motion 2"
+        "scale set pehkui:height 3",
+        "scale set pehkui:width 3",
+        "scale set pehkui:motion 3"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale subtract pehkui:height 2",
-        "scale subtract pehkui:width 2",
-        "scale subtract pehkui:motion 2"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -11639,16 +11685,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale add pehkui:height 3",
-        "scale add pehkui:width 3",
-        "scale add pehkui:motion 3"
+        "scale set pehkui:height 4",
+        "scale set pehkui:width 4",
+        "scale set pehkui:motion 4"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale subtract pehkui:height 3",
-        "scale subtract pehkui:width 3",
-        "scale subtract pehkui:motion 3"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -11715,16 +11757,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale add pehkui:height 4",
-        "scale add pehkui:width 4",
-        "scale add pehkui:motion 4"
+        "scale set pehkui:height 5",
+        "scale set pehkui:width 5",
+        "scale set pehkui:motion 5"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale subtract pehkui:height 4",
-        "scale subtract pehkui:width 4",
-        "scale subtract pehkui:motion 4"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -11791,14 +11829,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale subtract pehkui:height 0.1",
-        "scale subtract pehkui:width 0.1"
+        "scale set pehkui:height 0.8",
+        "scale set pehkui:width 0.8",
+        "scale set pehkui:motion 1"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale add pehkui:height 0.1",
-        "scale add pehkui:width 0.1"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -11865,14 +11901,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale subtract pehkui:height 0.2",
-        "scale subtract pehkui:width 0.2"
+        "scale set pehkui:height 0.7",
+        "scale set pehkui:width 0.7",
+        "scale set pehkui:motion 1"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale add pehkui:height 0.2",
-        "scale add pehkui:width 0.2"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -11939,14 +11973,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale subtract pehkui:height 0.3",
-        "scale subtract pehkui:width 0.3"
+        "scale set pehkui:height 0.6",
+        "scale set pehkui:width 0.6",
+        "scale set pehkui:motion 1"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale add pehkui:height 0.3",
-        "scale add pehkui:width 0.3"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -12013,14 +12045,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale subtract pehkui:height 0.4",
-        "scale subtract pehkui:width 0.4"
+        "scale set pehkui:height 0.5",
+        "scale set pehkui:width 0.5",
+        "scale set pehkui:motion 1"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale add pehkui:height 0.4",
-        "scale add pehkui:width 0.4"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -12087,14 +12117,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale subtract pehkui:height 0.5",
-        "scale subtract pehkui:width 0.5"
+        "scale set pehkui:height 0.4",
+        "scale set pehkui:width 0.4",
+        "scale set pehkui:motion 1"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale add pehkui:height 0.5",
-        "scale add pehkui:width 0.5"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -12161,14 +12189,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale subtract pehkui:height 0.6",
-        "scale subtract pehkui:width 0.6"
+        "scale set pehkui:height 0.35",
+        "scale set pehkui:width 0.35",
+        "scale set pehkui:motion 1"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale add pehkui:height 0.6",
-        "scale add pehkui:width 0.6"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -12235,14 +12261,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale subtract pehkui:height 0.7",
-        "scale subtract pehkui:width 0.7"
+        "scale set pehkui:height 0.3",
+        "scale set pehkui:width 0.3",
+        "scale set pehkui:motion 1"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale add pehkui:height 0.7",
-        "scale add pehkui:width 0.7"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
@@ -12309,14 +12333,12 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
-        "scale subtract pehkui:height 0.8",
-        "scale subtract pehkui:width 0.8"
+        "scale set pehkui:height 0.2",
+        "scale set pehkui:width 0.2",
+        "scale set pehkui:motion 1"
       ],
       "commands": [""],
-      "last_tick_commands": [
-        "scale add pehkui:height 0.8",
-        "scale add pehkui:width 0.8"
-      ],
+      "last_tick_commands": [],
       "conditions": {
         "enabling": [
           {
