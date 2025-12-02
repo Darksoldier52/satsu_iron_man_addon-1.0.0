@@ -11303,51 +11303,15 @@
         ]
       }
     },
-    "nano_increase_wheel_option.subtract": {
-      "type": "satsu_iron_man_addon:palladium_property_modifier",
-      "hidden": true,
-      "hidden_in_bar": true,
-      "property_name": "satsu_iron_man_mark_86",
-      "adjustment_type": "subtract",
-      "adjustment_amount": 1,
-      "conditions": {
-        "enabling": [
-          {
-            "type": "palladium:action",
-            "cooldown": 25,
-            "key_type": "scroll_down",
-            "needs_empty_hand": false,
-            "allow_scrolling_when_crouching": false
-          }
-        ],
-        "unlocking": [
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": -7,
-            "max": 3
-          },
-          {
-            "type": "palladium:crouching"
-          },
-          {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          }
-        ]
-      }
-    },
-    "nano_increase_wheel_option.add": {
-      "type": "satsu_iron_man_addon:palladium_property_modifier",
+    "nano_increase_wheel_option.first.tick": {
+      "type": "palladium:dummy",
       "hidden": true,
       "hidden_in_bar": false,
-      "property_name": "satsu_iron_man_mark_86",
-      "adjustment_type": "add",
-      "adjustment_amount": 1,
+      "list_index": 0,
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:action",
+            "type": "palladium:toggle",
             "cooldown": 25,
             "key_type": "scroll_up",
             "needs_empty_hand": false,
@@ -11355,12 +11319,6 @@
           }
         ],
         "unlocking": [
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": -8,
-            "max": 2
-          },
           {
             "type": "palladium:crouching"
           },
@@ -11426,13 +11384,27 @@
       }
     },
     "nano_increase_decrease": {
-      "type": "palladium:dummy",
+      "type": "palladium:ability_wheel",
       "icon": "satsu_iron_man_addon:textures/gui/armors/abilities/nano_health_spray_other.png",
-      "title": { "translate": "ability.title.satsu.nano.health.spray" },
-      "description": { "translate": "description.satsu.nano.health.spray" },
+      "title": { "translate": "ability.title.satsu.nano.change_size" },
+      "description": { "translate": "description.satsu.nano.change_size" },
       "hidden": true,
       "hidden_in_bar": false,
       "list_index": 14,
+      "abilities": [
+        "nano_increase_size.1",
+        "nano_increase_size.2",
+        "nano_increase_size.3",
+        "nano_increase_size.4",
+        "nano_decrease_size_small.-1",
+        "nano_decrease_size_small.-2",
+        "nano_decrease_size_small.-3",
+        "nano_decrease_size_small.-4",
+        "nano_decrease_size_small.-5",
+        "nano_decrease_size_small.-6",
+        "nano_decrease_size_small.-7",
+        "nano_decrease_size_small.-8"
+      ],
       "conditions": {
         "enabling": [
           {
@@ -11492,6 +11464,15 @@
     },
     "nano_increase_size.1": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/1.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/more.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.1" },
+      "description": { "translate": "description.satsu.nano.size.1" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -11504,14 +11485,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": 0,
-            "max": 0
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -11564,6 +11539,15 @@
     },
     "nano_increase_size.2": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/2.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/more.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.2" },
+      "description": { "translate": "description.satsu.nano.size.2" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -11576,14 +11560,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": 1,
-            "max": 1
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -11636,6 +11614,15 @@
     },
     "nano_increase_size.3": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/3.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/more.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.3" },
+      "description": { "translate": "description.satsu.nano.size.3" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -11648,14 +11635,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": 2,
-            "max": 2
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -11708,6 +11689,15 @@
     },
     "nano_increase_size.4": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/4.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/more.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.4" },
+      "description": { "translate": "description.satsu.nano.size.4" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -11720,14 +11710,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": 3,
-            "max": 3
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -11780,6 +11764,15 @@
     },
     "nano_decrease_size_small.-1": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/1.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/minus.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.-1" },
+      "description": { "translate": "description.satsu.nano.size.-1" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -11792,14 +11785,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": -1,
-            "max": -1
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -11852,6 +11839,15 @@
     },
     "nano_decrease_size_small.-2": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/2.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/minus.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.-2" },
+      "description": { "translate": "description.satsu.nano.size.-2" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -11864,14 +11860,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": -2,
-            "max": -2
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -11924,6 +11914,15 @@
     },
     "nano_decrease_size_small.-3": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/3.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/minus.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.-3" },
+      "description": { "translate": "description.satsu.nano.size.-3" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -11936,14 +11935,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": -3,
-            "max": -3
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -11996,6 +11989,15 @@
     },
     "nano_decrease_size_small.-4": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/4.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/minus.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.-4" },
+      "description": { "translate": "description.satsu.nano.size.-4" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -12008,14 +12010,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": -4,
-            "max": -4
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -12068,6 +12064,15 @@
     },
     "nano_decrease_size_small.-5": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/5.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/minus.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.-5" },
+      "description": { "translate": "description.satsu.nano.size.-5" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -12080,14 +12085,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": -5,
-            "max": -5
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -12140,6 +12139,15 @@
     },
     "nano_decrease_size_small.-6": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/6.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/minus.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.-6" },
+      "description": { "translate": "description.satsu.nano.size.-6" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -12152,14 +12160,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": -6,
-            "max": -6
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -12212,6 +12214,15 @@
     },
     "nano_decrease_size_small.-7": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/7.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/minus.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.-7" },
+      "description": { "translate": "description.satsu.nano.size.-7" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -12224,14 +12235,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": -7,
-            "max": -7
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
@@ -12284,6 +12289,15 @@
     },
     "nano_decrease_size_small.-8": {
       "type": "palladium:command",
+      "icon": {
+        "type": "palladium:compound",
+        "icons": [
+          "satsu_iron_man_addon:textures/gui/armors/symbols/8.png",
+          "satsu_iron_man_addon:textures/gui/armors/symbols/minus.png"
+        ]
+      },
+      "title": { "translate": "ability.title.satsu.nano.size.-8" },
+      "description": { "translate": "description.satsu.nano.size.-8" },
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [
@@ -12296,14 +12310,8 @@
       "conditions": {
         "enabling": [
           {
-            "type": "palladium:ability_enabled",
-            "ability": "nano_increase_decrease"
-          },
-          {
-            "type": "palladium:integer_property",
-            "property": "satsu_iron_man_mark_86",
-            "min": -8,
-            "max": -8
+            "type": "palladium:ability_wheel",
+            "cooldown": 0
           }
         ],
         "unlocking": [
