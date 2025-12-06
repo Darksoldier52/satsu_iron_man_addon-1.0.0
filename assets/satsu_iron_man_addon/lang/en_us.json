@@ -342,7 +342,7 @@
   
   "description.iron.man.mark.model.prime": "A nanotechnology armor capable of customization Durability:44    Strength: 13.5    Flight Speed: 6.57",
 
-  "description.iron.man.mark.model.72": "An armor made of mysterium, more resistant and durable than others; It has different abilities such as tranquilizers, shields, etc. Durability:40    Strength: 15    Flight Speed: 6.57",
+  "description.iron.man.model.72": "An armor made of mysterium, more resistant and durable than others; It has different abilities such as tranquilizers, shields, etc. Durability:40    Strength: 15    Flight Speed: 6.57",
 
   "description.iron.man.model.nil": "An armor made for total stealth, equipped with tasers to paralyze and the ability to pass through walls. Durability:32    Strength: 14.2    Flight Speed: 6.57",
 
@@ -722,7 +722,7 @@
   "ability.title.satsu.taken.hulkbuster.projectil": "Uni-beam titan",
   "ability.title.satsu.recipe_table": "Blueprint holder",
   "ability.title.satsu.mark.model.prime": "Model Prime",
-  "ability.title.satsu.mark.model.72": "Model 72",
+  "ability.title.satsu.model.72": "Model 72",
   "ability.title.satsu.give.recipe": "Get blueprint",
   "ability.title.satsu.call.sentinel": "Call Sentinel",
   "ability.title.arc.reactor": "Arc reactor",

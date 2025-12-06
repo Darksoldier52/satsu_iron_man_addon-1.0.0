@@ -3172,8 +3172,8 @@
     "Satsu.Armor.model.72": {
       "type": "palladium:dummy",
       "icon": "satsu_iron_man_addon:textures/gui/armors/new_icon/mark_head_icon_720.png",
-      "title": { "translate": "ability.title.satsu.mark.model.72" },
-      "description": { "translate": "description.iron.man.mark.model.72" },
+      "title": { "translate": "ability.title.satsu.model.72" },
+      "description": { "translate": "description.iron.man.model.72" },
       "hidden": false,
       "hidden_in_bar": true,
       "gui_position": [1, 17.67],
