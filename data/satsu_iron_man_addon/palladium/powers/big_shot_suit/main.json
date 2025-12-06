@@ -2908,7 +2908,7 @@
             "type": "palladium:integer_property",
             "property": "satsu_iron_man_flight_speed_choose",
             "min": 2,
-            "max": 408
+            "max": 410
           }
         ]
       }
@@ -3010,7 +3010,7 @@
             "type": "palladium:integer_property",
             "property": "satsu_iron_man_flight_speed_choose",
             "min": 2,
-            "max": 408
+            "max": 410
           }
         ]
       }
