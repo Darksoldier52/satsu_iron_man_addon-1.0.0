@@ -6542,40 +6542,30 @@
             "max_score": 1
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:ability_integer_property",
-                "ability": "right_arm_animation",
-                "property": "value",
-                "min": 18,
-                "max": 18
-              },
-              {
-                "type": "palladium:ability_integer_property",
-                "ability": "left_arm_animation",
-                "property": "value",
-                "min": 18,
-                "max": 18
-              }
-            ]
+            "type": "palladium:ability_integer_property",
+            "ability": "right_shoulder_animation",
+            "property": "value",
+            "min": 18,
+            "max": 18
           },
           {
-            "type": "palladium:or",
-            "conditions": [
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.armor.right.arm",
-                "min_score": 0,
-                "max_score": 0
-              },
-              {
-                "type": "palladium:objective_score",
-                "objective": "satsu.iron.man.addon.armor.left.arm",
-                "min_score": 0,
-                "max_score": 0
-              }
-            ]
+            "type": "palladium:ability_integer_property",
+            "ability": "left_shoulder_animation",
+            "property": "value",
+            "min": 18,
+            "max": 18
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.right.shoulder",
+            "min_score": 0,
+            "max_score": 0
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.left.shoulder",
+            "min_score": 0,
+            "max_score": 0
           }
         ]
       }
@@ -7745,6 +7735,32 @@
             "objective": "satsu.iron.man.armor.actived",
             "min_score": 1,
             "max_score": 1
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "right_shoulder_animation",
+            "property": "value",
+            "min": 18,
+            "max": 18
+          },
+          {
+            "type": "palladium:ability_integer_property",
+            "ability": "left_shoulder_animation",
+            "property": "value",
+            "min": 18,
+            "max": 18
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.right.shoulder",
+            "min_score": 0,
+            "max_score": 0
+          },
+          {
+            "type": "palladium:objective_score",
+            "objective": "satsu.iron.man.addon.armor.left.shoulder",
+            "min_score": 0,
+            "max_score": 0
           },
           {
             "type": "palladium:not",
