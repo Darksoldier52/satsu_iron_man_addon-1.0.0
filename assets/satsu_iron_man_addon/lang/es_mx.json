@@ -344,6 +344,8 @@
   
   "description.iron.man.mark.model.prime": "Una armadura de nanotecnologia capaz de personalizarse Durabilidad:44    Fuerza: 13.5    Velocidad de vuelo: 6.57",
 
+  "description.iron.man.mark.model.72": "Una armadura hecha de msyteruim, más resistente y duradera que otras; Posee distintas habilidades como tranquilizadores, escudos etc  Durabilidad:40    Fuerza: 15    Velocidad de vuelo: 6.57",
+
   "description.iron.man.model.nil": "Una armadura hecha para el sigilo total, cuenta con tasers con los cuales paralizar ademas de poder atravesar las paredes Durabilidad:32    Fuerza: 14.2    Velocidad de vuelo: 6.57",
 
   "description.iron.man.war_machine.mark.1": "La mark 2 modificada, posee mayor resistencia que su version original, al mismo tiempo que posee mas armas de fuego, como miniguns en los brazos; Una torreta, lanzagranadas y varios misiles esta armadura se coloca en la estacion de la gruá al igual que la mark 4 Durabilidad:17    Fuerza: 5.5    Velocidad de vuelo: 6",
@@ -722,6 +724,7 @@
   "ability.title.satsu.taken.hulkbuster.projectil": "Uni-disparo de titan",
   "ability.title.satsu.recipe_table": "Portaplanos",
   "ability.title.satsu.mark.model.prime": "Model Prime",
+  "ability.title.satsu.mark.model.72": "Model 72",
   "ability.title.satsu.give.recipe": "Obtener plano",
   "ability.title.satsu.call.sentinel": "Llamar sentinela",
   "ability.title.arc.reactor": "Reactor Arc",
