@@ -2513,6 +2513,7 @@
       "hidden_in_bar": true,
       "gui_position": [2, 14.45],
       "commands": [
+        "recipe give @s satsu_iron_man_addon:big_shot/main",
         "give @s satsu_iron_man_addon:recipes/mark_50/main",
         "recipe give @s satsu_iron_man_addon:marks/mark_50/main",
         "ability lock @s satsu_iron_man_addon:items/recipe_table Satsu.Armor.11.MK50.recipe_give"
