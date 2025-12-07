@@ -63,6 +63,15 @@
             "max_score": 1
           },
           {
+            "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
+            "powers": [
+              "satsu_iron_man_addon:extremis/main",
+              "satsu_iron_man_addon:ia_stuff/block_sentinel_functions/main"
+            ],
+            "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -71,10 +80,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "alien"
-                  },
-                  {
-                    "type": "palladium:has_power",
-                    "power": "satsu_iron_man_addon:extremis/main"
                   }
                 ]
               }
@@ -131,6 +136,15 @@
             "max_score": 1
           },
           {
+            "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
+            "powers": [
+              "satsu_iron_man_addon:extremis/main",
+              "satsu_iron_man_addon:ia_stuff/block_sentinel_functions/main"
+            ],
+            "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -139,10 +153,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "alien"
-                  },
-                  {
-                    "type": "palladium:has_power",
-                    "power": "satsu_iron_man_addon:extremis/main"
                   }
                 ]
               }
@@ -173,7 +183,7 @@
       "hidden_in_bar": true,
       "gui_position": [3.5, -1],
       "attribute": "minecraft:generic.armor_toughness",
-      "uuid": "b719de99-9744-4cd1-83ca-ed123bb07291",
+      "uuid": "dc7c4aa4-89df-4d23-ad7f-9e4e20683678",
       "amount": 20,
       "operation": 0,
       "conditions": {
@@ -200,6 +210,15 @@
             "max_score": 1
           },
           {
+            "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
+            "powers": [
+              "satsu_iron_man_addon:extremis/main",
+              "satsu_iron_man_addon:ia_stuff/block_sentinel_functions/main"
+            ],
+            "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -208,10 +227,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "alien"
-                  },
-                  {
-                    "type": "palladium:has_power",
-                    "power": "satsu_iron_man_addon:extremis/main"
                   }
                 ]
               }
@@ -257,6 +272,15 @@
             "max_score": 1
           },
           {
+            "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
+            "powers": [
+              "satsu_iron_man_addon:extremis/main",
+              "satsu_iron_man_addon:ia_stuff/block_sentinel_functions/main"
+            ],
+            "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -265,10 +289,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "alien"
-                  },
-                  {
-                    "type": "palladium:has_power",
-                    "power": "satsu_iron_man_addon:extremis/main"
                   }
                 ]
               }
@@ -314,6 +334,15 @@
             "max_score": 1
           },
           {
+            "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
+            "powers": [
+              "satsu_iron_man_addon:extremis/main",
+              "satsu_iron_man_addon:ia_stuff/block_sentinel_functions/main"
+            ],
+            "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -322,10 +351,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "alien"
-                  },
-                  {
-                    "type": "palladium:has_power",
-                    "power": "satsu_iron_man_addon:extremis/main"
                   }
                 ]
               }
@@ -371,6 +396,15 @@
             "max_score": 1
           },
           {
+            "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
+            "powers": [
+              "satsu_iron_man_addon:extremis/main",
+              "satsu_iron_man_addon:ia_stuff/block_sentinel_functions/main"
+            ],
+            "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -379,10 +413,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "alien"
-                  },
-                  {
-                    "type": "palladium:has_power",
-                    "power": "satsu_iron_man_addon:extremis/main"
                   }
                 ]
               }
@@ -413,6 +443,11 @@
       "conditions": {
         "enabling": [
           {
+            "type": "satsu_iron_man_addon:has_property",
+            "property": "satsu_iron_man_ia.pickaxe_velocity",
+            "property_value": "normal"
+          },
+          {
             "type": "palladium:or",
             "conditions": [
               {
@@ -428,6 +463,15 @@
             "max_score": 1
           },
           {
+            "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
+            "powers": [
+              "satsu_iron_man_addon:extremis/main",
+              "satsu_iron_man_addon:ia_stuff/block_sentinel_functions/main"
+            ],
+            "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -436,10 +480,6 @@
                   {
                     "type": "palladium:has_tag",
                     "tag": "alien"
-                  },
-                  {
-                    "type": "palladium:has_power",
-                    "power": "satsu_iron_man_addon:extremis/main"
                   }
                 ]
               }

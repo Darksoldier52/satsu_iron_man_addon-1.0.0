@@ -32,10 +32,19 @@ StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:rivals_iron_man_steampower_blast_potencied");
 });
 StartupEvents.registry("sound_event", (event) => {
+  event.create("satsu_iron_man_addon:rivals_iron_man_big_shot_blast");
+});
+StartupEvents.registry("sound_event", (event) => {
+  event.create("satsu_iron_man_addon:rivals_iron_man_big_shot_blast_potencied");
+});
+StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:rivals_chest_beam");
 });
 StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:mcu_chest_beam");
+});
+StartupEvents.registry("sound_event", (event) => {
+  event.create("satsu_iron_man_addon:big_shot_chest_beam");
 });
 StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:fly_sound");
@@ -129,4 +138,12 @@ StartupEvents.registry("sound_event", (event) => {
 });
 StartupEvents.registry("sound_event", (event) => {
   event.create("satsu_iron_man_addon:entity.effect.dampened_sonic");
+});
+
+StartupEvents.registry("sound_event", (event) => {
+  event.create("satsu_iron_man_addon:entity.armor.mark.shrink_ability");
+});
+
+StartupEvents.registry("sound_event", (event) => {
+  event.create("satsu_iron_man_addon:entity.armor.war_machine.mark.torret");
 });

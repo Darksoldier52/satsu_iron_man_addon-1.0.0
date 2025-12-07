@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "satsu_iron_man_addon:marks/mark_1/mark_1_chest",
-    "satsu_iron_man_addon:marks/mark_2/mark_2_chest",
-    "satsu_iron_man_addon:marks/mark_3/mark_3_chest",
+    "satsu_iron_man_addon:marks/mark_2/mark_2_black_suit",
+    "satsu_iron_man_addon:marks/mark_3/mark_3_black_suit",
     "satsu_iron_man_addon:marks/mark_4/mark_4_black_suit",
     "satsu_iron_man_addon:marks/mark_5/briefcase",
     "satsu_iron_man_addon:marks/mark_6/bracelet",
@@ -53,6 +53,7 @@
     "satsu_iron_man_addon:marks/mark_81/main",
     "satsu_iron_man_addon:marks/mark_82/main",
     "satsu_iron_man_addon:marks/mark_85/main",
+    "satsu_iron_man_addon:marks/mark_86/main",
     "satsu_iron_man_addon:marks/mark_1873_nano/main",
     "satsu_iron_man_addon:marks/mark_blooded/main",
     "satsu_iron_man_addon:marks/mark_extremis/main",
@@ -61,6 +62,8 @@
     "satsu_iron_man_addon:marks/model_prime/main",
     "satsu_iron_man_addon:marks/model_30_iron_destroyer/main",
     "satsu_iron_man_addon:marks/model_nil/briefcase",
-    "satsu_iron_man_addon:war_machine/marks/mark_1/mark_1_black_suit"
+    "satsu_iron_man_addon:marks/model_72/bracelet",
+    "satsu_iron_man_addon:war_machine/marks/mark_1/mark_1_black_suit",
+    "satsu_iron_man_addon:blue_tuxedo_with_weapons"
   ]
 }

@@ -1,18 +1,10 @@
 {
   "icon": "satsu_iron_man_addon:recipes/model_prime/main",
   "items": [
-    "satsu_iron_man_addon:recipes/mark_1/chest",
-    "satsu_iron_man_addon:recipes/mark_1/legs",
-    "satsu_iron_man_addon:recipes/mark_1/feet",
-    "satsu_iron_man_addon:recipes/mark_1/head",
-    "satsu_iron_man_addon:recipes/mark_2/head",
-    "satsu_iron_man_addon:recipes/mark_2/chest",
-    "satsu_iron_man_addon:recipes/mark_2/legs",
-    "satsu_iron_man_addon:recipes/mark_2/feet",
-    "satsu_iron_man_addon:recipes/mark_3/head",
-    "satsu_iron_man_addon:recipes/mark_3/chest",
-    "satsu_iron_man_addon:recipes/mark_3/legs",
-    "satsu_iron_man_addon:recipes/mark_3/feet",
+    "satsu_iron_man_addon:recipes/mark_1/main",
+    "satsu_iron_man_addon:recipes/mark_2/main",
+    "satsu_iron_man_addon:recipes/mark_3/main",
+    "satsu_iron_man_addon:recipes/mark_4/main",
     "satsu_iron_man_addon:recipes/mark_5/main",
     "satsu_iron_man_addon:recipes/mark_6/main",
     "satsu_iron_man_addon:recipes/mark_7/main",
@@ -59,12 +51,14 @@
     "satsu_iron_man_addon:recipes/mark_50/main",
     "satsu_iron_man_addon:recipes/mark_80/main",
     "satsu_iron_man_addon:recipes/mark_85/main",
+    "satsu_iron_man_addon:recipes/mark_86/main",
     "satsu_iron_man_addon:recipes/model_30_iron_destroyer/main",
     "satsu_iron_man_addon:recipes/model_50/main",
     "satsu_iron_man_addon:recipes/mark_extremis/main",
     "satsu_iron_man_addon:recipes/mark_blooded/main",
     "satsu_iron_man_addon:recipes/mark_taken/main",
     "satsu_iron_man_addon:recipes/mark_1873_nano/main",
-    "satsu_iron_man_addon:recipes/model_prime/main"
+    "satsu_iron_man_addon:recipes/model_prime/main",
+    "satsu_iron_man_addon:recipes/model_72/main"
   ]
 }

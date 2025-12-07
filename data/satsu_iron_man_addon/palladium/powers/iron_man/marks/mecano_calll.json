@@ -223,7 +223,6 @@
       "hidden_in_bar": true,
       "list_index": 2,
       "first_tick_commands": [
-        "tag @s add sentinel.false",
         "function satsu_iron_man_addon:sentinels/spawn_false_sentinel_on_ground_back",
         "tag @s remove mecano.sentinel.on.ground"
       ],
@@ -256,7 +255,7 @@
       "commands": [
         "function satsu_iron_man_addon:armor_actived/scoreboard_animation_add_and_decrease",
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
-        "tag @s add sentinel.false.failsafe"
+        ".failsafe"
       ],
       "last_tick_commands": [""],
       "conditions": {
@@ -382,7 +381,7 @@
       "hidden": true,
       "hidden_in_bar": true,
       "first_tick_commands": [""],
-      "commands": ["tag @s remove sentinel.false"],
+      "commands": [""],
       "last_tick_commands": [
         "function satsu_iron_man_addon:sentinels/kill_one_sentinel_same_score_same_armor",
         "tag @s remove sentinel.false.failsafe"
@@ -406,7 +405,6 @@
       "hidden_in_bar": true,
       "list_index": 2,
       "first_tick_commands": [
-        "tag @s add sentinel.false",
         "function satsu_iron_man_addon:sentinels/spawn_false_sentinel",
         "tag @s remove mecano.comprobacion"
       ],

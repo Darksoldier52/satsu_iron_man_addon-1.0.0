@@ -5,6 +5,7 @@
     "satsu_iron_man_addon:arc_reactor_portable",
     "satsu_iron_man_addon:dampened_ark",
     "satsu_iron_man_addon:handle",
+    "satsu_iron_man_addon:wires/copper",
     "satsu_iron_man_addon:ia_glases",
     "satsu_iron_man_addon:ia_tarjet",
     "satsu_iron_man_addon:ia_tarjet_1",
@@ -61,6 +62,18 @@
     "satsu_iron_man_addon:extremis/blood_injection",
     "satsu_iron_man_addon:extremis/empty_injection",
     "satsu_iron_man_addon:extremis/extremis_injection",
-    "satsu_iron_man_addon:extremis/cure_injection"
+    "satsu_iron_man_addon:extremis/cure_injection",
+    "satsu_iron_man_addon:mysterium/axe",
+    "satsu_iron_man_addon:mysterium/axe",
+    "satsu_iron_man_addon:mysterium/hoe",
+    "satsu_iron_man_addon:mysterium/pickaxe",
+    "satsu_iron_man_addon:mysterium/shovel",
+    "satsu_iron_man_addon:mysterium/sword",
+    "satsu_iron_man_addon:mysterium/shard",
+    "satsu_iron_man_addon:mysterium/ingot",
+    "satsu_iron_man_addon:mysterium_block",
+    "satsu_iron_man_addon:kirbon_particle",
+    "satsu_iron_man_addon:pym_particle_red",
+    "satsu_iron_man_addon:kirbon_extractor"
   ]
 }

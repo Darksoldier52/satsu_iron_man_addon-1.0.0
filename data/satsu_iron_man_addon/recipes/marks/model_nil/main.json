@@ -1,24 +1,31 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "Aroup": "iron_man",
-    "pattern": [
-        "NAN",
-        "APA",
-        "NAN"
-    ],
-    "key": {
-        "A": {
-            "item": "satsu_iron_man_addon:retro_reflective_panels"
-        },
-        "P": {
-            "item": "satsu_iron_man_addon:recipes/model_nil/main"
-        },
-        "N": {
-            "item": "satsu_iron_man_addon:advanced_circuit"
-        }
+  "type": "palladium:suit_set_tailoring",
+  "suit_set": "satsu_iron_man_addon:iron_man/marks/model_nil/main",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "satsu_iron_man_addon:retro_reflective_panels"
+      },
+      "count": 32
     },
-    "result": {
-        "item": "satsu_iron_man_addon:marks/model_nil/briefcase",
-        "count": 1
+    {
+      "ingredient": {
+        "item": "satsu_iron_man_addon:medium_circuit"
+      },
+      "count": 10
+    },
+    {
+      "ingredient": {
+        "item": "satsu_iron_man_addon:wires/copper"
+      },
+      "count": 64
     }
-  }
+  ],
+  "tool": {
+    "item": "satsu_iron_man_addon:recipes/model_nil/main"
+  },
+  "tool_icon": "satsu_iron_man_addon:item/white_instruction",
+  "title": { "translate": "ability.title.satsu.mark.1" },
+  "category": "satsu_iron_man_addon:iron_man_armors",
+  "requires_unlocking": false
+}

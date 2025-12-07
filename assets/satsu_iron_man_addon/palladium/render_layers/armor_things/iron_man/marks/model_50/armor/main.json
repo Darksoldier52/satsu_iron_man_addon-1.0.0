@@ -3,6 +3,42 @@
   "layers": [
     {
       "type": "geckolib:default",
+      "model": "satsu_iron_man_addon:geo/nonano_armor/marks/full_body_without_mask_front/main.geo.json",
+      "texture": {
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_500_0.png"
+      },
+      "conditions": [
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:entity_type_tag",
+              "entity_type_tag": "satsu_iron_man_addon:not_player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "geckolib:default",
+      "model": "satsu_iron_man_addon:geo/nano_armors/marks/head_mask/main.geo.json",
+      "texture": {
+        "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_mask_1.png"
+      },
+      "conditions": [
+        {
+          "type": "palladium:not",
+          "conditions": [
+            {
+              "type": "palladium:entity_type_tag",
+              "entity_type_tag": "satsu_iron_man_addon:not_player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "geckolib:default",
       "model": "satsu_iron_man_addon:geo/nano_armors/marks/full_body_without_head_mask/main.geo.json",
       "texture": {
         "base": "satsu_iron_man_addon:textures/models/iron_man_armors/iron_man/iron_man_suit_500_0.png",
@@ -56,11 +92,6 @@
           {
             "type": "palladium:alpha_mask",
             "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit/transformation_#TIMER.png"
-          },
-          {
-            "type": "palladium:color",
-            "color": "##S",
-            "ignore_blank": true
           }
         ],
         "variables": {
@@ -69,13 +100,13 @@
             "power": "satsu_iron_man_addon:iron_man/marks/model_50/main",
             "ability": "interpolate",
             "property": "value"
-          },
-          "S": {
-            "type": "palladium:string_property",
-            "property": "satsu.model_50.color"
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_500_#S_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_500_0_#TIMER"
+      },
+      "tint": {
+        "type": "palladium:string_property",
+        "property": "satsu.model_50.color"
       },
       "render_type": "glow",
       "conditions": [
@@ -173,11 +204,6 @@
           {
             "type": "palladium:alpha_mask",
             "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit/transformation_#TIMER.png"
-          },
-          {
-            "type": "palladium:color",
-            "color": "##S",
-            "ignore_blank": true
           }
         ],
         "variables": {
@@ -186,13 +212,13 @@
             "power": "satsu_iron_man_addon:iron_man/marks/model_50/main",
             "ability": "mask_animation_timer",
             "property": "value"
-          },
-          "S": {
-            "type": "palladium:string_property",
-            "property": "satsu.model_50.color"
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_500_#S_#TIMER"
+        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_500_0_#TIMER"
+      },
+      "tint": {
+        "type": "palladium:string_property",
+        "property": "satsu.model_50.color"
       },
       "render_type": "glow",
       "conditions": [
@@ -244,11 +270,6 @@
           {
             "type": "palladium:alpha_mask",
             "mask": "satsu_iron_man_addon:textures/models/alpha_masks/iron_man_suit_mask/transformation_#MASK.png"
-          },
-          {
-            "type": "palladium:color",
-            "color": "##S",
-            "ignore_blank": true
           }
         ],
         "variables": {
@@ -263,7 +284,11 @@
             "property": "satsu.model_50.color"
           }
         },
-        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_500_#S_#MASK"
+        "output": "satsu_iron_man_addon:textures/models/armor/iron_man_suit_lights_500_0_#MASK"
+      },
+      "tint": {
+        "type": "palladium:string_property",
+        "property": "satsu.model_50.color"
       },
       "render_type": "glow",
       "conditions": [

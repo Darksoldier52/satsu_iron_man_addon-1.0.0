@@ -22,6 +22,15 @@
       "conditions": {
         "unlocking": [
           {
+            "type": "satsu_iron_man_addon:disable_if_have_power_or_namespace",
+            "powers": [
+              "satsu_iron_man_addon:extremis/main",
+              "satsu_iron_man_addon:ia_stuff/block_sentinel_functions/main"
+            ],
+            "namespaces": ["fsang", "fsang_hero", "gabeupsp"],
+            "ignore_powers": ["fsang:space_power", "fsang_hero:dampened"]
+          },
+          {
             "type": "palladium:not",
             "conditions": [
               {
@@ -51,12 +60,8 @@
                     "tag": "dampened"
                   },
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "sentinel_one"
-                  },
-                  {
-                    "type": "palladium:has_power",
-                    "power": "satsu_iron_man_addon:extremis/main"
+                    "type": "palladium:command_result",
+                    "command": "execute if entity @e[tag=sentinel,sort=nearest,distance=0..] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID"
                   }
                 ]
               }
@@ -484,8 +489,8 @@
                 "type": "palladium:or",
                 "conditions": [
                   {
-                    "type": "palladium:has_tag",
-                    "tag": "sentinel_one"
+                    "type": "palladium:command_result",
+                    "command": "execute if entity @e[tag=sentinel,sort=nearest,distance=0..] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID"
                   },
                   {
                     "type": "palladium:has_tag",
@@ -510,10 +515,15 @@
             "type": "palladium:is_hovering_or_levitating"
           },
           {
-            "type": "palladium:objective_score",
-            "objective": "satsu.iron.man.armor.actived",
-            "min_score": 1,
-            "max_score": 1
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:objective_score",
+                "objective": "satsu.iron.man.armor.actived",
+                "min_score": 1,
+                "max_score": 1
+              }
+            ]
           }
         ]
       }
@@ -1002,7 +1012,7 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": ["tag @s remove sentinel.false"],
+      "first_tick_commands": [""],
       "commands": [""],
       "conditions": {
         "enabling": [
@@ -1010,182 +1020,11 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:and",
-                "conditions": [
-                  {
-                    "type": "palladium:or",
-                    "conditions": [
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.6"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.7"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.8"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.9"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.10"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.11"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.12"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.13"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.14"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.15"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.16"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.17"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.18"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.19.tiger"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.20"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.21"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.22"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.23"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.24"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.25"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.26"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.27"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.28"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.29"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.30"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.30.iron.destroyer"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.31"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.32"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.33"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.34"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.35"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.36"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.37"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.38"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.39"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.40"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.42"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.43"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.44"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.45"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.46"
-                      },
-                      {
-                        "type": "palladium:has_tag",
-                        "tag": "mark.47"
-                      }
-                    ]
-                  }
-                ]
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "tag": "satsu_iron_man_addon:marks_with_sentinels/main"
+                },
+                "slot": "chest"
               }
             ]
           }
@@ -1197,7 +1036,7 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "first_tick_commands": ["tag @s remove sentinel.false"],
+      "first_tick_commands": [""],
       "commands": [""],
       "last_tick_commands": ["tag @s add mecano.post.sentinel"],
       "conditions": {
@@ -1210,173 +1049,11 @@
             "type": "palladium:and",
             "conditions": [
               {
-                "type": "palladium:or",
-                "conditions": [
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.6"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.7"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.8"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.9"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.10"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.11"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.12"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.13"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.14"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.15"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.16"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.17"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.18"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.19.tiger"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.20"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.21"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.22"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.23"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.24"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.25"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.26"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.27"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.28"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.29"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.30"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.31"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.32"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.33"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.34"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.35"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.36"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.37"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.38"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.39"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.40"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.42"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.43"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.44"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.45"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.46"
-                  },
-                  {
-                    "type": "palladium:has_tag",
-                    "tag": "mark.47"
-                  }
-                ]
+                "type": "palladium:item_in_slot",
+                "item": {
+                  "tag": "satsu_iron_man_addon:marks_with_sentinels/main"
+                },
+                "slot": "chest"
               }
             ]
           }
@@ -1602,8 +1279,8 @@
             "type": "palladium:not",
             "conditions": [
               {
-                "type": "palladium:has_tag",
-                "tag": "sentinel_one"
+                "type": "palladium:command_result",
+                "command": "execute if entity @e[tag=sentinel,sort=nearest,distance=0..] if score @s grave.ID = @e[tag=sentinel,limit=1,sort=nearest] grave.ID"
               }
             ]
           }
